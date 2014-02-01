@@ -1,7 +1,7 @@
 Tyler Tidman VA3DGN
 
 The data files here are a misguided attempt to try to facilitate proper
-configuration up of amateur radio transceivers and general-purpose receivers.
+configuration of amateur radio transceivers and general-purpose receivers.
 These files are already in a format that is easily imported into the radio
 memory programming software called "Chirp" [1].  The royalty-free and
 open-source Chirp software package is freely-available for Linux, Mac OS X and
@@ -24,7 +24,7 @@ The following pre-built definition files are available for frequencies used by:
 etc.
 
 This information is intended purely for educational purposes.  It is your
-responsibility not to be stupid.
+responsibility to ensure that your equipment is behaving itself properly.
 
 References:
 [1]http://chirp.danplanet.com
