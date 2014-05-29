@@ -24,7 +24,8 @@ The following pre-built definition files are available for frequencies used by:
 etc.
 
 This information is intended purely for educational purposes.  It is your
-responsibility to ensure that your equipment is behaving itself properly.
+responsibility to ensure that you and your equipment are behaving themselves
+properly.
 
 References:
 [1]http://chirp.danplanet.com
