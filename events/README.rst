@@ -1,26 +1,32 @@
 Events
 ======
 
+These are some events that happen around the vicinity of FN15 and FN25 for
+which there is always a need for licensed radio operator volunteers.
 
-Canadian Ski Marathon
----------------------
 
-1st weekend in February
+Canadian Ski Marathon (CSM)
+---------------------------
+
+Happens on the 1st or 2nd weekend in February.
 
 * Frequency list:  CSMFreqs_
-* Radio volunteer info:  CSMRadio_
+* Volunteer info:  CSMRadio_, CSMAdmin_
 * Official site:  CSM_
 
 .. _CSMFreqs:  Canadian_Ski_Marathon.csv
-.. _CSMRadio:  http://radio-1.ca/
+.. _CSMRadio:  http://radio-1.ca
+.. _CSMAdmin:  http://admin1.ca
 .. _CSM:  http://csm-msc.com
 
 
-Lanark Highlands Forest Rally
------------------------------
+Lanark Highlands Forest Rally (LHFR)
+------------------------------------
 
-Saturday of 1st weekend in May
+Happens on the Saturday of the 1st weekend in May.
 
+* Frequency list:  TBD
+* Volunteer info:  TBD
 * Official site:  LHFR_
 
 .. _LHFR:  http://lhfr.ca
@@ -29,19 +35,23 @@ Saturday of 1st weekend in May
 CN Cycle for CHEO
 -----------------
 
-Sunday of 1st weekend in May
+Happens on the Sunday of the 1st weekend in May.
 
+* Frequency list:  TBD
+* Volunteer info:  TBD
 * Official site:  CNCycle_
 
 .. _CNCycle:  http://cncycle.ca
 
 
-Rideau Lakes Cycle Tour
------------------------
+Rideau Lakes Cycle Tour (RLCT)
+------------------------------
 
-1st weekend in June
+Happens on the 1st or 2nd weekend in June.  Usually conflicts with the ARRL
+June VHF QSO Party.
 
 * Frequency list:  RLCTFreqs_
+* Volunteer info:  RLCTRadio_
 * Official site:  RLCT_
 
 .. _RLCTFreqs:  Rideau_Lakes_Cycle_Tour.csv
@@ -49,13 +59,14 @@ Rideau Lakes Cycle Tour
 .. _RLCT:  http://ottawabicycleclub.ca/rlct
 
 
-Rally of the Tall Pines / Tall Pines Rally
+Tall Pines Rally / Rally of the Tall Pines
 ------------------------------------------
 
-3rd weekend in November
+Happens on the 3rd or 4th weekend in November.
 
 * Frequency list:  TallPinesFreqs_
+* Volunteer info:  TBD
 * Official site:  TallPines_
 
 .. _TallPinesFreqs:  Tall_Pines_Rally.csv
-.. _TallPines:  http://tallpinesrally.com/
+.. _TallPines:  http://tallpinesrally.com
