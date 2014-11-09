@@ -1,8 +1,9 @@
 Events
 ======
 
-These are some events that happen around the vicinity of FN15 and FN25 for
-which there is always a need for licensed radio operator volunteers.
+These are some events that happen around the vicinity of Maidenhead grids
+FN14, FN15 and FN25 for which there is always a need for licensed amateur
+radio operator volunteers to provide safety communications.
 
 
 Canadian Ski Marathon (CSM)
