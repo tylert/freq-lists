@@ -36,7 +36,7 @@ Happens on the Saturday of the 1st weekend in May.
 CN Cycle for CHEO
 -----------------
 
-Happens on the Sunday of the 1st weekend in May.
+Happens on the Friday and Sunday of the 1st weekend in May.
 
 * Frequency list:  TBD
 * Volunteer info:  TBD
