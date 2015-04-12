@@ -48,7 +48,7 @@ Happens on the Sunday of the 1st weekend in May.
 Rideau Lakes Cycle Tour (RLCT)
 ------------------------------
 
-Happens on the 1st or 2nd weekend in June.  Usually conflicts with the ARRL
+Happens on the 1st or 2nd weekend in June.  Sometimes conflicts with the ARRL
 June VHF QSO Party.
 
 * Frequency list:  RLCTFreqs_
