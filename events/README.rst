@@ -24,7 +24,7 @@ Happens on the 1st or 2nd weekend in February.
 Lanark Highlands Forest Rally (LHFR)
 ------------------------------------
 
-Happens on the Saturday of the 1st weekend in May.
+Happens on the Friday and Saturday of the 1st weekend in May.
 
 * Frequency list:  TBD
 * Volunteer info:  TBD
@@ -36,7 +36,7 @@ Happens on the Saturday of the 1st weekend in May.
 CN Cycle for CHEO
 -----------------
 
-Happens on the Friday and Sunday of the 1st weekend in May.
+Happens on the Sunday of the 1st weekend in May.
 
 * Frequency list:  TBD
 * Volunteer info:  TBD
