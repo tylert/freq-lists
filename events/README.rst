@@ -43,7 +43,7 @@ Happens on the Sunday of the 1st weekend in May.
 * Volunteer info: TBD
 * Official site: `CN Cycle`_
 
-.. _CNCycle: http://cncycle.ca
+.. _CN Cycle: http://cncycle.ca
 
 
 Rideau Lakes Cycle Tour (RLCT)
