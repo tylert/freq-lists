@@ -17,8 +17,8 @@ Happens on the 1st or 2nd weekend in February.
 
 .. _CSM Freqs: Canadian_Ski_Marathon.csv
 .. _CSM Radio: http://radio-1.ca
-.. _CSM Admin: http://admin1.ca
-.. _CSM: http://csm-msc.com
+.. _CSM Admin: http://admin2.ca
+.. _CSM: http://csm-mcs.com/en/
 
 
 Lanark Highlands Forest Rally (LHFR)
