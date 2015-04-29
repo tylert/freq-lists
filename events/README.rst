@@ -39,10 +39,11 @@ CN Cycle for CHEO
 
 Happens on the Sunday of the 1st weekend in May.
 
-* Frequency list: TBD
+* Frequency list: `CN Cycle Freqs`_
 * Volunteer info: TBD
 * Official site: `CN Cycle`_
 
+.. _CN Cycle Freqs: CN_Cycle_for_CHEO.csv
 .. _CN Cycle: http://cncycle.ca
 
 
