@@ -6,9 +6,10 @@ Tyler Tidman VA3DGN
 The data files here are a misguided attempt to try to facilitate proper
 configuration of amateur radio transceivers and general-purpose receivers.
 These files are already in a format that is easily imported into the radio
-memory programming software called "CHIRP_".  The royalty-free and open-source
-CHIRP_ software package is freely-available for Linux, Mac OS X and others and
-is able to program many different amateur transceiver makes and models.
+memory programming software called "CHIRP_" (latest_).  The royalty-free and
+open-source CHIRP_ software package is freely-available for Linux, Mac OS X and
+others and is able to program many different amateur transceiver makes and
+models.
 
 The following pre-built definition files are available for frequencies used by:
 
@@ -29,6 +30,7 @@ responsibility to ensure that you and your equipment are behaving themselves
 properly.
 
 .. _CHIRP: http://chirp.danplanet.com
+.. _latest: http://trac.chirp.danplanet.com/chirp_daily/LATEST/
 .. _EMRG: http://emrg.ca
 .. _CSM: http://radio-1.ca
 .. _RLCT: http://ottawabicycleclub.ca/rlct
