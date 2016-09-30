@@ -15,7 +15,7 @@ Happens on the 1st or 2nd weekend in February.
 * Volunteer info: `CSM Radio`_, `CSM Admin`_
 * Official site: CSM_
 
-.. _CSM Freqs: Canadian_Ski_Marathon.csv
+.. _CSM Freqs: CSM_6char.csv
 .. _CSM Radio: http://radio-1.ca
 .. _CSM Admin: http://admin2.ca
 .. _CSM: http://csm-mcs.com/en/
@@ -30,7 +30,7 @@ Happens on the Friday and Saturday of the 1st weekend in May.
 * Volunteer info: TBD
 * Official site: LHFR_
 
-.. _LHFR Freqs: Lanark_Highlands_Forest_Rally.csv
+.. _LHFR Freqs: LHFR_6char.csv
 .. _LHFR: http://lhfr.ca
 
 
@@ -57,7 +57,7 @@ June VHF QSO Party.
 * Volunteer info: `RLCT Radio`_
 * Official site: RLCT_
 
-.. _RLCT Freqs: Rideau_Lakes_Cycle_Tour.csv
+.. _RLCT Freqs: RLCT_6char.csv
 .. _RLCT Radio: http://emrg.ca/rideau_lakes_cycle_tour.htm
 .. _RLCT: http://ottawabicycleclub.ca/rlct
 
