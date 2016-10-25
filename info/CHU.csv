@@ -1,4 +1,0 @@
-Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL
-1,CHU80,003.330000,,0.000000,,88.5,88.5,023,NN,AM,5.00,S,,,,
-2,CHU40,007.850000,,0.000000,,88.5,88.5,023,NN,AM,5.00,S,,,,
-3,CHU20,014.670000,,0.000000,,88.5,88.5,023,NN,AM,5.00,S,,,,
