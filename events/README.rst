@@ -24,7 +24,7 @@ Happens on the 1st or 2nd weekend in February.
 Lanark Highlands Forest Rally (LHFR)
 ------------------------------------
 
-Happens on the Friday and Saturday of the 1st weekend in May.
+Happens on the 1st weekend in May.  Conflicts with CN Cycle for CHEO.
 
 * Frequency list: `LHFR Freqs`_
 * Volunteer info: TBD
@@ -37,7 +37,7 @@ Happens on the Friday and Saturday of the 1st weekend in May.
 CN Cycle for CHEO
 -----------------
 
-Happens on the Sunday of the 1st weekend in May.
+Happens on the 1st weekend in May.  Conflicts with LHFR.
 
 * Frequency list: `CN Cycle Freqs`_
 * Volunteer info: TBD
@@ -50,15 +50,16 @@ Happens on the Sunday of the 1st weekend in May.
 Rideau Lakes Cycle Tour (RLCT)
 ------------------------------
 
-Happens on the 1st or 2nd weekend in June.  Sometimes conflicts with the ARRL
-June VHF QSO Party.
+Happens on the 1st or 2nd weekend in June.  Conflicts with the ARRL June VHF
+QSO Party.
 
 * Frequency list: `RLCT Freqs`_
-* Volunteer info: `RLCT Radio`_
+* Volunteer info: `RLCT Radio`_, `RLCT Info`_
 * Official site: RLCT_
 
 .. _RLCT Freqs: RLCT_6char.csv
-.. _RLCT Radio: http://emrg.ca/rideau_lakes_cycle_tour.htm
+.. _RLCT Radio: http://rlct.radio-1.ca
+.. _RLCT Info: http://emrg.ca/rideau_lakes_cycle_tour.htm
 .. _RLCT: http://ottawabicycleclub.ca/rlct
 
 
