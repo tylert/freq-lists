@@ -7,9 +7,9 @@
 # Tested with CPS software version 1.36 on Debian Jessie 8.x under Wine.
 
 
-header_size = 549
-# body_size = 262144
-footer_size = 16
+head_size = 549
+body_size = 262144
+foot_size = 16
 
 rdt_file_name = 'out.rdt'
 out_file_name = 'out.bin'
@@ -20,11 +20,16 @@ with open(rdt_file_name, 'rb') as rdt_file:
 
     # Get size of body to extract
     rdt_file.seek(0, EOF)
-    rdt_body_size = rdt_file.tell() - header_size - footer_size
+    rdt_body_size = rdt_file.tell() - head_size - foot_size
     rdt_file.seek(0, 0)
 
+    # Make extra sure it's the right size
+    if rdt_body_size != body_size:
+        print('Body size {} doesn\'t match expected size {}'
+              .format(rdt_body_size, body_size))
+
     # Build the desired body to output
-    rdt_file.seek(header_size, 0)
+    rdt_file.seek(head_size, 0)
     body = rdt_file.read(rdt_body_size)
 
 with open(out_file_name, 'wb') as out_file:
