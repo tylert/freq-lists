@@ -11,8 +11,8 @@ head_size = 549
 body_size = 262144
 foot_size = 16
 
-rdt_file_name = 'out.rdt'
-out_file_name = 'out.bin'
+rdt_file_name = 'foo.rdt'
+out_file_name = 'foo.bin'
 
 EOF = 2
 
