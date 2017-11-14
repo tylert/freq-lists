@@ -43,7 +43,7 @@ Happens on the 1st weekend in May.  Conflicts with LHFR.
 * Volunteer info: TBD
 * Official site: `CN Cycle`_
 
-.. _CN Cycle Freqs: CN_Cycle_for_CHEO.csv
+.. _CN Cycle Freqs: CN_Cycle_for_CHEO_6char.csv
 .. _CN Cycle: http://cncycle.ca
 
 
@@ -72,5 +72,5 @@ Happens on the 3rd or 4th weekend in November.
 * Volunteer info: TBD
 * Official site: `Tall Pines`_
 
-.. _Tall Pines Freqs: Tall_Pines_Rally.csv
+.. _Tall Pines Freqs: Tall_Pines_Rally_6char.csv
 .. _Tall Pines: http://tallpinesrally.com
