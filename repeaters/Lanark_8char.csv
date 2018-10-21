@@ -1,0 +1,3 @@
+Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL
+1,VE3ARE,147.270000,+,0.600000,Tone,100.0,100.0,023,NN,FM,5.00,S,,Almonte,,,
+2,U-VA3AAR,444.300000,+,5.000000,Tone,100.0,100.0,023,NN,FM,6.25,S,,Almonte,,,
