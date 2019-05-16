@@ -64,8 +64,8 @@ Work Mode Settings
 Display:  A
 VFO/MR Mode:  Channel
 Keypad Lock:  Not Enabled
-MR A Channel:  1
-MR B Channel:  1
+MR A Channel:  0
+MR B Channel:  0
 VFO A Frequency:  146.520000
 VFO B Frequency:  446.000000
 VFO A Shift:  Off
@@ -79,13 +79,13 @@ VFO B Bandwidth:  Wide
 VFO A PTT-ID:  1
 VFO B PTT-ID:  1
 VFO A Tuning Step:  5.0
-VFO B Tuning Step:  12.5
+VFO B Tuning Step:  6.25
 
 
 FM Radio Preset
 ---------------
 
-FM Preset (MHz):  99.7
+FM Preset (MHz):  91.5
 
 
 DTMF Settings
