@@ -1,0 +1,97 @@
+﻿EASTERN  VHF / UHF  FREQUENCIES
+(2019-06-01)    (Antenna at 40 ft.)
+Ham Repeaters: Output  Offset  Location   Callsign   Notes Tone   50W  5W
+     (600kHz)
+
+   2M    145.110  ( - ) Bristol (Worden Hill) NY  WR2AHL 110.9  Weak   No
+    145.150  ( - ) Syracuse NY   KD2SL  123.0  Weak   No
+    145.290  ( - ) Iroquois ON   VE3IRO 100.0 V.Weak   No
+    145.330  ( - ) Mt. Pakenham ON      (L2) VE2REH  2018 110.9  Strong  Yes
+    145.370  ( - ) Tweed ON       (L1) VE3RNU    (Currently off-the-air)
+    145.430  ( - ) Foymount ON   VE3UCR 114.8  Weak    No
+    145.450  ( - ) Ottawa (Laurier & Bank) ON  VE3RIX   C4FM 151.4      -
+    145.470  ( - ) Alfred ON   VA3PRA 110.9      -
+    145.490  ( - ) Gatineau (Buckingham) QC VE2REH 110.9      -
+    145.530  ( - ) Ottawa ON   VA3ODG DStar       -
+    146.610  ( - ) Bancroft (Hwy 62 South) ON VE3BNI  100.0   Weak    No
+    146.625  ( - ) Lansdowne (Ivy Lea Tower) ON  VA3LGA 100.0  Strong   Yes
+    146.700  ( - ) Ottawa (416 & Hunt Club) ON VE3TST 136.5      -
+    146.700  ( - ) Watertown (Dexter) NY  WB2OOY 151.4  Medium Yes
+    146.745  ( - ) Gatineau (Hull) QC  VE2RAO C4FM 110.9      -
+    146.760  ( - ) Morrisburg ON   VE3SVR 110.9      -
+    146.760  ( - ) Pembroke ON   VE3NRR  2520        -
+    146.790  ( - ) Ottawa (Cite Collegiale) ON VA3LCC       -
+(2) 146.805  ( - ) Frontenac (N of Kingston) ON  VE3FRG C4FM 203.5  Strong  Yes
+    146.805  ( - ) Ottawa (Barrhaven) ON  VE3DRE C4FM 100.0      -
+    146.820  ( - ) Brockville ON   VE3IWJ 100.0  Strong  Yes
+    146.910  ( - ) Renfrew (Horton) ON  VE3ZRR 100.0  Weak    No
+    146.925  ( - ) Russell NY   KA2JXI/R   Weak    No
+    146.940  ( - ) Kingston (McAdoo Lane) ON VE3KBR   2750 151.4     Strong   Yes
+    146.970  ( - ) Winchester ON   VA3NDC 100.0       -
+    147.000  ( - ) Mt. Rigaud QC   VE2RM         -
+    147.000  ( - ) Auburn NY   W2QYT         -
+    147.015  ( + ) Frankford ON (N. Of Trenton) VE3TRR   91.5       -
+    147.060  ( - ) Mount St. Patrick ON  VE3STP 114.8  Strong    Yes
+    147.090  ( + ) N. Frontenac (Clarendon Stn.)    VE3KAR     (Currently off-the-air)
+    147.105  ( + ) Cantley QC        (L2) VE2REH   2018 110.9       -
+    147.135  ( + ) Fine NY   WA2NAN 151.4  Medium  Yes
+    147.150  ( + ) Ottawa (Orleans) ON  VE3MPC C4FM       -
+    147.150  ( + ) Fulton NY   N2GIV  103.5      -
+    147.195  ( + ) Cantley QC   VE2MDC 110.9      -
+    147.210  ( + ) Smiths Falls ON  VE3RLR C4FM 151.4  Strong    Yes
+    147.225  ( + ) Malone NY   WB2RYB/R 5890      -
+    147.240  ( + ) Smiths Falls ON  VA3RDD  DStar       -
+    147.255  ( + ) Watertown NY   KA2QJO 151.4   Weak     No
+    147.285  ( + ) Bancroft ON   VA3FOY 118.8      -
+    147.300  ( + ) Ottawa (Orleans) ON  VE3TWO C4FM 136.5      -
+    147.330  ( + ) Foymount ON   VE3SRU 114.8      -
+    147.330  ( + ) Hammond ON   VE3PRV   2115       -
+    147.330  ( + ) Tupper Lake NY  KA2DRE 100.0 V.Weak      No
+    147.360  ( + ) Chelsea (Camp Fortune) QC VE2REH 123.0 Medium    Yes
+    147.375  ( + ) Watertown, NY   NY2JC  210.7       -
+
+
+
+
+
+           (Antenna at 40 ft.)
+Ham Repeaters: Output  Offset  Location   Callsign    Notes Tone   50W  5W
+      (5mHz)
+
+    442.450  ( + ) Ottawa (Otwa Intnl Airport) ON VE3RIX  C4FM 151.4     -
+    442.800  ( + ) Gatineau (Portable Rptr) QC VE2REH 110.9 (Currently off-the-air)
+    443.200  ( + ) Arnprior ON   VE3YYX 114.8      -
+    443.300  ( + ) Kingston ON   VE3KTO       -
+    443.950  ( + ) Gatineau (Hull) QC  VE2RAO  2332 123.0      -
+    444.000  ( + ) Brockville ON   VE3IWJ 100.0 Medium    Yes
+    444.000  ( + ) Mt. Rigaud QC   VE2RM        -
+    444.100  ( + ) Mississippi Mills (Union Hall) ON VA3ARE DStar       -
+    444.150  ( + ) Lancaster, ON   VE2REH       -
+    444.200  ( + ) Ottawa (Orleans) ON  VE3TWO C4FM100.0      -
+    444.225  ( + ) Kemptville ON   VE3NGR C4FM       -
+    444.250  ( + ) Gatineau QC   VA2UHF 110.9      -
+    444.350  ( + ) Ottawa (Cumberland) ON VA3RCB 100.0      -
+    444.400  ( + ) Ottawa (Orleans) ON  VE3MPC C4FM 100.0      -
+    444.450  ( + ) Perth (Otty Lake) ON  VE3IEV     2053 100.0    (Currently off-the-air)
+(1) 444.500  ( + ) Ottawa ON    (Optional - L1) VA3LGP 141.3      -
+    444.500  ( + ) Chelsea QC   VE2GFV 146.2      -
+    444.550  ( + ) Ottawa (Kanata) ON             VE3ORF 151.4      -
+    444.600  ( + ) Cantley QC   VE2REH 110.9      -
+    444.650  ( + ) Malone NY    NG2C        -
+    444.700  ( + ) Cantley QC   VA2CMB 123.0      -
+    444.750  ( + ) Smiths Falls ON  VE3RLR  C4FM 151.4      -
+    444.825  ( + ) Ottawa ON   VA3DSP 100.0      -
+    444.850  ( + ) Ottawa (Argyle St YMCA) ON VE3ODG DStar       -
+    444.900  ( + ) Gatineau QC   VA2XAD 162.2      -
+(2)   445.1375( 0 ) S. Frontenac (N of Kingston) ON  VE3FRG   203.5      -
+    448.025  ( - ) Pembroke ON   VE3NRR       -
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Notes:  1)  UHF repeater in Ottawa, optional link to our VE3LCA Network (per Luc Pernot, VE3JGL)
+ 2)  UHF repeater in Kingston linked to VE3FRG, VHF-146.805 (C4FM)
+ 3)  Plans are to convert the Christie Lake repeater to an auto-select Yaesu C4FM / FM Analog repeater
+during the summer of 2019
+ 3)  Most C4FM Yaesu Repeaters will select to operate in both C4FM and Analog FM modes automatically
+  4)  Signal strength readings taken at my QTH on Black Lake - south of Perth – north of Westport
