@@ -1,14 +1,11 @@
 # jq
 .
 
-# # Set the DMR ID and Callsign for this radio
-| .GeneralSettings.RadioID |= "{{ (XXX).RadioID }}"
-| .GeneralSettings.RadioName |= "{{ (XXX).RadioName }}"
+# Set the DMR ID and Callsign values for each radio uniquely
+| .GeneralSettings.RadioID |= "{{ (XXX).GeneralSettings.RadioID }}"
+| .GeneralSettings.RadioName |= "{{ (XXX).GeneralSettings.RadioName }}"
 
-# Show DMR ID and Callsign when the radio boots up
+# Set the Intro values when the radio boots up to something helpful
 | .GeneralSettings.IntroScreen |= "Character String"
-| .GeneralSettings.IntroScreenLine1 |= "{{ (XXX).RadioID }}"
-| .GeneralSettings.IntroScreenLine2 |= "{{ (XXX).RadioName }}"
-
-# Allow front-panel programming
-| .MenuItems.ProgramRadio |= "On"
+| .GeneralSettings.IntroScreenLine1 |= "{{ (XXX).GeneralSettings.RadioID }}"
+| .GeneralSettings.IntroScreenLine2 |= "{{ (XXX).GeneralSettings.RadioName }}"
