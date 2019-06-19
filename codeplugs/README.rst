@@ -6,7 +6,8 @@ Requirements
 ------------
 
 You must have the following tools installed:
-* editcp_ (anr/or just the "dmrRadio" binary) for exporting/importing codeplugs to/from JSON
+
+* editcp_ (and/or just the "dmrRadio" binary) for exporting/importing codeplugs to/from JSON
 * jq_ for working with JSON payloads
 * sed for doing the things that jq can't do (weird quoting stuff)
 * gomplate_ for templating files
