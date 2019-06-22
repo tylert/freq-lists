@@ -64,7 +64,7 @@ def plop_channel(item):
     channel['Name'] = item['Name']
     channel['RxFrequency'] = item['Frequency']
 
-    # XXX FIXME
+    # XXX FIXME Which one is for Tx and which one is for Rx?
     if item['Tone'] == 'TSQL':
         channel['CtcssEncode'] = item['cToneFreq']
         channel['CtcssDecode'] = item['rToneFreq']
