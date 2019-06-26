@@ -17,8 +17,8 @@ You must have the following tools installed:
 .. _gomplate: https://gomplate.ca/
 
 
-Converting Existing Codeplugs
------------------------------
+Converting Existing Codeplugs To Templates
+------------------------------------------
 
 Codeplugs are exported to JSON text using "Editcp".  JSON files are then
 augmented with "gomplate" formatting to turn them into templateble JSON files.
@@ -27,7 +27,7 @@ augmented with "gomplate" formatting to turn them into templateble JSON files.
 
     # Convert a codeplug into a template
     dmrRadio codeplugToJSON foo.rdt foo.json  # or use editcp
-    cat foo.json | jq -f template.jq | sed -f template.sed > TYT_MD-390G.json.tmpl
+    cat foo.json | jq -f template.jq | sed -f template.sed > TYT_MD-390G.tmpl
 
 
 Generating Codeplugs From Templates
@@ -40,7 +40,7 @@ values is then done before converting them back into a binary codeplug.
 
     # Use the template to produce something with specific values
     echo '{"GeneralSettings": {"RadioID": "3023706", "RadioName": "VA3VXN"}}' |\
-    gomplate -d dmr=stdin:///in.json -f TYT_MD-390G.json.tmpl | jq . > TYT_MD-390G.json
+    gomplate -d dmr=stdin:///in.json -f TYT_MD-390G.tmpl | jq . > TYT_MD-390G.json
 
     # Generate a codeplug from the file with specific values
     dmrRadio jsonToCodeplug TYT_MD-390G.json TYT_MD-390G.rdt  # or use editcp

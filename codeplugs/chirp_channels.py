@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
 
+# Convert a CHIRP CSV file into a codeplug channel payload
+
+
 import csv
 import json
 
 import click
 
 
-
 def plop_channel(item):
+    '''
+    '''
+
     channel = {
         "AdmitCriteria": "Always",
         "AllowTalkaround": "Off",
@@ -64,7 +69,6 @@ def plop_channel(item):
     channel['Name'] = item['Name']
     channel['RxFrequency'] = item['Frequency']
 
-    # XXX FIXME Which one is for Tx and which one is for Rx?
     if item['Tone'] == 'TSQL':
         channel['CtcssEncode'] = item['cToneFreq']
         channel['CtcssDecode'] = item['rToneFreq']
@@ -78,7 +82,9 @@ def plop_channel(item):
     if item['Duplex'] == '':
         channel['TxFrequencyOffset'] = '+0.00000'
     else:
-        channel['TxFrequencyOffset'] = '{}{}'.format(item['Duplex'], item['Offset'])
+        # XXX FIXME Force the offset to have 5 decimal places
+        channel['TxFrequencyOffset'] = '{}{}'.format(item['Duplex'],
+                                                     item['Offset'])
 
     return json.dumps(channel, indent=2, sort_keys=True)
 
