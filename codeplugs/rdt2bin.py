@@ -7,31 +7,43 @@
 # Tested with CPS software version 1.36 on Debian Jessie 8.x under Wine.
 
 
-head_size = 549
-body_size = 262144
-foot_size = 16
+import click
 
-rdt_file_name = 'foo.rdt'
-out_file_name = 'foo.bin'
+
+HEAD_SIZE = 549
+BODY_SIZE = 262144
+FOOT_SIZE = 16
 
 EOF = 2
 
-with open(rdt_file_name, 'rb') as rdt_file:
 
-    # Get size of body to extract
-    rdt_file.seek(0, EOF)
-    rdt_body_size = rdt_file.tell() - head_size - foot_size
-    rdt_file.seek(0, 0)
+@click.command()
+@click.option('--rdt_file_name', '-r', help='Input rdt "donor" file')
+@click.option('--out_file_name', '-o', help='Output rdt file')
+def main(rdt_file_name, out_file_name):
+    '''
+    '''
 
-    # Make extra sure it's the right size
-    if rdt_body_size != body_size:
-        print('Body size {} doesn\'t match expected size {}'
-              .format(rdt_body_size, body_size))
+    with open(rdt_file_name, 'rb') as rdt_file:
 
-    # Build the desired body to output
-    rdt_file.seek(head_size, 0)
-    body = rdt_file.read(rdt_body_size)
+        # Get size of body to extract
+        rdt_file.seek(0, EOF)
+        rdt_body_size = rdt_file.tell() - HEAD_SIZE - FOOT_SIZE
+        rdt_file.seek(0, 0)
 
-with open(out_file_name, 'wb') as out_file:
+        # Make extra sure it's the right size
+        if rdt_body_size != BODY_SIZE:
+            print('Body size {} doesn\'t match expected size {}'
+                  .format(rdt_body_size, BODY_SIZE))
 
-    out_file.write(body)
+        # Build the desired body to output
+        rdt_file.seek(HEAD_SIZE, 0)
+        body = rdt_file.read(rdt_body_size)
+
+    with open(out_file_name, 'wb') as out_file:
+
+        out_file.write(body)
+
+
+if __name__ == '__main__':
+    main()
