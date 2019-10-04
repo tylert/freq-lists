@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 # Convert a md380tools bin file into an rdt file that can be read with the
 # Tytera MD-380/MD-390 CPS software.  Must have an existing donor rdt file to

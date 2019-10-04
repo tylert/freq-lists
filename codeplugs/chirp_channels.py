@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 # Convert a CHIRP CSV file into a codeplug channel payload
 

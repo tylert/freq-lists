@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 # Convert an rdt file output from the Tytera MD-380/MD-390 CPS software into a
 # bin file similar to one that would be output from the md380tools md380-dfu
