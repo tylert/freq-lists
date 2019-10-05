@@ -102,7 +102,7 @@ def main(channels):
             dict_list.append(plop_channel(item))
 
     for thing in dict_list:
-        print(thing)
+        print('{},'.format(thing))
 
 
 if __name__ == '__main__':
