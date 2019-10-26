@@ -12,19 +12,18 @@ Canadian Ski Marathon (CSM)
 Happens on the 1st or 2nd weekend in February.
 
 * Frequency list: `CSM Freqs`_
-* Volunteer info: `CSM Radio`_, `CSM Admin`_
+* Volunteer info: `CSM Radio`_
 * Official site: CSM_
 
 .. _CSM Freqs: CSM_6char.csv
-.. _CSM Radio: http://radio-1.ca
-.. _CSM Admin: http://admin2.ca
+.. _CSM Radio: hambone.ca/csm
 .. _CSM: http://csm-mcs.com/en/
 
 
 Lanark Highlands Forest Rally (LHFR)
 ------------------------------------
 
-Happens on the 1st weekend in May.  Conflicts with CN Cycle for CHEO.
+Happens on the 1st weekend in May.
 
 * Frequency list: `LHFR Freqs`_
 * Volunteer info: TBD
@@ -37,7 +36,7 @@ Happens on the 1st weekend in May.  Conflicts with CN Cycle for CHEO.
 CN Cycle for CHEO
 -----------------
 
-Happens on the 1st weekend in May.  Conflicts with LHFR.
+Happens on the 1st weekend in May.
 
 * Frequency list: `CN Cycle Freqs`_
 * Volunteer info: TBD
