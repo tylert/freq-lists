@@ -7,7 +7,6 @@ Ham Repeaters: Output  Offset  Location   Callsign   Notes Tone   50W  5W
     145.150  ( - ) Syracuse NY   KD2SL  123.0  Weak   No
     145.290  ( - ) Iroquois ON   VE3IRO 100.0 V.Weak   No
     145.330  ( - ) Mt. Pakenham ON      (L2) VE2REH  2018 110.9  Strong  Yes
-    145.370  ( - ) Tweed ON       (L1) VE3RNU    (Currently off-the-air)
     145.430  ( - ) Foymount ON   VE3UCR 114.8  Weak    No
     145.450  ( - ) Ottawa (Laurier & Bank) ON  VE3RIX   C4FM 151.4      -
     145.470  ( - ) Alfred ON   VA3PRA 110.9      -
