@@ -6,33 +6,6 @@ FN15 and FN25 for which there is always a need for licensed amateur radio
 operator volunteers to provide safety communications.
 
 
-Canadian Ski Marathon (CSM)
----------------------------
-
-Happens on the 1st or 2nd weekend in February.
-
-* Frequency list: `CSM Freqs`_
-* Volunteer info: `CSM Radio`_
-* Official site: CSM_
-
-.. _CSM Freqs: CSM_6char.csv
-.. _CSM Radio: hambone.ca/csm
-.. _CSM: http://csm-mcs.com/en/
-
-
-Lanark Highlands Forest Rally (LHFR)
-------------------------------------
-
-Happens on the 1st weekend in May.
-
-* Frequency list: `LHFR Freqs`_
-* Volunteer info: TBD
-* Official site: LHFR_
-
-.. _LHFR Freqs: LHFR_6char.csv
-.. _LHFR: http://lhfr.ca
-
-
 CN Cycle for CHEO
 -----------------
 
