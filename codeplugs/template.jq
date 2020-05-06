@@ -9,3 +9,6 @@
 | .GeneralSettings.IntroScreen |= "Character String"
 | .GeneralSettings.IntroScreenLine1 |= "{{ (XXX).GeneralSettings.RadioID }}"
 | .GeneralSettings.IntroScreenLine2 |= "{{ (XXX).GeneralSettings.RadioName }}"
+
+# Allow front-panel programming
+| .MenuItems.ProgramRadio |= "On"
