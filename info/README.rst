@@ -8,6 +8,8 @@ deviation while designated FRS-only frequencies use +/-2.5 ppm deviation.  A 25
 kHz channel width translates to a +/-5 ppm frequency deviation.  A 12.5 kHz
 channel width translates to a +/-2.5 ppm frequency deviation.
 
+See also https://wiki.radioreference.com/index.php/FRS/GMRS_combined_channel_chart.
+
 .. _GMRS-FRS: https://en.wikipedia.org/wiki/General_Mobile_Radio_Service
 
 Frequencies
