@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Convert a CHIRP CSV file into a codeplug channel payload
+# Convert a CHIRP CSV file into a codeplug channel payload (DMR only)
 
 
 import csv
@@ -61,8 +61,7 @@ def plop_channel(item):
     if item['Mode'] == 'FM':
         channel['ChannelMode'] = 'Analog'
         channel['Bandwidth'] = '25'
-    # Assuming mode 'DIG' means 'DMR'
-    elif item['Mode'] == 'DIG':
+    elif item['Mode'] == 'DMR':
         channel['ChannelMode'] = 'Digital'
         channel['Bandwidth'] = '12.5'
 
