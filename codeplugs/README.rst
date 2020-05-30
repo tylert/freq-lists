@@ -72,8 +72,8 @@ values is then done before converting them back into a binary codeplug.
     dmrRadio jsonToCodeplug codeplug4.json codeplug4.rdt  # or use editcp
 
 
-Converting from CHIRP
----------------------
+Converting from CHIRP to DMR Channels
+-------------------------------------
 
 ::
 
