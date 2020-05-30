@@ -18,6 +18,10 @@ You must have the following tools installed:
 .. _gomplate: https://gomplate.ca/
 .. _dmrconfig: https://github.com/sergev/dmrconfig/
 
+There's a good tutorial at
+https://www.jeffreykopcak.com/2017/06/11/dmr-in-amateur-radio-programming-a-code-plug/
+which is mostly-applicable.
+
 
 Converting Existing Codeplugs To Templates
 ------------------------------------------
@@ -31,7 +35,7 @@ augmented with "gomplate" formatting to turn them into templateble JSON files.
     dmrRadio codeplugToJSON foo.rdt foo.json  # or use editcp
 
     # Convert the JSON codeplug data into a template
-    cat foo.json | jq -f template.jq | sed -f template.sed > TYT_MD-390G.tmpl
+    cat foo.json | jq -f Retevis_RT3S.jq | sed 's/XXX/ds "dmr"/' > Retevis_RT3S.tmpl
 
 
 Generating Codeplugs From Templates
@@ -52,7 +56,7 @@ values is then done before converting them back into a binary codeplug.
       RadioID: 3023396
       RadioName: VA3DGN
     EOF
-    gomplate -d dmr=bla.yaml -f TYT_MD-390G.tmpl | jq . > 3023396.json
+    gomplate -d dmr=bla.yaml -f Retevis_RT3S.tmpl | jq . > 3023396.json
 
     # Generate a binary codeplug from the JSON codeplug data file
     dmrRadio jsonToCodeplug 3023706.json 3023706.rdt  # or use editcp
