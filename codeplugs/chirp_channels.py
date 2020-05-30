@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Convert a CHIRP CSV file into a codeplug channel payload (DMR only)
+# Convert a CHIRP CSV file into a DMR codeplug channel payload
 
 
 import csv
@@ -82,9 +82,8 @@ def plop_channel(item):
     if item['Duplex'] == '':
         channel['TxFrequencyOffset'] = '+0.00000'
     else:
-        # XXX FIXME Force the offset to have 5 decimal places
-        channel['TxFrequencyOffset'] = '{}{}'.format(item['Duplex'],
-                                                     item['Offset'])
+        channel['TxFrequencyOffset'] = '{}{:.5f}'.format(item['Duplex'],
+                                                         float(item['Offset']))
 
     return json.dumps(channel, indent=2, sort_keys=True)
 
