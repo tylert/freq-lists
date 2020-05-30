@@ -32,10 +32,10 @@ augmented with "gomplate" formatting to turn them into templateble JSON files.
 ::
 
     # Export the binary codeplug as JSON
-    dmrRadio codeplugToJSON foo.rdt foo.json  # or use editcp
+    dmrRadio codeplugToJSON codeplug1.rdt codeplug1.json  # or use editcp
 
     # Convert the JSON codeplug data into a template
-    cat foo.json | jq -f Retevis_RT3S.jq | sed 's/XXX/ds "dmr"/' > Retevis_RT3S.tmpl
+    cat codeplug1.json | jq -f Retevis_RT3S.jq | sed 's/XXX/ds "dmr"/' > Retevis_RT3S.tmpl
 
 
 Generating Codeplugs From Templates
@@ -47,16 +47,22 @@ values is then done before converting them back into a binary codeplug.
 ::
 
     # Use the template to produce a JSON codeplug data file containing specific values
-    echo '{"GeneralSettings": {"RadioID": "3023706", "RadioName": "VA3VXN"}}' |\
-    gomplate -d dmr=stdin:///in.json -f TYT_MD-390G.tmpl | jq . > 3023706.json
-
-    # Use the template to produce a JSON codeplug data file containing specific values
-    cat << EOF > bla.yaml
+    # WARNING:  Don't put spaces in the intro screen lines
+    cat << EOF > codeplug2.yaml
     GeneralSettings:
+      IntroScreenLine1: 3023396
+      IntroScreenLine2: 3021794
       RadioID: 3023396
+      RadioID1: 3021794
+      RadioID2: 3023706
+      RadioID3: 3021795
       RadioName: VA3DGN
     EOF
-    gomplate -d dmr=bla.yaml -f Retevis_RT3S.tmpl | jq . > 3023396.json
+    gomplate -d dmr=codeplug2.yaml -f Retevis_RT3S.tmpl | jq . > codeplug2.json
+
+    # Use the template to produce a JSON codeplug data file containing specific values
+    echo '{"GeneralSettings": {"RadioID": "3023706", "RadioName": "VA3VXN"}}' |\
+    gomplate -d dmr=stdin:///in.json -f Retevis_RT3S.tmpl | jq . > codeplug3.json
 
     # Generate a binary codeplug from the JSON codeplug data file
-    dmrRadio jsonToCodeplug 3023706.json 3023706.rdt  # or use editcp
+    dmrRadio jsonToCodeplug codeplug4.json codeplug4.rdt  # or use editcp
