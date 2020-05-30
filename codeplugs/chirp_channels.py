@@ -9,7 +9,7 @@ import json
 import click
 
 
-def plop_channel(item):
+def plop_channel(item, contact_name=None, group_list=None, scan_list=None):
     '''
     '''
 
@@ -18,7 +18,6 @@ def plop_channel(item):
         "AllowTalkaround": "Off",
         "Autoscan": "Off",
         "ColorCode": "1",
-        "ContactName": "None",
         "DCDMSwitch": "Off",
         "DataCallConfirmed": "Off",
         "Decode1": "Off",
@@ -33,7 +32,6 @@ def plop_channel(item):
         "EmergencyAlarmAck": "Off",
         "EmergencySystem": "None",
         "GPSSystem": "None",
-        "GroupList": "None",
         "InCallCriteria": "Always",
         "LeaderMS": "Off",
         "LoneWorker": "Off",
@@ -48,7 +46,6 @@ def plop_channel(item):
         "RxOnly": "Off",
         "RxRefFrequency": "Low",
         "RxSignallingSystem": "Off",
-        "ScanList": "None",
         "SendGPSInfo": "Off",
         "Squelch": "1",
         "Talkaround": "Off",
@@ -59,25 +56,43 @@ def plop_channel(item):
         "Vox": "Off"
     }
 
+    if scan_list is not None:
+        channel['ScanList'] = scan_list
+    else:
+        channel['ScanList'] = 'None'
+
     if item['Mode'] == 'FM':
-        channel['ChannelMode'] = 'Analog'
         channel['Bandwidth'] = '25'
+        channel['ChannelMode'] = 'Analog'
+        channel['ContactName'] = 'None'
+        channel['GroupList'] = 'None'
     elif item['Mode'] == 'DMR':
-        channel['ChannelMode'] = 'Digital'
         channel['Bandwidth'] = '12.5'
+        channel['ChannelMode'] = 'Digital'
+
+        if contact_name is not None:
+            channel['ContactName'] = contact_name
+        else:
+            channel['ContactName'] = 'None'
+
+        if group_list is not None:
+            channel['GroupList'] = group_list
+        else:
+            channel['GroupList'] = 'None'
+
 
     channel['Name'] = item['Name']
     channel['RxFrequency'] = item['Frequency']
 
     if item['Tone'] == 'TSQL':
-        channel['CtcssEncode'] = item['cToneFreq']
         channel['CtcssDecode'] = item['rToneFreq']
-    elif item['Tone'] == 'Tone':
         channel['CtcssEncode'] = item['cToneFreq']
+    elif item['Tone'] == 'Tone':
         channel['CtcssDecode'] = 'None'
+        channel['CtcssEncode'] = item['cToneFreq']
     else:
-        channel['CtcssEncode'] = 'None'
         channel['CtcssDecode'] = 'None'
+        channel['CtcssEncode'] = 'None'
 
     if item['Duplex'] == '':
         channel['TxFrequencyOffset'] = '+0.00000'
@@ -89,16 +104,22 @@ def plop_channel(item):
 
 
 @click.command()
-@click.option('--channels', '-c', help='Input file')
-def main(channels):
+@click.option('--contact_name', '-c', default=None, help='ContactName value')
+@click.option('--input_filename', '-i', help='Input CHIRP filename')
+@click.option('--group_list', '-g', default=None, help='GroupList value')
+@click.option('--scan_list', '-s', default=None, help='ScanList value')
+def main(contact_name, input_filename, group_list, scan_list):
     '''
     '''
 
     dict_list = []
-    with open(channels, 'r') as channels_file:
-        reader = csv.DictReader(channels_file)
+    with open(input_filename, 'r') as input_file:
+        reader = csv.DictReader(input_file)
         for item in reader:
-            dict_list.append(plop_channel(item))
+            dict_list.append(plop_channel(item,
+                                          contact_name=contact_name,
+                                          group_list=group_list,
+                                          scan_list=scan_list))
 
     for thing in dict_list:
         print('{},'.format(thing))

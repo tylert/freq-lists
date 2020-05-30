@@ -70,3 +70,21 @@ values is then done before converting them back into a binary codeplug.
 
     # Generate a binary codeplug from the JSON codeplug data file
     dmrRadio jsonToCodeplug codeplug4.json codeplug4.rdt  # or use editcp
+
+
+Converting from CHIRP
+---------------------
+
+::
+
+    python3 -m venv ~/.venv
+    source ~/.venv/bin/activate
+    pip install --requirement requirements.txt
+
+    ./chirp_channels.py \
+        --contact_name Contact1 \
+        --input_filename ../info/simplex_2m_70cm.csv \
+        --group_list GroupList1 \
+        --scan_list ScanList1
+
+    ./chirp_channels.py --help
