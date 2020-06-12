@@ -2,7 +2,7 @@
 .
 
 # Set up all the general setttings the way we expect them to be
-| .GeneralSettings.BacklightTime |= "15"
+| .GeneralSettings.BacklightTime |= "10"
 | .GeneralSettings.CHVoiceAnnouncement |= "Off"
 | .GeneralSettings.CallAlertToneDuration |= "Continue"
 | .GeneralSettings.ChFreeIndicationTone |= "On"
