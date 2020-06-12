@@ -47,7 +47,7 @@ def plop_channel(item, contact_name=None, group_list=None, scan_list=None):
         "RxRefFrequency": "Low",
         "RxSignallingSystem": "Off",
         "SendGPSInfo": "Off",
-        "Squelch": "1",
+        "Squelch": "2",
         "Talkaround": "Off",
         "Tot": "300",
         "TotRekeyDelay": "0",

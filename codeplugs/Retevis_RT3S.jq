@@ -17,6 +17,7 @@
 | .GeneralSettings.IntroScreen |= "Character String"
 | .GeneralSettings.IntroScreenLine1 |= "{{ (XXX).GeneralSettings.IntroScreenLine1 }}"
 | .GeneralSettings.IntroScreenLine2 |= "{{ (XXX).GeneralSettings.IntroScreenLine2 }}"
+# | .GeneralSettings.KeypadTones |= "Off"
 | .GeneralSettings.LoneWorkerReminderTime |= "10"
 | .GeneralSettings.LoneWorkerResponseTime |= "1"
 | .GeneralSettings.MicLevel |= "3"
