@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
-# Convert a CHIRP CSV file into a DMR codeplug channel payload
+# Append channels from a CHIRP CSV file into a DMR codeplug JSON.
+# Codeplug JSON must be in a format exported by Editcp.
+# Currently supports codeplugs from Retevis RT3S and TYT MD-UV380 radios.
 
 
 import csv
@@ -67,6 +69,12 @@ def plop_channel(item, contact_name=None, group_list=None, repeater_slot=1,
         channel['ContactName'] = 'None'
         channel['GroupList'] = 'None'
         channel["RepeaterSlot"] = '1'
+    if item['Mode'] == 'NFM':
+        channel['Bandwidth'] = '12.5'
+        channel['ChannelMode'] = 'Analog'
+        channel['ContactName'] = 'None'
+        channel['GroupList'] = 'None'
+        channel["RepeaterSlot"] = '1'
     elif item['Mode'] == 'DMR':
         channel['Bandwidth'] = '12.5'
         channel['ChannelMode'] = 'Digital'
@@ -94,6 +102,8 @@ def plop_channel(item, contact_name=None, group_list=None, repeater_slot=1,
     else:
         channel['CtcssDecode'] = 'None'
         channel['CtcssEncode'] = 'None'
+
+    # XXX FIXME TODO  Add support for DCS if it has been used instead of CTCSS
 
     if item['Duplex'] == '':
         channel['TxFrequencyOffset'] = '+0.00000'
