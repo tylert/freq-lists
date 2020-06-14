@@ -128,15 +128,15 @@ def main(chirp_csv, codeplug_json, contact_name, group_list, repeater_slot,
                                                     scan_list=scan_list)))
 
     # Read in the existing codeplug JSON
-    codeplug_dict = {}
+    codeplug = {}
     with open(codeplug_json, 'r') as json_file:
-        codeplug_dict = json.load(json_file)
+        codeplug = json.load(json_file)
 
     # Tack on the new channels at the end of the list of existing channels
-    codeplug_dict['Channels'].extend(channels)
+    codeplug['Channels'].extend(channels)
 
     # Spit out the updated codeplug JSON
-    print(json.dumps(codeplug_dict, indent=2, sort_keys=False))
+    print(json.dumps(codeplug, indent=2, sort_keys=False))
 
 
 if __name__ == '__main__':
