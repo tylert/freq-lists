@@ -11,8 +11,8 @@ import json
 import click
 
 
-def plop_channel(item, contact_name=None, group_list=None, repeater_slot=1,
-                 scan_list=None):
+def plop_channel(item, contact_name=None, group_list=None, repeater_slot='1',
+                 rx_only='Off', scan_list=None):
     '''
     '''
 
@@ -45,7 +45,6 @@ def plop_channel(item, contact_name=None, group_list=None, repeater_slot=1,
         "QtReverse": "180",
         "ReceiveGPSInfo": "Off",
         "ReverseBurst": "On",
-        "RxOnly": "Off",
         "RxRefFrequency": "Low",
         "RxSignallingSystem": "Off",
         "SendGPSInfo": "Off",
@@ -78,7 +77,7 @@ def plop_channel(item, contact_name=None, group_list=None, repeater_slot=1,
     elif item['Mode'] == 'DMR':
         channel['Bandwidth'] = '12.5'
         channel['ChannelMode'] = 'Digital'
-        channel["RepeaterSlot"] = repeater_slot
+        channel['RepeaterSlot'] = repeater_slot
 
         if contact_name is not None:
             channel['ContactName'] = contact_name
@@ -92,6 +91,7 @@ def plop_channel(item, contact_name=None, group_list=None, repeater_slot=1,
 
     channel['Name'] = item['Name']
     channel['RxFrequency'] = item['Frequency']
+    channel['RxOnly'] = rx_only
 
     if item['Tone'] == 'TSQL':
         channel['CtcssDecode'] = item['rToneFreq']
@@ -103,7 +103,11 @@ def plop_channel(item, contact_name=None, group_list=None, repeater_slot=1,
         channel['CtcssDecode'] = 'None'
         channel['CtcssEncode'] = 'None'
 
-    # XXX FIXME TODO  Add support for DCS if it has been used instead of CTCSS
+    # XXX FIXME TODO  Add support for DCS
+    # D023N, D023I, D754N, D754I, ...
+    # elif item['Tone'] == 'DCS':
+    #   channel['CtcssDecode'] = 'D{}{}'.format(item['DtcsCode'], item['DtcsPolarity'])
+    #   channel['CtcssEncode'] = 'None'
 
     if item['Duplex'] == '':
         channel['TxFrequencyOffset'] = '+0.00000'
@@ -119,10 +123,11 @@ def plop_channel(item, contact_name=None, group_list=None, repeater_slot=1,
 @click.option('--codeplug_json', '-j', default=None, help='Codeplug JSON input')
 @click.option('--contact_name', '-c', default=None, help='ContactName string')
 @click.option('--group_list', '-g', default=None, help='GroupList string')
-@click.option('--repeater_slot', '-r', default=None, help='RepeaterSlot 1 or 2')
+@click.option('--repeater_slot', '-r', default='1', help='RepeaterSlot 1 or 2')
+@click.option('--rx_only', '-x', default='Off', help='RxOnly Off or On')
 @click.option('--scan_list', '-s', default=None, help='ScanList string')
 def main(chirp_csv, codeplug_json, contact_name, group_list, repeater_slot,
-         scan_list):
+         rx_only, scan_list):
     '''
     '''
 
@@ -135,6 +140,7 @@ def main(chirp_csv, codeplug_json, contact_name, group_list, repeater_slot,
                                                     contact_name=contact_name,
                                                     group_list=group_list,
                                                     repeater_slot=repeater_slot,
+                                                    rx_only=rx_only,
                                                     scan_list=scan_list)))
 
     # Read in the existing codeplug JSON
