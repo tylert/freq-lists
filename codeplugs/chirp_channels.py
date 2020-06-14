@@ -9,7 +9,8 @@ import json
 import click
 
 
-def plop_channel(item, contact_name=None, group_list=None, scan_list=None):
+def plop_channel(item, contact_name=None, group_list=None, repeater_slot=1,
+                 scan_list=None):
     '''
     '''
 
@@ -41,7 +42,6 @@ def plop_channel(item, contact_name=None, group_list=None, scan_list=None):
         "PrivateCallConfirmed": "Off",
         "QtReverse": "180",
         "ReceiveGPSInfo": "Off",
-        "RepeaterSlot": "1",
         "ReverseBurst": "On",
         "RxOnly": "Off",
         "RxRefFrequency": "Low",
@@ -66,9 +66,11 @@ def plop_channel(item, contact_name=None, group_list=None, scan_list=None):
         channel['ChannelMode'] = 'Analog'
         channel['ContactName'] = 'None'
         channel['GroupList'] = 'None'
+        channel["RepeaterSlot"] = '1'
     elif item['Mode'] == 'DMR':
         channel['Bandwidth'] = '12.5'
         channel['ChannelMode'] = 'Digital'
+        channel["RepeaterSlot"] = repeater_slot
 
         if contact_name is not None:
             channel['ContactName'] = contact_name
@@ -79,7 +81,6 @@ def plop_channel(item, contact_name=None, group_list=None, scan_list=None):
             channel['GroupList'] = group_list
         else:
             channel['GroupList'] = 'None'
-
 
     channel['Name'] = item['Name']
     channel['RxFrequency'] = item['Frequency']
@@ -107,8 +108,9 @@ def plop_channel(item, contact_name=None, group_list=None, scan_list=None):
 @click.option('--contact_name', '-c', default=None, help='ContactName value')
 @click.option('--input_filename', '-i', help='Input CHIRP filename')
 @click.option('--group_list', '-g', default=None, help='GroupList value')
+@click.option('--repeater_slot', '-r', default=None, help='RepeaterSlot 1 or 2')
 @click.option('--scan_list', '-s', default=None, help='ScanList value')
-def main(contact_name, input_filename, group_list, scan_list):
+def main(contact_name, input_filename, group_list, repeater_slot, scan_list):
     '''
     '''
 
@@ -119,6 +121,7 @@ def main(contact_name, input_filename, group_list, scan_list):
             dict_list.append(plop_channel(item,
                                           contact_name=contact_name,
                                           group_list=group_list,
+                                          repeater_slot=repeater_slot,
                                           scan_list=scan_list))
 
     for thing in dict_list:
