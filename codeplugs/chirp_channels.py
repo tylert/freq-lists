@@ -105,27 +105,38 @@ def plop_channel(item, contact_name=None, group_list=None, repeater_slot=1,
 
 
 @click.command()
-@click.option('--contact_name', '-c', default=None, help='ContactName value')
-@click.option('--input_filename', '-i', help='Input CHIRP filename')
-@click.option('--group_list', '-g', default=None, help='GroupList value')
+@click.option('--chirp_csv', '-i', default=None, help='CHIRP CSV input')
+@click.option('--codeplug_json', '-j', default=None, help='Codeplug JSON input')
+@click.option('--contact_name', '-c', default=None, help='ContactName string')
+@click.option('--group_list', '-g', default=None, help='GroupList string')
 @click.option('--repeater_slot', '-r', default=None, help='RepeaterSlot 1 or 2')
-@click.option('--scan_list', '-s', default=None, help='ScanList value')
-def main(contact_name, input_filename, group_list, repeater_slot, scan_list):
+@click.option('--scan_list', '-s', default=None, help='ScanList string')
+def main(chirp_csv, codeplug_json, contact_name, group_list, repeater_slot,
+         scan_list):
     '''
     '''
 
-    dict_list = []
-    with open(input_filename, 'r') as input_file:
-        reader = csv.DictReader(input_file)
+    # Read in the new channels to append from the CHIRP CSV file
+    channels = []
+    with open(chirp_csv, 'r') as csv_file:
+        reader = csv.DictReader(csv_file)
         for item in reader:
-            dict_list.append(plop_channel(item,
-                                          contact_name=contact_name,
-                                          group_list=group_list,
-                                          repeater_slot=repeater_slot,
-                                          scan_list=scan_list))
+            channels.append(json.loads(plop_channel(item,
+                                                    contact_name=contact_name,
+                                                    group_list=group_list,
+                                                    repeater_slot=repeater_slot,
+                                                    scan_list=scan_list)))
 
-    for thing in dict_list:
-        print('{},'.format(thing))
+    # Read in the existing codeplug JSON
+    codeplug_dict = {}
+    with open(codeplug_json, 'r') as json_file:
+        codeplug_dict = json.load(json_file)
+
+    # Tack on the new channels at the end of the list of existing channels
+    codeplug_dict['Channels'].extend(channels)
+
+    # Spit out the updated codeplug JSON
+    print(json.dumps(codeplug_dict, indent=2, sort_keys=False))
 
 
 if __name__ == '__main__':
