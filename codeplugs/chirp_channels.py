@@ -11,8 +11,8 @@ import json
 import click
 
 
-def plop_channel(item, contact_name=None, group_list=None, repeater_slot='1',
-                 rx_only='Off', scan_list=None):
+def plop_channel(item, contact_name='Contact1', group_list='GroupList1',
+                 repeater_slot='1', rx_only='Off', scan_list='ScanList1'):
     '''
     '''
 
@@ -57,7 +57,7 @@ def plop_channel(item, contact_name=None, group_list=None, repeater_slot='1',
         "Vox": "Off"
     }
 
-    if scan_list is not None:
+    if scan_list is not None and scan_list != '':
         channel['ScanList'] = scan_list
     else:
         channel['ScanList'] = 'None'
@@ -79,12 +79,12 @@ def plop_channel(item, contact_name=None, group_list=None, repeater_slot='1',
         channel['ChannelMode'] = 'Digital'
         channel['RepeaterSlot'] = repeater_slot
 
-        if contact_name is not None:
+        if contact_name is not None and contact_name != '':
             channel['ContactName'] = contact_name
         else:
             channel['ContactName'] = 'None'
 
-        if group_list is not None:
+        if group_list is not None and group_list != '':
             channel['GroupList'] = group_list
         else:
             channel['GroupList'] = 'None'
@@ -121,11 +121,11 @@ def plop_channel(item, contact_name=None, group_list=None, repeater_slot='1',
 @click.command()
 @click.option('--chirp_csv', '-i', default=None, help='CHIRP CSV input')
 @click.option('--codeplug_json', '-j', default=None, help='Codeplug JSON input')
-@click.option('--contact_name', '-c', default=None, help='ContactName string')
-@click.option('--group_list', '-g', default=None, help='GroupList string')
+@click.option('--contact_name', '-c', default='Contact1', help='ContactName string')
+@click.option('--group_list', '-g', default='GroupList1', help='GroupList string')
 @click.option('--repeater_slot', '-r', default='1', help='RepeaterSlot 1 or 2')
 @click.option('--rx_only', '-x', default='Off', help='RxOnly Off or On')
-@click.option('--scan_list', '-s', default=None, help='ScanList string')
+@click.option('--scan_list', '-s', default='ScanList1', help='ScanList string')
 def main(chirp_csv, codeplug_json, contact_name, group_list, repeater_slot,
          rx_only, scan_list):
     '''
