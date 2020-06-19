@@ -19,9 +19,9 @@ You must have the following tools installed:
 .. _gomplate: https://gomplate.ca/
 .. _dmrconfig: https://github.com/sergev/dmrconfig/
 
-There's a good programming tutorial at
+There's some good programming tutorials at
 https://www.jeffreykopcak.com/2017/06/11/dmr-in-amateur-radio-programming-a-code-plug/
-which is mostly-applicable.
+and https://www.youtube.com/watch?v=VExx628R0DM which are mostly-applicable.
 
 
 Converting Existing Codeplugs To Templates
