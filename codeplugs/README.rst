@@ -96,7 +96,7 @@ Updating User Database
     cat user.csv | cut -d',' -f1-7 | sort -g | egrep '^[0-9]' > clean.csv
 
     # Build a list of countries to include
-    cat << EOF > coutries.txt
+    cat << EOF > countries.txt
     Australia
     Canada
     France
@@ -106,5 +106,5 @@ Updating User Database
     EOF
 
     # Prepare the filtered user database and upload it to the radio
-    dmrRadio filterUsers coutries.txt clean.csv ready.csv
+    dmrRadio filterUsers countries.txt clean.csv ready.csv
     dmrRadio writeUV380Users ready.csv
