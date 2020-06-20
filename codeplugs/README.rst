@@ -82,9 +82,29 @@ Converting from CHIRP to DMR Channels
     pip install --requirement requirements.txt
 
     ./chirp_channels.py \
-        --contact_name Contact1 \
         --input_filename ../info/simplex_2m_70cm.csv \
-        --group_list GroupList1 \
-        --scan_list ScanList1
 
     ./chirp_channels.py --help
+
+
+Updating User Database
+----------------------
+
+::
+    # Fetch the userdb and strip off the stuff the dmrRadio doesn't like
+    wget https://database.radioid.net/static/user.csv
+    cat user.csv | cut -d',' -f1-7 | sort -g | egrep '^[0-9]' > clean.csv
+
+    # Build a list of countries to include
+    cat << EOF > coutries.txt
+    Australia
+    Canada
+    France
+    New Zealand
+    United Kingdom
+    United States
+    EOF
+
+    # Prepare the filtered user database and upload it to the radio
+    dmrRadio filterUsers coutries.txt clean.csv ready.csv
+    dmrRadio writeUV380Users ready.csv
