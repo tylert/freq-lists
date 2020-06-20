@@ -77,3 +77,9 @@
 | .MenuItems.TextMessage |= "On"
 | .MenuItems.ToneOrAlert |= "On"
 | .MenuItems.Vox |= "On"
+
+# Set up the side buttons the way we expect them to be
+| .RadioButtons[0] |= {"Button": "Unassigned (default)"}
+| .RadioButtons[1] |= {"Button": "Unassigned (default)"}
+| .RadioButtons[2] |= {"Button": "Unassigned (default)"}
+| .RadioButtons[3] |= {"Button": "Unassigned (default)"}
