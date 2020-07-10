@@ -91,6 +91,7 @@ Updating User Database
 ----------------------
 
 ::
+
     # Fetch the userdb and strip off the stuff that dmrRadio doesn't like yet
     wget https://database.radioid.net/static/user.csv
     cat user.csv | cut -d',' -f1-7 | sort -g | egrep '^[0-9]' > clean.csv
