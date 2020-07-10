@@ -68,7 +68,7 @@ def plop_channel(item, contact_name='Contact1', group_list='GroupList1',
         channel['ContactName'] = 'None'
         channel['GroupList'] = 'None'
         channel["RepeaterSlot"] = '1'
-    if item['Mode'] == 'NFM':
+    elif item['Mode'] == 'NFM':
         channel['Bandwidth'] = '12.5'
         channel['ChannelMode'] = 'Analog'
         channel['ContactName'] = 'None'
