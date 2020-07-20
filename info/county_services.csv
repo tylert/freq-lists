@@ -1,2 +1,2 @@
-Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL
-1,LANARK,153.815000,,0.000000,,88.5,88.5,023,NN,FM,5.00,,,,,
+Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE
+1,LANARK,153.815000,,0.000000,,88.5,88.5,023,NN,FM,5.00,,,,,,
