@@ -72,6 +72,18 @@ values is then done before converting them back into a binary codeplug.
     dmrRadio jsonToCodeplug codeplug4.json codeplug4.rdt  # or use editcp
 
 
+Starting a New Codeplug
+-----------------------
+
+::
+
+    # https://github.com/DaleFarnsworth-DMR/dmrRadio/issues/1
+    # dmrRadio newCodeplug action not yet supported
+    # use editcp to create a new codeplug and save it
+    dmrRadio codeplugToJSON foo.rdt foo.json
+    cat foo.json | jq 'del(.Channels[])' > bar.json
+
+
 Converting from CHIRP to DMR Channels
 -------------------------------------
 
