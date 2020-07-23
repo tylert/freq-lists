@@ -7,7 +7,7 @@ Requirements
 
 You must have the following tools installed:
 
-* (REQUIRED) editcp_ (and/or just the "dmrRadio_" binary) for exporting/importing codeplugs to/from JSON
+* (REQUIRED) editcp_ 1.0.23 or newer (and/or just the "dmrRadio_" binary 1.0.23 or newer) for exporting/importing codeplugs to/from JSON
 * (REQUIRED) jq_ for working with JSON payloads
 * (OPTIONAL) dmrconfig_ for working with codeplugs for radios that aren't supported by editcp yet
 
@@ -27,8 +27,10 @@ Converting Existing Codeplugs To Templates
 ::
 
     # Export the binary codeplug as JSON and fix some values
-    dmrRadio codeplugToJSON codeplug.rdt codeplug.json  # or use editcp
-    cat codeplug.json | jq -f Retevis_RT3S.jq > Retevis_RT3S.json
+    dmrRadio codeplugToJSON codeplug.rdt before.json  # or use editcp
+    cat before.json | jq -f Retevis_RT3S.jq > after.json
+
+    # TODO:  Add example for codeplugs for foreign models that editcp doesn't support yet
 
 
 Generating Codeplugs From Templates
@@ -40,7 +42,7 @@ Generating Codeplugs From Templates
     # WARNING:  Don't put spaces in the intro screen lines
     # ========
 
-    # Use the template to produce a JSON codeplug data file containing specific values
+    # Create a data file containing your specific values
     cat << EOF > data.json
     {
       "GeneralSettings": {
@@ -54,7 +56,11 @@ Generating Codeplugs From Templates
       }
     }
     EOF
+
+    # Merge your data file with your codeplug
     jq -s '.[0] * .[1]' data.json codeplug.json
+
+    # Convert the JSON file back into a binary codeplug
     dmrRadio jsonToCodeplug codeplug.json codeplug.rdt  # or use editcp
 
 
@@ -63,11 +69,12 @@ Starting a New Codeplug
 
 ::
 
-    # https://github.com/DaleFarnsworth-DMR/dmrRadio/issues/1
-    # dmrRadio newCodeplug action not yet supported
-    # use editcp to create a new codeplug and save it
+    # Create a brand new, empty codeplug
+    dmrRadio newCodeplug -model RT3S -freq "136-174_400-480" new.rdt  # or use editcp
+
+    # Make it even emptier still
     dmrRadio codeplugToJSON new.rdt new.json
-    cat new.json | jq 'del(.Channels[])' > empty.json
+    cat new.json | jq 'del(.Channels[])' | jq 'del(.GroupLists[])' | jq 'del(.ScanLists[])' | jq 'del(.Zones[])' > empty.json
 
 
 Converting from CHIRP to DMR Channels
