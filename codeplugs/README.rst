@@ -9,14 +9,11 @@ You must have the following tools installed:
 
 * (REQUIRED) editcp_ (and/or just the "dmrRadio_" binary) for exporting/importing codeplugs to/from JSON
 * (REQUIRED) jq_ for working with JSON payloads
-* (REQUIRED) sed for doing some things that jq can't do (to fix weird nested-quoting stuff)
-* (REQUIRED) gomplate_ for templating files
 * (OPTIONAL) dmrconfig_ for working with codeplugs for radios that aren't supported by editcp yet
 
 .. _editcp: https://www.farnsworth.org/dale/codeplug/editcp/
 .. _dmrRadio: https://github.com/DaleFarnsworth-DMR/dmrRadio
 .. _jq: https://stedolan.github.io/jq/
-.. _gomplate: https://gomplate.ca/
 .. _dmrconfig: https://github.com/sergev/dmrconfig/
 
 There are some really good programming tutorials at
@@ -27,23 +24,15 @@ for learning about the digital side of things.
 Converting Existing Codeplugs To Templates
 ------------------------------------------
 
-Codeplugs are exported to JSON text using "Editcp".  JSON files are then
-augmented with "gomplate" formatting to turn them into templateble JSON files.
-
 ::
 
-    # Export the binary codeplug as JSON
-    dmrRadio codeplugToJSON codeplug1.rdt codeplug1.json  # or use editcp
-
-    # Convert the JSON codeplug data into a template
-    cat codeplug1.json | jq -f Retevis_RT3S.jq | sed 's/XXX/ds "dmr"/' > Retevis_RT3S.tmpl
+    # Export the binary codeplug as JSON and fix some values
+    dmrRadio codeplugToJSON codeplug.rdt codeplug.json  # or use editcp
+    cat codeplug.json | jq -f Retevis_RT3S.jq > Retevis_RT3S.json
 
 
 Generating Codeplugs From Templates
 -----------------------------------
-
-Using a templateable JSON file to produce a JSON file containing specific
-values is then done before converting them back into a binary codeplug.
 
 ::
 
@@ -52,24 +41,21 @@ values is then done before converting them back into a binary codeplug.
     # ========
 
     # Use the template to produce a JSON codeplug data file containing specific values
-    cat << EOF > codeplug2.yaml
-    GeneralSettings:
-      IntroScreenLine1: 3023396
-      IntroScreenLine2: 3021794
-      RadioID: 3023396
-      RadioID1: 3021794
-      RadioID2: 3023706
-      RadioID3: 3021795
-      RadioName: VA3DGN
+    cat << EOF > data.json
+    {
+      "GeneralSettings": {
+        "IntroScreenLine1": "3023396",
+        "IntroScreenLine2": "3021794",
+        "RadioID": "3023396",
+        "RadioID1": "3021794",
+        "RadioID2": "3023706",
+        "RadioID3": "3021795",
+        "RadioName": "VA3DGN"
+      }
+    }
     EOF
-    gomplate -d dmr=codeplug2.yaml -f Retevis_RT3S.tmpl | jq . > codeplug2.json
-
-    # Use the template to produce a JSON codeplug data file containing specific values
-    echo '{"GeneralSettings": {"RadioID": "3023706", "RadioName": "VA3VXN"}}' |\
-    gomplate -d dmr=stdin:///in.json -f Retevis_RT3S.tmpl | jq . > codeplug3.json
-
-    # Generate a binary codeplug from the JSON codeplug data file
-    dmrRadio jsonToCodeplug codeplug4.json codeplug4.rdt  # or use editcp
+    jq -s '.[0] * .[1]' data.json codeplug.json
+    dmrRadio jsonToCodeplug codeplug.json codeplug.rdt  # or use editcp
 
 
 Starting a New Codeplug
@@ -80,8 +66,8 @@ Starting a New Codeplug
     # https://github.com/DaleFarnsworth-DMR/dmrRadio/issues/1
     # dmrRadio newCodeplug action not yet supported
     # use editcp to create a new codeplug and save it
-    dmrRadio codeplugToJSON foo.rdt foo.json
-    cat foo.json | jq 'del(.Channels[])' > bar.json
+    dmrRadio codeplugToJSON new.rdt new.json
+    cat new.json | jq 'del(.Channels[])' > empty.json
 
 
 Converting from CHIRP to DMR Channels
