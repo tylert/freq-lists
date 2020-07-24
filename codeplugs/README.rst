@@ -114,3 +114,11 @@ Updating User Database
     # Prepare the filtered user database and upload it to the radio
     dmrRadio filterUsers countries.txt clean.csv ready.csv
     dmrRadio writeUV380Users ready.csv
+
+
+Links
+-----
+
+* https://shapeshed.com/jq-json/
+* https://programminghistorian.org/en/lessons/json-and-jq
+* https://stackoverflow.com/questions/19529688/how-to-merge-2-json-objects-from-2-files-using-jq
