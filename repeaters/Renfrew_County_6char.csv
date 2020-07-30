@@ -1,4 +1,4 @@
 Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE
 1,UE3YYX,443.200000,+,5.000000,Tone,114.8,114.8,023,NN,FM,6.25,,Arnprior,,,,
-2,VE3STP,147.060000,-,0.600000,Tone,114.8,114.8,023,NN,FM,5.00,,Renfrew,,,,
+2,VE3STP,147.060000,-,0.600000,TSQL,114.8,114.8,023,NN,FM,5.00,,Renfrew,,,,
 3,VE3ZRR,146.910000,-,0.600000,,88.5,88.5,023,NN,FM,5.00,,Horton,,,,
