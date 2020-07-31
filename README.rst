@@ -55,3 +55,5 @@ Some other random, semi-confusing notes collected about local DMR stuff::
     (use TS=2 for all TG except 3022)
 
     VE3ORF TG=2
+
+* http://va3odg.ddns.net:380/
