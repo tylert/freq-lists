@@ -11,7 +11,7 @@ You must have the following tools installed:
 * (REQUIRED) jq_ for working with JSON payloads
 * (OPTIONAL) dmrconfig_ for working with codeplugs for radios that aren't supported by editcp yet
 
-.. _editcp: https://www.farnsworth.org/dale/codeplug/editcp/
+.. _editcp: https://github.com/DaleFarnsworth-DMR/editcp
 .. _dmrRadio: https://github.com/DaleFarnsworth-DMR/dmrRadio
 .. _jq: https://stedolan.github.io/jq/
 .. _dmrconfig: https://github.com/sergev/dmrconfig/
