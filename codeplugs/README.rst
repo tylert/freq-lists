@@ -43,7 +43,7 @@ Generating Codeplugs From Templates
     # ========
 
     # Create a data file containing your specific values
-    cat << EOF > data.json
+    cat << EOF > VA3DGN.conf
     {
       "GeneralSettings": {
         "IntroScreenLine1": "3023396",
@@ -58,10 +58,10 @@ Generating Codeplugs From Templates
     EOF
 
     # Merge your data file with your codeplug
-    jq -s '.[0] * .[1]' data.json codeplug.json
+    jq -s '.[0] * .[1]' Retevis_RT3S.tmpl VA3DGN.conf > VA3DGN.json
 
     # Convert the JSON file back into a binary codeplug
-    dmrRadio jsonToCodeplug codeplug.json codeplug.rdt  # or use editcp
+    dmrRadio jsonToCodeplug VA3DGN.json VA3DGN.rdt  # or use editcp
 
 
 Starting a New Codeplug
