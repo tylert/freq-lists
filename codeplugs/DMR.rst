@@ -13,11 +13,11 @@ You can join XLX196_ using TS=2, TG=6 via the linked repeaters.
 
 ::
 
-    VA3ODG TG=6  local
+    VA3ODG 444.85+ TG=6 local
 
-    VE3TST 444.125 TG=2 TS=2
+    VE3TST 444.125+ TG=2 TS=2
 
-    VE2RAO 441.9500 Brandmeister
+    VE2RAO 441.95+ Brandmeister
         TG=3022 TS=1 CC=1  (Quebec)
         TG=3023 TS=2 CC=1  (Ontario)
         TG=302 TS=2 CC=1  (Canada)
