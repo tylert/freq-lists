@@ -11,9 +11,15 @@ You can join XLX196_ using TS=2, TG=6 via the linked repeaters.
 .. _XLX196: https://xrf196.spdns.org/
 .. _VA3ODG: http://va3odg.ddns.net:380/
 
-::
 
-    VA3ODG 444.85+ TG=6 local
+Talkgroups
+----------
+
+* 302;  Canada
+* 3023;  Ontario
+* 3022;  Quebec
+
+::
 
     VE3TST 444.125+ TG=2 TS=2
 
