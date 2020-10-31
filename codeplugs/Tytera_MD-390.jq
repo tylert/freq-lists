@@ -1,7 +1,7 @@
 # jq
 .
 
-# Set up all the general setttings the way we expect them to be
+# Set up the general setttings the way we expect them to be
 | .GeneralSettings.BacklightTime |= "10"
 | .GeneralSettings.CallAlertToneDuration |= "Continue"
 | .GeneralSettings.ChFreeIndicationTone |= "On"
@@ -32,7 +32,7 @@
 | .GeneralSettings.TxPreambleDuration |= "300"
 | .GeneralSettings.VoxSensitivity |= "3"
 
-# Set up all the menu items the way we expect them to be
+# Set up the menu items the way we expect them to be
 | .MenuItems.Answered |= "On"
 | .MenuItems.Backlight |= "On"
 | .MenuItems.CallAlert |= "On"
@@ -65,6 +65,6 @@
 # Set up the side buttons the way we expect them to be
 | .ButtonDefinitions.LongPressDuration |= "1000"
 | .RadioButtons[0] |= {"Button": "Unassigned (default)"}
-| .RadioButtons[1] |= {"Button": "Unassigned (default)"}
+| .RadioButtons[1] |= {"Button": "High/Low Power"}
 | .RadioButtons[2] |= {"Button": "Monitor"}
-| .RadioButtons[3] |= {"Button": "Manual Dial For Private"}
+| .RadioButtons[3] |= {"Button": "All alert Tones On/Off"}
