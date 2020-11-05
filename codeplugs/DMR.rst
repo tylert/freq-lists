@@ -32,3 +32,10 @@ Talkgroups
     (use TS=2 for all TG except 3022)
 
     VE3ORF TG=2
+
+
+Hotspots
+--------
+
+* VE3YXY 445.225 +0.0
+* VA3DGN/VA3VXN 434.100 +5.0, 434.200 +5.0
