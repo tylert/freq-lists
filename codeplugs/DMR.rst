@@ -37,5 +37,10 @@ Talkgroups
 Hotspots
 --------
 
-* VE3YXY 445.225 +0.0
-* VA3DGN/VA3VXN 434.100 +5.0, 434.200 +5.0
+::
+
+    VE3YXY -> 445.225 +0.0
+    VA3DGN, VA3VXN -> 434.100 +5.0, 434.200 +5.0
+
+* https://www.ailunce.com/blog/Set-up-MMDVM-DMR-Hotspot-to-work-with-Ailunce-HD1
+* https://github.com/VR2VYE/MMDVM_HS_firmware
