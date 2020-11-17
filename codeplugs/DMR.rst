@@ -44,3 +44,11 @@ Hotspots
 
 * https://www.ailunce.com/blog/Set-up-MMDVM-DMR-Hotspot-to-work-with-Ailunce-HD1
 * https://github.com/VR2VYE/MMDVM_HS_firmware
+
+
+Admit Criteria The  Admit  Criteria  determines  when  your  radio  is  allowed
+to  transmit.  The recommended setting for repeater channels is Color Code
+Free; this configures  your  radio  to  be  polite  to  your  own  digital
+system.    You  should configure your In Call Criteria to Follow Admit
+Criteria. Simplex channels  should  be  configured  as  Always  for  both
+Admit  Criteria  and  Always or Follow TX for In Call Criteria.
