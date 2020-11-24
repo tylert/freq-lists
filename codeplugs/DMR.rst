@@ -5,8 +5,11 @@ You can join XLX196_ using TS=2, TG=6 via the linked repeaters.
 
 * 302064, VE3STP, 443.600+, CC=1
 * 302065, VA3ODG_, 444.850+, CC=1
+* 302070, VA3AAR, 145.550-, CC=1
 * 302093, VE2CRA, 444.400+, CC=1
+* 302096, VE3STP, 147.060-, CC=1
 * 302108, VE3HOZ, 442.300+, CC=1
+* 302117, VE3RAM, 443.700+, CC=1
 
 .. _XLX196: https://xrf196.spdns.org/
 .. _VA3ODG: http://va3odg.ddns.net:380/
@@ -39,8 +42,9 @@ Hotspots
 
 ::
 
-    VE3YXY -> 445.225 +0.0
-    VA3DGN, VA3VXN -> 434.100 +5.0, 434.200 +5.0
+    VE3YXY -> 445.225
+    VA3DGN -> 434.100+
+    VA3VXN -> 434.200+
 
 * https://www.ailunce.com/blog/Set-up-MMDVM-DMR-Hotspot-to-work-with-Ailunce-HD1
 * https://github.com/VR2VYE/MMDVM_HS_firmware
