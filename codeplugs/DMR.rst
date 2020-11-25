@@ -56,3 +56,11 @@ Free; this configures  your  radio  to  be  polite  to  your  own  digital
 system.    You  should configure your In Call Criteria to Follow Admit
 Criteria. Simplex channels  should  be  configured  as  Always  for  both
 Admit  Criteria  and  Always or Follow TX for In Call Criteria.
+
+
+Repeaters and Transcoding
+-------------------------
+
+* https://www.chrishoodblog.com/building-a-dmr-repeater-using-bridgecom-mobiles-pt1/
+* https://www.alibaba.com/product-detail/VHF-UHF-FM-Repeater-Base-Units_592290636.html?spm=a2700.details.maylikeexp.6.37a168cdQOVPda
+* https://www.chrishoodblog.com/make-your-own-dmr-server/
