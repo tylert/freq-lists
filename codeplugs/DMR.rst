@@ -51,6 +51,7 @@ Hotspots
 * https://www.ailunce.com/blog/Set-up-MMDVM-DMR-Hotspot-to-work-with-Ailunce-HD1
 * https://www.ailunce.com/blog/How-to-set-Rx-Tx-Offset
 * https://github.com/VR2VYE/MMDVM_HS_firmware
+* https://github.com/g4klx/MMDVMHost/pull/90
 
 
 Admit Criteria The  Admit  Criteria  determines  when  your  radio  is  allowed
