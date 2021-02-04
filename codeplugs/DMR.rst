@@ -66,5 +66,4 @@ Repeaters and Transcoding
 -------------------------
 
 * https://www.chrishoodblog.com/building-a-dmr-repeater-using-bridgecom-mobiles-pt1/
-* https://www.alibaba.com/product-detail/VHF-UHF-FM-Repeater-Base-Units_592290636.html?spm=a2700.details.maylikeexp.6.37a168cdQOVPda
 * https://www.chrishoodblog.com/make-your-own-dmr-server/
