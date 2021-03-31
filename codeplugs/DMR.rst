@@ -67,3 +67,4 @@ Repeaters and Transcoding
 
 * https://www.chrishoodblog.com/building-a-dmr-repeater-using-bridgecom-mobiles-pt1/
 * https://www.chrishoodblog.com/make-your-own-dmr-server/
+* https://sin.groups.io/g/main/message/355
