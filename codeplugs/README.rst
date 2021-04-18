@@ -99,7 +99,7 @@ Updating User Database
 
     # Fetch the userdb and strip off the stuff that dmrRadio doesn't like yet
     wget https://database.radioid.net/static/user.csv
-    cat user.csv | cut -d',' -f1-7 | sort -g | egrep '^[0-9]' > clean.csv
+    cat user.csv | cut -d',' -f1-7 | sort -g | egrep '^[0-9]' > scrubbed.csv
 
     # Build a list of countries to include
     cat << EOF > countries.txt
@@ -112,8 +112,8 @@ Updating User Database
     EOF
 
     # Prepare the filtered user database and upload it to the radio
-    dmrRadio filterUsers countries.txt clean.csv ready.csv
-    dmrRadio writeUV380Users ready.csv
+    dmrRadio filterUsers countries.txt scrubbed.csv filtered.csv
+    dmrRadio writeUV380Users filtered.csv
 
 
 Links
