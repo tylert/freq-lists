@@ -14,7 +14,7 @@ You must have the following tools installed:
 .. _editcp: https://github.com/DaleFarnsworth-DMR/editcp
 .. _dmrRadio: https://github.com/DaleFarnsworth-DMR/dmrRadio
 .. _jq: https://stedolan.github.io/jq/
-.. _dmrconfig: https://github.com/sergev/dmrconfig/
+.. _dmrconfig: https://github.com/OpenRTX/dmrconfig/
 
 There are some really good programming tutorials at
 https://youtu.be/VExx628R0DM and https://youtu.be/Lw0Y-jQZMZ0 which are useful

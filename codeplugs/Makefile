@@ -10,6 +10,7 @@ GENERATED_FILES = $(JSON) $(RDT) user.csv scrubbed.csv filtered.csv
 .PHONY: all
 all: $(CALLSIGN).rdt
 
+# Force some settings to be set and some config values to be configured
 $(CALLSIGN).json: $(RADIO).tmpl $(RADIO).jq $(CALLSIGN).conf
 	@cat $(RADIO).tmpl | jq --from-file $(RADIO).jq > $(@) && \
   jq --slurp '.[0] * .[1]' $(RADIO).tmpl $(CALLSIGN).conf > $(@)
