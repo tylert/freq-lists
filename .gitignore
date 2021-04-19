@@ -1,3 +1,8 @@
 .DS_Store
 .*.sw?
 .~lock.*#
+
+codeplugs/countries.txt
+codeplugs/user.csv
+codeplugs/scrubbed.csv
+codeplugs/filtered.csv

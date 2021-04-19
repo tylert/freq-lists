@@ -5,7 +5,7 @@ CONF = $(wildcard *.conf)
 JSON = $(CONF:.conf=.json)
 RDT = $(CONF:.conf=.rdt)
 
-GENERATED_FILES = $(JSON) $(RDT) user.csv scrubbed.csv filtered.csv
+GENERATED_FILES = $(JSON) $(RDT) countries.txt user.csv scrubbed.csv filtered.csv
 
 .PHONY: all
 all: $(CALLSIGN).rdt
@@ -22,6 +22,9 @@ $(CALLSIGN).json: $(RADIO).tmpl $(RADIO).jq $(CALLSIGN).conf
 write: $(CALLSIGN).rdt
 	@dmrRadio writeCodeplug $<
 
+countries.txt:
+	@echo "Australia\nCanada\nNew Zealand\nUnited Kingdom\nUnited States" > $(@)
+
 user.csv:
 	@wget https://database.radioid.net/static/$(@)
 
@@ -31,8 +34,8 @@ scrubbed.csv: user.csv
 
 .PHONY: contacts
 contacts: filtered.csv
-filtered.csv: scrubbed.csv
-	@dmrRadio filterUsers countries.txt $(^) $(@)
+filtered.csv: scrubbed.csv countries.txt
+	@dmrRadio filterUsers countries.txt $(<) $(@)
 
 .PHONY: clean
 clean:
