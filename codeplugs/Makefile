@@ -1,5 +1,5 @@
 RADIO ?= Retevis_RT3S
-CALLSIGN ?= VA3DGN
+# CALLSIGN ?= VA3DGN
 
 CONF = $(wildcard *.conf)
 JSON = $(CONF:.conf=.json)
@@ -8,7 +8,7 @@ RDT = $(CONF:.conf=.rdt)
 GENERATED_FILES = $(JSON) $(RDT) countries.txt user.csv scrubbed.csv filtered.csv
 
 .PHONY: all
-all: $(CALLSIGN).rdt
+all: $(CALLSIGN).rdt contacts
 
 # Force some settings to be set and some config values to be configured
 $(CALLSIGN).json: $(RADIO).tmpl $(RADIO).jq $(CALLSIGN).conf
@@ -18,8 +18,8 @@ $(CALLSIGN).json: $(RADIO).tmpl $(RADIO).jq $(CALLSIGN).conf
 %.rdt: %.json
 	@dmrRadio jsonToCodeplug $(<) $(@)
 
-.PHONY: write
-write: $(CALLSIGN).rdt
+.PHONY: write_codeplug
+write_codeplug: $(CALLSIGN).rdt
 	@dmrRadio writeCodeplug $(<)
 
 countries.txt:
@@ -41,6 +41,9 @@ filtered.csv: scrubbed.csv countries.txt
 .PHONY: write_contacts
 write_contacts: filtered.csv
 	@dmrRadio writeUV38Users $(<)
+
+.PHONY: write
+write: write_codeplug write_contacts
 
 .PHONY: clean
 clean:
