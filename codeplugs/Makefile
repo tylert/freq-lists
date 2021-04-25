@@ -16,11 +16,11 @@ $(CALLSIGN).json: $(RADIO).tmpl $(RADIO).jq $(CALLSIGN).conf
   jq --slurp '.[0] * .[1]' $(RADIO).tmpl $(CALLSIGN).conf > $(@)
 
 %.rdt: %.json
-	@dmrRadio jsonToCodeplug $< $@
+	@dmrRadio jsonToCodeplug $(<) $(@)
 
 .PHONY: write
 write: $(CALLSIGN).rdt
-	@dmrRadio writeCodeplug $<
+	@dmrRadio writeCodeplug $(<)
 
 countries.txt:
 	@echo "Australia\nCanada\nNew Zealand\nUnited Kingdom\nUnited States" > $(@)
@@ -30,12 +30,17 @@ user.csv:
 
 # Force all rows to have 7 columns, sort by ID, drop lines that don't start with an ID
 scrubbed.csv: user.csv
-	@cat $(^) | cut -d',' -f1-7 | sort -g | egrep '^[0-9]' > $(@)
+	@cat $(<) | cut -d',' -f1-7 | sort -g | egrep '^[0-9]' > $(@)
 
 .PHONY: contacts
 contacts: filtered.csv
 filtered.csv: scrubbed.csv countries.txt
 	@dmrRadio filterUsers countries.txt $(<) $(@)
+
+# This kinda assumes you're using a Retevis RT3S or Tytera/TYT MD-UV380/MD-UV390
+.PHONY: write_contacts
+write_contacts: filtered.csv
+	@dmrRadio writeUV38Users $(<)
 
 .PHONY: clean
 clean:

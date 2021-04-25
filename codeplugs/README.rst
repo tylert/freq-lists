@@ -105,7 +105,6 @@ Updating User Database
     cat << EOF > countries.txt
     Australia
     Canada
-    France
     New Zealand
     United Kingdom
     United States
