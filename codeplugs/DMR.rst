@@ -68,3 +68,62 @@ Repeaters and Transcoding
 * https://www.chrishoodblog.com/building-a-dmr-repeater-using-bridgecom-mobiles-pt1/
 * https://www.chrishoodblog.com/make-your-own-dmr-server/
 * https://sin.groups.io/g/main/message/355
+
+::
+
+    Control Software
+      Controller Software:  MMDVM Host
+      Controller Mode:  Duplex Repeater
+
+    MMDVMHost Configuration
+      DMR Mode:  On  (RF Hangtime:  2, Net Hangtime:  20)
+      All other modes disabled
+      MMDVM Display Type:  None
+
+    General Configuration
+      Hostname:  ve2cra
+      Node Callsign:  VE2CRA
+      CCS7/DMR ID:  302093
+      Radio Frequency RX:  449.400000
+      Radio Frequncy TX:  444.400000
+      Latitude:  45.50
+      Longitude:  -75.85
+      Town:  Ottawa-Gatineau FN25bm
+      Country:  Canada
+      URL:  https://oarc.net  (Manual)
+      Radio/Modem Type:  STM32-DVM (USB)
+      Node Type:  Public
+      DMR Access List:  blank
+      APRS Host Enable:  Off
+      APRS Host:  noam.aprs2.net
+      System Time Zone:  UTC
+      Dashboard Language:  english_us
+
+    DMR Configuration
+      DMR Master:  DMRGateway
+      BrandMeister Master:  BM_3021_Canada
+      BM Hotspot Security:  blank
+      BrandMeister Network ESSID:  None
+      BrandMeister Network Enable:  On
+      DMR+ Master:  DMR+_IPSC2-Canada
+      DMR+ Network:  blank
+      DMR+ Network ESSID:  None
+      DMR+ Network Enable:  Off
+      XLX Master:  196
+      XLX Startup Module:  B
+      XLX Master Enable:  On
+      DMR Color Code:  1
+      DMR EmbeddedLCOnly:  Off
+      DMR DumpTAData:  Off
+
+    Mobile GPS Configuration
+      MobileGPS Enable:  Off
+      GPS Port:  /dev/tty/ACM0
+      GPS Port Speed:  38400
+
+    Firewall Configuration
+      Dashboard Access:  Private
+      ircDDBGateway Remote:  Private
+      SSH Access:  Private
+      Auto AP:  On
+      uPNP:  On
