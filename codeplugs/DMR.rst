@@ -8,13 +8,14 @@ You can join XLX196_ using TS=2, TG=6 via the linked repeaters.
 * 302070, VA3AAR_, 145.550-, CC=1
 * 302093, VE2CRA, 444.400+, CC=1
 * 302096, VE3STP, 147.060-, CC=1
-* 302108, VE3HOZ, 442.300+, CC=1
+* 302108, VE3HOZ_, 442.300+, CC=1
 * 302117, VE3RAM_, 443.700+, CC=1
 
-.. _XLX196: https://xrf196.spdns.org/
 .. _VA3AAR: http://va3aar.dyndns.org:3026/
 .. _VA3ODG: http://va3odg.ddns.net:380/
+.. _VE3HOZ: http://ve3hoa.ddns.net:380/
 .. _VE3RAM: http://ve3ram.ddns.net:380/
+.. _XLX196: https://xrf196.spdns.org/
 
 
 Talkgroups
