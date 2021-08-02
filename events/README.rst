@@ -6,19 +6,6 @@ FN15 and FN25 for which there is always a need for licensed amateur radio
 operator volunteers to provide safety communications.
 
 
-CN Cycle for CHEO
------------------
-
-Happens on the 1st weekend in May.
-
-* Frequency list: `CN Cycle Freqs`_
-* Volunteer info: TBD
-* Official site: `CN Cycle`_
-
-.. _CN Cycle Freqs: CN_Cycle_for_CHEO_6char.csv
-.. _CN Cycle: http://cncycle.ca
-
-
 Rideau Lakes Cycle Tour (RLCT)
 ------------------------------
 
