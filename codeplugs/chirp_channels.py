@@ -5,7 +5,7 @@
 # Currently supports codeplugs from Retevis RT3S and TYT MD-UV380 radios.
 
 
-import csv
+from csv import DictReader
 import json
 
 import click
@@ -112,7 +112,7 @@ def plop_channel(item, contact_name='Contact1', group_list='GroupList1',
         channel['AdmitCriteria'] = 'Always'
         channel['TxFrequencyOffset'] = '+0.00000'
     else:
-        if item['Mode'] == DMR:
+        if item['Mode'] == 'DMR':
             channel['AdmitCriteria'] = 'Color code'
         else:
             channel['AdmitCriteria'] = 'Always'
@@ -138,7 +138,7 @@ def main(chirp_csv, codeplug_json, contact_name, group_list, repeater_slot,
     # Read in the new channels to append from the CHIRP CSV file
     channels = []
     with open(chirp_csv, 'r') as csv_file:
-        reader = csv.DictReader(csv_file)
+        reader = DictReader(csv_file)
         for item in reader:
             channels.append(json.loads(plop_channel(item,
                                                     contact_name=contact_name,
