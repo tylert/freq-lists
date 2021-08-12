@@ -32,8 +32,6 @@ Converting Existing Codeplugs To Templates
     dmrRadio codeplugToJSON codeplug.rdt before.json  # or use editcp
     cat before.json | jq --from-file Retevis_RT3S.jq > after.json
 
-    # TODO:  Add example for codeplugs for foreign models that editcp doesn't support yet
-
 
 Generating Codeplugs From Templates
 -----------------------------------
@@ -59,11 +57,18 @@ Generating Codeplugs From Templates
     }
     EOF
 
-    # Merge your data file with your codeplug
-    jq --slurp '.[0] * .[1]' Retevis_RT3S.tmpl VA3DGN.conf > VA3DGN.json
+    make CALLSIGN=VA3DGN RADIO=Retevis_RT3S  # just build the codeplug
+    make write_codeplug                      # write the codeplug to the radio
+    make write                               # write both the codeplug and contacts
 
-    # Convert the JSON file back into a binary codeplug
-    dmrRadio jsonToCodeplug VA3DGN.json VA3DGN.rdt  # or use editcp
+
+Updating Contacts Database
+--------------------------
+
+::
+
+    make contacts        # just fetch the contacts
+    make write_contacts  # write the contacts to the radio
 
 
 Starting a New Codeplug
@@ -103,29 +108,6 @@ Converting from CHIRP to DMR Channels
         --rx_only On \
         --chirp_csv ../info/Weather_info_VHF.csv \
         --codeplug_json codeplug2.json > codeplug3.json
-
-
-Updating Callsign Database
---------------------------
-
-::
-
-    # Fetch the userdb and strip off the stuff that dmrRadio doesn't like yet
-    wget https://database.radioid.net/static/user.csv
-    cat user.csv | cut -d',' -f1-7 | sort -g | egrep '^[0-9]' > scrubbed.csv
-
-    # Build a list of countries to include
-    cat << EOF > countries.txt
-    Australia
-    Canada
-    New Zealand
-    United Kingdom
-    United States
-    EOF
-
-    # Prepare the filtered user database and upload it to the radio
-    dmrRadio filterUsers countries.txt scrubbed.csv filtered.csv
-    dmrRadio writeUV380Users filtered.csv
 
 
 Links
