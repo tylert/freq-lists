@@ -17,7 +17,6 @@ def plop_channel(item, contact_name='Contact1', group_list='GroupList1',
     '''
 
     channel = {
-        "AdmitCriteria": "Always",
         "AllowTalkaround": "Off",
         "Autoscan": "Off",
         "ColorCode": "1",
@@ -35,7 +34,7 @@ def plop_channel(item, contact_name='Contact1', group_list='GroupList1',
         "EmergencyAlarmAck": "Off",
         "EmergencySystem": "None",
         "GPSSystem": "None",
-        "InCallCriteria": "Always",
+        "InCallCriteria": "Follow Admit Criteria",
         "LeaderMS": "Off",
         "LoneWorker": "Off",
         "Power": "High",
@@ -110,8 +109,13 @@ def plop_channel(item, contact_name='Contact1', group_list='GroupList1',
     #   channel['CtcssEncode'] = 'None'
 
     if item['Duplex'] == '':
+        channel['AdmitCriteria'] = 'Always'
         channel['TxFrequencyOffset'] = '+0.00000'
     else:
+        if item['Mode'] == DMR:
+            channel['AdmitCriteria'] = 'Color code'
+        else:
+            channel['AdmitCriteria'] = 'Always'
         channel['TxFrequencyOffset'] = '{}{:.5f}'.format(item['Duplex'],
                                                          float(item['Offset']))
 
