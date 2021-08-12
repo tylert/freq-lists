@@ -10,11 +10,13 @@ You must have the following tools installed:
 * (REQUIRED) editcp_ 1.0.23 or newer (and/or just the "dmrRadio_" binary 1.0.23 or newer) for exporting/importing codeplugs to/from JSON
 * (REQUIRED) jq_ for working with JSON payloads
 * (OPTIONAL) dmrconfig_ for working with codeplugs for radios that aren't supported by editcp yet
+* (OPTIONAL) qdmr_ to provide a nice GUI when working with dmrconfig
 
 .. _editcp: https://github.com/DaleFarnsworth-DMR/editcp
 .. _dmrRadio: https://github.com/DaleFarnsworth-DMR/dmrRadio
 .. _jq: https://stedolan.github.io/jq/
-.. _dmrconfig: https://github.com/OpenRTX/dmrconfig/
+.. _dmrconfig: https://github.com/OpenRTX/dmrconfig
+.. _qdmr: https://github.com/hmatuschek/qdmr
 
 There are some really good programming tutorials at
 https://youtu.be/VExx628R0DM and https://youtu.be/Lw0Y-jQZMZ0 which are useful
@@ -28,7 +30,7 @@ Converting Existing Codeplugs To Templates
 
     # Export the binary codeplug as JSON and fix some values
     dmrRadio codeplugToJSON codeplug.rdt before.json  # or use editcp
-    cat before.json | jq -f Retevis_RT3S.jq > after.json
+    cat before.json | jq --from-file Retevis_RT3S.jq > after.json
 
     # TODO:  Add example for codeplugs for foreign models that editcp doesn't support yet
 
@@ -58,7 +60,7 @@ Generating Codeplugs From Templates
     EOF
 
     # Merge your data file with your codeplug
-    jq -s '.[0] * .[1]' Retevis_RT3S.tmpl VA3DGN.conf > VA3DGN.json
+    jq --slurp '.[0] * .[1]' Retevis_RT3S.tmpl VA3DGN.conf > VA3DGN.json
 
     # Convert the JSON file back into a binary codeplug
     dmrRadio jsonToCodeplug VA3DGN.json VA3DGN.rdt  # or use editcp
@@ -74,8 +76,12 @@ Starting a New Codeplug
 
     # Make it even emptier still
     dmrRadio codeplugToJSON new.rdt new.json
-    cat new.json | jq 'del(.Channels[])' | jq 'del(.GroupLists[])' \
-        | jq 'del(.ScanLists[])' | jq 'del(.Zones[])' > empty.json
+    cat new.json \
+        | jq 'del(.Contacts[])' \
+        | jq 'del(.Channels[])' \
+        | jq 'del(.GroupLists[])' \
+        | jq 'del(.ScanLists[])' \
+        | jq 'del(.Zones[])' > empty.json
 
 
 Converting from CHIRP to DMR Channels
@@ -99,8 +105,8 @@ Converting from CHIRP to DMR Channels
         --codeplug_json codeplug2.json > codeplug3.json
 
 
-Updating User Database
-----------------------
+Updating Callsign Database
+--------------------------
 
 ::
 
