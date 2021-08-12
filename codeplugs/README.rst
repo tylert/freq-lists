@@ -74,7 +74,8 @@ Starting a New Codeplug
 
     # Make it even emptier still
     dmrRadio codeplugToJSON new.rdt new.json
-    cat new.json | jq 'del(.Channels[])' | jq 'del(.GroupLists[])' | jq 'del(.ScanLists[])' | jq 'del(.Zones[])' > empty.json
+    cat new.json | jq 'del(.Channels[])' | jq 'del(.GroupLists[])' \
+        | jq 'del(.ScanLists[])' | jq 'del(.Zones[])' > empty.json
 
 
 Converting from CHIRP to DMR Channels
@@ -82,14 +83,20 @@ Converting from CHIRP to DMR Channels
 
 ::
 
-    python3 -m venv ~/.venv
+    python -m venv ~/.venv
     source ~/.venv/bin/activate
     pip install --requirement requirements.txt
 
-    ./chirp_channels.py \
-        --input_filename ../info/simplex_2m_70cm.csv \
-
     ./chirp_channels.py --help
+
+    ./chirp_channels.py \
+        --chirp_csv ../info/Simplex_2m_70cm_16char.csv \
+        --codeplug_json codeplug1.json > codeplug2.json
+
+    ./chirp_channels.py \
+        --rx_only On \
+        --chirp_csv ../info/Weather_info_VHF.csv \
+        --codeplug_json codeplug2.json > codeplug3.json
 
 
 Updating User Database
