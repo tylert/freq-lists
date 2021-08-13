@@ -17,9 +17,6 @@ The following pre-built definition files are available for frequencies used by:
 * common 1200/9600 baud VHF packet frequencies (including ones for EMRG_)
 * a few other VHF/UHF repeaters around Ottawa and Maidenhead grid square FN25
 * common simplex choices for 2m (15/30 kHz spacing) and 70cm (12.5 kHz spacing)
-* radio amateurs assisting the `Canadian Ski Marathon`_ (CSM_) [3]
-* radio amateurs assisting the `Rideau Lakes Cycle Tour`_ (RLCT_)
-* radio amateurs assisting the Rally of the `Tall Pines`_
 * North American NOAA VHF weather broadcast information channels
 * GMRS (General Mobile Radio Service) UHF channels
 * marine ship/shore VHF channels
@@ -32,6 +29,32 @@ properly.
 .. _CHIRP: http://chirp.danplanet.com
 .. _latest: http://trac.chirp.danplanet.com/chirp_daily/LATEST/
 .. _EMRG: http://emrg.ca
-.. _CSM: http://radio-1.ca
+
+
+Events
+------
+
+
+Rideau Lakes Cycle Tour (RLCT)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Happens on the 1st or 2nd weekend in June.  Conflicts with the ARRL June VHF
+QSO Party.
+
+* Volunteer info: `RLCT Radio`_, `RLCT Info`_
+* Official site: RLCT_
+
+.. _RLCT Radio: http://rlct.radio-1.ca
+.. _RLCT Info: http://emrg.ca/rideau_lakes_cycle_tour.htm
 .. _RLCT: http://ottawabicycleclub.ca/rlct
+
+
+Tall Pines Rally / Rally of the Tall Pines
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Happens on the 3rd or 4th weekend in November.
+
+* Volunteer info: TBD
+* Official site: `Tall Pines`_
+
 .. _Tall Pines: http://tallpinesrally.com
