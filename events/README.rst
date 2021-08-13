@@ -12,11 +12,9 @@ Rideau Lakes Cycle Tour (RLCT)
 Happens on the 1st or 2nd weekend in June.  Conflicts with the ARRL June VHF
 QSO Party.
 
-* Frequency list: `RLCT Freqs`_
 * Volunteer info: `RLCT Radio`_, `RLCT Info`_
 * Official site: RLCT_
 
-.. _RLCT Freqs: RLCT_6char.csv
 .. _RLCT Radio: http://rlct.radio-1.ca
 .. _RLCT Info: http://emrg.ca/rideau_lakes_cycle_tour.htm
 .. _RLCT: http://ottawabicycleclub.ca/rlct
@@ -27,9 +25,7 @@ Tall Pines Rally / Rally of the Tall Pines
 
 Happens on the 3rd or 4th weekend in November.
 
-* Frequency list: `Tall Pines Freqs`_
 * Volunteer info: TBD
 * Official site: `Tall Pines`_
 
-.. _Tall Pines Freqs: Tall_Pines_Rally_6char.csv
 .. _Tall Pines: http://tallpinesrally.com
