@@ -1,0 +1,534 @@
+# Common simplex channels for FM and DMR (IARU Region 2)
+# 144 to 148 MHz (primary) https://www.rac.ca/144-mhz-2m-page/
+# 430 to 450 MHz (secondary) https://www.rac.ca/432-mhz-70-cm-page/
+# wide band digital modes = greater than 3 kHz and less than 30 kHz wide
+# bandwidth is 25 kHz for "normal" FM and 12.5 kHz for DMR
+channels:
+#  ____              _____ __  __
+# |___ \ _ __ ___   |  ___|  \/  |
+#   __) | '_ ` _ \  | |_  | |\/| |
+#  / __/| | | | | | |  _| | |  | |
+# |_____|_| |_| |_| |_|   |_|  |_|
+# 13 channels on a 15 kHz raster
+# 146.40, 146.43 and 146.46 may be repeater inputs in some areas
+- name: 146.4 FM
+  rx_frequency: 146.4
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 146.415 FM
+  rx_frequency: 146.415
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 146.43 FM
+  rx_frequency: 146.43
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 146.445 FM
+  rx_frequency: 146.445
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 146.46 FM
+  rx_frequency: 146.46
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 146.475 FM
+  rx_frequency: 146.475
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 146.49 FM
+  rx_frequency: 146.49
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 146.505 FM
+  rx_frequency: 146.505
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 146.52 FM
+  comment: 2m FM CALL
+  rx_frequency: 146.52
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 146.535 FM
+  rx_frequency: 146.535
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 146.55 FM
+  rx_frequency: 146.55
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 146.565 FM
+  rx_frequency: 146.565
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name_long: 146.58 FM
+  rx_frequency: 146.58
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 146.595 FM
+  rx_frequency: 146.595
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+# 6 channels on a 30 kHz raster
+- name: 147.42 FM
+  rx_frequency: 147.42
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 147.45 FM
+  rx_frequency: 147.45
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 147.48 FM
+  rx_frequency: 147.48
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 147.51 FM
+  rx_frequency: 147.51
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 147.54 FM
+  rx_frequency: 147.54
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 147.57 FM
+  rx_frequency: 147.57
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+#  _____ ___                   _____ __  __
+# |___  / _ \  ___ _ __ ___   |  ___|  \/  |
+#    / / | | |/ __| '_ ` _ \  | |_  | |\/| |
+#   / /| |_| | (__| | | | | | |  _| | |  | |
+#  /_/  \___/ \___|_| |_| |_| |_|   |_|  |_|
+- name: 446.0 FM
+  comment: 70cm FM CALL
+  rx_frequency: 446.0
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 446.0125 FM
+  rx_frequency: 446.0125
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 446.025 FM
+  rx_frequency: 446.025
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 446.0375 FM
+  rx_frequency: 446.0375
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 446.05 FM
+  rx_frequency: 446.05
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 446.0625 FM
+  rx_frequency: 446.0625
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 446.075 FM
+  rx_frequency: 446.075
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 446.0875 FM
+  rx_frequency: 446.0875
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 446.1 FM
+  rx_frequency: 446.1
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 446.1125 FM
+  rx_frequency: 446.1125
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 446.125 FM
+  rx_frequency: 446.125
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 446.1375 FM
+  rx_frequency: 446.1375
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 446.15 FM
+  rx_frequency: 446.15
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 446.1625 FM
+  rx_frequency: 446.1625
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+- name: 446.175 FM
+  rx_frequency: 446.175
+  tx_offset_frequency: +0.0
+  mode: FM
+  bandwidth: 25
+  power: High
+  rx_only: Off
+#  ____              ____  __  __ ____
+# |___ \ _ __ ___   |  _ \|  \/  |  _ \
+#   __) | '_ ` _ \  | | | | |\/| | |_) |
+#  / __/| | | | | | | |_| | |  | |  _ <
+# |_____|_| |_| |_| |____/|_|  |_|_| \_\
+# 11 channels on a 20 kHz raster
+# 145.51 used to be a recommended DMR simplex frequency in North America (145.79 too)
+# http://va3xpr.net/dmr-simplex-frequencies/
+# http://trbo.org/simplex/simplex.html
+- name: 145.59 DMR
+  rx_frequency: 145.59
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 145.61 DMR
+  rx_frequency: 145.61
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 145.63 DMR
+  rx_frequency: 145.63
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 145.65 DMR
+  rx_frequency: 145.65
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 145.67 DMR
+  rx_frequency: 145.67
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 145.69 DMR
+  rx_frequency: 145.69
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 145.71 DMR
+  rx_frequency: 145.71
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 145.73 DMR
+  rx_frequency: 145.73
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 145.75 DMR
+  rx_frequency: 145.75
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 145.77 DMR
+  rx_frequency: 145.77
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 145.79 DMR
+  rx_frequency: 145.79
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+# 6 channels on a 30 kHz raster
+# interwoven between the FM simplex channels from 147.42 to 147.57
+- name: 147.435 DMR
+  rx_frequency: 147.435
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 147.465 DMR
+  rx_frequency: 147.465
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 147.495 DMR
+  rx_frequency: 147.495
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 147.525 DMR
+  rx_frequency: 147.525
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 147.555 DMR
+  rx_frequency: 147.555
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 147.585 DMR
+  rx_frequency: 147.585
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+#  _____ ___                   ____  __  __ ____
+# |___  / _ \  ___ _ __ ___   |  _ \|  \/  |  _ \
+#    / / | | |/ __| '_ ` _ \  | | | | |\/| | |_) |
+#   / /| |_| | (__| | | | | | | |_| | |  | |  _ <
+#  /_/  \___/ \___|_| |_| |_| |____/|_|  |_|_| \_\
+- name: 433.45 DMR
+  rx_frequency: 433.45
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 441.0 DMR
+  rx_frequency: 441.0
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 446.075 DMR
+  rx_frequency: 446.075
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
+- name: 446.5 DMR
+  rx_frequency: 446.5
+  tx_offset_frequency: +0.0
+  mode: DMR
+  bandwidth: 12.5
+  color_code: 1
+  repeater_slot: 1
+  talk_group: 99
+  admit_criteria: Always
+  in_call_criteria: Always
+  power: High
+  rx_only: Off
