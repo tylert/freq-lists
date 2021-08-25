@@ -1,0 +1,274 @@
+# UHF GMRS and FRS simplex channels Canada/US and US-only duplex channels
+# https://wiki.radioreference.com/index.php/FRS/GMRS_combined_channel_chart
+
+channels:
+
+#   ____ __  __ ____  ____        _                 _
+#  / ___|  \/  |  _ \/ ___|   ___(_)_ __ ___  _ __ | | _____  __
+# | |  _| |\/| | |_) \___ \  / __| | '_ ` _ \| '_ \| |/ _ \ \/ /
+# | |_| | |  | |  _ < ___) | \__ \ | | | | | | |_) | |  __/>  <
+#  \____|_|  |_|_| \_\____/  |___/_|_| |_| |_| .__/|_|\___/_/\_\
+#                                            |_|
+
+- Name: GMRS01
+  RxFrequency: 462.5625
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: Mid  # 2 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS02
+  RxFrequency: 462.5875
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: Mid  # 2 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS03
+  RxFrequency: 462.6125
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: Mid  # 2 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS04
+  RxFrequency: 462.6375
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: Mid  # 2 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS05
+  RxFrequency: 462.6625
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: Mid  # 2 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS06
+  RxFrequency: 462.6875
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: Mid  # 2 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS07
+  RxFrequency: 462.7125
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: Mid  # 2 W
+  RxOnly: On  # tx inhibit
+
+#  _____ ____  ____                _
+# |  ___|  _ \/ ___|    ___  _ __ | |_   _
+# | |_  | |_) \___ \   / _ \| '_ \| | | | |
+# |  _| |  _ < ___) | | (_) | | | | | |_| |
+# |_|   |_| \_\____/   \___/|_| |_|_|\__, |
+#                                    |___/
+
+- Name: FRS08
+  RxFrequency: 467.5625
+  TxOffsetFrequency: +0.0
+  Mode: NFM
+  Bandwidth: 12.5
+  Power: Low  # 0.5 W
+  RxOnly: On  # tx inhibit
+
+- Name: FRS09
+  RxFrequency: 467.5875
+  TxOffsetFrequency: +0.0
+  Mode: NFM
+  Bandwidth: 12.5
+  Power: Low  # 0.5 W
+  RxOnly: On  # tx inhibit
+
+- Name: FRS10
+  RxFrequency: 467.6125
+  TxOffsetFrequency: +0.0
+  Mode: NFM
+  Bandwidth: 12.5
+  Power: Low  # 0.5 W
+  RxOnly: On  # tx inhibit
+
+- Name: FRS11
+  RxFrequency: 467.6375
+  TxOffsetFrequency: +0.0
+  Mode: NFM
+  Bandwidth: 12.5
+  Power: Low  # 0.5 W
+  RxOnly: On  # tx inhibit
+
+- Name: FRS12
+  RxFrequency: 467.6625
+  TxOffsetFrequency: +0.0
+  Mode: NFM
+  Bandwidth: 12.5
+  Power: Low  # 0.5 W
+  RxOnly: On  # tx inhibit
+
+- Name: FRS13
+  RxFrequency: 467.6875
+  TxOffsetFrequency: +0.0
+  Mode: NFM
+  Bandwidth: 12.5
+  Power: Low  # 0.5 W
+  RxOnly: On  # tx inhibit
+
+- Name: FRS14
+  RxFrequency: 467.7125
+  TxOffsetFrequency: +0.0
+  Mode: NFM
+  Bandwidth: 12.5
+  Power: Low  # 0.5 W
+  RxOnly: On  # tx inhibit
+
+#   ____ __  __ ____  ____                _               _
+#  / ___|  \/  |  _ \/ ___|    ___  _   _| |_ _ __  _   _| |_ ___
+# | |  _| |\/| | |_) \___ \   / _ \| | | | __| '_ \| | | | __/ __|
+# | |_| | |  | |  _ < ___) | | (_) | |_| | |_| |_) | |_| | |_\__ \
+#  \____|_|  |_|_| \_\____/   \___/ \__,_|\__| .__/ \__,_|\__|___/
+#                                            |_|
+
+# also used as simplex channels if not going through a duplex repeater
+
+- Name: GMRS15
+  RxFrequency: 462.55
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: Mid  # 2 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS16
+  RxFrequency: 462.575
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: Mid  # 2 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS17
+  RxFrequency: 462.6
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: Mid  # 2 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS18
+  RxFrequency: 462.625
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: Mid  # 2 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS19
+  RxFrequency: 462.65
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: Mid  # 2 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS20
+  RxFrequency: 462.675
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: Mid  # 2 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS21
+  RxFrequency: 462.7
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: Mid  # 2 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS22
+  RxFrequency: 462.725
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: Mid  # 2 W
+  RxOnly: On  # tx inhibit
+
+#   ____ __  __ ____  ____    _                   _
+#  / ___|  \/  |  _ \/ ___|  (_)_ __  _ __  _   _| |_ ___
+# | |  _| |\/| | |_) \___ \  | | '_ \| '_ \| | | | __/ __|
+# | |_| | |  | |  _ < ___) | | | | | | |_) | |_| | |_\__ \
+#  \____|_|  |_|_| \_\____/  |_|_| |_| .__/ \__,_|\__|___/
+#                                    |_|
+
+- Name: GMRS15R
+  RxFrequency: 467.55
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: High  # 50 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS16R
+  RxFrequency: 467.575
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: High  # 50 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS17R
+  RxFrequency: 467.6
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: High  # 50 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS18R
+  RxFrequency: 467.625
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: High  # 50 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS19R
+  RxFrequency: 467.65
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: High  # 50 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS20R
+  RxFrequency: 467.675
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: High  # 50 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS21R
+  RxFrequency: 467.7
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: High  # 50 W
+  RxOnly: On  # tx inhibit
+
+- Name: GMRS22R
+  RxFrequency: 467.725
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 20
+  Power: High  # 50 W
+  RxOnly: On  # tx inhibit
