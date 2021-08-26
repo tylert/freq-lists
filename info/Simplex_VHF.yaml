@@ -28,7 +28,7 @@ channels:
 
 - Name: 145.59 DMR
   RxFrequency: 145.59
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -39,7 +39,7 @@ channels:
 
 - Name: 145.61 DMR
   RxFrequency: 145.61
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -50,7 +50,7 @@ channels:
 
 - Name: 145.63 DMR
   RxFrequency: 145.63
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -61,7 +61,7 @@ channels:
 
 - Name: 145.65 DMR
   RxFrequency: 145.65
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -72,7 +72,7 @@ channels:
 
 - Name: 145.67 DMR
   RxFrequency: 145.67
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -83,7 +83,7 @@ channels:
 
 - Name: 145.69 DMR
   RxFrequency: 145.69
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -94,7 +94,7 @@ channels:
 
 - Name: 145.71 DMR
   RxFrequency: 145.71
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -105,7 +105,7 @@ channels:
 
 - Name: 145.73 DMR
   RxFrequency: 145.73
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -116,7 +116,7 @@ channels:
 
 - Name: 145.75 DMR
   RxFrequency: 145.75
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -127,7 +127,7 @@ channels:
 
 - Name: 145.77 DMR
   RxFrequency: 145.77
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -138,7 +138,7 @@ channels:
 
 - Name: 145.79 DMR
   RxFrequency: 145.79
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -152,7 +152,7 @@ channels:
 
 - Name: 147.435 DMR
   RxFrequency: 147.435
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -163,7 +163,7 @@ channels:
 
 - Name: 147.465 DMR
   RxFrequency: 147.465
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -174,7 +174,7 @@ channels:
 
 - Name: 147.495 DMR
   RxFrequency: 147.495
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -185,7 +185,7 @@ channels:
 
 - Name: 147.525 DMR
   RxFrequency: 147.525
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -196,7 +196,7 @@ channels:
 
 - Name: 147.555 DMR
   RxFrequency: 147.555
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -207,7 +207,7 @@ channels:
 
 - Name: 147.585 DMR
   RxFrequency: 147.585
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -227,85 +227,85 @@ channels:
 
 - Name: 146.4 FM
   RxFrequency: 146.4
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 146.415 FM
   RxFrequency: 146.415
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 146.43 FM
   RxFrequency: 146.43
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 146.445 FM
   RxFrequency: 146.445
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 146.46 FM
   RxFrequency: 146.46
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 146.475 FM
   RxFrequency: 146.475
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 146.49 FM
   RxFrequency: 146.49
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 146.505 FM
   RxFrequency: 146.505
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 146.52 FM
   RxFrequency: 146.52  # FM simplex calling frequency
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 146.535 FM
   RxFrequency: 146.535
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 146.55 FM
   RxFrequency: 146.55
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 146.565 FM
   RxFrequency: 146.565
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
-- name_long: 146.58 FM
+- Name: 146.58 FM
   RxFrequency: 146.58
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 146.595 FM
   RxFrequency: 146.595
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
@@ -313,36 +313,36 @@ channels:
 
 - Name: 147.42 FM
   RxFrequency: 147.42
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 147.45 FM
   RxFrequency: 147.45
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 147.48 FM
   RxFrequency: 147.48
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 147.51 FM
   RxFrequency: 147.51
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 147.54 FM
   RxFrequency: 147.54
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 147.57 FM
   RxFrequency: 147.57
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High

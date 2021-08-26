@@ -25,7 +25,7 @@ channels:
 
 - Name: 433.45 DMR
   RxFrequency: 433.45
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -36,7 +36,7 @@ channels:
 
 - Name: 441.0 DMR
   RxFrequency: 441.0
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -47,7 +47,7 @@ channels:
 
 - Name: 446.075 DMR
   RxFrequency: 446.075
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -58,7 +58,7 @@ channels:
 
 - Name: 446.5 DMR
   RxFrequency: 446.5
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: DMR
   ColorCode: 1
   RepeaterSlot: 1
@@ -75,90 +75,90 @@ channels:
 
 - Name: 446.0 FM
   RxFrequency: 446.0  # FM simplex calling frequency
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 446.0125 FM
   RxFrequency: 446.0125
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 446.025 FM
   RxFrequency: 446.025
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 446.0375 FM
   RxFrequency: 446.0375
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 446.05 FM
   RxFrequency: 446.05
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 446.0625 FM
   RxFrequency: 446.0625
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 446.075 FM
   RxFrequency: 446.075
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 446.0875 FM
   RxFrequency: 446.0875
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 446.1 FM
   RxFrequency: 446.1
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 446.1125 FM
   RxFrequency: 446.1125
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 446.125 FM
   RxFrequency: 446.125
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 446.1375 FM
   RxFrequency: 446.1375
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 446.15 FM
   RxFrequency: 446.15
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 446.1625 FM
   RxFrequency: 446.1625
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
 
 - Name: 446.175 FM
   RxFrequency: 446.175
-  TxFrequencyOffset: +0.0
+  TxFrequencyOffset: '+0.0'
   Mode: FM
   Power: High
