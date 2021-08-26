@@ -25,55 +25,47 @@ channels:
 
 - Name: 433.45 DMR
   RxFrequency: 433.45
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 441.0 DMR
   RxFrequency: 441.0
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 446.075 DMR
   RxFrequency: 446.075
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 446.5 DMR
   RxFrequency: 446.5
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 #                   _____ ___                   _____ __  __
 #                  |___  / _ \  ___ _ __ ___   |  ___|  \/  |
@@ -83,120 +75,90 @@ channels:
 
 - Name: 446.0 FM
   RxFrequency: 446.0  # FM simplex calling frequency
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 446.0125 FM
   RxFrequency: 446.0125
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 446.025 FM
   RxFrequency: 446.025
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 446.0375 FM
   RxFrequency: 446.0375
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 446.05 FM
   RxFrequency: 446.05
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 446.0625 FM
   RxFrequency: 446.0625
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 446.075 FM
   RxFrequency: 446.075
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 446.0875 FM
   RxFrequency: 446.0875
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 446.1 FM
   RxFrequency: 446.1
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 446.1125 FM
   RxFrequency: 446.1125
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 446.125 FM
   RxFrequency: 446.125
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 446.1375 FM
   RxFrequency: 446.1375
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 446.15 FM
   RxFrequency: 446.15
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 446.1625 FM
   RxFrequency: 446.1625
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 446.175 FM
   RxFrequency: 446.175
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
