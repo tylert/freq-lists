@@ -73,8 +73,7 @@ channels:
 #  /_/  \___/ \___|_| |_| |_| |_|   |_|  |_|
 
 - Name: 446.0 FM
-  comment: 70cm FM CALL
-  RxFrequency: 446.0
+  RxFrequency: 446.0  # FM simplex calling frequency
   TxOffsetFrequency: +0.0
   Mode: FM
   Bandwidth: 25
