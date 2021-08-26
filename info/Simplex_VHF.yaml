@@ -28,227 +28,193 @@ channels:
 
 - Name: 145.59 DMR
   RxFrequency: 145.59
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 145.61 DMR
   RxFrequency: 145.61
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 145.63 DMR
   RxFrequency: 145.63
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 145.65 DMR
   RxFrequency: 145.65
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 145.67 DMR
   RxFrequency: 145.67
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 145.69 DMR
   RxFrequency: 145.69
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 145.71 DMR
   RxFrequency: 145.71
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 145.73 DMR
   RxFrequency: 145.73
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 145.75 DMR
   RxFrequency: 145.75
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 145.77 DMR
   RxFrequency: 145.77
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 145.79 DMR
   RxFrequency: 145.79
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 # wide band digital from 147.435 to 147.585 - 6 channels on a 30 kHz raster
 # interwoven between the FM simplex channels from 147.42 to 147.57
 
 - Name: 147.435 DMR
   RxFrequency: 147.435
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 147.465 DMR
   RxFrequency: 147.465
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 147.495 DMR
   RxFrequency: 147.495
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 147.525 DMR
   RxFrequency: 147.525
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 147.555 DMR
   RxFrequency: 147.555
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 - Name: 147.585 DMR
   RxFrequency: 147.585
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: DMR
-  Bandwidth: 12.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
   AdmitCriteria: Always
-  InCallCriteria: Always
+  InCallCriteria: Follow Admit Criteria
   Power: High
-  RxOnly: Off
 
 #                        ____              _____ __  __
 #                       |___ \ _ __ ___   |  ___|  \/  |
@@ -261,162 +227,122 @@ channels:
 
 - Name: 146.4 FM
   RxFrequency: 146.4
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 146.415 FM
   RxFrequency: 146.415
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 146.43 FM
   RxFrequency: 146.43
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 146.445 FM
   RxFrequency: 146.445
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 146.46 FM
   RxFrequency: 146.46
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 146.475 FM
   RxFrequency: 146.475
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 146.49 FM
   RxFrequency: 146.49
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 146.505 FM
   RxFrequency: 146.505
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 146.52 FM
   RxFrequency: 146.52  # FM simplex calling frequency
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 146.535 FM
   RxFrequency: 146.535
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 146.55 FM
   RxFrequency: 146.55
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 146.565 FM
   RxFrequency: 146.565
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - name_long: 146.58 FM
   RxFrequency: 146.58
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 146.595 FM
   RxFrequency: 146.595
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 # FM simplex from 147.42 to 147.57 - 6 channels on a 30 kHz raster
 
 - Name: 147.42 FM
   RxFrequency: 147.42
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 147.45 FM
   RxFrequency: 147.45
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 147.48 FM
   RxFrequency: 147.48
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 147.51 FM
   RxFrequency: 147.51
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 147.54 FM
   RxFrequency: 147.54
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
 
 - Name: 147.57 FM
   RxFrequency: 147.57
-  TxOffsetFrequency: +0.0
+  TxFrequencyOffset: +0.0
   Mode: FM
-  Bandwidth: 25
   Power: High
-  RxOnly: Off
