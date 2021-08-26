@@ -7,8 +7,8 @@
 
 # Common simplex channels for FM and DMR on "high" VHF (IARU Region 2)
 # 144 to 148 MHz (primary) - https://www.rac.ca/144-mhz-2m-page/
-# wide band digital modes = greater than 3 kHz and less than 30 kHz wide
-# bandwidth is 25 kHz for "normal" FM and 12.5 kHz for DMR
+# Wide band digital modes = greater than 3 kHz and less than 30 kHz wide
+# Bandwidth is 25 kHz for "normal" FM and 12.5 kHz for DMR
 
 # Old DMR pseudo-standard - http://va3xpr.net/dmr-simplex-frequencies/
 # US-only DMR not-a-standard - http://trbo.org/simplex/simplex.html
@@ -21,9 +21,9 @@ channels:
 #                     / __/| | | | | | | |_| | |  | |  _ <
 #                    |_____|_| |_| |_| |____/|_|  |_|_| \_\
 
-# May also used for DSTAR, M17, NXDN, P25, YSF, etc.
+# May also be used for DSTAR, M17, NXDN, P25, YSF, etc.
 
-# wide band digital from 145.59 to 145.79 - 11 channels on a 20 kHz raster
+# Wide band digital from 145.59 to 145.79 - 11 channels on a 20 kHz raster
 # 145.51 used to be a recommended DMR simplex frequency in North America (145.79 too)
 
 - Name: 145.59 DMR
@@ -147,8 +147,8 @@ channels:
   InCallCriteria: Follow Admit Criteria
   Power: High
 
-# wide band digital from 147.435 to 147.585 - 6 channels on a 30 kHz raster
-# interwoven between the FM simplex channels from 147.42 to 147.57
+# Wide band digital from 147.435 to 147.585 - 6 channels on a 30 kHz raster
+# Interwoven between the FM simplex channels from 147.42 to 147.57
 
 - Name: 147.435 DMR
   RxFrequency: 147.435
