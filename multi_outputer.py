@@ -5,10 +5,10 @@ from ruamel.yaml import YAML
 import click
 
 
-def output_chirp(channels, max_name_length=16):
+def output_chirp_channels(channels, max_name_length=16):
     print('Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE')
 
-    count = 1
+    location = 1
     for channel in channels:
         name = channel['Name'].split(' ')[0]
         frequency = channel['RxFrequency']
@@ -27,23 +27,24 @@ def output_chirp(channels, max_name_length=16):
                 tstep = 6.25  # kHz
             else:
                 tstep = 5.00  # kHz
-        # else:
-        #     tstep = 1.00  # kHz
-        # XXX FIXME TODO find out what tstep to use for HF
 
-        # Send CTCSS???
+        # Offer CTCSS???
         if 'CtcssDecode' in channel.keys():
             if channel['CtcssDecode'] is None \
                     or channel['CtcssDecode'] == '':
                 r_tone_freq = '88.5'
+            else:
+                r_tone_freq = channel['CtcssDecode']
         else:
             r_tone_freq = '88.5'
 
-        # Expect CTCSS???
+        # Demand CTCSS???
         if 'CtcssEncode' in channel.keys():
-            if channel['CtcssEncode'] is not None \
+            if channel['CtcssEncode'] is None \
                     or channel['CtcssEncode'] == '':
                 c_tone_freq = '88.5'
+            else:
+                c_tone_freq = channel['CtcssEncode']
         else:
             c_tone_freq = '88.5'
 
@@ -51,8 +52,8 @@ def output_chirp(channels, max_name_length=16):
         dtcs_code = '023'
         dtcs_polarity = 'NN'
 
-        print(f"{count},{name[:max_name_length]},{frequency:.6f},{duplex},{offset:.6f},,{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,,,,,")
-        count += 1
+        print(f"{location},{name[:max_name_length]},{frequency:.6f},{duplex},{offset:.6f},,{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,,,,,")
+        location += 1
 
 
 @click.command()
@@ -62,7 +63,7 @@ def main(input_file):
         yaml = YAML(typ='safe')
         payload = yaml.load(f)
 
-    output_chirp(payload['channels'], 7)
+    output_chirp_channels(payload['channels'], 7)
 
 
 if __name__ == '__main__':
