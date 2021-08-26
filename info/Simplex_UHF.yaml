@@ -1,0 +1,194 @@
+# Common simplex channels for FM and DMR on "low" UHF (IARU Region 2)
+# 430 to 450 MHz (secondary) - https://www.rac.ca/432-mhz-70-cm-page/
+# wide band digital modes = greater than 3 kHz and less than 30 kHz wide
+# bandwidth is 25 kHz for "normal" FM and 12.5 kHz for DMR
+
+channels:
+
+#  _____ ___                   ____  __  __ ____
+# |___  / _ \  ___ _ __ ___   |  _ \|  \/  |  _ \
+#    / / | | |/ __| '_ ` _ \  | | | | |\/| | |_) |
+#   / /| |_| | (__| | | | | | | |_| | |  | |  _ <
+#  /_/  \___/ \___|_| |_| |_| |____/|_|  |_|_| \_\
+
+# old pseudo-standard - http://va3xpr.net/dmr-simplex-frequencies/
+# US-only not-a-standard - http://trbo.org/simplex/simplex.html
+
+- Name: 433.45 DMR
+  RxFrequency: 433.45
+  TxOffsetFrequency: +0.0
+  Mode: DMR
+  Bandwidth: 12.5
+  ColorCode: 1
+  RepeaterSlot: 1
+  TalkGroup: 99
+  AdmitCriteria: Always
+  InCallCriteria: Always
+  Power: High
+  RxOnly: Off
+
+- Name: 441.0 DMR
+  RxFrequency: 441.0
+  TxOffsetFrequency: +0.0
+  Mode: DMR
+  Bandwidth: 12.5
+  ColorCode: 1
+  RepeaterSlot: 1
+  TalkGroup: 99
+  AdmitCriteria: Always
+  InCallCriteria: Always
+  Power: High
+  RxOnly: Off
+
+- Name: 446.075 DMR
+  RxFrequency: 446.075
+  TxOffsetFrequency: +0.0
+  Mode: DMR
+  Bandwidth: 12.5
+  ColorCode: 1
+  RepeaterSlot: 1
+  TalkGroup: 99
+  AdmitCriteria: Always
+  InCallCriteria: Always
+  Power: High
+  RxOnly: Off
+
+- Name: 446.5 DMR
+  RxFrequency: 446.5
+  TxOffsetFrequency: +0.0
+  Mode: DMR
+  Bandwidth: 12.5
+  ColorCode: 1
+  RepeaterSlot: 1
+  TalkGroup: 99
+  AdmitCriteria: Always
+  InCallCriteria: Always
+  Power: High
+  RxOnly: Off
+
+#  _____ ___                   _____ __  __
+# |___  / _ \  ___ _ __ ___   |  ___|  \/  |
+#    / / | | |/ __| '_ ` _ \  | |_  | |\/| |
+#   / /| |_| | (__| | | | | | |  _| | |  | |
+#  /_/  \___/ \___|_| |_| |_| |_|   |_|  |_|
+
+- Name: 446.0 FM
+  comment: 70cm FM CALL
+  RxFrequency: 446.0
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 25
+  Power: High
+  RxOnly: Off
+
+- Name: 446.0125 FM
+  RxFrequency: 446.0125
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 25
+  Power: High
+  RxOnly: Off
+
+- Name: 446.025 FM
+  RxFrequency: 446.025
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 25
+  Power: High
+  RxOnly: Off
+
+- Name: 446.0375 FM
+  RxFrequency: 446.0375
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 25
+  Power: High
+  RxOnly: Off
+
+- Name: 446.05 FM
+  RxFrequency: 446.05
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 25
+  Power: High
+  RxOnly: Off
+
+- Name: 446.0625 FM
+  RxFrequency: 446.0625
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 25
+  Power: High
+  RxOnly: Off
+
+- Name: 446.075 FM
+  RxFrequency: 446.075
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 25
+  Power: High
+  RxOnly: Off
+
+- Name: 446.0875 FM
+  RxFrequency: 446.0875
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 25
+  Power: High
+  RxOnly: Off
+
+- Name: 446.1 FM
+  RxFrequency: 446.1
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 25
+  Power: High
+  RxOnly: Off
+
+- Name: 446.1125 FM
+  RxFrequency: 446.1125
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 25
+  Power: High
+  RxOnly: Off
+
+- Name: 446.125 FM
+  RxFrequency: 446.125
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 25
+  Power: High
+  RxOnly: Off
+
+- Name: 446.1375 FM
+  RxFrequency: 446.1375
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 25
+  Power: High
+  RxOnly: Off
+
+- Name: 446.15 FM
+  RxFrequency: 446.15
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 25
+  Power: High
+  RxOnly: Off
+
+- Name: 446.1625 FM
+  RxFrequency: 446.1625
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 25
+  Power: High
+  RxOnly: Off
+
+- Name: 446.175 FM
+  RxFrequency: 446.175
+  TxOffsetFrequency: +0.0
+  Mode: FM
+  Bandwidth: 25
+  Power: High
+  RxOnly: Off
