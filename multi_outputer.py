@@ -10,7 +10,7 @@ def output_chirp_channels(channels, max_name_length=16):
 
     location = 1
     for channel in channels:
-        name = channel['Name'].split(' ')[0]
+        name = channel['Name'][:max_name_length]
         frequency = channel['RxFrequency']
         mode = channel['Mode']
 
@@ -21,8 +21,9 @@ def output_chirp_channels(channels, max_name_length=16):
                     or channel['TxFrequencyOffset'] == '+0.0':
                 duplex = ''
                 offset = 0
-            # else:
-            #     pass
+            else:
+                duplex = channel['TxFrequencyOffset'][0:1]
+                offset = float(channel['TxFrequencyOffset'][1:])
         else:
             duplex = ''
             offset = 0
@@ -60,7 +61,7 @@ def output_chirp_channels(channels, max_name_length=16):
         dtcs_code = '023'
         dtcs_polarity = 'NN'
 
-        print(f"{location},{name[:max_name_length]},{frequency:.6f},{duplex},{offset:.6f},,{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,,,,,")
+        print(f"{location},{name},{frequency:.6f},{duplex},{offset:.6f},,{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,,,,,")
         location += 1
 
 
@@ -71,7 +72,7 @@ def main(input_file):
         yaml = YAML(typ='safe')
         payload = yaml.load(f)
 
-    output_chirp_channels(payload['channels'], 7)
+    output_chirp_channels(payload['channels'], max_name_length=6)
 
 
 if __name__ == '__main__':
