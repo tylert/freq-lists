@@ -15,9 +15,15 @@ def output_chirp_channels(channels, max_name_length=16):
         mode = channel['Mode']
 
         # Find out the duplex and offset
-        if channel['TxFrequencyOffset'] is None \
-                or channel['TxFrequencyOffset'] == '' \
-                or channel['TxFrequencyOffset'] == '+0.0':
+        if 'TxFrequencyOffset' in channel.keys():
+            if channel['TxFrequencyOffset'] is None \
+                    or channel['TxFrequencyOffset'] == '' \
+                    or channel['TxFrequencyOffset'] == '+0.0':
+                duplex = ''
+                offset = 0
+            # else:
+            #     pass
+        else:
             duplex = ''
             offset = 0
 
@@ -27,6 +33,8 @@ def output_chirp_channels(channels, max_name_length=16):
                 tstep = 6.25  # kHz
             else:
                 tstep = 5.00  # kHz
+        else:
+            tstep = 5.00  # kHz
 
         # Offer CTCSS???
         if 'CtcssDecode' in channel.keys():
