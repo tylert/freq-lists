@@ -1,0 +1,64 @@
+#  _____ _
+# |_   _(_)_ __ ___   ___   ___  ___  _   _ _ __ ___ ___  ___
+#   | | | | '_ ` _ \ / _ \ / __|/ _ \| | | | '__/ __/ _ \/ __|
+#   | | | | | | | | |  __/ \__ \ (_) | |_| | | | (_|  __/\__ \
+#   |_| |_|_| |_| |_|\___| |___/\___/ \__,_|_|  \___\___||___/
+
+channels:
+
+#                               ____ _   _ _   _
+#                              / ___| | | | | | |
+#                             | |   | |_| | | | |
+#                             | |___|  _  | |_| |
+#                              \____|_| |_|\___/
+
+- Name: CHU90M
+  RxFrequency: 3.33
+  Mode: AM
+  RxOnly: On  # Tx inhibit
+
+- Name: CHU38M
+  RxFrequency: 7.85
+  Mode: AM
+  RxOnly: On  # Tx inhibit
+
+- Name: CHU20M
+  RxFrequency: 14.67
+  Mode: AM
+  RxOnly: On  # Tx inhibit
+
+#                      __        ____        ____     __
+#                      \ \      / /\ \      / /\ \   / /
+#                       \ \ /\ / /  \ \ /\ / /  \ \ / /
+#                        \ V  V /    \ V  V /    \ V /
+#                         \_/\_/      \_/\_/      \_/
+
+- Name: WWVBLF
+  RxFrequency: 0.6
+  Mode: AM
+  RxOnly: On  # Tx inhibit
+
+- Name: WWV120M
+  RxFrequency: 2.5
+  Mode: AM
+  RxOnly: On  # Tx inhibit
+
+- Name: WWV60M
+  RxFrequency: 5.0
+  Mode: AM
+  RxOnly: On  # Tx inhibit
+
+- Name: WWV30M
+  RxFrequency: 10.0
+  Mode: AM
+  RxOnly: On  # Tx inhibit
+
+- Name: WWV20M
+  RxFrequency: 15.0
+  Mode: AM
+  RxOnly: On  # Tx inhibit
+
+- Name: WWV15M
+  RxFrequency: 20.0
+  Mode: AM
+  RxOnly: On  # Tx inhibit
