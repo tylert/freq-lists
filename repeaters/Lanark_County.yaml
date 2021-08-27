@@ -1,0 +1,81 @@
+channels:
+
+- Name: VE3KJG Lavant
+  RxFrequency: 146.64
+  TxFrequencyOffset: '-0.6'
+  Mode: FM
+  CtcssDecode: 100.0
+  CtcssEncode: None
+  Power: High
+
+- Name: VA3TEL ChrstLake  # Christie Lake
+  RxFrequency: 145.23
+  TxFrequencyOffset: '-0.6'
+  Mode: FM
+  CtcssDecode: 100.0
+  CtcssEncode: 100.0
+  Power: High
+
+- Name: VE3LCA Perth
+  RxFrequency: 146.955
+  TxFrequencyOffset: '-0.6'
+  Mode: FM
+  CtcssDecode: 100.0
+  CtcssEncode: None
+  Power: High
+
+- Name: VE3REX RidFerry  # Rideau Ferry
+  RxFrequency: 442.2
+  TxFrequencyOffset: '+5.0'
+  Mode: FM
+  CtcssDecode: 100.0
+  CtcssEncode: 100.0
+  Power: High
+
+- Name: VE3WPO Westport
+  RxFrequency: 442.4
+  TxFrequencyOffset: '+5.0'
+  Mode: FM
+  CtcssDecode: 100.0
+  CtcssEncode: None
+  Power: High
+
+- Name: VE3HTN Toledo
+  RxFrequency: 146.865
+  TxFrequencyOffset: '-0.6'
+  Mode: FM
+  CtcssDecode: 100.0
+  CtcssEncode: None
+  Power: High
+
+- Name: VA3AAR AlmonteFH  # Almonte Fire Hall
+  RxFrequency: 444.3
+  TxFrequencyOffset: '+5.0'
+  Mode: FM
+  CtcssDecode: 100.0
+  CtcssEncode: None
+  Power: High
+
+- Name: VA3ARE Almonte
+  RxFrequency: 147.27
+  TxFrequencyOffset: '+0.6'
+  Mode: FM
+  CtcssDecode: 100.0
+  CtcssEncode: None
+  Power: High
+
+- Name: VE3RLR SmthsFals  # Smiths Falls (Railway Museum)
+  RxFrequency: 147.21
+  TxFrequencyOffset: '+0.6'
+  Mode: FM
+  CtcssDecode: 151.4
+  CtcssEncode: 151.4
+  Power: High
+
+- Name: VE3RLR SmthsFals  # Smiths Falls (Railway Museum)
+  RxFrequency: 442.75
+  TxFrequencyOffset: '+5.0'
+  Mode: FM
+  CtcssDecode: 151.4
+  CtcssEncode: 151.4
+  Power: High
