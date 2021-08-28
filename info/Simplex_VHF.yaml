@@ -206,6 +206,8 @@ channels:
 #                       |_____|_| |_| |_| |_|   |_|  |_|
 
 # FM simplex from 146.4 to 146.595 - 13 channels on a 15 kHz raster
+# NOTE  The old plan had 13 channels, the new plan has 14 channels
+# XXX FIXME TODO  Report this bug in the notes for the new band plan!!!
 # 146.40, 146.43 and 146.46 may be repeater inputs in some areas
 
 - Name: 146.4 FM
