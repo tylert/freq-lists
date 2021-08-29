@@ -30,14 +30,12 @@ Ham Repeaters: Output  Offset  Location   Callsign   Notes Tone   50W  5W
     147.000  ( - ) Mt. Rigaud QC   VE2RM         -
     147.000  ( - ) Auburn NY   W2QYT         -
     147.015  ( + ) Frankford ON (N. Of Trenton) VE3TRR   91.5       -
-    147.060  ( - ) Mount St. Patrick ON  VE3STP 114.8  Strong    Yes
     147.090  ( + ) N. Frontenac (Clarendon Stn.)    VE3KAR     (Currently off-the-air)
     147.105  ( + ) Cantley QC        (L2) VE2REH   2018 110.9       -
     147.135  ( + ) Fine NY   WA2NAN 151.4  Medium  Yes
     147.150  ( + ) Ottawa (Orleans) ON  VE3MPC C4FM       -
     147.150  ( + ) Fulton NY   N2GIV  103.5      -
     147.195  ( + ) Cantley QC   VE2MDC 110.9      -
-    147.210  ( + ) Smiths Falls ON  VE3RLR C4FM 151.4  Strong    Yes
     147.225  ( + ) Malone NY   WB2RYB/R 5890      -
     147.240  ( + ) Smiths Falls ON  VA3RDD  DStar       -
     147.255  ( + ) Watertown NY   KA2QJO 151.4   Weak     No
@@ -70,7 +68,6 @@ Ham Repeaters: Output  Offset  Location   Callsign    Notes Tone   50W  5W
     444.225  ( + ) Kemptville ON   VE3NGR C4FM       -
     444.250  ( + ) Gatineau QC   VA2UHF 110.9      -
     444.350  ( + ) Ottawa (Cumberland) ON VA3RCB 100.0      -
-    444.400  ( + ) Ottawa (Orleans) ON  VE3MPC C4FM 100.0      -
     444.450  ( + ) Perth (Otty Lake) ON  VE3IEV     2053 100.0    (Currently off-the-air)
 (1) 444.500  ( + ) Ottawa ON    (Optional - L1) VA3LGP 141.3      -
     444.500  ( + ) Chelsea QC   VE2GFV 146.2      -
@@ -78,7 +75,6 @@ Ham Repeaters: Output  Offset  Location   Callsign    Notes Tone   50W  5W
     444.600  ( + ) Cantley QC   VE2REH 110.9      -
     444.650  ( + ) Malone NY    NG2C        -
     444.700  ( + ) Cantley QC   VA2CMB 123.0      -
-    444.750  ( + ) Smiths Falls ON  VE3RLR  C4FM 151.4      -
     444.825  ( + ) Ottawa ON   VA3DSP 100.0      -
     444.850  ( + ) Ottawa (Argyle St YMCA) ON VE3ODG DStar       -
     444.900  ( + ) Gatineau QC   VA2XAD 162.2      -
