@@ -1,0 +1,532 @@
+#  __  __            _             __     ___   _ _____
+# |  \/  | __ _ _ __(_)_ __   ___  \ \   / / | | |  ___|
+# | |\/| |/ _` | '__| | '_ \ / _ \  \ \ / /| |_| | |_
+# | |  | | (_| | |  | | | | |  __/   \ V / |  _  |  _|
+# |_|  |_|\__,_|_|  |_|_| |_|\___|    \_/  |_| |_|_|
+
+channels:
+
+- Name: M00A
+  RxFrequency: 156.0
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M00B
+  RxFrequency: 160.6
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M01A
+  RxFrequency: 156.05
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M01B
+  RxFrequency: 160.65
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M02A
+  RxFrequency: 156.1
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M02B
+  RxFrequency: 160.7
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M03A
+  RxFrequency: 156.15
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M03B
+  RxFrequency: 160.75
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M04A
+  RxFrequency: 156.2
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M04B
+  RxFrequency: 160.8
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M05A
+  RxFrequency: 156.25
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M05B
+  RxFrequency: 160.85
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M06A
+  RxFrequency: 156.3
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M07A
+  RxFrequency: 156.35
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M07B
+  RxFrequency: 160.95
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M08A
+  RxFrequency: 156.4
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M09A
+  RxFrequency: 156.45
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M10A
+  RxFrequency: 156.5
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M11A
+  RxFrequency: 156.55
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M12A
+  RxFrequency: 156.6
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M13A
+  RxFrequency: 156.65
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M14A
+  RxFrequency: 156.7
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M15A
+  RxFrequency: 156.75
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M16A
+  RxFrequency: 156.8
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M17A
+  RxFrequency: 156.85
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M18A
+  RxFrequency: 156.9
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M18B
+  RxFrequency: 161.5
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M19A
+  RxFrequency: 156.95
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M19B
+  RxFrequency: 161.55
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M20A
+  RxFrequency: 157.0
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M20B
+  RxFrequency: 161.6
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M21A
+  RxFrequency: 157.05
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M21B
+  RxFrequency: 161.65
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M22A
+  RxFrequency: 157.1
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M22B
+  RxFrequency: 161.7
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M23A
+  RxFrequency: 157.15
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M23B
+  RxFrequency: 161.75
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M24A
+  RxFrequency: 157.2
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M24B
+  RxFrequency: 161.8
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M25A
+  RxFrequency: 157.25
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M25B
+  RxFrequency: 161.85
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M26A
+  RxFrequency: 157.3
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M26B
+  RxFrequency: 161.9
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M27A
+  RxFrequency: 157.35
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M27B
+  RxFrequency: 161.95
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M28A
+  RxFrequency: 157.4
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M28B
+  RxFrequency: 162.0
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M31A
+  RxFrequency: 157.55
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M31B
+  RxFrequency: 162.15
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M36A
+  RxFrequency: 162.4
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M37A
+  RxFrequency: 157.85
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M37B
+  RxFrequency: 162.45
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M38B
+  RxFrequency: 162.5
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M39B
+  RxFrequency: 162.55
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M60A
+  RxFrequency: 156.025
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M60B
+  RxFrequency: 160.625
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M61A
+  RxFrequency: 156.075
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M61B
+  RxFrequency: 160.675
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M62A
+  RxFrequency: 156.125
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M62B
+  RxFrequency: 160.725
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M63A
+  RxFrequency: 156.175
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M63B
+  RxFrequency: 160.775
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M64A
+  RxFrequency: 156.225
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M64B
+  RxFrequency: 160.825
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M65A
+  RxFrequency: 156.275
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M65B
+  RxFrequency: 160.875
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M66A
+  RxFrequency: 156.325
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M66B
+  RxFrequency: 160.925
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M67A
+  RxFrequency: 156.375
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M68A
+  RxFrequency: 156.425
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M69A
+  RxFrequency: 156.475
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M70A
+  RxFrequency: 156.525
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M71A
+  RxFrequency: 156.575
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M72A
+  RxFrequency: 156.625
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M73A
+  RxFrequency: 156.675
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M74A
+  RxFrequency: 156.725
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M75A
+  RxFrequency: 156.775
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M76A
+  RxFrequency: 156.825
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M77A
+  RxFrequency: 156.875
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M78A
+  RxFrequency: 156.925
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M78B
+  RxFrequency: 161.525
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M79A
+  RxFrequency: 156.975
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M79B
+  RxFrequency: 161.575
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M80A
+  RxFrequency: 157.025
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M80B
+  RxFrequency: 161.625
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M81A
+  RxFrequency: 157.075
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M81B
+  RxFrequency: 161.675
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M82A
+  RxFrequency: 157.125
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M82B
+  RxFrequency: 161.725
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M83A
+  RxFrequency: 157.175
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M83B
+  RxFrequency: 161.775
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M84A
+  RxFrequency: 157.225
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M84B
+  RxFrequency: 161.825
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M85A
+  RxFrequency: 157.275
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M85B
+  RxFrequency: 161.875
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M86A
+  RxFrequency: 157.325
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M86B
+  RxFrequency: 161.925
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M87A
+  RxFrequency: 157.375
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M87B
+  RxFrequency: 161.975
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M88A
+  RxFrequency: 157.425
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M88B
+  RxFrequency: 162.025
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M96B
+  RxFrequency: 162.425
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M97B
+  RxFrequency: 162.475
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M98B
+  RxFrequency: 162.525
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: M113B
+  RxFrequency: 163.275
+  Mode: FM
+  RxOnly: On  # Tx inhibit
