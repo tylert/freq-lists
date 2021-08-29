@@ -1,0 +1,207 @@
+#  __  __ _   _ ____  ____                    _
+# |  \/  | | | |  _ \/ ___|    __ _ _ __   __| |
+# | |\/| | | | | |_) \___ \   / _` | '_ \ / _` |
+# | |  | | |_| |  _ < ___) | | (_| | | | | (_| |
+# |_|  |_|\___/|_| \_\____/   \__,_|_| |_|\__,_|
+#  ____            _                       _                     _
+# | __ ) _   _ ___(_)_ __   ___  ___ ___  | |__   __ _ _ __   __| |
+# |  _ \| | | / __| | '_ \ / _ \/ __/ __| | '_ \ / _` | '_ \ / _` |
+# | |_) | |_| \__ \ | | | |  __/\__ \__ \ | |_) | (_| | | | | (_| |
+# |____/ \__,_|___/_|_| |_|\___||___/___/ |_.__/ \__,_|_| |_|\__,_|
+
+channels:
+
+- Name: BBLOW1
+  RxFrequency: 27.49
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBLOW2
+  RxFrequency: 27.51
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBLOW3
+  RxFrequency: 27.555
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBLOW4
+  RxFrequency: 30.84
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBLOW5
+  RxFrequency: 33.12
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBLOW6
+  RxFrequency: 33.14
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBLOW7
+  RxFrequency: 33.4
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBLOW8
+  RxFrequency: 35.02
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBLOW9
+  RxFrequency: 35.04
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBLOWA
+  RxFrequency: 42.98
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBLOWB
+  RxFrequency: 43.04
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBITN1
+  RxFrequency: 151.505
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBITN2
+  RxFrequency: 151.5125
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: REDDOT
+  RxFrequency: 151.625
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBITN4
+  RxFrequency: 151.7
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBITN5
+  RxFrequency: 151.76
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: MURS1
+  RxFrequency: 151.82
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: MURS2
+  RxFrequency: 151.88
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: MURS3
+  RxFrequency: 151.94
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: PPLDOT
+  RxFrequency: 151.955
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: BB1
+  RxFrequency: 154.515
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: BB2
+  RxFrequency: 154.54
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: BLUDOT
+  RxFrequency: 154.57
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: MURS4B
+  RxFrequency: 154.57
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: GRNDOT
+  RxFrequency: 154.6
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: MURS5G
+  RxFrequency: 154.6
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBITN5
+  RxFrequency: 158.4
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: BBITN6
+  RxFrequency: 158.4075
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: WHTDOT
+  RxFrequency: 462.575
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: BLKDOT
+  RxFrequency: 462.625
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: ORGDOT
+  RxFrequency: 462.675
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: BRNDOT
+  RxFrequency: 464.5
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: YLWDOT
+  RxFrequency: 464.55
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: SILSTR
+  RxFrequency: 467.85
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: GOLSTR
+  RxFrequency: 467.875
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: REDSTR
+  RxFrequency: 467.9
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: BLUSTR
+  RxFrequency: 467.925
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: BRNDPX
+  RxFrequency: 469.5
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
+
+- Name: YLWDPX
+  RxFrequency: 469.55
+  Mode: NFM
+  RxOnly: On  # Tx inhibit
