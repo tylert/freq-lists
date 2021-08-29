@@ -1,3 +1,5 @@
+channels:
+
 #  ____  _                 _            __     ___   _ _____
 # / ___|(_)_ __ ___  _ __ | | _____  __ \ \   / / | | |  ___|
 # \___ \| | '_ ` _ \| '_ \| |/ _ \ \/ /  \ \ / /| |_| | |_
@@ -12,8 +14,6 @@
 
 # Old DMR pseudo-standard - http://va3xpr.net/dmr-simplex-frequencies/
 # US-only DMR not-a-standard - http://trbo.org/simplex/simplex.html
-
-channels:
 
 #                     ____              ____  __  __ ____
 #                    |___ \ _ __ ___   |  _ \|  \/  |  _ \

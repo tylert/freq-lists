@@ -1,3 +1,5 @@
+channels:
+
 #   ____ __  __ ____  ____                    _   _____ ____  ____
 #  / ___|  \/  |  _ \/ ___|    __ _ _ __   __| | |  ___|  _ \/ ___|
 # | |  _| |\/| | |_) \___ \   / _` | '_ \ / _` | | |_  | |_) \___ \
@@ -6,8 +8,6 @@
 
 # UHF GMRS and FRS simplex channels Canada/US and US-only duplex channels
 # https://wiki.radioreference.com/index.php/FRS/GMRS_combined_channel_chart
-
-channels:
 
 #                       ____  _                        _
 #                      / ___|| |__   __ _ _ __ ___  __| |
