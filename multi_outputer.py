@@ -81,12 +81,10 @@ def output_chirp_channels(channels, max_name_length=8):
                     and channel['CtcssDecode'] != 'None' and channel['CtcssEncode'] != 'None' \
                     and channel['CtcssDecode'] != '' and channel['CtcssEncode'] != '':
                 tone = 'TSQL'
-                c_tone_freq = r_tone_freq
             elif channel['CtcssDecode'] is not None \
                     and channel['CtcssDecode'] != 'None' \
                     and channel['CtcssDecode'] != '':
                 tone = 'Tone'
-                c_tone_freq = r_tone_freq
             else:
                 raise ValueError('Expecting a tone but not sending one!')
         else:
