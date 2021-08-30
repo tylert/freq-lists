@@ -1,40 +1,40 @@
 channels:
 
-#  _____ __  __ ____   ____
-# | ____|  \/  |  _ \ / ___|
-# |  _| | |\/| | |_) | |  _
-# | |___| |  | |  _ <| |_| |
-# |_____|_|  |_|_| \_\\____|
+#                           _____ __  __ ____   ____
+#                          | ____|  \/  |  _ \ / ___|
+#                          |  _| | |\/| | |_) | |  _
+#                          | |___| |  | |  _ <| |_| |
+#                          |_____|_|  |_|_| \_\\____|
 
-- Name: VE3OCE AltaVist  # Alta Vista (OFS Station 35)
+- Name: VE3OCE AltaVista  # Alta Vista (OFS Station 35)
   RxFrequency: 146.88
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
 
-- Name: UVE3OCE AltaVist  # Alta Vista (OFS Station 35)
+- Name: VE3OCE AltaVista  # Alta Vista (OFS Station 35)
   RxFrequency: 443.8
   TxFrequencyOffset: '+5.0'
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
 
-- Name: VA3OFS Barrhavn  # Barrhaven (OFS Station 44)
+- Name: VA3OFS Barrhaven  # Barrhaven (OFS Station 44)
   RxFrequency: 146.67
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
 
-- Name: UVA3OFS Barrhavn  # Barrhaven (OFS Station 44)
+- Name: VA3OFS Barrhaven  # Barrhaven (OFS Station 44)
   RxFrequency: 444.95
   TxFrequencyOffset: '+5.0'
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
 
-- Name: VA3EMV/E Orleans  # (OFS Station 53)
+- Name: VA3EMV/E Orleans  # Orleans (OFS Station 53)
   RxFrequency: 146.985
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -55,21 +55,28 @@ channels:
   CtcssEncode: 136.5
   CtcssDecode: 136.5
 
-- Name: VE2CRA CampFort  # Camp Fortune (IRLP Node 2040)
+#                            ___    _    ____   ____
+#                           / _ \  / \  |  _ \ / ___|
+#                          | | | |/ _ \ | |_) | |
+#                          | |_| / ___ \|  _ <| |___
+#                           \___/_/   \_\_| \_\\____|
+
+- Name: VE2CRA CampFortu  # Camp Fortune (IRLP Node 2040)
   RxFrequency: 146.94
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: UVE2CRA CampFort  # Camp Fortune (IRLP Node 2040)
+- Name: VE2CRA CampFortu  # Camp Fortune (IRLP Node 2040)
   RxFrequency: 443.3
   TxFrequencyOffset: '+5.0'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: UVE2CRA CampFort  # Camp Fortune (MMDVM 302093)
+- Name: VE2CRA CampFortu  # Camp Fortune (MMDVM 302093)
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
   Mode: DMR
+  ColorCode: 1
