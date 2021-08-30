@@ -6,67 +6,72 @@ channels:
 #   \ V  V /  __/ (_| | |_| | | |  __/ |    | | | | |  _| (_) |
 #    \_/\_/ \___|\__,_|\__|_| |_|\___|_|    |_|_| |_|_|  \___/
 
-- Name: WX8
+# https://en.wikipedia.org/wiki/Weather_radio
+# https://www.canada.ca/en/environment-climate-change/services/weatheradio.html
+# http://www.wiki.robotz.com/index.php/WX_Weather_Radio
+# https://github.com/jwhittaker/nwrsites
+
+- Name: WX8  # M21B
   RxFrequency: 161.65
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: WX11
+- Name: WXA  # M23B
   RxFrequency: 161.75
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: WX9
+- Name: WX9  # M83B
   RxFrequency: 161.775
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: WX13
+- Name: WXB  # M27B / ASM 1 / Channel 2027
   RxFrequency: 161.95
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: WX12
+- Name: WXC  # M28B / ASM 2 / Channel 2028
   RxFrequency: 162.0
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: WX2/P1
+- Name: WX2/PA1  # M36B / Public Alert 1
   RxFrequency: 162.4
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: WX4/P2
+- Name: WX4/PA2  # M96B / Public Alert 2
   RxFrequency: 162.425
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: WX5/P3
+- Name: WX5/PA3  # M37B / Public Alert 3
   RxFrequency: 162.45
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: WX3/P4
+- Name: WX3/PA4  # M97B / Public Alert 4
   RxFrequency: 162.475
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: WX6/P5
+- Name: WX6/PA5  # M38B / Public Alert 5
   RxFrequency: 162.5
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: WX7/P6
+- Name: WX7/PA6  # M98B / Public Alert 6
   RxFrequency: 162.525
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: WX1/P7
+- Name: WX1/PA7  # M39B / Public Alert 7
   RxFrequency: 162.55
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: WX10
+- Name: WX10  # M113B
   RxFrequency: 163.275
   Mode: FM
   RxOnly: On  # Tx inhibit
