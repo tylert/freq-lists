@@ -11,10 +11,15 @@ import json
 import click
 
 
-def plop_channel(item, contact_name='Contact1', group_list='GroupList1',
-                 repeater_slot='1', rx_only='Off', scan_list='ScanList1'):
-    '''
-    '''
+def plop_channel(
+    item,
+    contact_name='Contact1',
+    group_list='GroupList1',
+    repeater_slot='1',
+    rx_only='Off',
+    scan_list='ScanList1',
+):
+    ''' '''
 
     channel = {
         "AllowTalkaround": "Off",
@@ -53,7 +58,7 @@ def plop_channel(item, contact_name='Contact1', group_list='GroupList1',
         "TotRekeyDelay": "0",
         "TxRefFrequency": "Low",
         "TxSignallingSystem": "Off",
-        "Vox": "Off"
+        "Vox": "Off",
     }
 
     if scan_list is not None and scan_list != '':
@@ -116,8 +121,9 @@ def plop_channel(item, contact_name='Contact1', group_list='GroupList1',
             channel['AdmitCriteria'] = 'Color code'
         else:
             channel['AdmitCriteria'] = 'Always'
-        channel['TxFrequencyOffset'] = '{}{:.5f}'.format(item['Duplex'],
-                                                         float(item['Offset']))
+        channel['TxFrequencyOffset'] = '{}{:.5f}'.format(
+            item['Duplex'], float(item['Offset'])
+        )
 
     return json.dumps(channel, indent=2, sort_keys=True)
 
@@ -130,22 +136,34 @@ def plop_channel(item, contact_name='Contact1', group_list='GroupList1',
 @click.option('--repeater_slot', '-r', default='1', help='RepeaterSlot 1 or 2')
 @click.option('--rx_only', '-x', default='Off', help='RxOnly Off or On')
 @click.option('--scan_list', '-s', default='ScanList1', help='ScanList string')
-def main(chirp_csv, codeplug_json, contact_name, group_list, repeater_slot,
-         rx_only, scan_list):
-    '''
-    '''
+def main(
+    chirp_csv,
+    codeplug_json,
+    contact_name,
+    group_list,
+    repeater_slot,
+    rx_only,
+    scan_list,
+):
+    ''' '''
 
     # Read in the new channels to append from the CHIRP CSV file
     channels = []
     with open(chirp_csv, 'r') as csv_file:
         reader = DictReader(csv_file)
         for item in reader:
-            channels.append(json.loads(plop_channel(item,
-                                                    contact_name=contact_name,
-                                                    group_list=group_list,
-                                                    repeater_slot=repeater_slot,
-                                                    rx_only=rx_only,
-                                                    scan_list=scan_list)))
+            channels.append(
+                json.loads(
+                    plop_channel(
+                        item,
+                        contact_name=contact_name,
+                        group_list=group_list,
+                        repeater_slot=repeater_slot,
+                        rx_only=rx_only,
+                        scan_list=scan_list,
+                    )
+                )
+            )
 
     # Read in the existing codeplug JSON
     codeplug = {}
