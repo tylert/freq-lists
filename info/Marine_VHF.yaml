@@ -166,7 +166,7 @@ channels:
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: M21B
+- Name: M21B  # WX8
   RxFrequency: 161.65
   Mode: FM
   RxOnly: On  # Tx inhibit
@@ -186,7 +186,7 @@ channels:
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: M23B
+- Name: M23B  # WXA
   RxFrequency: 161.75
   Mode: FM
   RxOnly: On  # Tx inhibit
@@ -226,7 +226,7 @@ channels:
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: M27B
+- Name: M27B  # ASM 1 / Channel 2027 / WXB
   RxFrequency: 161.95
   Mode: FM
   RxOnly: On  # Tx inhibit
@@ -236,7 +236,7 @@ channels:
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: M28B
+- Name: M28B  # ASM 2 / Channel 2028 / WXC
   RxFrequency: 162.0
   Mode: FM
   RxOnly: On  # Tx inhibit
@@ -261,17 +261,17 @@ channels:
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: M37B
+- Name: M37B  # WX5/PA3
   RxFrequency: 162.45
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: M38B
+- Name: M38B  # WX6/PA5
   RxFrequency: 162.5
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: M39B
+- Name: M39B  # WX1/PA7
   RxFrequency: 162.55
   Mode: FM
   RxOnly: On  # Tx inhibit
@@ -456,7 +456,7 @@ channels:
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: M83B
+- Name: M83B  # WX9
   RxFrequency: 161.775
   Mode: FM
   RxOnly: On  # Tx inhibit
@@ -511,22 +511,22 @@ channels:
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: M96B
+- Name: M96B  # WX4/PA2
   RxFrequency: 162.425
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: M97B
+- Name: M97B  # WX3/PA4
   RxFrequency: 162.475
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: M98B
+- Name: M98B  # WX7/PA6
   RxFrequency: 162.525
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-- Name: M113B
+- Name: M113B  # WX10
   RxFrequency: 163.275
   Mode: FM
   RxOnly: On  # Tx inhibit
