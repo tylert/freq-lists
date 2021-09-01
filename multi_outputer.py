@@ -32,7 +32,6 @@ def sanitize_channel_name(name, length=8):
 def output_chirp_channels(channels, max_name_length=8):
     # https://chirp.danplanet.com/projects/chirp/wiki/MemoryEditorColumns
 
-    # XXX FIXME TODO Check that this is still the current header format for CHIRP!!!
     print(
         'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE'
     )
@@ -43,67 +42,61 @@ def output_chirp_channels(channels, max_name_length=8):
         frequency = channel['RxFrequency']
         mode = channel['Mode']
 
-        # Find out the duplex and offset
-        if 'TxFrequencyOffset' in channel.keys():
-            if (
-                channel['TxFrequencyOffset'] is None
-                or channel['TxFrequencyOffset'] == ''
-                or channel['TxFrequencyOffset'] == '+0.0'
-            ):
-                duplex = ''
-                offset = 0
-            else:
-                duplex = channel['TxFrequencyOffset'][0:1]
-                offset = float(channel['TxFrequencyOffset'][1:])
+        # Duplex and offset?
+        if (
+            'TxFrequencyOffset' in channel.keys()
+            and channel['TxFrequencyOffset'] is not None
+            and channel['TxFrequencyOffset'] != ''
+            and channel['TxFrequencyOffset'] != '+0.0'
+        ):
+            duplex = channel['TxFrequencyOffset'][0:1]
+            offset = float(channel['TxFrequencyOffset'][1:])
         else:
             duplex = ''
             offset = 0
 
-        # Send CTCSS tones
-        if 'CtcssEncode' in channel.keys():
-            if (
-                channel['CtcssEncode'] is not None
-                and channel['CtcssEncode'] != 'None'
-                and channel['CtcssEncode'] != ''
-            ):
-                c_tone_freq = channel['CtcssEncode']
-            else:
-                c_tone_freq = '88.5'
+        # Send CTCSS tones?
+        if (
+            'CtcssEncode' in channel.keys()
+            and channel['CtcssEncode'] is not None
+            and channel['CtcssEncode'] != 'None'
+            and channel['CtcssEncode'] != ''
+        ):
+            c_tone_freq = channel['CtcssEncode']
         else:
             c_tone_freq = '88.5'
 
-        # Expect CTCSS tones
-        if 'CtcssDecode' in channel.keys():
-            if (
-                channel['CtcssDecode'] is not None
-                and channel['CtcssDecode'] != 'None'
-                and channel['CtcssDecode'] != ''
-            ):
-                r_tone_freq = channel['CtcssDecode']
-            else:
-                r_tone_freq = '88.5'
+        # Expect CTCSS tones?
+        if (
+            'CtcssDecode' in channel.keys()
+            and channel['CtcssDecode'] is not None
+            and channel['CtcssDecode'] != 'None'
+            and channel['CtcssDecode'] != ''
+        ):
+            r_tone_freq = channel['CtcssDecode']
         else:
             r_tone_freq = '88.5'
 
-        # CTCSS tone type
-        if 'CtcssEncode' in channel.keys() and 'CtcssDecode' in channel.keys():
-            if (
-                channel['CtcssEncode'] is not None
-                and channel['CtcssDecode'] is not None
-                and channel['CtcssEncode'] != 'None'
-                and channel['CtcssDecode'] != 'None'
-                and channel['CtcssEncode'] != ''
-                and channel['CtcssDecode'] != ''
-            ):
-                tone = 'TSQL'
-            elif (
-                channel['CtcssEncode'] is not None
-                and channel['CtcssEncode'] != 'None'
-                and channel['CtcssEncode'] != ''
-            ):
-                tone = 'Tone'
-            else:
-                raise ValueError('Expecting a tone but not sending one!')
+        # CTCSS tone type?
+        if (
+            'CtcssEncode' in channel.keys()
+            and 'CtcssDecode' in channel.keys()
+            and channel['CtcssEncode'] is not None
+            and channel['CtcssDecode'] is not None
+            and channel['CtcssEncode'] != 'None'
+            and channel['CtcssDecode'] != 'None'
+            and channel['CtcssEncode'] != ''
+            and channel['CtcssDecode'] != ''
+        ):
+            tone = 'TSQL'
+        elif (
+            'CtcssEncode' in channel.keys()
+            and channel['CtcssEncode'] is not None
+            and channel['CtcssEncode'] != 'None'
+            and channel['CtcssEncode'] != ''
+        ):
+            tone = 'Tone'
+            r_tone_freq = c_tone_freq
         else:
             tone = ''
 
@@ -111,7 +104,7 @@ def output_chirp_channels(channels, max_name_length=8):
         dtcs_code = '023'
         dtcs_polarity = 'NN'
 
-        # Figure out a "good" TStep value
+        # Tstep?
         if frequency > 30:  # VHF and up
             if frequency > 300:  # UHF and up
                 tstep = 6.25
@@ -148,9 +141,6 @@ def output_rt_systems_2_channels():
 # 19,445.8000,445.8,000 kHz,Simplex,DV,445.800 Dstar Simplex,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,A: ,,,Off,0,,,
 
 
-# XXX FIXME TODO length switch
-
-
 @click.command()
 @click.option('--input_file', '-i', default=None, help='input')
 @click.option(
@@ -164,7 +154,7 @@ def main(input_file, max_name_length):
         yaml = YAML(typ='safe')
         payload = yaml.load(f)
 
-    output_chirp_channels(payload['channels'], max_name_length=max_name_length)
+    output_chirp_channels(channels=payload['channels'], max_name_length=max_name_length)
 
 
 if __name__ == '__main__':
