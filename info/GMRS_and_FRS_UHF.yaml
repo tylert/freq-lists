@@ -16,6 +16,7 @@ channels:
 #                      |____/|_| |_|\__,_|_|  \___|\__,_|
 
 # These should be limited to 2 W in Canada and 5 W in the US
+# These channels are shared with FRS
 
 - Name: GMRS01
   RxFrequency: 462.5625
@@ -208,6 +209,7 @@ channels:
 #             |_|                                     |_|
 
 # These should be limited to 50 W (US only)
+# Since these are inputs, they really should be on 462.xxx with a +5.0 offset
 
 - Name: GMRS15R
   RxFrequency: 467.55

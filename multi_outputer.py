@@ -12,16 +12,13 @@ import click
 def sanitize_channel_name(name, length=8):
     # XXX FIXME TODO Maybe round up when truncating numerical channel names???
 
-    # If the name is already the right length, just use it
-    if len(name) <= length and length > 0:
-        return name
-    elif length < 0:
+    # Make sure nobody tries to ask for a negative number
+    if length < 0:
         raise ValueError('Invalid name length!')
 
-    # Try to force the name to fix in the specified length and cull trailing whitespace
+    # Truncate name to the specified length and cull any trailing whitespace
+    # Force names to not have strange, chopped-off stuff at the end
     new_name = name[:length].strip()
-
-    # Try to force names to not have strange, chopped-off stuff at the end
     if ' ' in new_name:
         new_name = name[:length].strip().split()[0]
 
