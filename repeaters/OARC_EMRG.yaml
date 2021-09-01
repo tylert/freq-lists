@@ -8,14 +8,17 @@ channels:
 
 # http://oarc.net/
 
-- Name: VE2CRA CampFortu  # Camp Fortune (MMDVM 302093) - STM32-DVM Rev3 + Motorola CDM-1550LS+ x2
+# MMDVM Brandmeister 302093 DMR
+# IRLP Node 2040 (FM only)
+
+- Name: VE2CRA CampFortu  # Camp Fortune / CBC - Motorola CDM-1550LS+ x2, STM32-DVM Rev3
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
   Mode: DMR
   ColorCode: 1
   Power: High
 
-- Name: VE2CRA CampFortu  # Camp Fortune (IRLP Node 2040)
+- Name: VE2CRA CampFortu  # Camp Fortune / CBC - ?
   RxFrequency: 146.94
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -23,7 +26,7 @@ channels:
   CtcssDecode: 100.0
   Power: High
 
-- Name: VE2CRA CampFortu  # Camp Fortune (IRLP Node 2040)
+- Name: VE2CRA CampFortu  # Camp Fortune / CBC - ?
   RxFrequency: 443.3
   TxFrequencyOffset: '+5.0'
   Mode: FM
@@ -38,9 +41,11 @@ channels:
 #                          |_____|_|  |_|_| \_\\____|
 
 # http://emrg.ca/
+# http://emrg.ca/repeaters.htm
+
 # EMRG is in the process of shutting down... the following repeaters will probably be gone by 2026!!!
 
-- Name: VE3OCE AltaVista  # Alta Vista (OFS Station 35)
+- Name: VE3OCE AltaVista  # Alta Vista / Randall (OFS Dispatch / OFS Station 35) - Motorola MSR 2000?
   RxFrequency: 146.88
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -48,7 +53,7 @@ channels:
   CtcssDecode: 136.5
   Power: High
 
-- Name: VE3OCE AltaVista  # Alta Vista (OFS Station 35)
+- Name: VE3OCE AltaVista  # Alta Vista / Randall (OFS Dispatch / OFS Station 35) - Kenwood TKR-850
   RxFrequency: 443.8
   TxFrequencyOffset: '+5.0'
   Mode: FM
@@ -56,7 +61,7 @@ channels:
   CtcssDecode: 136.5
   Power: High
 
-- Name: VA3OFS Barrhaven  # Barrhaven (OFS Station 44)
+- Name: VA3OFS Barrhaven  # Barrhaven (OFS Station 44) - Motorola MSR 2000
   RxFrequency: 146.67
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -64,7 +69,7 @@ channels:
   CtcssDecode: 136.5
   Power: High
 
-- Name: VA3OFS Barrhaven  # Barrhaven (OFS Station 44)
+- Name: VA3OFS Barrhaven  # Barrhaven (OFS Station 44) - Kenwood TKR-850
   RxFrequency: 444.95
   TxFrequencyOffset: '+5.0'
   Mode: FM
@@ -72,7 +77,7 @@ channels:
   CtcssDecode: 136.5
   Power: High
 
-- Name: VA3EMV/E Orleans  # Orleans (OFS Station 53)
+- Name: VA3EMV/E Orleans  # Orleans / Cumberland (OFS Station 53) - ?
   RxFrequency: 146.985
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -80,7 +85,7 @@ channels:
   CtcssDecode: 100.0
   Power: High
 
-- Name: VA3EMV/W Stittsv  # Stittsville (OFS Station 81)
+- Name: VA3EMV/W Stittsv  # Stittsville (OFS Station 81) - Motorola MTR 2000
   RxFrequency: 145.21
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -88,7 +93,7 @@ channels:
   CtcssDecode: 123.0
   Power: High
 
-- Name: VA3EMV/P Portabl  # Portable
+- Name: VA3EMV/P Portabl  # Portable (OFS Dispatch / OFS Station 35) - Motorola Radios x2
   RxFrequency: 145.11
   TxFrequencyOffset: '-0.6'
   Mode: FM
