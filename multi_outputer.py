@@ -4,9 +4,124 @@
 # XXX FIXME TODO CSV output???
 # XXX FIXME TODO RT Systems output???
 
+import json
 
 from ruamel.yaml import YAML
 import click
+
+
+def output_retevis_channels(channels):
+    for channel in channels:
+        output = {
+            "AdmitCriteria": "Always",
+            "AllowTalkaround": "Off",
+            "Autoscan": "Off",
+            "Bandwidth": "12.5",
+            "ChannelMode": "Digital",
+            "ColorCode": "1",
+            "ContactName": "Contact1",
+            "CtcssDecode": "None",
+            "CtcssEncode": "None",
+            "DCDMSwitch": "Off",
+            "DataCallConfirmed": "Off",
+            "Decode1": "Off",
+            "Decode2": "Off",
+            "Decode3": "Off",
+            "Decode4": "Off",
+            "Decode5": "Off",
+            "Decode6": "Off",
+            "Decode7": "Off",
+            "Decode8": "Off",
+            "DisplayPTTID": "Off",
+            "EmergencyAlarmAck": "Off",
+            "EmergencySystem": "None",
+            "GPSSystem": "None",
+            "GroupList": "GroupList1",
+            "InCallCriteria": "Follow Admit Criteria",
+            "LeaderMS": "Off",
+            "LoneWorker": "Off",
+            "Name": "XXX",
+            "Power": "High",
+            "Privacy": "None",
+            "PrivacyNumber": "1",
+            "PrivateCallConfirmed": "Off",
+            "QtReverse": "180",
+            "ReceiveGPSInfo": "Off",
+            "RepeaterSlot": "1",
+            "ReverseBurst": "On",
+            "RxFrequency": "144.00000",
+            "RxOnly": "Off",
+            "RxRefFrequency": "Low",
+            "RxSignallingSystem": "Off",
+            "ScanList": "ScanList1",
+            "SendGPSInfo": "Off",
+            "Squelch": "1",
+            "Talkaround": "Off",
+            "Tot": "60",
+            "TotRekeyDelay": "0",
+            "TxFrequencyOffset": "+0.00000",
+            "TxRefFrequency": "Low",
+            "TxSignallingSystem": "Off",
+            "Vox": "Off",
+        }
+
+        # Ensure there is a 'Name', 'RxFrequency' and 'Mode' for each channel
+        if 'Name' not in channel.keys() or channel['Name'] == '':
+            raise ValueError('Missing Name for entry!')
+        if 'RxFrequency' not in channel.keys() or channel['RxFrequency'] == '':
+            raise ValueError('Missing RxFrequency for entry!')
+        if 'Mode' not in channel.keys() or channel['Mode'] == '':
+            raise ValueError('Missing Mode for entry!')
+
+        # XXX FIXME TODO Only override these if they are not specified!!!
+        # Use 'Mode' to determine 'Bandwidth' and 'ChannelMode'.
+        if channel['Mode'] == 'DMR':
+            output['Bandwidth'] = '12.5'
+            output['ChannelMode'] = 'Digital'
+            del channel['Mode']
+        elif channel['Mode'] == 'NFM':
+            output['Bandwidth'] = '12.5'
+            output['ChannelMode'] = 'Analog'
+            del channel['Mode']
+        elif channel['Mode'] == 'FM':
+            output['Bandwidth'] = '25'
+            output['ChannelMode'] = 'Analog'
+            del channel['Mode']
+        else:
+            raise ValueError('Unknown mode encountered!')
+
+        # XXX FIXME TODO Force TalkGroup to turn into ContactName!!!
+
+        # Merge channel into expected output
+        output.update(channel)
+
+        # Force things that might be integers/floats to be strings (for JSON)
+        output['RxFrequency'] = f"{channel['RxFrequency']:.5f}"
+        if 'CtcssDecode' in channel.keys():
+            output['CtcssDecode'] = f"{str(channel['CtcssDecode'])}"
+        if 'CtcssEncode' in channel.keys():
+            output['CtcssEncode'] = f"{str(channel['CtcssEncode'])}"
+        if 'ColorCode' in channel.keys():
+            output['ColorCode'] = f"{str(channel['ColorCode'])}"
+        if 'RepeaterSlot' in channel.keys():
+            output['RepeaterSlot'] = f"{str(channel['RepeaterSlot'])}"
+
+        # Set 'AdmitCriteria' to 'Always' for simplex and analog or 'Color
+        # code' when using DMR repeaters.
+        if output['ChannelMode'] == 'Digital':
+            if (
+                'TxFrequencyOffset' in channel.keys()
+                and channel['TxFrequencyOffset'] is not None
+                and channel['TxFrequencyOffset'] != 'None'
+                and channel['TxFrequencyOffset'] != ''
+                and channel['TxFrequencyOffset'] != '+0.0'
+            ):
+                output['AdmitCriteria'] = 'Color Code'
+
+        #     output['TxFrequencyOffset'] = '{}{:.5f}'.format(
+        #         item['Duplex'], float(item['Offset'])
+
+        print(json.dumps(output, indent=2, sort_keys=True))
 
 
 def sanitize_channel_name(name, length=8):
@@ -27,6 +142,7 @@ def sanitize_channel_name(name, length=8):
 
 
 def output_chirp_channels(channels, max_name_length=8):
+    # For some bizarre reason, the GUI has different column header names than the CSV files do...
     # https://chirp.danplanet.com/projects/chirp/wiki/MemoryEditorColumns
 
     print(
@@ -43,6 +159,7 @@ def output_chirp_channels(channels, max_name_length=8):
         if (
             'TxFrequencyOffset' in channel.keys()
             and channel['TxFrequencyOffset'] is not None
+            and channel['TxFrequencyOffset'] != 'None'
             and channel['TxFrequencyOffset'] != ''
             and channel['TxFrequencyOffset'] != '+0.0'
         ):
@@ -116,28 +233,6 @@ def output_chirp_channels(channels, max_name_length=8):
         location += 1
 
 
-def output_rt_systems_1_channels():
-    print(
-        'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment'
-    )
-
-
-# 145.55,144.95,600 kHz,-DUP,,DV,D-Star VE3AAR C,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,CQCQCQ,,,,,,, ,,
-# 145.55,144.95,600 kHz,-DUP,,DV,D-Star Union V,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,CQCQCQ,,,,,,, ,,
-# 145.6,145.6, ,Simplex,,DV,145.600 Dstar Si,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,,,,,,,, ,,
-# 145.62,145.62, ,Simplex,,DV,145.620 Dstar Si,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,,,,,,,, ,,
-# 444.1,449.1,5.00 MHz,+DUP,,DV,VA3AAR B,,None,88.5 Hz,88.5 Hz,23,Both N,Off,25 kHz,Off,0,,,,,,,, ,,
-
-
-def output_rt_systems_2_channels():
-    print(
-        'Channel Number,Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Operating Mode,Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Bank,Bank Channel Number,Comment,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign'
-    )
-
-
-# 19,445.8000,445.8,000 kHz,Simplex,DV,445.800 Dstar Simplex,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,A: ,,,Off,0,,,
-
-
 @click.command()
 @click.option('--input_file', '-i', default=None, help='input')
 @click.option(
@@ -147,11 +242,13 @@ def output_rt_systems_2_channels():
     help='Maximum length of channel names (default 8).',
 )
 def main(input_file, max_name_length):
+    # XXX FIXME TODO if input file is none, use stdin
     with open(input_file) as f:
         yaml = YAML(typ='safe')
         payload = yaml.load(f)
 
-    output_chirp_channels(channels=payload['channels'], max_name_length=max_name_length)
+    # output_chirp_channels(channels=payload['channels'], max_name_length=max_name_length)
+    output_retevis_channels(channels=payload['channels'])
 
 
 if __name__ == '__main__':

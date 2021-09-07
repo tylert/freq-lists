@@ -29,8 +29,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 441.0 DMR
   RxFrequency: 441.0
@@ -38,8 +36,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 446.075 DMR
   RxFrequency: 446.075
@@ -47,8 +43,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 446.5 DMR
   RxFrequency: 446.5
@@ -56,8 +50,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 #                   _____ ___                   _____ __  __
 #                  |___  / _ \  ___ _ __ ___   |  ___|  \/  |
