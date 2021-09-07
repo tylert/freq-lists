@@ -14,7 +14,6 @@ channels:
   Mode: FM
   CtcssEncode: 151.4
   CtcssDecode: 151.4
-  Power: High
 
 - Name: VE3RLR SmthsFals  # Smiths Falls (Railway Museum) - Yaesu DR-1X
   RxFrequency: 442.75
@@ -22,7 +21,6 @@ channels:
   Mode: FM
   CtcssEncode: 151.4
   CtcssDecode: 151.4
-  Power: High
 
 #                _     _   _ _          _    ____  _____ ____
 #               | |   | \ | | |        / \  |  _ \| ____/ ___|
@@ -40,7 +38,6 @@ channels:
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
-  Power: High
 
 - Name: VA3TEL ChrstLake  # Christie Lake - Yaesu DR-2X
   RxFrequency: 145.23
@@ -48,7 +45,6 @@ channels:
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
-  Power: High
 
 - Name: VE3REX RidFerry  # Rideau Ferry - Yaesu DR-2X
   RxFrequency: 442.2
@@ -56,7 +52,6 @@ channels:
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
-  Power: High
 
 - Name: VE3WPO Westport  # Westport - ?
   RxFrequency: 442.4
@@ -64,7 +59,6 @@ channels:
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
-  Power: High
 
 - Name: VE3HTN Toledo  # Toledo - ?
   RxFrequency: 146.865
@@ -72,7 +66,6 @@ channels:
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
-  Power: High
 
 - Name: VE3LCA Perth  # Perth - Yaesu DR-2X?
   RxFrequency: 146.955
@@ -80,7 +73,6 @@ channels:
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
-  Power: High
 
 #                            _        _    ____   ____
 #                           / \      / \  |  _ \ / ___|
@@ -97,7 +89,6 @@ channels:
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
-  Power: High
 
 - Name: VA3ARE Almonte
   RxFrequency: 147.27
@@ -105,4 +96,3 @@ channels:
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
-  Power: High
