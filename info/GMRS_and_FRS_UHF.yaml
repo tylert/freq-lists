@@ -139,7 +139,7 @@ channels:
 
 - Name: GMRS15
   RxFrequency: 462.55
-  TxFrequencyOffset: '+0.0'  # +5.0
+# TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
   Power: Mid
@@ -147,7 +147,7 @@ channels:
 
 - Name: GMRS16
   RxFrequency: 462.575
-  TxFrequencyOffset: '+0.0'  # +5.0
+# TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
   Power: Mid
@@ -155,7 +155,7 @@ channels:
 
 - Name: GMRS17
   RxFrequency: 462.6
-  TxFrequencyOffset: '+0.0'  # +5.0
+# TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
   Power: Mid
@@ -163,7 +163,7 @@ channels:
 
 - Name: GMRS18
   RxFrequency: 462.625
-  TxFrequencyOffset: '+0.0'  # +5.0
+# TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
   Power: Mid
@@ -171,7 +171,7 @@ channels:
 
 - Name: GMRS19
   RxFrequency: 462.65
-  TxFrequencyOffset: '+0.0'  # +5.0
+# TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
   Power: Mid
@@ -179,7 +179,7 @@ channels:
 
 - Name: GMRS20
   RxFrequency: 462.675
-  TxFrequencyOffset: '+0.0'  # +5.0
+# TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
   Power: Mid
@@ -187,7 +187,7 @@ channels:
 
 - Name: GMRS21
   RxFrequency: 462.7
-  TxFrequencyOffset: '+0.0'  # +5.0
+# TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
   Power: Mid
@@ -195,7 +195,7 @@ channels:
 
 - Name: GMRS22
   RxFrequency: 462.725
-  TxFrequencyOffset: '+0.0'  # +5.0
+# TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
   Power: Mid
