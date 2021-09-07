@@ -32,8 +32,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 145.61 DMR
   RxFrequency: 145.61
@@ -41,8 +39,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 145.63 DMR
   RxFrequency: 145.63
@@ -50,8 +46,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 145.65 DMR
   RxFrequency: 145.65
@@ -59,8 +53,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 145.67 DMR
   RxFrequency: 145.67
@@ -68,8 +60,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 145.69 DMR
   RxFrequency: 145.69
@@ -77,8 +67,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 145.71 DMR
   RxFrequency: 145.71
@@ -86,8 +74,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 145.73 DMR
   RxFrequency: 145.73
@@ -95,8 +81,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 145.75 DMR
   RxFrequency: 145.75
@@ -104,8 +88,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 145.77 DMR
   RxFrequency: 145.77
@@ -113,8 +95,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 145.79 DMR
   RxFrequency: 145.79
@@ -122,8 +102,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 # Wide band digital from 147.435 to 147.585 - 6 channels on a 30 kHz raster
 # Interwoven between the FM simplex channels from 147.42 to 147.57
@@ -134,8 +112,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 147.465 DMR
   RxFrequency: 147.465
@@ -143,8 +119,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 147.495 DMR
   RxFrequency: 147.495
@@ -152,8 +126,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 147.525 DMR
   RxFrequency: 147.525
@@ -161,8 +133,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 147.555 DMR
   RxFrequency: 147.555
@@ -170,8 +140,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 - Name: 147.585 DMR
   RxFrequency: 147.585
@@ -179,8 +147,6 @@ channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
-  AdmitCriteria: Always
-  InCallCriteria: Follow Admit Criteria
 
 #                        ____              _____ __  __
 #                       |___ \ _ __ ___   |  ___|  \/  |
