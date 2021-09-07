@@ -5,29 +5,23 @@ channels:
   Mode: FM
   CtcssEncode: 67.0
   CtcssDecode: None
-  Power: High
 
 - Name: ISSUP
   RxFrequency: 437.8
   Mode: FM
-  Power: High
 
 - Name: ISSPKT
   RxFrequency: 145.825
   Mode: FM
-  Power: High
 
 - Name: APRS
   RxFrequency: 144.39
   Mode: FM
-  Power: High
 
 - Name: ALTPKT
   RxFrequency: 144.99
   Mode: FM
-  Power: High
 
 - Name: EMRGPKT
   RxFrequency: 145.03
   Mode: FM
-  Power: High

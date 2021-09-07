@@ -34,7 +34,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 145.61 DMR
   RxFrequency: 145.61
@@ -44,7 +43,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 145.63 DMR
   RxFrequency: 145.63
@@ -54,7 +52,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 145.65 DMR
   RxFrequency: 145.65
@@ -64,7 +61,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 145.67 DMR
   RxFrequency: 145.67
@@ -74,7 +70,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 145.69 DMR
   RxFrequency: 145.69
@@ -84,7 +79,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 145.71 DMR
   RxFrequency: 145.71
@@ -94,7 +88,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 145.73 DMR
   RxFrequency: 145.73
@@ -104,7 +97,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 145.75 DMR
   RxFrequency: 145.75
@@ -114,7 +106,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 145.77 DMR
   RxFrequency: 145.77
@@ -124,7 +115,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 145.79 DMR
   RxFrequency: 145.79
@@ -134,7 +124,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 # Wide band digital from 147.435 to 147.585 - 6 channels on a 30 kHz raster
 # Interwoven between the FM simplex channels from 147.42 to 147.57
@@ -147,7 +136,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 147.465 DMR
   RxFrequency: 147.465
@@ -157,7 +145,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 147.495 DMR
   RxFrequency: 147.495
@@ -167,7 +154,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 147.525 DMR
   RxFrequency: 147.525
@@ -177,7 +163,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 147.555 DMR
   RxFrequency: 147.555
@@ -187,7 +172,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 147.585 DMR
   RxFrequency: 147.585
@@ -197,7 +181,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 #                        ____              _____ __  __
 #                       |___ \ _ __ ___   |  ___|  \/  |
@@ -205,109 +188,89 @@ channels:
 #                        / __/| | | | | | |  _| | |  | |
 #                       |_____|_| |_| |_| |_|   |_|  |_|
 
-# FM simplex from 146.4 to 146.595 - 13 channels on a 15 kHz raster
+# FM simplex from 146.4 to 146.595 - 14 channels on a 15 kHz raster
 # NOTE  The old plan had 13 channels, the new plan has 14 channels
-# XXX FIXME TODO  Report this bug in the notes for the new band plan!!!
+# XXX FIXME TODO  This minor bug in the bandplan notes has been reported to RAC!!!
 # 146.40, 146.43 and 146.46 may be repeater inputs in some areas
 
 - Name: 146.4 FM
   RxFrequency: 146.4
   Mode: FM
-  Power: High
 
 - Name: 146.415 FM
   RxFrequency: 146.415
   Mode: FM
-  Power: High
 
 - Name: 146.43 FM
   RxFrequency: 146.43
   Mode: FM
-  Power: High
 
 - Name: 146.445 FM
   RxFrequency: 146.445
   Mode: FM
-  Power: High
 
 - Name: 146.46 FM
   RxFrequency: 146.46
   Mode: FM
-  Power: High
 
 - Name: 146.475 FM
   RxFrequency: 146.475
   Mode: FM
-  Power: High
 
 - Name: 146.49 FM
   RxFrequency: 146.49
   Mode: FM
-  Power: High
 
 - Name: 146.505 FM
   RxFrequency: 146.505
   Mode: FM
-  Power: High
 
 - Name: 146.52 FM
   RxFrequency: 146.52  # FM simplex calling frequency
   Mode: FM
-  Power: High
 
 - Name: 146.535 FM
   RxFrequency: 146.535
   Mode: FM
-  Power: High
 
 - Name: 146.55 FM
   RxFrequency: 146.55
   Mode: FM
-  Power: High
 
 - Name: 146.565 FM
   RxFrequency: 146.565
   Mode: FM
-  Power: High
 
 - Name: 146.58 FM
   RxFrequency: 146.58
   Mode: FM
-  Power: High
 
 - Name: 146.595 FM
   RxFrequency: 146.595
   Mode: FM
-  Power: High
 
 # FM simplex from 147.42 to 147.57 - 6 channels on a 30 kHz raster
 
 - Name: 147.42 FM
   RxFrequency: 147.42
   Mode: FM
-  Power: High
 
 - Name: 147.45 FM
   RxFrequency: 147.45
   Mode: FM
-  Power: High
 
 - Name: 147.48 FM
   RxFrequency: 147.48
   Mode: FM
-  Power: High
 
 - Name: 147.51 FM
   RxFrequency: 147.51
   Mode: FM
-  Power: High
 
 - Name: 147.54 FM
   RxFrequency: 147.54
   Mode: FM
-  Power: High
 
 - Name: 147.57 FM
   RxFrequency: 147.57
   Mode: FM
-  Power: High

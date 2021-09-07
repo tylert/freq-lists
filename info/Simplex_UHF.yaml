@@ -31,7 +31,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 441.0 DMR
   RxFrequency: 441.0
@@ -41,7 +40,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 446.075 DMR
   RxFrequency: 446.075
@@ -51,7 +49,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 - Name: 446.5 DMR
   RxFrequency: 446.5
@@ -61,7 +58,6 @@ channels:
   TalkGroup: 99
   AdmitCriteria: Always
   InCallCriteria: Follow Admit Criteria
-  Power: High
 
 #                   _____ ___                   _____ __  __
 #                  |___  / _ \  ___ _ __ ___   |  ___|  \/  |
@@ -72,74 +68,59 @@ channels:
 - Name: 446.0 FM
   RxFrequency: 446.0  # FM simplex calling frequency
   Mode: FM
-  Power: High
 
 - Name: 446.0125 FM
   RxFrequency: 446.0125
   Mode: FM
-  Power: High
 
 - Name: 446.025 FM
   RxFrequency: 446.025
   Mode: FM
-  Power: High
 
 - Name: 446.0375 FM
   RxFrequency: 446.0375
   Mode: FM
-  Power: High
 
 - Name: 446.05 FM
   RxFrequency: 446.05
   Mode: FM
-  Power: High
 
 - Name: 446.0625 FM
   RxFrequency: 446.0625
   Mode: FM
-  Power: High
 
 - Name: 446.075 FM
   RxFrequency: 446.075
   Mode: FM
-  Power: High
 
 - Name: 446.0875 FM
   RxFrequency: 446.0875
   Mode: FM
-  Power: High
 
 - Name: 446.1 FM
   RxFrequency: 446.1
   Mode: FM
-  Power: High
 
 - Name: 446.1125 FM
   RxFrequency: 446.1125
   Mode: FM
-  Power: High
 
 - Name: 446.125 FM
   RxFrequency: 446.125
   Mode: FM
-  Power: High
 
 - Name: 446.1375 FM
   RxFrequency: 446.1375
   Mode: FM
-  Power: High
 
 - Name: 446.15 FM
   RxFrequency: 446.15
   Mode: FM
-  Power: High
 
 - Name: 446.1625 FM
   RxFrequency: 446.1625
   Mode: FM
-  Power: High
 
 - Name: 446.175 FM
   RxFrequency: 446.175
   Mode: FM
-  Power: High

@@ -16,7 +16,6 @@ channels:
   TxFrequencyOffset: '+5.0'
   Mode: DMR
   ColorCode: 1
-  Power: High
 
 - Name: VE2CRA CampFortu  # Camp Fortune / CBC - ?
   RxFrequency: 146.94
@@ -24,7 +23,6 @@ channels:
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
-  Power: High
 
 - Name: VE2CRA CampFortu  # Camp Fortune / CBC - ?
   RxFrequency: 443.3
@@ -32,7 +30,6 @@ channels:
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
-  Power: High
 
 #                           _____ __  __ ____   ____
 #                          | ____|  \/  |  _ \ / ___|
@@ -51,7 +48,6 @@ channels:
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
-  Power: High
 
 - Name: VE3OCE AltaVista  # Alta Vista / Randall (OFS Dispatch / OFS Station 35) - Kenwood TKR-850
   RxFrequency: 443.8
@@ -59,7 +55,6 @@ channels:
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
-  Power: High
 
 - Name: VA3OFS Barrhaven  # Barrhaven (OFS Station 44) - Motorola MSR 2000
   RxFrequency: 146.67
@@ -67,7 +62,6 @@ channels:
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
-  Power: High
 
 - Name: VA3OFS Barrhaven  # Barrhaven (OFS Station 44) - Kenwood TKR-850
   RxFrequency: 444.95
@@ -75,7 +69,6 @@ channels:
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
-  Power: High
 
 - Name: VA3EMV/E Orleans  # Orleans / Cumberland (OFS Station 53) - ?
   RxFrequency: 146.985
@@ -83,7 +76,6 @@ channels:
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
-  Power: High
 
 - Name: VA3EMV/W Stittsv  # Stittsville (OFS Station 81) - Motorola MTR 2000
   RxFrequency: 145.21
@@ -91,7 +83,6 @@ channels:
   Mode: FM
   CtcssEncode: 123.0
   CtcssDecode: 123.0
-  Power: High
 
 - Name: VA3EMV/P Portabl  # Portable (OFS Dispatch / OFS Station 35) - Motorola Radios x2
   RxFrequency: 145.11
@@ -99,4 +90,3 @@ channels:
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
-  Power: High
