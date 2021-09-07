@@ -90,10 +90,12 @@ def output_retevis_channels(channels):
         else:
             raise ValueError('Unknown mode encountered!')
 
-        # XXX FIXME TODO Force TalkGroup to turn into ContactName!!!
-
         # Merge channel into expected output
         output.update(channel)
+
+        # XXX FIXME TODO Force TalkGroup to turn into ContactName!!!
+        if 'TalkGroup' in output.keys():
+            del(output['TalkGroup'])
 
         # Force things that might be integers/floats to be strings (for JSON)
         output['RxFrequency'] = f"{channel['RxFrequency']:.5f}"
