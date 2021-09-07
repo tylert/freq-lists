@@ -40,7 +40,7 @@ def output_retevis_channels(channels):
             "InCallCriteria": "Follow Admit Criteria",
             "LeaderMS": "Off",
             "LoneWorker": "Off",
-            "Name": "XXX",
+            "Name": "SUPERCALIFRAGILISTICEXPIALIDOCIOUS",
             "Power": "High",
             "Privacy": "None",
             "PrivacyNumber": "1",
@@ -65,7 +65,7 @@ def output_retevis_channels(channels):
             "Vox": "Off",
         }
 
-        # Ensure there is a 'Name', 'RxFrequency' and 'Mode' for each channel
+        # Ensure there is always a 'Name', 'RxFrequency' and 'Mode' for each channel
         if 'Name' not in channel.keys() or channel['Name'] == '':
             raise ValueError('Missing Name for entry!')
         if 'RxFrequency' not in channel.keys() or channel['RxFrequency'] == '':
@@ -73,7 +73,6 @@ def output_retevis_channels(channels):
         if 'Mode' not in channel.keys() or channel['Mode'] == '':
             raise ValueError('Missing Mode for entry!')
 
-        # XXX FIXME TODO Only override these if they are not specified!!!
         # Use 'Mode' to determine 'Bandwidth' and 'ChannelMode'.
         if channel['Mode'] == 'DMR':
             output['Bandwidth'] = '12.5'
@@ -95,16 +94,18 @@ def output_retevis_channels(channels):
 
         # XXX FIXME TODO Force TalkGroup to turn into ContactName!!!
         if 'TalkGroup' in output.keys():
-            del(output['TalkGroup'])
+            del output['TalkGroup']
 
         # Force things that might be integers/floats to be strings (for JSON)
         output['RxFrequency'] = f"{channel['RxFrequency']:.5f}"
+        if 'Bandwidth' in channel.keys():
+            output['Bandwidth'] = f"{str(channel['Bandwidth'])}"
+        if 'ColorCode' in channel.keys():
+            output['ColorCode'] = f"{str(channel['ColorCode'])}"
         if 'CtcssDecode' in channel.keys():
             output['CtcssDecode'] = f"{str(channel['CtcssDecode'])}"
         if 'CtcssEncode' in channel.keys():
             output['CtcssEncode'] = f"{str(channel['CtcssEncode'])}"
-        if 'ColorCode' in channel.keys():
-            output['ColorCode'] = f"{str(channel['ColorCode'])}"
         if 'RepeaterSlot' in channel.keys():
             output['RepeaterSlot'] = f"{str(channel['RepeaterSlot'])}"
 
