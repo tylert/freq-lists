@@ -1,0 +1,44 @@
+channels:
+
+- Name: VE3YYX Arnprior  # XXX FIXME TODO confirm
+  RxFrequency: 443.2
+  TxFrequencyOffset: '+5.0'
+  Mode: FM
+  CtcssEncode: 114.8
+  CtcssDecode: None
+
+- Name: VE3STP Renfrew  # XXX FIXME TODO confirm
+  RxFrequency: 147.06
+  TxFrequencyOffset: '-0.6'
+  Mode: FM
+  CtcssEncode: 114.8
+  CtcssDecode: 114.8
+
+# http://www.rcarc.ca/RCARC/RCARC%20Repeaters.htm
+
+- Name: VE3ZRR Renfrew  # Horton?
+  RxFrequency: 146.91
+  TxFrequencyOffset: '-0.6'
+  Mode: FM
+
+- Name: VE3UCR Foymount
+  RxFrequency: 145.43
+  TxFrequencyOffset: '-0.6'
+  Mode: FM
+
+- Name: VE3NRR Pembroke  # IRLP 2520
+  RxFrequency: 146.76
+  TxFrequencyOffset: '-0.6'
+  Mode: FM
+
+- Name: VE3NRR Pembroke  # no IRLP
+  RxFrequency: 448.025
+  TxFrequencyOffset: '-5.0'  # dafuq?!?  a negative offset!?!
+  Mode: FM
+
+- Name: VA3RBW PtAlexndr  # near Northern Algonquin Park
+  RxFrequency: 146.79
+  TxFrequencyOffset: '-0.6'
+  Mode: FM
+
+# Foymount 147.33+ VE3SRU ???

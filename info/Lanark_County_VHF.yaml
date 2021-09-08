@@ -1,0 +1,5 @@
+channels:
+
+- Name: Lanark County
+  RxFrequency: 153.815
+  Mode: FM
