@@ -73,7 +73,7 @@ def output_retevis_channels(channels):
         if 'Mode' not in channel.keys() or channel['Mode'] == '':
             raise ValueError('Missing Mode for entry!')
 
-        # Use 'Mode' to determine 'Bandwidth' and 'ChannelMode'.
+        # Use 'Mode' to determine 'Bandwidth' and 'ChannelMode'
         if channel['Mode'] == 'DMR':
             output['Bandwidth'] = '12.5'
             output['ChannelMode'] = 'Digital'
@@ -87,6 +87,7 @@ def output_retevis_channels(channels):
             output['ChannelMode'] = 'Analog'
             del channel['Mode']
         else:
+            # AM?  DV?
             raise ValueError('Unknown mode encountered!')
 
         # Merge channel into expected output
@@ -110,7 +111,7 @@ def output_retevis_channels(channels):
             output['RepeaterSlot'] = f"{str(channel['RepeaterSlot'])}"
 
         # Set 'AdmitCriteria' to 'Always' for simplex and analog or 'Color
-        # code' when using DMR repeaters.
+        # code' when using DMR repeaters
         if output['ChannelMode'] == 'Digital':
             if (
                 'TxFrequencyOffset' in channel.keys()
