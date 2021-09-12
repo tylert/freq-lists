@@ -6,16 +6,17 @@ channels:
 #                      |  _ <| |___ / ___ \|  _ <| |___
 #                      |_| \_\_____/_/   \_\_| \_\\____|
 
-# https://www.ve3rlr.ca/p/about.html
+# Rideau Lakes Amateur Radio Club
+#   https://www.ve3rlr.ca/p/about.html
 
-- Name: VE3RLR SmthsFals  # Smiths Falls (Railway Museum) - Yaesu DR-2X
+- Name: VE3RLR VHF FM  # Smiths Falls / Railway Museum - Yaesu DR-2X
   RxFrequency: 147.21
   TxFrequencyOffset: '+0.6'
   Mode: FM
   CtcssEncode: 151.4
   CtcssDecode: 151.4
 
-- Name: VE3RLR SmthsFals  # Smiths Falls (Railway Museum) - Yaesu DR-1X
+- Name: VE3RLR UHF FM  # Smiths Falls / Railway Museum - Yaesu DR-1X
   RxFrequency: 442.75
   TxFrequencyOffset: '+5.0'
   Mode: FM
@@ -28,46 +29,47 @@ channels:
 #               | |___| |\  | |___   / ___ \|  _ <| |___ ___) |
 #               |_____|_| \_|_____| /_/   \_\_| \_\_____|____/
 
-# https://www.ve3rlr.ca/2018/07/LNLARES.html
-# https://www.qsl.net/ve3lca/
-# https://cneo-nceo.ca/record/kgn1773/
+# Lanark / North Leeds Amateur Radio Emergency Service
+#   https://www.ve3rlr.ca/2018/07/LNLARES.html
+#   https://www.qsl.net/ve3lca/
+#   https://cneo-nceo.ca/record/kgn1773/
 
-- Name: VE3KJG Lavant  # Lavant - Motorola MSF 5000
+- Name: VE3KJG VHF FM  # Lavant - Motorola MSF 5000
   RxFrequency: 146.64
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
 
-- Name: VA3TEL ChrstLake  # Christie Lake - Yaesu DR-2X
+- Name: VA3TEL VHF FM  # Christie Lake - Yaesu DR-2X (linked to VE3KJG)
   RxFrequency: 145.23
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VE3REX RidFerry  # Rideau Ferry - Yaesu DR-2X
+- Name: VE3REX UHF FM  # Rideau Ferry - Yaesu DR-2X (linked to ?)
   RxFrequency: 442.2
   TxFrequencyOffset: '+5.0'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VE3WPO Westport  # Westport - ?
+- Name: VE3WPO UHF FM  # Westport - ? (linked to ?)
   RxFrequency: 442.4
   TxFrequencyOffset: '+5.0'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
 
-- Name: VE3HTN Toledo  # Toledo - ?
+- Name: VE3HTN VHF FM  # Toledo - ? (linked to ?)
   RxFrequency: 146.865
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
 
-- Name: VE3LCA Perth  # Perth - Yaesu DR-2X?
+- Name: VE3LCA VHF FM  # Perth - Yaesu DR-2X? (linked to ?)
   RxFrequency: 146.955
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -80,19 +82,23 @@ channels:
 #                         / ___ \  / ___ \|  _ <| |___
 #                        /_/   \_\/_/   \_\_| \_\\____|
 
-# http://www.almontearclub.ca/Almonte_Amateur_Radio_Club/Welcome.html
-# https://almontearclub.ca/about-the-club/
+# Almonte Amateur Radio Club
+#   https://almontearclub.ca/repeater-information/
+#   https://almontearclub.ca/about-the-club/
+#   http://www.almontearclub.ca/Almonte_Amateur_Radio_Club/Welcome.html
 
-- Name: VA3AAR AlmonteFH  # Almonte Fire Hall
+- Name: VA3AAR UHF FM  # Almonte Fire Hall (linked to VE3KJG)
   RxFrequency: 444.3
   TxFrequencyOffset: '+5.0'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
 
-- Name: VA3ARE Almonte
+- Name: VA3ARE VHF FM  # Almonte? IRLP 2280?, VA3WRC?!?
   RxFrequency: 147.27
   TxFrequencyOffset: '+0.6'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
+
+# They also have some MMDVM and some DSTAR (meh) repeaters too

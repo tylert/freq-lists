@@ -7,16 +7,23 @@ channels:
   CtcssEncode: 114.8
   CtcssDecode: None
 
-- Name: VE3STP Renfrew  # XXX FIXME TODO confirm
+- Name: VE3STP Renfrew  # XXX FIXME TODO confirm - Mount Patrick???
   RxFrequency: 147.06
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 114.8
   CtcssDecode: 114.8
 
-# http://www.rcarc.ca/RCARC/RCARC%20Repeaters.htm
+#                       ____   ____    _    ____   ____
+#                      |  _ \ / ___|  / \  |  _ \ / ___|
+#                      | |_) | |     / _ \ | |_) | |
+#                      |  _ <| |___ / ___ \|  _ <| |___
+#                      |_| \_\\____/_/   \_\_| \_\\____|
 
-- Name: VE3ZRR Renfrew  # Horton?
+# Renfrew County Amateur Radio Club
+#   http://www.rcarc.ca/RCARC/RCARC%20Repeaters.htm
+
+- Name: VE3ZRR VHF FM  # Renfrew / Horton?
   RxFrequency: 146.91
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -26,12 +33,12 @@ channels:
   TxFrequencyOffset: '-0.6'
   Mode: FM
 
-- Name: VE3NRR Pembroke  # IRLP 2520
+- Name: VE3NRR VHF FM  # Pembroke, IRLP 2520
   RxFrequency: 146.76
   TxFrequencyOffset: '-0.6'
   Mode: FM
 
-- Name: VE3NRR Pembroke  # no IRLP
+- Name: VE3NRR UHF FM  # Pembroke, not connected to IRLP
   RxFrequency: 448.025
   TxFrequencyOffset: '-5.0'  # dafuq?!?  a negative offset!?!
   Mode: FM
