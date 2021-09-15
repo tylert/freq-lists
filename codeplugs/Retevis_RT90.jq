@@ -1,29 +1,44 @@
 # jq
 .
 
-# Tytera MD-390 == Retevis RT??
+# Retevis RT90 == Tytera MD-9600
+# Codeplugs for the Tytera MD-2017 also work on the MD-9600 and vice versa
 
 # Set up the general settings the way we expect them to be
-| .GeneralSettings.BacklightTime |= "10"
+| .GeneralSettings.BacklightTime |= "Always"
+| .GeneralSettings.CHVoiceAnnouncement |= "Off"
 | .GeneralSettings.CallAlertToneDuration |= "Continue"
 | .GeneralSettings.ChFreeIndicationTone |= "On"
+| .GeneralSettings.ChannelsHangTime |= "3000"
 | .GeneralSettings.DisableAllLeds |= "Off"
 | .GeneralSettings.DisableAllTones |= "Off"
+| .GeneralSettings.EditRadioID |= "On"
+| .GeneralSettings.EnableContactsCSV |= "On"
+| .GeneralSettings.FreqChannelMode |= "Channel"
 | .GeneralSettings.GroupCallHangTime |= "3000"
+| .GeneralSettings.GroupCallMatch |= "Off"
 | .GeneralSettings.IntroScreen |= "Character String"
 | .GeneralSettings.IntroScreenLine1 |= ""
 | .GeneralSettings.IntroScreenLine2 |= ""
-| .GeneralSettings.KeypadTones |= "Off"
 | .GeneralSettings.LoneWorkerReminderTime |= "10"
 | .GeneralSettings.LoneWorkerResponseTime |= "1"
+| .GeneralSettings.MenuControl |= "On"
+| .GeneralSettings.MicLevel |= "3"
+| .GeneralSettings.ModeSelectA |= "Memory"
+| .GeneralSettings.ModeSelectB |= "Memory"
 | .GeneralSettings.MonitorType |= "Open Squelch"
 | .GeneralSettings.PcProgPassword |= ""
 | .GeneralSettings.PowerOnPassword |= "00000000"
 | .GeneralSettings.PrivateCallHangTime |= "4000"
+| .GeneralSettings.PrivateCallMatch |= "Off"
+| .GeneralSettings.PublicZone |= "On"
 | .GeneralSettings.PwAndLockEnable |= "Off"
+| .GeneralSettings.RadioID1 |= "1"
 | .GeneralSettings.RadioID |= "1234"
+| .GeneralSettings.RadioID2 |= "2"
+| .GeneralSettings.RadioID3 |= "3"
 | .GeneralSettings.RadioName |= ""
-| .GeneralSettings.RadioProgPassword |= "00000000"
+| .GeneralSettings.RadioProgPassword |= ""
 | .GeneralSettings.RxLowBatteryInterval |= "120"
 | .GeneralSettings.SaveModeReceive |= "On"
 | .GeneralSettings.SavePreamble |= "On"
@@ -31,7 +46,10 @@
 | .GeneralSettings.ScanDigitalHangTime |= "1000"
 | .GeneralSettings.SetKeypadLockTime |= "Manual"
 | .GeneralSettings.TalkPermitTone |= "Digital"
-| .GeneralSettings.TxPreambleDuration |= "300"
+| .GeneralSettings.TimeZone |= "UTC+0:00"
+| .GeneralSettings.TwoChannel |= "On"
+| .GeneralSettings.TxMode |= "Designated CH + Hand CH"
+| .GeneralSettings.TxPreambleDuration |= "600"
 | .GeneralSettings.VoxSensitivity |= "3"
 
 # Set up the menu items the way we expect them to be
@@ -70,3 +88,11 @@
 | .RadioButtons[1] |= {"Button": "High/Low Power"}
 | .RadioButtons[2] |= {"Button": "Monitor"}
 | .RadioButtons[3] |= {"Button": "All alert Tones On/Off"}
+| .RadioButtons[4] |= {"Button": "Unassigned (default)"}
+| .RadioButtons[5] |= {"Button": "Unassigned (default)"}
+| .RadioButtons[6] |= {"Button": "Unassigned (default)"}
+| .RadioButtons[7] |= {"Button": "Unassigned (default)"}
+| .RadioButtons[8] |= {"Button": "Unassigned (default)"}
+| .RadioButtons[9] |= {"Button": "Unassigned (default)"}
+| .RadioButtons[10] |= {"Button": "Unassigned (default)"}
+| .RadioButtons[11] |= {"Button": "Unassigned (default)"}
