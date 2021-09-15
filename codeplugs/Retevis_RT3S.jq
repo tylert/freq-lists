@@ -1,7 +1,9 @@
 # jq
 .
 
-# Set up the general setttings the way we expect them to be
+# Retevis RT3S == Tytera MD-UV380
+
+# Set up the general settings the way we expect them to be
 | .GeneralSettings.BacklightTime |= "10"
 | .GeneralSettings.CHVoiceAnnouncement |= "Off"
 | .GeneralSettings.CallAlertToneDuration |= "Continue"
@@ -78,7 +80,7 @@
 | .MenuItems.ToneOrAlert |= "On"
 | .MenuItems.Vox |= "On"
 
-# Set up the side buttons the way we expect them to be
+# Set up the configurable buttons the way we expect them to be
 | .ButtonDefinitions.LongPressDuration |= "1000"
 | .RadioButtons[0] |= {"Button": "Unassigned (default)"}
 | .RadioButtons[1] |= {"Button": "High/Low Power"}
