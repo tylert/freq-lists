@@ -10,60 +10,63 @@ from ruamel.yaml import YAML
 import click
 
 
-def output_retevis_channels(channels):
+retevis_channel_stub = {
+    "AdmitCriteria": "Always",
+    "AllowTalkaround": "Off",
+    "Autoscan": "Off",
+    "Bandwidth": "12.5",
+    "ChannelMode": "Digital",
+    "ColorCode": "1",
+    "ContactName": "Contact1",
+    "CtcssDecode": "None",
+    "CtcssEncode": "None",
+    "DCDMSwitch": "Off",
+    "DataCallConfirmed": "Off",
+    "Decode1": "Off",
+    "Decode2": "Off",
+    "Decode3": "Off",
+    "Decode4": "Off",
+    "Decode5": "Off",
+    "Decode6": "Off",
+    "Decode7": "Off",
+    "Decode8": "Off",
+    "DisplayPTTID": "Off",
+    "EmergencyAlarmAck": "Off",
+    "EmergencySystem": "None",
+    "GPSSystem": "None",
+    "GroupList": "GroupList1",
+    "InCallCriteria": "Follow Admit Criteria",
+    "LeaderMS": "Off",
+    "LoneWorker": "Off",
+    "Name": "SUPERCALIFRAGILISTICEXPIALIDOCIOUS",
+    "Power": "High",
+    "Privacy": "None",
+    "PrivacyNumber": "1",
+    "PrivateCallConfirmed": "Off",
+    "QtReverse": "180",
+    "ReceiveGPSInfo": "Off",
+    "RepeaterSlot": "1",
+    "ReverseBurst": "On",
+    "RxFrequency": "144.00000",
+    "RxOnly": "Off",
+    "RxRefFrequency": "Low",
+    "RxSignallingSystem": "Off",
+    "ScanList": "ScanList1",
+    "SendGPSInfo": "Off",
+    "Squelch": "1",
+    "Talkaround": "Off",
+    "Tot": "60",
+    "TotRekeyDelay": "0",
+    "TxFrequencyOffset": "+0.00000",
+    "TxRefFrequency": "Low",
+    "TxSignallingSystem": "Off",
+    "Vox": "Off",
+}
+
+
+def output_dmr_channels(channels, channel_stub):
     for channel in channels:
-        output = {
-            "AdmitCriteria": "Always",
-            "AllowTalkaround": "Off",
-            "Autoscan": "Off",
-            "Bandwidth": "12.5",
-            "ChannelMode": "Digital",
-            "ColorCode": "1",
-            "ContactName": "Contact1",
-            "CtcssDecode": "None",
-            "CtcssEncode": "None",
-            "DCDMSwitch": "Off",
-            "DataCallConfirmed": "Off",
-            "Decode1": "Off",
-            "Decode2": "Off",
-            "Decode3": "Off",
-            "Decode4": "Off",
-            "Decode5": "Off",
-            "Decode6": "Off",
-            "Decode7": "Off",
-            "Decode8": "Off",
-            "DisplayPTTID": "Off",
-            "EmergencyAlarmAck": "Off",
-            "EmergencySystem": "None",
-            "GPSSystem": "None",
-            "GroupList": "GroupList1",
-            "InCallCriteria": "Follow Admit Criteria",
-            "LeaderMS": "Off",
-            "LoneWorker": "Off",
-            "Name": "SUPERCALIFRAGILISTICEXPIALIDOCIOUS",
-            "Power": "High",
-            "Privacy": "None",
-            "PrivacyNumber": "1",
-            "PrivateCallConfirmed": "Off",
-            "QtReverse": "180",
-            "ReceiveGPSInfo": "Off",
-            "RepeaterSlot": "1",
-            "ReverseBurst": "On",
-            "RxFrequency": "144.00000",
-            "RxOnly": "Off",
-            "RxRefFrequency": "Low",
-            "RxSignallingSystem": "Off",
-            "ScanList": "ScanList1",
-            "SendGPSInfo": "Off",
-            "Squelch": "1",
-            "Talkaround": "Off",
-            "Tot": "60",
-            "TotRekeyDelay": "0",
-            "TxFrequencyOffset": "+0.00000",
-            "TxRefFrequency": "Low",
-            "TxSignallingSystem": "Off",
-            "Vox": "Off",
-        }
+        output = channel_stub
 
         # Ensure there is always a 'Name', 'RxFrequency' and 'Mode' for each channel
         if 'Name' not in channel.keys() or channel['Name'] == '':
@@ -252,7 +255,7 @@ def main(input_file, max_name_length):
         payload = yaml.load(f)
 
     # output_chirp_channels(channels=payload['channels'], max_name_length=max_name_length)
-    output_retevis_channels(channels=payload['channels'])
+    output_dmr_channels(channels=payload['channels'], channel_stub=retevis_channel_stub)
 
 
 if __name__ == '__main__':
