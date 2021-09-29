@@ -85,14 +85,14 @@
 # Set up the configurable buttons the way we expect them to be
 | .ButtonDefinitions.LongPressDuration |= "1000"
 | .RadioButtons[0] |= {"Button": "Unassigned (default)"}
-| .RadioButtons[1] |= {"Button": "High/Low Power"}
-| .RadioButtons[2] |= {"Button": "Monitor"}
-| .RadioButtons[3] |= {"Button": "All alert Tones On/Off"}
+| .RadioButtons[1] |= {"Button": "Unassigned (default)"}
+| .RadioButtons[2] |= {"Button": "Unassigned (default)"}
+| .RadioButtons[3] |= {"Button": "Unassigned (default)"}
 | .RadioButtons[4] |= {"Button": "Unassigned (default)"}
 | .RadioButtons[5] |= {"Button": "Unassigned (default)"}
 | .RadioButtons[6] |= {"Button": "Unassigned (default)"}
 | .RadioButtons[7] |= {"Button": "Unassigned (default)"}
 | .RadioButtons[8] |= {"Button": "Unassigned (default)"}
-| .RadioButtons[9] |= {"Button": "Unassigned (default)"}
-| .RadioButtons[10] |= {"Button": "Unassigned (default)"}
-| .RadioButtons[11] |= {"Button": "Unassigned (default)"}
+| .RadioButtons[9] |= {"Button": "High/Low Power"}
+| .RadioButtons[10] |= {"Button": "Monitor"}
+| .RadioButtons[11] |= {"Button": "All alert Tones On/Off"}
