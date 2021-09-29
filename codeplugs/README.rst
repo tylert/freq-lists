@@ -46,8 +46,8 @@ Generating Codeplugs From Templates
     cat << EOF > VA3DGN.conf
     {
       "GeneralSettings": {
-        "IntroScreenLine1": "3023396",
-        "IntroScreenLine2": "3021794",
+        "IntroScreenLine1": "VA3DGN",
+        "IntroScreenLine2": "3023396,3021794",
         "RadioID": "3023396",
         "RadioID1": "3021794",
         "RadioID2": "3023706",
