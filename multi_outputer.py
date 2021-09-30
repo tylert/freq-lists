@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 
 
-# XXX FIXME TODO CSV output???
-# XXX FIXME TODO RT Systems output???
+# XXX FIXME TODO  CSV CHIRP output!!!
+# XXX FIXME TODO  Add RT Systems output!!!
+# XXX FIXME TODO  Use a YAML library that is pure Python??? (zipapp?)
+# XXX FIXME TODO  CSV CHIRP data files as input???
 
 import json
 
@@ -38,7 +40,7 @@ retevis_channel_stub = {
     "InCallCriteria": "Follow Admit Criteria",
     "LeaderMS": "Off",
     "LoneWorker": "Off",
-    "Name": "SUPERCALIFRAGILISTICEXPIALIDOCIOUS",
+    "Name": "Channel1",
     "Power": "High",
     "Privacy": "None",
     "PrivacyNumber": "1",
@@ -64,67 +66,72 @@ retevis_channel_stub = {
 }
 
 
-def output_dmr_channels(channels, channel_stub):
-    for channel in channels:
+def output_dmr_channels(entries, channel_stub):
+    channels = []
+    for entry in entries:
         output = channel_stub
 
-        # Ensure there is always a 'Name', 'RxFrequency' and 'Mode' for each channel
-        if 'Name' not in channel.keys() or channel['Name'] == '':
+        # Ensure there is always a 'Name', 'RxFrequency' and 'Mode' for each
+        # channel.
+        if 'Name' not in entry.keys() or entry['Name'] == '':
             raise ValueError('Missing Name for entry!')
-        if 'RxFrequency' not in channel.keys() or channel['RxFrequency'] == '':
+        if 'RxFrequency' not in entry.keys() or entry['RxFrequency'] == '':
             raise ValueError('Missing RxFrequency for entry!')
-        if 'Mode' not in channel.keys() or channel['Mode'] == '':
+        if 'Mode' not in entry.keys() or entry['Mode'] == '':
             raise ValueError('Missing Mode for entry!')
 
-        # Use 'Mode' to determine 'Bandwidth' and 'ChannelMode'
-        if channel['Mode'] == 'DMR':
+        # Use 'Mode' to determine 'Bandwidth' and 'ChannelMode'.  Do this
+        # before merging the new channel entry into the expected output in case
+        # we are using a different bandwidth, say.
+        if entry['Mode'] == 'DMR':
             output['Bandwidth'] = '12.5'
             output['ChannelMode'] = 'Digital'
-            del channel['Mode']
-        elif channel['Mode'] == 'NFM':
+            del entry['Mode']
+        elif entry['Mode'] == 'NFM':
             output['Bandwidth'] = '12.5'
             output['ChannelMode'] = 'Analog'
-            del channel['Mode']
-        elif channel['Mode'] == 'FM':
+            del entry['Mode']
+        elif entry['Mode'] == 'FM':
             output['Bandwidth'] = '25'
             output['ChannelMode'] = 'Analog'
-            del channel['Mode']
+            del entry['Mode']
         else:
             # AM?  DV?
             raise ValueError('Unknown mode encountered!')
 
-        # Merge channel into expected output
-        output.update(channel)
+        # Merge the new channel entry into the expected output.
+        output.update(entry)
 
-        # XXX FIXME TODO Force TalkGroup to turn into ContactName!!!
+        # XXX FIXME TODO  Force TalkGroup to turn into ContactName!!!
         if 'TalkGroup' in output.keys():
             del output['TalkGroup']
 
         # Force things that might be integers/floats to be strings (for JSON)
-        output['RxFrequency'] = f"{channel['RxFrequency']:.5f}"
-        if 'Bandwidth' in channel.keys():
-            output['Bandwidth'] = f"{str(channel['Bandwidth'])}"
-        if 'ColorCode' in channel.keys():
-            output['ColorCode'] = f"{str(channel['ColorCode'])}"
-        if 'CtcssDecode' in channel.keys():
-            output['CtcssDecode'] = f"{str(channel['CtcssDecode'])}"
-        if 'CtcssEncode' in channel.keys():
-            output['CtcssEncode'] = f"{str(channel['CtcssEncode'])}"
-        if 'RepeaterSlot' in channel.keys():
-            output['RepeaterSlot'] = f"{str(channel['RepeaterSlot'])}"
+        output['RxFrequency'] = f"{entry['RxFrequency']:.5f}"
+        if 'Bandwidth' in entry.keys():
+            output['Bandwidth'] = f"{str(entry['Bandwidth'])}"
+        if 'ColorCode' in entry.keys():
+            output['ColorCode'] = f"{str(entry['ColorCode'])}"
+        if 'CtcssDecode' in entry.keys():
+            output['CtcssDecode'] = f"{str(entry['CtcssDecode'])}"
+        if 'CtcssEncode' in entry.keys():
+            output['CtcssEncode'] = f"{str(entry['CtcssEncode'])}"
+        if 'RepeaterSlot' in entry.keys():
+            output['RepeaterSlot'] = f"{str(entry['RepeaterSlot'])}"
 
         # Set 'AdmitCriteria' to 'Always' for simplex and analog or 'Color
-        # code' when using DMR repeaters
+        # code' when using DMR repeaters.
         if output['ChannelMode'] == 'Digital':
             if (
-                'TxFrequencyOffset' in channel.keys()
-                and channel['TxFrequencyOffset'] is not None
-                and channel['TxFrequencyOffset'] != 'None'
-                and channel['TxFrequencyOffset'] != ''
-                and channel['TxFrequencyOffset'] != '+0.0'
+                'TxFrequencyOffset' in entry.keys()
+                and entry['TxFrequencyOffset'] is not None
+                and entry['TxFrequencyOffset'] != 'None'
+                and entry['TxFrequencyOffset'] != ''
+                and entry['TxFrequencyOffset'] != '+0.0'
             ):
                 output['AdmitCriteria'] = 'Color Code'
 
+        # XXX FIXME TODO  Pad the TxFrequencyOffset out to 5 decimal places!!!
         #     output['TxFrequencyOffset'] = '{}{:.5f}'.format(
         #         item['Duplex'], float(item['Offset'])
 
@@ -132,7 +139,7 @@ def output_dmr_channels(channels, channel_stub):
 
 
 def sanitize_channel_name(name, length=8):
-    # XXX FIXME TODO Maybe round up when truncating numerical channel names???
+    # XXX FIXME TODO  Round up when truncating numerical channel names!!!
 
     # Make sure nobody tries to ask for a negative number
     if length < 0:
@@ -144,11 +151,11 @@ def sanitize_channel_name(name, length=8):
     if ' ' in new_name:
         new_name = name[:length].strip().split()[0]
 
-    # Provive the sanitized name
+    # Provide the sanitized name
     return new_name
 
 
-def output_chirp_channels(channels, max_name_length=8):
+def output_chirp_channels(entries, max_name_length=8):
     # For some bizarre reason, the GUI has different column header names than the CSV files do...
     # https://chirp.danplanet.com/projects/chirp/wiki/MemoryEditorColumns
 
@@ -157,71 +164,72 @@ def output_chirp_channels(channels, max_name_length=8):
     )
 
     location = 1
-    for channel in channels:
-        name = sanitize_channel_name(channel['Name'], max_name_length)
-        frequency = channel['RxFrequency']
-        mode = channel['Mode']
+    for entry in entries:
+        name = sanitize_channel_name(entry['Name'], max_name_length)
+        frequency = entry['RxFrequency']
+        mode = entry['Mode']
 
         # Duplex and offset?
         if (
-            'TxFrequencyOffset' in channel.keys()
-            and channel['TxFrequencyOffset'] is not None
-            and channel['TxFrequencyOffset'] != 'None'
-            and channel['TxFrequencyOffset'] != ''
-            and channel['TxFrequencyOffset'] != '+0.0'
+            'TxFrequencyOffset' in entry.keys()
+            and entry['TxFrequencyOffset'] is not None
+            and entry['TxFrequencyOffset'] != 'None'
+            and entry['TxFrequencyOffset'] != ''
+            and entry['TxFrequencyOffset'] != '+0.0'
         ):
-            duplex = channel['TxFrequencyOffset'][0:1]
-            offset = float(channel['TxFrequencyOffset'][1:])
+            duplex = entry['TxFrequencyOffset'][0:1]
+            offset = float(entry['TxFrequencyOffset'][1:])
         else:
             duplex = ''
             offset = 0
 
         # Send CTCSS tones?
         if (
-            'CtcssEncode' in channel.keys()
-            and channel['CtcssEncode'] is not None
-            and channel['CtcssEncode'] != 'None'
-            and channel['CtcssEncode'] != ''
+            'CtcssEncode' in entry.keys()
+            and entry['CtcssEncode'] is not None
+            and entry['CtcssEncode'] != 'None'
+            and entry['CtcssEncode'] != ''
         ):
-            c_tone_freq = channel['CtcssEncode']
+            c_tone_freq = entry['CtcssEncode']
         else:
             c_tone_freq = '88.5'
 
         # Expect CTCSS tones?
         if (
-            'CtcssDecode' in channel.keys()
-            and channel['CtcssDecode'] is not None
-            and channel['CtcssDecode'] != 'None'
-            and channel['CtcssDecode'] != ''
+            'CtcssDecode' in entry.keys()
+            and entry['CtcssDecode'] is not None
+            and entry['CtcssDecode'] != 'None'
+            and entry['CtcssDecode'] != ''
         ):
-            r_tone_freq = channel['CtcssDecode']
+            r_tone_freq = entry['CtcssDecode']
         else:
             r_tone_freq = '88.5'
 
         # CTCSS tone type?
         if (
-            'CtcssEncode' in channel.keys()
-            and 'CtcssDecode' in channel.keys()
-            and channel['CtcssEncode'] is not None
-            and channel['CtcssDecode'] is not None
-            and channel['CtcssEncode'] != 'None'
-            and channel['CtcssDecode'] != 'None'
-            and channel['CtcssEncode'] != ''
-            and channel['CtcssDecode'] != ''
+            'CtcssEncode' in entry.keys()
+            and 'CtcssDecode' in entry.keys()
+            and entry['CtcssEncode'] is not None
+            and entry['CtcssDecode'] is not None
+            and entry['CtcssEncode'] != 'None'
+            and entry['CtcssDecode'] != 'None'
+            and entry['CtcssEncode'] != ''
+            and entry['CtcssDecode'] != ''
         ):
             tone = 'TSQL'
         elif (
-            'CtcssEncode' in channel.keys()
-            and channel['CtcssEncode'] is not None
-            and channel['CtcssEncode'] != 'None'
-            and channel['CtcssEncode'] != ''
+            'CtcssEncode' in entry.keys()
+            and entry['CtcssEncode'] is not None
+            and entry['CtcssEncode'] != 'None'
+            and entry['CtcssEncode'] != ''
         ):
             tone = 'Tone'
             r_tone_freq = c_tone_freq
         else:
             tone = ''
 
-        # XXX FIXME TODO Get DCS/DTCS stuff working!!!
+        # XXX FIXME TODO  Get DCS/DTCS stuff working!!!
+        # D023N, D023I, D754N, D754I, ...
         dtcs_code = '023'
         dtcs_polarity = 'NN'
 
@@ -249,13 +257,20 @@ def output_chirp_channels(channels, max_name_length=8):
     help='Maximum length of channel names (default 8).',
 )
 def main(input_file, max_name_length):
-    # XXX FIXME TODO if input file is none, use stdin
+    # XXX FIXME TODO  Allow the use of STDIN as the input "file"!!!
     with open(input_file) as f:
         yaml = YAML(typ='safe')
         payload = yaml.load(f)
 
-    # output_chirp_channels(channels=payload['channels'], max_name_length=max_name_length)
-    output_dmr_channels(channels=payload['channels'], channel_stub=retevis_channel_stub)
+    # output_chirp_channels(entries=payload['channels'], max_name_length=max_name_length)
+    output_dmr_channels(entries=payload['channels'], channel_stub=retevis_channel_stub)
+
+    # Read in the existing codeplug JSON and append new channels to the end of
+    # the list
+    # codeplug = {}
+    # with open(codeplug_json, 'r') as json_file:
+    #     codeplug = json.load(json_file)
+    # codeplug['Channels'].extend(channels)
 
 
 if __name__ == '__main__':
