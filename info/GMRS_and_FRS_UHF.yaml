@@ -22,49 +22,49 @@ Channels:
   RxFrequency: 462.5625
   Mode: FM
   Bandwidth: 20
-  Power: Mid
+  Power: Medium
   RxOnly: On  # Tx inhibit
 
 - Name: GMRS02
   RxFrequency: 462.5875
   Mode: FM
   Bandwidth: 20
-  Power: Mid
+  Power: Medium
   RxOnly: On  # Tx inhibit
 
 - Name: GMRS03
   RxFrequency: 462.6125
   Mode: FM
   Bandwidth: 20
-  Power: Mid
+  Power: Medium
   RxOnly: On  # Tx inhibit
 
 - Name: GMRS04
   RxFrequency: 462.6375
   Mode: FM
   Bandwidth: 20
-  Power: Mid
+  Power: Medium
   RxOnly: On  # Tx inhibit
 
 - Name: GMRS05
   RxFrequency: 462.6625
   Mode: FM
   Bandwidth: 20
-  Power: Mid
+  Power: Medium
   RxOnly: On  # Tx inhibit
 
 - Name: GMRS06
   RxFrequency: 462.6875
   Mode: FM
   Bandwidth: 20
-  Power: Mid
+  Power: Medium
   RxOnly: On  # Tx inhibit
 
 - Name: GMRS07
   RxFrequency: 462.7125
   Mode: FM
   Bandwidth: 20
-  Power: Mid
+  Power: Medium
   RxOnly: On  # Tx inhibit
 
 #                   _____ ____  ____                _
@@ -142,7 +142,7 @@ Channels:
 # TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
-  Power: Mid
+  Power: Medium
   RxOnly: On  # Tx inhibit
 
 - Name: GMRS16
@@ -150,7 +150,7 @@ Channels:
 # TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
-  Power: Mid
+  Power: Medium
   RxOnly: On  # Tx inhibit
 
 - Name: GMRS17
@@ -158,7 +158,7 @@ Channels:
 # TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
-  Power: Mid
+  Power: Medium
   RxOnly: On  # Tx inhibit
 
 - Name: GMRS18
@@ -166,7 +166,7 @@ Channels:
 # TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
-  Power: Mid
+  Power: Medium
   RxOnly: On  # Tx inhibit
 
 - Name: GMRS19
@@ -174,7 +174,7 @@ Channels:
 # TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
-  Power: Mid
+  Power: Medium
   RxOnly: On  # Tx inhibit
 
 - Name: GMRS20
@@ -182,7 +182,7 @@ Channels:
 # TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
-  Power: Mid
+  Power: Medium
   RxOnly: On  # Tx inhibit
 
 - Name: GMRS21
@@ -190,7 +190,7 @@ Channels:
 # TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
-  Power: Mid
+  Power: Medium
   RxOnly: On  # Tx inhibit
 
 - Name: GMRS22
@@ -198,7 +198,7 @@ Channels:
 # TxFrequencyOffset: '+5.0'
   Mode: FM
   Bandwidth: 20
-  Power: Mid
+  Power: Medium
   RxOnly: On  # Tx inhibit
 
 #    ____                       _              _                   _
