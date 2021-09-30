@@ -1,18 +1,33 @@
 Channels:
 
-- Name: VE3YYX Arnprior  # XXX FIXME TODO confirm
-  RxFrequency: 443.2
-  TxFrequencyOffset: '+5.0'
-  Mode: FM
-  CtcssEncode: 114.8
-  CtcssDecode: None
+#                           ____ ____  ____      _
+#                          / ___|  _ \|  _ \    / \
+#                         | |   | |_) | |_) |  / _ \
+#                         | |___|  _ <|  _ <  / ___ \
+#                          \____|_| \_\_| \_\/_/   \_\
 
-- Name: VE3STP Renfrew  # XXX FIXME TODO confirm - Mount Patrick???
+# Champlain Regional Repeater Association
+#   http://champlainrepeater.ca/repeater-2/
+#   http://ve3stp.org/
+
+# XXX FIXME TODO  Have somebody verify these!!!
+
+# VE3STP has Echolink but no IRLP
+# There's supposed to be a DMR repeater here too but there's no info about it on their web page(s)
+
+- Name: VE3STP VHF FM  # Renfrew / Kennelly's Mountain - Motorola XPR 8300 + 100 W amp
   RxFrequency: 147.06
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 114.8
   CtcssDecode: 114.8
+
+- Name: VE3YYX UHF FM  # Arnprior - ?
+  RxFrequency: 443.2
+  TxFrequencyOffset: '+5.0'
+  Mode: FM
+  CtcssEncode: 114.8
+  CtcssDecode: None
 
 #                       ____   ____    _    ____   ____
 #                      |  _ \ / ___|  / \  |  _ \ / ___|
@@ -23,12 +38,14 @@ Channels:
 # Renfrew County Amateur Radio Club
 #   http://www.rcarc.ca/RCARC/RCARC%20Repeaters.htm
 
+# XXX FIXME TODO  Have somebody verify these!!!
+
 - Name: VE3ZRR VHF FM  # Renfrew / Horton?
   RxFrequency: 146.91
   TxFrequencyOffset: '-0.6'
   Mode: FM
 
-- Name: VE3UCR Foymount
+- Name: VE3UCR VHF FM  # Foymount?
   RxFrequency: 145.43
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -43,7 +60,7 @@ Channels:
   TxFrequencyOffset: '-5.0'  # dafuq?!?  a negative offset!?!
   Mode: FM
 
-- Name: VA3RBW PtAlexndr  # near Northern Algonquin Park
+- Name: VA3RBW VHF FM  # Point Alexander?  near Northern Algonquin Park?
   RxFrequency: 146.79
   TxFrequencyOffset: '-0.6'
   Mode: FM
