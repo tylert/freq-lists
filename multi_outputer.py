@@ -135,7 +135,9 @@ def output_dmr_channels(entries, channel_stub):
         #     output['TxFrequencyOffset'] = '{}{:.5f}'.format(
         #         item['Duplex'], float(item['Offset'])
 
-        print(json.dumps(output, indent=2, sort_keys=True))
+        channels.append(output)
+
+    return channels
 
 
 def sanitize_channel_name(name, length=8):
@@ -250,27 +252,30 @@ def output_chirp_channels(entries, max_name_length=8):
 
 @click.command()
 @click.option('--input_file', '-i', default=None, help='input')
+@click.option('--json_file', '-j', default=None, help='input')
 @click.option(
     '--max_name_length',
     '-m',
     default=8,
     help='Maximum length of channel names (default 8).',
 )
-def main(input_file, max_name_length):
+def main(input_file, json_file, max_name_length):
     # XXX FIXME TODO  Allow the use of STDIN as the input "file"!!!
     with open(input_file) as f:
         yaml = YAML(typ='safe')
         payload = yaml.load(f)
 
     # output_chirp_channels(entries=payload['channels'], max_name_length=max_name_length)
-    output_dmr_channels(entries=payload['channels'], channel_stub=retevis_channel_stub)
+    channels = output_dmr_channels(entries=payload['Channels'], channel_stub=retevis_channel_stub)
 
     # Read in the existing codeplug JSON and append new channels to the end of
-    # the list
-    # codeplug = {}
-    # with open(codeplug_json, 'r') as json_file:
-    #     codeplug = json.load(json_file)
-    # codeplug['Channels'].extend(channels)
+    # the list.
+    codeplug = {}
+    with open(json_file, 'r') as f:
+        codeplug = json.load(f)
+    codeplug['Channels'].extend(channels)
+
+    print(json.dumps(codeplug, indent=2, sort_keys=True))
 
 
 if __name__ == '__main__':
