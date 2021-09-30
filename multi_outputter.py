@@ -7,6 +7,7 @@
 # XXX FIXME TODO  CSV CHIRP data files as input???
 
 import json
+# from csv import DictReader
 
 from ruamel.yaml import YAML
 import click
@@ -66,7 +67,7 @@ retevis_channel_stub = {
 }
 
 
-def output_dmr_channels(entries, channel_stub):
+def process_dmr_channels(entries, channel_stub):
     channels = []
     for entry in entries:
         output = channel_stub
@@ -135,7 +136,7 @@ def output_dmr_channels(entries, channel_stub):
         #     output['TxFrequencyOffset'] = '{}{:.5f}'.format(
         #         item['Duplex'], float(item['Offset'])
 
-        channels.append(output)
+        channels.append(json.loads(json.dumps(output)))
 
     return channels
 
@@ -265,8 +266,13 @@ def main(input_file, json_file, max_name_length):
         yaml = YAML(typ='safe')
         payload = yaml.load(f)
 
+    # with open(chirp_csv, 'r') as csv_file:
+    #     reader = DictReader(csv_file)
+    #     for item in reader:
+    #       print(item)
+
     # output_chirp_channels(entries=payload['channels'], max_name_length=max_name_length)
-    channels = output_dmr_channels(entries=payload['Channels'], channel_stub=retevis_channel_stub)
+    channels = process_dmr_channels(entries=payload['Channels'], channel_stub=retevis_channel_stub)
 
     # Read in the existing codeplug JSON and append new channels to the end of
     # the list.
