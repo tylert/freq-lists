@@ -12,7 +12,7 @@ channels:
 # MMDVM Brandmeister 302093 DMR
 # IRLP Node 2040 (FM only)
 
-- Name: VE2CRA UHF DMR  # Camp Fortune / CBC - Motorola CDM-1550LS+ x2, STM32-DVM Rev3
+- Name: VE2CRA UHF DMR  # Camp Fortune / CBC - Motorola CDM-1550LS+ x2, STM32-DVM Rev3 USB
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
   Mode: DMR
