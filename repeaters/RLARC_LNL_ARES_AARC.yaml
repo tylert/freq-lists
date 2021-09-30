@@ -39,7 +39,7 @@ Channels:
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 100.0
-  CtcssDecode: None
+  CtcssDecode: None  # There's no tone on the output (yet)
 
 - Name: VA3TEL VHF FM  # Christie Lake - Yaesu DR-2X (linked to VE3KJG)
   RxFrequency: 145.23
@@ -60,21 +60,21 @@ Channels:
   TxFrequencyOffset: '+5.0'
   Mode: FM
   CtcssEncode: 100.0
-  CtcssDecode: None
+  CtcssDecode: None  # There's no tone on the output (yet)
 
 - Name: VE3HTN VHF FM  # Toledo - ? (linked to ?)
   RxFrequency: 146.865
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 100.0
-  CtcssDecode: None
+  CtcssDecode: None  # There's no tone on the output (yet)
 
 - Name: VE3LCA VHF FM  # Perth - Yaesu DR-2X? (linked to ?)
   RxFrequency: 146.955
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 100.0
-  CtcssDecode: None
+  CtcssDecode: None  # There's no tone on the output (yet)
 
 #                            _        _    ____   ____
 #                           / \      / \  |  _ \ / ___|
@@ -92,13 +92,13 @@ Channels:
   TxFrequencyOffset: '+5.0'
   Mode: FM
   CtcssEncode: 100.0
-  CtcssDecode: None
+  CtcssDecode: None  # There's no tone on the output (yet)
 
 - Name: VA3ARE VHF FM  # Almonte? IRLP 2280?, VA3WRC?!?
   RxFrequency: 147.27
   TxFrequencyOffset: '+0.6'
   Mode: FM
   CtcssEncode: 100.0
-  CtcssDecode: None
+  CtcssDecode: None  # There's no tone on the output (yet)
 
 # They also have some MMDVM and some DSTAR (meh) repeaters too
