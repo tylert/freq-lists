@@ -34,6 +34,8 @@ Channels:
 #   https://www.qsl.net/ve3lca/
 #   https://cneo-nceo.ca/record/kgn1773/
 
+# XXX FIXME TODO  Verify these!!!
+
 - Name: VE3KJG VHF FM  # Lavant - Motorola MSF 5000
   RxFrequency: 146.64
   TxFrequencyOffset: '-0.6'
@@ -41,21 +43,21 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: None  # There's no tone on the output (yet)
 
-- Name: VA3TEL VHF FM  # Christie Lake - Yaesu DR-2X (linked to VE3KJG)
+- Name: VA3TEL VHF FM  # Christie Lake - Yaesu DR-2X + 2x Tait 9xxx (linked to VE3KJG)
   RxFrequency: 145.23
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VE3REX UHF FM  # Rideau Ferry - Yaesu DR-2X (linked to ?)
+- Name: VE3REX UHF FM  # Rideau Ferry - Yaesu DR-2X + 1x Tait 9xxx (linked to TBD)
   RxFrequency: 442.2
   TxFrequencyOffset: '+5.0'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VE3WPO UHF FM  # Westport - ? (linked to ?)
+- Name: VE3WPO UHF FM  # Westport - Motorola MSR 2000 (linked to TBD)
   RxFrequency: 442.4
   TxFrequencyOffset: '+5.0'
   Mode: FM
@@ -69,7 +71,7 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: None  # There's no tone on the output (yet)
 
-- Name: VE3LCA VHF FM  # Perth - Yaesu DR-2X? (linked to ?)
+- Name: VE3LCA VHF FM  # Perth - Yaesu DR-2X???
   RxFrequency: 146.955
   TxFrequencyOffset: '-0.6'
   Mode: FM
