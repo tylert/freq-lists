@@ -1,31 +1,18 @@
 Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment
 145.55,144.95,600 kHz,-DUP,,DV,D-Star VE3AAR C,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,CQCQCQ,,,,,,, ,,
 145.55,144.95,600 kHz,-DUP,,DV,D-Star Union V,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,CQCQCQ,,,,,,, ,,
-145.6,145.6, ,Simplex,,DV,145.600 Dstar Si,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,,,,,,,, ,,
-145.62,145.62, ,Simplex,,DV,145.620 Dstar Si,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,,,,,,,, ,,
 444.1,449.1,5.00 MHz,+DUP,,DV,VA3AAR B,,None,88.5 Hz,88.5 Hz,23,Both N,Off,25 kHz,Off,0,,,,,,,, ,,
-445.8,445.8, ,Simplex,,DV,445.800 Dstar Si,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,,,,,,,, ,,
-444.82,444.82, ,Simplex,,DV,444.820 Dstar Si,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,,,,,,,, ,,
 147.24,147.84,600 kHz,+DUP,,DV,VA3RDD,,None,94.8 Hz,94.8 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,Talk Channel
 444.8,449.8,5.00 MHz,+DUP,,DV,VA3RDD,,None,94.8 Hz,94.8 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,Status Channel
 443.6,448.6,5.00 MHz,+DUP,,DV,VE3STP/B/CQ,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,,,,,,,, ,,
 147.27,147.87,600 kHz,+DUP,,FM,VE3ARE Almonte*,,Tone,100.0 Hz,100.0 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,LNL Common link
-146.52,146.52, ,Simplex,,FM,146.520 Simplex,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,,,,,,,, ,,
-146.54,146.54, ,Simplex,,FM,146.540 Simplex,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,,,,,,,, ,,
-146.565,146.565, ,Simplex,,FM,146.565 Simplex,,None,88.5 Hz,88.5 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,
 444.3,449.3,5.00 MHz,+DUP,,FM,VA3ARE Almonte F,,Tone,100.0 Hz,88.5 Hz,23,Both N,Off,25 kHz,Off,0,,,,,,,, ,,
-446,446, ,Simplex,,FM,446 Simplex,,None,88.5 Hz,88.5 Hz,23,Both N,Off,25 kHz,Off,0,,,,,,,, ,,
-446.02,446.02, ,Simplex,,FM,446.0200 Simplex,,None,88.5 Hz,88.5 Hz,23,Both N,Off,25 kHz,Off,0,,,,,,,, ,,
-446.04,446.04, ,Simplex,,FM,446.040 Simplex,,None,88.5 Hz,88.5 Hz,23,Both N,Off,25 kHz,Off,0,,,,,,,, ,,
 147.06,146.46,600 kHz,-DUP,,FM,VE3STP St. Patri,,Tone,114.8 Hz,114.8 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,
 145.23,144.63,600 kHz,-DUP,,FM,VA3TEL Christie ,,Tone,100.0 Hz,100.0 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,LNL Common link
 146.64,146.04,600 kHz,-DUP,,FM,VE3KJG Lavant*,,Tone,100.0 Hz,100.0 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,LNL Common link
-146.58,146.58, ,Simplex,,FM,146.580 Simplex,,None,88.5 Hz,88.5 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,
-153.815,153.815, ,Simplex,,FM,153.815 Lanark C,,None,88.5 Hz,88.5 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,
 146.955,146.355,600 kHz,-DUP,,FM,VE3LCA/R Perth,,Tone,100.0 Hz,100.0 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,
 146.865,146.265,600 kHz,-DUP,,FM,VE3HTN Toledo*,,Tone,100.0 Hz,100.0 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,LNL Common link
 442.2,447.2,5.00 MHz,+DUP,,FM,VE3REX Rideau Fe,,Tone,100.0 Hz,100.0 Hz,23,Both N,Off,25 kHz,Off,0,,,,,,,, ,,LNL Common link
 442.4,447.4,5.00 MHz,+DUP,,FM,VE3WPO Westport ,,Tone,100.0 Hz,100.0 Hz,23,Both N,Off,25 kHz,Off,0,,,,,,,, ,,LNL Common link
-146.94,146.34,600 kHz,-DUP,,FM,VE3CRA Carp,,Tone,100.0 Hz,100.0 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,
 145.43,144.83,-600 kHz,+DUP,,FM,VE3UCR Foymount,,T Sql,88.5 Hz,114.8 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,
 146.91,146.31,600 kHz,-DUP,,FM,VE3ZZR Horton,,None,88.5 Hz,88.5 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,
