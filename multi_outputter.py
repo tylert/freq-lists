@@ -56,7 +56,7 @@ retevis_channel_stub = {
     "RxSignallingSystem": "Off",
     "ScanList": "ScanList1",
     "SendGPSInfo": "Off",
-    "Squelch": "1",
+    "Squelch": "2",
     "Talkaround": "Off",
     "Tot": "60",
     "TotRekeyDelay": "0",
