@@ -47,7 +47,7 @@ Generating Codeplugs From Templates
     {
       "GeneralSettings": {
         "IntroScreenLine1": "VA3DGN",
-        "IntroScreenLine2": "3023396,3021794",
+        "IntroScreenLine2": "3023396",
         "RadioID": "3023396",
         "RadioID1": "3021794",
         "RadioID2": "3023706",
