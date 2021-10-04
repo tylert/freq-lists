@@ -89,25 +89,13 @@ Starting a New Codeplug
         | jq 'del(.Zones[])' > empty.json
 
 
-Converting from CHIRP to DMR Channels
--------------------------------------
+DFU Mode
+--------
 
-::
-
-    python -m venv ~/.venv
-    source ~/.venv/bin/activate
-    pip install --requirement requirements.txt
-
-    ./chirp_channels.py --help
-
-    ./chirp_channels.py \
-        --chirp_csv ../info/Simplex_2m_70cm_16char.csv \
-        --codeplug_json codeplug1.json > codeplug2.json
-
-    ./chirp_channels.py \
-        --rx_only On \
-        --chirp_csv ../info/Weather_info_VHF.csv \
-        --codeplug_json codeplug2.json > codeplug3.json
+Retevis RT3S DFU mode uses top side key + PTT + twist power knob.  Retevis RT90
+DFU mode uses orange emergency button + P1 + plug-in "hard" power (ignore
+"soft" power button).  Tytera MD-390 DFU mode uses the same method as Retevis
+RT3S.
 
 
 Links
