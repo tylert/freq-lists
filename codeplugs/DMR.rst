@@ -1,6 +1,10 @@
 DMR Repeaters
 =============
 
+
+XLX196
+------
+
 You can join XLX196_ using TS=2, TG=6 via the linked repeaters.
 
 * 302064, VE3STP, 443.600+, CC=1
@@ -38,6 +42,10 @@ Talkgroups
     (use TS=2 for all TG except 3022)
 
     VE3ORF TG=2
+
+* https://wiki.brandmeister.network/index.php/TalkGroup/98638  WVNET
+* https://wirelessvillage.ninja
+* https://rfhackers.com
 
 
 Hotspots
