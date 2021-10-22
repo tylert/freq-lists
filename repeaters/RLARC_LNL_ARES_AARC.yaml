@@ -10,6 +10,8 @@ Channels:
 # Rideau Lakes Amateur Radio Club
 #   https://www.ve3rlr.ca/p/about.html
 
+# *** No nets, currently ***
+
 - Name: VE3RLR VHF FM  # Smiths Falls / Railway Museum - Yaesu DR-2X
   RxFrequency: 147.21
   TxFrequencyOffset: '+0.6'
@@ -35,13 +37,15 @@ Channels:
 #   https://www.qsl.net/ve3lca/
 #   https://cneo-nceo.ca/record/kgn1773/
 
-# XXX FIXME TODO  Verify these!!!
+# *** "LNL ARES Net" Wednesdays at 2000H Eastern on all RF-linked repeaters ***
+
+# XXX FIXME TODO  Verify these links and equipment again!!!
 
 - Name: VE3KJG VHF FM  # Lavant - Motorola MSF 5000
   RxFrequency: 146.64
   TxFrequencyOffset: '-0.6'
   Mode: FM
-  CtcssEncode: 100.0
+  CtcssEncode: 100.0  # Tone isn't needed on input but it doesn't hurt
   CtcssDecode: None  # There's no tone on the output (yet)
 
 - Name: VA3TEL VHF FM  # Christie Lake - Yaesu DR-2X + 2x Tait 9xxx (linked to VE3KJG)
@@ -62,21 +66,21 @@ Channels:
   RxFrequency: 442.4
   TxFrequencyOffset: '+5.0'
   Mode: FM
-  CtcssEncode: 100.0
+  CtcssEncode: 100.0  # Tone isn't needed on input but it doesn't hurt
   CtcssDecode: None  # There's no tone on the output (yet)
 
 - Name: VE3HTN VHF FM  # Toledo - ? (linked to ?)
   RxFrequency: 146.865
   TxFrequencyOffset: '-0.6'
   Mode: FM
-  CtcssEncode: 100.0
+  CtcssEncode: 100.0  # Tone isn't needed on input but it doesn't hurt
   CtcssDecode: None  # There's no tone on the output (yet)
 
 - Name: VE3LCA VHF FM  # Perth - Yaesu DR-2X???
   RxFrequency: 146.955
   TxFrequencyOffset: '-0.6'
   Mode: FM
-  CtcssEncode: 100.0
+  CtcssEncode: 100.0  # Tone isn't needed on input but it doesn't hurt
   CtcssDecode: None  # There's no tone on the output (yet)
 
 #                            _        _    ____   ____
@@ -90,18 +94,26 @@ Channels:
 #   https://almontearclub.ca/about-the-club/
 #   http://www.almontearclub.ca/Almonte_Amateur_Radio_Club/Welcome.html
 
+# *** "TBD Net" Tuesdays at 2038H Eastern on XLX196 and TBD ***
+
+- Name: VE3HOZ UHF DMR  # VE3HOA in Carp / Motorola mobiles x2 + 100 W amp
+  RxFrequency: 442.3
+  TxFrequencyOffset: '+5.0'
+  Mode: DMR
+  ColorCode: 1
+
 - Name: VA3AAR UHF FM  # Almonte Fire Hall (linked to VE3KJG)
   RxFrequency: 444.3
   TxFrequencyOffset: '+5.0'
   Mode: FM
-  CtcssEncode: 100.0
+  CtcssEncode: 100.0  # Tone isn't needed on input but it doesn't hurt
   CtcssDecode: None  # There's no tone on the output (yet)
 
 - Name: VA3ARE VHF FM  # Almonte? IRLP 2280?, VA3WRC?!?
   RxFrequency: 147.27
   TxFrequencyOffset: '+0.6'
   Mode: FM
-  CtcssEncode: 100.0
+  CtcssEncode: 100.0  # Tone isn't needed on input but it doesn't hurt
   CtcssDecode: None  # There's no tone on the output (yet)
 
 # They also have some MMDVM and some DSTAR (meh) repeaters too

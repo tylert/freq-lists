@@ -11,9 +11,16 @@ Channels:
 #   http://oarc.net/
 
 # MMDVM Brandmeister 302093 DMR
-# IRLP Node 2040 (FM only)
+# IRLP Node 2040
 
-- Name: VE2CRA UHF DMR  # Camp Fortune / CBC - Motorola CDM-1550LS+ x2, STM32-DVM Rev3 USB
+# VE2CRA VHF and UHF are usually not linked
+# VE2CRA DMR and FM are not linked
+
+# *** "Capital City Net" non-holiday Mondays except July and August at 2000H Eastern on VE2CRA VHF FM ***
+# *** "New Ham Net" Tuesdays at 1930H Eastern on VE2CRA VHF FM ***
+# *** "Phoenix Net" Tuesdays at 2000H Eastern on VE2CRA VHF FM ***
+
+- Name: VE2CRA UHF DMR  # Camp Fortune / CBC - Motorola CDM-1550LS+ mobiles x2, STM32-DVM Rev3 USB
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
   Mode: DMR
@@ -43,7 +50,10 @@ Channels:
 #   http://emrg.ca/
 #   http://emrg.ca/repeaters.htm
 
-# EMRG is in the process of shutting down... the following repeaters may be gone by 2026!!!
+# XXX FIXME TODO  EMRG is in the process of shutting down... the following repeaters may be gone by 2026!!!
+
+# VE3OCE VHF and UHF are not linked
+# VA3OFS VHF and UHF are not linked
 
 - Name: VE3OCE VHF FM  # Alta Vista / Randall (OFS Dispatch / OFS Station 35) - Motorola MSR 2000?
   RxFrequency: 146.88
@@ -87,7 +97,7 @@ Channels:
   CtcssEncode: 123.0
   CtcssDecode: 123.0
 
-- Name: VA3EMV/P VHF FM  # Portable (OFS Dispatch / OFS Station 35) - Motorola Radios x2
+- Name: VA3EMV/P VHF FM  # Portable (OFS Dispatch / OFS Station 35) - Motorola mobiles x2
   RxFrequency: 145.11
   TxFrequencyOffset: '-0.6'
   Mode: FM

@@ -16,7 +16,7 @@ Channels:
 # VE3STP has Echolink but no IRLP
 # There's supposed to be a DMR repeater here too but there's no info about it on their web page(s)
 
-- Name: VE3STP VHF FM  # Renfrew / Kennelly's Mountain - Motorola XPR 8300 + 100 W amp
+- Name: VE3STP VHF FM  # Renfrew / Mount St. Patrick or Kennelly's Mountain - Motorola XPR 8300 + 100 W amp
   RxFrequency: 147.06
   TxFrequencyOffset: '-0.6'
   Mode: FM
