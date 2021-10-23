@@ -1,38 +1,6 @@
 ---
 Channels:
 
-#                    __     ___    _____ ____   ____ _   _
-#                    \ \   / / \  |___ /|  _ \ / ___| \ | |
-#                     \ \ / / _ \   |_ \| | | | |  _|  \| |
-#                      \ V / ___ \ ___) | |_| | |_| | |\  |
-#                       \_/_/   \_\____/|____/ \____|_| \_|
-
-# Tyler Tidman VA3DGN
-
-# - Name: V?3??? UHF DMR  # VA3DGN in Perth - Motorola CDM 750 mobiles, STM32-DVM Rev4 USB
-#   RxFrequency: 4??.?
-#   TxFrequencyOffset: '+5.0'
-#   Mode: DMR  # CCS7 ID 302??? / MMDVM -> Brandmeister
-#   ColorCode: 1
-
-#                   __     _______ _____ _   _  ___    _
-#                   \ \   / / ____|___ /| | | |/ _ \  / \
-#                    \ \ / /|  _|   |_ \| |_| | | | |/ _ \
-#                     \ V / | |___ ___) |  _  | |_| / ___ \
-#                      \_/  |_____|____/|_| |_|\___/_/   \_\
-
-# Phillip Rodney Lytle VE3HOA, VA3HOA
-#   http://ve3hoa.ddns.net:380/
-#   https://xrf196.spdns.org/
-
-# TS=2, TG=6 linked to XLX196 B module
-
-- Name: VE3HOZ UHF DMR  # VE3HOA/VA3HOA in Carp - Motorola CDM 1550LS+ mobiles + 100 W amp
-  RxFrequency: 442.3
-  TxFrequencyOffset: '+5.0'
-  Mode: DMR  # CCS7 ID 302108 / MMDVM -> Brandmeister
-  ColorCode: 1
-
 #                       ____  _        _    ____   ____
 #                      |  _ \| |      / \  |  _ \ / ___|
 #                      | |_) | |     / _ \ | |_) | |
