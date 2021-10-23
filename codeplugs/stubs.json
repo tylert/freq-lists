@@ -1,0 +1,92 @@
+{
+  "Contacts": [
+    {
+      "CallID": "6",
+      "CallReceiveTone": "No",
+      "CallType": "Group",
+      "Name": "6 Local"
+    },
+    {
+      "CallID": "99",
+      "CallReceiveTone": "No",
+      "CallType": "Group",
+      "Name": "99 Simplex"
+    },
+    {
+      "CallID": "302",
+      "CallReceiveTone": "No",
+      "CallType": "Group",
+      "Name": "302 Canada"
+    },
+    {
+      "CallID": "3023",
+      "CallReceiveTone": "No",
+      "CallType": "Group",
+      "Name": "3023 Ontario"
+    },
+    {
+      "CallID": "9990",
+      "CallReceiveTone": "No",
+      "CallType": "Private",
+      "Name": "9990 Parrot"
+    },
+    {
+      "CallID": "98638",
+      "CallReceiveTone": "No",
+      "CallType": "Group",
+      "Name": "98638 WVNET"
+    }
+  ],
+  "Zones": [
+    {
+      "ChannelA": [],
+      "ChannelB": [],
+      "Name": "1st DMR"
+    },
+    {
+      "ChannelA": [],
+      "ChannelB": [],
+      "Name": "2nd DMR"
+    },
+    {
+      "ChannelA": [],
+      "ChannelB": [],
+      "Name": "3rd DMR"
+    },
+    {
+      "ChannelA": [],
+      "ChannelB": [],
+      "Name": "4th DMR"
+    },
+    {
+      "ChannelA": [],
+      "ChannelB": [],
+      "Name": "5th DMR"
+    },
+    {
+      "ChannelA": [],
+      "ChannelB": [],
+      "Name": "DMR Simplex"
+    },
+    {
+      "ChannelA": [],
+      "ChannelB": [],
+      "Name": "FM Repeaters"
+    },
+    {
+      "ChannelA": [],
+      "ChannelB": [],
+      "Name": "FM Simplex"
+    },
+    {
+      "ChannelA": [],
+      "ChannelB": [],
+      "Name": "GMRS/FRS"
+    },
+    {
+      "ChannelA": [],
+      "ChannelB": [],
+      "Name": "WX Info"
+    }
+  ]
+}
