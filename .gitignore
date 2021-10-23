@@ -7,4 +7,5 @@ codeplugs/user.csv
 codeplugs/scrubbed.csv
 codeplugs/filtered.csv
 
+.venv/
 tmp/
