@@ -20,11 +20,11 @@ Channels:
 # VE2CRA VHF and UHF are usually not linked
 # VE2CRA DMR and FM are not linked
 
-- Name: VE2CRA UHF DMR  # Camp Fortune / CBC - Motorola CDM 1550LS+ mobiles, STM32-DVM Rev3 USB
-  RxFrequency: 444.4
-  TxFrequencyOffset: '+5.0'
-  Mode: DMR  # CCS7 ID 302093 / MMDVM -> Brandmeister
-  ColorCode: 1
+# - Name: VE2CRA UHF DMR  # Camp Fortune / CBC - Motorola CDM 1550LS+ mobiles, STM32-DVM Rev3 USB
+#   RxFrequency: 444.4
+#   TxFrequencyOffset: '+5.0'
+#   Mode: DMR  # CCS7 ID 302093 / MMDVM -> Brandmeister
+#   ColorCode: 1
 
 - Name: VE2CRA VHF FM  # Camp Fortune / CBC - ?
   RxFrequency: 146.94

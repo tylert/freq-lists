@@ -20,17 +20,17 @@ Channels:
 # Does VE3STP have IRLP too???
 # XXX FIXME TODO  Info about their DMR repeaters is missing from their web page(s)
 
-- Name: VE3STP UHF DMR  # TBD - TBD
-  RxFrequency: 443.6
-  TxFrequencyOffset: '+5.0'
-  Mode: DMR  # CCS7 ID 302064 / MMDVM -> Brandmeister
-  ColorCode: 1
+# - Name: VE3STP UHF DMR  # TBD - TBD
+#   RxFrequency: 443.6
+#   TxFrequencyOffset: '+5.0'
+#   Mode: DMR  # CCS7 ID 302064 / MMDVM -> Brandmeister
+#   ColorCode: 1
 
-- Name: VE3STP VHF DMR  # Renfrew / Mount St. Patrick or Kennelly's Mountain - Motorola XPR 8300 + 100 W amp
-  RxFrequency: 147.06
-  TxFrequencyOffset: '-0.6'
-  Mode: DMR  # CCS7 ID 302096 / MMDVM -> Brandmeister
-  ColorCode: 1
+# - Name: VE3STP VHF DMR  # Renfrew / Mount St. Patrick or Kennelly's Mountain - Motorola XPR 8300 + 100 W amp
+#   RxFrequency: 147.06
+#   TxFrequencyOffset: '-0.6'
+#   Mode: DMR  # CCS7 ID 302096 / MMDVM -> Brandmeister
+#   ColorCode: 1
 
 - Name: VE3STP VHF FM  # Renfrew / Mount St. Patrick or Kennelly's Mountain - Motorola XPR 8300 + 100 W amp
   RxFrequency: 147.06
