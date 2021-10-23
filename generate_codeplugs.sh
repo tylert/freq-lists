@@ -14,7 +14,7 @@ dmrRadio newCodeplug -model 'RT3S' -freq '400-480_136-174' tmp/RT3S.rdt
 dmrRadio codeplugToJSON tmp/RT3S.rdt tmp/RT3S.json
 sed -i 's/Contact1.*"/Contact1"/' tmp/RT3S.json  # XXX FIXME TODO  Remove this hack after fixing the UUID bug!!!
 
-# Fix the default settings and fill in channel data
+# Fix the default settings and fill in channel data, contact stubs and zone stubs
 cat tmp/RT3S.json | jq --from-file codeplugs/Retevis_RT3S.jq > tmp/00.json
 jq --slurp '.[0] * .[1]' tmp/00.json codeplugs/stubs.json > tmp/01.json
 ./multi_outputter.py --input_file repeaters/DMR.yaml --json_file tmp/01.json > tmp/02.json
@@ -38,12 +38,11 @@ sed -i 's/Contact1.*"/Contact1"/' tmp/RT3S.json  # XXX FIXME TODO  Remove this h
 # |_| \_\|_|   /_/ \___/
 
 # Generate a blank codeplug and convert it to JSON
-# XXX FIXME TODO  Change this model to 'RT90' after more bugs get fixed!!!
-dmrRadio newCodeplug -model 'MD-2017' -freq '400-480_136-174' tmp/RT90.rdt
+dmrRadio newCodeplug -model 'MD-2017' -freq '400-480_136-174' tmp/RT90.rdt  # XXX FIXME TODO  Use 'RT90' model after fixing more bugs!!!
 dmrRadio codeplugToJSON tmp/RT90.rdt tmp/RT90.json
 sed -i 's/Contact1.*"/Contact1"/' tmp/RT90.json  # XXX FIXME TODO  Remove this hack after fixing the UUID bug!!!
 
-# Fix the default settings and fill in channel data
+# Fix the default settings and fill in channel data, contact stubs and zone stubs
 cat tmp/RT90.json | jq --from-file codeplugs/Retevis_RT90.jq > tmp/10.json
 jq --slurp '.[0] * .[1]' tmp/10.json codeplugs/stubs.json > tmp/11.json
 ./multi_outputter.py --input_file repeaters/DMR.yaml --json_file tmp/11.json > tmp/12.json
@@ -59,4 +58,3 @@ jq --slurp '.[0] * .[1]' tmp/10.json codeplugs/stubs.json > tmp/11.json
 dmrRadio jsonToCodeplug tmp/19.json tmp/RT90.rdt
 dmrRadio codeplugToJSON tmp/RT90.rdt tmp/RT90.json
 sed -i 's/Contact1.*"/Contact1"/' tmp/RT90.json  # XXX FIXME TODO  Remove this hack after fixing the UUID bug!!!
-rm tmp/00.json tmp/01.json
