@@ -134,7 +134,7 @@ Channels:
 #                                                         |___/
 
 # Also used as simplex channels if not going through a duplex repeater
-# These can also be used as repeater outputs, in the US only
+# These can also be used as repeater outputs in the US only
 
 # These should be limited to 2 W in Canada or 5 W in the US for simplex (or 50 W, if duplex)
 
