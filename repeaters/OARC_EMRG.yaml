@@ -9,21 +9,21 @@ Channels:
 
 # Ottawa Amateur Radio Club
 #   http://oarc.net/
+#   (insert link to ve2cra Pi-Star dashboard here)
+#   https://xrf196.spdns.org/
 
-# MMDVM Brandmeister 302093 DMR
+# *** "Capital City Net" non-holiday Mondays except July and August at 2000H Eastern on VE2CRA VHF FM ***
+# *** "New Ham Welcome Net" Tuesdays at 1930H Eastern on VE2CRA VHF FM ***
+# *** "Phoenix Net" Tuesdays at 2000H Eastern on VE2CRA VHF FM ***
+
 # IRLP Node 2040
-
 # VE2CRA VHF and UHF are usually not linked
 # VE2CRA DMR and FM are not linked
 
-# *** "Capital City Net" non-holiday Mondays except July and August at 2000H Eastern on VE2CRA VHF FM ***
-# *** "New Ham Net" Tuesdays at 1930H Eastern on VE2CRA VHF FM ***
-# *** "Phoenix Net" Tuesdays at 2000H Eastern on VE2CRA VHF FM ***
-
-- Name: VE2CRA UHF DMR  # Camp Fortune / CBC - Motorola CDM-1550LS+ mobiles x2, STM32-DVM Rev3 USB
+- Name: VE2CRA UHF DMR  # Camp Fortune / CBC - Motorola CDM 1550LS+ mobiles, STM32-DVM Rev3 USB
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
-  Mode: DMR
+  Mode: DMR  # CCS7 ID 302093 / MMDVM -> Brandmeister
   ColorCode: 1
 
 - Name: VE2CRA VHF FM  # Camp Fortune / CBC - ?
@@ -50,10 +50,13 @@ Channels:
 #   http://emrg.ca/
 #   http://emrg.ca/repeaters.htm
 
+# *** No nets, currently ***
+
 # XXX FIXME TODO  EMRG is in the process of shutting down... the following repeaters may be gone by 2026!!!
 
 # VE3OCE VHF and UHF are not linked
 # VA3OFS VHF and UHF are not linked
+# None of the repeater sites are linked
 
 - Name: VE3OCE VHF FM  # Alta Vista / Randall (OFS Dispatch / OFS Station 35) - Motorola MSR 2000?
   RxFrequency: 146.88
@@ -83,7 +86,7 @@ Channels:
   CtcssEncode: 136.5
   CtcssDecode: 136.5
 
-- Name: VA3EMV/E VHF FM  # Orleans / Cumberland (OFS Station 53) - ?
+- Name: VA3EMV/E VHF FM  # Orleans / Cumberland (OFS Station 53) - TBD
   RxFrequency: 146.985
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -97,7 +100,7 @@ Channels:
   CtcssEncode: 123.0
   CtcssDecode: 123.0
 
-- Name: VA3EMV/P VHF FM  # Portable (OFS Dispatch / OFS Station 35) - Motorola mobiles x2
+- Name: VA3EMV/P VHF FM  # Portable (OFS Dispatch / OFS Station 35) - Motorola mobiles
   RxFrequency: 145.11
   TxFrequencyOffset: '-0.6'
   Mode: FM
