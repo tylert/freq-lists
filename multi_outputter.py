@@ -130,7 +130,7 @@ def process_dmr_channels(entries, channel_stub):
                 and entry['TxFrequencyOffset'] != ''
                 and entry['TxFrequencyOffset'] != '+0.0'
             ):
-                output['AdmitCriteria'] = 'Color Code'
+                output['AdmitCriteria'] = 'Color code'
 
         # XXX FIXME TODO  Pad the TxFrequencyOffset out to 5 decimal places!!!
         #     output['TxFrequencyOffset'] = '{}{:.5f}'.format(

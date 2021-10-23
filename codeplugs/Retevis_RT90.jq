@@ -20,6 +20,7 @@
 | .GeneralSettings.IntroScreen |= "Character String"
 | .GeneralSettings.IntroScreenLine1 |= ""
 | .GeneralSettings.IntroScreenLine2 |= ""
+| .GeneralSettings.KeypadTones |= "Off"
 | .GeneralSettings.LoneWorkerReminderTime |= "10"
 | .GeneralSettings.LoneWorkerResponseTime |= "1"
 | .GeneralSettings.MenuControl |= "On"
