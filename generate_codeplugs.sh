@@ -12,7 +12,7 @@ mkdir -p tmp
 # Generate a blank codeplug and convert it to JSON
 dmrRadio newCodeplug -model 'RT3S' -freq '400-480_136-174' tmp/RT3S.rdt
 dmrRadio codeplugToJSON tmp/RT3S.rdt tmp/RT3S.json
-sed -i 's/Contact1.*"/Contact1"/' tmp/RT3S.json  # XXX FIXME TODO  Remove this hack after fixing the UUID bug!!!
+sed -i 's/_.*"/"/' tmp/RT3S.json  # XXX FIXME TODO  Remove this hack after fixing the UUID bug!!!
 
 # Fix the default settings and fill in channel data, contact stubs and zone stubs
 cat tmp/RT3S.json | jq --from-file codeplugs/Retevis_RT3S.jq > tmp/00.json
@@ -29,7 +29,7 @@ jq --slurp '.[0] * .[1]' tmp/00.json codeplugs/stubs.json > tmp/01.json
 # Convert it back to a codeplug and update the JSON export
 dmrRadio jsonToCodeplug tmp/09.json tmp/RT3S.rdt
 dmrRadio codeplugToJSON tmp/RT3S.rdt tmp/RT3S.json
-sed -i 's/Contact1.*"/Contact1"/' tmp/RT3S.json  # XXX FIXME TODO  Remove this hack after fixing the UUID bug!!!
+sed -i 's/_.*"/"/' tmp/RT3S.json  # XXX FIXME TODO  Remove this hack after fixing the UUID bug!!!
 
 #  ____ _____ ___   ___
 # |  _ \_   _/ _ \ / _ \
@@ -40,7 +40,7 @@ sed -i 's/Contact1.*"/Contact1"/' tmp/RT3S.json  # XXX FIXME TODO  Remove this h
 # Generate a blank codeplug and convert it to JSON
 dmrRadio newCodeplug -model 'MD-2017' -freq '400-480_136-174' tmp/RT90.rdt  # XXX FIXME TODO  Use 'RT90' model after fixing more bugs!!!
 dmrRadio codeplugToJSON tmp/RT90.rdt tmp/RT90.json
-sed -i 's/Contact1.*"/Contact1"/' tmp/RT90.json  # XXX FIXME TODO  Remove this hack after fixing the UUID bug!!!
+sed -i 's/_.*"/"/' tmp/RT90.json  # XXX FIXME TODO  Remove this hack after fixing the UUID bug!!!
 
 # Fix the default settings and fill in channel data, contact stubs and zone stubs
 cat tmp/RT90.json | jq --from-file codeplugs/Retevis_RT90.jq > tmp/10.json
@@ -57,4 +57,4 @@ jq --slurp '.[0] * .[1]' tmp/10.json codeplugs/stubs.json > tmp/11.json
 # Convert it back to a codeplug and update the JSON export
 dmrRadio jsonToCodeplug tmp/19.json tmp/RT90.rdt
 dmrRadio codeplugToJSON tmp/RT90.rdt tmp/RT90.json
-sed -i 's/Contact1.*"/Contact1"/' tmp/RT90.json  # XXX FIXME TODO  Remove this hack after fixing the UUID bug!!!
+sed -i 's/_.*"/"/' tmp/RT90.json  # XXX FIXME TODO  Remove this hack after fixing the UUID bug!!!
