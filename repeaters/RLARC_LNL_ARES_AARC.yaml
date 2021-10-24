@@ -62,7 +62,7 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VE3WPO UHF FM  # Westport - Motorola MSR 2000 (linked to TBD)
+- Name: VE3WPO UHF FM  # Westport / Legion? - Motorola MSR 2000 (linked to TBD)
   RxFrequency: 442.4
   TxFrequencyOffset: '+5.0'
   Mode: FM

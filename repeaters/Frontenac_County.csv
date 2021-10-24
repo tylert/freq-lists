@@ -1,3 +1,0 @@
-Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE
-1,VE3FRG,146.805000,-,0.600000,TSQL,203.5,203.5,023,NN,FM,5.00,,Kingston,,,,
-2,U-VE3FRG,445.137500,+,5.000000,TSQL,203.5,203.5,023,NN,FM,6.25,,Kingston,,,,
