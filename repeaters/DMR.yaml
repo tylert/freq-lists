@@ -67,12 +67,6 @@ Channels:
 #   (insert links to ve3stp Pi-Star dashboards here)
 #   https://xrf196.spdns.org/
 
-# *** "Champlain Mini Net" semi-nightly at 1930H on VE3STP VHF FM ***
-
-# VE3STP-L on Echolink
-# Does VE3STP have IRLP too???
-# XXX FIXME TODO  Info about their DMR repeaters is missing from their web page(s)
-
 - Name: VE3STP UHF DMR  # TBD - TBD
   RxFrequency: 443.6
   TxFrequencyOffset: '+5.0'
@@ -96,16 +90,27 @@ Channels:
 #   (insert link to ve2cra Pi-Star dashboard here)
 #   https://xrf196.spdns.org/
 
-# *** "Capital City Net" non-holiday Mondays except July and August at 2000H Eastern on VE2CRA VHF FM ***
-# *** "New Ham Welcome Net" Tuesdays at 1930H Eastern on VE2CRA VHF FM ***
-# *** "Phoenix Net" Tuesdays at 2000H Eastern on VE2CRA VHF FM ***
-
-# IRLP Node 2040
-# VE2CRA VHF and UHF are usually not linked
+# TS=2, TG=6 linked to XLX196 B module
 # VE2CRA DMR and FM are not linked
 
 - Name: VE2CRA UHF DMR  # Camp Fortune / CBC - Motorola CDM 1550LS+ mobiles, STM32-DVM Rev3 USB
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302093 / MMDVM -> Brandmeister
+  ColorCode: 1
+
+#                       __     _______ _____ _     ____
+#                       \ \   / / ____|___ /| |   / ___|
+#                        \ \ / /|  _|   |_ \| |  | |
+#                         \ V / | |___ ___) | |__| |___
+#                          \_/  |_____|____/|_____\____|
+
+# Norman Rhodes Rashleigh VE3LC
+#   http://ve3ram.ddns.net:380/
+#   https://xrf196.spdns.org/
+
+- Name: VE3RAM UHF DMR  # VE3LC in Orleans - Yaesu DR-1X
+  RxFrequency: 444.85
+  TxFrequencyOffset: '+5.0'
+  Mode: DMR  # CCS7 ID 302117 / MMDVM -> Brandmeister
   ColorCode: 1

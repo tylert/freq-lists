@@ -8,15 +8,11 @@ Requirements
 You must have the following tools installed:
 
 * (REQUIRED) editcp_ 1.0.23 or newer (and/or just the "dmrRadio_" binary 1.0.23 or newer) for exporting/importing codeplugs to/from JSON
-* (REQUIRED) jq_ for working with JSON payloads
-* (OPTIONAL) dmrconfig_ for working with codeplugs for radios that aren't supported by editcp yet
-* (OPTIONAL) qdmr_ to provide a nice GUI when working with dmrconfig
+* (SUGGESTED) jq_ for working with JSON payloads
 
 .. _editcp: https://github.com/DaleFarnsworth-DMR/editcp
 .. _dmrRadio: https://github.com/DaleFarnsworth-DMR/dmrRadio
 .. _jq: https://stedolan.github.io/jq/
-.. _dmrconfig: https://github.com/OpenRTX/dmrconfig
-.. _qdmr: https://github.com/hmatuschek/qdmr
 
 There are some really good programming tutorials at
 https://youtu.be/VExx628R0DM and https://youtu.be/Lw0Y-jQZMZ0 which are useful
@@ -104,3 +100,9 @@ Links
 * https://shapeshed.com/jq-json/
 * https://programminghistorian.org/en/lessons/json-and-jq
 * https://stackoverflow.com/questions/19529688/how-to-merge-2-json-objects-from-2-files-using-jq
+* https://www.farnsworth.org/dale/codeplug/editcp/  main page for Editcp
+* https://github.com/DaleFarnsworth-DMR  source for editcp, dmrRadio, libraries, etc.
+* https://dm3mat.darc.de/qdmr/  main page for qdmr
+* https://github.com/hmatuschek/qdmr  source for qdmr
+* https://openrtx.org/#/  main page for OpenRTX
+* https://github.com/OpenRTX  OpenRTX firmware, dmrconfig tool, etc.

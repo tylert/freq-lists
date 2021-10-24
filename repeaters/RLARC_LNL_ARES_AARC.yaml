@@ -93,16 +93,6 @@ Channels:
 #   https://almontearclub.ca/repeater-information/
 #   https://almontearclub.ca/about-the-club/
 #   http://www.almontearclub.ca/Almonte_Amateur_Radio_Club/Welcome.html
-#   http://va3aar.dyndns.org:3026/
-#   https://xrf196.spdns.org/
-
-# *** "Unnamed Digital Modes Net???" Tuesdays at 2038H Eastern on XLX196 and TBD ***
-
-# - Name: VA3AAR VHF DMR  # TBD - TBD
-#   RxFrequency: 145.55
-#   TxFrequencyOffset: '-0.6'
-#   Mode: DMR  # CCS7 ID 302070 / MMDVM -> Brandmeister
-#   ColorCode: 1
 
 - Name: VA3AAR UHF FM  # Almonte Fire Hall (linked to VE3KJG / Lavant) - TBD
   RxFrequency: 444.3
@@ -118,4 +108,4 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: None
 
-# They also have some MMDVM and some DSTAR (meh) repeaters too
+# They also have some DSTAR repeaters too???
