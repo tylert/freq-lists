@@ -1,3 +1,17 @@
+    145.530  ( - ) Ottawa ON   VA3ODG DStar       -
+    444.850  ( + ) Ottawa (Argyle St YMCA) ON VE3ODG DStar       -
+
+    145.450  ( - ) Ottawa (Laurier & Bank) ON  VE3RIX   C4FM 151.4      -
+    442.450  ( + ) Ottawa (Otwa Intnl Airport) ON VE3RIX  C4FM 151.4     -
+1,VE3ORF,146.850000,-,0.600000,TSQL,136.5,136.5,023,NN,FM,5.00,,,,,,
+2,U-VE3ORF,444.550000,+,5.000000,TSQL,151.4,151.4,023,NN,FM,6.25,,,,,,
+    444.550  ( + ) Ottawa (Kanata) ON             VE3ORF 151.4      -
+5,VE3TST,146.700000,-,0.600000,TSQL,136.5,136.5,023,NN,FM,5.00,,,,,,
+    146.700  ( - ) Ottawa (416 & Hunt Club) ON VE3TST 136.5      -
+6,VE3TEL,147.030000,-,0.600000,TSQL,100.0,100.0,023,NN,FM,5.00,,,,,,
+7,VA3LCC,146.790000,-,0.600000,TSQL,156.7,156.7,023,NN,FM,5.00,,,,,,
+    146.790  ( - ) Ottawa (Cite Collegiale) ON VA3LCC       -
+
 Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE
 1,VE3FRG,146.805000,-,0.600000,TSQL,203.5,203.5,023,NN,FM,5.00,,Kingston,,,,
 2,U-VE3FRG,445.137500,+,5.000000,TSQL,203.5,203.5,023,NN,FM,6.25,,Kingston,,,,
@@ -6,90 +20,65 @@ Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPola
  2)  UHF repeater in Kingston linked to VE3FRG, VHF-146.805 (C4FM)
 
 Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment
-145.55,144.95,600 kHz,-DUP,,DV,D-Star VE3AAR C,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,CQCQCQ,,,,,,, ,,
-145.55,144.95,600 kHz,-DUP,,DV,D-Star Union V,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,CQCQCQ,,,,,,, ,,
-444.1,449.1,5.00 MHz,+DUP,,DV,VA3AAR B,,None,88.5 Hz,88.5 Hz,23,Both N,Off,25 kHz,Off,0,,,,,,,, ,,
 147.24,147.84,600 kHz,+DUP,,DV,VA3RDD,,None,94.8 Hz,94.8 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,Talk Channel
 444.8,449.8,5.00 MHz,+DUP,,DV,VA3RDD,,None,94.8 Hz,94.8 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,Status Channel
-443.6,448.6,5.00 MHz,+DUP,,DV,VE3STP/B/CQ,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,,,,,,,, ,,
+4,147.2400,147.84,600 kHz,#NAME?,DV,VA3RDD,None,94.8 Hz,94.8 Hz,23,Both N,Off,5 kHz, ,,Talk Channel,Off,0,,,
+5,444.8000,449.8,5.00 MHz,#NAME?,DV,VA3RDD ,None,94.8 Hz,94.8 Hz,23,Both N,Off,5 kHz, ,,Status Channel,Off,0,,,
+    147.240  ( + ) Smiths Falls ON  VA3RDD  DStar       -
 
 Channel Number,Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Operating Mode,Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Bank,Bank Channel Number,Comment,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign
 1,145.5500,144.95,600 kHz,#NAME?,DV,D-Star Union V,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,A: ,,,Off,0,CQCQCQ,,
-2,444.1000,449.1,5.00 MHz,#NAME?,DV,VA3AAR B,None,88.5 Hz,88.5 Hz,23,Both N,Off,25 kHz,F: ,,,Off,0,,,
 3,444.8000,449.8,5.00 MHz,#NAME?,DV,DSTAR Rideau U,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,A: ,,,Off,0,,,
-4,147.2400,147.84,600 kHz,#NAME?,DV,VA3RDD,None,94.8 Hz,94.8 Hz,23,Both N,Off,5 kHz, ,,Talk Channel,Off,0,,,
-5,444.8000,449.8,5.00 MHz,#NAME?,DV,VA3RDD ,None,94.8 Hz,94.8 Hz,23,Both N,Off,5 kHz, ,,Status Channel,Off,0,,,
 30,443.2000,448.2,5.00 MHz,#NAME?,FM,Arnprior Primary: Fire Hall,Tone,114.8 Hz,114.8 Hz,23,Both N,Off,25 kHz, ,,,Off,0,,,
 68,147.2700,147.87,600 kHz,#NAME?,FM,VA3WJC Almonte,Tone,100.0 Hz,88.5 Hz,23,Both N,Off,5 kHz,A: ,,,Off,0,,,
 
-Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE
-1,VE3ORF,146.850000,-,0.600000,TSQL,136.5,136.5,023,NN,FM,5.00,,,,,,
-2,U-VE3ORF,444.550000,+,5.000000,TSQL,151.4,151.4,023,NN,FM,6.25,,,,,,
 3,VE2RAO,146.745000,-,0.600000,TSQL,118.8,118.8,023,NN,FM,5.00,,,,,,
 4,U-VE2RAO,443.950000,+,5.000000,TSQL,118.8,118.8,023,NN,FM,6.25,,,,,,
-5,VE3TST,146.700000,-,0.600000,TSQL,136.5,136.5,023,NN,FM,5.00,,,,,,
-6,VE3TEL,147.030000,-,0.600000,TSQL,100.0,100.0,023,NN,FM,5.00,,,,,,
-7,VA3LCC,146.790000,-,0.600000,TSQL,156.7,156.7,023,NN,FM,5.00,,,,,,
 8,U-VE2RAO,441.950000,+,5.000000,,88.5,88.5,023,NN,DMR,6.25,,,,,,
+    146.745  ( - ) Gatineau (Hull) QC  VE2RAO C4FM 110.9      -
+    443.950  ( + ) Gatineau (Hull) QC  VE2RAO  2332 123.0      -
+
 9,U-VE2REH,442.550000,+,5.000000,,88.5,88.5,023,NN,DMR,6.25,,,,,,
 10,U-VE2REH,442.650000,+,5.000000,,88.5,88.5,023,NN,DMR,6.25,,,,,,
 11,U-VE2REH,444.150000,+,5.000000,,88.5,88.5,023,NN,DMR,6.25,,,,,,
+    145.490  ( - ) Gatineau (Buckingham) QC VE2REH 110.9      -
+    145.330  ( - ) Mt. Pakenham ON      (L2) VE2REH  2018 110.9  Strong  Yes
+    147.105  ( + ) Cantley QC        (L2) VE2REH   2018 110.9       -
+    147.360  ( + ) Chelsea (Camp Fortune) QC VE2REH 123.0 Medium    Yes
+    442.800  ( + ) Gatineau (Portable Rptr) QC VE2REH 110.9 (Currently off-the-air)
+    444.150  ( + ) Lancaster, ON   VE2REH       -
+    444.600  ( + ) Cantley QC   VE2REH 110.9      -
 
-Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE
 1,VE2RWO,146.910000,-,0.600000,TSQL,88.5,88.5,023,NN,FM,5.00,,,,,,
 2,U-VE2RCW,442.500000,+,5.000000,TSQL,141.3,141.3,023,NN,FM,6.25,,,,,,
 3,VA2OZ,147.375000,+,0.600000,TSQL,107.2,107.2,023,NN,FM,5.00,,,,,,
 4,U-VE2OCZ,444.950000,+,5.000000,TSQL,107.2,107.2,023,NN,FM,6.25,,,,,,
-
-EASTERN  VHF / UHF  FREQUENCIES
-(2019-06-01)    (Antenna at 40 ft.)
-Ham Repeaters: Output  Offset  Location   Callsign   Notes Tone   50W  5W
+    147.000  ( - ) Mt. Rigaud QC   VE2RM         -
+    444.000  ( + ) Mt. Rigaud QC   VE2RM        -
 
     145.290  ( - ) Iroquois ON   VE3IRO 100.0 V.Weak   No
-    145.330  ( - ) Mt. Pakenham ON      (L2) VE2REH  2018 110.9  Strong  Yes
-    145.450  ( - ) Ottawa (Laurier & Bank) ON  VE3RIX   C4FM 151.4      -
     145.470  ( - ) Alfred ON   VA3PRA 110.9      -
-    145.490  ( - ) Gatineau (Buckingham) QC VE2REH 110.9      -
-    145.530  ( - ) Ottawa ON   VA3ODG DStar       -
     146.610  ( - ) Bancroft (Hwy 62 South) ON VE3BNI  100.0   Weak    No
     146.625  ( - ) Lansdowne (Ivy Lea Tower) ON  VA3LGA 100.0  Strong   Yes
-    146.700  ( - ) Ottawa (416 & Hunt Club) ON VE3TST 136.5      -
-    146.745  ( - ) Gatineau (Hull) QC  VE2RAO C4FM 110.9      -
     146.760  ( - ) Morrisburg ON   VE3SVR 110.9      -
-    146.790  ( - ) Ottawa (Cite Collegiale) ON VA3LCC       -
     146.805  ( - ) Ottawa (Barrhaven) ON  VE3DRE C4FM 100.0      -
     146.820  ( - ) Brockville ON   VE3IWJ 100.0  Strong  Yes
     146.940  ( - ) Kingston (McAdoo Lane) ON VE3KBR   2750 151.4     Strong   Yes
     146.970  ( - ) Winchester ON   VA3NDC 100.0       -
-    147.000  ( - ) Mt. Rigaud QC   VE2RM         -
     147.015  ( + ) Frankford ON (N. Of Trenton) VE3TRR   91.5       -
     147.090  ( + ) N. Frontenac (Clarendon Stn.)    VE3KAR     (Currently off-the-air)
-    147.105  ( + ) Cantley QC        (L2) VE2REH   2018 110.9       -
     147.195  ( + ) Cantley QC   VE2MDC 110.9      -
-    147.240  ( + ) Smiths Falls ON  VA3RDD  DStar       -
     147.285  ( + ) Bancroft ON   VA3FOY 118.8      -
     147.330  ( + ) Hammond ON   VE3PRV   2115       -
-    147.360  ( + ) Chelsea (Camp Fortune) QC VE2REH 123.0 Medium    Yes
 
-    442.450  ( + ) Ottawa (Otwa Intnl Airport) ON VE3RIX  C4FM 151.4     -
-    442.800  ( + ) Gatineau (Portable Rptr) QC VE2REH 110.9 (Currently off-the-air)
     443.300  ( + ) Kingston ON   VE3KTO       -
-    443.950  ( + ) Gatineau (Hull) QC  VE2RAO  2332 123.0      -
     444.000  ( + ) Brockville ON   VE3IWJ 100.0 Medium    Yes
-    444.000  ( + ) Mt. Rigaud QC   VE2RM        -
-    444.100  ( + ) Mississippi Mills (Union Hall) ON VA3ARE DStar       -
-    444.150  ( + ) Lancaster, ON   VE2REH       -
     444.225  ( + ) Kemptville ON   VE3NGR C4FM       -
     444.250  ( + ) Gatineau QC   VA2UHF 110.9      -
     444.350  ( + ) Ottawa (Cumberland) ON VA3RCB 100.0      -
     444.450  ( + ) Perth (Otty Lake) ON  VE3IEV     2053 100.0    (Currently off-the-air)
-(1) 444.500  ( + ) Ottawa ON    (Optional - L1) VA3LGP 141.3      -
+(1) 444.500  ( + ) Ottawa ON    (Optional - L1) VA3LGP 141.3      -  linked to VE3KJG at QTH of Luc VE3JGL
     444.500  ( + ) Chelsea QC   VE2GFV 146.2      -
-    444.550  ( + ) Ottawa (Kanata) ON             VE3ORF 151.4      -
-    444.600  ( + ) Cantley QC   VE2REH 110.9      -
     444.700  ( + ) Cantley QC   VA2CMB 123.0      -
     444.825  ( + ) Ottawa ON   VA3DSP 100.0      -
-    444.850  ( + ) Ottawa (Argyle St YMCA) ON VE3ODG DStar       -
     444.900  ( + ) Gatineau QC   VA2XAD 162.2      -
-
-Notes:  1)  UHF repeater in Ottawa, optional link to our VE3LCA Network (per Luc Pernot, VE3JGL)
