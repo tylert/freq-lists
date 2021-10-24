@@ -65,6 +65,8 @@ Repeaters and Transcoding
 * https://www.chrishoodblog.com/building-a-dmr-repeater-using-bridgecom-mobiles-pt1/
 * https://www.chrishoodblog.com/make-your-own-dmr-server/
 * https://sin.groups.io/g/main/message/355
+* https://blog.rosenberg-watt.com/2018/08/14/towards-better-global-dmr-ham-radio-id-generation/
+* https://tgifnetwork.createaforum.com/hotspot-configurartion/adding-second-hotspot-do-i-need-a-second-dmr-id/
 
 ::
 
