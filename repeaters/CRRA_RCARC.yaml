@@ -30,7 +30,7 @@ Channels:
   CtcssEncode: 114.8
   CtcssDecode: 114.8
 
-# XXX FIXME TODO  The status of this repeater is unknown...
+# XXX FIXME TODO  This repeater is in the process of changing status and/or being transferred!!!
 - Name: VE3YYX UHF FM  # Arnprior - TBD
   RxFrequency: 443.2
   TxFrequencyOffset: '+5.0'

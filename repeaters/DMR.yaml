@@ -9,7 +9,13 @@ Channels:
 
 # Tyler Tidman VA3DGN
 
-# - Name: V?3??? UHF DMR  # VA3DGN in Perth (FN15WA) - Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB
+# - Name: V?3??? UHF DMR  # Perth / VA3DGN (FN15WA) - Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB
+#   RxFrequency: 4??.?
+#   TxFrequencyOffset: '+5.0'
+#   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only) -> Brandmeister
+#   ColorCode: 1
+
+# - Name: V?3??? UHF DMR  # Perth / VA3DGN (FN15WA) - Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
 #   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only) -> Brandmeister
@@ -27,7 +33,7 @@ Channels:
 
 # TS=2, TG=6 linked to XLX196 B module
 
-- Name: VE3HOZ UHF DMR  # VE3HOA in Carp - Motorola CDM 1550LS+ Rx & Tx + 100 W amp
+- Name: VE3HOZ UHF DMR  # Carp / VE3HOA (FN15XG) - Motorola CDM 1550LS+ Rx & Tx + 100 W amp
   RxFrequency: 442.3
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302108 / MMDVM (DMR only) -> Brandmeister
@@ -63,9 +69,11 @@ Channels:
 # Champlain Regional Repeater Association
 #   http://champlainrepeater.ca/
 #   http://champlainrepeater.ca/repeater-2/
-#   http://ve3stp.org/
+#   http://ve3stp.org/ (old site;  they apparently lost ownership of this domain)
 #   http://ve3stp.ddns.net:44480/
 #   https://xrf196.spdns.org/
+
+# TS=2, TG=6 linked to XLX196 B module???
 
 - Name: VE3STP UHF DMR  # Renfrew / Kennellys Mountain (FN15NH) - TBD
   RxFrequency: 443.6
@@ -73,11 +81,10 @@ Channels:
   Mode: DMR  # CCS7 ID 302064 / MMDVM (DMR & DSTAR) -> Brandmeister
   ColorCode: 1
 
-# XXX FIXME TODO  Consider this repeater as being in "test mode"!!!
 - Name: VE3STP VHF DMR  # Renfrew / Kennellys Mountain (FN15NH) - Motorola XPR 8300 + 60 W amp
   RxFrequency: 145.39
   TxFrequencyOffset: '-0.6'
-  Mode: DMR  # frequency also shared with FM;  no RoIP features available
+  Mode: DMR  # CCS7 ID 302096;  frequency also shared with FM;  no RoIP features available
   ColorCode: 1
 
 #                            ___    _    ____   ____
@@ -110,7 +117,9 @@ Channels:
 #   http://ve3ram.ddns.net:380/
 #   https://xrf196.spdns.org/
 
-- Name: VE3RAM UHF DMR  # VE3LC in Orleans - Yaesu DR-1X
+# TS=2, TG=6 linked to XLX196 B module???
+
+- Name: VE3RAM UHF DMR  # Orleans / VE3LC (FN25??) - Yaesu DR-1X
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302117 / MMDVM (DMR only???) -> Brandmeister
