@@ -11,26 +11,11 @@ Channels:
 #   http://champlainrepeater.ca/
 #   http://champlainrepeater.ca/repeater-2/
 #   http://ve3stp.org/
-#   (insert links to ve3stp Pi-Star dashboards here)
-#   https://xrf196.spdns.org/
 
-# *** "Champlain Mini Net" semi-nightly at 1930H on VE3STP VHF FM ***
+# *** "Champlain Mini Net" Mondays to Fridays at 1930H on VE3STP VHF FM ***
 
 # VE3STP-L on Echolink
 # Does VE3STP have IRLP too???
-# XXX FIXME TODO  Info about their DMR repeaters is missing from their web page(s)
-
-# - Name: VE3STP UHF DMR  # TBD - TBD
-#   RxFrequency: 443.6
-#   TxFrequencyOffset: '+5.0'
-#   Mode: DMR  # CCS7 ID 302064 / MMDVM -> Brandmeister
-#   ColorCode: 1
-
-# - Name: VE3STP VHF DMR  # Renfrew / Mount St. Patrick or Kennelly's Mountain - Motorola XPR 8300 + 100 W amp
-#   RxFrequency: 147.06
-#   TxFrequencyOffset: '-0.6'
-#   Mode: DMR  # CCS7 ID 302096 / MMDVM -> Brandmeister
-#   ColorCode: 1
 
 - Name: VE3STP VHF FM  # Renfrew / Mount St. Patrick or Kennelly's Mountain - Motorola XPR 8300 + 100 W amp
   RxFrequency: 147.06

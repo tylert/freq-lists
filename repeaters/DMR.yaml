@@ -27,7 +27,7 @@ Channels:
 
 # TS=2, TG=6 linked to XLX196 B module
 
-- Name: VE3HOZ UHF DMR  # VE3HOA/VA3HOA in Carp - Motorola CDM 1550LS+ mobiles + 100 W amp
+- Name: VE3HOZ UHF DMR  # VE3HOA in Carp - Motorola CDM 1550LS+ mobiles + 100 W amp
   RxFrequency: 442.3
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302108 / MMDVM -> Brandmeister
@@ -64,7 +64,7 @@ Channels:
 #   http://champlainrepeater.ca/
 #   http://champlainrepeater.ca/repeater-2/
 #   http://ve3stp.org/
-#   (insert links to ve3stp Pi-Star dashboards here)
+#   http://ve3stp.ddns.net:44480/
 #   https://xrf196.spdns.org/
 
 - Name: VE3STP UHF DMR  # TBD - TBD
