@@ -9,10 +9,10 @@ Channels:
 
 # Tyler Tidman VA3DGN
 
-# - Name: V?3??? UHF DMR  # VA3DGN in Perth - Motorola CDM 750 mobiles, STM32-DVM Rev4 USB
+# - Name: V?3??? UHF DMR  # VA3DGN in Perth (FN15WA) - Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
-#   Mode: DMR  # CCS7 ID 302??? / MMDVM -> Brandmeister
+#   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only) -> Brandmeister
 #   ColorCode: 1
 
 #                   __     _______ _____ _   _  ___    _
@@ -27,10 +27,10 @@ Channels:
 
 # TS=2, TG=6 linked to XLX196 B module
 
-- Name: VE3HOZ UHF DMR  # VE3HOA in Carp - Motorola CDM 1550LS+ mobiles + 100 W amp
+- Name: VE3HOZ UHF DMR  # VE3HOA in Carp - Motorola CDM 1550LS+ Rx & Tx + 100 W amp
   RxFrequency: 442.3
   TxFrequencyOffset: '+5.0'
-  Mode: DMR  # CCS7 ID 302108 / MMDVM -> Brandmeister
+  Mode: DMR  # CCS7 ID 302108 / MMDVM (DMR only) -> Brandmeister
   ColorCode: 1
 
 #                            _        _    ____   ____
@@ -51,7 +51,7 @@ Channels:
 - Name: VA3AAR VHF DMR  # TBD - TBD
   RxFrequency: 145.55
   TxFrequencyOffset: '-0.6'
-  Mode: DMR  # CCS7 ID 302070 / MMDVM -> Brandmeister
+  Mode: DMR  # CCS7 ID 302070 / MMDVM (DMR & DSTAR???) -> Brandmeister
   ColorCode: 1
 
 #                           ____ ____  ____      _
@@ -67,16 +67,17 @@ Channels:
 #   http://ve3stp.ddns.net:44480/
 #   https://xrf196.spdns.org/
 
-- Name: VE3STP UHF DMR  # TBD - TBD
+- Name: VE3STP UHF DMR  # Renfrew / Kennellys Mountain (FN15NH) - TBD
   RxFrequency: 443.6
   TxFrequencyOffset: '+5.0'
-  Mode: DMR  # CCS7 ID 302064 / MMDVM -> Brandmeister
+  Mode: DMR  # CCS7 ID 302064 / MMDVM (DMR & DSTAR) -> Brandmeister
   ColorCode: 1
 
-- Name: VE3STP VHF DMR  # Renfrew / Mount St. Patrick or Kennelly's Mountain - Motorola XPR 8300 + 100 W amp
-  RxFrequency: 147.06
+# XXX FIXME TODO  Consider this repeater as being in "test mode"!!!
+- Name: VE3STP VHF DMR  # Renfrew / Kennellys Mountain (FN15NH) - Motorola XPR 8300 + 60 W amp
+  RxFrequency: 145.39
   TxFrequencyOffset: '-0.6'
-  Mode: DMR  # CCS7 ID 302096 / MMDVM -> Brandmeister
+  Mode: DMR  # frequency also shared with FM;  no RoIP features available
   ColorCode: 1
 
 #                            ___    _    ____   ____
@@ -93,10 +94,10 @@ Channels:
 # TS=2, TG=6 linked to XLX196 B module
 # VE2CRA DMR and FM are not linked
 
-- Name: VE2CRA UHF DMR  # Camp Fortune / CBC - Motorola CDM 1550LS+ mobiles, STM32-DVM Rev3 USB
+- Name: VE2CRA UHF DMR  # Camp Fortune / CBC (FN25BM) - Motorola CDM 1550LS+ Rx & Tx, STM32-DVM Rev3 USB
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
-  Mode: DMR  # CCS7 ID 302093 / MMDVM -> Brandmeister
+  Mode: DMR  # CCS7 ID 302093 / MMDVM (DMR only) -> Brandmeister
   ColorCode: 1
 
 #                       __     _______ _____ _     ____
@@ -112,5 +113,5 @@ Channels:
 - Name: VE3RAM UHF DMR  # VE3LC in Orleans - Yaesu DR-1X
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'
-  Mode: DMR  # CCS7 ID 302117 / MMDVM -> Brandmeister
+  Mode: DMR  # CCS7 ID 302117 / MMDVM (DMR only???) -> Brandmeister
   ColorCode: 1
