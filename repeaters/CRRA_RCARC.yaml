@@ -14,22 +14,29 @@ Channels:
 
 # *** "Champlain Mini Net" Mondays to Fridays at 1930H on VE3STP VHF FM ***
 
-# VE3STP-L on Echolink
-# Does VE3STP have IRLP too???
+# VE3STP VHF FM is available as VE3STP-L via Echolink
 
-- Name: VE3STP VHF FM  # Renfrew / Mount St. Patrick or Kennelly's Mountain - Motorola XPR 8300 + 100 W amp
+- Name: VE3STP VHF FM  # Renfrew / Kennellys Mountain (FN15NH) - Motorola CM 300 Rx, CDM 1250 Tx + 100 W amp
   RxFrequency: 147.06
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 114.8
   CtcssDecode: 114.8
 
+- Name: VE3STP VHF FM2  # Renfrew / Kennellys Mountain (FN15NH) - Motorola XPR 8300 + 60 W amp
+  RxFrequency: 145.39
+  TxFrequencyOffset: '-0.6'
+  Mode: FM  # frequency also shared with DMR;  no RoIP features available
+  CtcssEncode: 114.8
+  CtcssDecode: 114.8
+
+# XXX FIXME TODO  The status of this repeater is unknown...
 - Name: VE3YYX UHF FM  # Arnprior - TBD
   RxFrequency: 443.2
   TxFrequencyOffset: '+5.0'
   Mode: FM
   CtcssEncode: 114.8
-  CtcssDecode: None
+  CtcssDecode: None  # is tone present on output?!?
 
 #                       ____   ____    _    ____   ____
 #                      |  _ \ / ___|  / \  |  _ \ / ___|
