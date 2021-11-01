@@ -9,34 +9,31 @@ Channels:
 
 # Champlain Regional Repeater Association
 #   http://champlainrepeater.ca/
-#   http://champlainrepeater.ca/repeater-2/
-#   http://ve3stp.org/
+#   http://ve3stp.org/  (DEPRECATED!!!)
 
 # *** "Champlain Mini Net" Mondays to Fridays at 1930H on VE3STP VHF FM ***
-
-# VE3STP VHF FM is available as VE3STP-L via Echolink
 
 - Name: VE3STP VHF FM  # Renfrew / Kennellys Mountain (FN15NH) - Motorola CM 300 Rx, CDM 1250 Tx + 100 W amp
   RxFrequency: 147.06
   TxFrequencyOffset: '-0.6'
-  Mode: FM
+  Mode: FM  # accessible via Echolink as well
   CtcssEncode: 114.8
   CtcssDecode: 114.8
 
-- Name: VE3STP VHF FM2  # Renfrew / Kennellys Mountain (FN15NH) - Motorola XPR 8300 + 60 W amp
+- Name: VE3STP 2VHF FM  # Renfrew / Kennellys Mountain (FN15NH) - Motorola XPR 8300 + 60 W amp
   RxFrequency: 145.39
   TxFrequencyOffset: '-0.6'
-  Mode: FM  # frequency also shared with DMR;  no RoIP features available
+  Mode: FM  # frequency also shared with DMR
   CtcssEncode: 114.8
   CtcssDecode: 114.8
 
-# XXX FIXME TODO  This repeater is in the process of changing status and/or being transferred!!!
-- Name: VE3YYX UHF FM  # Arnprior - TBD
-  RxFrequency: 443.2
-  TxFrequencyOffset: '+5.0'
-  Mode: FM
-  CtcssEncode: 114.8
-  CtcssDecode: None  # is tone present on output?!?
+# This repeater is in the process of changing status and/or being transferred
+# - Name: VE3YYX UHF FM  # Arnprior - TBD
+#   RxFrequency: 443.2
+#   TxFrequencyOffset: '+5.0'
+#   Mode: FM
+#   CtcssEncode: 114.8
+#   CtcssDecode: None
 
 #                       ____   ____    _    ____   ____
 #                      |  _ \ / ___|  / \  |  _ \ / ___|
@@ -44,10 +41,10 @@ Channels:
 #                      |  _ <| |___ / ___ \|  _ <| |___
 #                      |_| \_\\____/_/   \_\_| \_\\____|
 
+# XXX FIXME TODO  Confirm this data is accruate
+
 # Renfrew County Amateur Radio Club
 #   http://www.rcarc.ca/RCARC/RCARC%20Repeaters.htm
-
-# XXX FIXME TODO  Have somebody verify these!!!
 
 - Name: VE3ZRR VHF FM  # Renfrew / Horton? - TBD
   RxFrequency: 146.91
