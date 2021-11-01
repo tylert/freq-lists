@@ -32,7 +32,6 @@ Channels:
 #   https://xrf196.spdns.org/
 
 # TS=2, TG=6 linked to XLX196 B module
-
 - Name: VE3HOZ UHF DMR  # Carp / VE3HOA (FN15XG) - Motorola CDM 1550LS+ Rx & Tx + 100 W amp
   RxFrequency: 442.3
   TxFrequencyOffset: '+5.0'
@@ -45,6 +44,8 @@ Channels:
 #                         / ___ \  / ___ \|  _ <| |___
 #                        /_/   \_\/_/   \_\_| \_\\____|
 
+# XXX FIXME TODO  Confirm this data is accurate
+
 # Almonte Amateur Radio Club
 #   https://almontearclub.ca/repeater-information/
 #   https://almontearclub.ca/about-the-club/
@@ -54,6 +55,7 @@ Channels:
 
 # *** "Unnamed Digital Modes Net???" Tuesdays at 2038H Eastern on XLX196 and TBD ***
 
+# TS=2, TG=6 linked to XLX196 B module
 - Name: VA3AAR VHF DMR  # TBD - TBD
   RxFrequency: 145.55
   TxFrequencyOffset: '-0.6'
@@ -68,14 +70,12 @@ Channels:
 
 # Champlain Regional Repeater Association
 #   http://champlainrepeater.ca/
-#   http://champlainrepeater.ca/repeater-2/
-#   http://ve3stp.org/ (old site;  they apparently lost ownership of this domain)
+#   http://ve3stp.org/  (DEPRECATED!!!)
 #   http://ve3stp.ddns.net:44480/
 #   https://xrf196.spdns.org/
 
-# TS=2, TG=6 linked to XLX196 B module???
-
-- Name: VE3STP UHF DMR  # Renfrew / Kennellys Mountain (FN15NH) - TBD
+# TS=2, TG=6 linked to XLX196 B module
+- Name: VE3STP UHF DMR  # Renfrew / Kennellys Mountain (FN15NH) - Motorola CM 300 Rx & Tx
   RxFrequency: 443.6
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302064 / MMDVM (DMR & DSTAR) -> Brandmeister
@@ -98,13 +98,28 @@ Channels:
 #   (insert link to ve2cra Pi-Star dashboard here)
 #   https://xrf196.spdns.org/
 
-# TS=2, TG=6 linked to XLX196 B module
-# VE2CRA DMR and FM are not linked
+# VE2CRA DMR audio isn't connected to either VE2CRA FM or IRLP
 
+# TS=2, TG=6 linked to XLX196 B module
 - Name: VE2CRA UHF DMR  # Camp Fortune / CBC (FN25BM) - Motorola CDM 1550LS+ Rx & Tx, STM32-DVM Rev3 USB
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302093 / MMDVM (DMR only) -> Brandmeister
+  ColorCode: 1
+
+#                    __     ___    _____  ___  ____   ____
+#                    \ \   / / \  |___ / / _ \|  _ \ / ___|
+#                     \ \ / / _ \   |_ \| | | | | | | |  _
+#                      \ V / ___ \ ___) | |_| | |_| | |_| |
+#                       \_/_/   \_\____/ \___/|____/ \____|
+
+# Ottawa Digital Group???
+#   http://va3odg.ddns.net:380/
+
+- Name: VA3ODG
+  RxFrequency: 444.85
+  TxFrequencyOffset: '+5.0'
+  Mode: DMR  # CCS7 ID 302065 / MMDVM (DMR only???) -> Brandmeister
   ColorCode: 1
 
 #                       __     _______ _____ _     ____
@@ -117,8 +132,7 @@ Channels:
 #   http://ve3ram.ddns.net:380/
 #   https://xrf196.spdns.org/
 
-# TS=2, TG=6 linked to XLX196 B module???
-
+# TS=2, TG=6 linked to XLX196 B module
 - Name: VE3RAM UHF DMR  # Orleans / VE3LC (FN25??) - Yaesu DR-1X
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'

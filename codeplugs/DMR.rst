@@ -2,16 +2,6 @@ DMR Repeaters
 =============
 
 
-XLX196
-------
-
-TS=2, TG=6 via the linked repeaters.
-
-* 302065, VA3ODG_, 444.850+, CC=1
-
-.. _VA3ODG: http://va3odg.ddns.net:380/
-
-
 Talkgroups
 ----------
 
