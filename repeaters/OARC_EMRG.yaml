@@ -9,23 +9,24 @@ Channels:
 
 # Ottawa Amateur Radio Club
 #   http://oarc.net/
+#   https://hambone.ca/
 
 # *** "Capital City Net" non-holiday Mondays except July and August at 2000H Eastern on VE2CRA VHF FM ***
-# *** "New Ham Welcome Net" Tuesdays at 1930H Eastern on VE2CRA VHF FM ***
-# *** "Phoenix Net" Tuesdays at 2000H Eastern on VE2CRA VHF FM ***
+# *** "New Hams Ottawa Net" Tuesdays at 1900H Eastern on VE2CRA VHF FM ***
+# *** "Phoenix Net" Tuesdays at 1930H Eastern on VE2CRA VHF FM ***
 
 # IRLP Node 2040
 # VE2CRA FM VHF and UHF are usually not linked
 # VE2CRA DMR and FM are not linked
 
-- Name: VE2CRA VHF FM  # Camp Fortune / CBC - ?
+- Name: VE2CRA VHF FM  # Camp Fortune / CBC - TBD
   RxFrequency: 146.94
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VE2CRA UHF FM  # Camp Fortune / CBC - ?
+- Name: VE2CRA UHF FM  # Camp Fortune / CBC - TBD
   RxFrequency: 443.3
   TxFrequencyOffset: '+5.0'
   Mode: FM
@@ -40,7 +41,6 @@ Channels:
 
 # Emergency Measures Radio Group (Ottawa ARES)
 #   http://emrg.ca/
-#   http://emrg.ca/repeaters.htm
 
 # *** No nets, currently ***
 
