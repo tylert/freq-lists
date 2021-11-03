@@ -39,8 +39,6 @@ Channels:
 
 # *** "LNL ARES Net" Wednesdays at 2000H Eastern on all RF-linked repeaters ***
 
-# XXX FIXME TODO  Verify these links and equipment again!!!
-
 - Name: VE3KJG VHF FM  # Lavant - Motorola MSF 5000
   RxFrequency: 146.64
   TxFrequencyOffset: '-0.6'
@@ -48,38 +46,38 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: None
 
-- Name: VA3TEL VHF FM  # Christie Lake - Yaesu DR-2X + Tait 9xxx link
-  RxFrequency: 145.23
+- Name: VA3TEL VHF FM  # Christie Lake - Yaesu DR-2X + Tait 9100 link radios
+  RxFrequency: 145.23  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '-0.6'
-  Mode: FM  # linked to VE3KJG / Lavant
+  Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VE3REX UHF FM  # Rideau Ferry - Yaesu DR-2X + Tait 9xxx link
-  RxFrequency: 442.2
+- Name: VE3REX UHF FM  # Rideau Ferry - Yaesu DR-2X + Tait 9100 link radio
+  RxFrequency: 442.2  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '+5.0'
-  Mode: FM  # linked to VE3KJG / Lavant
+  Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VE3WPO UHF FM  # Westport / Legion - Motorola MSR 2000 + Motorola GM 300 link
-  RxFrequency: 442.4
+- Name: VE3WPO UHF FM  # Westport / Legion - Motorola MSR 2000 + Motorola GM 300 link radio
+  RxFrequency: 442.4  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '+5.0'
-  Mode: FM  # linked to VE3KJG / Lavant
+  Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
 
-- Name: VE3HTN VHF FM  # Toledo - TBD + Motorola GM 300 link
-  RxFrequency: 146.865
+- Name: VE3HTN VHF FM  # Toledo - TBD + Motorola GM 300 link radios
+  RxFrequency: 146.865  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '-0.6'
-  Mode: FM  # linked to VE3KJG / Lavant
+  Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
 
 - Name: VE3LCA VHF FM  # Perth - Yaesu DR-2X
-  RxFrequency: 146.955
+  RxFrequency: 146.955  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '-0.6'
-  Mode: FM  # linked to VE3KJG / Lavant
+  Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
 
@@ -95,9 +93,9 @@ Channels:
 #   http://www.almontearclub.ca/Almonte_Amateur_Radio_Club/Welcome.html
 
 - Name: VA3AAR UHF FM  # Almonte Fire Hall - TBD
-  RxFrequency: 444.3
+  RxFrequency: 444.3  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '+5.0'
-  Mode: FM  # linked to VE3KJG / Lavant
+  Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
 
