@@ -19,14 +19,14 @@ Channels:
 # VE2CRA FM VHF and UHF are usually not linked
 # VE2CRA DMR and FM are not linked
 
-- Name: VE2CRA VHF FM  # Camp Fortune / CBC - TBD
+- Name: VE2CRA VHF FM  # Camp Fortune / CBC (FN25BM) - TBD
   RxFrequency: 146.94
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VE2CRA UHF FM  # Camp Fortune / CBC - TBD
+- Name: VE2CRA UHF FM  # Camp Fortune / CBC (FN25BM) - TBD
   RxFrequency: 443.3
   TxFrequencyOffset: '+5.0'
   Mode: FM
@@ -52,49 +52,49 @@ Channels:
 # EMRG is in the process of shutting down... the following repeaters may be gone by 2026!!!
 # =========================================================================================
 
-- Name: VE3OCE VHF FM  # Alta Vista / Randall (OFS Dispatch / OFS Station 35) - Motorola MSR 2000?
+- Name: VE3OCE VHF FM  # Alta Vista / OFS Dispatch / OFS Station 35 (FN25EJ) - Motorola MSR 2000?
   RxFrequency: 146.88
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
 
-- Name: VE3OCE UHF FM  # Alta Vista / Randall (OFS Dispatch / OFS Station 35) - Kenwood TKR-850
+- Name: VE3OCE UHF FM  # Alta Vista / OFS Dispatch / OFS Station 35 (FN25EJ) - Kenwood TKR-850
   RxFrequency: 443.8
   TxFrequencyOffset: '+5.0'
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
 
-- Name: VA3OFS VHF FM  # Barrhaven (OFS Station 44) - Motorola MSR 2000
+- Name: VA3OFS VHF FM  # Barrhaven / OFS Station 44 (FN25DG) - Motorola MSR 2000
   RxFrequency: 146.67
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
 
-- Name: VA3OFS UHF FM  # Barrhaven (OFS Station 44) - Kenwood TKR-850
+- Name: VA3OFS UHF FM  # Barrhaven / OFS Station 44 (FN25DG) - Kenwood TKR-850
   RxFrequency: 444.95
   TxFrequencyOffset: '+5.0'
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
 
-- Name: VA3EMV/E VHF FM  # Orleans / Cumberland (OFS Station 53) - TBD
+- Name: VA3EMV/E VHF FM  # Orleans / OFS Station 53 (FN25GL) - TBD
   RxFrequency: 146.985
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VA3EMV/W VHF FM  # Stittsville (OFS Station 81) - Motorola MTR 2000
+- Name: VA3EMV/W VHF FM  # Stittsville / OFS Station 81 (FN25BG) - Motorola MTR 2000
   RxFrequency: 145.21
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 123.0
   CtcssDecode: 123.0
 
-- Name: VA3EMV/P VHF FM  # Portable (OFS Dispatch / OFS Station 35) - Motorola mobiles
+- Name: VA3EMV/P VHF FM  # Portable - Motorola mobiles
   RxFrequency: 145.11
   TxFrequencyOffset: '-0.6'
   Mode: FM
