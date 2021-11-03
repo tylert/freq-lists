@@ -113,13 +113,16 @@ Channels:
 #                      \ V / ___ \ ___) | |_| | |_| | |_| |
 #                       \_/_/   \_\____/ \___/|____/ \____|
 
-# Ottawa Digital Group???
+# Ottawa Amateur Radio Digital Group
+#   https://va3odg.webqth.com/
+#   https://dstarottawa.wordpress.com/
 #   http://va3odg.ddns.net:380/
+#   https://xrf196.spdns.org/
 
 - Name: VA3ODG
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'
-  Mode: DMR  # CCS7 ID 302065 / MMDVM (DMR only???) -> Brandmeister
+  Mode: DMR  # CCS7 ID 302065 / MMDVM (DMR & DSTAR) -> Brandmeister
   ColorCode: 1
 
 #                       __     _______ _____ _     ____
