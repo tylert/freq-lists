@@ -1,7 +1,7 @@
 # jq
 .
 
-# Retevis RT3S == Tytera MD-UV380
+# Retevis RT3S == TYT MD-UV380
 
 # Set up the general settings the way we expect them to be
 | .GeneralSettings.BacklightTime |= "10"

@@ -37,7 +37,7 @@ contacts: filtered.csv
 filtered.csv: scrubbed.csv countries.txt
 	@dmrRadio filterUsers countries.txt $(<) $(@)
 
-# This kinda assumes you're using a Retevis RT3S or Tytera/TYT MD-UV380/MD-UV390
+# This kinda assumes you're using a Retevis RT3S or TYT MD-UV380/MD-UV390
 .PHONY: write_contacts
 write_contacts: filtered.csv
 	@dmrRadio writeUV38Users $(<)
