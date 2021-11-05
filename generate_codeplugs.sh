@@ -37,6 +37,8 @@ sed -i 's/_.*"/"/' tmp/RT3S.json  # XXX FIXME TODO  Remove this hack after fixin
 # |  _ < | | \__, | |_| |
 # |_| \_\|_|   /_/ \___/
 
+# XXX FIXME TODO  Finish the porting work for the P3/P4 buttons!!!
+
 # Generate a blank codeplug and convert it to JSON
 dmrRadio newCodeplug -model 'MD-2017' -freq '400-480_136-174' tmp/RT90.rdt  # XXX FIXME TODO  Use 'RT90' model after fixing more bugs!!!
 dmrRadio codeplugToJSON tmp/RT90.rdt tmp/RT90.json

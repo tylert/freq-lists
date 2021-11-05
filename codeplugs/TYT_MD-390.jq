@@ -1,7 +1,7 @@
 # jq
 .
 
-# Tytera MD-390 == Retevis RT??
+# Retevis RT8 == TYT MD-390
 
 # Set up the general settings the way we expect them to be
 | .GeneralSettings.BacklightTime |= "10"

@@ -1,8 +1,8 @@
 # jq
 .
 
-# Retevis RT90 == Tytera MD-9600
-# Codeplugs for the Tytera MD-2017 also work on the MD-9600 and vice versa
+# Retevis RT90 == TYT MD-9600
+# Codeplugs for the TYT MD-2017 also work on the TYT MD-9600 and vice versa
 
 # Set up the general settings the way we expect them to be
 | .GeneralSettings.BacklightTime |= "Always"

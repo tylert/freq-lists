@@ -90,7 +90,7 @@ DFU Mode
 
 Retevis RT3S DFU mode uses top side key + PTT + twist power knob.  Retevis RT90
 DFU mode uses orange emergency button + P1 + plug-in "hard" power (ignore
-"soft" power button).  Tytera MD-390 DFU mode uses the same method as Retevis
+"soft" power button).  TYT MD-390 DFU mode uses the same method as Retevis
 RT3S.
 
 
