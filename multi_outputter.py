@@ -158,17 +158,14 @@ def sanitize_channel_name(name, length=8):
     return new_name
 
 
-chirp_header = 'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE'
-chirp_entry = f'{location},{name},{frequency:.6f},{duplex},{offset:.6f},{tone},{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,,,,,'
-rt_systems_header = 'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment'
-rt_systems_entry = f''
-
-
-def output_chirp_channels(entries, max_name_length=8, header=chirp_header):
+def output_channels_csv(entries, max_name_length=8):
     # For some bizarre reason, the CHIRP GUI has different column header names than the CSV files do...
     # https://chirp.danplanet.com/projects/chirp/wiki/MemoryEditorColumns
 
-    print(header)
+    print(
+        # 'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE'
+        'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment'
+    )
 
     location = 1
     for entry in entries:
@@ -251,6 +248,7 @@ def output_chirp_channels(entries, max_name_length=8, header=chirp_header):
 
         print(
             f'{location},{name},{frequency:.6f},{duplex},{offset:.6f},{tone},{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,,,,,'
+            # f'{frequency}'
         )
         location += 1
 
@@ -273,19 +271,19 @@ def main(input_file, json_file, max_name_length):
     # with open(chirp_csv, 'r') as csv_file:
     #     reader = DictReader(csv_file)
     #     for item in reader:
-    #       print(item)
+    #         print(item)
 
-    # output_chirp_channels(entries=payload['channels'], max_name_length=max_name_length)
-    channels = process_dmr_channels(entries=payload['Channels'], channel_stub=retevis_channel_stub)
+    output_channels_csv(entries=payload['Channels'], max_name_length=max_name_length)
+    # channels = process_dmr_channels(entries=payload['Channels'], channel_stub=retevis_channel_stub)
 
     # Read in the existing codeplug JSON and append new channels to the end of
     # the list.
-    codeplug = {}
-    with open(json_file, 'r') as f:
-        codeplug = json.load(f)
-    codeplug['Channels'].extend(channels)
+    # codeplug = {}
+    # with open(json_file, 'r') as f:
+    #     codeplug = json.load(f)
+    # codeplug['Channels'].extend(channels)
 
-    print(json.dumps(codeplug, indent=2, sort_keys=True))
+    # print(json.dumps(codeplug, indent=2, sort_keys=True))
 
 
 if __name__ == '__main__':
