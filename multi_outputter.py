@@ -158,13 +158,17 @@ def sanitize_channel_name(name, length=8):
     return new_name
 
 
-def output_chirp_channels(entries, max_name_length=8):
-    # For some bizarre reason, the GUI has different column header names than the CSV files do...
+chirp_header = 'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE'
+chirp_entry = f'{location},{name},{frequency:.6f},{duplex},{offset:.6f},{tone},{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,,,,,'
+rt_systems_header = 'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment'
+rt_systems_entry = f''
+
+
+def output_chirp_channels(entries, max_name_length=8, header=chirp_header):
+    # For some bizarre reason, the CHIRP GUI has different column header names than the CSV files do...
     # https://chirp.danplanet.com/projects/chirp/wiki/MemoryEditorColumns
 
-    print(
-        'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE'
-    )
+    print(header)
 
     location = 1
     for entry in entries:
@@ -246,7 +250,7 @@ def output_chirp_channels(entries, max_name_length=8):
             tstep = 5.00
 
         print(
-            f"{location},{name},{frequency:.6f},{duplex},{offset:.6f},{tone},{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,,,,,"
+            f'{location},{name},{frequency:.6f},{duplex},{offset:.6f},{tone},{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,,,,,'
         )
         location += 1
 
