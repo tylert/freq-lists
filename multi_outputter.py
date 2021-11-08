@@ -2,9 +2,9 @@
 
 
 # XXX FIXME TODO  CSV CHIRP output!!!
-# XXX FIXME TODO  Add RT Systems output!!!
+# XXX FIXME TODO  Test the RT Systems output!!!
 # XXX FIXME TODO  Use a YAML library that is pure Python??? (zipapp?)
-# XXX FIXME TODO  CSV CHIRP data files as input???
+# XXX FIXME TODO  Option to use CSV CHIRP data files as input maybe???
 
 import json
 # from csv import DictReader
@@ -158,13 +158,12 @@ def sanitize_channel_name(name, length=8):
     return new_name
 
 
-def output_channels_csv(entries, max_name_length=8):
+def process_chirp_channels_csv(entries, max_name_length=8):
     # For some bizarre reason, the CHIRP GUI has different column header names than the CSV files do...
     # https://chirp.danplanet.com/projects/chirp/wiki/MemoryEditorColumns
 
     print(
-        # 'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE'
-        'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment'
+        'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE'
     )
 
     location = 1
@@ -183,9 +182,11 @@ def output_channels_csv(entries, max_name_length=8):
         ):
             duplex = entry['TxFrequencyOffset'][0:1]
             offset = float(entry['TxFrequencyOffset'][1:])
+            signed_offset = float(f'{duplex}{offset}')
         else:
             duplex = ''
             offset = 0
+            signed_offset = float('+0.0')
 
         # Send CTCSS tones?
         if (
@@ -248,7 +249,101 @@ def output_channels_csv(entries, max_name_length=8):
 
         print(
             f'{location},{name},{frequency:.6f},{duplex},{offset:.6f},{tone},{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,,,,,'
-            # f'{frequency}'
+        )
+        location += 1
+
+
+def process_rt_systems_channels_csv(entries):
+    print(
+        'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment'
+    )
+
+    location = 1
+    for entry in entries:
+        name = entry['Name']
+        frequency = entry['RxFrequency']
+        mode = entry['Mode']
+
+        # Duplex and offset?
+        if (
+            'TxFrequencyOffset' in entry.keys()
+            and entry['TxFrequencyOffset'] is not None
+            and entry['TxFrequencyOffset'] != 'None'
+            and entry['TxFrequencyOffset'] != ''
+            and entry['TxFrequencyOffset'] != '+0.0'
+        ):
+            duplex = entry['TxFrequencyOffset'][0:1]
+            offset = float(entry['TxFrequencyOffset'][1:])
+            signed_offset = float(f'{duplex}{offset}')
+        else:
+            duplex = ''
+            offset = 0
+            signed_offset = float('+0.0')
+
+        # Send CTCSS tones?
+        if (
+            'CtcssEncode' in entry.keys()
+            and entry['CtcssEncode'] is not None
+            and entry['CtcssEncode'] != 'None'
+            and entry['CtcssEncode'] != ''
+        ):
+            c_tone_freq = f"{entry['CtcssEncode']} Hz"
+        else:
+            c_tone_freq = '88.5 Hz'
+
+        # Expect CTCSS tones?
+        if (
+            'CtcssDecode' in entry.keys()
+            and entry['CtcssDecode'] is not None
+            and entry['CtcssDecode'] != 'None'
+            and entry['CtcssDecode'] != ''
+        ):
+            r_tone_freq = f"{entry['CtcssDecode']} Hz"
+        else:
+            r_tone_freq = '88.5 Hz'
+
+        # CTCSS tone type?
+        if (
+            'CtcssEncode' in entry.keys()
+            and 'CtcssDecode' in entry.keys()
+            and entry['CtcssEncode'] is not None
+            and entry['CtcssDecode'] is not None
+            and entry['CtcssEncode'] != 'None'
+            and entry['CtcssDecode'] != 'None'
+            and entry['CtcssEncode'] != ''
+            and entry['CtcssDecode'] != ''
+        ):
+            tone = 'T Sql'
+        elif (
+            'CtcssEncode' in entry.keys()
+            and entry['CtcssEncode'] is not None
+            and entry['CtcssEncode'] != 'None'
+            and entry['CtcssEncode'] != ''
+        ):
+            tone = 'Tone'
+            r_tone_freq = c_tone_freq
+        else:
+            tone = ''
+
+        # XXX FIXME TODO  Get DCS/DTCS stuff working!!!
+        # D023N, D023I, D754N, D754I, ...
+        dtcs_code = '23'
+        dtcs_polarity = 'Both N'
+
+        # Tstep?
+        if frequency > 30:  # VHF and up
+            if frequency > 300:  # UHF and up
+                tstep = 6.25
+            else:
+                tstep = 5.00
+        else:
+            tstep = 5.00
+
+        print(
+            # WTF is:
+            #   - Repeater Use?
+            #   - Sub Name?
+            f'{frequency},{frequency+signed_offset:.3f},{offset},{duplex},,{mode},{name},,{tone},{c_tone_freq},{r_tone_freq},{dtcs_code},{dtcs_polarity}'
         )
         location += 1
 
@@ -273,7 +368,8 @@ def main(input_file, json_file, max_name_length):
     #     for item in reader:
     #         print(item)
 
-    output_channels_csv(entries=payload['Channels'], max_name_length=max_name_length)
+    # process_rt_systems_channels_csv(entries=payload['Channels'])
+    process_chirp_channels_csv(entries=payload['Channels'], max_name_length=max_name_length)
     # channels = process_dmr_channels(entries=payload['Channels'], channel_stub=retevis_channel_stub)
 
     # Read in the existing codeplug JSON and append new channels to the end of
