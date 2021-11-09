@@ -261,7 +261,7 @@ def process_rt_systems_channels_csv(entries):
     location = 1
     for entry in entries:
         name = entry['Name']
-        frequency = entry['RxFrequency']
+        rx_frequency = entry['RxFrequency']
         mode = entry['Mode']
 
         # Duplex and offset?
@@ -272,13 +272,15 @@ def process_rt_systems_channels_csv(entries):
             and entry['TxFrequencyOffset'] != ''
             and entry['TxFrequencyOffset'] != '+0.0'
         ):
-            duplex = entry['TxFrequencyOffset'][0:1]
+            sign = entry['TxFrequencyOffset'][0:1]
+            duplex = f'{sign}DUP'
             offset = float(entry['TxFrequencyOffset'][1:])
-            signed_offset = float(f'{duplex}{offset}')
+            tx_frequency = float(f'{sign}{offset}')
         else:
-            duplex = ''
-            offset = 0
-            signed_offset = float('+0.0')
+            sign = '+'
+            duplex = 'Simplex'
+            offset = ' '
+            tx_frequency = rx_frequency
 
         # Send CTCSS tones?
         if (
@@ -323,7 +325,7 @@ def process_rt_systems_channels_csv(entries):
             tone = 'Tone'
             r_tone_freq = c_tone_freq
         else:
-            tone = ''
+            tone = 'None'
 
         # XXX FIXME TODO  Get DCS/DTCS stuff working!!!
         # D023N, D023I, D754N, D754I, ...
@@ -331,19 +333,16 @@ def process_rt_systems_channels_csv(entries):
         dtcs_polarity = 'Both N'
 
         # Tstep?
-        if frequency > 30:  # VHF and up
-            if frequency > 300:  # UHF and up
-                tstep = 6.25
+        if rx_frequency > 30:  # VHF and up
+            if rx_frequency > 300:  # UHF and up
+                tstep = '10 kHz'
             else:
-                tstep = 5.00
+                tstep = '5 kHz'
         else:
-            tstep = 5.00
+            tstep = '5 kHz'
 
         print(
-            # WTF is:
-            #   - Repeater Use?
-            #   - Sub Name?
-            f'{frequency},{frequency+signed_offset:.3f},{offset},{duplex},,{mode},{name},,{tone},{c_tone_freq},{r_tone_freq},{dtcs_code},{dtcs_polarity}'
+            f'{rx_frequency},{tx_frequency},{offset},{duplex},,{mode},{name},,{tone},{c_tone_freq},{r_tone_freq},{dtcs_code},{dtcs_polarity},Off,{tstep},Off,0,,,,,,,, ,,'
         )
         location += 1
 
@@ -368,8 +367,8 @@ def main(input_file, json_file, max_name_length):
     #     for item in reader:
     #         print(item)
 
-    # process_rt_systems_channels_csv(entries=payload['Channels'])
-    process_chirp_channels_csv(entries=payload['Channels'], max_name_length=max_name_length)
+    process_rt_systems_channels_csv(entries=payload['Channels'])
+    # process_chirp_channels_csv(entries=payload['Channels'], max_name_length=max_name_length)
     # channels = process_dmr_channels(entries=payload['Channels'], channel_stub=retevis_channel_stub)
 
     # Read in the existing codeplug JSON and append new channels to the end of
