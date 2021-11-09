@@ -274,12 +274,19 @@ def process_rt_systems_channels_csv(entries):
         ):
             sign = entry['TxFrequencyOffset'][0:1]
             duplex = f'{sign}DUP'
-            offset = float(entry['TxFrequencyOffset'][1:])
-            tx_frequency = float(f'{sign}{offset}')
+            offset = entry['TxFrequencyOffset'][1:]
+            if entry['TxFrequencyOffset'][1:] == '0.6':
+                offset_frequency = '600 kHz'
+            elif entry['TxFrequencyOffset'][1:] == '5.0':
+                offset_frequency = '5.00 MHz'
+            if sign == '+':
+                tx_frequency = float(rx_frequency) + float(offset)
+            elif sign == '-':
+                tx_frequency = float(rx_frequency) - float(offset)
         else:
             sign = '+'
             duplex = 'Simplex'
-            offset = ' '
+            offset_frequency = ' '
             tx_frequency = rx_frequency
 
         # Send CTCSS tones?
@@ -342,7 +349,7 @@ def process_rt_systems_channels_csv(entries):
             tstep = '5 kHz'
 
         print(
-            f'{rx_frequency},{tx_frequency},{offset},{duplex},,{mode},{name},,{tone},{c_tone_freq},{r_tone_freq},{dtcs_code},{dtcs_polarity},Off,{tstep},Off,0,,,,,,,, ,,'
+            f'{rx_frequency},{tx_frequency:.2f},{offset_frequency},{duplex},,{mode},{name},,{tone},{c_tone_freq},{r_tone_freq},{dtcs_code},{dtcs_polarity},Off,{tstep},Off,0,,,,,,,, ,,'
         )
         location += 1
 
