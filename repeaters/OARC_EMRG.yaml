@@ -10,11 +10,14 @@ Channels:
 # Ottawa Amateur Radio Club
 #   http://oarc.net/
 #   https://hambone.ca/
+#   https://github.com/oarc/
+#   https://gitlab.com/oarc/
+#   https://bitbucket.org/oarc/
 
 # *** "Capital City Net" non-holiday Mondays except July and August at 2000H Eastern on VE2CRA VHF FM ***
 # *** "New Hams Ottawa Net" Tuesdays at 2000H Eastern on VE2CRA VHF FM ***
 
-# IRLP Node 2040
+# IRLP Node 2040 (VHF FM only?)
 # VE2CRA VHF FM and VE2CRA UHF FM are usually not linked
 # VE2CRA UHF DMR and VE2CRA VHF FM are not linked
 # VE2CRA UHF DMR and VE2CRA UHF FM are not linked
@@ -41,6 +44,10 @@ Channels:
 
 # Emergency Measures Radio Group (Ottawa ARES)
 #   http://emrg.ca/
+#   http://emrg.ca/repeaters.htm
+#   https://github.com/emrg-ca/
+#   https://gitlab.com/emrg-ca/
+#   https://bitbucket.org/emrg-ca/
 
 # *** "Phoenix Net" Tuesdays at 1930H Eastern on VE3OCE VHF FM ***
 
@@ -52,7 +59,7 @@ Channels:
 # EMRG is in the process of shutting down... the following repeaters may be gone by 2026!!!
 # =========================================================================================
 
-- Name: VE3OCE VHF FM  # Alta Vista / OFS Dispatch / OFS Station 35 (FN25EJ) - Motorola MSR 2000?
+- Name: VE3OCE VHF FM  # Alta Vista / OFS Dispatch / OFS Station 35 (FN25EJ) - Motorola MTR 2000
   RxFrequency: 146.88
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -80,7 +87,7 @@ Channels:
   CtcssEncode: 136.5
   CtcssDecode: 136.5
 
-- Name: VA3EMV/E VHF FM  # Orleans / OFS Station 53 (FN25GL) - TBD
+- Name: VA3EMV/E VHF FM  # Orleans / OFS Station 53 (FN25GL) - Motorola MSR 2000
   RxFrequency: 146.985
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -94,9 +101,13 @@ Channels:
   CtcssEncode: 123.0
   CtcssDecode: 123.0
 
-- Name: VA3EMV/P VHF FM  # Portable - Motorola mobiles
+- Name: VA3EMV/P VHF FM  # Portable but stored next to VE3OCE - Motorola Radius mobiles
   RxFrequency: 145.11
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
+
+# - Name: VE3OCE VHF PKT  # VE3OCE and VA3OFS packet - Motorola Radius/Spectra mobiles
+#   RxFrequency: 145.03
+#   Mode: FM
