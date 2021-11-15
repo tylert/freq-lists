@@ -56,10 +56,10 @@ Channels:
 # *** "Unnamed Digital Modes Net???" Tuesdays at 2038H Eastern on XLX196 and TBD ***
 
 # TS=2, TG=6 linked to XLX196 B module
-- Name: VA3AAR VHF DMR  # TBD - TBD
+- Name: VA3AAR VHF DMR  # Almonte Union Hall - TBD
   RxFrequency: 145.55
   TxFrequencyOffset: '-0.6'
-  Mode: DMR  # CCS7 ID 302070 / MMDVM (DMR & DSTAR???) -> Brandmeister
+  Mode: DMR  # CCS7 ID 302070 / MMDVM (DMR & DSTAR) -> Brandmeister
   ColorCode: 1
 
 #                           ____ ____  ____      _
@@ -119,7 +119,7 @@ Channels:
 #   http://va3odg.ddns.net:380/
 #   https://xrf196.spdns.org/
 
-- Name: VA3ODG
+- Name: VA3ODG UHF DMR  # TBD - TBD
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302065 / MMDVM (DMR & DSTAR) -> Brandmeister
