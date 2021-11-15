@@ -60,7 +60,7 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VE3WPO UHF FM  # Westport / Legion - Motorola MSR 2000 + Motorola GM 300 link radio
+- Name: VE3WPO UHF FM  # Westport Legion - Motorola MSR 2000 + Motorola GM 300 link radio
   RxFrequency: 442.4  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '+5.0'
   Mode: FM
@@ -92,6 +92,8 @@ Channels:
 #   https://almontearclub.ca/about-the-club/
 #   http://www.almontearclub.ca/Almonte_Amateur_Radio_Club/Welcome.html
 
+# *** No nets, currently ***
+
 - Name: VA3AAR UHF FM  # Almonte Fire Hall - TBD
   RxFrequency: 444.3  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '+5.0'
@@ -99,7 +101,7 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: None
 
-- Name: VA3ARE VHF FM  # Almonte? IRLP 2280?, VA3WRC?!? - TBD
+- Name: VA3ARE VHF FM  # VE3CFZ in ??? IRLP 2280?, VA3WRC?!? - TBD
   RxFrequency: 147.27
   TxFrequencyOffset: '+0.6'
   Mode: FM
