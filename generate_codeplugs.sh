@@ -20,7 +20,7 @@ jq --slurp '.[0] * .[1]' tmp/00.json codeplugs/stubs.json > tmp/01.json
 ./multi_outputter.py --input_file repeaters/DMR.yaml --json_file tmp/01.json > tmp/02.json
 ./multi_outputter.py --input_file repeaters/RLARC_LNL_ARES_AARC.yaml --json_file tmp/02.json > tmp/03.json
 ./multi_outputter.py --input_file repeaters/CRRA_RCARC.yaml --json_file tmp/03.json > tmp/04.json
-./multi_outputter.py --input_file repeaters/OARC_EMRG.yaml --json_file tmp/04.json > tmp/05.json
+./multi_outputter.py --input_file repeaters/OARC_OVMRC_EMRG.yaml --json_file tmp/04.json > tmp/05.json
 ./multi_outputter.py --input_file info/Simplex_VHF.yaml --json_file tmp/05.json > tmp/06.json
 ./multi_outputter.py --input_file info/Simplex_UHF.yaml --json_file tmp/06.json > tmp/07.json
 ./multi_outputter.py --input_file info/GMRS_and_FRS_UHF.yaml --json_file tmp/07.json > tmp/08.json
@@ -50,7 +50,7 @@ jq --slurp '.[0] * .[1]' tmp/10.json codeplugs/stubs.json > tmp/11.json
 ./multi_outputter.py --input_file repeaters/DMR.yaml --json_file tmp/11.json > tmp/12.json
 ./multi_outputter.py --input_file repeaters/RLARC_LNL_ARES_AARC.yaml --json_file tmp/12.json > tmp/13.json
 ./multi_outputter.py --input_file repeaters/CRRA_RCARC.yaml --json_file tmp/13.json > tmp/14.json
-./multi_outputter.py --input_file repeaters/OARC_EMRG.yaml --json_file tmp/14.json > tmp/15.json
+./multi_outputter.py --input_file repeaters/OARC_OVMRC_EMRG.yaml --json_file tmp/14.json > tmp/15.json
 ./multi_outputter.py --input_file info/Simplex_VHF.yaml --json_file tmp/15.json > tmp/16.json
 ./multi_outputter.py --input_file info/Simplex_UHF.yaml --json_file tmp/16.json > tmp/17.json
 ./multi_outputter.py --input_file info/GMRS_and_FRS_UHF.yaml --json_file tmp/17.json > tmp/18.json
