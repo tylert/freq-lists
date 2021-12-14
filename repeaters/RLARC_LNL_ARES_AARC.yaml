@@ -10,7 +10,7 @@ Channels:
 # Rideau Lakes Amateur Radio Club
 #   https://www.ve3rlr.ca/p/about.html
 
-# *** No nets, currently ***
+# *** No FM nets, currently ***
 
 - Name: VE3RLR VHF FM  # Smiths Falls / Railway Museum (FN14XV) - Yaesu DR-2X
   RxFrequency: 147.21
@@ -74,6 +74,10 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: None
 
+# =========================================
+# VE3LCA VHF FM is currently off the air!!!
+# =========================================
+
 - Name: VE3LCA VHF FM  # Perth - Yaesu DR-2X
   RxFrequency: 146.955  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '-0.6'
@@ -92,7 +96,7 @@ Channels:
 #   https://almontearclub.ca/about-the-club/
 #   http://www.almontearclub.ca/Almonte_Amateur_Radio_Club/Welcome.html
 
-# *** No nets, currently ***
+# *** No FM nets, currently ***
 
 - Name: VA3AAR UHF FM  # Almonte Fire Hall - TBD
   RxFrequency: 444.3  # linked to VE3KJG / Lavant
