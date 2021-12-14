@@ -36,6 +36,42 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
+#                        _____     ____  __ ____   ____
+#                       / _ \ \   / /  \/  |  _ \ / ___|
+#                      | | | \ \ / /| |\/| | |_) | |
+#                      | |_| |\ V / | |  | |  _ <| |___
+#                       \___/  \_/  |_|  |_|_| \_\\____|
+
+# Ottawa Valley Mobile Radio Club
+#   https://www.ovmrc.on.ca/
+
+# *** No FM nets, currently ***
+
+- Name: VE3TWO VHF FM  # Metcalfe / VE3BOE (FN25[GH]?) - Yaesu DR-1X???
+  RxFrequency: 147.3
+  TxFrequencyOffset: '+0.6'
+  Mode: FM  # frequency also shared with YSF
+  CtcssEncode: 100.0
+  CtcssDecode: 100.0
+
+# =========================================
+# VE3MPC VHF FM is currently off the air!!!
+# =========================================
+
+- Name: VE3MPC VHF FM  # Orleans / VE3LC (FN25FK) - Yaesu DR-1X???
+  RxFrequency: 147.15
+  TxFrequencyOffset: '+0.6'
+  Mode: FM
+  CtcssEncode: 100.0
+  CtcssDecode: 100.0
+
+- Name: VE3RAM UHF FM  # Orleans / VE3LC (FN25FK) - Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
+  RxFrequency: 443.7
+  TxFrequencyOffset: '+5.0'
+  Mode: FM  # frequency also shared with DMR & STAR
+  CtcssEncode: 100.0
+  CtcssDecode: 100.0
+
 #                           _____ __  __ ____   ____
 #                          | ____|  \/  |  _ \ / ___|
 #                          |  _| | |\/| | |_) | |  _
