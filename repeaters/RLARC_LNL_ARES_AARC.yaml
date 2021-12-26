@@ -15,14 +15,14 @@ Channels:
 - Name: VE3RLR VHF FM  # Smiths Falls / Railway Museum (FN14XV) - Yaesu DR-2X
   RxFrequency: 147.21
   TxFrequencyOffset: '+0.6'
-  Mode: FM
+  Mode: FM  # frequency shared with YSF
   CtcssEncode: 151.4
   CtcssDecode: 151.4
 
 - Name: VE3RLR UHF FM  # Smiths Falls / Railway Museum (FN14XV) - Yaesu DR-2X
   RxFrequency: 442.75
   TxFrequencyOffset: '+5.0'
-  Mode: FM
+  Mode: FM  # frequency shared with YSF
   CtcssEncode: 151.4
   CtcssDecode: 151.4
 
@@ -49,14 +49,14 @@ Channels:
 - Name: VA3TEL VHF FM  # Christie Lake - Yaesu DR-2X + Tait 9100 link radios
   RxFrequency: 145.23  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '-0.6'
-  Mode: FM
+  Mode: FM  # frequency shared with YSF
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
 - Name: VE3REX UHF FM  # Rideau Ferry - Yaesu DR-2X + Tait 9100 link radio
   RxFrequency: 442.2  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '+5.0'
-  Mode: FM
+  Mode: FM  # frequency shared with YSF
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
@@ -81,9 +81,9 @@ Channels:
 - Name: VE3LCA VHF FM  # Perth - Yaesu DR-2X
   RxFrequency: 146.955  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '-0.6'
-  Mode: FM
+  Mode: FM  # frequency shared with YSF
   CtcssEncode: 100.0
-  CtcssDecode: None
+  CtcssDecode: 100.0
 
 #                            _        _    ____   ____
 #                           / \      / \  |  _ \ / ___|
@@ -105,9 +105,9 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: None
 
-- Name: VA3ARE VHF FM  # VE3CFZ in ??? IRLP 2280?, VA3WRC?!? - TBD
+- Name: VA3ARE VHF FM  # VE3CFZ in Almonte IRLP 2280 - Yaesu DR-1X
   RxFrequency: 147.27
   TxFrequencyOffset: '+0.6'
-  Mode: FM
+  Mode: FM  # frequency shared with YSF
   CtcssEncode: 100.0
-  CtcssDecode: None
+  CtcssDecode: 100.0
