@@ -141,7 +141,7 @@ def process_dmr_channels(entries, channel_stub):
     return channels
 
 
-def sanitize_channel_name(name, length=8):
+def sanitize_chirp_channel_name(name, length=8):
     # XXX FIXME TODO  Round up when truncating numerical channel names!!!
 
     # Make sure nobody tries to ask for a negative number
@@ -160,7 +160,10 @@ def sanitize_channel_name(name, length=8):
 
 def process_chirp_channels_csv(entries, max_name_length=8):
     # For some bizarre reason, the CHIRP GUI has different column header names than the CSV files do...
-    # https://chirp.danplanet.com/projects/chirp/wiki/MemoryEditorColumns
+
+    # https://chirp.danplanet.com/projects/chirp/wiki/Home  # Supported radios
+    # https://chirp.danplanet.com/projects/chirp/wiki/MemoryEditorColumns  # Column descriptions
+    # https://trac.chirp.danplanet.com/chirp_daily/LATEST/Model_Support.html  # Allowed characters, lengths, memories, etc.
 
     print(
         'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE'
@@ -168,7 +171,7 @@ def process_chirp_channels_csv(entries, max_name_length=8):
 
     location = 1
     for entry in entries:
-        name = sanitize_channel_name(entry['Name'], max_name_length)
+        name = sanitize_chirp_channel_name(entry['Name'], max_name_length)
         frequency = entry['RxFrequency']
         mode = entry['Mode']
 
