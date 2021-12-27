@@ -1,3 +1,11 @@
+Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment
+145.55,144.95,600 kHz,-DUP,,DV,D-Star VE3AAR C,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,CQCQCQ,,,,,,, ,,
+145.55,144.95,600 kHz,-DUP,,DV,D-Star Union V,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,CQCQCQ,,,,,,, ,,
+444.1,449.1,5.00 MHz,+DUP,,DV,VA3AAR B,,None,88.5 Hz,88.5 Hz,23,Both N,Off,25 kHz,Off,0,,,,,,,, ,,
+147.24,147.84,600 kHz,+DUP,,DV,VA3RDD,,None,94.8 Hz,94.8 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,Talk Channel
+444.8,449.8,5.00 MHz,+DUP,,DV,VA3RDD,,None,94.8 Hz,94.8 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,, ,,Status Channel
+443.6,448.6,5.00 MHz,+DUP,,DV,VE3STP/B/CQ,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,,,,,,,, ,,
+
     145.530  ( - ) Ottawa ON   VA3ODG DStar       -
     444.850  ( + ) Ottawa (Argyle St YMCA) ON VE3ODG DStar       -
 
