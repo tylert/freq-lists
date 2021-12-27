@@ -8,7 +8,6 @@
     444.550  ( + ) Ottawa (Kanata) ON             VE3ORF 151.4      -
 5,VE3TST,146.700000,-,0.600000,TSQL,136.5,136.5,023,NN,FM,5.00,,,,,,
     146.700  ( - ) Ottawa (416 & Hunt Club) ON VE3TST 136.5      -
-6,VE3TEL,147.030000,-,0.600000,TSQL,100.0,100.0,023,NN,FM,5.00,,,,,,
 7,VA3LCC,146.790000,-,0.600000,TSQL,156.7,156.7,023,NN,FM,5.00,,,,,,
     146.790  ( - ) Ottawa (Cite Collegiale) ON VA3LCC       -
 
