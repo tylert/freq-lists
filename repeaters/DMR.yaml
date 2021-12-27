@@ -9,13 +9,15 @@ Channels:
 
 # Tyler Tidman VA3DGN
 
-# - Name: V?3??? UHF DMR  # Perth / VA3DGN (FN15WA) - Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
+# - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
+#   Location: Perth at VA3DGN (FN15WA)
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
 #   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only) -> Brandmeister
 #   ColorCode: 1
 
-# - Name: V?3??? UHF DMR  # Perth / VA3DGN (FN15WA) - Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
+# - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
+#   Location: Perth at VA3DGN (FN15WA)
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
 #   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only) -> Brandmeister
@@ -32,7 +34,8 @@ Channels:
 #   https://xrf196.spdns.org/
 
 # TS=2, TG=6 linked to XLX196 B module
-- Name: VE3HOZ UHF DMR  # Carp / VE3HOA (FN15XG) - Motorola CDM 1550LS+ Rx & Tx + 100 W amp
+- Name: VE3HOZ UHF DMR  # Motorola CDM 1550LS+ Rx & Tx + 100 W amp
+  Location: Carp at VE3HOA (FN15XG)
   RxFrequency: 442.3
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302108 / MMDVM (DMR only) -> Brandmeister
@@ -56,7 +59,8 @@ Channels:
 # *** "Unnamed Digital Modes Net???" Tuesdays at 2038H Eastern on XLX196 and TBD ***
 
 # TS=2, TG=6 linked to XLX196 B module
-- Name: VA3AAR VHF DMR  # Almonte Union Hall - TBD
+- Name: VA3AAR VHF DMR  # TBD
+  Location: Almonte Union Hall
   RxFrequency: 145.55
   TxFrequencyOffset: '-0.6'
   Mode: DMR  # CCS7 ID 302070 / MMDVM (DMR & DSTAR) -> Brandmeister
@@ -75,13 +79,15 @@ Channels:
 #   https://xrf196.spdns.org/
 
 # TS=2, TG=6 linked to XLX196 B module
-- Name: VE3STP UHF DMR  # Renfrew / Kennellys Mountain (FN15NH) - Motorola CM 300 Rx & Tx
+- Name: VE3STP UHF DMR  # Motorola CM 300 Rx & Tx
+  Location: Renfrew Kennellys Mountain (FN15NH)
   RxFrequency: 443.6
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302064 / MMDVM (DMR & DSTAR) -> Brandmeister
   ColorCode: 1
 
-- Name: VE3STP VHF DMR  # Renfrew / Kennellys Mountain (FN15NH) - Motorola XPR 8300 + 60 W amp
+- Name: VE3STP VHF DMR  # Motorola XPR 8300 + 60 W amp
+  Location: Renfrew Kennellys Mountain (FN15NH)
   RxFrequency: 145.39
   TxFrequencyOffset: '-0.6'
   Mode: DMR  # CCS7 ID 302096;  frequency also shared with FM;  no RoIP features available
@@ -101,7 +107,8 @@ Channels:
 # VE2CRA DMR audio isn't connected to either VE2CRA FM or IRLP
 
 # TS=2, TG=6 linked to XLX196 B module
-- Name: VE2CRA UHF DMR  # Camp Fortune / CBC (FN25BM) - Motorola CDM 1550LS+ Rx & Tx, STM32-DVM Rev3 USB, Raspberry Pi 3B
+- Name: VE2CRA UHF DMR  # Motorola CDM 1550LS+ Rx & Tx, STM32-DVM Rev3 USB, Raspberry Pi 3B
+  Location: Camp Fortune at CBC (FN25BM)
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302093 / MMDVM (DMR only) -> Brandmeister
@@ -119,7 +126,8 @@ Channels:
 #   http://va3odg.ddns.net:380/
 #   https://xrf196.spdns.org/
 
-- Name: VA3ODG UHF DMR  # TBD - TBD
+- Name: VA3ODG UHF DMR  # TBD
+  Location: Meh
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302065 / MMDVM (DMR & DSTAR) -> Brandmeister
@@ -136,7 +144,8 @@ Channels:
 #   https://xrf196.spdns.org/
 
 # TS=2, TG=6 linked to XLX196 B module
-- Name: VE3RAM UHF DMR  # Orleans / VE3LC (FN25FK) - Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
+- Name: VE3RAM UHF DMR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
+  Location: Orleans at VE3LC (FN25FK)
   RxFrequency: 443.7
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302117 / MMDVM (DMR & FM & DSTAR) -> Brandmeister
