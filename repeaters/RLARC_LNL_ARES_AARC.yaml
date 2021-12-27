@@ -12,14 +12,16 @@ Channels:
 
 # *** No FM nets, currently ***
 
-- Name: VE3RLR VHF FM  # Smiths Falls / Railway Museum (FN14XV) - Yaesu DR-2X
+- Name: VE3RLR VHF FM  # Yaesu DR-2X
+  Location: Smiths Falls Railway Museum (FN14XV)
   RxFrequency: 147.21
   TxFrequencyOffset: '+0.6'
   Mode: FM  # frequency shared with YSF
   CtcssEncode: 151.4
   CtcssDecode: 151.4
 
-- Name: VE3RLR UHF FM  # Smiths Falls / Railway Museum (FN14XV) - Yaesu DR-2X
+- Name: VE3RLR UHF FM  # Yaesu DR-2X
+  Location: Smiths Falls Railway Museum (FN14XV)
   RxFrequency: 442.75
   TxFrequencyOffset: '+5.0'
   Mode: FM  # frequency shared with YSF
@@ -39,35 +41,40 @@ Channels:
 
 # *** "LNL ARES Net" Wednesdays at 2000H Eastern on all RF-linked repeaters ***
 
-- Name: VE3KJG VHF FM  # Lavant - Motorola MSF 5000
+- Name: VE3KJG VHF FM  # Motorola MSF 5000
+  Location: Lavant
   RxFrequency: 146.64
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
 
-- Name: VA3TEL VHF FM  # Christie Lake - Yaesu DR-2X + Tait 9100 link radios
+- Name: VA3TEL VHF FM  # Yaesu DR-2X + Tait 9100 link radios
+  Location: Christie Lake
   RxFrequency: 145.23  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '-0.6'
   Mode: FM  # frequency shared with YSF
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VE3REX UHF FM  # Rideau Ferry - Yaesu DR-2X + Tait 9100 link radio
+- Name: VE3REX UHF FM  # Yaesu DR-2X + Tait 9100 link radio
+  Location: Rideau Ferry
   RxFrequency: 442.2  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '+5.0'
   Mode: FM  # frequency shared with YSF
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VE3WPO UHF FM  # Westport Legion - Motorola MSR 2000 + Motorola GM 300 link radio
+- Name: VE3WPO UHF FM  # Motorola MSR 2000 + Motorola GM 300 link radio
+  Location: Westport Legion
   RxFrequency: 442.4  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '+5.0'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
 
-- Name: VE3HTN VHF FM  # Toledo - TBD + Motorola GM 300 link radios
+- Name: VE3HTN VHF FM  # TBD + Motorola GM 300 link radios
+  Location: Toledo
   RxFrequency: 146.865  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -78,7 +85,8 @@ Channels:
 # VE3LCA VHF FM is currently off the air!!!
 # =========================================
 
-- Name: VE3LCA VHF FM  # Perth - Yaesu DR-2X
+- Name: VE3LCA VHF FM  # Yaesu DR-2X
+  Location: Perth at VE3BSB
   RxFrequency: 146.955  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '-0.6'
   Mode: FM  # frequency shared with YSF
@@ -98,14 +106,16 @@ Channels:
 
 # *** No FM nets, currently ***
 
-- Name: VA3AAR UHF FM  # Almonte Fire Hall - TBD
+- Name: VA3AAR UHF FM  # TBD
+  Location: Almonte Fire Hall
   RxFrequency: 444.3  # linked to VE3KJG / Lavant
   TxFrequencyOffset: '+5.0'
   Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
 
-- Name: VA3ARE VHF FM  # VE3CFZ in Almonte IRLP 2280 - Yaesu DR-1X
+- Name: VA3ARE VHF FM  # IRLP 2280 - Yaesu DR-1X
+  Location: Almonte at VE3CFZ
   RxFrequency: 147.27
   TxFrequencyOffset: '+0.6'
   Mode: FM  # frequency shared with YSF
