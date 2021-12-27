@@ -13,7 +13,7 @@ Channels:
 # *** No FM nets, currently ***
 
 - Name: VE3RLR VHF FM  # Yaesu DR-2X
-  Location: Smiths Falls Railway Museum (FN14XV)
+  Location: FN14XV; Smiths Falls Railway Museum
   RxFrequency: 147.21
   TxFrequencyOffset: '+0.6'
   Mode: FM  # frequency shared with YSF
@@ -21,7 +21,7 @@ Channels:
   CtcssDecode: 151.4
 
 - Name: VE3RLR UHF FM  # Yaesu DR-2X
-  Location: Smiths Falls Railway Museum (FN14XV)
+  Location: FN14XV; Smiths Falls Railway Museum
   RxFrequency: 442.75
   TxFrequencyOffset: '+5.0'
   Mode: FM  # frequency shared with YSF
