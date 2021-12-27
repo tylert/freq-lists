@@ -13,6 +13,7 @@ Channels:
 #   https://github.com/oarc/
 #   https://gitlab.com/oarc/
 #   https://bitbucket.org/oarc/
+#   https://cbctransmission.ca/map/on#289
 
 # *** "Capital City Net" non-holiday Mondays except July and August at 2000H Eastern on VE2CRA VHF FM ***
 # *** "New Hams Ottawa Net" Tuesdays at 2000H Eastern on VE2CRA VHF FM ***
@@ -23,7 +24,7 @@ Channels:
 # VE2CRA UHF DMR and VE2CRA UHF FM are not linked
 
 - Name: VE2CRA VHF FM  # TBD
-  Location: Camp Fortune at CBC (FN25BM)
+  Location: FN25BM70 or FN25BM80; Camp Fortune at CBC/Radio-Canada
   RxFrequency: 146.94
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -31,7 +32,7 @@ Channels:
   CtcssDecode: 100.0
 
 - Name: VE2CRA UHF FM  # TBD
-  Location: Camp Fortune at CBC (FN25BM)
+  Location: FN25BM70 or FN25BM80; Camp Fortune at CBC/Radio-Canada
   RxFrequency: 443.3
   TxFrequencyOffset: '+5.0'
   Mode: FM
@@ -50,7 +51,7 @@ Channels:
 # *** No FM nets, currently ***
 
 - Name: VE3TWO VHF FM  # Yaesu DR-1X???
-  Location: Metcalfe at VE3BOE (FN25[GH]?)
+  Location: FN25G or FN25H; Metcalfe at VE3BOE
   RxFrequency: 147.3
   TxFrequencyOffset: '+0.6'
   Mode: FM  # frequency also shared with YSF
@@ -62,7 +63,7 @@ Channels:
 # =========================================
 
 - Name: VE3MPC VHF FM  # Yaesu DR-1X???
-  Location: Nowhere
+  Location: Off-the-air (stored at VE3LC)
   RxFrequency: 147.15
   TxFrequencyOffset: '+0.6'
   Mode: FM
@@ -70,7 +71,7 @@ Channels:
   CtcssDecode: 100.0
 
 - Name: VE3RAM UHF FM  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
-  Location: Orleans at VE3LC (FN25FK)
+  Location: FN25FK; Orleans at VE3LC
   RxFrequency: 443.7
   TxFrequencyOffset: '+5.0'
   Mode: FM  # frequency also shared with DMR & STAR
@@ -101,7 +102,7 @@ Channels:
 # =========================================================================================
 
 - Name: VE3OCE VHF FM  # Motorola MTR 2000
-  Location: Alta Vista at Randall Avenue / OFS Dispatch / OFS Station 35 (FN25EJ)
+  Location: FN25EJ; Alta Vista at Randall Avenue / OFS Dispatch / OFS Station 35
   RxFrequency: 146.88
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -109,7 +110,7 @@ Channels:
   CtcssDecode: 136.5
 
 - Name: VE3OCE UHF FM  # Kenwood TKR-850
-  Location: Alta Vista at Randall Avenue / OFS Dispatch / OFS Station 35 (FN25EJ)
+  Location: FN25EJ; Alta Vista at Randall Avenue / OFS Dispatch / OFS Station 35
   RxFrequency: 443.8
   TxFrequencyOffset: '+5.0'
   Mode: FM
@@ -117,7 +118,7 @@ Channels:
   CtcssDecode: 136.5
 
 - Name: VA3OFS VHF FM  # Motorola MSR 2000
-  Location: Barrhaven at OFS Station 44 (FN25DG)
+  Location: FN25DG; Barrhaven at OFS Station 44
   RxFrequency: 146.67
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -125,7 +126,7 @@ Channels:
   CtcssDecode: 136.5
 
 - Name: VA3OFS UHF FM  # Kenwood TKR-850
-  Location: Barrhaven at OFS Station 44 (FN25DG)
+  Location: FN25DG; Barrhaven at OFS Station 44
   RxFrequency: 444.95
   TxFrequencyOffset: '+5.0'
   Mode: FM
@@ -133,7 +134,7 @@ Channels:
   CtcssDecode: 136.5
 
 - Name: VA3EMV/E VHF FM  # Motorola MSR 2000
-  Location: Orleans at OFS Station 53 (FN25GL)
+  Location: FN25GL; Orleans at OFS Station 53
   RxFrequency: 146.985
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -141,7 +142,7 @@ Channels:
   CtcssDecode: 100.0
 
 - Name: VA3EMV/W VHF FM  # Motorola MTR 2000
-  Location: Stittsville at OFS Station 81 (FN25BG)
+  Location: FN25BG; Stittsville at OFS Station 81
   RxFrequency: 145.21
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -149,7 +150,7 @@ Channels:
   CtcssDecode: 123.0
 
 - Name: VA3EMV/P VHF FM  # Motorola Radius mobiles
-  Location: Portable stored at VE3OCE
+  Location: Portable (stored at VE3OCE)
   RxFrequency: 145.11
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -157,6 +158,6 @@ Channels:
   CtcssDecode: 136.5
 
 # - Name: VE3OCE VHF PKT  # Motorola Radius/Spectra mobiles
-#   Location: Alta Vista at Randall Avenue / OFS Dispatch / OFS Station 35 (FN25EJ)
+#   Location: FN25EJ; Alta Vista at Randall Avenue / OFS Dispatch / OFS Station 35
 #   RxFrequency: 145.03
 #   Mode: FM
