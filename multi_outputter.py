@@ -374,8 +374,8 @@ def main(input_file, json_file, max_name_length):
     #     for item in reader:
     #         print(item)
 
-    process_rt_systems_channels_csv(entries=payload['Channels'])
-    # process_chirp_channels_csv(entries=payload['Channels'], max_name_length=max_name_length)
+    # process_rt_systems_channels_csv(entries=payload['Channels'])
+    process_chirp_channels_csv(entries=payload['Channels'], max_name_length=max_name_length)
     # channels = process_dmr_channels(entries=payload['Channels'], channel_stub=retevis_channel_stub)
 
     # Read in the existing codeplug JSON and append new channels to the end of
