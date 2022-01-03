@@ -3,11 +3,8 @@
 
 # Requires Python 3.10.x or newer (uses match-case)!!!  https://www.python.org/dev/peps/pep-0634/
 
+# XXX FIXME TODO  Use a YAML library that is pure Python??? (To zipapp the "app" maybe?)
 
-# XXX FIXME TODO  CSV CHIRP output!!!
-# XXX FIXME TODO  Test the RT Systems output!!!
-# XXX FIXME TODO  Use a YAML library that is pure Python??? (zipapp?)
-# XXX FIXME TODO  Option to use CSV CHIRP data files as input maybe???
 
 import json
 
@@ -110,6 +107,8 @@ def process_dmr_channels(entries, channel_stub):
         # XXX FIXME TODO  Force TalkGroup to turn into ContactName!!!
         if 'TalkGroup' in output.keys():
             del output['TalkGroup']
+        if 'Location' in output.keys():
+            del output['Location']
 
         # Force things that might be integers/floats to be strings (for JSON)
         output['RxFrequency'] = f"{entry['RxFrequency']:.5f}"
@@ -397,6 +396,7 @@ def main(format, input_file, json_file, max_name_length):
         yaml = YAML(typ='safe')
         payload = yaml.load(f)
 
+    # XXX FIXME TODO  Option to use CSV CHIRP data files as input maybe???
     # with open(chirp_csv, 'r') as csv_file:
     #     reader = DictReader(csv_file)
     #     for item in reader:
@@ -404,27 +404,27 @@ def main(format, input_file, json_file, max_name_length):
 
     match format.lower():
         case 'dmr':
-            print('DMR is the cat\'s pyjamas')
+            channels = process_dmr_channels(entries=payload['Channels'], channel_stub=retevis_channel_stub)
+
+            # Read in the existing codeplug JSON and append new channels to the end of
+            # the list.
+            codeplug = {}
+            with open(json_file, 'r') as f:
+                codeplug = json.load(f)
+            codeplug['Channels'].extend(channels)
+
+            print(json.dumps(codeplug, indent=2, sort_keys=True))
         case 'chirp':
             process_chirp_channels_csv(
                 entries=payload['Channels'], max_name_length=max_name_length
             )
         case 'rt':
+            # XXX FIXME TODO  Test the RT Systems output!!!
             process_rt_systems_channels_csv(entries=payload['Channels'])
         case _:
             print(
                 f'Format "{format_output}" is invalid.  Allowed values are:  "dmr", "chirp", "rt"'
             )
-    # channels = process_dmr_channels(entries=payload['Channels'], channel_stub=retevis_channel_stub)
-
-    # Read in the existing codeplug JSON and append new channels to the end of
-    # the list.
-    # codeplug = {}
-    # with open(json_file, 'r') as f:
-    #     codeplug = json.load(f)
-    # codeplug['Channels'].extend(channels)
-
-    # print(json.dumps(codeplug, indent=2, sort_keys=True))
 
 
 if __name__ == '__main__':
