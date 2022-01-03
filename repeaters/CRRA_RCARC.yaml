@@ -14,7 +14,7 @@ Channels:
 # *** "Champlain Mini Net" Mondays to Fridays at 1900H on VE3STP VHF FM ***
 
 - Name: VE3STP VHF FM  # Motorola CM 300 Rx, CDM 1250 Tx + 100 W amp
-  Location: FN15NH13OV or FN15NH25; Renfrew at Kennellys Mountain
+  Location: FN15NH13OV or FN15NH25 Renfrew at Kennellys Mountain
   RxFrequency: 147.06
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -22,7 +22,7 @@ Channels:
   CtcssDecode: 114.8
 
 - Name: VE3STP 2VHF FM  # Motorola XPR 8300 + 60 W amp
-  Location: FN15NH25; Renfrew at Kennellys Mountain
+  Location: FN15NH25 Renfrew at Kennellys Mountain
   RxFrequency: 145.39
   TxFrequencyOffset: '-0.6'
   Mode: FM  # frequency also shared with DMR
