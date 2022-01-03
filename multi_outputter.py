@@ -147,26 +147,37 @@ def process_dmr_channels(entries, channel_stub):
     return channels
 
 
-def process_human_channels_csv(entries):
+def process_human_channels_csv(entries, max_name_length=8):
     print(
-        'Memory,Name,Location,RxFrequency,TxFrequencyOffset,Mode'
+        'Memory,Name,Input,Output,Mode,Tone,Notes'
     )
 
     memory = 1
     for entry in entries:
-        name = entry['Name']
+        name = sanitize_chirp_channel_name(entry['Name'], max_name_length)
         rx_frequency = entry['RxFrequency']
         mode = entry['Mode']
 
-        location = ''
         if 'Location' in entry.keys():
-            location = entry['Location']
+            notes = entry['Location']
+        else:
+            notes = ''
 
-        tx_frequency_offset = ''
         if 'TxFrequencyOffset' in entry.keys():
-            tx_frequency_offset = entry['TxFrequencyOffset']
+            tx_frequency_offset = float(rx_frequency) + float(entry['TxFrequencyOffset'])
+        else:
+            tx_frequency_offset = float(rx_frequency)
 
-        print(f'{memory},{name},{location},{rx_frequency},{tx_frequency_offset},{mode}')
+        # If there's a tone, it's usually for a good reason (e.g. "AMS mode" on YSF).
+        if (
+            'CtcssEncode' in entry.keys()
+            and entry['CtcssEncode'] is not None
+        ):
+            tone = entry['CtcssEncode']
+        else:
+            tone = ''
+
+        print(f'{memory},{name},{rx_frequency:.6f},{tx_frequency_offset:.6f},{mode},{tone},{notes}')
         memory += 1
 
 
@@ -442,7 +453,9 @@ def main(format, input_file, json_file, max_name_length):
 
             print(json.dumps(codeplug, indent=2, sort_keys=True))
         case 'human':
-            process_human_channels_csv(entries=payload['Channels'])
+            process_human_channels_csv(
+                entries=payload['Channels'], max_name_length=max_name_length
+            )
         case 'chirp':
             process_chirp_channels_csv(
                 entries=payload['Channels'], max_name_length=max_name_length
