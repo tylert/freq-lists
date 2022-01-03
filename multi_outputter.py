@@ -1,12 +1,16 @@
 #!/usr/bin/env python
 
 
+# Requires Python 3.10.x or newer (uses match-case)!!!  https://www.python.org/dev/peps/pep-0634/
+
+
 # XXX FIXME TODO  CSV CHIRP output!!!
 # XXX FIXME TODO  Test the RT Systems output!!!
 # XXX FIXME TODO  Use a YAML library that is pure Python??? (zipapp?)
 # XXX FIXME TODO  Option to use CSV CHIRP data files as input maybe???
 
 import json
+
 # from csv import DictReader
 
 from ruamel.yaml import YAML
@@ -172,6 +176,7 @@ def process_chirp_channels_csv(entries, max_name_length=8):
     location = 1
     for entry in entries:
         name = sanitize_chirp_channel_name(entry['Name'], max_name_length)
+        comment = entry['Location']
         frequency = entry['RxFrequency']
         mode = entry['Mode']
 
@@ -251,7 +256,7 @@ def process_chirp_channels_csv(entries, max_name_length=8):
             tstep = 5.00
 
         print(
-            f'{location},{name},{frequency:.6f},{duplex},{offset:.6f},{tone},{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,,,,,'
+            f'{location},{name},{frequency:.6f},{duplex},{offset:.6f},{tone},{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,{comment},,,,'
         )
         location += 1
 
@@ -358,15 +363,31 @@ def process_rt_systems_channels_csv(entries):
 
 
 @click.command()
-@click.option('--input_file', '-i', default=None, help='input')
-@click.option('--json_file', '-j', default=None, help='input')
+@click.option(
+    '--format_output',
+    '-f',
+    default='DMR',
+    help='output',
+)
+@click.option(
+    '--input_file',
+    '-i',
+    default=None,
+    help='Input YAML data file to process',
+)
+@click.option(
+    '--json_file',
+    '-j',
+    default=None,
+    help='Input JSON dictionary to merge',
+)
 @click.option(
     '--max_name_length',
     '-m',
     default=8,
     help='Maximum length of channel names (default 8).',
 )
-def main(input_file, json_file, max_name_length):
+def main(format_output, input_file, json_file, max_name_length):
     # XXX FIXME TODO  Allow the use of STDIN as the input "file"!!!
     with open(input_file) as f:
         yaml = YAML(typ='safe')
@@ -377,8 +398,19 @@ def main(input_file, json_file, max_name_length):
     #     for item in reader:
     #         print(item)
 
-    # process_rt_systems_channels_csv(entries=payload['Channels'])
-    process_chirp_channels_csv(entries=payload['Channels'], max_name_length=max_name_length)
+    match format_output.lower():
+        case 'dmr':
+            print('DMR is the cat\'s pyjamas')
+        case 'chirp':
+            process_chirp_channels_csv(
+                entries=payload['Channels'], max_name_length=max_name_length
+            )
+        case 'rt':
+            process_rt_systems_channels_csv(entries=payload['Channels'])
+        case _:
+            print(
+                f'Format "{format_output}" is invalid.  Allowed values are:  "dmr", "chirp", "rt"'
+            )
     # channels = process_dmr_channels(entries=payload['Channels'], channel_stub=retevis_channel_stub)
 
     # Read in the existing codeplug JSON and append new channels to the end of
