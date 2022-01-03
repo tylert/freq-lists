@@ -176,9 +176,13 @@ def process_chirp_channels_csv(entries, max_name_length=8):
     location = 1
     for entry in entries:
         name = sanitize_chirp_channel_name(entry['Name'], max_name_length)
-        comment = entry['Location']
         frequency = entry['RxFrequency']
         mode = entry['Mode']
+
+        if 'Location' in entry.keys():
+            comment = entry['Location']
+        else:
+            comment = ''
 
         # Duplex and offset?
         if (
@@ -364,10 +368,10 @@ def process_rt_systems_channels_csv(entries):
 
 @click.command()
 @click.option(
-    '--format_output',
+    '--format',
     '-f',
     default='DMR',
-    help='output',
+    help='Desired output format for data ("dmr", "chirp", "rt")',
 )
 @click.option(
     '--input_file',
@@ -387,7 +391,7 @@ def process_rt_systems_channels_csv(entries):
     default=8,
     help='Maximum length of channel names (default 8).',
 )
-def main(format_output, input_file, json_file, max_name_length):
+def main(format, input_file, json_file, max_name_length):
     # XXX FIXME TODO  Allow the use of STDIN as the input "file"!!!
     with open(input_file) as f:
         yaml = YAML(typ='safe')
@@ -398,7 +402,7 @@ def main(format_output, input_file, json_file, max_name_length):
     #     for item in reader:
     #         print(item)
 
-    match format_output.lower():
+    match format.lower():
         case 'dmr':
             print('DMR is the cat\'s pyjamas')
         case 'chirp':
