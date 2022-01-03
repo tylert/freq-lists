@@ -107,6 +107,9 @@ def process_dmr_channels(entries, channel_stub):
         # XXX FIXME TODO  Force TalkGroup to turn into ContactName!!!
         if 'TalkGroup' in output.keys():
             del output['TalkGroup']
+
+        # Ensure we don't try to send info about the location of repeater sites
+        # to radios.
         if 'Location' in output.keys():
             del output['Location']
 
@@ -144,6 +147,29 @@ def process_dmr_channels(entries, channel_stub):
     return channels
 
 
+def process_human_channels_csv(entries):
+    print(
+        'Memory,Name,Location,RxFrequency,TxFrequencyOffset,Mode'
+    )
+
+    memory = 1
+    for entry in entries:
+        name = entry['Name']
+        rx_frequency = entry['RxFrequency']
+        mode = entry['Mode']
+
+        location = ''
+        if 'Location' in entry.keys():
+            location = entry['Location']
+
+        tx_frequency_offset = ''
+        if 'TxFrequencyOffset' in entry.keys():
+            tx_frequency_offset = entry['TxFrequencyOffset']
+
+        print(f'{memory},{name},{location},{rx_frequency},{tx_frequency_offset},{mode}')
+        memory += 1
+
+
 def sanitize_chirp_channel_name(name, length=8):
     # XXX FIXME TODO  Round up when truncating numerical channel names!!!
 
@@ -172,12 +198,13 @@ def process_chirp_channels_csv(entries, max_name_length=8):
         'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE'
     )
 
-    location = 1
+    memory = 1
     for entry in entries:
         name = sanitize_chirp_channel_name(entry['Name'], max_name_length)
         frequency = entry['RxFrequency']
         mode = entry['Mode']
 
+        # Do we have any alternate names for the location of a repeater site?
         if 'Location' in entry.keys():
             comment = entry['Location']
         else:
@@ -259,9 +286,9 @@ def process_chirp_channels_csv(entries, max_name_length=8):
             tstep = 5.00
 
         print(
-            f'{location},{name},{frequency:.6f},{duplex},{offset:.6f},{tone},{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,{comment},,,,'
+            f'{memory},{name},{frequency:.6f},{duplex},{offset:.6f},{tone},{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,{comment},,,,'
         )
-        location += 1
+        memory += 1
 
 
 def process_rt_systems_channels_csv(entries):
@@ -269,7 +296,6 @@ def process_rt_systems_channels_csv(entries):
         'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment'
     )
 
-    location = 1
     for entry in entries:
         name = entry['Name']
         rx_frequency = entry['RxFrequency']
@@ -362,7 +388,6 @@ def process_rt_systems_channels_csv(entries):
         print(
             f'{rx_frequency},{tx_frequency:.2f},{offset_frequency},{duplex},,{mode},{name},,{tone},{c_tone_freq},{r_tone_freq},{dtcs_code},{dtcs_polarity},Off,{tstep},Off,0,,,,,,,, ,,'
         )
-        location += 1
 
 
 @click.command()
@@ -370,7 +395,7 @@ def process_rt_systems_channels_csv(entries):
     '--format',
     '-f',
     default='DMR',
-    help='Desired output format for data ("dmr", "chirp", "rt")',
+    help='Desired output format for data ("dmr", "human", "chirp", "rt")',
 )
 @click.option(
     '--input_file',
@@ -404,7 +429,9 @@ def main(format, input_file, json_file, max_name_length):
 
     match format.lower():
         case 'dmr':
-            channels = process_dmr_channels(entries=payload['Channels'], channel_stub=retevis_channel_stub)
+            channels = process_dmr_channels(
+                entries=payload['Channels'], channel_stub=retevis_channel_stub
+            )
 
             # Read in the existing codeplug JSON and append new channels to the end of
             # the list.
@@ -414,6 +441,8 @@ def main(format, input_file, json_file, max_name_length):
             codeplug['Channels'].extend(channels)
 
             print(json.dumps(codeplug, indent=2, sort_keys=True))
+        case 'human':
+            process_human_channels_csv(entries=payload['Channels'])
         case 'chirp':
             process_chirp_channels_csv(
                 entries=payload['Channels'], max_name_length=max_name_length
@@ -423,7 +452,7 @@ def main(format, input_file, json_file, max_name_length):
             process_rt_systems_channels_csv(entries=payload['Channels'])
         case _:
             print(
-                f'Format "{format_output}" is invalid.  Allowed values are:  "dmr", "chirp", "rt"'
+                f'Format "{format_output}" is invalid.  Allowed values are:  "dmr", "human", "chirp", "rt"'
             )
 
 

@@ -5,3 +5,17 @@ Channels:
   RxFrequency: 153.815
   Mode: FM
   RxOnly: On  # Tx inhibit
+
+# Cty Fire 153.815 FM
+# CtyFTact 150.53 FM
+# CtyRoads 169.365 FM
+# StockBus 151.85 FM
+# HealyBus 157.545 FM
+# Ambulnce 143 FM
+# Air-Ambl 126.7 AM
+# SF Airpt 122.9 AM
+# OTT Twr 118.8 AM
+# PerthTwn 162.27 FM
+# PerthPW 169.53 FM
+
+# Ont Fire 414.1125 FM
