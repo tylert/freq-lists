@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -x
 mkdir -p tmp
 
 #  ____ _____ _________
