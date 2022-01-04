@@ -13,20 +13,27 @@ Channels:
 #                             | |___|  _  | |_| |
 #                              \____|_| |_|\___/
 
-- Name: CHU90M
+# CHU Canada - Coordinated Universal Time / Temps Universel Coordonné (UTC)
+#   https://nrc.canada.ca/en/certifications-evaluations-standards/canadas-official-time/nrc-shortwave-station-broadcasts-chu
+#   https://en.wikipedia.org/wiki/CHU_(radio_station)
+
+- Name: CHU 90M
   RxFrequency: 3.33
   Mode: AM
   RxOnly: On  # Tx inhibit
+  Notes: 3 kW
 
-- Name: CHU38M
+- Name: CHU 38M
   RxFrequency: 7.85
   Mode: AM
   RxOnly: On  # Tx inhibit
+  Notes: 5 kW
 
-- Name: CHU20M
+- Name: CHU 20M
   RxFrequency: 14.67
   Mode: AM
   RxOnly: On  # Tx inhibit
+  Notes: 3 kW
 
 #                      __        ____        ____     __
 #                      \ \      / /\ \      / /\ \   / /
@@ -34,32 +41,50 @@ Channels:
 #                        \ V  V /    \ V  V /    \ V /
 #                         \_/\_/      \_/\_/      \_/
 
-- Name: WWVBLF
-  RxFrequency: 0.6
+# WWV and WWVB
+#   https://www.nist.gov/time-and-frequency-services/nist-radio-stations/wwv
+#   https://www.nist.gov/pml/div688/grp40/wwvb.cfm
+#   https://en.wikipedia.org/wiki/WWV_(radio_station)
+#   https://en.wikipedia.org/wiki/WWVB
+
+- Name: WWVB LF
+  RxFrequency: 0.06
   Mode: AM
   RxOnly: On  # Tx inhibit
+  Notes: 70 kW
 
-- Name: WWV120M
+- Name: WWV 120M
   RxFrequency: 2.5
   Mode: AM
   RxOnly: On  # Tx inhibit
+  Notes: 2.5 kW
 
-- Name: WWV60M
+- Name: WWV 60M
   RxFrequency: 5.0
   Mode: AM
   RxOnly: On  # Tx inhibit
+  Notes: 10 kW
 
-- Name: WWV30M
+- Name: WWV 30M
   RxFrequency: 10.0
   Mode: AM
   RxOnly: On  # Tx inhibit
+  Notes: 10 kW
 
-- Name: WWV20M
+- Name: WWV 20M
   RxFrequency: 15.0
   Mode: AM
   RxOnly: On  # Tx inhibit
+  Notes: 10 kW
 
-- Name: WWV15M
+- Name: WWV 15M
   RxFrequency: 20.0
   Mode: AM
   RxOnly: On  # Tx inhibit
+  Notes: 2.5 kW
+
+- Name: WWV 12M
+  RxFrequency: 25.0
+  Mode: AM
+  RxOnly: On  # Tx inhibit
+  Notes: 2.5 kW
