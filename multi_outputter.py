@@ -110,8 +110,8 @@ def process_dmr_channels(entries, channel_stub):
 
         # Ensure we don't try to send info about the location of repeater sites
         # to radios.
-        if 'Location' in output.keys():
-            del output['Location']
+        if 'Notes' in output.keys():
+            del output['Notes']
 
         # Force things that might be integers/floats to be strings (for JSON)
         output['RxFrequency'] = f"{entry['RxFrequency']:.5f}"
@@ -158,8 +158,8 @@ def process_human_channels_csv(entries, max_name_length=8):
         rx_frequency = entry['RxFrequency']
         mode = entry['Mode']
 
-        if 'Location' in entry.keys():
-            notes = entry['Location']
+        if 'Notes' in entry.keys():
+            notes = entry['Notes']
         else:
             notes = ''
 
@@ -216,8 +216,8 @@ def process_chirp_channels_csv(entries, max_name_length=8):
         mode = entry['Mode']
 
         # Do we have any alternate names for the location of a repeater site?
-        if 'Location' in entry.keys():
-            comment = entry['Location']
+        if 'Notes' in entry.keys():
+            comment = entry['Notes']
         else:
             comment = ''
 
