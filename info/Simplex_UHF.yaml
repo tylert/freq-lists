@@ -59,9 +59,9 @@ Channels:
 #                  /_/  \___/   \___|_| |_| |_| |_|   |_|  |_|
 
 - Name: 446.0 FM
-  Notes: FM simplex calling frequency
   RxFrequency: 446.0
   Mode: FM
+  Notes: FM simplex calling frequency
 
 - Name: 446.0125 FM
   RxFrequency: 446.0125
