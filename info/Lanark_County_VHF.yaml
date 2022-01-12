@@ -2,6 +2,7 @@
 Channels:
 
 - Name: Lanark County
+  Notes: FN14UV76
   RxFrequency: 153.815
   Mode: FM
   RxOnly: On  # Tx inhibit
