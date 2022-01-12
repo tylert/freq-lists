@@ -13,7 +13,7 @@ Channels:
 # *** No FM nets, currently ***
 
 - Name: VE3RLR VHF FM  # Yaesu DR-2X
-  Notes: FN14XV Smiths Falls Railway Museum
+  Notes: FN14XV66 Smiths Falls Railway Museum
   RxFrequency: 147.21
   TxFrequencyOffset: '+0.6'
   Mode: FM  # frequency shared with YSF
@@ -21,7 +21,7 @@ Channels:
   CtcssDecode: 151.4
 
 - Name: VE3RLR UHF FM  # Yaesu DR-2X
-  Notes: FN14XV Smiths Falls Railway Museum
+  Notes: FN14XV66 Smiths Falls Railway Museum
   RxFrequency: 442.75
   TxFrequencyOffset: '+5.0'
   Mode: FM  # frequency shared with YSF
@@ -42,7 +42,7 @@ Channels:
 # *** "LNL ARES Net" Wednesdays at 2000H Eastern on all RF-linked repeaters ***
 
 - Name: VE3KJG VHF FM  # Motorola MSF 5000
-  Notes: Lavant
+  Notes: FN15PB91SB Lavant
   RxFrequency: 146.64
   TxFrequencyOffset: '-0.6'
   Mode: FM
