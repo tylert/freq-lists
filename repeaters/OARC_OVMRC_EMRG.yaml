@@ -63,7 +63,7 @@ Channels:
 # =========================================
 
 - Name: VE3MPC VHF FM  # Yaesu DR-1X???
-  Notes: Off-the-air (stored at VE3LC)
+  Notes: Off-the-air stored at VE3LC
   RxFrequency: 147.15
   TxFrequencyOffset: '+0.6'
   Mode: FM
@@ -150,7 +150,7 @@ Channels:
   CtcssDecode: 123.0
 
 - Name: VA3EMV/P VHF FM  # Motorola Radius mobiles
-  Notes: Portable (stored at VE3OCE)
+  Notes: Portable stored at VE3OCE
   RxFrequency: 145.11
   TxFrequencyOffset: '-0.6'
   Mode: FM
