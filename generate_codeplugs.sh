@@ -31,17 +31,21 @@ jq --slurp '.[0] * .[1]' tmp/00.json codeplugs/stubs.json > tmp/01.json
     --json_file tmp/03.json > tmp/04.json
 ./multi_outputter.py --format DMR --input_file repeaters/OARC_OVMRC_EMRG.yaml \
     --json_file tmp/04.json > tmp/05.json
-./multi_outputter.py --format DMR --input_file info/Simplex_VHF.yaml \
+./multi_outputter.py --format DMR --input_file info/Simplex_DMR_VHF.yaml \
     --json_file tmp/05.json > tmp/06.json
-./multi_outputter.py --format DMR --input_file info/Simplex_UHF.yaml \
+./multi_outputter.py --format DMR --input_file info/Simplex_DMR_UHF.yaml \
     --json_file tmp/06.json > tmp/07.json
-./multi_outputter.py --format DMR --input_file info/GMRS_and_FRS_UHF.yaml \
+./multi_outputter.py --format DMR --input_file info/Simplex_FM_VHF.yaml \
     --json_file tmp/07.json > tmp/08.json
-./multi_outputter.py --format DMR --input_file info/Weather_info_VHF.yaml \
+./multi_outputter.py --format DMR --input_file info/Simplex_FM_UHF.yaml \
     --json_file tmp/08.json > tmp/09.json
+./multi_outputter.py --format DMR --input_file info/GMRS_and_FRS_UHF.yaml \
+    --json_file tmp/09.json > tmp/10.json
+./multi_outputter.py --format DMR --input_file info/Weather_info_VHF.yaml \
+    --json_file tmp/10.json > tmp/11.json
 
 # Convert it back to a binary codeplug
-dmrRadio jsonToCodeplug tmp/09.json tmp/Retevis_RT90.rdt
+dmrRadio jsonToCodeplug tmp/11.json tmp/Retevis_RT90.rdt
 
 #  ____ _____ _________
 # |  _ \_   _|___ / ___|
@@ -68,17 +72,21 @@ jq --slurp '.[0] * .[1]' tmp/00.json codeplugs/stubs.json > tmp/01.json
     --json_file tmp/03.json > tmp/04.json
 ./multi_outputter.py --format DMR --input_file repeaters/OARC_OVMRC_EMRG.yaml \
     --json_file tmp/04.json > tmp/05.json
-./multi_outputter.py --format DMR --input_file info/Simplex_VHF.yaml \
+./multi_outputter.py --format DMR --input_file info/Simplex_DMR_VHF.yaml \
     --json_file tmp/05.json > tmp/06.json
-./multi_outputter.py --format DMR --input_file info/Simplex_UHF.yaml \
+./multi_outputter.py --format DMR --input_file info/Simplex_DMR_UHF.yaml \
     --json_file tmp/06.json > tmp/07.json
-./multi_outputter.py --format DMR --input_file info/GMRS_and_FRS_UHF.yaml \
+./multi_outputter.py --format DMR --input_file info/Simplex_FM_VHF.yaml \
     --json_file tmp/07.json > tmp/08.json
-./multi_outputter.py --format DMR --input_file info/Weather_info_VHF.yaml \
+./multi_outputter.py --format DMR --input_file info/Simplex_FM_UHF.yaml \
     --json_file tmp/08.json > tmp/09.json
+./multi_outputter.py --format DMR --input_file info/GMRS_and_FRS_UHF.yaml \
+    --json_file tmp/09.json > tmp/10.json
+./multi_outputter.py --format DMR --input_file info/Weather_info_VHF.yaml \
+    --json_file tmp/10.json > tmp/11.json
 
 # Convert it back to a binary codeplug
-dmrRadio jsonToCodeplug tmp/09.json tmp/Retevis_RT3S.rdt
+dmrRadio jsonToCodeplug tmp/11.json tmp/Retevis_RT3S.rdt
 
 # Clean up intermediate and generated files
 rm tmp/*.json

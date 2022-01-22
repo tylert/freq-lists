@@ -39,6 +39,44 @@
       "Name": "98638 WVNET"
     }
   ],
+  "GroupLists": [
+    {
+      "Contact": [
+        "6 Local"
+      ],
+      "Name": "6 Local"
+    },
+    {
+      "Contact": [
+        "99 Simplex"
+      ],
+      "Name": "99 Simplex"
+    },
+    {
+      "Contact": [
+        "302 Canada"
+      ],
+      "Name": "302 Canada"
+    },
+    {
+      "Contact": [
+        "3023 Ontario"
+      ],
+      "Name": "3023 Ontario"
+    },
+    {
+      "Contact": [
+        "9990 Parrot"
+      ],
+      "Name": "9990 Parrot"
+    },
+    {
+      "Contact": [
+        "98638 WVNET"
+      ],
+      "Name": "98638 WVNET"
+    }
+  ],
   "Zones": [
     {
       "ChannelA": [],
