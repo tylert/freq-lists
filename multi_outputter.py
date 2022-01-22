@@ -405,7 +405,7 @@ def process_rt_systems_channels_csv(entries):
 @click.option(
     '--format',
     '-f',
-    default='DMR',
+    default='CHIRP',
     help='Desired output format for data ("dmr", "human", "chirp", "rt")',
 )
 @click.option(

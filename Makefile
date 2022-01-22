@@ -6,8 +6,8 @@ VENV ?= .venv
 GENERATED_FILES =
 
 .SUFFIXES:
-.SUFFIXES: .json
-.PRECIOUS: .yaml
+.SUFFIXES: .yaml .conf .jq .json .rdt
+.PRECIOUS: .yaml .conf .jq
 
 .PHONY: all
 all: $(GENERATED_FILES)
