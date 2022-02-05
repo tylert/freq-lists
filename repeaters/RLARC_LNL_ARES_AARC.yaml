@@ -39,7 +39,7 @@ Channels:
 #   https://www.qsl.net/ve3lca/
 #   https://cneo-nceo.ca/record/kgn1773/
 
-# *** "LNL ARES Net" Wednesdays at 2000H Eastern on all RF-linked repeaters ***
+# *** "LNL ARES Net" Wednesdays at 20:00 Eastern on all RF-linked repeaters ***
 
 # =======================================================================
 # NFM @ 12.5 kHz should be used on all YSF repeaters with P25 link radios
@@ -110,7 +110,7 @@ Channels:
 #   https://almontearclub.ca/about-the-club/
 #   http://www.almontearclub.ca/Almonte_Amateur_Radio_Club/Welcome.html
 
-# *** "??? Net" Wednesdays at 2100H Eastern on VA3ARE VHF FM
+# *** "??? Net" Wednesdays at 21:00 Eastern on VA3ARE VHF FM
 
 - Name: VA3AAR UHF FM  # TBD
   Notes: Almonte Fire Hall
