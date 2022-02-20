@@ -59,7 +59,7 @@ retevis_channel_stub = {
     "SendGPSInfo": "Off",
     "Squelch": "1",
     "Talkaround": "Off",
-    "Tot": "555",
+    "Tot": "360",
     "TotRekeyDelay": "0",
     "TxFrequencyOffset": "+0.00000",
     "TxRefFrequency": "Low",
