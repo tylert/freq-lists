@@ -87,10 +87,6 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: None
 
-# =========================================
-# VE3LCA VHF FM is currently off the air!!!
-# =========================================
-
 - Name: VE3LCA VHF FM  # Yaesu DR-2X
   Notes: Perth at VE3BSB
   RxFrequency: 146.955  # linked to VE3KJG VHF FM
@@ -112,13 +108,21 @@ Channels:
 
 # *** "??? Net" Wednesdays at 21:00 Eastern on VA3ARE VHF FM
 
+# - Name: VE3AAR VHF FM  # TBD
+#   Notes: Unknown
+#   RxFrequency: 145.55
+#   TxFrequencyOffset: '-0.6'
+#   Mode: FM
+#   CtcssEncode: 100.0
+#   CtcssDecode: 100.0
+
 - Name: VA3AAR UHF FM  # TBD
   Notes: Almonte Fire Hall
   RxFrequency: 444.3  # linked to VE3KJG VHF FM
   TxFrequencyOffset: '+5.0'
   Mode: FM
   CtcssEncode: 100.0
-  CtcssDecode: None
+  CtcssDecode: 100.0
 
 - Name: VA3ARE VHF FM  # IRLP 2280 - Yaesu DR-1X
   Notes: Almonte at VE3CFZ
