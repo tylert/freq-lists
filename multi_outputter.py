@@ -406,7 +406,7 @@ def process_rt_systems_channels_csv(entries):
     '--format',
     '-f',
     default='CHIRP',
-    help='Desired output format for data ("dmr", "human", "chirp", "rt")',
+    help='Desired output format for data ("DMR", "HUMAN", "CHIRP", "RT")',
 )
 @click.option(
     '--input_file',
@@ -438,8 +438,8 @@ def main(format, input_file, json_file, max_name_length):
     #     for item in reader:
     #         print(item)
 
-    match format.lower():
-        case 'dmr':
+    match format.upper():
+        case 'DMR':
             channels = process_dmr_channels(
                 entries=payload['Channels'], channel_stub=retevis_channel_stub
             )
@@ -452,20 +452,20 @@ def main(format, input_file, json_file, max_name_length):
             codeplug['Channels'].extend(channels)
 
             print(json.dumps(codeplug, indent=2, sort_keys=True))
-        case 'human':
+        case 'HUMAN':
             process_human_channels_csv(
                 entries=payload['Channels'], max_name_length=max_name_length
             )
-        case 'chirp':
+        case 'CHIRP':
             process_chirp_channels_csv(
                 entries=payload['Channels'], max_name_length=max_name_length
             )
-        case 'rt':
+        case 'RT':
             # XXX FIXME TODO  Test the RT Systems output!!!
             process_rt_systems_channels_csv(entries=payload['Channels'])
         case _:
             print(
-                f'Format "{format_output}" is invalid.  Allowed values are:  "dmr", "human", "chirp", "rt"'
+                f'Format "{format_output}" is invalid.  Allowed values are:  "DMR", "HUMAN", "CHIRP", "RT"'
             )
 
 
