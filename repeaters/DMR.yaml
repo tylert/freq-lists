@@ -80,14 +80,14 @@ Channels:
 
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3STP UHF DMR  # Motorola CM 300 Rx & Tx
-  Notes: FN15NH13OV or FN15NH25 Renfrew at Kennellys Mountain
+  Notes: FN15NH13OV or FN15NH25 Renfrew Kennellys Mountain
   RxFrequency: 443.6
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302064 / MMDVM (DMR & DSTAR) -> Brandmeister
   ColorCode: 1
 
 - Name: VE3STP VHF DMR  # Motorola XPR 8300 + 60 W amp
-  Notes: FN15NH25 Renfrew at Kennellys Mountain
+  Notes: FN15NH25 Renfrew Kennellys Mountain
   RxFrequency: 145.39
   TxFrequencyOffset: '-0.6'
   Mode: DMR  # CCS7 ID 302096;  frequency also shared with FM;  no RoIP features available
@@ -109,7 +109,7 @@ Channels:
 
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE2CRA UHF DMR  # Motorola CDM 1550LS+ Rx & Tx, STM32-DVM Rev3 USB, Raspberry Pi 2B
-  Notes: FN25BM80AQ Camp Fortune at CBC/Radio-Canada
+  Notes: FN25BM80AQ Camp Fortune CBC/Radio-Canada
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302093 / MMDVM (DMR only) -> Brandmeister
@@ -128,17 +128,17 @@ Channels:
 #   https://xrf196.spdns.org/
 
 - Name: VA3ODG UHF DMR  # TBD
-  Notes: FN25DJ78 YMCA-YWCA at 180 Argyle Avenue
+  Notes: FN25DJ78GT YMCA-YWCA 180 Argyle Avenue
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302065 / MMDVM (DMR & DSTAR) -> Brandmeister
   ColorCode: 1
 
-#                       __     _______ _____ _     ____
-#                       \ \   / / ____|___ /| |   / ___|
-#                        \ \ / /|  _|   |_ \| |  | |
-#                         \ V / | |___ ___) | |__| |___
-#                          \_/  |_____|____/|_____\____|
+#                        _____     ____  __ ____   ____
+#                       / _ \ \   / /  \/  |  _ \ / ___|
+#                      | | | \ \ / /| |\/| | |_) | |
+#                      | |_| |\ V / | |  | |  _ <| |___
+#                       \___/  \_/  |_|  |_|_| \_\\____|
 
 # Norman Rhodes Rashleigh VE3LC
 #   http://ve3ram.ddns.net:380/
@@ -146,7 +146,7 @@ Channels:
 
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3RAM UHF DMR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
-  Notes: FN25FK Orleans at VE3LC
+  Notes: FN25FK Orleans VE3LC
   RxFrequency: 443.7
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302117 / MMDVM (DMR & FM & DSTAR) -> Brandmeister

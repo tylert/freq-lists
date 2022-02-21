@@ -10,8 +10,8 @@ import json
 
 # from csv import DictReader
 
-from ruamel.yaml import YAML
 import click
+from ruamel.yaml import YAML
 
 
 retevis_channel_stub = {
@@ -69,6 +69,7 @@ retevis_channel_stub = {
 
 
 def process_dmr_channels(entries, channel_stub):
+    ''' '''
     channels = []
     for entry in entries:
         output = channel_stub
@@ -148,9 +149,8 @@ def process_dmr_channels(entries, channel_stub):
 
 
 def process_human_channels_csv(entries, max_name_length=8):
-    print(
-        'Memory,Name,Input,Output,Mode,Tone,Notes'
-    )
+    ''' '''
+    print('Memory,Name,Input,Output,Mode,Tone,Notes')
 
     memory = 1
     for entry in entries:
@@ -164,24 +164,26 @@ def process_human_channels_csv(entries, max_name_length=8):
             notes = ''
 
         if 'TxFrequencyOffset' in entry.keys():
-            tx_frequency_offset = float(rx_frequency) + float(entry['TxFrequencyOffset'])
+            tx_frequency_offset = float(rx_frequency) + float(
+                entry['TxFrequencyOffset']
+            )
         else:
             tx_frequency_offset = float(rx_frequency)
 
         # If there's a tone, it's usually for a good reason (e.g. "AMS mode" on YSF).
-        if (
-            'CtcssEncode' in entry.keys()
-            and entry['CtcssEncode'] is not None
-        ):
+        if 'CtcssEncode' in entry.keys() and entry['CtcssEncode'] is not None:
             tone = entry['CtcssEncode']
         else:
             tone = ''
 
-        print(f'{memory},{name},{rx_frequency:.6f},{tx_frequency_offset:.6f},{mode},{tone},{notes}')
+        print(
+            f'{memory},{name},{rx_frequency:.6f},{tx_frequency_offset:.6f},{mode},{tone},{notes}'
+        )
         memory += 1
 
 
 def sanitize_chirp_channel_name(name, length=8):
+    ''' '''
     # XXX FIXME TODO  Round up when truncating numerical channel names!!!
 
     # Make sure nobody tries to ask for a negative number
@@ -199,6 +201,7 @@ def sanitize_chirp_channel_name(name, length=8):
 
 
 def process_chirp_channels_csv(entries, max_name_length=8):
+    ''' '''
     # For some bizarre reason, the CHIRP GUI has different column header names than the CSV files do...
 
     # https://chirp.danplanet.com/projects/chirp/wiki/Home  # Supported radios
@@ -303,6 +306,7 @@ def process_chirp_channels_csv(entries, max_name_length=8):
 
 
 def process_rt_systems_channels_csv(entries):
+    ''' '''
     print(
         'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment'
     )
@@ -427,6 +431,7 @@ def process_rt_systems_channels_csv(entries):
     help='Maximum length of channel names (default 8).',
 )
 def main(format, input_file, json_file, max_name_length):
+    ''' '''
     # XXX FIXME TODO  Allow the use of STDIN as the input "file"!!!
     with open(input_file) as f:
         yaml = YAML(typ='safe')
