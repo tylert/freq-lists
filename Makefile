@@ -18,6 +18,7 @@ venv: $(ACTIVATE_SCRIPT)
 $(ACTIVATE_SCRIPT): requirements.txt
 	@test -d $(VENV) || $(PYTHON) -m venv $(VENV) && \
   source $(ACTIVATE_SCRIPT) && \
+  pip install --upgrade pip setuptools && \
   pip install --requirement $< && \
   touch $(ACTIVATE_SCRIPT)
 
@@ -26,6 +27,7 @@ venv_upgrade:
 	@rm -rf $(VENV) && \
   $(PYTHON) -m venv $(VENV) && \
   source $(ACTIVATE_SCRIPT) && \
+  pip install --upgrade pip setuptools && \
   pip install --requirement requirements_bare.txt && \
   pip freeze > requirements.txt && \
   touch $(ACTIVATE_SCRIPT)
