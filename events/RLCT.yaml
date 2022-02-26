@@ -19,9 +19,9 @@ Channels:
 #                             |  _| |  _ <| |_| |
 #                             |_|   |_| \_\\____|
 
-# Frontenac Radio Group???
+# Frontenac Radio Group
 #   https://dxnews.com/forum/forum/special-event-stations/376-xm3carf-the-frontenac-amateur-radio-club
-#   http://www.geocities.ws/eocc_canada/  *** SPAM SITE ??? ***
+#   http://www.geocities.ws/eocc_canada/  *** SPAM SITE !!! ***
 
 - Name: VE3FRG VHF FM  # Yaesu DR-2X
   Notes: FN14RH61KG
@@ -33,3 +33,12 @@ Channels:
 # 250-foot tower
 # South Frontenac / Kingston
 # 445.1375 is apparently a simplex YSF-only command-and-control link for VE3FRG
+
+# REVERSE of VE3FRG
+- Name: GRF3EV VHF FM  # Yaesu DR-2X
+  Notes: FN14RH61KG
+  RxFrequency: 146.205
+  TxFrequencyOffset: '+0.0'
+  Mode: FM  # frequency normally configured as YSF-only
+  CtcssEncode: None
+  CtcssDecode: None
