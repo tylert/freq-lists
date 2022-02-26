@@ -13,7 +13,7 @@ Channels:
 # *** No FM nets, currently ***
 
 - Name: VE3RLR VHF FM  # Yaesu DR-2X
-  Notes: FN14XV66 Smiths Falls Railway Museum
+  Notes: FN14XV66OK Smiths Falls Railway Museum
   RxFrequency: 147.21
   TxFrequencyOffset: '+0.6'
   Mode: FM  # frequency shared with YSF
@@ -21,7 +21,7 @@ Channels:
   CtcssDecode: 151.4
 
 - Name: VE3RLR UHF FM  # Yaesu DR-2X
-  Notes: FN14XV66 Smiths Falls Railway Museum
+  Notes: FN14XV66OK Smiths Falls Railway Museum
   RxFrequency: 442.75
   TxFrequencyOffset: '+5.0'
   Mode: FM  # frequency shared with YSF
@@ -54,7 +54,7 @@ Channels:
   CtcssDecode: None
 
 - Name: VA3TEL VHF FM  # Yaesu DR-2X + Tait 9100 link radios
-  Notes: Christie Lake
+  Notes: FN14ST76TP Christie Lake
   RxFrequency: 145.23  # linked to VE3KJG VHF FM
   TxFrequencyOffset: '-0.6'
   Mode: NFM  # frequency shared with YSF
@@ -63,7 +63,7 @@ Channels:
   Bandwidth: 12.5
 
 - Name: VE3REX UHF FM  # Yaesu DR-2X + Tait 9100 link radio
-  Notes: Rideau Ferry
+  Notes: FN14 Rideau Ferry
   RxFrequency: 442.2  # linked to VE3KJG VHF FM
   TxFrequencyOffset: '+5.0'
   Mode: NFM  # frequency shared with YSF
@@ -72,7 +72,7 @@ Channels:
   Bandwidth: 12.5
 
 - Name: VE3WPO UHF FM  # Motorola MSR 2000 + Motorola GM 300 link radio
-  Notes: Westport Legion
+  Notes: FN14TQ20KL Westport Legion
   RxFrequency: 442.4  # linked to VE3KJG VHF FM
   TxFrequencyOffset: '+5.0'
   Mode: FM
@@ -80,7 +80,7 @@ Channels:
   CtcssDecode: None
 
 - Name: VE3HTN VHF FM  # TBD + Motorola GM 300 link radios
-  Notes: Toledo
+  Notes: FN24 Toledo
   RxFrequency: 146.865  # linked to VE3KJG VHF FM
   TxFrequencyOffset: '-0.6'
   Mode: FM
