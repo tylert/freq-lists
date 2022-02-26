@@ -164,11 +164,11 @@ def process_human_channels_csv(entries, max_name_length=8):
             notes = ''
 
         if 'TxFrequencyOffset' in entry.keys():
-            tx_frequency_offset = float(rx_frequency) + float(
+            tx_frequency = float(rx_frequency) + float(
                 entry['TxFrequencyOffset']
             )
         else:
-            tx_frequency_offset = float(rx_frequency)
+            tx_frequency = float(rx_frequency)
 
         # If there's a tone, it's usually for a good reason (e.g. "AMS mode" on YSF).
         if 'CtcssEncode' in entry.keys() and entry['CtcssEncode'] is not None:
@@ -177,7 +177,7 @@ def process_human_channels_csv(entries, max_name_length=8):
             tone = ''
 
         print(
-            f'{memory},{name},{rx_frequency:.6f},{tx_frequency_offset:.6f},{mode},{tone},{notes}'
+            f'{memory},{name},{rx_frequency:.6f},{tx_frequency:.6f},{mode},{tone},{notes}'
         )
         memory += 1
 
@@ -305,16 +305,21 @@ def process_chirp_channels_csv(entries, max_name_length=8):
         memory += 1
 
 
-def process_rt_systems_channels_csv(entries):
+def process_rt_systems_channels_csv(entries, max_name_length=8):
     ''' '''
     print(
         'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment'
     )
 
     for entry in entries:
-        name = entry['Name']
+        name = sanitize_chirp_channel_name(entry['Name'], max_name_length)
         rx_frequency = entry['RxFrequency']
         mode = entry['Mode']
+
+        if 'Notes' in entry.keys():
+            comment = entry['Notes']
+        else:
+            comment = ''
 
         # Duplex and offset?
         if (
@@ -401,7 +406,7 @@ def process_rt_systems_channels_csv(entries):
             tstep = '5 kHz'
 
         print(
-            f'{rx_frequency},{tx_frequency:.2f},{offset_frequency},{duplex},,{mode},{name},,{tone},{c_tone_freq},{r_tone_freq},{dtcs_code},{dtcs_polarity},Off,{tstep},Off,0,,,,,,,, ,,'
+            f'{rx_frequency},{tx_frequency},{offset_frequency},{duplex},,{mode},{name},,{tone},{c_tone_freq},{r_tone_freq},{dtcs_code},{dtcs_polarity},Off,{tstep},Off,0,,,,,,,, ,,{comment}'
         )
 
 

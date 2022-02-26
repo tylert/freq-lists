@@ -35,9 +35,8 @@ Channels:
 
 # 445.1375 is a simplex YSF-only command-and-control link for VE3FRG
 
-# REVERSE of VE3FRG
 - Name: GRF3EV VHF FM  # Yaesu DR-2X
-  Notes: FN14RH61KG  # 250-foot tower
+  Notes: Input of VE3FRG VHF FM
   RxFrequency: 146.205
   TxFrequencyOffset: '+0.0'
   Mode: FM  # frequency normally configured as YSF-only
