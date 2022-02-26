@@ -24,7 +24,7 @@ Channels:
 # VE2CRA UHF DMR and VE2CRA UHF FM are not linked
 
 - Name: VE2CRA VHF FM  # TBD
-  Notes: FN25BM80AQ Camp Fortune CBC/Radio-Canada
+  Notes: FN25BM80AQ CBC/Radio-Canada Camp Fortune
   RxFrequency: 146.94
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -32,7 +32,7 @@ Channels:
   CtcssDecode: 100.0
 
 - Name: VE2CRA UHF FM  # TBD
-  Notes: FN25BM80AQ Camp Fortune CBC/Radio-Canada
+  Notes: FN25BM80AQ CBC/Radio-Canada Camp Fortune
   RxFrequency: 443.3
   TxFrequencyOffset: '+5.0'
   Mode: FM
@@ -50,7 +50,7 @@ Channels:
 
 # *** No FM nets, currently ***
 
-- Name: VE3TWO VHF FM  # Yaesu DR-1X???
+- Name: VE3TWO VHF FM  # Yaesu DR-1X
   Notes: FN25G or FN25H Metcalfe VE3BOE
   RxFrequency: 147.3
   TxFrequencyOffset: '+0.6'
@@ -62,7 +62,7 @@ Channels:
 # VE3MPC VHF FM is currently off the air!!!
 # =========================================
 
-- Name: VE3MPC VHF FM  # Yaesu DR-1X???
+- Name: VE3MPC VHF FM  # Yaesu DR-1X
   Notes: FN25FK Orleans VE3LC
   RxFrequency: 147.15
   TxFrequencyOffset: '+0.6'
@@ -86,7 +86,6 @@ Channels:
 
 # Emergency Measures Radio Group (Ottawa ARES)
 #   http://emrg.ca/
-#   http://emrg.ca/repeaters.htm
 #   https://github.com/emrg-ca/
 #   https://gitlab.com/emrg-ca/
 #   https://bitbucket.org/emrg-ca/
@@ -156,8 +155,3 @@ Channels:
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
-
-# - Name: VE3OCE VHF PKT  # Motorola Radius/Spectra mobiles
-#   Notes: FN25EJ02OB Alta Vista at Randall Avenue / OFS Dispatch / OFS Station 35
-#   RxFrequency: 145.03
-#   Mode: FM

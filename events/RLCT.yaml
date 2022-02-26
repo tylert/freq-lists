@@ -1,0 +1,35 @@
+---
+Channels:
+
+#  ____  _     ____ _____
+# |  _ \| |   / ___|_   _|
+# | |_) | |  | |     | |
+# |  _ <| |__| |___  | |
+# |_| \_\_____\____| |_|
+
+# Rideau Lakes Cycle Tour
+#   http://ottawabicycleclub.ca/rlct
+
+# Happens on the 1st or 2nd weekend in June.  Often coincides with the ARRL
+# June VHF QSO Party.
+
+#                              _____ ____   ____
+#                             |  ___|  _ \ / ___|
+#                             | |_  | |_) | |  _
+#                             |  _| |  _ <| |_| |
+#                             |_|   |_| \_\\____|
+
+# Frontenac Radio Group???
+#   http://www.geocities.ws/eocc_canada/
+#   https://dxnews.com/forum/forum/special-event-stations/376-xm3carf-the-frontenac-amateur-radio-club
+
+- Name: VE3FRG VHF FM  # Yaesu DR-2X
+  Notes: FN14RH61KG
+  RxFrequency: 146.805
+  TxFrequencyOffset: '-0.6'
+  Mode: FM  # frequency normally configured as YSF-only
+  CtcssEncode: 203.5
+  CtcssDecode: 203.5
+# 250-foot tower
+# South Frontenac / Kingston
+# 445.1375 is apparently a simplex YSF-only command-and-control link for VE3FRG

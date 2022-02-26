@@ -14,18 +14,6 @@ Events
 ------
 
 
-Rideau Lakes Cycle Tour (RLCT)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Happens on the 1st or 2nd weekend in June.  Often conflicts with the ARRL June
-VHF QSO Party.
-
-* Volunteer info: TBD
-* Official site: RLCT_
-
-.. _RLCT: http://ottawabicycleclub.ca/rlct
-
-
 Tall Pines Rally / Rally of the Tall Pines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

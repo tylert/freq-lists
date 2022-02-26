@@ -10,14 +10,14 @@ Channels:
 # Tyler Tidman VA3DGN
 
 # - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
-#   Notes: FN15WA Perth at VA3DGN
+#   Notes: FN15WA Perth VA3DGN
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
 #   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only) -> Brandmeister
 #   ColorCode: 1
 
 # - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
-#   Notes: FN15WA Perth at VA3DGN
+#   Notes: FN15WA Perth VA3DGN
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
 #   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only) -> Brandmeister
@@ -35,7 +35,7 @@ Channels:
 
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3HOZ UHF DMR  # Motorola CDM 1550LS+ Rx & Tx + 100 W amp, STM32-DVM Rev?, Raspberry Pi 4B
-  Notes: FN15XG Carp at VE3HOA
+  Notes: FN15XG Carp VE3HOA
   RxFrequency: 442.3
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302108 / MMDVM (DMR only) -> Brandmeister
@@ -101,6 +101,10 @@ Channels:
 
 # Ottawa Amateur Radio Club
 #   http://oarc.net/
+#   https://hambone.ca/
+#   https://github.com/oarc/
+#   https://gitlab.com/oarc/
+#   https://bitbucket.org/oarc/
 #   (insert link to ve2cra Pi-Star dashboard here)
 #   https://xrf196.spdns.org/
 #   https://cbctransmission.ca/map/on#289
@@ -109,10 +113,29 @@ Channels:
 
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE2CRA UHF DMR  # Motorola CDM 1550LS+ Rx & Tx, STM32-DVM Rev3 USB, Raspberry Pi 2B
-  Notes: FN25BM80AQ Camp Fortune CBC/Radio-Canada
+  Notes: FN25BM80AQ CBC/Radio-Canada Camp Fortune
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302093 / MMDVM (DMR only) -> Brandmeister
+  ColorCode: 1
+
+#                        _____     ____  __ ____   ____
+#                       / _ \ \   / /  \/  |  _ \ / ___|
+#                      | | | \ \ / /| |\/| | |_) | |
+#                      | |_| |\ V / | |  | |  _ <| |___
+#                       \___/  \_/  |_|  |_|_| \_\\____|
+
+# Ottawa Valley Mobile Radio Club
+#   https://www.ovmrc.on.ca/
+#   http://ve3ram.ddns.net:380/
+#   https://xrf196.spdns.org/
+
+# TS=2, TG=6 linked to XLX196 B module
+- Name: VE3RAM UHF DMR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
+  Notes: FN25FK Orleans VE3LC
+  RxFrequency: 443.7
+  TxFrequencyOffset: '+5.0'
+  Mode: DMR  # CCS7 ID 302117 / MMDVM (DMR & FM & DSTAR) -> Brandmeister
   ColorCode: 1
 
 #                    __     ___    _____  ___  ____   ____
@@ -132,22 +155,4 @@ Channels:
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302065 / MMDVM (DMR & DSTAR) -> Brandmeister
-  ColorCode: 1
-
-#                        _____     ____  __ ____   ____
-#                       / _ \ \   / /  \/  |  _ \ / ___|
-#                      | | | \ \ / /| |\/| | |_) | |
-#                      | |_| |\ V / | |  | |  _ <| |___
-#                       \___/  \_/  |_|  |_|_| \_\\____|
-
-# Norman Rhodes Rashleigh VE3LC
-#   http://ve3ram.ddns.net:380/
-#   https://xrf196.spdns.org/
-
-# TS=2, TG=6 linked to XLX196 B module
-- Name: VE3RAM UHF DMR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
-  Notes: FN25FK Orleans VE3LC
-  RxFrequency: 443.7
-  TxFrequencyOffset: '+5.0'
-  Mode: DMR  # CCS7 ID 302117 / MMDVM (DMR & FM & DSTAR) -> Brandmeister
   ColorCode: 1
