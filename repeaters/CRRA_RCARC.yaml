@@ -14,7 +14,7 @@ Channels:
 # *** "Champlain Mini Net" Mondays to Fridays at 19:00 on VE3STP VHF FM ***
 
 - Name: VE3STP VHF FM  # Motorola CM 300 Rx, CDM 1250 Tx + 100 W amp
-  Notes: FN15NH13OV or FN15NH25 Renfrew Kennellys Mountain
+  Notes: FN15NH13OV or FN15NH24WI Renfrew Kennellys Mountain
   RxFrequency: 147.06
   TxFrequencyOffset: '-0.6'
   Mode: FM
@@ -22,7 +22,7 @@ Channels:
   CtcssDecode: 114.8
 
 - Name: VE3STP 2VHF FM  # Motorola XPR 8300 + 60 W amp
-  Notes: FN15NH25 Renfrew Kennellys Mountain
+  Notes: FN15NH13OV or FN15NH24WI Renfrew Kennellys Mountain
   RxFrequency: 145.39
   TxFrequencyOffset: '-0.6'
   Mode: FM  # frequency also shared with DMR
@@ -38,6 +38,25 @@ Channels:
 #   CtcssEncode: 114.8
 #   CtcssDecode: None
 
+##############################################################################
+#   R E P E A T E R   I N P U T S   /   L I S T E N   O N   R E V E R S E    #
+##############################################################################
+
+- Name: PTS3EV VHF FM
+  Notes: Input to VE3STP VHF FM
+  RxFrequency: 146.46
+  TxFrequencyOffset: '+0.0'
+  Mode: FM
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: PTS3EV 2VHF FM
+  Notes: Input to VE3STP 2VHF FM
+  RxFrequency: 144.79
+  TxFrequencyOffset: '+0.0'
+  Mode: FM  # frequency also shared with DMR
+  CtcssEncode: None
+  CtcssDecode: None
 #                       ____   ____    _    ____   ____
 #                      |  _ \ / ___|  / \  |  _ \ / ___|
 #                      | |_) | |     / _ \ | |_) | |
@@ -49,34 +68,38 @@ Channels:
 # Renfrew County Amateur Radio Club
 #   http://www.rcarc.ca/RCARC/RCARC%20Repeaters.htm
 
-- Name: VE3ZRR VHF FM  # TBD
-  Notes: Renfrew Horton
-  RxFrequency: 146.91
-  TxFrequencyOffset: '-0.6'
-  Mode: FM
+# - Name: VE3ZRR VHF FM  # TBD
+#   Notes: Renfrew Horton
+#   RxFrequency: 146.91
+#   TxFrequencyOffset: '-0.6'
+#   Mode: FM
 
-- Name: VE3UCR VHF FM  # TBD
-  Notes: Foymount
-  RxFrequency: 145.43
-  TxFrequencyOffset: '-0.6'
-  Mode: FM
+# - Name: VE3UCR VHF FM  # TBD
+#   Notes: Foymount
+#   RxFrequency: 145.43
+#   TxFrequencyOffset: '-0.6'
+#   Mode: FM
 
-- Name: VE3NRR VHF FM  # IRLP 2520 - TBD
-  Notes: Pembroke
-  RxFrequency: 146.76
-  TxFrequencyOffset: '-0.6'
-  Mode: FM
+# - Name: VE3NRR VHF FM  # IRLP 2520 - TBD
+#   Notes: Pembroke
+#   RxFrequency: 146.76
+#   TxFrequencyOffset: '-0.6'
+#   Mode: FM
 
-- Name: VE3NRR UHF FM  # not connected to IRLP - TBD
-  Notes: Pembroke
-  RxFrequency: 448.025
-  TxFrequencyOffset: '-5.0'  # a negative offset!?!
-  Mode: FM
+# - Name: VE3NRR UHF FM  # not connected to IRLP - TBD
+#   Notes: Pembroke
+#   RxFrequency: 448.025
+#   TxFrequencyOffset: '-5.0'  # a negative offset!?!
+#   Mode: FM
 
-- Name: VA3RBW VHF FM  # TBD
-  Notes: Point Alexander near Northern Algonquin Park
-  RxFrequency: 146.79
-  TxFrequencyOffset: '-0.6'
-  Mode: FM
+# - Name: VA3RBW VHF FM  # TBD
+#   Notes: Point Alexander near Northern Algonquin Park
+#   RxFrequency: 146.79
+#   TxFrequencyOffset: '-0.6'
+#   Mode: FM
 
 # Foymount 147.33+ VE3SRU ???
+
+##############################################################################
+#   R E P E A T E R   I N P U T S   /   L I S T E N   O N   R E V E R S E    #
+##############################################################################
