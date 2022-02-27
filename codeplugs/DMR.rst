@@ -116,3 +116,22 @@ Repeaters and Transcoding
       SSH Access:  Private
       Auto AP:  On
       uPNP:  On
+
+
+Firmware and CPS
+----------------
+
+* https://www.farnsworth.org/dale/codeplug/editcp/
+* https://github.com/DaleFarnsworth-DMR
+* https://dm3mat.darc.de/qdmr/
+* https://github.com/hmatuschek/qdmr
+* https://opengd77.com/viewtopic.php?f=18&t=2002
+* https://opengd77.com/viewtopic.php?f=12&t=1486
+* https://m17project.org/
+* https://openrtx.org/
+* https://github.com/OpenRTX
+* https://github.com/open-ham/OpenGD77
+* https://github.com/LibreDMR/OpenGD77_UserGuide/blob/master/OpenGD77_User_Guide.md
+* http://md380.org/
+* https://github.com/travisgoodspeed/md380tools
+* https://raw.githubusercontent.com/tylert/pocorgtfo/gh-pages/pocorgtfo10.pdf
