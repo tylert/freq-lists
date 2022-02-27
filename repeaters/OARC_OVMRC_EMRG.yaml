@@ -75,7 +75,7 @@ Channels:
 # =========================================
 
 - Name: VE3TWO VHF FM  # Yaesu DR-1X
-  Notes: FN25GG Metcalfe at VE3BOE  # 60-foot fold-over tower (80-foot tower?)
+  Notes: FN25GG16CW Metcalfe at VE3BOE  # 60-foot fold-over tower (80-foot tower?)
   RxFrequency: 147.3
   TxFrequencyOffset: '+0.6'
   Mode: FM  # frequency also shared with YSF
