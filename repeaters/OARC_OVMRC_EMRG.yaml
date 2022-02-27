@@ -39,6 +39,26 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
+##############################################################################
+#   R E P E A T E R   I N P U T S   /   L I S T E N   O N   R E V E R S E    #
+##############################################################################
+
+- Name: ARC2EV VHF FM
+  Notes: Input to VE2CRA VHF FM
+  RxFrequency: 146.34
+  TxFrequencyOffset: '+0.0'
+  Mode: FM
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: ARC2EV UHF FM
+  Notes: Input to VE2CRA UHF FM
+  RxFrequency: 448.3
+  TxFrequencyOffset: '+0.0'
+  Mode: FM
+  CtcssEncode: None
+  CtcssDecode: None
+
 #                        _____     ____  __ ____   ____
 #                       / _ \ \   / /  \/  |  _ \ / ___|
 #                      | | | \ \ / /| |\/| | |_) | |
@@ -66,7 +86,7 @@ Channels:
   Notes: FN25FK Orleans VE3LC
   RxFrequency: 147.15
   TxFrequencyOffset: '+0.6'
-  Mode: FM
+  Mode: FM  # frequency also shared with YSF
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
@@ -74,9 +94,37 @@ Channels:
   Notes: FN25FK Orleans VE3LC
   RxFrequency: 443.7
   TxFrequencyOffset: '+5.0'
-  Mode: FM  # frequency also shared with DMR & STAR
+  Mode: FM  # frequency also shared with DMR, DSTAR and YSF
   CtcssEncode: 100.0
   CtcssDecode: 100.0
+
+##############################################################################
+#   R E P E A T E R   I N P U T S   /   L I S T E N   O N   R E V E R S E    #
+##############################################################################
+
+- Name: OWT3EV VHF FM
+  Notes: Input to VE3TWO
+  RxFrequency: 147.9
+  TxFrequencyOffset: '+0.0'
+  Mode: FM  # frequency also shared with YSF
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: CPM3EV VHF FM
+  Notes: Input to VE3MPC VHF FM
+  RxFrequency: 147.75
+  TxFrequencyOffset: '+0.0'
+  Mode: FM  # frequency also shared with YSF
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: MAR3EV UHF FM
+  Notes: Input to VE3RAM UHF FM
+  RxFrequency: 448.7
+  TxFrequencyOffset: '+0.0'
+  Mode: FM  # frequency also shared with DMR, DSTAR and YSF
+  CtcssEncode: None
+  CtcssDecode: None
 
 #                           _____ __  __ ____   ____
 #                          | ____|  \/  |  _ \ / ___|
@@ -155,3 +203,63 @@ Channels:
   Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: 136.5
+
+##############################################################################
+#   R E P E A T E R   I N P U T S   /   L I S T E N   O N   R E V E R S E    #
+##############################################################################
+
+- Name: ECO3EV VHF FM
+  Notes: Input to VE3OCE VHF FM
+  RxFrequency: 146.28
+  TxFrequencyOffset: '+0.0'
+  Mode: FM
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: ECO3EV UHF FM
+  Notes: Input to VE3OCE UHF FM
+  RxFrequency: 448.8
+  TxFrequencyOffset: '+0.0'
+  Mode: FM
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: SFO3AV VHF FM
+  Notes: Input to VA3OFS VHF FM
+  RxFrequency: 146.07
+  TxFrequencyOffset: '+0.0'
+  Mode: FM
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: SFO3AV UHF FM
+  Notes: Input to VA3OFS UHF FM
+  RxFrequency: 449.95
+  TxFrequencyOffset: '+0.0'
+  Mode: FM
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: E/VME3AV VHF FM
+  Notes: Input to VA3EMV/E VHF FM
+  RxFrequency: 146.385
+  TxFrequencyOffset: '+0.0'
+  Mode: FM
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: W/VME3AV VHF FM
+  Notes: Input to VA3EMV/W VHF FM
+  RxFrequency: 144.61
+  TxFrequencyOffset: '+0.0'
+  Mode: FM
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: P/VME3AV VHF FM
+  Notes: Input to VA3EMV/P VHF FM
+  RxFrequency: 144.51
+  TxFrequencyOffset: '+0.0'
+  Mode: FM
+  CtcssEncode: None
+  CtcssDecode: None
