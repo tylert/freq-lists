@@ -1,22 +1,63 @@
 ---
 Channels:
 
-- Name: Lanark County
+- Name: Cty Fire
   Notes: FN14UV76
   RxFrequency: 153.815
   Mode: FM
   RxOnly: On  # Tx inhibit
 
-# Cty Fire 153.815 FM
-# CtyFTact 150.53 FM
-# CtyRoads 169.365 FM
-# StockBus 151.85 FM
-# HealyBus 157.545 FM
-# Ambulnce 143 FM
-# Air-Ambl 126.7 AM
-# SF Airpt 122.9 AM
-# OTT Twr 118.8 AM
-# PerthTwn 162.27 FM
-# PerthPW 169.53 FM
+- Name: Cty FTact
+  RxFrequency: 150.53
+  Mode: FM
+  RxOnly: On  # Tx inhibit
 
-# Ont Fire 414.1125 FM
+- Name: Cty Roads
+  RxFrequency: 169.365
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: Stock Bus
+  RxFrequency: 151.85
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: Healy Bus
+  RxFrequency: 157.545
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: Ambulnce
+  RxFrequency: 143.0
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: Perth Twn
+  RxFrequency: 162.27
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: Perth PW
+  RxFrequency: 169.53
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: Ont Fire
+  RxFrequency: 414.1125
+  Mode: FM
+  RxOnly: On  # Tx inhibit
+
+- Name: Air-Ambl
+  RxFrequency: 126.7
+  Mode: AM
+  RxOnly: On  # Tx inhibit
+
+- Name: SF Airpt
+  RxFrequency: 122.9
+  Mode: AM
+  RxOnly: On  # Tx inhibit
+
+- Name: OTT Twr
+  RxFrequency: 118.8
+  Mode: AM
+  RxOnly: On  # Tx inhibit
