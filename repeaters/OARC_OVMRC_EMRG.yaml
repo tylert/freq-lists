@@ -48,7 +48,7 @@ Channels:
   RxFrequency: 146.34
   TxFrequencyOffset: '+0.0'
   Mode: FM
-  CtcssEncode: None
+  CtcssEncode: 100.0
   CtcssDecode: None
 
 - Name: ARC2EV UHF FM
@@ -56,7 +56,7 @@ Channels:
   RxFrequency: 448.3
   TxFrequencyOffset: '+0.0'
   Mode: FM
-  CtcssEncode: None
+  CtcssEncode: 100.0
   CtcssDecode: None
 
 #                        _____     ____  __ ____   ____
@@ -107,7 +107,7 @@ Channels:
   RxFrequency: 147.9
   TxFrequencyOffset: '+0.0'
   Mode: FM  # frequency also shared with YSF
-  CtcssEncode: None
+  CtcssEncode: 100.0
   CtcssDecode: None
 
 - Name: CPM3EV VHF FM
@@ -115,7 +115,7 @@ Channels:
   RxFrequency: 147.75
   TxFrequencyOffset: '+0.0'
   Mode: FM  # frequency also shared with YSF
-  CtcssEncode: None
+  CtcssEncode: 100.0
   CtcssDecode: None
 
 - Name: MAR3EV UHF FM
@@ -123,7 +123,7 @@ Channels:
   RxFrequency: 448.7
   TxFrequencyOffset: '+0.0'
   Mode: FM  # frequency also shared with DMR, DSTAR and YSF
-  CtcssEncode: None
+  CtcssEncode: 100.0
   CtcssDecode: None
 
 #                           _____ __  __ ____   ____
@@ -213,7 +213,7 @@ Channels:
   RxFrequency: 146.28
   TxFrequencyOffset: '+0.0'
   Mode: FM
-  CtcssEncode: None
+  CtcssEncode: 136.5
   CtcssDecode: None
 
 - Name: ECO3EV UHF FM
@@ -221,7 +221,7 @@ Channels:
   RxFrequency: 448.8
   TxFrequencyOffset: '+0.0'
   Mode: FM
-  CtcssEncode: None
+  CtcssEncode: 136.5
   CtcssDecode: None
 
 - Name: SFO3AV VHF FM
@@ -229,7 +229,7 @@ Channels:
   RxFrequency: 146.07
   TxFrequencyOffset: '+0.0'
   Mode: FM
-  CtcssEncode: None
+  CtcssEncode: 136.5
   CtcssDecode: None
 
 - Name: SFO3AV UHF FM
@@ -237,7 +237,7 @@ Channels:
   RxFrequency: 449.95
   TxFrequencyOffset: '+0.0'
   Mode: FM
-  CtcssEncode: None
+  CtcssEncode: 136.5
   CtcssDecode: None
 
 - Name: E/VME3AV VHF FM
@@ -245,7 +245,7 @@ Channels:
   RxFrequency: 146.385
   TxFrequencyOffset: '+0.0'
   Mode: FM
-  CtcssEncode: None
+  CtcssEncode: 100.0
   CtcssDecode: None
 
 - Name: W/VME3AV VHF FM
@@ -253,7 +253,7 @@ Channels:
   RxFrequency: 144.61
   TxFrequencyOffset: '+0.0'
   Mode: FM
-  CtcssEncode: None
+  CtcssEncode: 123.0
   CtcssDecode: None
 
 - Name: P/VME3AV VHF FM
@@ -261,5 +261,5 @@ Channels:
   RxFrequency: 144.51
   TxFrequencyOffset: '+0.0'
   Mode: FM
-  CtcssEncode: None
+  CtcssEncode: 136.5
   CtcssDecode: None
