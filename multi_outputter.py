@@ -154,7 +154,7 @@ def process_human_channels_csv(entries, max_name_length=8):
 
     memory = 1
     for entry in entries:
-        name = sanitize_chirp_channel_name(entry['Name'], max_name_length)
+        name = entry['Name']
         rx_frequency = entry['RxFrequency']
         mode = entry['Mode']
 
@@ -177,7 +177,7 @@ def process_human_channels_csv(entries, max_name_length=8):
             tone = ''
 
         print(
-            f'{memory},{name},{rx_frequency:.6f},{tx_frequency:.6f},{mode},{tone},{notes}'
+            f'{memory},{name},{rx_frequency},{round(tx_frequency, 4)},{mode},{tone},{notes}'
         )
         memory += 1
 
