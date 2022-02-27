@@ -185,10 +185,10 @@ Channels:
 # *** "??? Net" Wednesdays at 21:00 Eastern on VA3ARE VHF FM
 
 # - Name: VE3AAR VHF FM  # TBD
-#   Notes: Unknown
+#   Notes: Almonte Union Hall
 #   RxFrequency: 145.55
 #   TxFrequencyOffset: '-0.6'
-#   Mode: FM
+#   Mode: FM  # frequency shared with DMR & DSTAR
 #   CtcssEncode: 100.0
 #   CtcssDecode: 100.0
 

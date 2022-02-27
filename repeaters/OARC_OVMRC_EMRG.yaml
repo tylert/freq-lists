@@ -94,7 +94,7 @@ Channels:
   Notes: FN25FK Orleans VE3LC
   RxFrequency: 443.7
   TxFrequencyOffset: '+5.0'
-  Mode: FM  # frequency also shared with DMR, DSTAR and YSF
+  Mode: FM  # frequency also shared with DMR, DSTAR & YSF
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
@@ -122,7 +122,7 @@ Channels:
   Notes: Input to VE3RAM UHF FM
   RxFrequency: 448.7
   TxFrequencyOffset: '+0.0'
-  Mode: FM  # frequency also shared with DMR, DSTAR and YSF
+  Mode: FM  # frequency also shared with DMR, DSTAR & YSF
   CtcssEncode: 100.0
   CtcssDecode: None
 
