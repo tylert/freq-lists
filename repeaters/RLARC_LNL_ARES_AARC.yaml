@@ -65,6 +65,10 @@ Channels:
 # NFM @ 12.5 kHz should be used on all YSF repeaters with P25 link radios
 # =======================================================================
 
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# VE3HTN is in the process of being decommissioned
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 - Name: VE3KJG VHF FM  # Motorola MSF 5000
   Notes: FN15PB91SB Lavant
   RxFrequency: 146.64
@@ -213,7 +217,7 @@ Channels:
   RxFrequency: 449.3
   TxFrequencyOffset: '+0.0'
   Mode: FM
-  CtcssEncode: None
+  CtcssEncode: 100.0
   CtcssDecode: None
 
 - Name: ERA3AV VHF FM
@@ -221,5 +225,5 @@ Channels:
   RxFrequency: 147.87
   TxFrequencyOffset: '+0.0'
   Mode: FM  # frequency shared with YSF
-  CtcssEncode: None
+  CtcssEncode: 100.0
   CtcssDecode: None
