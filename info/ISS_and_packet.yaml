@@ -35,9 +35,9 @@ Channels:
 #   https://gitlab.com/emrg-ca/
 #   https://bitbucket.org/emrg-ca/
 
-# =========================================================================================
-# EMRG is in the process of shutting down... the following repeaters may be gone by 2026!!!
-# =========================================================================================
+# ======================================================================================
+# EMRG is in the process of shutting down... the following repeaters may be gone by 2026
+# ======================================================================================
 
 - Name: VE3OCE VHF PKT  # Motorola Radius/Spectra mobiles
   Notes: FN25EJ02OB Alta Vista at Randall Avenue / OFS Dispatch / OFS Station 35

@@ -70,6 +70,10 @@ Channels:
 
 # *** No FM nets, currently ***
 
+# =========================================
+# VE3MPC VHF FM is currently off the air!!!
+# =========================================
+
 - Name: VE3TWO VHF FM  # Yaesu DR-1X
   Notes: FN25G or FN25H Metcalfe VE3BOE
   RxFrequency: 147.3
@@ -77,10 +81,6 @@ Channels:
   Mode: FM  # frequency also shared with YSF
   CtcssEncode: 100.0
   CtcssDecode: 100.0
-
-# =========================================
-# VE3MPC VHF FM is currently off the air!!!
-# =========================================
 
 - Name: VE3MPC VHF FM  # Yaesu DR-1X
   Notes: FN25FK Orleans VE3LC
@@ -144,9 +144,9 @@ Channels:
 # VA3OFS VHF FM VA3OFS and UHF FM are not linked
 # None of the repeater sites are linked
 
-# =========================================================================================
-# EMRG is in the process of shutting down... the following repeaters may be gone by 2026!!!
-# =========================================================================================
+# ======================================================================================
+# EMRG is in the process of shutting down... the following repeaters may be gone by 2026
+# ======================================================================================
 
 - Name: VE3OCE VHF FM  # Motorola MTR 2000
   Notes: FN25EJ02OB Alta Vista at Randall Avenue / OFS Dispatch / OFS Station 35

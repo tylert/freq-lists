@@ -143,6 +143,14 @@ Channels:
   CtcssEncode: None
   CtcssDecode: None
 
+- Name: OPW3EV UHF FM
+  Notes: Input to VE3WPO UHF FM
+  RxFrequency: 447.4
+  TxFrequencyOffset: '+0.0'
+  Mode: FM
+  CtcssEncode: None
+  CtcssDecode: None
+
 #                            _        _    ____   ____
 #                           / \      / \  |  _ \ / ___|
 #                          / _ \    / _ \ | |_) | |
