@@ -10,14 +10,14 @@ Channels:
 # Tyler Tidman VA3DGN
 
 # - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
-#   Notes: FN15WA Perth VA3DGN
+#   Notes: FN15WA Perth at VA3DGN
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
 #   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only) -> Brandmeister
 #   ColorCode: 1
 
 # - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
-#   Notes: FN15WA Perth VA3DGN
+#   Notes: FN15WA Perth at VA3DGN
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
 #   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only) -> Brandmeister
@@ -35,7 +35,7 @@ Channels:
 
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3HOZ UHF DMR  # Motorola CDM 1550LS+ Rx & Tx + 100 W amp, STM32-DVM Rev?, Raspberry Pi 4B
-  Notes: FN15XG Carp VE3HOA
+  Notes: FN15XG Carp at VE3HOA
   RxFrequency: 442.3
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302108 / MMDVM (DMR only) -> Brandmeister
@@ -83,7 +83,7 @@ Channels:
   Notes: FN15NH13OV or FN15NH24WI Renfrew Kennellys Mountain
   RxFrequency: 443.6
   TxFrequencyOffset: '+5.0'
-  Mode: DMR  # CCS7 ID 302064 / MMDVM (DMR and DSTAR) -> Brandmeister
+  Mode: DMR  # CCS7 ID 302064 / MMDVM (DMR & DSTAR) -> Brandmeister
   ColorCode: 1
 
 - Name: VE3STP VHF DMR  # Motorola XPR 8300 + 60 W amp
