@@ -23,7 +23,12 @@ Channels:
 #   https://dxnews.com/forum/forum/special-event-stations/376-xm3carf-the-frontenac-amateur-radio-club
 #   http://www.geocities.ws/eocc_canada/  *** SPAM SITE !!! ***
 
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# VE3FRG VHF FM is a temporary, special event repeater only for RLCT
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
 # South Frontenac / Kingston
+# 445.1375 is a simplex YSF-only command-and-control link for VE3FRG
 
 - Name: VE3FRG VHF FM  # Yaesu DR-2X
   Notes: FN14RH61KG  # 250-foot tower
@@ -33,12 +38,14 @@ Channels:
   CtcssEncode: 203.5
   CtcssDecode: 203.5
 
-# 445.1375 is a simplex YSF-only command-and-control link for VE3FRG
+##############################################################################
+#   R E P E A T E R   I N P U T S   /   L I S T E N   O N   R E V E R S E    #
+##############################################################################
 
-- Name: GRF3EV VHF FM  # Yaesu DR-2X
+- Name: GRF3EV VHF FM
   Notes: Input of VE3FRG VHF FM
   RxFrequency: 146.205
   TxFrequencyOffset: '+0.0'
   Mode: FM  # frequency normally configured as YSF-only
-  CtcssEncode: None
+  CtcssEncode: 203.5
   CtcssDecode: None
