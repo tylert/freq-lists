@@ -150,7 +150,7 @@ def process_dmr_channels(entries, channel_stub):
 
 def process_human_channels_csv(entries, max_name_length=8):
     ''' '''
-    print('Memory,Name,Input,Output,Mode,Tone,Notes')
+    print('Memory,Name,Output,Input,Mode,Tone,Notes')
 
     memory = 1
     for entry in entries:
