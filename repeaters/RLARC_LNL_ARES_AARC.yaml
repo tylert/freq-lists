@@ -28,6 +28,26 @@ Channels:
   CtcssEncode: 151.4
   CtcssDecode: 151.4
 
+##############################################################################
+#   R E P E A T E R   I N P U T S   /   L I S T E N   O N   R E V E R S E    #
+##############################################################################
+
+- Name: RLRE3V VHF FM
+  Notes: Input to VE3RLR VHF FM
+  RxFrequency: 147.81
+  TxFrequencyOffset: '+0.0'
+  Mode: FM  # frequency shared with YSF
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: RLR3EV UHF FM
+  Notes: Input to VE3RLR UHF FM
+  RxFrequency: 447.75
+  TxFrequencyOffset: '+0.0'
+  Mode: FM  # frequency shared with YSF
+  CtcssEncode: None
+  CtcssDecode: None
+
 #                _     _   _ _          _    ____  _____ ____
 #               | |   | \ | | |        / \  |  _ \| ____/ ___|
 #               | |   |  \| | |       / _ \ | |_) |  _| \___ \
@@ -95,6 +115,34 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
+##############################################################################
+#   R E P E A T E R   I N P U T S   /   L I S T E N   O N   R E V E R S E    #
+##############################################################################
+
+- Name: GJK3EV VHF FM
+  Notes: Input to VE3KJG VHF FM
+  RxFrequency: 146.04
+  TxFrequencyOffset: '+0.0'
+  Mode: FM
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: LET3AV VHF FM
+  Notes: Input to VA3TEL VHF FM
+  RxFrequency: 144.63
+  TxFrequencyOffset: '+0.0'
+  Mode: FM  # frequency shared with YSF
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: XER3EV UHF FM
+  Notes: Input to VE3REX UHF FM
+  RxFrequency: 447.2
+  TxFrequencyOffset: '+0.0'
+  Mode: FM  # frequency shared with YSF
+  CtcssEncode: None
+  CtcssDecode: None
+
 #                            _        _    ____   ____
 #                           / \      / \  |  _ \ / ___|
 #                          / _ \    / _ \ | |_) | |
@@ -131,3 +179,23 @@ Channels:
   Mode: FM  # frequency shared with YSF
   CtcssEncode: 100.0
   CtcssDecode: 100.0
+
+##############################################################################
+#   R E P E A T E R   I N P U T S   /   L I S T E N   O N   R E V E R S E    #
+##############################################################################
+
+- Name: RAA3AV UHF FM
+  Notes: Input to VA3AAR UHF FM
+  RxFrequency: 449.3
+  TxFrequencyOffset: '+0.0'
+  Mode: FM
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: ERA3AV VHF FM
+  Notes: Input to VA3ARE VHF FM
+  RxFrequency: 147.87
+  TxFrequencyOffset: '+0.0'
+  Mode: FM  # frequency shared with YSF
+  CtcssEncode: None
+  CtcssDecode: None
