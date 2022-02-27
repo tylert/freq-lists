@@ -43,9 +43,11 @@ jq --slurp '.[0] * .[1]' tmp/00.json codeplugs/stubs.json > tmp/01.json
     --json_file tmp/09.json > tmp/10.json
 ./multi_outputter.py --format DMR --input_file info/Weather_info_VHF.yaml \
     --json_file tmp/10.json > tmp/11.json
+./multi_outputter.py --format DMR --input_file info/RLCT.yaml \
+    --json_file tmp/11.json > tmp/12.json
 
 # Convert it back to a binary codeplug
-dmrRadio jsonToCodeplug tmp/11.json tmp/Retevis_RT90.rdt
+dmrRadio jsonToCodeplug tmp/12.json tmp/Retevis_RT90.rdt
 
 #  ____ _____ _________
 # |  _ \_   _|___ / ___|
@@ -84,9 +86,11 @@ jq --slurp '.[0] * .[1]' tmp/00.json codeplugs/stubs.json > tmp/01.json
     --json_file tmp/09.json > tmp/10.json
 ./multi_outputter.py --format DMR --input_file info/Weather_info_VHF.yaml \
     --json_file tmp/10.json > tmp/11.json
+./multi_outputter.py --format DMR --input_file info/RLCT.yaml \
+    --json_file tmp/11.json > tmp/12.json
 
 # Convert it back to a binary codeplug
-dmrRadio jsonToCodeplug tmp/11.json tmp/Retevis_RT3S.rdt
+dmrRadio jsonToCodeplug tmp/12.json tmp/Retevis_RT3S.rdt
 
 # Clean up intermediate and generated files
 rm tmp/*.json
