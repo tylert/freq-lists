@@ -23,3 +23,22 @@ Happens on the 3rd or 4th weekend in November.
 * Official site: `Tall Pines`_
 
 .. _Tall Pines: http://tallpinesrally.com
+
+
+Running Things
+--------------
+
+::
+
+    make && source .venv/bin/activate
+
+    # Create new stock codeplugs for mobile and handheld radios
+    ./generate_codeplugs.sh
+
+    # Do some manual stuff in your desired CPS tool(s)
+
+    # Stamp a unique CCSS7 DMR ID onto each specific radio
+    ./personalize_codeplugs.sh
+
+    # Generate related channel information for our analog-only brethren
+    ./chirp_everything.sh
