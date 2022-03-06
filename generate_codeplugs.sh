@@ -3,6 +3,19 @@
 set -x
 mkdir -p tmp
 
+channel_data_files='
+repeaters/DMR.yaml
+repeaters/RLARC_LNL_ARES_AARC.yaml
+repeaters/OARC_OVMRC_EMRG.yaml
+repeaters/CRRA_RCARC.yaml
+info/Simplex_DMR_VHF.yaml
+info/Simplex_DMR_UHF.yaml
+info/Simplex_FM_VHF.yaml
+info/Simplex_FM_UHF.yaml
+info/GMRS_FRS_UHF.yaml
+info/RLCT.yaml
+'
+
 #  ____ _____ ___   ___
 # |  _ \_   _/ _ \ / _ \
 # | |_) || || (_) | | | |
@@ -19,35 +32,23 @@ sed -i 's/_.*"/"/' tmp/Retevis_RT90.json
 # XXX FIXME TODO  Remove this ^^^ hack after fixing the UUID bug!!!
 
 # Fix the default settings and fill in contact stubs and zone stubs
-cat tmp/Retevis_RT90.json | jq --from-file codeplugs/Retevis_RT90.jq > tmp/00.json
-jq --slurp '.[0] * .[1]' tmp/00.json codeplugs/stubs.json > tmp/01.json
+cat tmp/Retevis_RT90.json | jq --from-file codeplugs/Retevis_RT90.jq > tmp/0.json
+jq --slurp '.[0] * .[1]' tmp/0.json codeplugs/stubs.json > tmp/1.json
 
-# Populate the channel data
-./multi_outputter.py --format DMR --input_file repeaters/DMR.yaml \
-    --json_file tmp/01.json > tmp/02.json
-./multi_outputter.py --format DMR --input_file repeaters/RLARC_LNL_ARES_AARC.yaml \
-    --json_file tmp/02.json > tmp/03.json
-./multi_outputter.py --format DMR --input_file repeaters/OARC_OVMRC_EMRG.yaml \
-    --json_file tmp/03.json > tmp/04.json
-./multi_outputter.py --format DMR --input_file repeaters/CRRA_RCARC.yaml \
-    --json_file tmp/04.json > tmp/05.json
-./multi_outputter.py --format DMR --input_file info/Simplex_DMR_VHF.yaml \
-    --json_file tmp/05.json > tmp/06.json
-./multi_outputter.py --format DMR --input_file info/Simplex_DMR_UHF.yaml \
-    --json_file tmp/06.json > tmp/07.json
-./multi_outputter.py --format DMR --input_file info/Simplex_FM_VHF.yaml \
-    --json_file tmp/07.json > tmp/08.json
-./multi_outputter.py --format DMR --input_file info/Simplex_FM_UHF.yaml \
-    --json_file tmp/08.json > tmp/09.json
-./multi_outputter.py --format DMR --input_file info/GMRS_and_FRS_UHF.yaml \
-    --json_file tmp/09.json > tmp/10.json
-./multi_outputter.py --format DMR --input_file info/Weather_info_VHF.yaml \
-    --json_file tmp/10.json > tmp/11.json
-./multi_outputter.py --format DMR --input_file info/RLCT.yaml \
-    --json_file tmp/11.json > tmp/12.json
+# Populate the codeplug channels from the input data files
+index=1
+for input_file in ${channel_data_files}; do
+    ./multi_outputter.py --format DMR --input_file ${input_file} \
+        --json_file tmp/${index}.json > tmp/$((${index} + 1)).json
+    index=$((${index} + 1))
+done
 
 # Convert it back to a binary codeplug
-dmrRadio jsonToCodeplug tmp/12.json tmp/Retevis_RT90.rdt
+dmrRadio jsonToCodeplug tmp/${index}.json tmp/Retevis_RT90.rdt
+
+# Clean up intermediate and generated files
+rm tmp/*.json
+chmod 0644 tmp/*.rdt
 
 #  ____ _____ _________
 # |  _ \_   _|___ / ___|
@@ -62,36 +63,38 @@ sed -i 's/_.*"/"/' tmp/Retevis_RT3S.json
 # XXX FIXME TODO  Remove this ^^^ hack after fixing the UUID bug!!!
 
 # Fix the default settings and fill in contact stubs and zone stubs
-cat tmp/Retevis_RT3S.json | jq --from-file codeplugs/Retevis_RT3S.jq > tmp/00.json
-jq --slurp '.[0] * .[1]' tmp/00.json codeplugs/stubs.json > tmp/01.json
+cat tmp/Retevis_RT3S.json | jq --from-file codeplugs/Retevis_RT3S.jq > tmp/0.json
+jq --slurp '.[0] * .[1]' tmp/0.json codeplugs/stubs.json > tmp/1.json
 
-# Populate the channel data
-./multi_outputter.py --format DMR --input_file repeaters/DMR.yaml \
-    --json_file tmp/01.json > tmp/02.json
-./multi_outputter.py --format DMR --input_file repeaters/RLARC_LNL_ARES_AARC.yaml \
-    --json_file tmp/02.json > tmp/03.json
-./multi_outputter.py --format DMR --input_file repeaters/OARC_OVMRC_EMRG.yaml \
-    --json_file tmp/03.json > tmp/04.json
-./multi_outputter.py --format DMR --input_file repeaters/CRRA_RCARC.yaml \
-    --json_file tmp/04.json > tmp/05.json
-./multi_outputter.py --format DMR --input_file info/Simplex_DMR_VHF.yaml \
-    --json_file tmp/05.json > tmp/06.json
-./multi_outputter.py --format DMR --input_file info/Simplex_DMR_UHF.yaml \
-    --json_file tmp/06.json > tmp/07.json
-./multi_outputter.py --format DMR --input_file info/Simplex_FM_VHF.yaml \
-    --json_file tmp/07.json > tmp/08.json
-./multi_outputter.py --format DMR --input_file info/Simplex_FM_UHF.yaml \
-    --json_file tmp/08.json > tmp/09.json
-./multi_outputter.py --format DMR --input_file info/GMRS_and_FRS_UHF.yaml \
-    --json_file tmp/09.json > tmp/10.json
-./multi_outputter.py --format DMR --input_file info/Weather_info_VHF.yaml \
-    --json_file tmp/10.json > tmp/11.json
-./multi_outputter.py --format DMR --input_file info/RLCT.yaml \
-    --json_file tmp/11.json > tmp/12.json
+# Populate the codeplug channels from the input data files
+index=1
+for input_file in ${channel_data_files}; do
+    ./multi_outputter.py --format DMR --input_file ${input_file} \
+        --json_file tmp/${index}.json > tmp/$((${index} + 1)).json
+    index=$((${index} + 1))
+done
 
 # Convert it back to a binary codeplug
-dmrRadio jsonToCodeplug tmp/12.json tmp/Retevis_RT3S.rdt
+dmrRadio jsonToCodeplug tmp/${index}.json tmp/Retevis_RT3S.rdt
 
 # Clean up intermediate and generated files
 rm tmp/*.json
 chmod 0644 tmp/*.rdt
+
+#  _   _ _   _ __  __    _    _   _
+# | | | | | | |  \/  |  / \  | \ | |
+# | |_| | | | | |\/| | / _ \ |  \| |
+# |  _  | |_| | |  | |/ ___ \| |\  |
+# |_| |_|\___/|_|  |_/_/   \_\_| \_|
+
+index=1
+for input_file in ${channel_data_files}; do
+    if [[ 1 == ${index} ]]; then
+        ./multi_outputter.py --format HUMAN --input_file ${input_file} \
+            > tmp/HUMAN_digital.csv
+    else
+        ./multi_outputter.py --format HUMAN --input_file ${input_file} \
+            | tail --line='+2' >> tmp/HUMAN_digital.csv
+    fi
+    index=$((${index} + 1))
+done
