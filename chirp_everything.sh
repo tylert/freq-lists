@@ -26,7 +26,7 @@ for input_file in ${channel_data_files}; do
             > tmp/CHIRP.csv
     else
         ./multi_outputter.py --format CHIRP --input_file ${input_file} \
-            | tail --line='+2' >> tmp/CHIRP.csv
+            | tail -n '+2' >> tmp/CHIRP.csv
     fi
     index=$((${index} + 1))
 done
@@ -47,7 +47,7 @@ for input_file in ${channel_data_files}; do
             > tmp/HUMAN_analog.csv
     else
         ./multi_outputter.py --format HUMAN --input_file ${input_file} \
-            | tail --line='+2' >> tmp/HUMAN_analog.csv
+            | tail -n '+2' >> tmp/HUMAN_analog.csv
     fi
     index=$((${index} + 1))
 done
