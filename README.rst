@@ -5,25 +5,6 @@ This information is intended purely for educational purposes.  It is your
 responsibility to ensure that you and your equipment are behaving themselves
 properly.
 
-WVNET_
-
-.. _WVNET: https://wiki.brandmeister.network/index.php/TalkGroup/98638
-
-
-Events
-------
-
-
-Tall Pines Rally / Rally of the Tall Pines
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Happens on the 3rd or 4th weekend in November.
-
-* Volunteer info: TBD
-* Official site: `Tall Pines`_
-
-.. _Tall Pines: http://tallpinesrally.com
-
 
 Requirements
 ------------
@@ -53,7 +34,7 @@ Running Things
     # Create new stock codeplugs for mobile and handheld radios
     ./generate_codeplugs.sh
 
-    # Do some manual stuff in your desired CPS tool(s)
+    # Do some manual stuff using your favorite CPS tool(s) here
     # ...
 
     # Stamp a unique CCSS7 DMR ID onto each specific radio
@@ -69,7 +50,7 @@ Converting Existing Codeplugs To Templates
 ::
 
     # Export the binary codeplug as JSON and fix some values
-    dmrRadio codeplugToJSON codeplug.rdt before.json  # or use editcp
+    dmrRadio codeplugToJSON codeplug.rdt before.json
     cat before.json | jq --from-file Retevis_RT3S.jq > after.json
 
 
@@ -97,7 +78,6 @@ Generating Codeplugs From Templates
     }
     EOF
 
-    make CALLSIGN=VA3DGN RADIO=Retevis_RT3S  # just build the codeplug
     make write_codeplug                      # write the codeplug to the radio
     make write                               # write both the codeplug and contacts
 
@@ -117,7 +97,7 @@ Starting a New Codeplug
 ::
 
     # Create a brand new, empty codeplug
-    dmrRadio newCodeplug -model RT3S -freq "136-174_400-480" new.rdt  # or use editcp
+    dmrRadio newCodeplug -model RT3S -freq "400-480_136-174" new.rdt
 
     # Make it even emptier still
     dmrRadio codeplugToJSON new.rdt new.json
@@ -168,8 +148,6 @@ Hotspots
 ::
 
     VE3YXY -> 445.225
-    VA3DGN -> 434.100+
-    VA3VXN -> 434.200+
 
 * https://www.ailunce.com/blog/Set-up-MMDVM-DMR-Hotspot-to-work-with-Ailunce-HD1
 * https://www.ailunce.com/blog/How-to-set-Rx-Tx-Offset
@@ -261,7 +239,7 @@ Firmware and CPS
 * https://github.com/DaleFarnsworth-DMR  source for editcp, dmrRadio, libraries, etc.
 * https://dm3mat.darc.de/qdmr/  main page for qdmr
 * https://github.com/hmatuschek/qdmr  source for qdmr
-* https://opengd77.com/viewtopic.php?f=18&t=2002
+* https://opengd77.com/viewtopic.php?f=18&t=2002  replacement Retevis RT90 / TYT MD-9600 firmware
 * https://opengd77.com/viewtopic.php?f=12&t=1486
 * https://m17project.org/
 * https://openrtx.org/#/  main page for OpenRTX
@@ -270,7 +248,7 @@ Firmware and CPS
 * https://github.com/LibreDMR/OpenGD77_UserGuide/blob/master/OpenGD77_User_Guide.md
 * http://md380.org/
 * https://github.com/travisgoodspeed/md380tools
-* https://raw.githubusercontent.com/tylert/pocorgtfo/gh-pages/pocorgtfo10.pdf
+* https://raw.githubusercontent.com/tylert/pocorgtfo/gh-pages/pocorgtfo10.pdf  reverse-engineering
 
 
 Other Links
@@ -279,3 +257,18 @@ Other Links
 * https://shapeshed.com/jq-json/
 * https://programminghistorian.org/en/lessons/json-and-jq
 * https://stackoverflow.com/questions/19529688/how-to-merge-2-json-objects-from-2-files-using-jq
+
+
+Events
+------
+
+
+Tall Pines Rally / Rally of the Tall Pines
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Happens on the 3rd or 4th weekend in November.
+
+* Volunteer info: TBD
+* Official site: `Tall Pines`_
+
+.. _Tall Pines: http://tallpinesrally.com
