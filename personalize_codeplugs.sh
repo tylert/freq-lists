@@ -82,5 +82,5 @@ dmrRadio jsonToCodeplug tmp/VA3VXN-6.json tmp/VA3VXN-6.rdt
 dmrRadio jsonToCodeplug tmp/VA3VXN-5.json tmp/VA3VXN-5.rdt
 
 # Clean up intermediate and generated files
-rm tmp/*.json
+rm -fv tmp/*.json
 chmod 0644 tmp/*.rdt
