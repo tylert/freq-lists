@@ -47,7 +47,7 @@ done
 dmrRadio jsonToCodeplug tmp/${index}.json tmp/Retevis_RT90.rdt
 
 # Clean up intermediate and generated files
-rm tmp/*.json
+rm -fv tmp/*.json
 chmod 0644 tmp/*.rdt
 
 #  ____ _____ _________
@@ -78,7 +78,7 @@ done
 dmrRadio jsonToCodeplug tmp/${index}.json tmp/Retevis_RT3S.rdt
 
 # Clean up intermediate and generated files
-rm tmp/*.json
+rm -fv tmp/*.json
 chmod 0644 tmp/*.rdt
 
 #  _   _ _   _ __  __    _    _   _
