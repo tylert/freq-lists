@@ -40,6 +40,9 @@ done
 # XXX FIXME TODO  https://realpython.com/openpyxl-excel-spreadsheets-python/
 # XXX FIXME TODO  https://openpyxl.readthedocs.io/en/stable/styles.html#edit-page-setup
 
+# XXX FIXME TODO  Fix the left-most column so the count is sequential starting
+#                 from 1 to n!!!
+
 index=1
 for input_file in ${channel_data_files}; do
     if [[ 1 == ${index} ]]; then
