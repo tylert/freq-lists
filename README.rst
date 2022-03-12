@@ -163,9 +163,12 @@ configured as Always for both Admit Criteria and Always or Follow TX for In
 Call Criteria.
 
 
-Repeaters and Transcoding
--------------------------
+Linking and Transcoding
+-----------------------
 
+* https://n5amd.com/digital-radio-how-tos/build-digital-voice-transcoding-server/
+* https://g0wcz.nodestone.io/building-a-transcoder-for-dmr-d-star/
+* https://ad6dm.net/log/wp-content/uploads/2019/05/How-to-Create-a-Multimode-Digital-Voice-Reflector.pdf
 * https://www.chrishoodblog.com/building-a-dmr-repeater-using-bridgecom-mobiles-pt1/
 * https://www.chrishoodblog.com/make-your-own-dmr-server/
 * https://sin.groups.io/g/main/message/355
@@ -236,19 +239,20 @@ Firmware and CPS
 ----------------
 
 * https://www.farnsworth.org/dale/codeplug/editcp/  main page for Editcp
-* https://github.com/DaleFarnsworth-DMR  source for editcp, dmrRadio, libraries, etc.
+* https://github.com/DaleFarnsworth-DMR  source code for editcp, dmrRadio, libraries, etc.
 * https://dm3mat.darc.de/qdmr/  main page for qdmr
-* https://github.com/hmatuschek/qdmr  source for qdmr
-* https://opengd77.com/viewtopic.php?f=18&t=2002  replacement Retevis RT90 / TYT MD-9600 firmware
+* https://github.com/hmatuschek/qdmr  source code for qdmr
+* https://opengd77.com/viewtopic.php?f=18&t=2002  replacement firmware for Retevis RT90 / TYT MD-9600
 * https://opengd77.com/viewtopic.php?f=12&t=1486
-* https://m17project.org/
+* https://m17project.org/  main page for M17 Project
 * https://openrtx.org/#/  main page for OpenRTX
 * https://github.com/OpenRTX  OpenRTX firmware, dmrconfig tool, etc.
-* https://github.com/open-ham/OpenGD77
-* https://github.com/LibreDMR/OpenGD77_UserGuide/blob/master/OpenGD77_User_Guide.md
-* http://md380.org/
-* https://github.com/travisgoodspeed/md380tools
-* https://raw.githubusercontent.com/tylert/pocorgtfo/gh-pages/pocorgtfo10.pdf  reverse-engineering
+* https://github.com/open-ham/OpenGD77  clone of closed-source (ironic) OpenGD77 project
+* https://github.com/LibreDMR/OpenGD77_UserGuide/blob/master/OpenGD77_User_Guide.md  user guide for OpenGD77
+* http://md380.org/  main page for MD-380 Tools
+* https://github.com/travisgoodspeed/md380tools  source code for MD-380 Tools
+* https://raw.githubusercontent.com/tylert/pocorgtfo/gh-pages/pocorgtfo10.pdf  reverse-engineering info
+* https://www.pistar.uk/index.php  main page for Pi-Star
 
 
 Other Links
