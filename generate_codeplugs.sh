@@ -94,7 +94,7 @@ for input_file in ${channel_data_files}; do
             > tmp/HUMAN_digital.csv
     else
         ./multi_outputter.py --format HUMAN --input_file ${input_file} \
-            | tail --line='+2' >> tmp/HUMAN_digital.csv
+            | tail -n '+2' >> tmp/HUMAN_digital.csv
     fi
     index=$((${index} + 1))
 done
