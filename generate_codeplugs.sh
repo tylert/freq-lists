@@ -17,6 +17,7 @@ info/Simplex_FM_VHF.yaml
 info/Simplex_FM_UHF.yaml
 info/GMRS_FRS_UHF.yaml
 info/RLCT.yaml
+info/RLCT_reverse.yaml
 '
 
 #  ____ _____ ___   ___
