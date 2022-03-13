@@ -8,6 +8,9 @@ repeaters/DMR.yaml
 repeaters/RLARC_LNL_ARES_AARC.yaml
 repeaters/OARC_OVMRC_EMRG.yaml
 repeaters/CRRA_RCARC.yaml
+repeaters/RLARC_LNL_ARES_AARC_reverse.yaml
+repeaters/OARC_OVMRC_EMRG_reverse.yaml
+repeaters/CRRA_RCARC_reverse.yaml
 info/Simplex_DMR_VHF.yaml
 info/Simplex_DMR_UHF.yaml
 info/Simplex_FM_VHF.yaml

@@ -151,7 +151,7 @@ Channels:
 #   https://xrf196.spdns.org/
 
 - Name: VA3ODG UHF DMR  # TBD
-  Notes: FN25DJ78GT 180 Argyle Avenue at YMCA-YWCA
+  Notes: FN25DJ78GT 180 Argyle Avenue YMCA-YWCA
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'
   Mode: DMR  # CCS7 ID 302065 / MMDVM (DMR & DSTAR) -> Brandmeister
