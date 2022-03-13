@@ -33,13 +33,9 @@ Running Things
     # Initial setup
     make && source .venv/bin/activate
 
-    # Create new stock codeplugs for mobile and handheld radios
-    ./generate_codeplugs.sh
-
-    # Do some more stuff in the codeplugs using your favourite CPS tool(s)
-
-    # Generate related channel information for our analog-only brethren
-    ./generate_csv_files.sh
+    # Create new stock codeplugs and CSV files for mobile and handheld radios
+    ./generate_rdt.sh
+    ./generate_csv.sh
 
 
 Converting Existing Codeplugs To Templates
@@ -76,8 +72,8 @@ Generating Codeplugs From Templates
     }
     EOF
 
-    make write_codeplug                      # write the codeplug to the radio
-    make write                               # write both the codeplug and contacts
+    make write_codeplug  # write the codeplug to the radio
+    make write           # write both the codeplug and contacts
 
 
 Updating Contacts Database

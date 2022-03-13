@@ -3,22 +3,25 @@
 # set -x
 mkdir -p tmp
 
-channel_data_files='
+input_files='
 repeaters/DMR.yaml
-repeaters/RLARC_LNL_ARES_AARC.yaml
-repeaters/OARC_OVMRC_EMRG.yaml
-repeaters/CRRA_RCARC.yaml
+repeaters/RLARC_LNL_ARES_AARC_normal.yaml
+repeaters/OARC_OVMRC_EMRG_normal.yaml
+repeaters/CRRA_RCARC_normal.yaml
 repeaters/RLARC_LNL_ARES_AARC_reverse.yaml
 repeaters/OARC_OVMRC_EMRG_reverse.yaml
 repeaters/CRRA_RCARC_reverse.yaml
+info/RLCT_normal.yaml
+info/RLCT_reverse.yaml
 info/Simplex_DMR_VHF.yaml
 info/Simplex_DMR_UHF.yaml
 info/Simplex_FM_VHF.yaml
 info/Simplex_FM_UHF.yaml
 info/GMRS_FRS_UHF.yaml
-info/RLCT.yaml
-info/RLCT_reverse.yaml
+info/Weather_info_VHF.yaml
 '
+
+human_output_file='tmp/HUMAN_rdt.csv'
 
 #  ____ _____ ___   ___
 # |  _ \_   _/ _ \ / _ \
@@ -41,7 +44,7 @@ jq --slurp '.[0] * .[1]' tmp/0.json codeplugs/stubs.json > tmp/1.json
 
 # Populate the codeplug channels from the input data files
 index=1
-for input_file in ${channel_data_files}; do
+for input_file in ${input_files}; do
     ./multi_outputter.py --format DMR --input_file ${input_file} \
         --json_file tmp/${index}.json > tmp/$((${index} + 1)).json
     index=$((${index} + 1))
@@ -72,7 +75,7 @@ jq --slurp '.[0] * .[1]' tmp/0.json codeplugs/stubs.json > tmp/1.json
 
 # Populate the codeplug channels from the input data files
 index=1
-for input_file in ${channel_data_files}; do
+for input_file in ${input_files}; do
     ./multi_outputter.py --format DMR --input_file ${input_file} \
         --json_file tmp/${index}.json > tmp/$((${index} + 1)).json
     index=$((${index} + 1))
@@ -95,14 +98,14 @@ chmod 0644 tmp/*.rdt
 # XXX FIXME TODO  https://openpyxl.readthedocs.io/en/stable/styles.html#edit-page-setup
 
 index=1
-for input_file in ${channel_data_files}; do
+for input_file in ${input_files}; do
     if [[ 1 == ${index} ]]; then
         ./multi_outputter.py --format HUMAN --input_file ${input_file} \
-            --start_index 1 > tmp/HUMAN_codeplugs.csv
+            --start_index 1 > ${human_output_file}
     else
         ./multi_outputter.py --format HUMAN --input_file ${input_file} \
-            --start_index $(wc -l tmp/HUMAN_codeplugs.csv | cut -d' ' -f1) \
-            | tail -n '+2' >> tmp/HUMAN_codeplugs.csv
+            --start_index $(wc -l ${human_output_file} | cut -d' ' -f1) \
+            | tail -n '+2' >> ${human_output_file}
     fi
     index=$((${index} + 1))
 done
