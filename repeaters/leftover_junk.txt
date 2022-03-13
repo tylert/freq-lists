@@ -8,11 +8,9 @@ Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater 
 147.2400,147.84,600 kHz,#NAME?,DV,VA3RDD,None,94.8 Hz,94.8 Hz,23,Both N,Off,5 kHz, ,,Talk Channel,Off,0,,,
 444.8000,449.8,5.00 MHz,#NAME?,DV,VA3RDD ,None,94.8 Hz,94.8 Hz,23,Both N,Off,5 kHz, ,,Status Channel,Off,0,,,
 147.240+ Smiths Falls ON  VA3RDD  DStar
+11,VA3RDD-C,147.24,-,0.6,TSQL,100,100,23,NN,FM,5,,,,,,
 
 Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment
-145.55,144.95,600 kHz,-DUP,,DV,D-Star VE3AAR C,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,CQCQCQ
-145.55,144.95,600 kHz,-DUP,,DV,D-Star Union V,,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,Off,0,CQCQCQ
-145.55 VA3AAR FM 100.0
 VA3AAR-B,444.1,+,5,,,,23,NN,DV,25,,,CQCQCQ,VA3AAR B,VA3AAR G
 444.1,449.1,5.00 MHz,+DUP,,DV,VA3AAR B,,None,88.5 Hz,88.5 Hz,23,Both N,Off,25 kHz,Off
 
@@ -26,6 +24,14 @@ VA3JWO,147.3,+,0.6,TSQL,118.8,118.8,23,NN,FM
 VE3NGR,444.25,+,0,Tone,103.5,103.5,23,NN,FM
 VA3DSP,444.825,+,5,Tone,136.5,136.5,23,NN,FM
 444.825+ Ottawa ON   VA3DSP 100.0
+
+20,VE3KBR,146.94,-,0.6,Tone,151.4,151.4,23,NN,FM,5,,
+22,VE3RIX,145.45,-,0.6,Tone,151.4,151.4,23,NN,FM,5,,
+26,VE2REH,145.33,-,0.6,Tone,110.9,110.9,23,NN,FM,5,,
+28,VA3ODG,145.53,+,0.6,,88.5,88.5,23,NN,FM,5,,
+36,VE3ORF,444.55,+,5,Tone,151.4,151.4,23,NN,FM,25,,DSTA/DMR http://ve3stp.ddns.net:44480 linked to XLX196,,,
+37,VA3DSP,444.825,+,5,Tone,136.5,136.5,23,NN,FM,25,,,,,
+38,VE3TST,444.125,+,5,,136.5,136.5,23,NN,FM,25,,,,,
 
 145.530- Ottawa ON   VA3ODG DStar
 444.850+ Ottawa (Argyle St YMCA) ON VE3ODG DStar
@@ -48,7 +54,6 @@ VE3KBR,146.94,-,0.6,Tone,151.4,151.4,23,NN,FM
 146.940- Kingston (McAdoo Lane) ON VE3KBR   2750 151.4
 
 Channel Number,Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Operating Mode,Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Bank,Bank Channel Number,Comment,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign
-145.5500,144.95,600 kHz,#NAME?,DV,D-Star Union V,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,A: ,,,Off,0,CQCQCQ,,
 444.8000,449.8,5.00 MHz,#NAME?,DV,DSTAR Rideau U,None,88.5 Hz,88.5 Hz,23,Both N,Off,10 kHz,A: ,,,Off,0,,,
 443.2000,448.2,5.00 MHz,#NAME?,FM,Arnprior Primary: Fire Hall,Tone,114.8 Hz,114.8 Hz,23,Both N,Off,25 kHz, ,,,Off,0,,,
 147.2700,147.87,600 kHz,#NAME?,FM,VA3WJC Almonte,Tone,100.0 Hz,88.5 Hz,23,Both N,Off,5 kHz,A: ,,,Off,0,,,
