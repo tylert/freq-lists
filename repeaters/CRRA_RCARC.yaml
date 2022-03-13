@@ -38,26 +38,6 @@ Channels:
 #   CtcssEncode: 114.8
 #   CtcssDecode: None
 
-##############################################################################
-#   R E P E A T E R   I N P U T S   /   L I S T E N   O N   R E V E R S E    #
-##############################################################################
-
-- Name: PTS3EV VHF FM
-  Notes: Input to VE3STP VHF FM
-  RxFrequency: 146.46
-  TxFrequencyOffset: '+0.0'
-  Mode: FM
-  CtcssEncode: 114.8
-  CtcssDecode: None
-
-- Name: PTS3EV 2VHF FM
-  Notes: Input to VE3STP 2VHF FM
-  RxFrequency: 144.79
-  TxFrequencyOffset: '+0.0'
-  Mode: FM  # frequency also shared with DMR
-  CtcssEncode: 114.8
-  CtcssDecode: None
-
 #                       ____   ____    _    ____   ____
 #                      |  _ \ / ___|  / \  |  _ \ / ___|
 #                      | |_) | |     / _ \ | |_) | |
@@ -110,50 +90,6 @@ Channels:
   Notes: FN16FD Point Alexander / Deep River
   RxFrequency: 146.79
   TxFrequencyOffset: '-0.6'
-  Mode: FM
-  CtcssEncode: None
-  CtcssDecode: None
-
-##############################################################################
-#   R E P E A T E R   I N P U T S   /   L I S T E N   O N   R E V E R S E    #
-##############################################################################
-
-- Name: RRZ3EV VHF FM
-  Notes: Input to VE3ZRR VHF FM
-  RxFrequency: 147.72
-  TxFrequencyOffset: '+0.0'
-  Mode: FM
-  CtcssEncode: None
-  CtcssDecode: None
-
-- Name: RCU3EV VHF FM
-  Notes: Input to VE3UCR VHF FM
-  RxFrequency: 144.83
-  TxFrequencyOffset: '+0.0'
-  Mode: FM
-  CtcssEncode: None
-  CtcssDecode: None
-
-- Name: RRN3EV VHF FM
-  Notes: Input to VE3NRR VHF FM
-  RxFrequency: 146.16
-  TxFrequencyOffset: '+0.0'
-  Mode: FM
-  CtcssEncode: None
-  CtcssDecode: None
-
-- Name: RRN3EV UHF FM
-  Notes: Input to VE3NRR UHF FM
-  RxFrequency: 443.025
-  TxFrequencyOffset: '+0.0'
-  Mode: FM
-  CtcssEncode: None
-  CtcssDecode: None
-
-- Name: WBR3AV VHF FM
-  Notes: Input to VA3RBW VHF FM
-  RxFrequency: 146.19
-  TxFrequencyOffset: '+0.0'
   Mode: FM
   CtcssEncode: None
   CtcssDecode: None
