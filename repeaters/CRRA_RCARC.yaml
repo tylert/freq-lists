@@ -67,6 +67,12 @@ Channels:
 #   http://rcarc.ca/
 #   http://www.rcarc.ca/RCARC/RCARC%20Repeaters.htm
 
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# VE3NRR VHF FM is IRLP Node 2520
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+# VE3ZRR VHF FM and VE3NRR VHF FM are linked
+
 - Name: VE3ZRR VHF FM  # TBD
   Notes: FN15PL Renfrew
   RxFrequency: 147.12
@@ -83,7 +89,7 @@ Channels:
   CtcssEncode: None
   CtcssDecode: None
 
-- Name: VE3NRR VHF FM  # IRLP 2520 - TBD
+- Name: VE3NRR VHF FM  # TBD
   Notes: FN15JT Pembroke
   RxFrequency: 146.76
   TxFrequencyOffset: '-0.6'
@@ -91,10 +97,10 @@ Channels:
   CtcssEncode: None
   CtcssDecode: None
 
-- Name: VE3NRR UHF FM  # not connected to IRLP - TBD
+- Name: VE3NRR UHF FM  # TBD
   Notes: FN15JT Pembroke
   RxFrequency: 448.025
-  TxFrequencyOffset: '-5.0'  # a negative offset!?!
+  TxFrequencyOffset: '-5.0'
   Mode: FM
   CtcssEncode: None
   CtcssDecode: None
