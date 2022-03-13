@@ -86,21 +86,22 @@ def process_dmr_channels(entries, channel_stub):
         # Use 'Mode' to determine 'Bandwidth' and 'ChannelMode'.  Do this
         # before merging the new channel entry into the expected output in case
         # we are using a different bandwidth, say.
-        if entry['Mode'] == 'DMR':
-            output['Bandwidth'] = '12.5'
-            output['ChannelMode'] = 'Digital'
-            del entry['Mode']
-        elif entry['Mode'] == 'NFM':
-            output['Bandwidth'] = '12.5'
-            output['ChannelMode'] = 'Analog'
-            del entry['Mode']
-        elif entry['Mode'] == 'FM':
-            output['Bandwidth'] = '25'
-            output['ChannelMode'] = 'Analog'
-            del entry['Mode']
-        else:
-            # AM?  DV?
-            raise ValueError('Unknown mode encountered!')
+        match entry['Mode']:
+            case 'DMR':
+                output['Bandwidth'] = '12.5'
+                output['ChannelMode'] = 'Digital'
+                del entry['Mode']
+            case 'NFM':
+                output['Bandwidth'] = '12.5'
+                output['ChannelMode'] = 'Analog'
+                del entry['Mode']
+            case 'FM':
+                output['Bandwidth'] = '25'
+                output['ChannelMode'] = 'Analog'
+                del entry['Mode']
+            case _:
+                # AM?  DV?  Something else?
+                raise ValueError('Unknown mode encountered!')
 
         # Merge the new channel entry into the expected output.
         output.update(entry)
@@ -172,7 +173,9 @@ def process_human_channels_csv(entries, max_name_length=8, start_index=1):
 
         # If there's a tone, it's usually for a good reason (e.g. "AMS mode" on YSF).
         if 'CtcssEncode' in entry.keys() and entry['CtcssEncode'] is not None:
-            tone = entry['CtcssEncode']
+            tone = f"{entry['CtcssEncode']} Hz"
+        elif 'ColorCode' in entry.keys() and entry['ColorCode'] is not None:
+            tone = f"CC {entry['ColorCode']}"
         else:
             tone = ''
 
