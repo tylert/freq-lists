@@ -54,40 +54,42 @@ Channels:
 
 # VE3ZRR VHF FM and VE3NRR VHF FM are linked
 
-- Name: VE3ZRR VHF FM  # TBD
-  Notes: FN15PL Renfrew
-  RxFrequency: 147.12
-  TxFrequencyOffset: '+0.6'
-  Mode: FM
-  CtcssEncode: None
-  CtcssDecode: None
-
-- Name: VE3UCR VHF FM  # TBD
-  Notes: FN15IK Foymount
-  RxFrequency: 145.43
-  TxFrequencyOffset: '-0.6'
-  Mode: FM
-  CtcssEncode: None
-  CtcssDecode: None
-
-- Name: VE3NRR VHF FM  # TBD
-  Notes: FN15JT Pembroke
+- Name: VE3NRR VHF FM  # MICOR
+  Notes: FN15KU00DI Pembroke
   RxFrequency: 146.76
   TxFrequencyOffset: '-0.6'
   Mode: FM
   CtcssEncode: None
   CtcssDecode: None
 
-- Name: VE3NRR UHF FM  # TBD
-  Notes: FN15JT Pembroke
+- Name: VE3NRR UHF FM  # GE MASTR III
+  Notes: FN15KU00DI Pembroke
   RxFrequency: 448.025
   TxFrequencyOffset: '-5.0'
   Mode: FM
   CtcssEncode: None
   CtcssDecode: None
 
-- Name: VA3RBW VHF FM  # TBD
-  Notes: FN16FD Point Alexander / Deep River
+# XXX FIXME TODO  Find out actual location of this repeater VE3ZRR
+
+- Name: VE3ZRR VHF FM  # Motorola MSR 2000
+  Notes: FN15PM Renfrew on Pinnacle Hill at the MyFM site
+  RxFrequency: 147.12
+  TxFrequencyOffset: '+0.6'
+  Mode: FM
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: VE3UCR VHF FM  # Motorola MSR 2000
+  Notes: FN15IK33LD Foymount
+  RxFrequency: 145.43
+  TxFrequencyOffset: '-0.6'
+  Mode: FM
+  CtcssEncode: None
+  CtcssDecode: None
+
+- Name: VA3RBW VHF FM  # Motorola MSR 2000
+  Notes: FN16FD10VJ Point Alexander / Deep River
   RxFrequency: 146.79
   TxFrequencyOffset: '-0.6'
   Mode: FM
