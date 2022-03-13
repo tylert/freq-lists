@@ -11,8 +11,10 @@ Requirements
 
 You must have the following tools installed:
 
-* (REQUIRED) editcp_ 1.0.23 or newer (and/or just the "dmrRadio_" binary 1.0.23 or newer) for exporting/importing codeplugs to/from JSON
-* (SUGGESTED) jq_ for working with JSON payloads
+* (REQUIRED) Python 3.10.x or newer;  for using the "multi_outputter" script for processing the input data files
+* (REQUIRED) dmrRadio_ binary 1.0.23 or newer;  for exporting/importing codeplugs to/from JSON and generating blank codeplugs
+* (SUGGESTED) editcp_ 1.0.23 or newer;  for further editing codeplugs
+* (REQUIRED) jq_;  for working with JSON payloads
 
 .. _editcp: https://github.com/DaleFarnsworth-DMR/editcp
 .. _dmrRadio: https://github.com/DaleFarnsworth-DMR/dmrRadio
@@ -34,14 +36,10 @@ Running Things
     # Create new stock codeplugs for mobile and handheld radios
     ./generate_codeplugs.sh
 
-    # Do some manual stuff using your favorite CPS tool(s) here
-    # ...
-
-    # Stamp a unique CCSS7 DMR ID onto each specific radio
-    ./personalize_codeplugs.sh
+    # Do some more stuff in the codeplugs using your favourite CPS tool(s)
 
     # Generate related channel information for our analog-only brethren
-    ./chirp_everything.sh
+    ./generate_csv_files.sh
 
 
 Converting Existing Codeplugs To Templates

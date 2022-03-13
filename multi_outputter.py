@@ -148,11 +148,11 @@ def process_dmr_channels(entries, channel_stub):
     return channels
 
 
-def process_human_channels_csv(entries, max_name_length=8):
+def process_human_channels_csv(entries, max_name_length=8, start_index=1):
     ''' '''
     print('Memory,Name,Output,Input,Mode,Tone,Notes')
 
-    memory = 1
+    memory = start_index
     for entry in entries:
         name = entry['Name']
         rx_frequency = entry['RxFrequency']
@@ -164,8 +164,8 @@ def process_human_channels_csv(entries, max_name_length=8):
             notes = ''
 
         if 'TxFrequencyOffset' in entry.keys():
-            tx_frequency = float(rx_frequency) + float(
-                entry['TxFrequencyOffset']
+            tx_frequency = round(
+                float(rx_frequency) + float(entry['TxFrequencyOffset']), 4
             )
         else:
             tx_frequency = float(rx_frequency)
@@ -176,9 +176,7 @@ def process_human_channels_csv(entries, max_name_length=8):
         else:
             tone = ''
 
-        print(
-            f'{memory},{name},{rx_frequency},{round(tx_frequency, 4)},{mode},{tone},{notes}'
-        )
+        print(f'{memory},{name},{rx_frequency},{tx_frequency},{mode},{tone},{notes}')
         memory += 1
 
 
@@ -200,9 +198,9 @@ def sanitize_chirp_channel_name(name, length=8):
     return new_name
 
 
-def process_chirp_channels_csv(entries, max_name_length=8):
+def process_chirp_channels_csv(entries, max_name_length=8, start_index=1):
     ''' '''
-    # For some bizarre reason, the CHIRP GUI has different column header names than the CSV files do...
+    # WARNING:  The CHIRP GUI has different column header names than its CSV files do
 
     # https://chirp.danplanet.com/projects/chirp/wiki/Home  # Supported radios
     # https://chirp.danplanet.com/projects/chirp/wiki/MemoryEditorColumns  # Column descriptions
@@ -212,7 +210,7 @@ def process_chirp_channels_csv(entries, max_name_length=8):
         'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE'
     )
 
-    memory = 1
+    memory = start_index
     for entry in entries:
         name = sanitize_chirp_channel_name(entry['Name'], max_name_length)
         frequency = entry['RxFrequency']
@@ -337,9 +335,9 @@ def process_rt_systems_channels_csv(entries, max_name_length=8):
             elif entry['TxFrequencyOffset'][1:] == '5.0':
                 offset_frequency = '5.00 MHz'
             if sign == '+':
-                tx_frequency = float(rx_frequency) + float(offset)
+                tx_frequency = round(float(rx_frequency) + float(offset), 4)
             elif sign == '-':
-                tx_frequency = float(rx_frequency) - float(offset)
+                tx_frequency = round(float(rx_frequency) - float(offset), 4)
         else:
             sign = '+'
             duplex = 'Simplex'
@@ -435,7 +433,13 @@ def process_rt_systems_channels_csv(entries, max_name_length=8):
     default=8,
     help='Maximum length of channel names (default 8).',
 )
-def main(format, input_file, json_file, max_name_length):
+@click.option(
+    '--start_index',
+    '-s',
+    default=1,
+    help='Start index counter at specified value (default 1)',
+)
+def main(format, input_file, json_file, max_name_length, start_index):
     ''' '''
     # XXX FIXME TODO  Allow the use of STDIN as the input "file"!!!
     with open(input_file) as f:
@@ -464,11 +468,15 @@ def main(format, input_file, json_file, max_name_length):
             print(json.dumps(codeplug, indent=2, sort_keys=True))
         case 'HUMAN':
             process_human_channels_csv(
-                entries=payload['Channels'], max_name_length=max_name_length
+                entries=payload['Channels'],
+                max_name_length=max_name_length,
+                start_index=start_index,
             )
         case 'CHIRP':
             process_chirp_channels_csv(
-                entries=payload['Channels'], max_name_length=max_name_length
+                entries=payload['Channels'],
+                max_name_length=max_name_length,
+                start_index=start_index,
             )
         case 'RT':
             # XXX FIXME TODO  Test the RT Systems output!!!

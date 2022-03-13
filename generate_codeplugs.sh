@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -x
+# set -x
 mkdir -p tmp
 
 channel_data_files='
@@ -50,7 +50,7 @@ done
 dmrRadio jsonToCodeplug tmp/${index}.json tmp/Retevis_RT90.rdt
 
 # Clean up intermediate and generated files
-rm -fv tmp/*.json
+rm -f tmp/*.json
 chmod 0644 tmp/*.rdt
 
 #  ____ _____ _________
@@ -81,7 +81,7 @@ done
 dmrRadio jsonToCodeplug tmp/${index}.json tmp/Retevis_RT3S.rdt
 
 # Clean up intermediate and generated files
-rm -fv tmp/*.json
+rm -f tmp/*.json
 chmod 0644 tmp/*.rdt
 
 #  _   _ _   _ __  __    _    _   _
@@ -90,14 +90,18 @@ chmod 0644 tmp/*.rdt
 # |  _  | |_| | |  | |/ ___ \| |\  |
 # |_| |_|\___/|_|  |_/_/   \_\_| \_|
 
+# XXX FIXME TODO  https://realpython.com/openpyxl-excel-spreadsheets-python/
+# XXX FIXME TODO  https://openpyxl.readthedocs.io/en/stable/styles.html#edit-page-setup
+
 index=1
 for input_file in ${channel_data_files}; do
     if [[ 1 == ${index} ]]; then
         ./multi_outputter.py --format HUMAN --input_file ${input_file} \
-            | sed '2,$ s/^[0-9]*,/,/' > tmp/HUMAN_digital.csv
+            --start_index 1 > tmp/HUMAN_codeplugs.csv
     else
         ./multi_outputter.py --format HUMAN --input_file ${input_file} \
-            | tail -n '+2' | sed '1,$ s/^[0-9]*,/,/' >> tmp/HUMAN_digital.csv
+            --start_index $(wc -l tmp/HUMAN_codeplugs.csv | cut -d' ' -f1) \
+            | tail -n '+2' >> tmp/HUMAN_codeplugs.csv
     fi
     index=$((${index} + 1))
 done
