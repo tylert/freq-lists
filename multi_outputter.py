@@ -151,9 +151,9 @@ def process_dmr_channels(entries, channel_stub):
 
 def process_human_channels_csv(entries, max_name_length=8, start_index=1):
     ''' '''
-    print('Memory,Name,Output,Input,Mode,Tone,Notes')
+    print('Channel,Name,Mode,Output,Input,Access,Notes')
 
-    memory = start_index
+    channel = start_index
     for entry in entries:
         name = entry['Name']
         rx_frequency = entry['RxFrequency']
@@ -172,15 +172,23 @@ def process_human_channels_csv(entries, max_name_length=8, start_index=1):
             tx_frequency = float(rx_frequency)
 
         # If there's a tone, it's usually for a good reason (e.g. "AMS mode" on YSF).
-        if 'CtcssEncode' in entry.keys() and entry['CtcssEncode'] is not None:
-            tone = f"{entry['CtcssEncode']} Hz"
-        elif 'ColorCode' in entry.keys() and entry['ColorCode'] is not None:
-            tone = f"CC {entry['ColorCode']}"
+        if (
+            'CtcssEncode' in entry.keys()
+            and entry['CtcssEncode'] is not None
+            and entry['CtcssEncode'] != 'None'
+        ):
+            access = f"{entry['CtcssEncode']} Hz"
+        elif (
+            'ColorCode' in entry.keys()
+            and entry['ColorCode'] is not None
+            and entry['ColorCode'] != 'None'
+        ):
+            access = f"CC={entry['ColorCode']}"
         else:
-            tone = ''
+            access = ''
 
-        print(f'{memory},{name},{rx_frequency},{tx_frequency},{mode},{tone},{notes}')
-        memory += 1
+        print(f'{channel},{name},{mode},{rx_frequency},{tx_frequency},{access},{notes}')
+        channel += 1
 
 
 def sanitize_chirp_channel_name(name, length=8):
