@@ -32,21 +32,6 @@ Channels:
   RxFrequency: 145.09
   Mode: FM
 
-#     _    ____  ____  ____
-#    / \  |  _ \|  _ \/ ___|
-#   / _ \ | |_) | |_) \___ \
-#  / ___ \|  __/|  _ < ___) |
-# /_/   \_\_|   |_| \_\____/
-
-# Automatic Packet Reporting System
-#   https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System
-#   http://www.aprs.org/
-
-- Name: APRS VHF PKT
-  Notes: APRS North America
-  RxFrequency: 144.39
-  Mode: FM
-
 #  ___ ____ ____
 # |_ _/ ___/ ___|
 #  | |\___ \___ \
@@ -65,4 +50,19 @@ Channels:
 - Name: ISSPKT2 UHF PKT
   Notes: Packet via ISS
   RxFrequency: 437.55
+  Mode: FM
+
+#     _    ____  ____  ____
+#    / \  |  _ \|  _ \/ ___|
+#   / _ \ | |_) | |_) \___ \
+#  / ___ \|  __/|  _ < ___) |
+# /_/   \_\_|   |_| \_\____/
+
+# Automatic Packet Reporting System
+#   https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System
+#   http://www.aprs.org/
+
+- Name: APRS VHF PKT
+  Notes: APRS North America
+  RxFrequency: 144.39
   Mode: FM
