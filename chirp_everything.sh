@@ -23,10 +23,10 @@ index=1
 for input_file in ${channel_data_files}; do
     if [[ 1 == ${index} ]]; then
         ./multi_outputter.py --format CHIRP --input_file ${input_file} \
-            > tmp/CHIRP.csv
+            | sed '2,$ s/^[0-9]*,/,/' > tmp/CHIRP.csv
     else
         ./multi_outputter.py --format CHIRP --input_file ${input_file} \
-            | tail -n '+2' >> tmp/CHIRP.csv
+            | tail -n '+2' | sed '1,$ s/^[0-9]*,/,/' >> tmp/CHIRP.csv
     fi
     index=$((${index} + 1))
 done
@@ -47,10 +47,10 @@ index=1
 for input_file in ${channel_data_files}; do
     if [[ 1 == ${index} ]]; then
         ./multi_outputter.py --format HUMAN --input_file ${input_file} \
-            > tmp/HUMAN_analog.csv
+            | sed '2,$ s/^[0-9]*,/,/' > tmp/HUMAN_analog.csv
     else
         ./multi_outputter.py --format HUMAN --input_file ${input_file} \
-            | tail -n '+2' >> tmp/HUMAN_analog.csv
+            | tail -n '+2' | sed '1,$ s/^[0-9]*,/,/' >> tmp/HUMAN_analog.csv
     fi
     index=$((${index} + 1))
 done
