@@ -8,9 +8,8 @@ repeaters/RLARC_LNL_ARES_AARC_normal.yaml
 repeaters/OARC_OVMRC_EMRG_normal.yaml
 repeaters/CRRA_RCARC_normal.yaml
 info/RLCT_normal.yaml
-info/Simplex_FM_VHF.yaml
-info/Simplex_FM_UHF.yaml
 info/Lanark_County_VHF.yaml
+info/Packet_FM_VHF_UHF.yaml
 '
 
 chirp_output_file='tmp/CHIRP.csv'
@@ -63,6 +62,9 @@ done
 
 # XXX FIXME TODO  https://realpython.com/openpyxl-excel-spreadsheets-python/
 # XXX FIXME TODO  https://openpyxl.readthedocs.io/en/stable/styles.html#edit-page-setup
+
+input_files=${input_files}
+input_files+='repeaters/DMR.yaml'
 
 index=1
 for input_file in ${input_files}; do

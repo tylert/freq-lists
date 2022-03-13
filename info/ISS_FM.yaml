@@ -1,0 +1,12 @@
+---
+Channels:
+
+- Name: ISSDOWN
+  RxFrequency: 145.99
+  Mode: FM
+  CtcssEncode: 67.0
+  CtcssDecode: None
+
+- Name: ISSUP
+  RxFrequency: 437.8
+  Mode: FM

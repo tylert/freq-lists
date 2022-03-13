@@ -1,0 +1,68 @@
+---
+Channels:
+
+#                           _____ __  __ ____   ____
+#                          | ____|  \/  |  _ \ / ___|
+#                          |  _| | |\/| | |_) | |  _
+#                          | |___| |  | |  _ <| |_| |
+#                          |_____|_|  |_|_| \_\\____|
+
+# Emergency Measures Radio Group (Ottawa ARES)
+#   http://emrg.ca/
+#   https://github.com/emrg-ca/
+#   https://gitlab.com/emrg-ca/
+#   https://bitbucket.org/emrg-ca/
+
+# ======================================================================================
+# EMRG is in the process of shutting down... the following repeaters may be gone by 2026
+# ======================================================================================
+
+- Name: OCEPKT VHF PKT  # Motorola Radius/Spectra mobiles
+  Notes: FN25EJ02OB Alta Vista & Randall Avenue OFS Dispatch / OFS Station 35
+  RxFrequency: 145.03
+  Mode: FM
+
+- Name: ALTPKT1 VHF PKT
+  Notes: Alternate packet frequency 1
+  RxFrequency: 145.07
+  Mode: FM
+
+- Name: ALTPKT2 VHF PKT
+  Notes: Alternate packet frequency 2
+  RxFrequency: 145.09
+  Mode: FM
+
+#     _    ____  ____  ____
+#    / \  |  _ \|  _ \/ ___|
+#   / _ \ | |_) | |_) \___ \
+#  / ___ \|  __/|  _ < ___) |
+# /_/   \_\_|   |_| \_\____/
+
+# Automatic Packet Reporting System
+#   https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System
+#   http://www.aprs.org/
+
+- Name: APRS VHF PKT
+  Notes: APRS North America
+  RxFrequency: 144.39
+  Mode: FM
+
+#  ___ ____ ____
+# |_ _/ ___/ ___|
+#  | |\___ \___ \
+#  | | ___) |__) |
+# |___|____/____/
+
+# International Space Station
+#   https://www.ariss.org/contact-the-iss.html
+#   https://en.wikipedia.org/wiki/International_Space_Station
+
+- Name: ISSPKT1 VHF PKT
+  Notes: Packet via ISS
+  RxFrequency: 145.825
+  Mode: FM
+
+- Name: ISSPKT2 UHF PKT
+  Notes: Packet via ISS
+  RxFrequency: 437.55
+  Mode: FM
