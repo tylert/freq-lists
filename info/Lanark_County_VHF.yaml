@@ -1,63 +1,76 @@
 ---
 Channels:
 
-- Name: Cty Fire
-  Notes: FN14UV76
+# FN14UV76 EOC et al.
+
+- Name: CTY FIRE
+  Notes: County Fire Dispatch
   RxFrequency: 153.815
   Mode: FM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
-- Name: Cty FTact
+- Name: CTYFTACT
+  Notes: County Fire Tactical
   RxFrequency: 150.53
   Mode: FM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
-- Name: Cty Roads
-  RxFrequency: 169.365
-  Mode: FM
-  RxOnly: On  # Tx inhibit
-
-- Name: Stock Bus
-  RxFrequency: 151.85
-  Mode: FM
-  RxOnly: On  # Tx inhibit
-
-- Name: Healy Bus
-  RxFrequency: 157.545
-  Mode: FM
-  RxOnly: On  # Tx inhibit
-
-- Name: Ambulnce
-  RxFrequency: 143.0
-  Mode: FM
-  RxOnly: On  # Tx inhibit
-
-- Name: Perth Twn
-  RxFrequency: 162.27
-  Mode: FM
-  RxOnly: On  # Tx inhibit
-
-- Name: Perth PW
-  RxFrequency: 169.53
-  Mode: FM
-  RxOnly: On  # Tx inhibit
-
-- Name: Ont Fire
+- Name: ONT FIRE
+  Notes: Ontario Fire Marshall
   RxFrequency: 414.1125
   Mode: FM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
-- Name: Air-Ambl
+- Name: CTYROADS
+  Notes: County Roads
+  RxFrequency: 169.365
+  Mode: FM
+  RxOnly: On
+
+- Name: STOCKBUS
+  Notes: County Schools
+  RxFrequency: 151.85
+  Mode: FM
+  RxOnly: On
+
+- Name: HEALYBUS
+  Notes: County Schools
+  RxFrequency: 157.545
+  Mode: FM
+  RxOnly: On
+
+- Name: AMBULNCE
+  Notes: County
+  RxFrequency: 143.0  # XXX FIXME TODO  Confirm???
+  Mode: FM
+  RxOnly: On
+
+- Name: AIR-AMBL
+  Notes: VFR Enroute
   RxFrequency: 126.7
   Mode: AM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
-- Name: SF Airpt
+- Name: SF AIRPT
+  Notes: Smiths Falls UNICOM
   RxFrequency: 122.9
   Mode: AM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
-- Name: OTT Twr
+- Name: OTT TWR
+  Notes: Ottawa International
   RxFrequency: 118.8
   Mode: AM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
+
+- Name: PERTHTWN
+  Notes: Perth District Public Works
+  RxFrequency: 162.27
+  Mode: FM
+  RxOnly: On
+
+- Name: PERTH PW
+  Notes: Perth Public Works
+  RxFrequency: 169.53
+  Mode: FM
+  RxOnly: On

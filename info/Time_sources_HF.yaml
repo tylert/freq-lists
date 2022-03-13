@@ -20,19 +20,19 @@ Channels:
 - Name: CHU 90M
   RxFrequency: 3.33
   Mode: AM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
   Notes: 3 kW
 
 - Name: CHU 38M
   RxFrequency: 7.85
   Mode: AM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
   Notes: 5 kW
 
 - Name: CHU 20M
   RxFrequency: 14.67
   Mode: AM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
   Notes: 3 kW
 
 #                      __        ____        ____     __
@@ -50,41 +50,41 @@ Channels:
 - Name: WWVB LF
   RxFrequency: 0.06
   Mode: AM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
   Notes: 70 kW
 
 - Name: WWV 120M
   RxFrequency: 2.5
   Mode: AM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
   Notes: 2.5 kW
 
 - Name: WWV 60M
   RxFrequency: 5.0
   Mode: AM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
   Notes: 10 kW
 
 - Name: WWV 30M
   RxFrequency: 10.0
   Mode: AM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
   Notes: 10 kW
 
 - Name: WWV 20M
   RxFrequency: 15.0
   Mode: AM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
   Notes: 10 kW
 
 - Name: WWV 15M
   RxFrequency: 20.0
   Mode: AM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
   Notes: 2.5 kW
 
 - Name: WWV 12M
   RxFrequency: 25.0
   Mode: AM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
   Notes: 2.5 kW

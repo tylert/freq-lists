@@ -15,194 +15,194 @@ Channels:
 - Name: BBLOW1
   RxFrequency: 27.49
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBLOW2
   RxFrequency: 27.51
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBLOW3
   RxFrequency: 27.555
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBLOW4
   RxFrequency: 30.84
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBLOW5
   RxFrequency: 33.12
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBLOW6
   RxFrequency: 33.14
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBLOW7
   RxFrequency: 33.4
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBLOW8
   RxFrequency: 35.02
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBLOW9
   RxFrequency: 35.04
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBLOWA
   RxFrequency: 42.98
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBLOWB
   RxFrequency: 43.04
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBITN1
   RxFrequency: 151.505
   Mode: FM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBITN2
   RxFrequency: 151.5125
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: REDDOT
   RxFrequency: 151.625
   Mode: FM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBITN4
   RxFrequency: 151.7
   Mode: FM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBITN5
   RxFrequency: 151.76
   Mode: FM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: MURS1
   RxFrequency: 151.82
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: MURS2
   RxFrequency: 151.88
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: MURS3
   RxFrequency: 151.94
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: PPLDOT
   RxFrequency: 151.955
   Mode: FM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BB1
   RxFrequency: 154.515
   Mode: FM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BB2
   RxFrequency: 154.54
   Mode: FM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BLUDOT
   RxFrequency: 154.57
   Mode: FM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: MURS4B
   RxFrequency: 154.57
   Mode: FM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: GRNDOT
   RxFrequency: 154.6
   Mode: FM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: MURS5G
   RxFrequency: 154.6
   Mode: FM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBITN5
   RxFrequency: 158.4
   Mode: FM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BBITN6
   RxFrequency: 158.4075
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: WHTDOT
   RxFrequency: 462.575
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BLKDOT
   RxFrequency: 462.625
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: ORGDOT
   RxFrequency: 462.675
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BRNDOT
   RxFrequency: 464.5
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: YLWDOT
   RxFrequency: 464.55
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: SILSTR
   RxFrequency: 467.85
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: GOLSTR
   RxFrequency: 467.875
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: REDSTR
   RxFrequency: 467.9
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BLUSTR
   RxFrequency: 467.925
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: BRNDPX
   RxFrequency: 469.5
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On
 
 - Name: YLWDPX
   RxFrequency: 469.55
   Mode: NFM
-  RxOnly: On  # Tx inhibit
+  RxOnly: On

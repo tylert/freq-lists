@@ -3,14 +3,19 @@
 # set -x
 mkdir -p tmp
 
-channel_data_files='
-repeaters/RLARC_LNL_ARES_AARC.yaml
-repeaters/OARC_OVMRC_EMRG.yaml
-repeaters/CRRA_RCARC.yaml
+input_files='
+repeaters/RLARC_LNL_ARES_AARC_normal.yaml
+repeaters/OARC_OVMRC_EMRG_normal.yaml
+repeaters/CRRA_RCARC_normal.yaml
+info/RLCT_normal.yaml
 info/Simplex_FM_VHF.yaml
 info/Simplex_FM_UHF.yaml
-info/RLCT.yaml
+info/Lanark_County_VHF.yaml
 '
+
+chirp_output_file='tmp/CHIRP.csv'
+rt_systems_output_file='tmp/RT.csv'
+human_output_file='tmp/HUMAN_csv.csv'
 
 #   ____ _   _ ___ ____  ____
 #  / ___| | | |_ _|  _ \|  _ \
@@ -19,14 +24,14 @@ info/RLCT.yaml
 #  \____|_| |_|___|_| \_\_|
 
 index=1
-for input_file in ${channel_data_files}; do
+for input_file in ${input_files}; do
     if [[ 1 == ${index} ]]; then
         ./multi_outputter.py --format CHIRP --input_file ${input_file} \
-            --start_index 1 > tmp/CHIRP.csv
+            --start_index 1 > ${chirp_output_file}
     else
         ./multi_outputter.py --format CHIRP --input_file ${input_file} \
-            --start_index $(wc -l tmp/CHIRP.csv | cut -d' ' -f1) \
-            | tail -n '+2' >> tmp/CHIRP.csv
+            --start_index $(wc -l ${chirp_output_file} | cut -d' ' -f1) \
+            | tail -n '+2' >> ${chirp_output_file}
     fi
     index=$((${index} + 1))
 done
@@ -39,13 +44,13 @@ done
 #                     |___/
 
 index=1
-for input_file in ${channel_data_files}; do
+for input_file in ${input_files}; do
     if [[ 1 == ${index} ]]; then
         ./multi_outputter.py --format RT --input_file ${input_file} \
-            > tmp/RT.csv
+            > ${rt_systems_output_file}
     else
         ./multi_outputter.py --format RT --input_file ${input_file} \
-            | tail -n '+2' >> tmp/RT.csv
+            | tail -n '+2' >> ${rt_systems_output_file}
     fi
     index=$((${index} + 1))
 done
@@ -60,14 +65,14 @@ done
 # XXX FIXME TODO  https://openpyxl.readthedocs.io/en/stable/styles.html#edit-page-setup
 
 index=1
-for input_file in ${channel_data_files}; do
+for input_file in ${input_files}; do
     if [[ 1 == ${index} ]]; then
         ./multi_outputter.py --format HUMAN --input_file ${input_file} \
-            --start_index 1 > tmp/HUMAN_csv_files.csv
+            --start_index 1 > ${human_output_file}
     else
         ./multi_outputter.py --format HUMAN --input_file ${input_file} \
-            --start_index $(wc -l tmp/HUMAN_csv_files.csv | cut -d' ' -f1) \
-            | tail -n '+2' >> tmp/HUMAN_csv_files.csv
+            --start_index $(wc -l ${human_output_file} | cut -d' ' -f1) \
+            | tail -n '+2' >> ${human_output_file}
     fi
     index=$((${index} + 1))
 done
