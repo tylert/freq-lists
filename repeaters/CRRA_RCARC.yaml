@@ -57,6 +57,7 @@ Channels:
   Mode: FM  # frequency also shared with DMR
   CtcssEncode: 114.8
   CtcssDecode: None
+
 #                       ____   ____    _    ____   ____
 #                      |  _ \ / ___|  / \  |  _ \ / ___|
 #                      | |_) | |     / _ \ | |_) | |
