@@ -13,66 +13,66 @@ Channels:
 # https://github.com/jwhittaker/nwrsites
 
 - Name: WX8  # M21B
-  RxFrequency: 161.65
   Mode: FM
+  RxFrequency: 161.65
   RxOnly: On
 
 - Name: WXA  # M23B
-  RxFrequency: 161.75
   Mode: FM
+  RxFrequency: 161.75
   RxOnly: On
 
 - Name: WX9  # M83B
-  RxFrequency: 161.775
   Mode: FM
+  RxFrequency: 161.775
   RxOnly: On
 
 - Name: WXB  # M27B / ASM 1 / Channel 2027
-  RxFrequency: 161.95
   Mode: FM
+  RxFrequency: 161.95
   RxOnly: On
 
 - Name: WXC  # M28B / ASM 2 / Channel 2028
-  RxFrequency: 162.0
   Mode: FM
+  RxFrequency: 162.0
   RxOnly: On
 
 - Name: WX2/PA1  # M36B / Public Alert 1
-  RxFrequency: 162.4
   Mode: FM
+  RxFrequency: 162.4
   RxOnly: On
 
 - Name: WX4/PA2  # M96B / Public Alert 2
-  RxFrequency: 162.425
   Mode: FM
+  RxFrequency: 162.425
   RxOnly: On
 
 - Name: WX5/PA3  # M37B / Public Alert 3
-  RxFrequency: 162.45
   Mode: FM
+  RxFrequency: 162.45
   RxOnly: On
 
 - Name: WX3/PA4  # M97B / Public Alert 4
-  RxFrequency: 162.475
   Mode: FM
+  RxFrequency: 162.475
   RxOnly: On
 
 - Name: WX6/PA5  # M38B / Public Alert 5
-  RxFrequency: 162.5
   Mode: FM
+  RxFrequency: 162.5
   RxOnly: On
 
 - Name: WX7/PA6  # M98B / Public Alert 6
-  RxFrequency: 162.525
   Mode: FM
+  RxFrequency: 162.525
   RxOnly: On
 
 - Name: WX1/PA7  # M39B / Public Alert 7
-  RxFrequency: 162.55
   Mode: FM
+  RxFrequency: 162.55
   RxOnly: On
 
 - Name: WX10  # M113B
-  RxFrequency: 163.275
   Mode: FM
+  RxFrequency: 163.275
   RxOnly: On

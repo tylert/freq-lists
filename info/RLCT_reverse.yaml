@@ -28,8 +28,8 @@ Channels:
 
 - Name: GRF3EV VHF FM
   Notes: Input to VE3FRG VHF FM
+  Mode: FM  # frequency normally configured as YSF-only
   RxFrequency: 146.205
   TxFrequencyOffset: '+0.0'
-  Mode: FM  # frequency normally configured as YSF-only
   CtcssEncode: 203.5
   CtcssDecode: None

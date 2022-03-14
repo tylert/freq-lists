@@ -25,29 +25,29 @@ Channels:
 # May also be used for DSTAR, M17, NXDN, P25, YSF, etc.
 
 - Name: 433.45 DMR
-  RxFrequency: 433.45
   Mode: DMR
+  RxFrequency: 433.45
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 441.0 DMR
-  RxFrequency: 441.0
   Mode: DMR
+  RxFrequency: 441.0
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 446.075 DMR
-  RxFrequency: 446.075
   Mode: DMR
+  RxFrequency: 446.075
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 446.5 DMR
-  RxFrequency: 446.5
   Mode: DMR
+  RxFrequency: 446.5
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99

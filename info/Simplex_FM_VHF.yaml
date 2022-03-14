@@ -24,84 +24,84 @@ Channels:
 # 146.40, 146.43 and 146.46 may be repeater inputs in some areas
 
 - Name: 146.4 FM
-  RxFrequency: 146.4
   Mode: FM
+  RxFrequency: 146.4
 
 - Name: 146.415 FM
-  RxFrequency: 146.415
   Mode: FM
+  RxFrequency: 146.415
 
 - Name: 146.43 FM
-  RxFrequency: 146.43
   Mode: FM
+  RxFrequency: 146.43
 
 - Name: 146.445 FM
-  RxFrequency: 146.445
   Mode: FM
+  RxFrequency: 146.445
 
 - Name: 146.46 FM
-  RxFrequency: 146.46
   Mode: FM
+  RxFrequency: 146.46
 
 - Name: 146.475 FM
-  RxFrequency: 146.475
   Mode: FM
+  RxFrequency: 146.475
 
 - Name: 146.49 FM
-  RxFrequency: 146.49
   Mode: FM
+  RxFrequency: 146.49
 
 - Name: 146.505 FM
-  RxFrequency: 146.505
   Mode: FM
+  RxFrequency: 146.505
 
 - Name: 146.52 FM
-  RxFrequency: 146.52
   Mode: FM
+  RxFrequency: 146.52
   Notes: FM simplex calling frequency
 
 - Name: 146.535 FM
-  RxFrequency: 146.535
   Mode: FM
+  RxFrequency: 146.535
 
 - Name: 146.55 FM
-  RxFrequency: 146.55
   Mode: FM
+  RxFrequency: 146.55
 
 - Name: 146.565 FM
-  RxFrequency: 146.565
   Mode: FM
+  RxFrequency: 146.565
 
 - Name: 146.58 FM
-  RxFrequency: 146.58
   Mode: FM
+  RxFrequency: 146.58
 
 - Name: 146.595 FM
-  RxFrequency: 146.595
   Mode: FM
+  RxFrequency: 146.595
 
 # FM simplex from 147.42 to 147.57 - 6 channels on a 30 kHz raster
 
 - Name: 147.42 FM
-  RxFrequency: 147.42
   Mode: FM
+  RxFrequency: 147.42
 
 - Name: 147.45 FM
-  RxFrequency: 147.45
   Mode: FM
+  RxFrequency: 147.45
 
 - Name: 147.48 FM
-  RxFrequency: 147.48
   Mode: FM
+  RxFrequency: 147.48
 
 - Name: 147.51 FM
-  RxFrequency: 147.51
   Mode: FM
+  RxFrequency: 147.51
 
 - Name: 147.54 FM
-  RxFrequency: 147.54
   Mode: FM
+  RxFrequency: 147.54
 
 - Name: 147.57 FM
-  RxFrequency: 147.57
   Mode: FM
+  RxFrequency: 147.57

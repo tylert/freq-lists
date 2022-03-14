@@ -2,308 +2,308 @@
 Channels:
 
 - Name: AAR002
-  RxFrequency: 159.81
   Mode: FM
+  RxFrequency: 159.81
   RxOnly: On
 
 - Name: AAR003
-  RxFrequency: 159.93
   Mode: FM
+  RxFrequency: 159.93
   RxOnly: On
 
 - Name: AAR004
-  RxFrequency: 160.05
   Mode: FM
+  RxFrequency: 160.05
   RxOnly: On
 
 - Name: AAR005
-  RxFrequency: 160.185
   Mode: FM
+  RxFrequency: 160.185
   RxOnly: On
 
 - Name: AAR006
-  RxFrequency: 160.2
   Mode: FM
+  RxFrequency: 160.2
   RxOnly: On
 
 - Name: AAR007
-  RxFrequency: 160.215
   Mode: FM
+  RxFrequency: 160.215
   RxOnly: On
 
 - Name: AAR008
-  RxFrequency: 160.23
   Mode: FM
+  RxFrequency: 160.23
   RxOnly: On
 
 - Name: AAR009
-  RxFrequency: 160.245
   Mode: FM
+  RxFrequency: 160.245
   RxOnly: On
 
 - Name: AAR010
-  RxFrequency: 160.26
   Mode: FM
+  RxFrequency: 160.26
   RxOnly: On
 
 - Name: AAR011
-  RxFrequency: 160.275
   Mode: FM
+  RxFrequency: 160.275
   RxOnly: On
 
 - Name: AAR012
-  RxFrequency: 160.29
   Mode: FM
+  RxFrequency: 160.29
   RxOnly: On
 
 - Name: AAR013
-  RxFrequency: 160.305
   Mode: FM
+  RxFrequency: 160.305
   RxOnly: On
 
 - Name: AAR014
-  RxFrequency: 160.32
   Mode: FM
+  RxFrequency: 160.32
   RxOnly: On
 
 - Name: AAR015
-  RxFrequency: 160.335
   Mode: FM
+  RxFrequency: 160.335
   RxOnly: On
 
 - Name: AAR016
-  RxFrequency: 160.35
   Mode: FM
+  RxFrequency: 160.35
   RxOnly: On
 
 - Name: AAR017
-  RxFrequency: 160.365
   Mode: FM
+  RxFrequency: 160.365
   RxOnly: On
 
 - Name: AAR018
-  RxFrequency: 160.38
   Mode: FM
+  RxFrequency: 160.38
   RxOnly: On
 
 - Name: AAR019
-  RxFrequency: 160.395
   Mode: FM
+  RxFrequency: 160.395
   RxOnly: On
 
 - Name: AAR020
-  RxFrequency: 160.41
   Mode: FM
+  RxFrequency: 160.41
   RxOnly: On
 
 - Name: AAR021
-  RxFrequency: 160.425
   Mode: FM
+  RxFrequency: 160.425
   RxOnly: On
 
 - Name: AAR022
-  RxFrequency: 160.44
   Mode: FM
+  RxFrequency: 160.44
   RxOnly: On
 
 - Name: AAR023
-  RxFrequency: 160.455
   Mode: FM
+  RxFrequency: 160.455
   RxOnly: On
 
 - Name: AAR024
-  RxFrequency: 160.47
   Mode: FM
+  RxFrequency: 160.47
   RxOnly: On
 
 - Name: AAR025
-  RxFrequency: 160.485
   Mode: FM
+  RxFrequency: 160.485
   RxOnly: On
 
 - Name: AAR026
-  RxFrequency: 160.5
   Mode: FM
+  RxFrequency: 160.5
   RxOnly: On
 
 - Name: AAR027
-  RxFrequency: 160.515
   Mode: FM
+  RxFrequency: 160.515
   RxOnly: On
 
 - Name: AAR028
-  RxFrequency: 160.53
   Mode: FM
+  RxFrequency: 160.53
   RxOnly: On
 
 - Name: AAR029
-  RxFrequency: 160.545
   Mode: FM
+  RxFrequency: 160.545
   RxOnly: On
 
 - Name: AAR030
-  RxFrequency: 160.56
   Mode: FM
+  RxFrequency: 160.56
   RxOnly: On
 
 - Name: AAR031
-  RxFrequency: 160.575
   Mode: FM
+  RxFrequency: 160.575
   RxOnly: On
 
 - Name: AAR032
-  RxFrequency: 160.59
   Mode: FM
+  RxFrequency: 160.59
   RxOnly: On
 
 - Name: AAR033
-  RxFrequency: 160.605
   Mode: FM
+  RxFrequency: 160.605
   RxOnly: On
 
 - Name: AAR034
-  RxFrequency: 160.62
   Mode: FM
+  RxFrequency: 160.62
   RxOnly: On
 
 - Name: AAR035
-  RxFrequency: 160.635
   Mode: FM
+  RxFrequency: 160.635
   RxOnly: On
 
 - Name: AAR036
-  RxFrequency: 160.65
   Mode: FM
+  RxFrequency: 160.65
   RxOnly: On
 
 - Name: AAR037
-  RxFrequency: 160.665
   Mode: FM
+  RxFrequency: 160.665
   RxOnly: On
 
 - Name: AAR038
-  RxFrequency: 160.68
   Mode: FM
+  RxFrequency: 160.68
   RxOnly: On
 
 - Name: AAR039
-  RxFrequency: 160.695
   Mode: FM
+  RxFrequency: 160.695
   RxOnly: On
 
 - Name: AAR040
-  RxFrequency: 160.71
   Mode: FM
+  RxFrequency: 160.71
   RxOnly: On
 
 - Name: AAR041
-  RxFrequency: 160.725
   Mode: FM
+  RxFrequency: 160.725
   RxOnly: On
 
 - Name: AAR042
-  RxFrequency: 160.74
   Mode: FM
+  RxFrequency: 160.74
   RxOnly: On
 
 - Name: AAR043
-  RxFrequency: 160.755
   Mode: FM
+  RxFrequency: 160.755
   RxOnly: On
 
 - Name: AAR044
-  RxFrequency: 160.77
   Mode: FM
+  RxFrequency: 160.77
   RxOnly: On
 
 - Name: AAR045
-  RxFrequency: 160.785
   Mode: FM
+  RxFrequency: 160.785
   RxOnly: On
 
 - Name: AAR046
-  RxFrequency: 160.8
   Mode: FM
+  RxFrequency: 160.8
   RxOnly: On
 
 - Name: AAR047
-  RxFrequency: 160.815
   Mode: FM
+  RxFrequency: 160.815
   RxOnly: On
 
 - Name: AAR048
-  RxFrequency: 160.83
   Mode: FM
+  RxFrequency: 160.83
   RxOnly: On
 
 - Name: AAR049
-  RxFrequency: 160.845
   Mode: FM
+  RxFrequency: 160.845
   RxOnly: On
 
 - Name: AAR050
-  RxFrequency: 160.86
   Mode: FM
+  RxFrequency: 160.86
   RxOnly: On
 
 - Name: AAR051
-  RxFrequency: 160.875
   Mode: FM
+  RxFrequency: 160.875
   RxOnly: On
 
 - Name: AAR052
-  RxFrequency: 160.89
   Mode: FM
+  RxFrequency: 160.89
   RxOnly: On
 
 - Name: AAR053
-  RxFrequency: 160.905
   Mode: FM
+  RxFrequency: 160.905
   RxOnly: On
 
 - Name: AAR054
-  RxFrequency: 160.92
   Mode: FM
+  RxFrequency: 160.92
   RxOnly: On
 
 - Name: AAR055
-  RxFrequency: 160.935
   Mode: FM
+  RxFrequency: 160.935
   RxOnly: On
 
 - Name: AAR056
-  RxFrequency: 160.95
   Mode: FM
+  RxFrequency: 160.95
   RxOnly: On
 
 - Name: AAR057
-  RxFrequency: 160.965
   Mode: FM
+  RxFrequency: 160.965
   RxOnly: On
 
 - Name: AAR058
-  RxFrequency: 160.98
   Mode: FM
+  RxFrequency: 160.98
   RxOnly: On
 
 - Name: AAR059
-  RxFrequency: 160.995
   Mode: FM
+  RxFrequency: 160.995
   RxOnly: On
 
 - Name: AAR060
-  RxFrequency: 161.01
   Mode: FM
+  RxFrequency: 161.01
   RxOnly: On
 
 - Name: AAR061
-  RxFrequency: 161.025
   Mode: FM
+  RxFrequency: 161.025
   RxOnly: On
 
 - Name: AAR062
-  RxFrequency: 161.04
   Mode: FM
+  RxFrequency: 161.04
   RxOnly: On
 
 # AAR063,161.055

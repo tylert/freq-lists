@@ -11,16 +11,16 @@ Channels:
 
 # - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
 #   Notes: FN15WA Perth at VA3DGN
+#   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only) -> Brandmeister
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
-#   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only) -> Brandmeister
 #   ColorCode: 1
 
 # - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
 #   Notes: FN15WA Perth at VA3DGN
+#   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only) -> Brandmeister
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
-#   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only) -> Brandmeister
 #   ColorCode: 1
 
 #                   __     _______ _____ _   _  ___    _
@@ -36,9 +36,9 @@ Channels:
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3HOZ UHF DMR  # Motorola CDM 1550LS+ Rx & Tx + 100 W amp, STM32-DVM Rev?, Raspberry Pi 4B
   Notes: FN15XG Carp at VE3HOA
+  Mode: DMR  # CCS7 ID 302108 / MMDVM (DMR only) -> Brandmeister
   RxFrequency: 442.3
   TxFrequencyOffset: '+5.0'
-  Mode: DMR  # CCS7 ID 302108 / MMDVM (DMR only) -> Brandmeister
   ColorCode: 1
 
 #                            _        _    ____   ____
@@ -61,9 +61,9 @@ Channels:
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VA3AAR VHF DMR  # TBD
   Notes: Almonte Union Hall
+  Mode: DMR  # CCS7 ID 302070 / MMDVM (DMR & DSTAR) -> Brandmeister
   RxFrequency: 145.55
   TxFrequencyOffset: '-0.6'
-  Mode: DMR  # CCS7 ID 302070 / MMDVM (DMR & DSTAR) -> Brandmeister
   ColorCode: 1
 
 #                           ____ ____  ____      _
@@ -81,16 +81,16 @@ Channels:
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3STP UHF DMR  # Motorola CM 300 Rx & Tx
   Notes: FN15NH13OV or FN15NH24WI Renfrew Kennellys Mountain
+  Mode: DMR  # CCS7 ID 302064 / MMDVM (DMR & DSTAR) -> Brandmeister
   RxFrequency: 443.6
   TxFrequencyOffset: '+5.0'
-  Mode: DMR  # CCS7 ID 302064 / MMDVM (DMR & DSTAR) -> Brandmeister
   ColorCode: 1
 
 - Name: VE3STP VHF DMR  # Motorola XPR 8300 + 60 W amp
   Notes: FN15NH13OV or FN15NH24WI Renfrew Kennellys Mountain
+  Mode: DMR  # CCS7 ID 302096;  frequency also shared with FM;  no RoIP features available
   RxFrequency: 145.39
   TxFrequencyOffset: '-0.6'
-  Mode: DMR  # CCS7 ID 302096;  frequency also shared with FM;  no RoIP features available
   ColorCode: 1
 
 #                            ___    _    ____   ____
@@ -114,9 +114,9 @@ Channels:
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE2CRA UHF DMR  # Motorola CDM 1550LS+ Rx & Tx, STM32-DVM Rev3 USB, Raspberry Pi 2B
   Notes: FN25BM80AQ Camp Fortune CBC/Radio-Canada
+  Mode: DMR  # CCS7 ID 302093 / MMDVM (DMR only) -> Brandmeister
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
-  Mode: DMR  # CCS7 ID 302093 / MMDVM (DMR only) -> Brandmeister
   ColorCode: 1
 
 #                        _____     ____  __ ____   ____
@@ -133,9 +133,9 @@ Channels:
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3RAM UHF DMR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Notes: FN25FK69VT Orleans at VE3LC
+  Mode: DMR  # CCS7 ID 302117 / MMDVM (DMR, DSTAR, FM & YSF) -> Brandmeister
   RxFrequency: 443.7
   TxFrequencyOffset: '+5.0'
-  Mode: DMR  # CCS7 ID 302117 / MMDVM (DMR, DSTAR, FM & YSF) -> Brandmeister
   ColorCode: 1
 
 #                    __     ___    _____  ___  ____   ____
@@ -152,7 +152,7 @@ Channels:
 
 - Name: VA3ODG UHF DMR  # TBD
   Notes: FN25DJ78GT 180 Argyle Avenue YMCA-YWCA
+  Mode: DMR  # CCS7 ID 302065 / MMDVM (DMR & DSTAR) -> Brandmeister
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'
-  Mode: DMR  # CCS7 ID 302065 / MMDVM (DMR & DSTAR) -> Brandmeister
   ColorCode: 1
