@@ -47,7 +47,7 @@ Channels:
 #   https://www.ovmrc.on.ca/
 
 - Name: OWT3EV VHF FM
-  Notes: Input to VE3TWO
+  Notes: Input to VE3TWO VHF FM
   Mode: FM  # frequency also shared with YSF
   RxFrequency: 147.9
   TxFrequencyOffset: '+0.0'

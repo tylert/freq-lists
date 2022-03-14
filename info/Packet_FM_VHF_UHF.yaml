@@ -18,7 +18,7 @@ Channels:
 # ======================================================================================
 
 - Name: OCEPKT VHF PKT  # Motorola Radius/Spectra mobiles
-  Notes: FN25EJ02OB Alta Vista & Randall Avenue OFS Dispatch / OFS Station 35
+  Notes: FN25EJ02OB Alta Vista & Randall Avenue  # OFS Dispatch / OFS Station 35
   Mode: FM
   RxFrequency: 145.03
 
