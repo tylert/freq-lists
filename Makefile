@@ -10,7 +10,8 @@ GENERATED_FILES =
 .PRECIOUS: .yaml .conf .jq
 
 .PHONY: all
-all: $(GENERATED_FILES)
+all: venv
+# all: $(GENERATED_FILES)
 
 ACTIVATE_SCRIPT = $(VENV)/bin/activate
 .PHONY: venv
@@ -32,9 +33,9 @@ venv_upgrade:
   pip freeze > requirements.txt && \
   touch $(ACTIVATE_SCRIPT)
 
-# moo:
+# moo: venv
 #   @source $(ACTIVATE_SCRIPT) && \
-#   ./multi_outputter.py > $@
+#   ./moo.py > $@
 
 .PHONY: clean
 clean:
