@@ -11,14 +11,14 @@ Channels:
 
 # - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
 #   Notes: FN15WA Perth at VA3DGN
-#   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only) -> Brandmeister
+#   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only)
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
 #   ColorCode: 1
 
 # - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
 #   Notes: FN15WA Perth at VA3DGN
-#   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only) -> Brandmeister
+#   Mode: DMR  # CCS7 ID 302??? / MMDVM (DMR only)
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
 #   ColorCode: 1
@@ -36,61 +36,9 @@ Channels:
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3HOZ UHF DMR  # Motorola CDM 1550LS+ Rx & Tx + 100 W amp, STM32-DVM Rev?, Raspberry Pi 4B
   Notes: FN15XG Carp at VE3HOA
-  Mode: DMR  # CCS7 ID 302108 / MMDVM (DMR only) -> Brandmeister
+  Mode: DMR  # CCS7 ID 302108 / MMDVM (DMR only)
   RxFrequency: 442.3
   TxFrequencyOffset: '+5.0'
-  ColorCode: 1
-
-#                            _        _    ____   ____
-#                           / \      / \  |  _ \ / ___|
-#                          / _ \    / _ \ | |_) | |
-#                         / ___ \  / ___ \|  _ <| |___
-#                        /_/   \_\/_/   \_\_| \_\\____|
-
-# XXX FIXME TODO  Confirm this data is accurate
-
-# Almonte Amateur Radio Club
-#   https://almontearclub.ca/repeater-information/
-#   https://almontearclub.ca/about-the-club/
-#   http://www.almontearclub.ca/Almonte_Amateur_Radio_Club/Welcome.html
-#   http://va3aar.dyndns.org:3026/
-#   https://xrf196.spdns.org/
-
-# *** "Unnamed Digital Modes Net???" Tuesdays at 20:38 Eastern on XLX196 and TBD ***
-
-# TS=2, TG=6 linked to XLX196 B module
-- Name: VA3AAR VHF DMR  # TBD
-  Notes: Almonte Union Hall
-  Mode: DMR  # CCS7 ID 302070 / MMDVM (DMR & DSTAR) -> Brandmeister
-  RxFrequency: 145.55
-  TxFrequencyOffset: '-0.6'
-  ColorCode: 1
-
-#                           ____ ____  ____      _
-#                          / ___|  _ \|  _ \    / \
-#                         | |   | |_) | |_) |  / _ \
-#                         | |___|  _ <|  _ <  / ___ \
-#                          \____|_| \_\_| \_\/_/   \_\
-
-# Champlain Regional Repeater Association
-#   http://champlainrepeater.ca/
-#   http://ve3stp.org/  (DEPRECATED!!!)
-#   http://ve3stp.ddns.net:44480/
-#   https://xrf196.spdns.org/
-
-# TS=2, TG=6 linked to XLX196 B module
-- Name: VE3STP UHF DMR  # Motorola CM 300 Rx & Tx
-  Notes: FN15NH13OV or FN15NH24WI Renfrew Kennellys Mountain
-  Mode: DMR  # CCS7 ID 302064 / MMDVM (DMR & DSTAR) -> Brandmeister
-  RxFrequency: 443.6
-  TxFrequencyOffset: '+5.0'
-  ColorCode: 1
-
-- Name: VE3STP VHF DMR  # Motorola XPR 8300 + 60 W amp
-  Notes: FN15NH13OV or FN15NH24WI Renfrew Kennellys Mountain
-  Mode: DMR  # CCS7 ID 302096;  frequency also shared with FM;  no RoIP features available
-  RxFrequency: 145.39
-  TxFrequencyOffset: '-0.6'
   ColorCode: 1
 
 #                            ___    _    ____   ____
@@ -113,10 +61,58 @@ Channels:
 
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE2CRA UHF DMR  # Motorola CDM 1550LS+ Rx & Tx, STM32-DVM Rev3 USB, Raspberry Pi 2B
-  Notes: FN25BM80AQ Camp Fortune CBC/Radio-Canada
-  Mode: DMR  # CCS7 ID 302093 / MMDVM (DMR only) -> Brandmeister
+  Notes: FN25BM80AQ Camp Fortune
+  Mode: DMR  # CCS7 ID 302093 / MMDVM (DMR only)
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
+  ColorCode: 1
+
+#                            _        _    ____   ____
+#                           / \      / \  |  _ \ / ___|
+#                          / _ \    / _ \ | |_) | |
+#                         / ___ \  / ___ \|  _ <| |___
+#                        /_/   \_\/_/   \_\_| \_\\____|
+
+# Almonte Amateur Radio Club
+#   https://almontearclub.ca/
+#   http://va3aar.dyndns.org:3026/
+#   https://xrf196.spdns.org/
+
+# *** "Something Digital Modes Net???" Tuesdays at 20:38 Eastern on XLX196 and TBD ***
+
+# TS=2, TG=6 linked to XLX196 B module
+- Name: VA3AAR VHF DMR  # TBD
+  Notes: FN15UD48UV Union Hall
+  Mode: DMR  # CCS7 ID 302070 / MMDVM (DMR & DSTAR)
+  RxFrequency: 145.55
+  TxFrequencyOffset: '-0.6'
+  ColorCode: 1
+
+#                           ____ ____  ____      _
+#                          / ___|  _ \|  _ \    / \
+#                         | |   | |_) | |_) |  / _ \
+#                         | |___|  _ <|  _ <  / ___ \
+#                          \____|_| \_\_| \_\/_/   \_\
+
+# Champlain Regional Repeater Association
+#   http://champlainrepeater.ca/
+#   http://ve3stp.org/  (DEPRECATED!!!)
+#   http://ve3stp.ddns.net:44480/
+#   https://xrf196.spdns.org/
+
+# TS=2, TG=6 linked to XLX196 B module
+- Name: VE3STP UHF DMR  # Motorola CM 300 Rx & Tx
+  Notes: FN15NH13OV or FN15NH24WI Kennellys Mountain  # Renfrew
+  Mode: DMR  # CCS7 ID 302064 / MMDVM (DMR & DSTAR)
+  RxFrequency: 443.6
+  TxFrequencyOffset: '+5.0'
+  ColorCode: 1
+
+- Name: VE3STP VHF DMR  # Motorola XPR 8300 + 60 W amp
+  Notes: FN15NH13OV or FN15NH24WI Kennellys Mountain  # Renfrew
+  Mode: DMR  # CCS7 ID 302096;  frequency also shared with FM;  no RoIP features available
+  RxFrequency: 145.39
+  TxFrequencyOffset: '-0.6'
   ColorCode: 1
 
 #                        _____     ____  __ ____   ____
@@ -133,7 +129,7 @@ Channels:
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3RAM UHF DMR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Notes: FN25FK69VT Orleans at VE3LC
-  Mode: DMR  # CCS7 ID 302117 / MMDVM (DMR, DSTAR, FM & YSF) -> Brandmeister
+  Mode: DMR  # CCS7 ID 302117 / MMDVM (DMR, DSTAR, FM & YSF)
   RxFrequency: 443.7
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
@@ -151,8 +147,8 @@ Channels:
 #   https://xrf196.spdns.org/
 
 - Name: VA3ODG UHF DMR  # TBD
-  Notes: FN25DJ78GT 180 Argyle Avenue YMCA-YWCA
-  Mode: DMR  # CCS7 ID 302065 / MMDVM (DMR & DSTAR) -> Brandmeister
+  Notes: FN25DJ78GT Ottawa YMCA-YWCA
+  Mode: DMR  # CCS7 ID 302065 / MMDVM (DMR & DSTAR)
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
