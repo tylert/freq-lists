@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -x
+# set -x
 
 # echo "Australia\nCanada\nNew Zealand\nUnited Kingdom\nUnited States" > tmp/countries.txt
 # wget --continue --output-document=tmp/user.csv https://database.radioid.net/static/user.csv
@@ -82,5 +82,5 @@ dmrRadio jsonToCodeplug tmp/VA3VXN-6.json tmp/VA3VXN-6.rdt
 dmrRadio jsonToCodeplug tmp/VA3VXN-5.json tmp/VA3VXN-5.rdt
 
 # Clean up intermediate and generated files
-rm -fv tmp/*.json
+rm -f tmp/*.json
 chmod 0644 tmp/*.rdt
