@@ -25,50 +25,50 @@ Channels:
 # These channels are shared with FRS
 
 - Name: GMRS01
-  RxFrequency: 462.5625
   Mode: FM
+  RxFrequency: 462.5625
   Bandwidth: 20
   Power: Medium
   RxOnly: On
 
 - Name: GMRS02
-  RxFrequency: 462.5875
   Mode: FM
+  RxFrequency: 462.5875
   Bandwidth: 20
   Power: Medium
   RxOnly: On
 
 - Name: GMRS03
-  RxFrequency: 462.6125
   Mode: FM
+  RxFrequency: 462.6125
   Bandwidth: 20
   Power: Medium
   RxOnly: On
 
 - Name: GMRS04
-  RxFrequency: 462.6375
   Mode: FM
+  RxFrequency: 462.6375
   Bandwidth: 20
   Power: Medium
   RxOnly: On
 
 - Name: GMRS05
-  RxFrequency: 462.6625
   Mode: FM
+  RxFrequency: 462.6625
   Bandwidth: 20
   Power: Medium
   RxOnly: On
 
 - Name: GMRS06
-  RxFrequency: 462.6875
   Mode: FM
+  RxFrequency: 462.6875
   Bandwidth: 20
   Power: Medium
   RxOnly: On
 
 - Name: GMRS07
-  RxFrequency: 462.7125
   Mode: FM
+  RxFrequency: 462.7125
   Bandwidth: 20
   Power: Medium
   RxOnly: On
@@ -83,50 +83,50 @@ Channels:
 # These should be limited to 0.5 W in Canada and the US
 
 - Name: FRS08
-  RxFrequency: 467.5625
   Mode: NFM
+  RxFrequency: 467.5625
   Bandwidth: 12.5
   Power: Low
   RxOnly: On
 
 - Name: FRS09
-  RxFrequency: 467.5875
   Mode: NFM
+  RxFrequency: 467.5875
   Bandwidth: 12.5
   Power: Low
   RxOnly: On
 
 - Name: FRS10
-  RxFrequency: 467.6125
   Mode: NFM
+  RxFrequency: 467.6125
   Bandwidth: 12.5
   Power: Low
   RxOnly: On
 
 - Name: FRS11
-  RxFrequency: 467.6375
   Mode: NFM
+  RxFrequency: 467.6375
   Bandwidth: 12.5
   Power: Low
   RxOnly: On
 
 - Name: FRS12
-  RxFrequency: 467.6625
   Mode: NFM
+  RxFrequency: 467.6625
   Bandwidth: 12.5
   Power: Low
   RxOnly: On
 
 - Name: FRS13
-  RxFrequency: 467.6875
   Mode: NFM
+  RxFrequency: 467.6875
   Bandwidth: 12.5
   Power: Low
   RxOnly: On
 
 - Name: FRS14
-  RxFrequency: 467.7125
   Mode: NFM
+  RxFrequency: 467.7125
   Bandwidth: 12.5
   Power: Low
   RxOnly: On
@@ -144,65 +144,65 @@ Channels:
 # These should be limited to 2 W in Canada or 5 W in the US for simplex (or 50 W, if duplex)
 
 - Name: GMRS15
+  Mode: FM
   RxFrequency: 462.55
 # TxFrequencyOffset: '+5.0'
-  Mode: FM
   Bandwidth: 20
   Power: Medium
   RxOnly: On
 
 - Name: GMRS16
+  Mode: FM
   RxFrequency: 462.575
 # TxFrequencyOffset: '+5.0'
-  Mode: FM
   Bandwidth: 20
   Power: Medium
   RxOnly: On
 
 - Name: GMRS17
+  Mode: FM
   RxFrequency: 462.6
 # TxFrequencyOffset: '+5.0'
-  Mode: FM
   Bandwidth: 20
   Power: Medium
   RxOnly: On
 
 - Name: GMRS18
+  Mode: FM
   RxFrequency: 462.625
 # TxFrequencyOffset: '+5.0'
-  Mode: FM
   Bandwidth: 20
   Power: Medium
   RxOnly: On
 
 - Name: GMRS19
+  Mode: FM
   RxFrequency: 462.65
 # TxFrequencyOffset: '+5.0'
-  Mode: FM
   Bandwidth: 20
   Power: Medium
   RxOnly: On
 
 - Name: GMRS20
+  Mode: FM
   RxFrequency: 462.675
 # TxFrequencyOffset: '+5.0'
-  Mode: FM
   Bandwidth: 20
   Power: Medium
   RxOnly: On
 
 - Name: GMRS21
+  Mode: FM
   RxFrequency: 462.7
 # TxFrequencyOffset: '+5.0'
-  Mode: FM
   Bandwidth: 20
   Power: Medium
   RxOnly: On
 
 - Name: GMRS22
+  Mode: FM
   RxFrequency: 462.725
 # TxFrequencyOffset: '+5.0'
-  Mode: FM
   Bandwidth: 20
   Power: Medium
   RxOnly: On
@@ -218,57 +218,57 @@ Channels:
 # Since these are inputs, they really should be on 462.xxx with a +5.0 offset
 
 - Name: GMRS15R
-  RxFrequency: 467.55
   Mode: FM
+  RxFrequency: 467.55
   Bandwidth: 20
   Power: High
   RxOnly: On
 
 - Name: GMRS16R
-  RxFrequency: 467.575
   Mode: FM
+  RxFrequency: 467.575
   Bandwidth: 20
   Power: High
   RxOnly: On
 
 - Name: GMRS17R
-  RxFrequency: 467.6
   Mode: FM
+  RxFrequency: 467.6
   Bandwidth: 20
   Power: High
   RxOnly: On
 
 - Name: GMRS18R
-  RxFrequency: 467.625
   Mode: FM
+  RxFrequency: 467.625
   Bandwidth: 20
   Power: High
   RxOnly: On
 
 - Name: GMRS19R
-  RxFrequency: 467.65
   Mode: FM
+  RxFrequency: 467.65
   Bandwidth: 20
   Power: High
   RxOnly: On
 
 - Name: GMRS20R
-  RxFrequency: 467.675
   Mode: FM
+  RxFrequency: 467.675
   Bandwidth: 20
   Power: High
   RxOnly: On
 
 - Name: GMRS21R
-  RxFrequency: 467.7
   Mode: FM
+  RxFrequency: 467.7
   Bandwidth: 20
   Power: High
   RxOnly: On
 
 - Name: GMRS22R
-  RxFrequency: 467.725
   Mode: FM
+  RxFrequency: 467.725
   Bandwidth: 20
   Power: High
   RxOnly: On

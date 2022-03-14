@@ -19,62 +19,62 @@ Channels:
 #                  /_/  \___/   \___|_| |_| |_| |_|   |_|  |_|
 
 - Name: 446.0 FM
-  RxFrequency: 446.0
   Mode: FM
+  RxFrequency: 446.0
   Notes: FM simplex calling frequency
 
 - Name: 446.0125 FM
-  RxFrequency: 446.0125
   Mode: FM
+  RxFrequency: 446.0125
 
 - Name: 446.025 FM
-  RxFrequency: 446.025
   Mode: FM
+  RxFrequency: 446.025
 
 - Name: 446.0375 FM
-  RxFrequency: 446.0375
   Mode: FM
+  RxFrequency: 446.0375
 
 - Name: 446.05 FM
-  RxFrequency: 446.05
   Mode: FM
+  RxFrequency: 446.05
 
 - Name: 446.0625 FM
-  RxFrequency: 446.0625
   Mode: FM
+  RxFrequency: 446.0625
 
 - Name: 446.075 FM
-  RxFrequency: 446.075
   Mode: FM
+  RxFrequency: 446.075
 
 - Name: 446.0875 FM
-  RxFrequency: 446.0875
   Mode: FM
+  RxFrequency: 446.0875
 
 - Name: 446.1 FM
-  RxFrequency: 446.1
   Mode: FM
+  RxFrequency: 446.1
 
 - Name: 446.1125 FM
-  RxFrequency: 446.1125
   Mode: FM
+  RxFrequency: 446.1125
 
 - Name: 446.125 FM
-  RxFrequency: 446.125
   Mode: FM
+  RxFrequency: 446.125
 
 - Name: 446.1375 FM
-  RxFrequency: 446.1375
   Mode: FM
+  RxFrequency: 446.1375
 
 - Name: 446.15 FM
-  RxFrequency: 446.15
   Mode: FM
+  RxFrequency: 446.15
 
 - Name: 446.1625 FM
-  RxFrequency: 446.1625
   Mode: FM
+  RxFrequency: 446.1625
 
 - Name: 446.175 FM
-  RxFrequency: 446.175
   Mode: FM
+  RxFrequency: 446.175

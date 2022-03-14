@@ -23,17 +23,17 @@ Channels:
 
 - Name: ARC2EV VHF FM
   Notes: Input to VE2CRA VHF FM
+  Mode: FM
   RxFrequency: 146.34
   TxFrequencyOffset: '+0.0'
-  Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
 
 - Name: ARC2EV UHF FM
   Notes: Input to VE2CRA UHF FM
+  Mode: FM
   RxFrequency: 448.3
   TxFrequencyOffset: '+0.0'
-  Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
 
@@ -48,25 +48,25 @@ Channels:
 
 - Name: OWT3EV VHF FM
   Notes: Input to VE3TWO
+  Mode: FM  # frequency also shared with YSF
   RxFrequency: 147.9
   TxFrequencyOffset: '+0.0'
-  Mode: FM  # frequency also shared with YSF
   CtcssEncode: 100.0
   CtcssDecode: None
 
 - Name: CPM3EV VHF FM
   Notes: Input to VE3MPC VHF FM
+  Mode: FM  # frequency also shared with YSF
   RxFrequency: 147.75
   TxFrequencyOffset: '+0.0'
-  Mode: FM  # frequency also shared with YSF
   CtcssEncode: 100.0
   CtcssDecode: None
 
 - Name: MAR3EV UHF FM
   Notes: Input to VE3RAM UHF FM
+  Mode: FM  # frequency also shared with DMR, DSTAR & YSF
   RxFrequency: 448.7
   TxFrequencyOffset: '+0.0'
-  Mode: FM  # frequency also shared with DMR, DSTAR & YSF
   CtcssEncode: 100.0
   CtcssDecode: None
 
@@ -84,56 +84,56 @@ Channels:
 
 - Name: ECO3EV VHF FM
   Notes: Input to VE3OCE VHF FM
+  Mode: FM
   RxFrequency: 146.28
   TxFrequencyOffset: '+0.0'
-  Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: None
 
 - Name: ECO3EV UHF FM
   Notes: Input to VE3OCE UHF FM
+  Mode: FM
   RxFrequency: 448.8
   TxFrequencyOffset: '+0.0'
-  Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: None
 
 - Name: SFO3AV VHF FM
   Notes: Input to VA3OFS VHF FM
+  Mode: FM
   RxFrequency: 146.07
   TxFrequencyOffset: '+0.0'
-  Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: None
 
 - Name: SFO3AV UHF FM
   Notes: Input to VA3OFS UHF FM
+  Mode: FM
   RxFrequency: 449.95
   TxFrequencyOffset: '+0.0'
-  Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: None
 
 - Name: E/VME3AV VHF FM
   Notes: Input to VA3EMV/E VHF FM
+  Mode: FM
   RxFrequency: 146.385
   TxFrequencyOffset: '+0.0'
-  Mode: FM
   CtcssEncode: 100.0
   CtcssDecode: None
 
 - Name: W/VME3AV VHF FM
   Notes: Input to VA3EMV/W VHF FM
+  Mode: FM
   RxFrequency: 144.61
   TxFrequencyOffset: '+0.0'
-  Mode: FM
   CtcssEncode: 123.0
   CtcssDecode: None
 
 - Name: P/VME3AV VHF FM
   Notes: Input to VA3EMV/P VHF FM
+  Mode: FM
   RxFrequency: 144.51
   TxFrequencyOffset: '+0.0'
-  Mode: FM
   CtcssEncode: 136.5
   CtcssDecode: None

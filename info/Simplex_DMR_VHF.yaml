@@ -28,78 +28,78 @@ Channels:
 # 145.51 used to be a recommended DMR simplex frequency in North America (145.79 too)
 
 - Name: 145.59 DMR
-  RxFrequency: 145.59
   Mode: DMR
+  RxFrequency: 145.59
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 145.61 DMR
-  RxFrequency: 145.61
   Mode: DMR
+  RxFrequency: 145.61
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 145.63 DMR
-  RxFrequency: 145.63
   Mode: DMR
+  RxFrequency: 145.63
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 145.65 DMR
-  RxFrequency: 145.65
   Mode: DMR
+  RxFrequency: 145.65
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 145.67 DMR
-  RxFrequency: 145.67
   Mode: DMR
+  RxFrequency: 145.67
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 145.69 DMR
-  RxFrequency: 145.69
   Mode: DMR
+  RxFrequency: 145.69
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 145.71 DMR
-  RxFrequency: 145.71
   Mode: DMR
+  RxFrequency: 145.71
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 145.73 DMR
-  RxFrequency: 145.73
   Mode: DMR
+  RxFrequency: 145.73
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 145.75 DMR
-  RxFrequency: 145.75
   Mode: DMR
+  RxFrequency: 145.75
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 145.77 DMR
-  RxFrequency: 145.77
   Mode: DMR
+  RxFrequency: 145.77
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 145.79 DMR
-  RxFrequency: 145.79
   Mode: DMR
+  RxFrequency: 145.79
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
@@ -108,43 +108,43 @@ Channels:
 # Interwoven between the FM simplex channels from 147.42 to 147.57
 
 - Name: 147.435 DMR
-  RxFrequency: 147.435
   Mode: DMR
+  RxFrequency: 147.435
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 147.465 DMR
-  RxFrequency: 147.465
   Mode: DMR
+  RxFrequency: 147.465
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 147.495 DMR
-  RxFrequency: 147.495
   Mode: DMR
+  RxFrequency: 147.495
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 147.525 DMR
-  RxFrequency: 147.525
   Mode: DMR
+  RxFrequency: 147.525
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 147.555 DMR
-  RxFrequency: 147.555
   Mode: DMR
+  RxFrequency: 147.555
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
 
 - Name: 147.585 DMR
-  RxFrequency: 147.585
   Mode: DMR
+  RxFrequency: 147.585
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99

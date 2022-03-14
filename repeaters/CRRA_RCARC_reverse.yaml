@@ -13,17 +13,17 @@ Channels:
 
 - Name: PTS3EV VHF FM
   Notes: Input to VE3STP VHF FM
+  Mode: FM
   RxFrequency: 146.46
   TxFrequencyOffset: '+0.0'
-  Mode: FM
   CtcssEncode: 114.8
   CtcssDecode: None
 
 - Name: PTS3EV 2VHF FM
   Notes: Input to VE3STP 2VHF FM
+  Mode: FM  # frequency also shared with DMR
   RxFrequency: 144.79
   TxFrequencyOffset: '+0.0'
-  Mode: FM  # frequency also shared with DMR
   CtcssEncode: 114.8
   CtcssDecode: None
 
@@ -37,42 +37,42 @@ Channels:
 #   http://rcarc.ca/
 #   http://www.rcarc.ca/RCARC/RCARC%20Repeaters.htm
 
-- Name: RRZ3EV VHF FM
-  Notes: Input to VE3ZRR VHF FM
-  RxFrequency: 147.72
-  TxFrequencyOffset: '+0.0'
-  Mode: FM
-  CtcssEncode: None
-  CtcssDecode: None
-
-- Name: RCU3EV VHF FM
-  Notes: Input to VE3UCR VHF FM
-  RxFrequency: 144.83
-  TxFrequencyOffset: '+0.0'
-  Mode: FM
-  CtcssEncode: None
-  CtcssDecode: None
-
 - Name: RRN3EV VHF FM
   Notes: Input to VE3NRR VHF FM
+  Mode: FM
   RxFrequency: 146.16
   TxFrequencyOffset: '+0.0'
-  Mode: FM
-  CtcssEncode: None
+  CtcssEncode: 100.0
   CtcssDecode: None
 
 - Name: RRN3EV UHF FM
   Notes: Input to VE3NRR UHF FM
+  Mode: FM
   RxFrequency: 443.025
   TxFrequencyOffset: '+0.0'
+  CtcssEncode: 100.0
+  CtcssDecode: None
+
+- Name: RRZ3EV VHF FM
+  Notes: Input to VE3ZRR VHF FM
   Mode: FM
-  CtcssEncode: None
+  RxFrequency: 147.72
+  TxFrequencyOffset: '+0.0'
+  CtcssEncode: 114.8
+  CtcssDecode: None
+
+- Name: RCU3EV VHF FM
+  Notes: Input to VE3UCR VHF FM
+  Mode: FM
+  RxFrequency: 144.83
+  TxFrequencyOffset: '+0.0'
+  CtcssEncode: 114.8
   CtcssDecode: None
 
 - Name: WBR3AV VHF FM
   Notes: Input to VA3RBW VHF FM
+  Mode: FM
   RxFrequency: 146.19
   TxFrequencyOffset: '+0.0'
-  Mode: FM
-  CtcssEncode: None
+  CtcssEncode: 114.8
   CtcssDecode: None

@@ -5,72 +5,72 @@ Channels:
 
 - Name: CTYFIRE
   Notes: County Fire Dispatch
-  RxFrequency: 153.815
   Mode: FM
+  RxFrequency: 153.815
   RxOnly: On
 
 - Name: CTYFTACT
   Notes: County Fire Tactical
-  RxFrequency: 150.53
   Mode: FM
+  RxFrequency: 150.53
   RxOnly: On
 
 - Name: ONTFIRE
   Notes: Ontario Fire Marshall
-  RxFrequency: 414.1125
   Mode: FM
+  RxFrequency: 414.1125
   RxOnly: On
 
 - Name: CTYROADS
   Notes: County Roads
-  RxFrequency: 169.365
   Mode: FM
+  RxFrequency: 169.365
   RxOnly: On
 
 - Name: STOCKBUS
   Notes: County School Buses
-  RxFrequency: 151.85
   Mode: FM
+  RxFrequency: 151.85
   RxOnly: On
 
 - Name: HEALYBUS
   Notes: County School Buses
-  RxFrequency: 157.545
   Mode: FM
+  RxFrequency: 157.545
   RxOnly: On
 
 - Name: AMBULNCE
   Notes: County Ambulance
-  RxFrequency: 143.0  # XXX FIXME TODO  Confirm???
   Mode: FM
+  RxFrequency: 143.0  # XXX FIXME TODO  Confirm???
   RxOnly: On
 
 - Name: AIRAMBL
   Notes: Air Ambulance VFR Enroute
-  RxFrequency: 126.7
   Mode: AM
+  RxFrequency: 126.7
   RxOnly: On
 
 - Name: SFAIRPT
   Notes: Smiths Falls UNICOM
-  RxFrequency: 122.9
   Mode: AM
+  RxFrequency: 122.9
   RxOnly: On
 
 - Name: OTTTWR
   Notes: Ottawa International Airport Tower
-  RxFrequency: 118.8
   Mode: AM
+  RxFrequency: 118.8
   RxOnly: On
 
 - Name: PERTHTWN
   Notes: Perth District Public Works
-  RxFrequency: 162.27
   Mode: FM
+  RxFrequency: 162.27
   RxOnly: On
 
 - Name: PERTHPW
   Notes: Perth Public Works
-  RxFrequency: 169.53
   Mode: FM
+  RxFrequency: 169.53
   RxOnly: On

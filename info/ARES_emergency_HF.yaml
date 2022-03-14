@@ -2,73 +2,73 @@
 Channels:
 
 - Name: SET-A
-  RxFrequency: 3.675
   Mode: LSB
+  RxFrequency: 3.675
 
 - Name: SET-B
-  RxFrequency: 7.135
   Mode: LSB
+  RxFrequency: 7.135
 
 - Name: SET-C
-  RxFrequency: 14.135
   Mode: USB
+  RxFrequency: 14.135
 
 - Name: SET-D
-  RxFrequency: 18.135
   Mode: USB
+  RxFrequency: 18.135
 
 - Name: SET-E
-  RxFrequency: 21.135
   Mode: USB
+  RxFrequency: 21.135
 
 - Name: SET-F
-  RxFrequency: 28.235
   Mode: USB
+  RxFrequency: 28.235
 
 - Name: SET-G
-  RxFrequency: 3.535
   Mode: CW
+  RxFrequency: 3.535
 
 - Name: SET-H
-  RxFrequency: 7.035
   Mode: CW
+  RxFrequency: 7.035
 
 - Name: SET-I
-  RxFrequency: 14.035
   Mode: CW
+  RxFrequency: 14.035
 
 - Name: SET-J
-  RxFrequency: 18.075
   Mode: CW
+  RxFrequency: 18.075
 
 - Name: SET-K
-  RxFrequency: 21.035
   Mode: CW
+  RxFrequency: 21.035
 
 - Name: SET-L
-  RxFrequency: 28.035
   Mode: CW
+  RxFrequency: 28.035
 
 - Name: SET-M
-  RxFrequency: 3.596
   Mode: LSB
+  RxFrequency: 3.596
 
 - Name: SET-N
-  RxFrequency: 7.096
   Mode: LSB
+  RxFrequency: 7.096
 
 - Name: SET-O
-  RxFrequency: 14.096
   Mode: USB
+  RxFrequency: 14.096
 
 - Name: SET-P
-  RxFrequency: 18.096
   Mode: USB
+  RxFrequency: 18.096
 
 - Name: SET-Q
-  RxFrequency: 21.096
   Mode: USB
+  RxFrequency: 21.096
 
 - Name: SET-R
-  RxFrequency: 28.096
   Mode: USB
+  RxFrequency: 28.096
