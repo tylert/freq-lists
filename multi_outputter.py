@@ -221,7 +221,7 @@ def process_chirp_channels_csv(entries, max_name_length=8, start_index=1):
         'Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,Mode,TStep,Skip,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE'
     )
 
-    memory = start_index
+    location = start_index
     for entry in entries:
         name = sanitize_chirp_channel_name(entry['Name'], max_name_length)
         frequency = entry['RxFrequency']
@@ -309,9 +309,9 @@ def process_chirp_channels_csv(entries, max_name_length=8, start_index=1):
             tstep = 5.00
 
         print(
-            f'{memory},{name},{frequency:.6f},{duplex},{offset:.6f},{tone},{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,{comment},,,,'
+            f'{location},{name},{frequency:.6f},{duplex},{offset:.6f},{tone},{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,{comment},,,,'
         )
-        memory += 1
+        location += 1
 
 
 def process_rt_systems_channels_csv(entries, max_name_length=8):
