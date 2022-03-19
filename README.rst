@@ -11,7 +11,7 @@ Requirements
 
 You must have the following tools installed:
 
-* (REQUIRED) Python 3.10.x or newer;  for using the "multi_outputter" script for processing the input data files
+* (REQUIRED) Python 3.10.x or newer;  for using the "multi_outputter.py" script for processing the input data files
 * (REQUIRED) dmrRadio_ binary 1.0.23 or newer;  for exporting/importing codeplugs to/from JSON and generating blank codeplugs
 * (SUGGESTED) editcp_ 1.0.23 or newer;  for further editing codeplugs
 * (REQUIRED) jq_;  for working with JSON payloads
@@ -34,6 +34,7 @@ Running Things
     make && source .venv/bin/activate
 
     # Create new stock codeplugs and CSV files for mobile and handheld radios
+    ./fetch_db.sh
     ./generate_rdt.sh
     ./generate_csv.sh
 

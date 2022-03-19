@@ -33,10 +33,10 @@ human_output_file='tmp/HUMAN_rdt.csv'
 # XXX FIXME TODO  Finish the porting work for the P3/P4 buttons!!!
 
 # Generate a blank codeplug and convert it to JSON
+# XXX FIXME TODO  Remove this sed hack after fixing the UUID bug!!!
 dmrRadio newCodeplug -model 'MD-2017' -freq '400-480_136-174' tmp/Retevis_RT90.rdt
 dmrRadio codeplugToJSON tmp/Retevis_RT90.rdt tmp/Retevis_RT90.json
 sed -i 's/_.*"/"/' tmp/Retevis_RT90.json
-# XXX FIXME TODO  Remove this ^^^ hack after fixing the UUID bug!!!
 
 # Fix the default settings and fill in contact stubs and zone stubs
 cat tmp/Retevis_RT90.json | jq --from-file codeplugs/Retevis_RT90.jq > tmp/0.json
@@ -64,10 +64,10 @@ chmod 0644 tmp/*.rdt
 # |_| \_\|_| |____/____/
 
 # Generate a blank codeplug and convert it to JSON
+# XXX FIXME TODO  Remove this sed hack after fixing the UUID bug!!!
 dmrRadio newCodeplug -model 'RT3S' -freq '400-480_136-174' tmp/Retevis_RT3S.rdt
 dmrRadio codeplugToJSON tmp/Retevis_RT3S.rdt tmp/Retevis_RT3S.json
 sed -i 's/_.*"/"/' tmp/Retevis_RT3S.json
-# XXX FIXME TODO  Remove this ^^^ hack after fixing the UUID bug!!!
 
 # Fix the default settings and fill in contact stubs and zone stubs
 cat tmp/Retevis_RT3S.json | jq --from-file codeplugs/Retevis_RT3S.jq > tmp/0.json

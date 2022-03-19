@@ -2,20 +2,12 @@
 
 # set -x
 
-# echo "Australia\nCanada\nNew Zealand\nUnited Kingdom\nUnited States" > tmp/countries.txt
-# wget --continue --output-document=tmp/user.csv https://database.radioid.net/static/user.csv
-# cat tmp/user.csv | cut -d',' -f1-7 | sort -g | egrep '^[0-9]' > tmp/scrubbed.csv
-# Force all rows to have 7 columns, sort by ID, drop lines that don't start with an ID
-# dmrRadio filterUsers tmp/countries.txt tmp/scrubbed.csv tmp/filtered.csv
-
-# Convert binary codeplugs to JSON for intermediate processing
+# Convert binary codeplugs back into JSON for intermediate processing
+# XXX FIXME TODO  Remove these sed hacks after fixing the UUID bug!!!
 dmrRadio codeplugToJSON tmp/Retevis_RT90.rdt tmp/Retevis_RT90.json
-sed -i 's/_.*"/"/' tmp/Retevis_RT90.json
-# XXX FIXME TODO  Remove this ^^^ hack after fixing the UUID bug!!!
-
 dmrRadio codeplugToJSON tmp/Retevis_RT3S.rdt tmp/Retevis_RT3S.json
+sed -i 's/_.*"/"/' tmp/Retevis_RT90.json
 sed -i 's/_.*"/"/' tmp/Retevis_RT3S.json
-# XXX FIXME TODO  Remove this ^^^ hack after fixing the UUID bug!!!
 
 # __     ___    _____ ____   ____ _   _
 # \ \   / / \  |___ /|  _ \ / ___| \ | |
