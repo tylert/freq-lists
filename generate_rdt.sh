@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Required tools:  bash, chmod, dmrRadio, jq, mkdir, python (3.10.x+), rm, sed
+
 # set -x
 mkdir -p tmp
 
@@ -37,7 +39,7 @@ dmrRadio codeplugToJSON tmp/Retevis_RT90.rdt tmp/Retevis_RT90.json
 sed -i 's/_.*"/"/' tmp/Retevis_RT90.json
 
 # Fix the default settings and fill in contact stubs and zone stubs
-cat tmp/Retevis_RT90.json | jq --from-file codeplugs/Retevis_RT90.jq > tmp/0.json
+jq --from-file codeplugs/Retevis_RT90.jq tmp/Retevis_RT90.json > tmp/0.json
 jq --slurp '.[0] * .[1]' tmp/0.json codeplugs/stubs.json > tmp/1.json
 
 # Populate the codeplug channels from the input data files
@@ -68,7 +70,7 @@ dmrRadio codeplugToJSON tmp/Retevis_RT3S.rdt tmp/Retevis_RT3S.json
 sed -i 's/_.*"/"/' tmp/Retevis_RT3S.json
 
 # Fix the default settings and fill in contact stubs and zone stubs
-cat tmp/Retevis_RT3S.json | jq --from-file codeplugs/Retevis_RT3S.jq > tmp/0.json
+jq --from-file codeplugs/Retevis_RT3S.jq tmp/Retevis_RT3S.json > tmp/0.json
 jq --slurp '.[0] * .[1]' tmp/0.json codeplugs/stubs.json > tmp/1.json
 
 # Populate the codeplug channels from the input data files

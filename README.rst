@@ -38,6 +38,21 @@ Running Things
     ./generate_rdt.sh
     ./generate_csv.sh
 
+    # dmrRadio writeMD2017Users tmp/filtered.csv  # if radio is Retevis RT90
+    # dmrRadio writeUV380Users tmp/filtered.csv   # if radio is Retevis RT3S
+    # dmrRadio writeCodeplug tmp/foo.rdt
+
+
+Radio Programming Kiosk
+-----------------------
+
+If you want to use a tiny SBC like a Raspberry Pi as a programming workstation,
+simply run the following::
+
+    sudo apt-get --yes install git libusb-1.0-0-dev
+    git clone https://github.com/dalefarnsworth-dmr/dmrRadio && cd dmrRadio
+    go build
+
 
 Converting Existing Codeplugs To Templates
 ------------------------------------------
