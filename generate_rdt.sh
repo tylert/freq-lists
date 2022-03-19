@@ -21,8 +21,6 @@ info/GMRS_FRS_UHF.yaml
 info/Weather_info_VHF.yaml
 '
 
-human_output_file='tmp/HUMAN_rdt.csv'
-
 #  ____ _____ ___   ___
 # |  _ \_   _/ _ \ / _ \
 # | |_) || || (_) | | | |
@@ -87,25 +85,3 @@ dmrRadio jsonToCodeplug tmp/${index}.json tmp/Retevis_RT3S.rdt
 # Clean up intermediate and generated files
 rm -f tmp/*.json
 chmod 0644 tmp/*.rdt
-
-#  _   _ _   _ __  __    _    _   _
-# | | | | | | |  \/  |  / \  | \ | |
-# | |_| | | | | |\/| | / _ \ |  \| |
-# |  _  | |_| | |  | |/ ___ \| |\  |
-# |_| |_|\___/|_|  |_/_/   \_\_| \_|
-
-# XXX FIXME TODO  https://realpython.com/openpyxl-excel-spreadsheets-python/
-# XXX FIXME TODO  https://openpyxl.readthedocs.io/en/stable/styles.html#edit-page-setup
-
-index=1
-for input_file in ${input_files}; do
-    if [[ 1 == ${index} ]]; then
-        ./multi_outputter.py --format HUMAN --input_file ${input_file} \
-            --start_index 1 > ${human_output_file}
-    else
-        ./multi_outputter.py --format HUMAN --input_file ${input_file} \
-            --start_index $(wc -l ${human_output_file} | cut -d' ' -f1) \
-            | tail -n '+2' >> ${human_output_file}
-    fi
-    index=$((${index} + 1))
-done
