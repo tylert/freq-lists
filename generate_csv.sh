@@ -11,6 +11,10 @@ info/RLCT_normal.yaml
 info/Lanark_County_VHF.yaml
 info/Packet_FM_VHF_UHF.yaml
 '
+human_input_files=${input_files}
+human_input_files+='
+repeaters/DMR.yaml
+'
 
 chirp_output_file='tmp/CHIRP.csv'
 rt_systems_output_file='tmp/RT.csv'
@@ -63,11 +67,8 @@ done
 # XXX FIXME TODO  https://realpython.com/openpyxl-excel-spreadsheets-python/
 # XXX FIXME TODO  https://openpyxl.readthedocs.io/en/stable/styles.html#edit-page-setup
 
-input_files=${input_files}
-input_files+='repeaters/DMR.yaml'
-
 index=1
-for input_file in ${input_files}; do
+for input_file in ${human_input_files}; do
     if [[ 1 == ${index} ]]; then
         ./multi_outputter.py --format HUMAN --input_file ${input_file} \
             --start_index 1 > ${human_output_file}
