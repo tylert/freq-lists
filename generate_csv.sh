@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Required tools:  bash, cut, mkdir, python (3.10.x+), tail, wc
+
 # set -x
 mkdir -p tmp
 
@@ -11,6 +13,8 @@ info/RLCT_normal.yaml
 info/Lanark_County_VHF.yaml
 info/Packet_FM_VHF_UHF.yaml
 '
+
+# Append a few files to the printout sheet that aren't in the other outputs
 human_input_files=${input_files}
 human_input_files+='
 repeaters/DMR.yaml

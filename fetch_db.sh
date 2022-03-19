@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Required tools:  bash, cut, dmrRadio, egrep, mkdir, sort, wget
+
 # set -x
 mkdir -p tmp
 

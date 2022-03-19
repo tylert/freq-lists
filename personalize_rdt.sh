@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Required tools:  bash, chmod, dmrRadio, jq, rm, sed
+
 # set -x
 
 # Convert binary codeplugs back into JSON for intermediate processing
