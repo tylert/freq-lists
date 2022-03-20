@@ -110,7 +110,7 @@ Channels:
 # ======================================================================================
 
 - Name: VE3OCE VHF FM  # Motorola MTR 2000
-  Notes: FN25EJ02OB Alta Vista & Randall Avenue  # OFS Dispatch / OFS Station 35
+  Notes: FN25EJ02OB Alta Vista  # OFS Dispatch / OFS Station 35
   Mode: FM  # FM only
   RxFrequency: 146.88
   TxFrequencyOffset: '-0.6'
@@ -118,7 +118,7 @@ Channels:
   CtcssDecode: 136.5
 
 - Name: VE3OCE UHF FM  # Kenwood TKR-850
-  Notes: FN25EJ02OB Alta Vista & Randall Avenue  # OFS Dispatch / OFS Station 35
+  Notes: FN25EJ02OB Alta Vista  # OFS Dispatch / OFS Station 35
   Mode: FM  # FM only
   RxFrequency: 443.8
   TxFrequencyOffset: '+5.0'
@@ -158,7 +158,7 @@ Channels:
   CtcssDecode: 123.0
 
 - Name: VA3EMV/P VHF FM  # Motorola Radius mobiles
-  Notes: FN25EJ02OB Alta Vista & Randall Avenue  # OFS Dispatch / OFS Station 35
+  Notes: FN25EJ02OB Alta Vista  # OFS Dispatch / OFS Station 35
   Mode: FM  # FM only
   RxFrequency: 145.11
   TxFrequencyOffset: '-0.6'

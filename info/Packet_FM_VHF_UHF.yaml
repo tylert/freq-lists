@@ -18,18 +18,18 @@ Channels:
 # ======================================================================================
 
 - Name: OCEPKT VHF PKT  # Motorola Radius/Spectra mobiles
-  Notes: FN25EJ02OB Alta Vista & Randall Avenue  # OFS Dispatch / OFS Station 35
-  Mode: FM
+  Notes: FN25EJ02OB Alta Vista  # OFS Dispatch / OFS Station 35
+  Mode: FM  # FM only
   RxFrequency: 145.03
 
 - Name: ALTPKT1 VHF PKT
   Notes: Alternate packet frequency 1
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 145.07
 
 - Name: ALTPKT2 VHF PKT
   Notes: Alternate packet frequency 2
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 145.09
 
 #  ___ ____ ____
@@ -46,12 +46,12 @@ Channels:
 
 - Name: ISSPKT1 VHF PKT
   Notes: Packet via ISS
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 145.825
 
 - Name: ISSPKT2 UHF PKT
   Notes: Packet via ISS
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 437.55
 
 #     _    ____  ____  ____
@@ -66,5 +66,5 @@ Channels:
 
 - Name: APRS VHF PKT
   Notes: APRS North America
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 144.39
