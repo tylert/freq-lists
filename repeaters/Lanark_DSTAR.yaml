@@ -18,6 +18,12 @@ Channels:
 
 # XXX FIXME TODO  Verify this info is correct
 
+- Name: VA3AAR VHF DSTAR  # TBD
+  Notes: FN15UD48UV Union Hall
+  Mode: DSTAR  # DMR & DSTAR only (MMDVM)
+  RxFrequency: 145.55
+  TxFrequencyOffset: '-0.6'
+
 # VA3AAR-B
 - Name: VA3AAR UHF DSTAR  # TBD
   Notes: FN15UD48UV Union Hall
