@@ -37,6 +37,14 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: None
 
+- Name: ARC2EV 2UHF FM
+  Notes: Input to VE2CRA UHF DMR
+  Mode: FM  # frequency dedicated to DMR only
+  RxFrequency: 449.4
+  TxFrequencyOffset: '+0.0'
+  CtcssEncode: None
+  CtcssDecode: None
+
 #                        _____     ____  __ ____   ____
 #                       / _ \ \   / /  \/  |  _ \ / ___|
 #                      | | | \ \ / /| |\/| | |_) | |
@@ -45,6 +53,10 @@ Channels:
 
 # Ottawa Valley Mobile Radio Club
 #   https://www.ovmrc.on.ca/
+
+# =========================================
+# VE3MPC VHF FM is currently off the air!!!
+# =========================================
 
 - Name: OWT3EV VHF FM
   Notes: Input to VE3TWO VHF FM
@@ -76,7 +88,7 @@ Channels:
 #                          | |___| |  | |  _ <| |_| |
 #                          |_____|_|  |_|_| \_\\____|
 
-# Emergency Measures Radio Group (Ottawa ARES)
+# Emergency Measures Radio Group (a.k.a. Ottawa ARES)
 #   http://emrg.ca/
 #   https://github.com/emrg-ca/
 #   https://gitlab.com/emrg-ca/

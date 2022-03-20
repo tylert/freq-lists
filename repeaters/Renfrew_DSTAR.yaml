@@ -1,0 +1,27 @@
+---
+Channels:
+
+#  ____             __
+# |  _ \ ___ _ __  / _|_ __ _____      __
+# | |_) / _ \ '_ \| |_| '__/ _ \ \ /\ / /
+# |  _ <  __/ | | |  _| | |  __/\ V  V /
+# |_| \_\___|_| |_|_| |_|  \___| \_/\_/
+
+#                           ____ ____  ____      _
+#                          / ___|  _ \|  _ \    / \
+#                         | |   | |_) | |_) |  / _ \
+#                         | |___|  _ <|  _ <  / ___ \
+#                          \____|_| \_\_| \_\/_/   \_\
+
+# Champlain Regional Repeater Association
+#   http://champlainrepeater.ca/
+#   http://ve3stp.org/  (DEPRECATED!!!)
+
+# XXX FIXME TODO  Find out if this repeater does FM as well
+
+# XLX196 ? module
+- Name: VE3STP UHF DSTAR  # Motorola CM 300 Rx & Tx
+  Notes: FN15NH13OV or FN15NH24WI Kennellys Mountain
+  Mode: DSTAR  # DMR & DSTAR (MMDVM)
+  RxFrequency: 443.6
+  TxFrequencyOffset: '+5.0'

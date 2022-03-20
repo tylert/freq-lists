@@ -1,0 +1,74 @@
+---
+Channels:
+
+#   ___  _   _
+#  / _ \| |_| |_ __ ___      ____ _
+# | | | | __| __/ _` \ \ /\ / / _` |
+# | |_| | |_| || (_| |\ V  V / (_| |
+#  \___/ \__|\__\__,_| \_/\_/ \__,_|
+
+#                            ___    _    ____   ____
+#                           / _ \  / \  |  _ \ / ___|
+#                          | | | |/ _ \ | |_) | |
+#                          | |_| / ___ \|  _ <| |___
+#                           \___/_/   \_\_| \_\\____|
+
+# Ottawa Amateur Radio Club
+#   http://oarc.net/
+#   https://hambone.ca/
+#   https://github.com/oarc/
+#   https://gitlab.com/oarc/
+#   https://bitbucket.org/oarc/
+#   (insert link to ve2cra Pi-Star dashboard here)
+#   https://xrf196.spdns.org/
+#   https://cbctransmission.ca/map/on#289
+
+# VE2CRA DMR audio isn't connected to either VE2CRA FM or IRLP
+
+# TS=2, TG=6 linked to XLX196 B module
+- Name: VE2CRA UHF DMR  # Motorola CDM 1550LS+ Rx & Tx, STM32-DVM Rev3 USB, Raspberry Pi 2B
+  Notes: FN25BM80AQ Camp Fortune
+  Mode: DMR  # CCS7 ID 302093 / DMR only (MMDVM)
+  RxFrequency: 444.4
+  TxFrequencyOffset: '+5.0'
+  ColorCode: 1
+
+#                        _____     ____  __ ____   ____
+#                       / _ \ \   / /  \/  |  _ \ / ___|
+#                      | | | \ \ / /| |\/| | |_) | |
+#                      | |_| |\ V / | |  | |  _ <| |___
+#                       \___/  \_/  |_|  |_|_| \_\\____|
+
+# Ottawa Valley Mobile Radio Club
+#   https://www.ovmrc.on.ca/
+#   http://ve3ram.ddns.net:380/
+#   https://xrf196.spdns.org/
+
+# TS=2, TG=6 linked to XLX196 B module
+- Name: VE3RAM UHF DMR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
+  Notes: FN25FK69VT Orleans at VE3LC
+  Mode: DMR  # CCS7 ID 302117 / DMR, DSTAR, FM & YSF (MMDVM)
+  RxFrequency: 443.7
+  TxFrequencyOffset: '+5.0'
+  ColorCode: 1
+
+#                         ___    _    ____  ____   ____
+#                        / _ \  / \  |  _ \|  _ \ / ___|
+#                       | | | |/ _ \ | |_) | | | | |  _
+#                       | |_| / ___ \|  _ <| |_| | |_| |
+#                        \___/_/   \_\_| \_\____/ \____|
+
+# Ottawa Amateur Radio Digital Group
+#   https://va3odg.webqth.com/
+#   https://dstarottawa.wordpress.com/
+#   http://va3odg.ddns.net:380/
+#   https://xrf196.spdns.org/
+
+# XXX FIXME TODO  Verify this info is correct
+
+- Name: VA3ODG UHF DMR  # Icom???
+  Notes: FN25DJ78GT Ottawa YMCA-YWCA
+  Mode: DMR  # CCS7 ID 302065 / DMR & DSTAR (MMDVM)
+  RxFrequency: 444.85
+  TxFrequencyOffset: '+5.0'
+  ColorCode: 1

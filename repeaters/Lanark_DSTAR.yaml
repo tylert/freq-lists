@@ -1,0 +1,40 @@
+---
+Channels:
+
+#  _                           _
+# | |    __ _ _ __   __ _ _ __| | __
+# | |   / _` | '_ \ / _` | '__| |/ /
+# | |__| (_| | | | | (_| | |  |   <
+# |_____\__,_|_| |_|\__,_|_|  |_|\_\
+
+#                            _        _    ____   ____
+#                           / \      / \  |  _ \ / ___|
+#                          / _ \    / _ \ | |_) | |
+#                         / ___ \  / ___ \|  _ <| |___
+#                        /_/   \_\/_/   \_\_| \_\\____|
+
+# Almonte Amateur Radio Club
+#   https://almontearclub.ca
+
+# XXX FIXME TODO  Verify this info is correct
+
+# VA3AAR-B
+- Name: VA3AAR UHF DSTAR  # TBD
+  Notes: FN15UD48UV Union Hall
+  Mode: DSTAR  # DSTAR only or other modes too???
+  RxFrequency: 444.1
+  TxFrequencyOffset: '+5.0'
+
+# VA3RDD-C
+- Name: VA3RDD VHF DSTAR  # TBD
+  Notes: Rideau Ferry Rideau Lk McVy's Bay integral of VE3XZT
+  Mode:  DSTAR  # DSTAR only or other modes too???
+  RxFrequency: 147.24
+  TxFrequencyOffset: '+0.6'
+
+# VA3RDD-B (status channel???)
+- Name: VA3RDD UHF DSTAR  # TBD
+  Notes: Rideau Ferry Rideau Lk McVy's Bay integral of VE3XZT
+  Mode:  DSTAR  # DSTAR only or other modes too???
+  RxFrequency: 444.8
+  TxFrequencyOffset: '+5.0'

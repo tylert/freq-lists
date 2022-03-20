@@ -7,18 +7,27 @@
 mkdir -p tmp
 
 input_files='
-repeaters/RLARC_LNL_ARES_AARC_normal.yaml
-repeaters/OARC_OVMRC_EMRG_normal.yaml
-repeaters/CRRA_RCARC_normal.yaml
-repeaters/RLCT_normal.yaml
+repeaters/Lanark_FM.yaml
+repeaters/Ottawa_FM.yaml
+repeaters/Renfrew_FM.yaml
+info/RLCT_FM.yaml
 info/Lanark_County_VHF.yaml
 info/Packet_FM_VHF_UHF.yaml
+fussy/Simplex_FM_VHF.yaml
+fussy/Simplex_FM_UHF.yaml
 '
 
 # Append a few files to the handout sheet that aren't in the other outputs
 human_input_files=${input_files}
 human_input_files+='
-repeaters/DMR.yaml
+repeaters/Lanark_DSTAR.yaml
+repeaters/Ottawa_DSTAR.yaml
+repeaters/Renfrew_DSTAR.yaml
+repeaters/Lanark_DMR.yaml
+repeaters/Ottawa_DMR.yaml
+repeaters/Renfrew_DMR.yaml
+repeaters/Lanark_YSF.yaml
+repeaters/Ottawa_YSF.yaml
 '
 
 chirp_output_file='tmp/CHIRP.csv'

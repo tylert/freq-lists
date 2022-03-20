@@ -1,0 +1,28 @@
+---
+Channels:
+
+#   ___  _   _
+#  / _ \| |_| |_ __ ___      ____ _
+# | | | | __| __/ _` \ \ /\ / / _` |
+# | |_| | |_| || (_| |\ V  V / (_| |
+#  \___/ \__|\__\__,_| \_/\_/ \__,_|
+
+#                         ___    _    ____  ____   ____
+#                        / _ \  / \  |  _ \|  _ \ / ___|
+#                       | | | |/ _ \ | |_) | | | | |  _
+#                       | |_| / ___ \|  _ <| |_| | |_| |
+#                        \___/_/   \_\_| \_\____/ \____|
+
+# Ottawa Amateur Radio Digital Group
+#   https://va3odg.webqth.com/
+#   https://dstarottawa.wordpress.com/
+#   http://va3odg.ddns.net:380/
+#   https://xrf196.spdns.org/
+
+# XXX FIXME TODO  Verify this data is correct
+
+- Name: VA3ODG UHF DSTAR  # Icom???
+  Notes: FN25DJ78GT Ottawa YMCA-YWCA
+  Mode: DSTAR  # DSTAR only (not MMDVM)
+  RxFrequency: 145.53
+  TxFrequencyOffset: '-0.6'

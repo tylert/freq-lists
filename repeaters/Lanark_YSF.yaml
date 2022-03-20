@@ -1,0 +1,69 @@
+---
+Channels:
+
+#  _                           _
+# | |    __ _ _ __   __ _ _ __| | __
+# | |   / _` | '_ \ / _` | '__| |/ /
+# | |__| (_| | | | | (_| | |  |   <
+# |_____\__,_|_| |_|\__,_|_|  |_|\_\
+
+#                            _        _    ____   ____
+#                           / \      / \  |  _ \ / ___|
+#                          / _ \    / _ \ | |_) | |
+#                         / ___ \  / ___ \|  _ <| |___
+#                        /_/   \_\/_/   \_\_| \_\\____|
+
+# Almonte Amateur Radio Club
+#   https://almontearclub.ca/
+
+# XXX FIXME TODO  Verify this info is correct
+
+- Name: VA3ARE VHF YSF  # Yaesu DR-1X
+  Notes: FN15VD29FP Almonte at VE3CFZ
+  Mode: YSF  # FM & YSF (not MMDVM)
+  RxFrequency: 147.27
+  TxFrequencyOffset: '+0.6'
+
+#                       ____  _        _    ____   ____
+#                      |  _ \| |      / \  |  _ \ / ___|
+#                      | |_) | |     / _ \ | |_) | |
+#                      |  _ <| |___ / ___ \|  _ <| |___
+#                      |_| \_\_____/_/   \_\_| \_\\____|
+
+# Rideau Lakes Amateur Radio Club
+#   https://www.ve3rlr.ca/p/about.html
+
+- Name: VE3RLR VHF YSF  # Yaesu DR-2X
+  Notes: FN14XV66OK Railway Museum
+  Mode: YSF  # FM & YSF (not MMDVM)
+  RxFrequency: 147.21
+  TxFrequencyOffset: '+0.6'
+
+- Name: VE3RLR UHF YSF  # Yaesu DR-2X
+  Notes: FN14XV66OK Railway Museum
+  Mode: YSF  # FM & YSF (not MMDVM)
+  RxFrequency: 442.75
+  TxFrequencyOffset: '+5.0'
+
+#                _     _   _ _          _    ____  _____ ____
+#               | |   | \ | | |        / \  |  _ \| ____/ ___|
+#               | |   |  \| | |       / _ \ | |_) |  _| \___ \
+#               | |___| |\  | |___   / ___ \|  _ <| |___ ___) |
+#               |_____|_| \_|_____| /_/   \_\_| \_\_____|____/
+
+# Lanark / North Leeds Amateur Radio Emergency Service
+#   https://www.ve3rlr.ca/2018/07/LNLARES.html
+#   https://www.qsl.net/ve3lca/
+#   https://cneo-nceo.ca/record/kgn1773/
+
+- Name: VA3TEL VHF YSF  # Yaesu DR-2X + Tait 9100 link radios
+  Notes: FN14ST76TP Christie Lake
+  Mode: YSF  # FM & YSF (not MMDVM)
+  RxFrequency: 145.23  # FM linked to VE3KJG VHF FM
+  TxFrequencyOffset: '-0.6'
+
+- Name: VE3REX UHF YSF  # Yaesu DR-2X + Tait 9100 link radio
+  Notes: FN14WU70DM Rideau Ferry
+  Mode: YSF  # FM & YSF (not MMDVM)
+  RxFrequency: 442.2  # FM linked to VA3TEL VHF FM
+  TxFrequencyOffset: '+5.0'

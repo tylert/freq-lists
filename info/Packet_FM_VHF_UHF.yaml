@@ -39,8 +39,10 @@ Channels:
 # |___|____/____/
 
 # International Space Station
-#   https://www.ariss.org/contact-the-iss.html
 #   https://en.wikipedia.org/wiki/International_Space_Station
+#   https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System
+#   https://www.ariss.org/contact-the-iss.html
+#   https://www.amsat.org/amateur-radio-on-the-iss/
 
 - Name: ISSPKT1 VHF PKT
   Notes: Packet via ISS
