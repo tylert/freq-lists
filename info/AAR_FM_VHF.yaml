@@ -1,7 +1,16 @@
 ---
 Channels:
 
-# https://www.radioreference.com/apps/db/?aid=7747
+#     _        _    ____
+#    / \      / \  |  _ \
+#   / _ \    / _ \ | |_) |
+#  / ___ \  / ___ \|  _ <
+# /_/   \_\/_/   \_\_| \_\
+
+# Association of American Railroads (US);  CA and MX are "Special Members"
+#   https://www.radioreference.com/apps/db/?aid=7747
+#   https://en.wikipedia.org/wiki/Association_of_American_Railroads
+#   https://www.aar.org/
 
 - Name: AAR001
   Mode: NFM
