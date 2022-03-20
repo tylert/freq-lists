@@ -1,0 +1,37 @@
+---
+Channels:
+
+#  ____             __
+# |  _ \ ___ _ __  / _|_ __ _____      __
+# | |_) / _ \ '_ \| |_| '__/ _ \ \ /\ / /
+# |  _ <  __/ | | |  _| | |  __/\ V  V /
+# |_| \_\___|_| |_|_| |_|  \___| \_/\_/
+
+#                           ____ ____  ____      _
+#                          / ___|  _ \|  _ \    / \
+#                         | |   | |_) | |_) |  / _ \
+#                         | |___|  _ <|  _ <  / ___ \
+#                          \____|_| \_\_| \_\/_/   \_\
+
+# Champlain Regional Repeater Association
+#   http://champlainrepeater.ca/
+#   http://ve3stp.org/  (DEPRECATED!!!)
+#   http://ve3stp.ddns.net:44480/
+#   https://xrf196.spdns.org/
+
+# XXX FIXME TODO  Find out if this repeater does FM as well
+
+# TS=2, TG=6 linked to XLX196 B module
+- Name: VE3STP UHF DMR  # Motorola CM 300 Rx & Tx
+  Notes: FN15NH13OV or FN15NH24WI Kennellys Mountain
+  Mode: DMR  # CCS7 ID 302064 / DMR & DSTAR (MMDVM)
+  RxFrequency: 443.6
+  TxFrequencyOffset: '+5.0'
+  ColorCode: 1
+
+- Name: VE3STP VHF DMR  # Motorola XPR 8300 + 60 W amp
+  Notes: FN15NH13OV or FN15NH24WI Kennellys Mountain
+  Mode: DMR  # CCS7 ID 302096 / FM & DMR (not MMDVM)
+  RxFrequency: 145.39
+  TxFrequencyOffset: '-0.6'
+  ColorCode: 1

@@ -1,6 +1,12 @@
 ---
 Channels:
 
+#  ____             __
+# |  _ \ ___ _ __  / _|_ __ _____      __
+# | |_) / _ \ '_ \| |_| '__/ _ \ \ /\ / /
+# |  _ <  __/ | | |  _| | |  __/\ V  V /
+# |_| \_\___|_| |_|_| |_|  \___| \_/\_/
+
 #                           ____ ____  ____      _
 #                          / ___|  _ \|  _ \    / \
 #                         | |   | |_) | |_) |  / _ \
@@ -13,18 +19,28 @@ Channels:
 
 - Name: PTS3EV VHF FM
   Notes: Input to VE3STP VHF FM
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 146.46
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 114.8
   CtcssDecode: None
 
 - Name: PTS3EV 2VHF FM
-  Notes: Input to VE3STP 2VHF FM
-  Mode: FM  # frequency also shared with DMR
+  Notes: Input to VE3STP 2VHF FM / VE3STP VHF DMR
+  Mode: FM  # FM & DMR (not MMDVM)
   RxFrequency: 144.79
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 114.8
+  CtcssDecode: None
+
+# XXX FIXME TODO  Find out if this repeater does FM as well
+
+- Name: PTS3EV UHF FM
+  Notes: Input to VE3STP UHF DMR
+  Mode: FM  # DMR & DSTAR (MMDVM)
+  RxFrequency: 448.6
+  TxFrequencyOffset: '+0.0'
+  CtcssEncode: None
   CtcssDecode: None
 
 #                       ____   ____    _    ____   ____
@@ -39,7 +55,7 @@ Channels:
 
 - Name: RRN3EV VHF FM
   Notes: Input to VE3NRR VHF FM
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 146.16
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 100.0
@@ -47,7 +63,7 @@ Channels:
 
 - Name: RRN3EV UHF FM
   Notes: Input to VE3NRR UHF FM
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 443.025
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 100.0
@@ -55,7 +71,7 @@ Channels:
 
 - Name: RRZ3EV VHF FM
   Notes: Input to VE3ZRR VHF FM
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 147.72
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 114.8
@@ -63,7 +79,7 @@ Channels:
 
 - Name: RCU3EV VHF FM
   Notes: Input to VE3UCR VHF FM
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 144.83
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 114.8
@@ -71,7 +87,7 @@ Channels:
 
 - Name: WBR3AV VHF FM
   Notes: Input to VA3RBW VHF FM
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 146.19
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 114.8

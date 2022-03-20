@@ -7,15 +7,17 @@
 mkdir -p tmp
 
 input_files='
-repeaters/DMR.yaml
-repeaters/RLARC_LNL_ARES_AARC_normal.yaml
-repeaters/OARC_OVMRC_EMRG_normal.yaml
-repeaters/CRRA_RCARC_normal.yaml
-repeaters/RLARC_LNL_ARES_AARC_reverse.yaml
-repeaters/OARC_OVMRC_EMRG_reverse.yaml
-repeaters/CRRA_RCARC_reverse.yaml
-repeaters/RLCT_normal.yaml
-repeaters/RLCT_reverse.yaml
+repeaters/Lanark_DMR.yaml
+repeaters/Ottawa_DMR.yaml
+repeaters/Renfrew_DMR.yaml
+repeaters/Lanark_FM.yaml
+repeaters/Ottawa_FM.yaml
+repeaters/Renfrew_FM.yaml
+repeaters/Lanark_inputs.yaml
+repeaters/Ottawa_inputs.yaml
+repeaters/Renfrew_inputs.yaml
+info/RLCT_FM.yaml
+info/RLCT_inputs.yaml
 info/Simplex_DMR_VHF.yaml
 info/Simplex_DMR_UHF.yaml
 info/Simplex_FM_VHF.yaml

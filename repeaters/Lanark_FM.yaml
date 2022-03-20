@@ -7,6 +7,47 @@ Channels:
 # | |__| (_| | | | | (_| | |  |   <
 # |_____\__,_|_| |_|\__,_|_|  |_|\_\
 
+#                            _        _    ____   ____
+#                           / \      / \  |  _ \ / ___|
+#                          / _ \    / _ \ | |_) | |
+#                         / ___ \  / ___ \|  _ <| |___
+#                        /_/   \_\/_/   \_\_| \_\\____|
+
+# Almonte Amateur Radio Club
+#   https://almontearclub.ca/
+
+# *** "??? Net" Wednesdays at 21:00 Eastern on VA3ARE VHF FM
+
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# VA3ARE VHF FM is IRLP Node 2280
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+# XXX FIXME TODO  Verify this info is correct
+
+- Name: VE3AAR VHF FM  # TBD
+  Notes: FN15UD48UV Union Hall
+  Mode: FM  # FM & DMR & DSTAR (MMDVM)
+  RxFrequency: 145.55
+  TxFrequencyOffset: '-0.6'
+  CtcssEncode: 100.0
+  CtcssDecode: 100.0
+
+- Name: VA3AAR UHF FM  # TBD
+  Notes: FN15VF52ET Fire Hall
+  Mode: FM
+  RxFrequency: 444.3  # FM linked to VE3KJG VHF FM
+  TxFrequencyOffset: '+5.0'
+  CtcssEncode: 100.0
+  CtcssDecode: 100.0
+
+- Name: VA3ARE VHF FM  # Yaesu DR-1X
+  Notes: FN15VD29FP Almonte at VE3CFZ
+  Mode: FM  # FM & YSF (not MMDVM)
+  RxFrequency: 147.27
+  TxFrequencyOffset: '+0.6'
+  CtcssEncode: 100.0
+  CtcssDecode: 100.0
+
 #                       ____  _        _    ____   ____
 #                      |  _ \| |      / \  |  _ \ / ___|
 #                      | |_) | |     / _ \ | |_) | |
@@ -19,16 +60,16 @@ Channels:
 # *** No FM nets, currently ***
 
 - Name: VE3RLR VHF FM  # Yaesu DR-2X
-  Notes: FN14XV66OK Railway Museum  # Smiths Falls
-  Mode: FM  # frequency shared with YSF
+  Notes: FN14XV66OK Railway Museum
+  Mode: FM  # FM & YSF (not MMDVM)
   RxFrequency: 147.21
   TxFrequencyOffset: '+0.6'
   CtcssEncode: 151.4
   CtcssDecode: 151.4
 
 - Name: VE3RLR UHF FM  # Yaesu DR-2X
-  Notes: FN14XV66OK Railway Museum  # Smiths Falls
-  Mode: FM  # frequency shared with YSF
+  Notes: FN14XV66OK Railway Museum
+  Mode: FM  # FM & YSF (not MMDVM)
   RxFrequency: 442.75
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 151.4
@@ -53,7 +94,7 @@ Channels:
 
 - Name: VE3KJG VHF FM  # Motorola MSF 5000
   Notes: FN15PB91SB Lavant
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 146.64
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 100.0
@@ -61,33 +102,33 @@ Channels:
 
 - Name: VA3TEL VHF FM  # Yaesu DR-2X + Tait 9100 link radios
   Notes: FN14ST76TP Christie Lake
-  Mode: NFM  # frequency shared with YSF
+  Mode: NFM  # FM & YSF (not MMDVM)
   Bandwidth: 12.5
-  RxFrequency: 145.23  # linked to VE3KJG VHF FM
+  RxFrequency: 145.23  # FM linked to VE3KJG VHF FM
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
 - Name: VE3REX UHF FM  # Yaesu DR-2X + Tait 9100 link radio
   Notes: FN14WU70DM Rideau Ferry
-  Mode: NFM  # frequency shared with YSF
+  Mode: NFM  # FM & YSF (not MMDVM)
   Bandwidth: 12.5
-  RxFrequency: 442.2  # linked to VE3KJG VHF FM
+  RxFrequency: 442.2  # FM linked to VA3TEL VHF FM
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
 - Name: VE3WPO UHF FM  # Motorola MSR 2000 + Motorola GM 300 link radio
   Notes: FN14TQ20KL Westport  # Legion
-  Mode: FM
-  RxFrequency: 442.4  # linked to VE3KJG VHF FM
+  Mode: FM  # FM only
+  RxFrequency: 442.4  # FM linked to VA3TEL VHF FM
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 100.0
   CtcssDecode: None
 
 # - Name: VE3HTN VHF FM  # TBD + Motorola GM 300 link radios
-#   Notes: FN24 Toledo Off-air
-#   Mode: FM
+#   Notes: Toledo Off-air
+#   Mode: FM  # FM only
 #   RxFrequency: 146.865
 #   TxFrequencyOffset: '-0.6'
 #   CtcssEncode: 100.0
@@ -95,47 +136,8 @@ Channels:
 
 # - Name: VE3LCA VHF FM  # TBD
 #   Notes: Perth Off-air
-#   Mode: FM
+#   Mode: FM  # FM only
 #   RxFrequency: 146.955
 #   TxFrequencyOffset: '-0.6'
 #   CtcssEncode: 100.0
 #   CtcssDecode: None
-
-#                            _        _    ____   ____
-#                           / \      / \  |  _ \ / ___|
-#                          / _ \    / _ \ | |_) | |
-#                         / ___ \  / ___ \|  _ <| |___
-#                        /_/   \_\/_/   \_\_| \_\\____|
-
-# Almonte Amateur Radio Club
-#   https://almontearclub.ca/
-
-# *** "??? Net" Wednesdays at 21:00 Eastern on VA3ARE VHF FM
-
-# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-# VA3ARE VHF FM is IRLP Node 2280
-# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-- Name: VE3AAR VHF FM  # TBD
-  Notes: FN15UD48UV Union Hall
-  Mode: FM  # frequency shared with DMR & DSTAR
-  RxFrequency: 145.55
-  TxFrequencyOffset: '-0.6'
-  CtcssEncode: 100.0
-  CtcssDecode: 100.0
-
-- Name: VA3AAR UHF FM  # TBD
-  Notes: FN15VF52ET Fire Hall
-  Mode: FM
-  RxFrequency: 444.3  # linked to VE3KJG VHF FM
-  TxFrequencyOffset: '+5.0'
-  CtcssEncode: 100.0
-  CtcssDecode: 100.0
-
-- Name: VA3ARE VHF FM  # Yaesu DR-1X
-  Notes: FN15VD29FP Almonte at VE3CFZ
-  Mode: FM  # frequency shared with YSF
-  RxFrequency: 147.27
-  TxFrequencyOffset: '+0.6'
-  CtcssEncode: 100.0
-  CtcssDecode: 100.0

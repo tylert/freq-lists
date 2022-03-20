@@ -7,6 +7,41 @@ Channels:
 # | |__| (_| | | | | (_| | |  |   <
 # |_____\__,_|_| |_|\__,_|_|  |_|\_\
 
+#                            _        _    ____   ____
+#                           / \      / \  |  _ \ / ___|
+#                          / _ \    / _ \ | |_) | |
+#                         / ___ \  / ___ \|  _ <| |___
+#                        /_/   \_\/_/   \_\_| \_\\____|
+
+# Almonte Amateur Radio Club
+#   https://almontearclub.ca
+
+# XXX FIXME TODO  Verify this info is correct
+
+- Name: RAA3EV VHF FM
+  Notes: Input to VA3AAR VHF FM
+  Mode: FM  # FM & DMR & DSTAR
+  RxFrequency: 144.95
+  TxFrequencyOffset: '+0.0'
+  CtcssEncode: 100.0
+  CtcssDecode: None
+
+- Name: RAA3AV UHF FM
+  Notes: Input to VA3AAR UHF FM
+  Mode: FM
+  RxFrequency: 449.3
+  TxFrequencyOffset: '+0.0'
+  CtcssEncode: 100.0
+  CtcssDecode: None
+
+- Name: ERA3AV VHF FM
+  Notes: Input to VA3ARE VHF FM
+  Mode: FM  # FM & YSF (not MMDVM)
+  RxFrequency: 147.87
+  TxFrequencyOffset: '+0.0'
+  CtcssEncode: 100.0
+  CtcssDecode: None
+
 #                       ____  _        _    ____   ____
 #                      |  _ \| |      / \  |  _ \ / ___|
 #                      | |_) | |     / _ \ | |_) | |
@@ -18,7 +53,7 @@ Channels:
 
 - Name: RLRE3V VHF FM
   Notes: Input to VE3RLR VHF FM
-  Mode: FM  # frequency shared with YSF
+  Mode: FM  # FM & YSF (not MMDVM)
   RxFrequency: 147.81
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 151.4
@@ -26,7 +61,7 @@ Channels:
 
 - Name: RLR3EV UHF FM
   Notes: Input to VE3RLR UHF FM
-  Mode: FM  # frequency shared with YSF
+  Mode: FM  # FM & YSF (not MMDVM)
   RxFrequency: 447.75
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 151.4
@@ -45,7 +80,7 @@ Channels:
 
 - Name: GJK3EV VHF FM
   Notes: Input to VE3KJG VHF FM
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 146.04
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 100.0
@@ -53,7 +88,7 @@ Channels:
 
 - Name: LET3AV VHF FM
   Notes: Input to VA3TEL VHF FM
-  Mode: NFM  # frequency shared with YSF
+  Mode: NFM  # FM & YSF (not MMDVM)
   Bandwidth: 12.5
   RxFrequency: 144.63
   TxFrequencyOffset: '+0.0'
@@ -62,7 +97,7 @@ Channels:
 
 - Name: XER3EV UHF FM
   Notes: Input to VE3REX UHF FM
-  Mode: NFM  # frequency shared with YSF
+  Mode: NFM  # FM & YSF (not MMDVM)
   Bandwidth: 12.5
   RxFrequency: 447.2
   TxFrequencyOffset: '+0.0'
@@ -71,15 +106,15 @@ Channels:
 
 - Name: OPW3EV UHF FM
   Notes: Input to VE3WPO UHF FM
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 447.4
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 100.0
   CtcssDecode: None
 
 # - Name: NTH3EV VHF FM
-#   Notes: Input to VE3NTH VHF FM
-#   Mode: FM
+#   Notes: Input to VE3HTN VHF FM
+#   Mode: FM  # FM only
 #   RxFrequency: 146.265
 #   TxFrequencyOffset: '+0.0'
 #   CtcssEncode: 100.0
@@ -87,41 +122,8 @@ Channels:
 
 # - Name: ALC3EV VHF FM
 #   Notes: Input to VE3LCA VHF FM
-#   Mode: FM
+#   Mode: FM  # FM only
 #   RxFrequency: 146.355
 #   TxFrequencyOffset: '+0.0'
 #   CtcssEncode: 100.0
 #   CtcssDecode: None
-
-#                            _        _    ____   ____
-#                           / \      / \  |  _ \ / ___|
-#                          / _ \    / _ \ | |_) | |
-#                         / ___ \  / ___ \|  _ <| |___
-#                        /_/   \_\/_/   \_\_| \_\\____|
-
-# Almonte Amateur Radio Club
-#   https://almontearclub.ca
-
-- Name: RAA3EV VHF FM
-  Notes: Input to VA3AAR VHF FM
-  Mode: FM
-  RxFrequency: 144.95
-  TxFrequencyOffset: '+0.0'
-  CtcssEncode: 100.0
-  CtcssDecode: None
-
-- Name: RAA3AV UHF FM
-  Notes: Input to VA3AAR UHF FM
-  Mode: FM
-  RxFrequency: 449.3
-  TxFrequencyOffset: '+0.0'
-  CtcssEncode: 100.0
-  CtcssDecode: None
-
-- Name: ERA3AV VHF FM
-  Notes: Input to VA3ARE VHF FM
-  Mode: FM  # frequency shared with YSF
-  RxFrequency: 147.87
-  TxFrequencyOffset: '+0.0'
-  CtcssEncode: 100.0
-  CtcssDecode: None

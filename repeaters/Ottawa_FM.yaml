@@ -34,7 +34,7 @@ Channels:
 
 - Name: VE2CRA VHF FM  # TBD
   Notes: FN25BM80AQ Camp Fortune
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 146.94
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 100.0
@@ -42,7 +42,7 @@ Channels:
 
 - Name: VE2CRA UHF FM  # TBD
   Notes: FN25BM80AQ Camp Fortune
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 443.3
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 100.0
@@ -65,7 +65,7 @@ Channels:
 
 - Name: VE3TWO VHF FM  # Yaesu DR-1X
   Notes: FN25GG16CW Metcalfe at VE3BOE  # 60-foot fold-over tower (80-foot tower?)
-  Mode: FM  # frequency also shared with YSF
+  Mode: FM  # FM & YSF
   RxFrequency: 147.3
   TxFrequencyOffset: '+0.6'
   CtcssEncode: 100.0
@@ -73,7 +73,7 @@ Channels:
 
 - Name: VE3MPC VHF FM  # Yaesu DR-1X
   Notes: FN25FK69VT Orleans at VE3LC
-  Mode: FM  # frequency also shared with YSF
+  Mode: FM  # FM & YSF
   RxFrequency: 147.15
   TxFrequencyOffset: '+0.6'
   CtcssEncode: 100.0
@@ -81,7 +81,7 @@ Channels:
 
 - Name: VE3RAM UHF FM  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Notes: FN25FK69VT Orleans at VE3LC
-  Mode: FM  # frequency also shared with DMR, DSTAR & YSF
+  Mode: FM  # FM & DMR & DSTAR & YSF
   RxFrequency: 443.7
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 100.0
@@ -93,7 +93,7 @@ Channels:
 #                          | |___| |  | |  _ <| |_| |
 #                          |_____|_|  |_|_| \_\\____|
 
-# Emergency Measures Radio Group (Ottawa ARES)
+# Emergency Measures Radio Group (a.k.a. Ottawa ARES)
 #   http://emrg.ca/
 #   https://github.com/emrg-ca/
 #   https://gitlab.com/emrg-ca/
@@ -111,7 +111,7 @@ Channels:
 
 - Name: VE3OCE VHF FM  # Motorola MTR 2000
   Notes: FN25EJ02OB Alta Vista & Randall Avenue  # OFS Dispatch / OFS Station 35
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 146.88
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 136.5
@@ -119,7 +119,7 @@ Channels:
 
 - Name: VE3OCE UHF FM  # Kenwood TKR-850
   Notes: FN25EJ02OB Alta Vista & Randall Avenue  # OFS Dispatch / OFS Station 35
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 443.8
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 136.5
@@ -127,7 +127,7 @@ Channels:
 
 - Name: VA3OFS VHF FM  # Motorola MSR 2000
   Notes: FN25DG06EE Barrhaven  # OFS Station 44
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 146.67
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 136.5
@@ -135,7 +135,7 @@ Channels:
 
 - Name: VA3OFS UHF FM  # Kenwood TKR-850
   Notes: FN25DG06EE Barrhaven  # OFS Station 44
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 444.95
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 136.5
@@ -143,7 +143,7 @@ Channels:
 
 - Name: VA3EMV/E VHF FM  # Motorola MSR 2000
   Notes: FN25GL12NI Orleans  # OFS Station 53
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 146.985
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 100.0
@@ -151,7 +151,7 @@ Channels:
 
 - Name: VA3EMV/W VHF FM  # Motorola MTR 2000
   Notes: FN25BG01GA Stittsville  # OFS Station 81
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 145.21
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 123.0
@@ -159,7 +159,7 @@ Channels:
 
 - Name: VA3EMV/P VHF FM  # Motorola Radius mobiles
   Notes: FN25EJ02OB Alta Vista & Randall Avenue  # OFS Dispatch / OFS Station 35
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 145.11
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 136.5
