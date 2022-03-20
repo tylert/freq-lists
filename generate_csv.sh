@@ -10,7 +10,7 @@ input_files='
 repeaters/RLARC_LNL_ARES_AARC_normal.yaml
 repeaters/OARC_OVMRC_EMRG_normal.yaml
 repeaters/CRRA_RCARC_normal.yaml
-info/RLCT_normal.yaml
+repeaters/RLCT_normal.yaml
 info/Lanark_County_VHF.yaml
 info/Packet_FM_VHF_UHF.yaml
 '
