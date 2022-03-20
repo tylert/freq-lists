@@ -14,8 +14,8 @@ repeaters/CRRA_RCARC_normal.yaml
 repeaters/RLARC_LNL_ARES_AARC_reverse.yaml
 repeaters/OARC_OVMRC_EMRG_reverse.yaml
 repeaters/CRRA_RCARC_reverse.yaml
-info/RLCT_normal.yaml
-info/RLCT_reverse.yaml
+repeaters/RLCT_normal.yaml
+repeaters/RLCT_reverse.yaml
 info/Simplex_DMR_VHF.yaml
 info/Simplex_DMR_UHF.yaml
 info/Simplex_FM_VHF.yaml
