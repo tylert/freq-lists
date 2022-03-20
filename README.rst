@@ -12,17 +12,28 @@ Requirements
 You must have the following tools installed:
 
 * (REQUIRED) Python 3.10.x or newer;  for using the "multi_outputter.py" script for processing the input data files
+* (REQUIRED) jq_;  for working with JSON payloads
 * (REQUIRED) dmrRadio_ binary 1.0.23 or newer;  for exporting/importing codeplugs to/from JSON and generating blank codeplugs
 * (SUGGESTED) editcp_ 1.0.23 or newer;  for further editing codeplugs
-* (REQUIRED) jq_;  for working with JSON payloads
 
-.. _editcp: https://github.com/DaleFarnsworth-DMR/editcp
-.. _dmrRadio: https://github.com/DaleFarnsworth-DMR/dmrRadio
 .. _jq: https://stedolan.github.io/jq/
+.. _dmrRadio: https://github.com/dalefarnsworth-dmr/dmrRadio
+.. _editcp: https://github.com/dalefarnsworth-dmr/editcp
 
 There are some really good programming tutorials at
 https://youtu.be/VExx628R0DM and https://youtu.be/Lw0Y-jQZMZ0 which are useful
 for learning about the digital side of things.
+
+
+Radio Programming Kiosk
+-----------------------
+
+If you want to use a tiny SBC like a Raspberry Pi as a programming workstation,
+simply run the following::
+
+    sudo apt-get --yes install git libusb-1.0-0-dev
+    git clone https://github.com/dalefarnsworth-dmr/dmrRadio && cd dmrRadio
+    go build
 
 
 Running Things
@@ -43,17 +54,6 @@ Running Things
     # dmrRadio writeCodeplug tmp/foo.rdt
 
 
-Radio Programming Kiosk
------------------------
-
-If you want to use a tiny SBC like a Raspberry Pi as a programming workstation,
-simply run the following::
-
-    sudo apt-get --yes install git libusb-1.0-0-dev
-    git clone https://github.com/dalefarnsworth-dmr/dmrRadio && cd dmrRadio
-    go build
-
-
 Converting Existing Codeplugs To Templates
 ------------------------------------------
 
@@ -61,7 +61,7 @@ Converting Existing Codeplugs To Templates
 
     # Export the binary codeplug as JSON and fix some values
     dmrRadio codeplugToJSON codeplug.rdt before.json
-    cat before.json | jq --from-file Retevis_RT3S.jq > after.json
+    jq --from-file Retevis_RT3S.jq before.json > after.json
 
 
 Generating Codeplugs From Templates
@@ -87,18 +87,6 @@ Generating Codeplugs From Templates
       }
     }
     EOF
-
-    make write_codeplug  # write the codeplug to the radio
-    make write           # write both the codeplug and contacts
-
-
-Updating Contacts Database
---------------------------
-
-::
-
-    make contacts        # just fetch the contacts
-    make write_contacts  # write the contacts to the radio
 
 
 Starting a New Codeplug
@@ -249,7 +237,7 @@ Firmware and CPS
 ----------------
 
 * https://www.farnsworth.org/dale/codeplug/editcp/  main page for Editcp
-* https://github.com/DaleFarnsworth-DMR  source code for editcp, dmrRadio, libraries, etc.
+* https://github.com/dalefarnsworth-dmr  source code for editcp, dmrRadio, libraries, etc.
 * https://dm3mat.darc.de/qdmr/  main page for qdmr
 * https://github.com/hmatuschek/qdmr  source code for qdmr
 * https://opengd77.com/viewtopic.php?f=18&t=2002  replacement firmware for Retevis RT90 / TYT MD-9600
