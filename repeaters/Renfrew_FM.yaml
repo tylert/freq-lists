@@ -29,7 +29,7 @@ Channels:
 
 - Name: VE3STP 2VHF FM  # Motorola XPR 8300 + 60 W amp
   Notes: FN15NH13OV or FN15NH24WI Kennellys Mountain
-  Mode: FM  # FM & DMR (not MMDVM)
+  Mode: FM  # FM & DMR only (not MMDVM)
   RxFrequency: 145.39
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 114.8

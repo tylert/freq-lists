@@ -22,6 +22,6 @@ Channels:
 # XLX196 ? module
 - Name: VE3STP UHF DSTAR  # Motorola CM 300 Rx & Tx
   Notes: FN15NH13OV or FN15NH24WI Kennellys Mountain
-  Mode: DSTAR  # DMR & DSTAR (MMDVM)
+  Mode: DSTAR  # DMR & DSTAR only (MMDVM)
   RxFrequency: 443.6
   TxFrequencyOffset: '+5.0'

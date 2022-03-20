@@ -20,7 +20,7 @@ Channels:
 
 - Name: RAA3EV VHF FM
   Notes: Input to VA3AAR VHF FM
-  Mode: FM  # FM & DMR & DSTAR
+  Mode: FM  # FM & DMR & DSTAR only
   RxFrequency: 144.95
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 100.0
@@ -28,7 +28,7 @@ Channels:
 
 - Name: RAA3AV UHF FM
   Notes: Input to VA3AAR UHF FM
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 449.3
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 100.0
@@ -36,7 +36,7 @@ Channels:
 
 - Name: ERA3AV VHF FM
   Notes: Input to VA3ARE VHF FM
-  Mode: FM  # FM & YSF (not MMDVM)
+  Mode: FM  # FM & YSF only (not MMDVM)
   RxFrequency: 147.87
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 100.0
@@ -53,7 +53,7 @@ Channels:
 
 - Name: RLRE3V VHF FM
   Notes: Input to VE3RLR VHF FM
-  Mode: FM  # FM & YSF (not MMDVM)
+  Mode: FM  # FM & YSF only (not MMDVM)
   RxFrequency: 147.81
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 151.4
@@ -61,7 +61,7 @@ Channels:
 
 - Name: RLR3EV UHF FM
   Notes: Input to VE3RLR UHF FM
-  Mode: FM  # FM & YSF (not MMDVM)
+  Mode: FM  # FM & YSF only (not MMDVM)
   RxFrequency: 447.75
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 151.4
@@ -88,7 +88,7 @@ Channels:
 
 - Name: LET3AV VHF FM
   Notes: Input to VA3TEL VHF FM
-  Mode: NFM  # FM & YSF (not MMDVM)
+  Mode: NFM  # FM & YSF only (not MMDVM)
   Bandwidth: 12.5
   RxFrequency: 144.63
   TxFrequencyOffset: '+0.0'
@@ -97,7 +97,7 @@ Channels:
 
 - Name: XER3EV UHF FM
   Notes: Input to VE3REX UHF FM
-  Mode: NFM  # FM & YSF (not MMDVM)
+  Mode: NFM  # FM & YSF only (not MMDVM)
   Bandwidth: 12.5
   RxFrequency: 447.2
   TxFrequencyOffset: '+0.0'

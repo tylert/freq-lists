@@ -27,7 +27,7 @@ Channels:
 
 - Name: PTS3EV 2VHF FM
   Notes: Input to VE3STP 2VHF FM / VE3STP VHF DMR
-  Mode: FM  # FM & DMR (not MMDVM)
+  Mode: FM  # FM & DMR only (not MMDVM)
   RxFrequency: 144.79
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 114.8
@@ -37,7 +37,7 @@ Channels:
 
 - Name: PTS3EV UHF FM
   Notes: Input to VE3STP UHF DMR
-  Mode: FM  # DMR & DSTAR (MMDVM)
+  Mode: FM  # DMR & DSTAR only (MMDVM)
   RxFrequency: 448.6
   TxFrequencyOffset: '+0.0'
   CtcssEncode: None
