@@ -19,7 +19,6 @@ Channels:
 
 # XXX FIXME TODO  Find out if this repeater does FM as well
 
-# XLX196 ? module
 - Name: VE3STP UHF DSTAR  # Motorola CM 300 Rx & Tx
   Notes: FN15NH13OV or FN15NH24WI Kennellys Mountain
   Mode: DSTAR  # DMR & DSTAR only (MMDVM)
