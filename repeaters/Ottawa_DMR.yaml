@@ -47,7 +47,7 @@ Channels:
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3RAM UHF DMR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Notes: FN25FK69VT Orleans at VE3LC
-  Mode: DMR  # CCS7 ID 302117 / DMR, DSTAR, FM & YSF (MMDVM)
+  Mode: DMR  # CCS7 ID 302117 / DMR & DSTAR & FM & YSF only (MMDVM)
   RxFrequency: 443.7
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
@@ -64,11 +64,9 @@ Channels:
 #   http://va3odg.ddns.net:380/
 #   https://xrf196.spdns.org/
 
-# XXX FIXME TODO  Verify this info is correct
-
 - Name: VA3ODG UHF DMR  # Icom???
   Notes: FN25DJ78GT Ottawa YMCA-YWCA
-  Mode: DMR  # CCS7 ID 302065 / DMR & DSTAR (MMDVM)
+  Mode: DMR  # CCS7 ID 302065 / DMR & DSTAR only (MMDVM)
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'
   ColorCode: 1

@@ -20,7 +20,7 @@ Channels:
 
 - Name: VA3ARE VHF YSF  # Yaesu DR-1X
   Notes: FN15VD29FP Almonte at VE3CFZ
-  Mode: YSF  # FM & YSF (not MMDVM)
+  Mode: YSF  # FM & YSF only (not MMDVM)
   RxFrequency: 147.27
   TxFrequencyOffset: '+0.6'
 
@@ -35,13 +35,13 @@ Channels:
 
 - Name: VE3RLR VHF YSF  # Yaesu DR-2X
   Notes: FN14XV66OK Railway Museum
-  Mode: YSF  # FM & YSF (not MMDVM)
+  Mode: YSF  # FM & YSF only (not MMDVM)
   RxFrequency: 147.21
   TxFrequencyOffset: '+0.6'
 
 - Name: VE3RLR UHF YSF  # Yaesu DR-2X
   Notes: FN14XV66OK Railway Museum
-  Mode: YSF  # FM & YSF (not MMDVM)
+  Mode: YSF  # FM & YSF only (not MMDVM)
   RxFrequency: 442.75
   TxFrequencyOffset: '+5.0'
 
@@ -58,12 +58,12 @@ Channels:
 
 - Name: VA3TEL VHF YSF  # Yaesu DR-2X + Tait 9100 link radios
   Notes: FN14ST76TP Christie Lake
-  Mode: YSF  # FM & YSF (not MMDVM)
+  Mode: YSF  # FM & YSF only (not MMDVM)
   RxFrequency: 145.23  # FM linked to VE3KJG VHF FM
   TxFrequencyOffset: '-0.6'
 
 - Name: VE3REX UHF YSF  # Yaesu DR-2X + Tait 9100 link radio
   Notes: FN14WU70DM Rideau Ferry
-  Mode: YSF  # FM & YSF (not MMDVM)
+  Mode: YSF  # FM & YSF only (not MMDVM)
   RxFrequency: 442.2  # FM linked to VA3TEL VHF FM
   TxFrequencyOffset: '+5.0'

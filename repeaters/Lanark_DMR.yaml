@@ -25,7 +25,7 @@ Channels:
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VA3AAR VHF DMR  # TBD
   Notes: FN15UD48UV Union Hall
-  Mode: DMR  # CCS7 ID 302070 / DMR & DSTAR (MMDVM)
+  Mode: DMR  # CCS7 ID 302070 / DMR & DSTAR only (MMDVM)
   RxFrequency: 145.55
   TxFrequencyOffset: '-0.6'
   ColorCode: 1

@@ -26,7 +26,7 @@ Channels:
 
 - Name: VE3AAR VHF FM  # TBD
   Notes: FN15UD48UV Union Hall
-  Mode: FM  # FM & DMR & DSTAR (MMDVM)
+  Mode: FM  # FM & DMR & DSTAR only (MMDVM)
   RxFrequency: 145.55
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 100.0
@@ -34,7 +34,7 @@ Channels:
 
 - Name: VA3AAR UHF FM  # TBD
   Notes: FN15VF52ET Fire Hall
-  Mode: FM
+  Mode: FM  # FM only
   RxFrequency: 444.3  # FM linked to VE3KJG VHF FM
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 100.0
@@ -42,7 +42,7 @@ Channels:
 
 - Name: VA3ARE VHF FM  # Yaesu DR-1X
   Notes: FN15VD29FP Almonte at VE3CFZ
-  Mode: FM  # FM & YSF (not MMDVM)
+  Mode: FM  # FM & YSF only (not MMDVM)
   RxFrequency: 147.27
   TxFrequencyOffset: '+0.6'
   CtcssEncode: 100.0
@@ -61,7 +61,7 @@ Channels:
 
 - Name: VE3RLR VHF FM  # Yaesu DR-2X
   Notes: FN14XV66OK Railway Museum
-  Mode: FM  # FM & YSF (not MMDVM)
+  Mode: FM  # FM & YSF only (not MMDVM)
   RxFrequency: 147.21
   TxFrequencyOffset: '+0.6'
   CtcssEncode: 151.4
@@ -69,7 +69,7 @@ Channels:
 
 - Name: VE3RLR UHF FM  # Yaesu DR-2X
   Notes: FN14XV66OK Railway Museum
-  Mode: FM  # FM & YSF (not MMDVM)
+  Mode: FM  # FM & YSF only (not MMDVM)
   RxFrequency: 442.75
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 151.4
@@ -102,7 +102,7 @@ Channels:
 
 - Name: VA3TEL VHF FM  # Yaesu DR-2X + Tait 9100 link radios
   Notes: FN14ST76TP Christie Lake
-  Mode: NFM  # FM & YSF (not MMDVM)
+  Mode: NFM  # FM & YSF only (not MMDVM)
   Bandwidth: 12.5
   RxFrequency: 145.23  # FM linked to VE3KJG VHF FM
   TxFrequencyOffset: '-0.6'
@@ -111,7 +111,7 @@ Channels:
 
 - Name: VE3REX UHF FM  # Yaesu DR-2X + Tait 9100 link radio
   Notes: FN14WU70DM Rideau Ferry
-  Mode: NFM  # FM & YSF (not MMDVM)
+  Mode: NFM  # FM & YSF only (not MMDVM)
   Bandwidth: 12.5
   RxFrequency: 442.2  # FM linked to VA3TEL VHF FM
   TxFrequencyOffset: '+5.0'

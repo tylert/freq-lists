@@ -65,7 +65,7 @@ Channels:
 
 - Name: VE3TWO VHF FM  # Yaesu DR-1X
   Notes: FN25GG16CW Metcalfe at VE3BOE  # 60-foot fold-over tower (80-foot tower?)
-  Mode: FM  # FM & YSF
+  Mode: FM  # FM & YSF only (not MMDVM)
   RxFrequency: 147.3
   TxFrequencyOffset: '+0.6'
   CtcssEncode: 100.0
@@ -73,7 +73,7 @@ Channels:
 
 - Name: VE3MPC VHF FM  # Yaesu DR-1X
   Notes: FN25FK69VT Orleans at VE3LC
-  Mode: FM  # FM & YSF
+  Mode: FM  # FM & YSF only (not MMDVM)
   RxFrequency: 147.15
   TxFrequencyOffset: '+0.6'
   CtcssEncode: 100.0
@@ -81,7 +81,7 @@ Channels:
 
 - Name: VE3RAM UHF FM  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Notes: FN25FK69VT Orleans at VE3LC
-  Mode: FM  # FM & DMR & DSTAR & YSF
+  Mode: FM  # DMR & DSTAR & FM & YSF only (MMDVM)
   RxFrequency: 443.7
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 100.0
