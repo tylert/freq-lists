@@ -20,7 +20,7 @@ Channels:
 
 - Name: VA3AAR VHF DSTAR  # TBD
   Notes: FN15UD48UV Union Hall
-  Mode: DSTAR  # DMR & DSTAR only (MMDVM)
+  Mode: DSTAR  # FM & DMR & DSTAR only (MMDVM)
   RxFrequency: 145.55
   TxFrequencyOffset: '-0.6'
 
@@ -33,14 +33,14 @@ Channels:
 
 # VA3RDD-C
 - Name: VA3RDD VHF DSTAR  # TBD
-  Notes: Rideau Ferry Rideau Lk McVy's Bay integral of VE3XZT
+  Notes: FN14VU70 McVeety's Bay  # integral of VE3XZT
   Mode:  DSTAR  # DSTAR only or other modes too???
   RxFrequency: 147.24
   TxFrequencyOffset: '+0.6'
 
 # VA3RDD-B (status channel???)
 - Name: VA3RDD UHF DSTAR  # TBD
-  Notes: Rideau Ferry Rideau Lk McVy's Bay integral of VE3XZT
+  Notes: FN14VU70 McVeety's Bay  # integral of VE3XZT
   Mode:  DSTAR  # DSTAR only or other modes too???
   RxFrequency: 444.8
   TxFrequencyOffset: '+5.0'
