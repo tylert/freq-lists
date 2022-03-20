@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-# Required tools:  bash, cut, dmrRadio, egrep, mkdir, sort, wget
+# Fetch the latest DMR ID database and prepare it to be uploaded to the radios
+# Required tools:  bash, cut, dmrRadio, egrep, mkdir, printf, sort, wget
 
 # set -x
 mkdir -p tmp
@@ -15,8 +16,8 @@ mkdir -p tmp
 # CCS7 = Callsign Communications System 7
 #   https://sites.google.com/site/darathursdaynite/d-star/d-star-ccs7-whats-that
 
-# Retevis RT90 storage is limited to 100,000
-# Retevis RT3S storage is limited to 120,000
+# Retevis RT90 contacts DB storage is limited to 100,000 entries
+# Retevis RT3S contactd DB storage is limited to 120,000 entries
 
 # Download CCS7 DMR ID database and try to ensure it still fits in the radio
 # Force all rows to have 7 columns, sort by ID, drop lines that don't start with an ID
