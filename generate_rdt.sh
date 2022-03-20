@@ -20,8 +20,8 @@ info/Simplex_DMR_VHF.yaml
 info/Simplex_DMR_UHF.yaml
 info/Simplex_FM_VHF.yaml
 info/Simplex_FM_UHF.yaml
-info/GMRS_FRS_UHF.yaml
-info/Weather_info_VHF.yaml
+info/GMRS_FRS_FM_UHF.yaml
+info/WX_FM_VHF.yaml
 '
 
 #  ____ _____ ___   ___
