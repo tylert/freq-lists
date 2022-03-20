@@ -22,6 +22,6 @@ mkdir -p tmp
 # Force all rows to have 7 columns, sort by ID, drop lines that don't start with an ID
 wget --continue --output-document=tmp/user.csv https://database.radioid.net/static/user.csv
 cut -d',' -f1-7 tmp/user.csv | sort -g | egrep '^[0-9]' > tmp/scrubbed.csv
-# echo -e "Canada\nUnited States" > tmp/countries.txt  # too big!!!
+# printf 'Canada\nUnited States\n' > tmp/countries.txt  # too big!!!
 printf 'Australia\nCanada\nFrance\nUnited Kingdom\nNew Zealand\n' > tmp/countries.txt
 dmrRadio filterUsers tmp/countries.txt tmp/scrubbed.csv tmp/filtered.csv
