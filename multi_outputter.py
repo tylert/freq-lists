@@ -154,41 +154,42 @@ def process_human_channels_csv(entries, max_name_length=8, start_index=1):
     print('Channel,Name,Mode,Output,Input,Access,Notes')
 
     channel = start_index
-    for entry in entries:
-        name = entry['Name']
-        rx_frequency = entry['RxFrequency']
-        mode = entry['Mode']
+    if entries is not None:
+        for entry in entries:
+            name = entry['Name']
+            rx_frequency = entry['RxFrequency']
+            mode = entry['Mode']
 
-        if 'Notes' in entry.keys():
-            notes = entry['Notes']
-        else:
-            notes = ''
+            if 'Notes' in entry.keys():
+                notes = entry['Notes']
+            else:
+                notes = ''
 
-        if 'TxFrequencyOffset' in entry.keys():
-            tx_frequency = round(
-                float(rx_frequency) + float(entry['TxFrequencyOffset']), 4
-            )
-        else:
-            tx_frequency = float(rx_frequency)
+            if 'TxFrequencyOffset' in entry.keys():
+                tx_frequency = round(
+                    float(rx_frequency) + float(entry['TxFrequencyOffset']), 4
+                )
+            else:
+                tx_frequency = float(rx_frequency)
 
-        # If there's a tone, it's usually for a good reason (e.g. "AMS mode" on YSF).
-        if (
-            'CtcssEncode' in entry.keys()
-            and entry['CtcssEncode'] is not None
-            and entry['CtcssEncode'] != 'None'
-        ):
-            access = f"{entry['CtcssEncode']} Hz"
-        elif (
-            'ColorCode' in entry.keys()
-            and entry['ColorCode'] is not None
-            and entry['ColorCode'] != 'None'
-        ):
-            access = f"CC={entry['ColorCode']}"
-        else:
-            access = ''
+            # If there's a tone, it's usually for a good reason (e.g. "AMS mode" on YSF).
+            if (
+                'CtcssEncode' in entry.keys()
+                and entry['CtcssEncode'] is not None
+                and entry['CtcssEncode'] != 'None'
+            ):
+                access = f"{entry['CtcssEncode']} Hz"
+            elif (
+                'ColorCode' in entry.keys()
+                and entry['ColorCode'] is not None
+                and entry['ColorCode'] != 'None'
+            ):
+                access = f"CC={entry['ColorCode']}"
+            else:
+                access = ''
 
-        print(f'{channel},{name},{mode},{rx_frequency},{tx_frequency},{access},{notes}')
-        channel += 1
+            print(f'{channel},{name},{mode},{rx_frequency},{tx_frequency},{access},{notes}')
+            channel += 1
 
 
 def sanitize_chirp_channel_name(name, length=8):
