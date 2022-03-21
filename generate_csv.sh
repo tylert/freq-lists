@@ -11,10 +11,10 @@ repeaters/Lanark_FM.yaml
 repeaters/Ottawa_FM.yaml
 repeaters/Renfrew_FM.yaml
 info/RLCT_FM.yaml
-info/Lanark_County_VHF.yaml
 info/Packet_FM_VHF_UHF.yaml
 fussy/Simplex_FM_VHF.yaml
 fussy/Simplex_FM_UHF.yaml
+fussy/Lanark_County_VHF.yaml
 '
 
 # Append a few files to the handout sheet that aren't in the other outputs
@@ -28,6 +28,7 @@ repeaters/Ottawa_DMR.yaml
 repeaters/Renfrew_DMR.yaml
 repeaters/Lanark_YSF.yaml
 repeaters/Ottawa_YSF.yaml
+repeaters/Renfrew_YSF.yaml
 '
 
 chirp_output_file='tmp/CHIRP.csv'
