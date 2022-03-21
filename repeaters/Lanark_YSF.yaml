@@ -16,10 +16,8 @@ Channels:
 # Almonte Amateur Radio Club
 #   https://almontearclub.ca/
 
-# XXX FIXME TODO  Verify this info is correct
-
 - Name: VA3ARE VHF YSF  # Yaesu DR-1X
-  Notes: FN15VD29FP Almonte at VE3CFZ
+  Notes: FN15VD29FP Almonte at VE3CFZ  # may move to FN15UD48UV Union Hall
   Mode: YSF  # FM & YSF only (not MMDVM)
   RxFrequency: 147.27
   TxFrequencyOffset: '+0.6'

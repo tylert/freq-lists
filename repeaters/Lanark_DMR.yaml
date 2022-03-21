@@ -18,17 +18,19 @@ Channels:
 #   http://va3aar.dyndns.org:3026/
 #   https://xrf196.spdns.org/
 
-# *** "Something Digital Modes Net???" Tuesdays at 20:38 Eastern on XLX196 and TBD ***
+# *** "Something Digital Modes Net???" Tuesdays at 20:38 Eastern on XLX196 ***
 
-# XXX FIXME TODO  Verify this info is correct
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@
+# DMR mode disabled currently
+# @@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 # TS=2, TG=6 linked to XLX196 B module
-- Name: VA3AAR VHF DMR  # TBD
-  Notes: FN15UD48UV Union Hall
-  Mode: DMR  # CCS7 ID 302070 / DMR & DSTAR only (MMDVM)
-  RxFrequency: 145.55
-  TxFrequencyOffset: '-0.6'
-  ColorCode: 1
+# - Name: VA3AAR VHF DMR  # TBD
+#   Notes: FN15UD48UV Union Hall
+#   Mode: DMR  # CCS7 ID 302070 / DMR & DSTAR only (MMDVM)
+#   RxFrequency: 145.55
+#   TxFrequencyOffset: '-0.6'
+#   ColorCode: 1
 
 #                   __     _______ _____ _   _  ___    _
 #                   \ \   / / ____|___ /| | | |/ _ \  / \

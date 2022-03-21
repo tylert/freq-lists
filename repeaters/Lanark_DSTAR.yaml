@@ -15,32 +15,31 @@ Channels:
 
 # Almonte Amateur Radio Club
 #   https://almontearclub.ca
+#   http://va3aar.dyndns.org:3026/
+#   https://xrf196.spdns.org/
 
-# XXX FIXME TODO  Verify this info is correct
+# *** "Something Digital Modes Net???" Tuesdays at 20:38 Eastern on XLX196 ***
 
 - Name: VA3AAR VHF DSTAR  # TBD
   Notes: FN15UD48UV Union Hall
-  Mode: DSTAR  # FM & DMR & DSTAR only (MMDVM)
+  Mode: DSTAR  # DSTAR only (MMDVM)
   RxFrequency: 145.55
   TxFrequencyOffset: '-0.6'
 
-# VA3AAR-B
 - Name: VA3AAR UHF DSTAR  # TBD
   Notes: FN15UD48UV Union Hall
-  Mode: DSTAR  # DSTAR only or other modes too???
+  Mode: DSTAR  # DSTAR only (MMDVM???)
   RxFrequency: 444.1
   TxFrequencyOffset: '+5.0'
 
-# VA3RDD-C
-- Name: VA3RDD VHF DSTAR  # TBD
+- Name: VA3RDD VHF DSTAR  # Icom ID-RP2000V
   Notes: FN14VU70 McVeety's Bay  # integral of VE3XZT
-  Mode:  DSTAR  # DSTAR only or other modes too???
+  Mode:  DSTAR  # DSTAR only (not MMDVM)
   RxFrequency: 147.24
   TxFrequencyOffset: '+0.6'
 
-# VA3RDD-B (status channel???)
-- Name: VA3RDD UHF DSTAR  # TBD
+- Name: VA3RDD UHF DSTAR  # Icom ID-RP4000V
   Notes: FN14VU70 McVeety's Bay  # integral of VE3XZT
-  Mode:  DSTAR  # DSTAR only or other modes too???
+  Mode:  DSTAR  # DSTAR only (not MMDVM)
   RxFrequency: 444.8
   TxFrequencyOffset: '+5.0'

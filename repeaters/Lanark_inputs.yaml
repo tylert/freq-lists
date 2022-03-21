@@ -16,16 +16,6 @@ Channels:
 # Almonte Amateur Radio Club
 #   https://almontearclub.ca
 
-# XXX FIXME TODO  Verify this info is correct
-
-- Name: RAA3EV VHF FM
-  Notes: Input to VA3AAR VHF FM
-  Mode: FM  # FM & DMR & DSTAR only
-  RxFrequency: 144.95
-  TxFrequencyOffset: '+0.0'
-  CtcssEncode: 100.0
-  CtcssDecode: None
-
 - Name: RAA3AV UHF FM
   Notes: Input to VA3AAR UHF FM
   Mode: FM  # FM only
