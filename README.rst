@@ -28,12 +28,32 @@ for learning about the digital side of things.
 Radio Programming Kiosk
 -----------------------
 
-If you want to use a tiny SBC like a Raspberry Pi as a programming workstation,
-simply run the following::
+Debian-based distros (Debian, Ubuntu, Raspberry Pi OS, etc.), on x86 and ARM::
+
+    # Don't use the go provided by the OS as it is super old and crappy!!!
+    # Fetch an appropriate tarball from https://go.dev/dl/
+    sudo tar -C /usr/local -xvfz ${GO_TARBALL}
 
     sudo apt-get --yes install git libusb-1.0-0-dev
     git clone https://github.com/dalefarnsworth-dmr/dmrRadio && cd dmrRadio
     go build
+
+Arch-based distros (Arch Linux, etc.), on x86 and ARM::
+
+    sudo pacman --no-confirm --sync gcc git go libusb pkgconf
+    git clone https://github.com/dalefarnsworth-dmr/dmrRadio && cd dmrRadio
+    go build
+
+macOS, on x86 and ARM::
+
+    brew install git libusb
+    git clone https://github.com/dalefarnsworth-dmr/dmrRadio && cd dmrRadio
+    go build
+
+Windows users should probably just go fetch the pre-built (x86) binaries
+directly from
+https://www.farnsworth.org/dale/codeplug/dmrRadio/downloads/windows/ and
+https://www.farnsworth.org/dale/codeplug/editcp/downloads/windows/.
 
 
 Running Things
@@ -110,10 +130,13 @@ Starting a New Codeplug
 DFU Mode
 --------
 
-Retevis RT3S DFU mode uses top side key + PTT + twist power knob.  Retevis RT90
-DFU mode uses orange emergency button + P1 + plug-in "hard" power (ignore
-"soft" power button).  TYT MD-390 DFU mode uses the same method as Retevis
-RT3S.
+Retevis RT90 DFU mode uses orange emergency button + P1 + plug-in "hard" power
+(ignore "soft" power button).
+
+Retevis RT3S DFU mode uses top side key + PTT + twist power knob.
+
+* http://miklor.com/COM/Review_MD9600.php
+* http://miklor.com/COM/Review_UV380.php
 
 
 Talkgroups
