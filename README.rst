@@ -142,22 +142,6 @@ Retevis RT3S DFU mode uses top side key + PTT + twist power knob.
 Talkgroups
 ----------
 
-* 3022;  Quebec
-
-::
-
-    VE3TST 444.125+ TG=2 TS=2
-
-    VE2RAO 441.95+ Brandmeister
-        TG=3022 TS=1 CC=1  (Quebec)
-        TG=3023 TS=2 CC=1  (Ontario)
-        TG=302 TS=2 CC=1  (Canada)
-        TG=2 TS=2 CC=1  (local)
-        TG=310 TS=2 CC=1  (TAC 310)
-    (use TS=2 for all TG except 3022)
-
-    VE3ORF TG=2
-
 * https://wiki.brandmeister.network/index.php/TalkGroup/98638  WVNET
 * https://wirelessvillage.ninja
 * https://rfhackers.com

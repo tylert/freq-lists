@@ -1,0 +1,47 @@
+
+#                          __  __    _    ____   ____
+#                         |  \/  |  / \  |  _ \ / ___|
+#                         | |\/| | / _ \ | |_) | |  _
+#                         | |  | |/ ___ \|  _ <| |_| |
+#                         |_|  |_/_/   \_\_| \_\\____|
+
+# Manotick Amateur Radio Group
+#   https://ve3rix.com/
+
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# VE3RIX VHF FM is IRLP Node 2596
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+- Name: VE3RIX VHF FM  # Yaesu???
+  Notes: Laurier at Bank???
+  Mode: FM  # FM & YSF only (not MMDVM???)
+  RxFrequency: 145.45
+  TxFrequencyOffset: '-0.6'
+  CtcssEncode: 151.4
+  CtcssDecode: 151.4
+
+- Name: VE3RIX UHF FM  # Yaesu???
+  Notes: FN25DI??? Metcalfe??? Ottawa Airport???
+  Mode: FM  # FM & YSF only (not MMDVM???)
+  RxFrequency: 442.45
+  TxFrequencyOffset: '+5.0'
+  CtcssEncode: 151.4
+  CtcssDecode: 151.4
+
+- Name: VE3TEL VHF FM  # Yaesu???
+  Notes: ???
+  Mode: FM  # FM & YSF only (not MMDVM???)
+  RxFrequency: 147.03
+  TxFrequencyOffset: '+0.6'
+  CtcssEncode: 100.0
+  CtcssDecode: 100.0
+
+# IRLP Node 2210???
+# - Name: VE3TEL UHF FM  # Yaesu???
+#   Notes: ???
+#   Mode: FM  # FM & YSF only (not MMDVM???)
+#   RxFrequency: 443.8
+#   TxFrequencyOffset: '+5.0'
+#   CtcssEncode: 100.0
+#   CtcssDecode: 100.0
+
