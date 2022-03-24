@@ -12,9 +12,9 @@ repeaters/Ottawa_FM.yaml
 repeaters/Renfrew_FM.yaml
 info/RLCT_FM.yaml
 info/Packet_FM_VHF_UHF.yaml
-fussy/Simplex_FM_VHF.yaml
-fussy/Simplex_FM_UHF.yaml
-fussy/Lanark_County_VHF.yaml
+subtastic/Simplex_FM_VHF.yaml
+subtastic/Simplex_FM_UHF.yaml
+subtastic/Lanark_County_VHF.yaml
 '
 
 # Append a few files to the handout sheet that aren't in the other outputs
