@@ -44,7 +44,7 @@ Channels:
 
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3HOZ UHF DMR  # Motorola CDM 1550LS+ Rx & Tx + 100 W amp, STM32-DVM Rev?, Raspberry Pi 4B
-  Notes: FN15XG Carp at VE3HOA
+  Notes: FN15XG12WH Carp at VE3HOA
   Mode: DMR  # CCS7 ID 302108 / DMR only (MMDVM)
   RxFrequency: 442.3
   TxFrequencyOffset: '+5.0'
