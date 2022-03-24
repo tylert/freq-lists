@@ -32,31 +32,6 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: None
 
-#                       ____  _        _    ____   ____
-#                      |  _ \| |      / \  |  _ \ / ___|
-#                      | |_) | |     / _ \ | |_) | |
-#                      |  _ <| |___ / ___ \|  _ <| |___
-#                      |_| \_\_____/_/   \_\_| \_\\____|
-
-# Rideau Lakes Amateur Radio Club
-#   https://www.ve3rlr.ca/p/about.html
-
-- Name: RLRE3V VHF FM
-  Notes: Input to VE3RLR VHF FM
-  Mode: FM  # FM & YSF only (not MMDVM)
-  RxFrequency: 147.81
-  TxFrequencyOffset: '+0.0'
-  CtcssEncode: 151.4
-  CtcssDecode: None
-
-- Name: RLR3EV UHF FM
-  Notes: Input to VE3RLR UHF FM
-  Mode: FM  # FM & YSF only (not MMDVM)
-  RxFrequency: 447.75
-  TxFrequencyOffset: '+0.0'
-  CtcssEncode: 151.4
-  CtcssDecode: None
-
 #                _     _   _ _          _    ____  _____ ____
 #               | |   | \ | | |        / \  |  _ \| ____/ ___|
 #               | |   |  \| | |       / _ \ | |_) |  _| \___ \
@@ -117,3 +92,28 @@ Channels:
 #   TxFrequencyOffset: '+0.0'
 #   CtcssEncode: 100.0
 #   CtcssDecode: None
+
+#                       ____  _        _    ____   ____
+#                      |  _ \| |      / \  |  _ \ / ___|
+#                      | |_) | |     / _ \ | |_) | |
+#                      |  _ <| |___ / ___ \|  _ <| |___
+#                      |_| \_\_____/_/   \_\_| \_\\____|
+
+# Rideau Lakes Amateur Radio Club
+#   https://www.ve3rlr.ca/p/about.html
+
+- Name: RLRE3V VHF FM
+  Notes: Input to VE3RLR VHF FM
+  Mode: FM  # FM & YSF only (not MMDVM)
+  RxFrequency: 147.81
+  TxFrequencyOffset: '+0.0'
+  CtcssEncode: 151.4
+  CtcssDecode: None
+
+- Name: RLR3EV UHF FM
+  Notes: Input to VE3RLR UHF FM
+  Mode: FM  # FM & YSF only (not MMDVM)
+  RxFrequency: 447.75
+  TxFrequencyOffset: '+0.0'
+  CtcssEncode: 151.4
+  CtcssDecode: None
