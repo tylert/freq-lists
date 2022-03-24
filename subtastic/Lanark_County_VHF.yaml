@@ -39,6 +39,18 @@ Channels:
   RxFrequency: 157.545
   RxOnly: On
 
+- Name: PERTHTWN
+  Notes: Perth District Public Works
+  Mode: FM
+  RxFrequency: 162.27
+  RxOnly: On
+
+- Name: PERTHPW
+  Notes: Perth Public Works
+  Mode: FM
+  RxFrequency: 169.53
+  RxOnly: On
+
 - Name: AMBULNCE
   Notes: County Ambulance
   Mode: FM
@@ -61,16 +73,4 @@ Channels:
   Notes: Ottawa International Airport Tower
   Mode: AM
   RxFrequency: 118.8
-  RxOnly: On
-
-- Name: PERTHTWN
-  Notes: Perth District Public Works
-  Mode: FM
-  RxFrequency: 162.27
-  RxOnly: On
-
-- Name: PERTHPW
-  Notes: Perth Public Works
-  Mode: FM
-  RxFrequency: 169.53
   RxOnly: On
