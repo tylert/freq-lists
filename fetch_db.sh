@@ -26,3 +26,7 @@ cut -d',' -f1-7 tmp/user.csv | sort -g | egrep '^[0-9]' > tmp/scrubbed.csv
 # printf 'Canada\nUnited States\n' > tmp/countries.txt  # too big!!!
 printf 'Australia\nCanada\nFrance\nUnited Kingdom\nNew Zealand\n' > tmp/countries.txt
 dmrRadio filterUsers tmp/countries.txt tmp/scrubbed.csv tmp/filtered.csv
+
+# Clean up intermediate and generated files
+# rm -f tmp/*.txt
+chmod 0644 tmp/*.csv
