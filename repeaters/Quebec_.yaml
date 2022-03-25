@@ -1,0 +1,124 @@
+
+#                             _    ____      _    ___
+#                            / \  |  _ \    / \  |_ _|
+#                           / _ \ | |_) |  / _ \  | |
+#                          / ___ \|  _ <  / ___ \ | |
+#                         /_/   \_\_| \_\/_/   \_\___|
+
+# Association des Radio Amateurs Indépendants
+#   https://ve2reh.com/
+
+- Name: VE2REH VHF FM
+  Notes: Pakenham
+  Mode: FM
+  RxFrequency: 145.33
+  TxFrequencyOffset: '-0.6'
+  CtcssEncode: 110.9
+  CtcssDecode: 110.9
+
+- Name: VE2REH UHF DMR  # Hytera RD982
+  Notes: Gatineau
+  Mode: DMR  # 302354
+  RxFrequency: 442.65
+  TxFrequencyOffset: '+5.0'
+  ColorCode: 1
+
+- Name: VE2REH UHF DMR  # TBD
+  Notes: Mont-Laurier
+  Mode: DMR  # 302043 / DMR (MMDVM)
+  RxFrequency: 444.15
+  TxFrequencyOffset: '+5.0'
+  ColorCode: 1
+
+- Name: VE2REH UHF DMR  # Motorola XPR 8300
+  Notes: L'Ange-Guardien
+  Mode: DMR  # 302356
+  RxFrequency: 442.55
+  TxFrequencyOffset: '+5.0'
+  ColorCode: 1
+
+# 145.49- Gatineau (Buckingham) QC VE2REH 110.9
+# 147.105+ Cantley QC        (L2) VE2REH   2018 110.9
+# 147.36+ Chelsea (Camp Fortune) QC VE2REH 123.0
+# 442.8+ Gatineau (Portable Rptr) QC VE2REH 110.9
+# 444.15+ Lancaster, ON   VE2REH
+# 444.6+ Cantley QC   VE2REH 110.9
+
+# 145.130MHz (s) TSQ146.2Hz | Sheenboro, Québec (Hors-service)
+# 145.170MHz (s) TSQ100.0Hz | Bois-Franc, Québec
+# 145.490MHz (-) TSQ110.9Hz | Gatineau-Est, Québec
+# 146.610MHz (-) TSQ110.9Hz | Lac-Ste-Marie, Québec
+# 147.105MHz (+) TSQ110.9Hz |Cantley, Québec
+# 147.105MHz (+) T131.8Hz | Mont-Laurier, Québec
+# 147.180MHz (+) T123.0Hz | Lac-des-Loups, Québec (Camp Scout Impeesa)
+# 147.360MHz (+) TSQ123.0Hz | Chelsea, Québec
+# 147.390MHz (+) TSQ146.2Hz | Ripon, Québec
+# 147.390MHz (+) TSQ114.8Hz | Campbell's Bay, Québec
+
+# 444.600MHz (+) TSQ110.9Hz | Cantley, Québec
+# 444.600Mhz (+) TSQ114.8Hz | Sainte-Anne-des-Lacs(Temporairement hors service)
+
+#                           ____ ____      _    ___
+#                          / ___|  _ \    / \  / _ \
+#                         | |   | |_) |  / _ \| | | |
+#                         | |___|  _ <  / ___ \ |_| |
+#                          \____|_| \_\/_/   \_\___/
+
+# Club de Radio Amateur Outaouais
+#   https://ve2cro.ca/
+
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# VE2RAO ?HF FM is IRLP Node 2332
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+- Name: VE2RAO VHF FM  # TBD
+  Notes: Hôpital de Hull
+  Mode: FM
+  RxFrequency: 146.745
+  TxFrequencyOffset: '-0.6'
+  CtcssEncode: 118.8
+  CtcssDecode: 118.8
+
+- Name: VE2RAO UHF FM  # TBD
+  Notes: Hôpital de Hull
+  Mode: FM
+  RxFrequency: 443.95
+  TxFrequencyOffset: '+5.0'
+  CtcssEncode: 118.8
+  CtcssDecode: 118.8
+
+- Name: VE2RBH VHF FM  # TBD
+  Notes: Ripon
+  Mode: FM
+  RxFrequency: 145.41
+  TxFrequencyOffset: '-0.6'
+  CtcssEncode: 123.0
+  CtcssDecode: 123.0
+
+- Name: VA2UHF UHF FM  # TBD
+  Notes: Sarsfield
+  Mode: FM
+  RxFrequency: 444.25
+  TxFrequencyOffset: '+5.0'
+  CtcssEncode: 141.3
+  CtcssDecode: 141.3
+
+# XXX FIXME TODO  Out of service???
+
+- Name: VE2SY VHF FM  # TBD
+  Notes: ???
+  Mode: FM
+  RxFrequency: 147.195
+  TxFrequencyOffset: '+0.6'
+  CtcssEncode: 123.0
+  CtcssDecode: 123.0
+
+# XXX FIXME TODO  Out of service???
+
+- Name: VE2RAO UHF DMR  # TBD
+  Notes: Hôpital de Hull
+  Mode: DMR
+  RxFrequency: 441.95
+  TxFrequencyOffset: '+5.0'
+  ColorCode: 1
+  # use TS=2 for all TG except 3022
