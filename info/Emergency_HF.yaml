@@ -1,6 +1,8 @@
 ---
 Channels:
 
+#   https://www.rac.ca/national-hf-emergency-communications-frequencies/
+
 - Name: SET-A
   Mode: LSB
   RxFrequency: 3.675
