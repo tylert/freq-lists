@@ -59,7 +59,10 @@ Channels:
 # VE3NRR VHF FM is IRLP Node 2520
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-# VE3ZRR VHF FM and VE3NRR VHF FM are linked
+# VE3NRR VHF FM and VE3NRR UHF FM are linked
+# VE3ZRR VHF FM and VE3NRR VHF/UHF FM are linked
+# VA3RBW VHF FM and VE3UCR VHF FM may be linked to VE3NRR VHF/UHF FM on-demand
+# VE3NRR VHF/UHF FM is the hub and linked repeaters connect to it on 443.025+
 
 - Name: VE3NRR VHF FM  # MICOR
   Notes: FN15KU00DI Pembroke
@@ -78,7 +81,7 @@ Channels:
   CtcssDecode: 100.0
 
 # XXX FIXME TODO  Find out actual location of this repeater VE3ZRR
-#                 Ask VE3ODJ???  "At the MyFM site"???
+#                 Ask VE3ODJ???  "At the MyFM site"???  Waiting for access???
 
 - Name: VE3ZRR VHF FM  # Motorola MSR 2000
   Notes: FN15PM Pinnacle Hill
