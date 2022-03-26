@@ -109,7 +109,7 @@ Channels:
 # EMRG is in the process of shutting down... the following repeaters may be gone by 2026
 # ======================================================================================
 
-- Name: VE3OCE VHF FM  # Motorola MTR 2000
+- Name: VE3OCE VHF FM  # Hytera???
   Notes: FN25EJ02OB Alta Vista  # OFS Dispatch / OFS Station 35
   Mode: FM  # FM only
   RxFrequency: 146.88

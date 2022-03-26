@@ -19,7 +19,7 @@ Channels:
 #   http://ve3stp.ddns.net:44480/
 #   https://xrf196.spdns.org/
 
-# XXX FIXME TODO  Find out if this repeater does FM as well
+# *** "DSTAR Mini Net" Tuesdays at 20:38 Eastern on XLX196 ***
 
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3STP UHF DMR  # Motorola CM 300 Rx & Tx

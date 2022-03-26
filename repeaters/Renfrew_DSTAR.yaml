@@ -16,8 +16,10 @@ Channels:
 # Champlain Regional Repeater Association
 #   http://champlainrepeater.ca/
 #   http://ve3stp.org/  (DEPRECATED!!!)
+#   http://ve3stp.ddns.net:44480/
+#   https://xrf196.spdns.org/
 
-# XXX FIXME TODO  Find out if this repeater does FM as well
+# *** "DSTAR Mini Net" Tuesdays at 20:38 Eastern on XLX196 ***
 
 - Name: VE3STP UHF DSTAR  # Motorola CM 300 Rx & Tx
   Notes: FN15NH13OV or FN15NH24WI Kennellys Mountain
