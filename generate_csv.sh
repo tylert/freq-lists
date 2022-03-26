@@ -33,7 +33,7 @@ repeaters/Renfrew_YSF.yaml
 
 chirp_output_file='tmp/CHIRP.csv'
 rt_systems_output_file='tmp/RT.csv'
-human_output_file='tmp/HUMAN_csv.csv'
+human_output_file='tmp/HUMAN.csv'
 
 #   ____ _   _ ___ ____  ____
 #  / ___| | | |_ _|  _ \|  _ \
