@@ -3,74 +3,92 @@ Channels:
 
 #   https://www.rac.ca/national-hf-emergency-communications-frequencies/
 
-- Name: SET-A
+- Name: ARES-A
+  Notes: Alfa channel
   Mode: LSB
   RxFrequency: 3.675
 
-- Name: SET-B
+- Name: ARES-B
+  Notes: Bravo channel
   Mode: LSB
   RxFrequency: 7.135
 
-- Name: SET-C
+- Name: ARES-C
+  Notes: Charlie channel
   Mode: USB
   RxFrequency: 14.135
 
-- Name: SET-D
+- Name: ARES-D
+  Notes: Delta channel
   Mode: USB
   RxFrequency: 18.135
 
-- Name: SET-E
+- Name: ARES-E
+  Notes: Echo channel
   Mode: USB
   RxFrequency: 21.135
 
-- Name: SET-F
+- Name: ARES-F
+  Notes: Foxtrot channel
   Mode: USB
   RxFrequency: 28.235
 
-- Name: SET-G
+- Name: ARES-G
+  Notes: Golf channel
   Mode: CW
   RxFrequency: 3.535
 
-- Name: SET-H
+- Name: ARES-H
+  Notes: Hotel channel
   Mode: CW
   RxFrequency: 7.035
 
-- Name: SET-I
+- Name: ARES-I
+  Notes: India channel
   Mode: CW
   RxFrequency: 14.035
 
-- Name: SET-J
+- Name: ARES-J
+  Notes: Juliet channel
   Mode: CW
   RxFrequency: 18.075
 
-- Name: SET-K
+- Name: ARES-K
+  Notes: Kilo channel
   Mode: CW
   RxFrequency: 21.035
 
-- Name: SET-L
+- Name: ARES-L
+  Notes: Lima channel
   Mode: CW
   RxFrequency: 28.035
 
-- Name: SET-M
+- Name: ARES-M
+  Notes: Mike channel
   Mode: LSB
   RxFrequency: 3.596
 
-- Name: SET-N
+- Name: ARES-N
+  Notes: November channel
   Mode: LSB
   RxFrequency: 7.096
 
-- Name: SET-O
+- Name: ARES-O
+  Notes: Oscar channel
   Mode: USB
   RxFrequency: 14.096
 
-- Name: SET-P
+- Name: ARES-P
+  Notes: Papa channel
   Mode: USB
   RxFrequency: 18.096
 
-- Name: SET-Q
+- Name: ARES-Q
+  Notes: Quebec channel
   Mode: USB
   RxFrequency: 21.096
 
-- Name: SET-R
+- Name: ARES-R
+  Notes: Romeo channel
   Mode: USB
   RxFrequency: 28.096
