@@ -16,6 +16,8 @@ Channels:
 # Ottawa Valley Mobile Radio Club
 #   https://www.ovmrc.on.ca/
 
+# *** No YSF nets, currently ***
+
 - Name: VE3TWO VHF YSF  # Yaesu DR-1X
   Notes: FN25GG16CW Metcalfe at VE3BOE  # 60-foot fold-over tower (80-foot tower?)
   Mode: YSF  # FM & YSF only (not MMDVM)

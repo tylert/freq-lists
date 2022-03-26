@@ -18,7 +18,7 @@ Channels:
 #   http://va3aar.dyndns.org:3026/
 #   https://xrf196.spdns.org/
 
-# *** "Something Digital Modes Net???" Tuesdays at 20:38 Eastern on XLX196 ***
+# *** "DSTAR Mini Net" Tuesdays at 20:38 Eastern on XLX196 ***
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@
 # DMR mode disabled currently
@@ -41,6 +41,8 @@ Channels:
 # Phillip Rodney Lytle VE3HOA, VA3HOA
 #   http://ve3hoa.ddns.net:380/
 #   https://xrf196.spdns.org/
+
+# *** "DSTAR Mini Net" Tuesdays at 20:38 Eastern on XLX196 ***
 
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3HOZ UHF DMR  # Motorola CDM 1550LS+ Rx & Tx + 100 W amp, STM32-DVM Rev?, Raspberry Pi 4B

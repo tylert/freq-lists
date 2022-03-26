@@ -23,6 +23,8 @@ Channels:
 #   https://xrf196.spdns.org/
 #   https://cbctransmission.ca/map/on#289
 
+# *** "DSTAR Mini Net" Tuesdays at 20:38 Eastern on XLX196 ***
+
 # VE2CRA DMR audio isn't connected to either VE2CRA FM or IRLP
 
 # TS=2, TG=6 linked to XLX196 B module
@@ -44,6 +46,8 @@ Channels:
 #   http://ve3ram.ddns.net:380/
 #   https://xrf196.spdns.org/
 
+# *** "DSTAR Mini Net" Tuesdays at 20:38 Eastern on XLX196 ***
+
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3RAM UHF DMR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Notes: FN25FK69VT Orleans at VE3LC
@@ -63,6 +67,8 @@ Channels:
 #   https://dstarottawa.wordpress.com/
 #   http://va3odg.ddns.net:380/
 #   https://xrf196.spdns.org/
+
+# *** "DSTAR Mini Net" Tuesdays at 20:38 Eastern on XLX196 ***
 
 - Name: VA3ODG UHF DMR  # Icom???
   Notes: FN25DJ78GT Ottawa YMCA-YWCA

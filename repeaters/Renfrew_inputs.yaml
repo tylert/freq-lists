@@ -33,8 +33,6 @@ Channels:
   CtcssEncode: 114.8
   CtcssDecode: None
 
-# XXX FIXME TODO  Find out if this repeater does FM as well
-
 - Name: PTS3EV UHF FM
   Notes: Input to VE3STP UHF DMR
   Mode: FM  # DMR & DSTAR only (MMDVM)

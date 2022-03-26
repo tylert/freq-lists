@@ -16,6 +16,8 @@ Channels:
 # Almonte Amateur Radio Club
 #   https://almontearclub.ca/
 
+# *** No YSF nets, currently ***
+
 - Name: VA3ARE VHF YSF  # Yaesu DR-1X
   Notes: FN15VD29FP Almonte at VE3CFZ  # may move to FN15UD48UV Union Hall
   Mode: YSF  # FM & YSF only (not MMDVM)
@@ -32,6 +34,10 @@ Channels:
 #   https://www.ve3rlr.ca/2018/07/LNLARES.html
 #   https://www.qsl.net/ve3lca/
 #   https://cneo-nceo.ca/record/kgn1773/
+
+# *** No YSF nets, currently ***
+
+# There is currently no internet connectivity at these sites
 
 - Name: VA3TEL VHF YSF  # Yaesu DR-2X + Tait 9100 link radios
   Notes: FN14ST76TP Christie Lake
@@ -53,6 +59,8 @@ Channels:
 
 # Rideau Lakes Amateur Radio Club
 #   https://www.ve3rlr.ca/p/about.html
+
+# *** No YSF nets, currently ***
 
 - Name: VE3RLR VHF YSF  # Yaesu DR-2X
   Notes: FN14XV66OK Railway Museum
