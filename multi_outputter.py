@@ -151,7 +151,7 @@ def process_dmr_channels(entries, channel_stub):
 
 def process_human_channels_csv(entries, max_name_length=8, start_index=1):
     ''' '''
-    print('Channel,Name,Mode,Output,Input,Access,Notes')
+    print('Channel,Name,Notes,Mode,Output,Input,Access')
 
     channel = start_index
     if entries is not None:
@@ -188,7 +188,7 @@ def process_human_channels_csv(entries, max_name_length=8, start_index=1):
             else:
                 access = ''
 
-            print(f'{channel},{name},{mode},{rx_frequency},{tx_frequency},{access},{notes}')
+            print(f'{channel},{name},{notes},{mode},{rx_frequency},{tx_frequency},{access}')
             channel += 1
 
 
