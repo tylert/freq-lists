@@ -36,7 +36,7 @@ Channels:
   Notes: FN14VU70 McVeety's Bay  # integral of VE3XZT
   Mode:  DSTAR  # DSTAR only (not MMDVM)
   RxFrequency: 147.24
-  TxFrequencyOffset: '+0.6'
+  TxFrequencyOffset: '-0.6'
 
 - Name: VA3RDD UHF DSTAR  # Icom ID-RP4000V
   Notes: FN14VU70 McVeety's Bay  # integral of VE3XZT
