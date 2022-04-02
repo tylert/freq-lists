@@ -15,10 +15,12 @@ You must have the following tools installed:
 * (REQUIRED) jq_;  for working with JSON payloads
 * (REQUIRED) dmrRadio_ binary 1.0.23 or newer;  for exporting/importing codeplugs to/from JSON and generating blank codeplugs
 * (SUGGESTED) editcp_ 1.0.23 or newer;  for further editing codeplugs
+* (SUGGESTED) LibreOffice_;  for creating PDF handouts to accompany the programmed data
 
 .. _jq: https://stedolan.github.io/jq/
 .. _dmrRadio: https://github.com/dalefarnsworth-dmr/dmrRadio
 .. _editcp: https://github.com/dalefarnsworth-dmr/editcp
+.. _LibreOffice: https://www.libreoffice.org/
 
 There are some really good programming tutorials at
 https://youtu.be/VExx628R0DM and https://youtu.be/Lw0Y-jQZMZ0 which are useful
