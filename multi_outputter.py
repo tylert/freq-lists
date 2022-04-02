@@ -68,7 +68,7 @@ retevis_channel_stub = {
 }
 
 
-def process_dmr_channels(entries, channel_stub):
+def process_dmr_channels(entries, channel_stub, only_modes=None):
     ''' '''
     channels = []
     for entry in entries:
@@ -82,6 +82,10 @@ def process_dmr_channels(entries, channel_stub):
             raise ValueError('Missing RxFrequency for entry!')
         if 'Mode' not in entry.keys() or entry['Mode'] == '':
             raise ValueError('Missing Mode for entry!')
+
+        # Skip modes we have been told to filter out
+        if only_modes is not None and entry['Mode'] not in only_modes:
+            continue
 
         # Use 'Mode' to determine 'Bandwidth' and 'ChannelMode'.  Do this
         # before merging the new channel entry into the expected output in case
@@ -149,13 +153,19 @@ def process_dmr_channels(entries, channel_stub):
     return channels
 
 
-def process_human_channels_csv(entries, max_name_length=8, start_index=1):
+def process_human_channels_csv(
+    entries, max_name_length=8, only_modes=None, start_index=1
+):
     ''' '''
     print('Channel,Name,Notes,Mode,Output,Input,Access')
 
     channel = start_index
     if entries is not None:
         for entry in entries:
+            # Skip modes we have been told to filter out
+            if only_modes is not None and entry['Mode'] not in only_modes:
+                continue
+
             name = entry['Name']
             rx_frequency = entry['RxFrequency']
             mode = entry['Mode']
@@ -188,7 +198,9 @@ def process_human_channels_csv(entries, max_name_length=8, start_index=1):
             else:
                 access = ''
 
-            print(f'{channel},{name},{notes},{mode},{rx_frequency},{tx_frequency},{access}')
+            print(
+                f'{channel},{name},{notes},{mode},{rx_frequency},{tx_frequency},{access}'
+            )
             channel += 1
 
 
@@ -210,7 +222,9 @@ def sanitize_chirp_channel_name(name, length=8):
     return new_name
 
 
-def process_chirp_channels_csv(entries, max_name_length=8, start_index=1):
+def process_chirp_channels_csv(
+    entries, max_name_length=8, only_modes=None, start_index=1
+):
     ''' '''
     # WARNING:  The CHIRP GUI has different column header names than its CSV files do
 
@@ -224,6 +238,10 @@ def process_chirp_channels_csv(entries, max_name_length=8, start_index=1):
 
     location = start_index
     for entry in entries:
+        # Skip modes we have been told to filter out
+        if only_modes is not None and entry['Mode'] not in only_modes:
+            continue
+
         name = sanitize_chirp_channel_name(entry['Name'], max_name_length)
         frequency = entry['RxFrequency']
         mode = entry['Mode']
@@ -315,13 +333,17 @@ def process_chirp_channels_csv(entries, max_name_length=8, start_index=1):
         location += 1
 
 
-def process_rt_systems_channels_csv(entries, max_name_length=8):
+def process_rt_systems_channels_csv(entries, max_name_length=8, only_modes=None):
     ''' '''
     print(
         'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment'
     )
 
     for entry in entries:
+        # Skip modes we have been told to filter out
+        if only_modes is not None and entry['Mode'] not in only_modes:
+            continue
+
         name = sanitize_chirp_channel_name(entry['Name'], max_name_length)
         rx_frequency = entry['RxFrequency']
         mode = entry['Mode']
@@ -425,7 +447,7 @@ def process_rt_systems_channels_csv(entries, max_name_length=8):
     '--format',
     '-f',
     default='CHIRP',
-    help='Desired output format for data ("DMR", "HUMAN", "CHIRP", "RT")',
+    help='Desired output format for data ("CHIRP", "DMR", "HUMAN", "RT")',
 )
 @click.option(
     '--input_file',
@@ -437,21 +459,27 @@ def process_rt_systems_channels_csv(entries, max_name_length=8):
     '--json_file',
     '-j',
     default=None,
-    help='Input JSON dictionary to merge',
+    help='Input JSON dictionary to merge data into',
 )
 @click.option(
     '--max_name_length',
     '-m',
     default=8,
-    help='Maximum length of channel names (default 8).',
+    help='Maximum length of channel names (default "8").',
+)
+@click.option(
+    '--only_modes',
+    '-o',
+    default=None,
+    help='Desired list of modes to extract from input data (default "None (No filter)")',
 )
 @click.option(
     '--start_index',
     '-s',
     default=1,
-    help='Start index counter at specified value (default 1)',
+    help='Start index counter at specified value (default "1")',
 )
-def main(format, input_file, json_file, max_name_length, start_index):
+def main(format, input_file, json_file, max_name_length, only_modes, start_index):
     ''' '''
     # XXX FIXME TODO  Allow the use of STDIN as the input "file"!!!
     with open(input_file) as f:
@@ -467,8 +495,11 @@ def main(format, input_file, json_file, max_name_length, start_index):
     match format.upper():
         case 'DMR':
             channels = process_dmr_channels(
-                entries=payload['Channels'], channel_stub=retevis_channel_stub
+                entries=payload['Channels'],
+                channel_stub=retevis_channel_stub,
+                only_modes=only_modes,
             )
+            # zones = process_dmr_zones(entries=payload['Zones'])
 
             # Read in the existing codeplug JSON and append new channels to the end of
             # the list.
@@ -482,20 +513,26 @@ def main(format, input_file, json_file, max_name_length, start_index):
             process_human_channels_csv(
                 entries=payload['Channels'],
                 max_name_length=max_name_length,
+                only_modes=only_modes,
                 start_index=start_index,
             )
         case 'CHIRP':
             process_chirp_channels_csv(
                 entries=payload['Channels'],
                 max_name_length=max_name_length,
+                only_modes=only_modes,
                 start_index=start_index,
             )
         case 'RT':
             # XXX FIXME TODO  Test the RT Systems output!!!
-            process_rt_systems_channels_csv(entries=payload['Channels'])
+            process_rt_systems_channels_csv(
+                entries=payload['Channels'],
+                max_name_length=max_name_length,
+                only_modes=only_modes,
+            )
         case _:
             print(
-                f'Format "{format_output}" is invalid.  Allowed values are:  "DMR", "HUMAN", "CHIRP", "RT"'
+                f'Format "{format_output}" is invalid.  Allowed values are:  "CHIRP", "DMR", "HUMAN", "RT"'
             )
 
 
