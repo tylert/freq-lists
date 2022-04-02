@@ -158,7 +158,7 @@ def process_human_channels_csv(
     entries, max_name_length=8, only_modes=None, start_index=1
 ):
     ''' '''
-    print('Channel,Name,Notes,Mode,Output,Input,Access')
+    print('Channel,Name,Location,Frequency,Offset,Details')
 
     channel = start_index
     if entries is not None:
@@ -168,20 +168,18 @@ def process_human_channels_csv(
                 continue
 
             name = entry['Name']
-            rx_frequency = entry['RxFrequency']
+            frequency = entry['RxFrequency']
             mode = entry['Mode']
 
             if 'Notes' in entry.keys():
-                notes = entry['Notes']
+                location = entry['Notes']
             else:
-                notes = ''
+                location = ''
 
             if 'TxFrequencyOffset' in entry.keys():
-                tx_frequency = round(
-                    float(rx_frequency) + float(entry['TxFrequencyOffset']), 4
-                )
+                offset = entry['TxFrequencyOffset'][0]
             else:
-                tx_frequency = float(rx_frequency)
+                offset = ''
 
             # If there's a tone, it's usually for a good reason (e.g. "AMS mode" on YSF).
             if (
@@ -189,18 +187,18 @@ def process_human_channels_csv(
                 and entry['CtcssEncode'] is not None
                 and entry['CtcssEncode'] != 'None'
             ):
-                access = f"{entry['CtcssEncode']} Hz"
+                details = f"{entry['CtcssEncode']} Hz"
             elif (
                 'ColorCode' in entry.keys()
                 and entry['ColorCode'] is not None
                 and entry['ColorCode'] != 'None'
             ):
-                access = f"CC={entry['ColorCode']}"
+                details = f"CC={entry['ColorCode']}"
             else:
-                access = ''
+                details = ''
 
             print(
-                f'{channel},{name},{notes},{mode},{rx_frequency},{tx_frequency},{access}'
+                f'{channel},{name},{location},{frequency} MHz,{offset},{details}'
             )
             channel += 1
 
