@@ -7,23 +7,19 @@
 mkdir -p tmp
 
 input_files='
-repeaters/Lanark_FM.yaml
-repeaters/Ottawa_FM.yaml
-repeaters/Renfrew_FM.yaml
+repeaters/Lanark_AARC.yaml
+repeaters/Lanark_LNL_ARES.yaml
+repeaters/Lanark_RLARC.yaml
+repeaters/Ottawa_EMRG.yaml
+repeaters/Ottawa_OARC.yaml
+repeaters/Ottawa_OARDG.yaml
+repeaters/Ottawa_OVMRC.yaml
+repeaters/Renfrew_CRRA.yaml
+repeaters/Renfrew_RCARC.yaml
 info/RLCT_FM.yaml
 info/Packet_FM_VHF_UHF.yaml
-subtastic/Simplex_FM_VHF.yaml
-subtastic/Simplex_FM_UHF.yaml
+subtastic/Simplex_FM.yaml
 subtastic/Lanark_County_VHF.yaml
-repeaters/Lanark_DSTAR.yaml
-repeaters/Ottawa_DSTAR.yaml
-repeaters/Renfrew_DSTAR.yaml
-repeaters/Lanark_DMR.yaml
-repeaters/Ottawa_DMR.yaml
-repeaters/Renfrew_DMR.yaml
-repeaters/Lanark_YSF.yaml
-repeaters/Ottawa_YSF.yaml
-repeaters/Renfrew_YSF.yaml
 '
 
 chirp_output_file='tmp/CHIRP.csv'

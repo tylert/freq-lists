@@ -7,44 +7,6 @@ Channels:
 # |  _ <  __/ | | |  _| | |  __/\ V  V /
 # |_| \_\___|_| |_|_| |_|  \___| \_/\_/
 
-#                           ____ ____  ____      _
-#                          / ___|  _ \|  _ \    / \
-#                         | |   | |_) | |_) |  / _ \
-#                         | |___|  _ <|  _ <  / ___ \
-#                          \____|_| \_\_| \_\/_/   \_\
-
-# Champlain Regional Repeater Association
-#   http://champlainrepeater.ca/
-#   http://ve3stp.org/  (DEPRECATED!!!)
-
-# *** "Champlain Mini Net" Mondays to Fridays at 19:00 on VE3STP VHF FM ***
-
-- Name: VE3STP VHF FM  # Motorola CM 300 Rx, CDM 1250 Tx + 100 W amp
-  Notes: FN15NH13OV or FN15NH24WI Kennellys Mountain
-  Mode: FM  # FM only
-  RxFrequency: 147.06
-  TxFrequencyOffset: '-0.6'
-  CtcssEncode: 114.8
-  CtcssDecode: 114.8
-
-- Name: VE3STP 2VHF FM  # Motorola XPR 8300 + 60 W amp
-  Notes: FN15NH13OV or FN15NH24WI Kennellys Mountain
-  Mode: FM  # FM & DMR only (not MMDVM)
-  RxFrequency: 145.39
-  TxFrequencyOffset: '-0.6'
-  CtcssEncode: 114.8
-  CtcssDecode: 114.8
-
-# XXX FIXME TODO  Find out what's happening with this repeater
-
-# - Name: VE3YYX UHF FM  # TBD
-#   Notes: Arnprior Fire Hall
-#   Mode: FM
-#   RxFrequency: 443.2
-#   TxFrequencyOffset: '+5.0'
-#   CtcssEncode: 114.8
-#   CtcssDecode: None
-
 #                       ____   ____    _    ____   ____
 #                      |  _ \ / ___|  / \  |  _ \ / ___|
 #                      | |_) | |     / _ \ | |_) | |
@@ -55,15 +17,12 @@ Channels:
 #   http://rcarc.ca/
 #   http://www.rcarc.ca/RCARC/RCARC%20Repeaters.htm
 
-# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-# VE3NRR VHF FM is IRLP Node 2520
-# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 # VE3NRR VHF FM and VE3NRR UHF FM are linked
 # VE3ZRR VHF FM and VE3NRR VHF/UHF FM are linked
 # VA3RBW VHF FM and VE3UCR VHF FM may be linked to VE3NRR VHF/UHF FM on-demand
 # VE3NRR VHF/UHF FM is the hub and linked repeaters connect to it on 443.025+
 
+# IRLP 2520
 - Name: VE3NRR VHF FM  # MICOR
   Notes: FN15KU00DI Pembroke
   Mode: FM  # FM only
@@ -82,7 +41,6 @@ Channels:
 
 # XXX FIXME TODO  Find out actual location of this repeater VE3ZRR
 #                 Ask VE3ODJ???  "At the MyFM site"???  Waiting for access???
-
 - Name: VE3ZRR VHF FM  # Motorola MSR 2000
   Notes: FN15PM Pinnacle Hill
   Mode: FM  # FM only

@@ -1,0 +1,48 @@
+---
+Channels:
+
+#  _                           _
+# | |    __ _ _ __   __ _ _ __| | __
+# | |   / _` | '_ \ / _` | '__| |/ /
+# | |__| (_| | | | | (_| | |  |   <
+# |_____\__,_|_| |_|\__,_|_|  |_|\_\
+
+#                       ____  _        _    ____   ____
+#                      |  _ \| |      / \  |  _ \ / ___|
+#                      | |_) | |     / _ \ | |_) | |
+#                      |  _ <| |___ / ___ \|  _ <| |___
+#                      |_| \_\_____/_/   \_\_| \_\\____|
+
+# Rideau Lakes Amateur Radio Club
+#   https://www.ve3rlr.ca/p/about.html
+
+# *** No FM nets, currently ***
+# *** No YSF nets, currently ***
+
+- Name: VE3RLR VHF FM  # Yaesu DR-2X
+  Notes: FN14XV66OK Railway Museum
+  Mode: FM  # FM & YSF only (not MMDVM)
+  RxFrequency: 147.21
+  TxFrequencyOffset: '+0.6'
+  CtcssEncode: 151.4
+  CtcssDecode: 151.4
+
+- Name: VE3RLR UHF FM  # Yaesu DR-2X
+  Notes: FN14XV66OK Railway Museum
+  Mode: FM  # FM & YSF only (not MMDVM)
+  RxFrequency: 442.75
+  TxFrequencyOffset: '+5.0'
+  CtcssEncode: 151.4
+  CtcssDecode: 151.4
+
+- Name: VE3RLR VHF YSF  # Yaesu DR-2X
+  Notes: FN14XV66OK Railway Museum
+  Mode: YSF  # FM & YSF only (not MMDVM)
+  RxFrequency: 147.21
+  TxFrequencyOffset: '+0.6'
+
+- Name: VE3RLR UHF YSF  # Yaesu DR-2X
+  Notes: FN14XV66OK Railway Museum
+  Mode: YSF  # FM & YSF only (not MMDVM)
+  RxFrequency: 442.75
+  TxFrequencyOffset: '+5.0'

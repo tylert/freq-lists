@@ -7,21 +7,22 @@
 mkdir -p tmp
 
 input_files='
-repeaters/Lanark_DMR.yaml
-repeaters/Ottawa_DMR.yaml
-repeaters/Renfrew_DMR.yaml
-repeaters/Lanark_FM.yaml
-repeaters/Ottawa_FM.yaml
-repeaters/Renfrew_FM.yaml
+repeaters/Lanark_AARC.yaml
+repeaters/Lanark_LNL_ARES.yaml
+repeaters/Lanark_RLARC.yaml
+repeaters/Ottawa_EMRG.yaml
+repeaters/Ottawa_OARC.yaml
+repeaters/Ottawa_OARDG.yaml
+repeaters/Ottawa_OVMRC.yaml
+repeaters/Renfrew_CRRA.yaml
+repeaters/Renfrew_RCARC.yaml
 repeaters/Lanark_inputs.yaml
 repeaters/Ottawa_inputs.yaml
 repeaters/Renfrew_inputs.yaml
 info/RLCT_FM.yaml
 info/RLCT_inputs.yaml
-info/Simplex_DMR_VHF.yaml
-info/Simplex_DMR_UHF.yaml
-info/Simplex_FM_VHF.yaml
-info/Simplex_FM_UHF.yaml
+info/Simplex_DMR.yaml
+info/Simplex_FM.yaml
 info/GMRS_FRS_FM_UHF.yaml
 info/WX_FM_VHF.yaml
 '
@@ -49,6 +50,13 @@ jq --slurp '.[0] * .[1]' tmp/0.json radios/stubs.json > tmp/1.json
 index=1
 for input_file in ${input_files}; do
     ./multi_outputter.py --format DMR --input_file ${input_file} \
+        --only_modes DMR \
+        --json_file tmp/${index}.json > tmp/$((${index} + 1)).json
+    index=$((${index} + 1))
+done
+for input_file in ${input_files}; do
+    ./multi_outputter.py --format DMR --input_file ${input_file} \
+        --only_modes FM,NFM \
         --json_file tmp/${index}.json > tmp/$((${index} + 1)).json
     index=$((${index} + 1))
 done
@@ -80,6 +88,13 @@ jq --slurp '.[0] * .[1]' tmp/0.json radios/stubs.json > tmp/1.json
 index=1
 for input_file in ${input_files}; do
     ./multi_outputter.py --format DMR --input_file ${input_file} \
+        --only_modes DMR \
+        --json_file tmp/${index}.json > tmp/$((${index} + 1)).json
+    index=$((${index} + 1))
+done
+for input_file in ${input_files}; do
+    ./multi_outputter.py --format DMR --input_file ${input_file} \
+        --only_modes FM,NFM \
         --json_file tmp/${index}.json > tmp/$((${index} + 1)).json
     index=$((${index} + 1))
 done

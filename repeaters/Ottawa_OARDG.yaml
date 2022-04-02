@@ -7,23 +7,6 @@ Channels:
 # | |_| | |_| || (_| |\ V  V / (_| |
 #  \___/ \__|\__\__,_| \_/\_/ \__,_|
 
-#                        _____     ____  __ ____   ____
-#                       / _ \ \   / /  \/  |  _ \ / ___|
-#                      | | | \ \ / /| |\/| | |_) | |
-#                      | |_| |\ V / | |  | |  _ <| |___
-#                       \___/  \_/  |_|  |_|_| \_\\____|
-
-# Ottawa Valley Mobile Radio Club
-#   https://www.ovmrc.on.ca/
-#   http://ve3ram.ddns.net:380/
-#   https://xrf196.spdns.org/
-
-- Name: VE3RAM UHF DSTAR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
-  Notes: FN25FK69VT Orleans at VE3LC
-  Mode: DSTAR  # DMR & DSTAR & FM & YSF only (MMDVM)
-  RxFrequency: 443.7
-  TxFrequencyOffset: '+5.0'
-
 #                         ___    _    ____  ____   ____
 #                        / _ \  / \  |  _ \|  _ \ / ___|
 #                       | | | |/ _ \ | |_) | | | | |  _
@@ -36,10 +19,16 @@ Channels:
 #   http://va3odg.ddns.net:380/
 #   https://xrf196.spdns.org/
 
-# XXX FIXME TODO  Verify this data is correct
-
 - Name: VA3ODG VHF DSTAR  # Icom???
   Notes: FN25DJ78GT Ottawa YMCA-YWCA
   Mode: DSTAR  # DSTAR only (not MMDVM)
   RxFrequency: 145.53
   TxFrequencyOffset: '-0.6'
+
+# TS=2, TG=6 linked to XLX196 B module
+- Name: VA3ODG UHF DMR  # Icom???
+  Notes: FN25DJ78GT Ottawa YMCA-YWCA
+  Mode: DMR  # CCS7 ID 302065 / DMR & DSTAR only (MMDVM)
+  RxFrequency: 444.85
+  TxFrequencyOffset: '+5.0'
+  ColorCode: 1

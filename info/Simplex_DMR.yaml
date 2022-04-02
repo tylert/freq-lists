@@ -148,3 +148,54 @@ Channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
+
+#  ____  _                 _             _   _ _   _ _____
+# / ___|(_)_ __ ___  _ __ | | _____  __ | | | | | | |  ___|
+# \___ \| | '_ ` _ \| '_ \| |/ _ \ \/ / | | | | |_| | |_
+#  ___) | | | | | | | |_) | |  __/>  <  | |_| |  _  |  _|
+# |____/|_|_| |_| |_| .__/|_|\___/_/\_\  \___/|_| |_|_|
+#                   |_|
+
+# Common simplex channels for DMR on "low" UHF (IARU Region 2)
+# 430 to 450 MHz (secondary allocation) - https://www.rac.ca/432-mhz-70-cm-page/
+# Wide band digital modes = greater than 3 kHz and less than 30 kHz wide
+# Bandwidth is 12.5 kHz for DMR
+
+# Old DMR pseudo-standard - http://va3xpr.net/dmr-simplex-frequencies/
+# US-only DMR not-a-standard - http://trbo.org/simplex/simplex.html
+
+#               _____ ___                     ____  __  __ ____
+#              |___  / _ \    ___ _ __ ___   |  _ \|  \/  |  _ \
+#                 / / | | |  / __| '_ ` _ \  | | | | |\/| | |_) |
+#                / /| |_| | | (__| | | | | | | |_| | |  | |  _ <
+#               /_/  \___/   \___|_| |_| |_| |____/|_|  |_|_| \_\
+
+# May also be used for DSTAR, M17, NXDN, P25, YSF, etc.
+
+- Name: 433.45 DMR
+  Mode: DMR
+  RxFrequency: 433.45
+  ColorCode: 1
+  RepeaterSlot: 1
+  TalkGroup: 99
+
+- Name: 441.0 DMR
+  Mode: DMR
+  RxFrequency: 441.0
+  ColorCode: 1
+  RepeaterSlot: 1
+  TalkGroup: 99
+
+- Name: 446.075 DMR
+  Mode: DMR
+  RxFrequency: 446.075
+  ColorCode: 1
+  RepeaterSlot: 1
+  TalkGroup: 99
+
+- Name: 446.5 DMR
+  Mode: DMR
+  RxFrequency: 446.5
+  ColorCode: 1
+  RepeaterSlot: 1
+  TalkGroup: 99

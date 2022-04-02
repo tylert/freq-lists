@@ -18,12 +18,52 @@ Channels:
 #   http://va3aar.dyndns.org:3026/
 #   https://xrf196.spdns.org/
 
+# *** "??? Net" Wednesdays at 21:00 Eastern on VA3ARE VHF FM ***
 # *** "DSTAR Mini Net" Tuesdays at 20:38 Eastern on XLX196 ***
+# *** No YSF nets, currently ***
 
-# @@@@@@@@@@@@@@@@@@@@@@@@@@@
-# DMR mode disabled currently
-# @@@@@@@@@@@@@@@@@@@@@@@@@@@
+- Name: VA3AAR UHF FM  # TBD
+  Notes: FN15VF52ET Fire Hall
+  Mode: FM  # FM only
+  RxFrequency: 444.3  # FM linked to VE3KJG VHF FM
+  TxFrequencyOffset: '+5.0'
+  CtcssEncode: 100.0
+  CtcssDecode: 100.0
 
+# IRLP 2280
+- Name: VA3ARE VHF FM  # Yaesu DR-1X
+  Notes: FN15VD29FP Almonte at VE3CFZ    # may move to FN15UD48UV Union Hall
+  Mode: FM  # FM & YSF only (not MMDVM)
+  RxFrequency: 147.27
+  TxFrequencyOffset: '+0.6'
+  CtcssEncode: 100.0
+  CtcssDecode: 100.0
+
+- Name: VA3AAR VHF DSTAR  # TBD
+  Notes: FN15UD48UV Union Hall
+  Mode: DSTAR  # DSTAR only (MMDVM)
+  RxFrequency: 145.55
+  TxFrequencyOffset: '-0.6'
+
+- Name: VA3AAR UHF DSTAR  # TBD
+  Notes: FN15UD48UV Union Hall
+  Mode: DSTAR  # DSTAR only (MMDVM???)
+  RxFrequency: 444.1
+  TxFrequencyOffset: '+5.0'
+
+- Name: VA3RDD VHF DSTAR  # Icom ID-RP2000V
+  Notes: FN14VU70 McVeety's Bay  # integral of VE3XZT
+  Mode:  DSTAR  # DSTAR only (not MMDVM)
+  RxFrequency: 147.24
+  TxFrequencyOffset: '-0.6'
+
+- Name: VA3RDD UHF DSTAR  # Icom ID-RP4000V
+  Notes: FN14VU70 McVeety's Bay  # integral of VE3XZT
+  Mode:  DSTAR  # DSTAR only (not MMDVM)
+  RxFrequency: 444.8
+  TxFrequencyOffset: '+5.0'
+
+# This mode is currently disabled!!!
 # TS=2, TG=6 linked to XLX196 B module
 # - Name: VA3AAR VHF DMR  # TBD
 #   Notes: FN15UD48UV Union Hall
@@ -31,6 +71,12 @@ Channels:
 #   RxFrequency: 145.55
 #   TxFrequencyOffset: '-0.6'
 #   ColorCode: 1
+
+- Name: VA3ARE VHF YSF  # Yaesu DR-1X
+  Notes: FN15VD29FP Almonte at VE3CFZ  # may move to FN15UD48UV Union Hall
+  Mode: YSF  # FM & YSF only (not MMDVM)
+  RxFrequency: 147.27
+  TxFrequencyOffset: '+0.6'
 
 #                   __     _______ _____ _   _  ___    _
 #                   \ \   / / ____|___ /| | | |/ _ \  / \
@@ -41,8 +87,6 @@ Channels:
 # Phillip Rodney Lytle VE3HOA, VA3HOA
 #   http://ve3hoa.ddns.net:380/
 #   https://xrf196.spdns.org/
-
-# *** "DSTAR Mini Net" Tuesdays at 20:38 Eastern on XLX196 ***
 
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3HOZ UHF DMR  # Motorola CDM 1550LS+ Rx & Tx + 100 W amp, STM32-DVM Rev?, Raspberry Pi 4B
