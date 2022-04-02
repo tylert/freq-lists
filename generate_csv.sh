@@ -76,9 +76,6 @@ done
 # |  _  | |_| | |  | |/ ___ \| |\  |
 # |_| |_|\___/|_|  |_/_/   \_\_| \_|
 
-# XXX FIXME TODO  https://realpython.com/openpyxl-excel-spreadsheets-python/
-# XXX FIXME TODO  https://openpyxl.readthedocs.io/en/stable/styles.html#edit-page-setup
-
 index=1
 for input_file in ${input_files}; do
     if [[ 1 == ${index} ]]; then
