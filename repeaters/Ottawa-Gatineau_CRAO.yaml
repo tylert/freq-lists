@@ -1,0 +1,62 @@
+---
+Channels:
+
+#                           ____ ____      _    ___
+#                          / ___|  _ \    / \  / _ \
+#                         | |   | |_) |  / _ \| | | |
+#                         | |___|  _ <  / ___ \ |_| |
+#                          \____|_| \_\/_/   \_\___/
+
+# Club de Radio Amateur Outaouais
+#   https://ve2cro.ca/
+
+# IRLP 2332
+- Name: VE2RAO VHF FM  # TBD
+  Notes: Hôpital de Hull
+  Mode: FM
+  RxFrequency: 146.745
+  TxFrequencyOffset: '-0.6'
+  CtcssEncode: 118.8
+  CtcssDecode: 118.8
+
+- Name: VE2RAO UHF FM  # TBD
+  Notes: Hôpital de Hull
+  Mode: FM
+  RxFrequency: 443.95
+  TxFrequencyOffset: '+5.0'
+  CtcssEncode: 118.8
+  CtcssDecode: 118.8
+
+- Name: VE2RBH VHF FM  # TBD
+  Notes: Ripon
+  Mode: FM
+  RxFrequency: 145.41
+  TxFrequencyOffset: '-0.6'
+  CtcssEncode: 123.0
+  CtcssDecode: 123.0
+
+- Name: VA2UHF UHF FM  # TBD
+  Notes: Sarsfield
+  Mode: FM
+  RxFrequency: 444.25
+  TxFrequencyOffset: '+5.0'
+  CtcssEncode: 141.3
+  CtcssDecode: 141.3
+
+# XXX FIXME TODO  Out of service???
+- Name: VE2SY VHF FM  # TBD
+  Notes: ???
+  Mode: FM
+  RxFrequency: 147.195
+  TxFrequencyOffset: '+0.6'
+  CtcssEncode: 123.0
+  CtcssDecode: 123.0
+
+# XXX FIXME TODO  Out of service???
+- Name: VE2RAO UHF DMR  # TBD
+  Notes: Hôpital de Hull
+  Mode: DMR
+  RxFrequency: 441.95
+  TxFrequencyOffset: '+5.0'
+  ColorCode: 1
+  # use TS=2 for all TG except 3022

@@ -10,10 +10,10 @@ input_files='
 repeaters/Lanark_AARC.yaml
 repeaters/Lanark_LNL_ARES.yaml
 repeaters/Lanark_RLARC.yaml
-repeaters/Ottawa_EMRG.yaml
-repeaters/Ottawa_OARC.yaml
-repeaters/Ottawa_OARDG.yaml
-repeaters/Ottawa_OVMRC.yaml
+repeaters/Ottawa-Gatineau_EMRG.yaml
+repeaters/Ottawa-Gatineau_OARC.yaml
+repeaters/Ottawa-Gatineau_OARDG.yaml
+repeaters/Ottawa-Gatineau_OVMRC.yaml
 repeaters/Renfrew_CRRA.yaml
 repeaters/Renfrew_RCARC.yaml
 info/RLCT_FM.yaml
@@ -25,6 +25,8 @@ subtastic/Lanark_County_VHF.yaml
 chirp_output_file='tmp/CHIRP.csv'
 rt_systems_output_file='tmp/RT.csv'
 human_output_file='tmp/HUMAN.csv'
+
+# XXX FIXME TODO  Find someone who owns a DSTAR radio to help test CHIRP/RT output
 
 #   ____ _   _ ___ ____  ____
 #  / ___| | | |_ _|  _ \|  _ \
