@@ -22,9 +22,10 @@ subtastic/Simplex_FM.yaml
 subtastic/Lanark_County_VHF.yaml
 '
 
-chirp_output_file='tmp/CHIRP.csv'
-rt_systems_output_file='tmp/RT.csv'
-human_output_file='tmp/HUMAN.csv'
+chirp_output_file="tmp/CHIRP-$(date +%Y-%m-%d).csv"
+rt_systems_output_file="tmp/RT-$(date +%Y-%m-%d).csv"
+human_output_file="tmp/HUMAN-$(date +%Y-%m-%d).csv"
+xlsx_output_file="tmp/HUMAN-$(date +%Y-%m-%d).xlsx"
 
 # XXX FIXME TODO  Find someone who owns a DSTAR radio to help test CHIRP/RT output
 
@@ -103,3 +104,6 @@ for input_file in ${input_files}; do
     fi
     index=$((${index} + 1))
 done
+
+./handouts.py --input_file ${human_output_file} --output_file ${xlsx_output_file}
+libreoffice --headless --convert-to pdf:writer_pdf_Export --outdir $(dirname ${xlsx_output_file}) ${xlsx_output_file}
