@@ -67,9 +67,9 @@ Running Things
     make && source .venv/bin/activate
 
     # Create new stock codeplugs and CSV files for mobile and handheld radios
-    ./fetch_db.sh
-    ./generate_rdt.sh
-    ./generate_csv.sh
+    ./scripts/generate_csv.sh
+    ./scripts/generate_rdt.sh
+    ./scripts/fetch_db.sh
 
     # dmrRadio writeMD2017Users tmp/filtered.csv  # if radio is Retevis RT90
     # dmrRadio writeUV380Users tmp/filtered.csv   # if radio is Retevis RT3S

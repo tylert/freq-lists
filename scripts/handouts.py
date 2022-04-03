@@ -20,8 +20,8 @@ def drop_a_deuce(csv_filename=None, xlsx_filename=None):
     workbook = Workbook()
     sheet = workbook.active
     sheet.title = 'Channels'
-    sheet.page_setup.orientation = sheet.ORIENTATION_LANDSCAPE
     sheet.page_setup.paperSize = sheet.PAPERSIZE_LETTER
+    sheet.page_setup.orientation = sheet.ORIENTATION_LANDSCAPE
 
     # Each row from the CSV file becomes a row in the spreadsheet
     with open(csv_filename, 'r') as csv_file:
@@ -35,15 +35,25 @@ def drop_a_deuce(csv_filename=None, xlsx_filename=None):
             cell.font = Font(name='Quicksand', size=8)
             cell.border = Border(bottom=Side(border_style='thin', color='000000'))
 
-    # Set the column widths
-    # Autofit/bestfit doesn't work
+    # Alter all the column widths so they display things more nicely
+    # XXX FIXME TODO  Do column width stuff with autofit/bestfit someday
+    # Set the column widths explicitly since autofit/bestfit doesn't work
     # This is a mega ugly hack to try to get the column widths to be sensible
     MIN_WIDTH = 10
     for i, column_cells in enumerate(sheet.columns, start=1):
         width = (
             length
-            if (length := max(len(str(cell_value) if (cell_value := cell.value) is not None else '')
-                              for cell in column_cells)) >= MIN_WIDTH
+            if (
+                length := max(
+                    len(
+                        str(cell_value)
+                        if (cell_value := cell.value) is not None
+                        else ''
+                    )
+                    for cell in column_cells
+                )
+            )
+            >= MIN_WIDTH
             else MIN_WIDTH
         )
         sheet.column_dimensions[get_column_letter(i)].width = width * 0.75

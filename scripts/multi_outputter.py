@@ -158,7 +158,7 @@ def process_human_channels_csv(
     entries, max_name_length=8, only_modes=None, start_index=1
 ):
     ''' '''
-    print('Channel,Name,Location,Frequency,Offset,Details')
+    print('Channel,Name,Location,Mode,Frequency,Offset,Details')
 
     channel = start_index
     if entries is not None:
@@ -197,9 +197,7 @@ def process_human_channels_csv(
             else:
                 details = ''
 
-            print(
-                f'{channel},{name},{location},{frequency} MHz,{offset},{details}'
-            )
+            print(f'{channel},{name},{location},{mode},{frequency} MHz,{offset},{details}')
             channel += 1
 
 
