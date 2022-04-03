@@ -2,11 +2,15 @@
 
 
 #   https://openpyxl.readthedocs.io/en/stable/index.html
+#   https://www.blog.pythonlibrary.org/2021/08/11/styling-excel-cells-with-openpyxl-and-python/
 #   https://realpython.com/openpyxl-excel-spreadsheets-python/#writing-excel-spreadsheets-with-openpyxl
 #   https://stackoverflow.com/questions/13197574/openpyxl-adjust-column-width-size
+#   https://stackoverflow.com/questions/68550478/openpyxl-adding-page-number-to-footer-for-printing
+#   https://stackoverflow.com/questions/40349531/openpyxl-header-footer-cant-write-header-to-sheet
 
 
 from csv import reader
+from datetime import date
 
 import click
 from openpyxl.styles import Border, Font, Side
@@ -22,6 +26,20 @@ def drop_a_deuce(csv_filename=None, xlsx_filename=None):
     sheet.title = 'Channels'
     sheet.page_setup.paperSize = sheet.PAPERSIZE_LETTER
     sheet.page_setup.orientation = sheet.ORIENTATION_LANDSCAPE
+
+    # Add a useful footer to each page
+    sheet.oddFooter.left.font = 'Quicksand'
+    sheet.evenFooter.left.font = 'Quicksand'
+    sheet.oddFooter.center.font = 'Quicksand'
+    sheet.evenFooter.center.font = 'Quicksand'
+    sheet.oddFooter.left.size = 8
+    sheet.evenFooter.left.size = 8
+    sheet.oddFooter.center.size = 8
+    sheet.evenFooter.center.size = 8
+    sheet.oddFooter.left.text = str(date.today())
+    sheet.evenFooter.left.text = str(date.today())
+    sheet.oddFooter.center.text = 'Page &P of &N'
+    sheet.evenFooter.center.text = 'Page &P of &N'
 
     # Each row from the CSV file becomes a row in the spreadsheet
     with open(csv_filename, 'r') as csv_file:
