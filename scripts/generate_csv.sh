@@ -38,11 +38,11 @@ xlsx_output_file="tmp/HUMAN-$(date +%Y-%m-%d).xlsx"
 index=1
 for input_file in ${input_files}; do
     if [[ 1 == ${index} ]]; then
-        ./multi_outputter.py --format CHIRP --input_file ${input_file} \
+        ./scripts/multi_outputter.py --format CHIRP --input_file ${input_file} \
             --max_name_length 8 --only_modes AM,FM,NFM \
             --start_index 1 > ${chirp_output_file}
     else
-        ./multi_outputter.py --format CHIRP --input_file ${input_file} \
+        ./scripts/multi_outputter.py --format CHIRP --input_file ${input_file} \
             --max_name_length 8 --only_modes AM,FM,NFM \
             --start_index $(wc -l ${chirp_output_file} | cut -d' ' -f1) \
             | tail -n '+2' >> ${chirp_output_file}
@@ -60,11 +60,11 @@ done
 index=1
 for input_file in ${input_files}; do
     if [[ 1 == ${index} ]]; then
-        ./multi_outputter.py --format RT --input_file ${input_file} \
+        ./scripts/multi_outputter.py --format RT --input_file ${input_file} \
             --max_name_length 8 --only_modes AM,FM,NFM \
             > ${rt_systems_output_file}
     else
-        ./multi_outputter.py --format RT --input_file ${input_file} \
+        ./scripts/multi_outputter.py --format RT --input_file ${input_file} \
             --max_name_length 8 --only_modes AM,FM,NFM \
             | tail -n '+2' >> ${rt_systems_output_file}
     fi
@@ -80,11 +80,11 @@ done
 index=1
 for input_file in ${input_files}; do
     if [[ 1 == ${index} ]]; then
-        ./multi_outputter.py --format HUMAN --input_file ${input_file} \
+        ./scripts/multi_outputter.py --format HUMAN --input_file ${input_file} \
             --max_name_length 8 --only_modes AM,FM,NFM \
             --start_index 1 > ${human_output_file}
     else
-        ./multi_outputter.py --format HUMAN --input_file ${input_file} \
+        ./scripts/multi_outputter.py --format HUMAN --input_file ${input_file} \
             --max_name_length 8 --only_modes AM,FM,NFM \
             --start_index $(wc -l ${human_output_file} | cut -d' ' -f1) \
             | tail -n '+2' >> ${human_output_file}
@@ -93,11 +93,11 @@ for input_file in ${input_files}; do
 done
 for input_file in ${input_files}; do
     if [[ 1 == ${index} ]]; then
-        ./multi_outputter.py --format HUMAN --input_file ${input_file} \
+        ./scripts/multi_outputter.py --format HUMAN --input_file ${input_file} \
             --max_name_length 8 --only_modes DSTAR,DMR,YSF \
             --start_index 1 > ${human_output_file}
     else
-        ./multi_outputter.py --format HUMAN --input_file ${input_file} \
+        ./scripts/multi_outputter.py --format HUMAN --input_file ${input_file} \
             --max_name_length 8 --only_modes DSTAR,DMR,YSF \
             --start_index $(wc -l ${human_output_file} | cut -d' ' -f1) \
             | tail -n '+2' >> ${human_output_file}
@@ -105,5 +105,5 @@ for input_file in ${input_files}; do
     index=$((${index} + 1))
 done
 
-./handouts.py --input_file ${human_output_file} --output_file ${xlsx_output_file}
+./scripts/handouts.py --input_file ${human_output_file} --output_file ${xlsx_output_file}
 libreoffice --headless --convert-to pdf:writer_pdf_Export --outdir $(dirname ${xlsx_output_file}) ${xlsx_output_file}
