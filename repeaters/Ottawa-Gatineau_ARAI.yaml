@@ -64,6 +64,8 @@ Channels:
   CtcssEncode: 110.9
   CtcssDecode: 110.9
 
+# #############################################################################
+
 - Name: VE2REH UHF DMR  # Hytera RD982
   Notes: Gatineau
   Mode: DMR  # 302354

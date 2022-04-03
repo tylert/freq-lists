@@ -56,16 +56,20 @@ Channels:
   CtcssEncode: 136.5
   CtcssDecode: 136.5
 
-- Name: VE3TST VHF YSF  # TBD
-  Notes: 416 & Hunt Club???
-  Mode: YSF  # FM & YSF (MMDVM???)
-  RxFrequency: 146.7
-  TxFrequencyOffset: '-0.6'
+# #############################################################################
 
 - Name: VE3TST UHF DMR  # TBD
   Notes: 416 & Hunt Club???
   Mode: DMR  # FM & DMR only (MMDVM???)
   RxFrequency: 444.125
   TxFrequencyOffset: '+5.0'
+
+# #############################################################################
+
+- Name: VE3TST VHF YSF  # TBD
+  Notes: 416 & Hunt Club???
+  Mode: YSF  # FM & YSF (MMDVM???)
+  RxFrequency: 146.7
+  TxFrequencyOffset: '-0.6'
 
 # 444.975+???

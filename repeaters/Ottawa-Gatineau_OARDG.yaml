@@ -33,6 +33,8 @@ Channels:
   RxFrequency: 145.53
   TxFrequencyOffset: '-0.6'
 
+# #############################################################################
+
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VA3ODG UHF DMR  # Icom???
   Notes: FN25DJ78GT Ottawa YMCA-YWCA

@@ -46,11 +46,15 @@ Channels:
 #   CtcssEncode: 114.8
 #   CtcssDecode: None
 
+# #############################################################################
+
 - Name: VE3STP UHF DSTAR  # Motorola CM 300 Rx & Tx
   Notes: FN15NH13OV or FN15NH24WI Kennellys Mountain
   Mode: DSTAR  # DMR & DSTAR only (MMDVM)
   RxFrequency: 443.6
   TxFrequencyOffset: '+5.0'
+
+# #############################################################################
 
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3STP UHF DMR  # Motorola CM 300 Rx & Tx

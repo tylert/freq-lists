@@ -73,6 +73,8 @@ Channels:
 #   CtcssEncode: 100.0
 #   CtcssDecode: None
 
+# #############################################################################
+
 - Name: VA3TEL VHF YSF  # Yaesu DR-2X + Tait 9100 link radios
   Notes: FN14ST76TP Christie Lake
   Mode: YSF  # FM & YSF only (not MMDVM)

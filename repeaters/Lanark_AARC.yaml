@@ -39,6 +39,8 @@ Channels:
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
+# #############################################################################
+
 - Name: VA3AAR VHF DSTAR  # TBD
   Notes: FN15UD48UV Union Hall
   Mode: DSTAR  # DSTAR only (MMDVM)
@@ -63,6 +65,8 @@ Channels:
   RxFrequency: 444.8
   TxFrequencyOffset: '+5.0'
 
+# #############################################################################
+
 # This mode is currently disabled!!!
 # TS=2, TG=6 linked to XLX196 B module
 # - Name: VA3AAR VHF DMR  # TBD
@@ -71,6 +75,8 @@ Channels:
 #   RxFrequency: 145.55
 #   TxFrequencyOffset: '-0.6'
 #   ColorCode: 1
+
+# #############################################################################
 
 - Name: VA3ARE VHF YSF  # Yaesu DR-1X
   Notes: FN15VD29FP Almonte at VE3CFZ  # may move to FN15UD48UV Union Hall
