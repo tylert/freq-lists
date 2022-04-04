@@ -18,22 +18,22 @@ Channels:
 #   https://en.wikipedia.org/wiki/CHU_(radio_station)
 
 - Name: CHU 90M
+  Notes: 3 kW
   Mode: AM
   RxFrequency: 3.33
   RxOnly: On
-  Notes: 3 kW
 
 - Name: CHU 38M
+  Notes: 5 kW
   Mode: AM
   RxFrequency: 7.85
   RxOnly: On
-  Notes: 5 kW
 
 - Name: CHU 20M
+  Notes: 3 kW
   Mode: AM
   RxFrequency: 14.67
   RxOnly: On
-  Notes: 3 kW
 
 #                      __        ____        ____     __
 #                      \ \      / /\ \      / /\ \   / /
@@ -48,44 +48,44 @@ Channels:
 #   https://en.wikipedia.org/wiki/WWVB
 
 - Name: WWVB LF
+  Notes: 70 kW
   Mode: AM
   RxFrequency: 0.06
   RxOnly: On
-  Notes: 70 kW
 
 - Name: WWV 120M
+  Notes: 2.5 kW
   Mode: AM
   RxFrequency: 2.5
   RxOnly: On
-  Notes: 2.5 kW
 
 - Name: WWV 60M
+  Notes: 10 kW
   Mode: AM
   RxFrequency: 5.0
   RxOnly: On
-  Notes: 10 kW
 
 - Name: WWV 30M
+  Notes: 10 kW
   Mode: AM
   RxFrequency: 10.0
   RxOnly: On
-  Notes: 10 kW
 
 - Name: WWV 20M
+  Notes: 10 kW
   Mode: AM
   RxFrequency: 15.0
   RxOnly: On
-  Notes: 10 kW
 
 - Name: WWV 15M
+  Notes: 2.5 kW
   Mode: AM
   RxFrequency: 20.0
   RxOnly: On
-  Notes: 2.5 kW
 
 - Name: WWV 12M
+  Notes: 2.5 kW
   Mode: AM
   RxFrequency: 25.0
   RxOnly: On
-  Notes: 2.5 kW
 ...

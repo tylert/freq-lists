@@ -1,6 +1,39 @@
 ---
 Channels:
 
+#     _    ____  ____  ____
+#    / \  |  _ \|  _ \/ ___|
+#   / _ \ | |_) | |_) \___ \
+#  / ___ \|  __/|  _ < ___) |
+# /_/   \_\_|   |_| \_\____/
+
+# Automatic Packet Reporting System
+#   https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System
+#   http://www.aprs.org/
+
+- Name: APRS VHF PKT
+  Notes: APRS North America
+  Mode: FM  # FM only
+  RxFrequency: 144.39
+
+#                           ____ ____  ____      _
+#                          / ___|  _ \|  _ \    / \
+#                         | |   | |_) | |_) |  / _ \
+#                         | |___|  _ <|  _ <  / ___ \
+#                          \____|_| \_\_| \_\/_/   \_\
+
+# Champlain Regional Repeater Association
+#   http://champlainrepeater.ca/
+#   http://ve3stp.org/  (DEPRECATED!!!)
+
+# Site 1 at FN15NH13OV has a digipeter for 145.01 on solar power
+# Site 2 at FN15NH24WI is the VE3STP APRS digipeter (mains + inet)
+
+- Name: VE3STP VHF PKT  # TBD
+  Notes: FN25EJ02OB Kennellys Mountain
+  Mode: FM  # FM only
+  RxFrequency: 145.01
+
 #                           _____ __  __ ____   ____
 #                          | ____|  \/  |  _ \ / ___|
 #                          |  _| | |\/| | |_) | |  _
@@ -53,19 +86,4 @@ Channels:
   Notes: Packet via ISS
   Mode: FM  # FM only
   RxFrequency: 437.55
-
-#     _    ____  ____  ____
-#    / \  |  _ \|  _ \/ ___|
-#   / _ \ | |_) | |_) \___ \
-#  / ___ \|  __/|  _ < ___) |
-# /_/   \_\_|   |_| \_\____/
-
-# Automatic Packet Reporting System
-#   https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System
-#   http://www.aprs.org/
-
-- Name: APRS VHF PKT
-  Notes: APRS North America
-  Mode: FM  # FM only
-  RxFrequency: 144.39
 ...
