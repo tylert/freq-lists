@@ -59,7 +59,7 @@ Channels:
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3STP UHF DMR  # Motorola CM 300 Rx & Tx
   Notes: FN15NH13OV or FN15NH24WI Kennellys Mountain
-  Mode: DMR  # CCS7 ID 302064 / DMR & DSTAR only (MMDVM)
+  Mode: DMR  # DMR & DSTAR only (MMDVM) / CCS7 ID 302064
   RxFrequency: 443.6
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
@@ -67,7 +67,7 @@ Channels:
 # No RoIP features
 - Name: VE3STP VHF DMR  # Motorola XPR 8300 + 60 W amp
   Notes: FN15NH13OV or FN15NH24WI Kennellys Mountain
-  Mode: DMR  # CCS7 ID 302096 / FM & DMR only (not MMDVM)
+  Mode: DMR  # FM & DMR only (not MMDVM) / CCS7 ID 302096
   RxFrequency: 145.39
   TxFrequencyOffset: '-0.6'
   ColorCode: 1
