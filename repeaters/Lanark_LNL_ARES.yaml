@@ -86,3 +86,4 @@ Channels:
   Mode: YSF  # FM & YSF only (not MMDVM)
   RxFrequency: 442.2  # FM linked to VA3TEL VHF FM
   TxFrequencyOffset: '+5.0'
+...
