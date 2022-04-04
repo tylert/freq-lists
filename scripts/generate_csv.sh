@@ -106,4 +106,4 @@ for input_file in ${input_files}; do
 done
 
 ./scripts/handouts.py --input_file ${human_output_file} --output_file ${xlsx_output_file}
-# libreoffice --headless --convert-to pdf:writer_pdf_Export --outdir $(dirname ${xlsx_output_file}) ${xlsx_output_file}
+libreoffice --headless --convert-to pdf:writer_pdf_Export --outdir $(dirname ${xlsx_output_file}) ${xlsx_output_file}
