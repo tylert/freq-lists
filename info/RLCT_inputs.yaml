@@ -33,3 +33,4 @@ Channels:
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 203.5
   CtcssDecode: None
+...
