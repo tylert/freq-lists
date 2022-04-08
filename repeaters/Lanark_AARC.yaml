@@ -43,25 +43,25 @@ Channels:
 
 - Name: VA3AAR VHF DSTAR  # TBD
   Notes: FN15UD48UV Union Hall
-  Mode: DSTAR  # DSTAR only (MMDVM)
+  Mode: DSTAR  # DSTAR only (MMDVM) / Module C?
   RxFrequency: 145.55
   TxFrequencyOffset: '-0.6'
 
 - Name: VA3AAR UHF DSTAR  # TBD
   Notes: FN15UD48UV Union Hall
-  Mode: DSTAR  # DSTAR only (MMDVM?)
+  Mode: DSTAR  # DSTAR only (MMDVM?) / Module B?
   RxFrequency: 444.1
   TxFrequencyOffset: '+5.0'
 
 - Name: VA3RDD VHF DSTAR  # Icom ID-RP2000V
   Notes: FN14VU70 McVeety's Bay  # integral of VE3XZT
-  Mode:  DSTAR  # DSTAR only (not MMDVM)
+  Mode:  DSTAR  # DSTAR only (not MMDVM) / Module C?
   RxFrequency: 147.24
   TxFrequencyOffset: '-0.6'
 
 - Name: VA3RDD UHF DSTAR  # Icom ID-RP4000V
   Notes: FN14VU70 McVeety's Bay  # integral of VE3XZT
-  Mode:  DSTAR  # DSTAR only (not MMDVM)
+  Mode:  DSTAR  # DSTAR only (not MMDVM) / Module B?
   RxFrequency: 444.8
   TxFrequencyOffset: '+5.0'
 
@@ -92,6 +92,7 @@ Channels:
 
 # Phillip Rodney Lytle VE3HOA, VA3HOA
 #   http://ve3hoa.ddns.net:380/
+#   http://ve3hoa.ddns.net:8073/  (Kiwi SDR HF)
 #   https://xrf196.spdns.org/
 
 # TS=2, TG=6 linked to XLX196 B module

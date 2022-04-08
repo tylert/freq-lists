@@ -27,9 +27,9 @@ Channels:
 #   http://va3odg.ddns.net:380/
 #   https://xrf196.spdns.org/
 
-- Name: VA3ODG VHF DSTAR  # Icom?
+- Name: VA3ODG VHF DSTAR  # Icom?  Motorola M1225 Tx + CDM 750 Rx?
   Notes: FN25DJ78GT Ottawa YMCA-YWCA
-  Mode: DSTAR  # DSTAR only (not MMDVM)
+  Mode: DSTAR  # DSTAR only (not MMDVM) / Module ?
   RxFrequency: 145.53
   TxFrequencyOffset: '-0.6'
 
