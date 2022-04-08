@@ -25,32 +25,32 @@ Channels:
 #   http://ve3orf.com/
 
 - Name: VE3ORF VHF FM  # TBD
-  Notes: ???
-  Mode: FM  # FM only???
+  Notes: ?
+  Mode: FM  # FM only?
   RxFrequency: 146.85
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 136.5
   CtcssDecode: 136.5
 
 - Name: VE3ORF UHF FM  # TBD
-  Notes: ???
-  Mode: FM  # FM only???
+  Notes: ?
+  Mode: FM  # FM only?
   RxFrequency: 444.55
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 151.4
   CtcssDecode: 151.4
 
 - Name: VE3TST VHF FM  # TBD
-  Notes: 416 & Hunt Club???
-  Mode: FM  # FM & YSF (MMDVM???)
+  Notes: 416 & Hunt Club?
+  Mode: FM  # FM & YSF (MMDVM?)
   RxFrequency: 146.7
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 136.5
   CtcssDecode: 136.5
 
 - Name: VE3TST UHF FM  # TBD
-  Notes: 416 & Hunt Club???
-  Mode: FM  # FM & DMR only (MMDVM???)
+  Notes: 416 & Hunt Club?
+  Mode: FM  # FM & DMR only (MMDVM?)
   RxFrequency: 444.125
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 136.5
@@ -59,18 +59,18 @@ Channels:
 # #############################################################################
 
 - Name: VE3TST UHF DMR  # TBD
-  Notes: 416 & Hunt Club???
-  Mode: DMR  # FM & DMR only (MMDVM???)
+  Notes: 416 & Hunt Club?
+  Mode: DMR  # FM & DMR only (MMDVM?)
   RxFrequency: 444.125
   TxFrequencyOffset: '+5.0'
 
 # #############################################################################
 
 - Name: VE3TST VHF YSF  # TBD
-  Notes: 416 & Hunt Club???
-  Mode: YSF  # FM & YSF (MMDVM???)
+  Notes: 416 & Hunt Club?
+  Mode: YSF  # FM & YSF (MMDVM?)
   RxFrequency: 146.7
   TxFrequencyOffset: '-0.6'
 
-# 444.975+???
+# 444.975+?
 ...

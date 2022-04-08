@@ -61,7 +61,7 @@ Channels:
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE2CRA UHF DMR  # Motorola CDM 1550LS+ Rx & Tx, STM32-DVM Rev3 USB, Raspberry Pi 2B
   Notes: FN25BM80AQ Camp Fortune
-  Mode: DMR  # CCS7 ID 302093 / DMR only (MMDVM)
+  Mode: DMR  # DMR only (MMDVM) / CCS7 ID 302093
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
