@@ -67,7 +67,7 @@ Channels:
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3RAM UHF DMR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Notes: FN25FK69VT Orleans at VE3LC
-  Mode: DMR  # CCS7 ID 302117 / DMR & DSTAR & FM & YSF only (MMDVM)
+  Mode: DMR  # DMR & DSTAR & FM & YSF only (MMDVM) / CCS7 ID 302117
   RxFrequency: 443.7
   TxFrequencyOffset: '+5.0'
   ColorCode: 1

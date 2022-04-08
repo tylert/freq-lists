@@ -27,7 +27,7 @@ Channels:
 #   http://va3odg.ddns.net:380/
 #   https://xrf196.spdns.org/
 
-- Name: VA3ODG VHF DSTAR  # Icom???
+- Name: VA3ODG VHF DSTAR  # Icom?
   Notes: FN25DJ78GT Ottawa YMCA-YWCA
   Mode: DSTAR  # DSTAR only (not MMDVM)
   RxFrequency: 145.53
@@ -36,9 +36,9 @@ Channels:
 # #############################################################################
 
 # TS=2, TG=6 linked to XLX196 B module
-- Name: VA3ODG UHF DMR  # Icom???
+- Name: VA3ODG UHF DMR  # Icom?
   Notes: FN25DJ78GT Ottawa YMCA-YWCA
-  Mode: DMR  # CCS7 ID 302065 / DMR & DSTAR only (MMDVM)
+  Mode: DMR  # DMR & DSTAR only (MMDVM) / CCS7 ID 302065
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'
   ColorCode: 1

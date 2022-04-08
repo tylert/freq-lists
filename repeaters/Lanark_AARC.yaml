@@ -32,7 +32,7 @@ Channels:
 
 # IRLP 2280
 - Name: VA3ARE VHF FM  # Yaesu DR-1X
-  Notes: FN15VD29FP Almonte at VE3CFZ    # may move to FN15UD48UV Union Hall
+  Notes: FN15VD29FP Almonte at VE3CFZ  # may move to FN15UD48UV Union Hall
   Mode: FM  # FM & YSF only (not MMDVM)
   RxFrequency: 147.27
   TxFrequencyOffset: '+0.6'
@@ -49,7 +49,7 @@ Channels:
 
 - Name: VA3AAR UHF DSTAR  # TBD
   Notes: FN15UD48UV Union Hall
-  Mode: DSTAR  # DSTAR only (MMDVM???)
+  Mode: DSTAR  # DSTAR only (MMDVM?)
   RxFrequency: 444.1
   TxFrequencyOffset: '+5.0'
 
@@ -71,7 +71,7 @@ Channels:
 # TS=2, TG=6 linked to XLX196 B module
 # - Name: VA3AAR VHF DMR  # TBD
 #   Notes: FN15UD48UV Union Hall
-#   Mode: DMR  # CCS7 ID 302070 / DMR & DSTAR only (MMDVM)
+#   Mode: DMR  # DMR & DSTAR only (MMDVM) / CCS7 ID 302070
 #   RxFrequency: 145.55
 #   TxFrequencyOffset: '-0.6'
 #   ColorCode: 1
@@ -97,7 +97,7 @@ Channels:
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE3HOZ UHF DMR  # Motorola CDM 1550LS+ Rx & Tx + 100 W amp, STM32-DVM Rev?, Raspberry Pi 4B
   Notes: FN15XG12WH Carp at VE3HOA
-  Mode: DMR  # CCS7 ID 302108 / DMR only (MMDVM)
+  Mode: DMR  # DMR only (MMDVM) / CCS7 ID 302108
   RxFrequency: 442.3
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
@@ -112,14 +112,14 @@ Channels:
 
 # - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
 #   Notes: FN15WA Perth at VA3DGN
-#   Mode: DMR  # CCS7 ID 302??? / DMR only (MMDVM)
+#   Mode: DMR  # DMR only (MMDVM) / CCS7 ID 302???
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
 #   ColorCode: 1
 
 # - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
 #   Notes: FN15WA Perth at VA3DGN
-#   Mode: DMR  # CCS7 ID 302??? / DMR only (MMDVM)
+#   Mode: DMR  # DMR only (MMDVM) / CCS7 ID 302???
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
 #   ColorCode: 1
