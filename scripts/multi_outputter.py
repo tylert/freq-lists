@@ -336,6 +336,13 @@ def process_rt_systems_channels_csv(entries, max_name_length=8, only_modes=None)
         'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment'
     )
 
+# This is a header from a different release/model of RT Systems...
+#       'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Data Mode,Filter,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Scan Select,IP Address,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Comment'
+
+    # 'Operating Mode' = DV if 'Mode' == DSTAR!!!
+    # 'Repeater Use' = 1 if it's a repeater and 0 if it isn't???
+    # 'Digital Code' = 0 always???
+
     if entries is not None:
         for entry in entries:
             # Skip modes we have been told to filter out
@@ -436,7 +443,7 @@ def process_rt_systems_channels_csv(entries, max_name_length=8, only_modes=None)
                 tstep = '5 kHz'
 
             print(
-                f'{rx_frequency},{tx_frequency},{offset_frequency},{duplex},,{mode},{name},,{tone},{c_tone_freq},{r_tone_freq},{dtcs_code},{dtcs_polarity},Off,{tstep},Off,0,,,,,,,, ,,{comment}'
+                f'{rx_frequency},{tx_frequency},{offset_frequency},{duplex},,{mode},{name},,{tone},{c_tone_freq},{r_tone_freq},{dtcs_code},{dtcs_polarity},Off,{tstep},Off,0,,,,,,,,,,{comment}'
             )
 
 
