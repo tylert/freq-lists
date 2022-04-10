@@ -49,14 +49,18 @@ jq --slurp '.[0] * .[1]' tmp/0.json radios/stubs.json > tmp/1.json
 # Populate the codeplug channels from the input data files
 index=1
 for input_file in ${input_files}; do
-    ./scripts/multi_outputter.py --format DMR --input_file ${input_file} \
-        --only_modes DMR \
+    ./scripts/multi_outputter.py   \
+        --format DMR               \
+        --input_file ${input_file} \
+        --modes_allowed DMR        \
         --json_file tmp/${index}.json > tmp/$((${index} + 1)).json
     index=$((${index} + 1))
 done
 for input_file in ${input_files}; do
-    ./scripts/multi_outputter.py --format DMR --input_file ${input_file} \
-        --only_modes FM,NFM \
+    ./scripts/multi_outputter.py   \
+        --format DMR               \
+        --input_file ${input_file} \
+        --modes_allowed FM,NFM     \
         --json_file tmp/${index}.json > tmp/$((${index} + 1)).json
     index=$((${index} + 1))
 done
@@ -87,14 +91,18 @@ jq --slurp '.[0] * .[1]' tmp/0.json radios/stubs.json > tmp/1.json
 # Populate the codeplug channels from the input data files
 index=1
 for input_file in ${input_files}; do
-    ./scripts/multi_outputter.py --format DMR --input_file ${input_file} \
-        --only_modes DMR \
+    ./scripts/multi_outputter.py   \
+        --format DMR               \
+        --input_file ${input_file} \
+        --modes_allowed DMR        \
         --json_file tmp/${index}.json > tmp/$((${index} + 1)).json
     index=$((${index} + 1))
 done
 for input_file in ${input_files}; do
-    ./scripts/multi_outputter.py --format DMR --input_file ${input_file} \
-        --only_modes FM,NFM \
+    ./scripts/multi_outputter.py   \
+        --format DMR               \
+        --input_file ${input_file} \
+        --modes_allowed FM,NFM     \
         --json_file tmp/${index}.json > tmp/$((${index} + 1)).json
     index=$((${index} + 1))
 done

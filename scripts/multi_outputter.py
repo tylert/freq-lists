@@ -68,7 +68,7 @@ retevis_channel_stub = {
 }
 
 
-def process_dmr_channels(entries, channel_stub, only_modes=None):
+def process_dmr_channels(entries, channel_stub, modes_allowed=None):
     ''' '''
     channels = []
     if entries is not None:
@@ -85,7 +85,7 @@ def process_dmr_channels(entries, channel_stub, only_modes=None):
                 raise ValueError('Missing Mode for entry!')
 
             # Skip modes we have been told to filter out
-            if only_modes is not None and entry['Mode'] not in only_modes:
+            if modes_allowed is not None and entry['Mode'] not in modes_allowed:
                 continue
 
             # Use 'Mode' to determine 'Bandwidth' and 'ChannelMode'.  Do this
@@ -155,7 +155,7 @@ def process_dmr_channels(entries, channel_stub, only_modes=None):
 
 
 def process_human_channels_csv(
-    entries, max_name_length=8, only_modes=None, start_index=1
+    entries, name_max_length=8, modes_allowed=None, start_index=1
 ):
     ''' '''
     print('Channel,Name,Location,Mode,Frequency,Offset,Details')
@@ -164,7 +164,7 @@ def process_human_channels_csv(
     if entries is not None:
         for entry in entries:
             # Skip modes we have been told to filter out
-            if only_modes is not None and entry['Mode'] not in only_modes:
+            if modes_allowed is not None and entry['Mode'] not in modes_allowed:
                 continue
 
             name = entry['Name']
@@ -220,7 +220,7 @@ def sanitize_chirp_channel_name(name, length=8):
 
 
 def process_chirp_channels_csv(
-    entries, max_name_length=8, only_modes=None, start_index=1
+    entries, name_max_length=8, modes_allowed=None, start_index=1
 ):
     ''' '''
     # WARNING:  The CHIRP GUI has different column header names than its CSV files do
@@ -237,10 +237,10 @@ def process_chirp_channels_csv(
     if entries is not None:
         for entry in entries:
             # Skip modes we have been told to filter out
-            if only_modes is not None and entry['Mode'] not in only_modes:
+            if modes_allowed is not None and entry['Mode'] not in modes_allowed:
                 continue
 
-            name = sanitize_chirp_channel_name(entry['Name'], max_name_length)
+            name = sanitize_chirp_channel_name(entry['Name'], name_max_length)
             frequency = entry['RxFrequency']
             mode = entry['Mode']
 
@@ -330,7 +330,7 @@ def process_chirp_channels_csv(
             location += 1
 
 
-def process_rt_systems_channels_csv(entries, max_name_length=8, only_modes=None):
+def process_rt_systems_channels_csv(entries, name_max_length=8, modes_allowed=None):
     ''' '''
     print(
         'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment'
@@ -346,10 +346,10 @@ def process_rt_systems_channels_csv(entries, max_name_length=8, only_modes=None)
     if entries is not None:
         for entry in entries:
             # Skip modes we have been told to filter out
-            if only_modes is not None and entry['Mode'] not in only_modes:
+            if modes_allowed is not None and entry['Mode'] not in modes_allowed:
                 continue
 
-            name = sanitize_chirp_channel_name(entry['Name'], max_name_length)
+            name = sanitize_chirp_channel_name(entry['Name'], name_max_length)
             rx_frequency = entry['RxFrequency']
             mode = entry['Mode']
 
@@ -467,16 +467,16 @@ def process_rt_systems_channels_csv(entries, max_name_length=8, only_modes=None)
     help='Input JSON dictionary to merge data into',
 )
 @click.option(
-    '--max_name_length',
+    '--modes_allowed',
     '-m',
-    default=8,
-    help='Maximum length of channel names (default "8").',
-)
-@click.option(
-    '--only_modes',
-    '-o',
     default=None,
     help='Desired list of modes to extract from input data (default "None (No filter)")',
+)
+@click.option(
+    '--name_max_length',
+    '-n',
+    default=8,
+    help='Maximum length of channel names (default "8").',
 )
 @click.option(
     '--start_index',
@@ -484,7 +484,7 @@ def process_rt_systems_channels_csv(entries, max_name_length=8, only_modes=None)
     default=1,
     help='Start index counter at specified value (default "1")',
 )
-def main(format, input_file, json_file, max_name_length, only_modes, start_index):
+def main(format, input_file, json_file, modes_allowed, name_max_length, start_index):
     ''' '''
     # XXX FIXME TODO  Allow the use of STDIN as the input "file"!!!
     with open(input_file) as f:
@@ -502,7 +502,7 @@ def main(format, input_file, json_file, max_name_length, only_modes, start_index
             channels = process_dmr_channels(
                 entries=payload['Channels'],
                 channel_stub=retevis_channel_stub,
-                only_modes=only_modes,
+                modes_allowed=modes_allowed,
             )
             # zones = process_dmr_zones(entries=payload['Zones'])
 
@@ -517,22 +517,22 @@ def main(format, input_file, json_file, max_name_length, only_modes, start_index
         case 'HUMAN':
             process_human_channels_csv(
                 entries=payload['Channels'],
-                max_name_length=max_name_length,
-                only_modes=only_modes,
+                name_max_length=name_max_length,
+                modes_allowed=modes_allowed,
                 start_index=start_index,
             )
         case 'CHIRP':
             process_chirp_channels_csv(
                 entries=payload['Channels'],
-                max_name_length=max_name_length,
-                only_modes=only_modes,
+                name_max_length=name_max_length,
+                modes_allowed=modes_allowed,
                 start_index=start_index,
             )
         case 'RT':
             process_rt_systems_channels_csv(
                 entries=payload['Channels'],
-                max_name_length=max_name_length,
-                only_modes=only_modes,
+                name_max_length=name_max_length,
+                modes_allowed=modes_allowed,
             )
         case _:
             print(
