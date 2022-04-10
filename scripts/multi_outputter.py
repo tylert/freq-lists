@@ -197,7 +197,9 @@ def process_human_channels_csv(
             else:
                 details = ''
 
-            print(f'{channel},{name},{location},{mode},{frequency} MHz,{offset},{details}')
+            print(
+                f'{channel},{name},{location},{mode},{frequency} MHz,{offset},{details}'
+            )
             channel += 1
 
 
@@ -336,8 +338,8 @@ def process_rt_systems_channels_csv(entries, name_max_length=8, modes_allowed=No
         'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment'
     )
 
-# This is a header from a different release/model of RT Systems...
-#       'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Data Mode,Filter,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Scan Select,IP Address,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Comment'
+    # This is a header from a different release/model of RT Systems...
+    #       'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Data Mode,Filter,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Scan Select,IP Address,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Comment'
 
     # 'Operating Mode' = DV if 'Mode' == DSTAR!!!
     # 'Repeater Use' = 1 if it's a repeater and 0 if it isn't???
@@ -449,6 +451,12 @@ def process_rt_systems_channels_csv(entries, name_max_length=8, modes_allowed=No
 
 @click.command()
 @click.option(
+    '--bands_allowed',
+    '-b',
+    default=None,
+    help='Desired list of bands to extract from input data (default "None (No filter)")',
+)
+@click.option(
     '--format',
     '-f',
     default='CHIRP',
@@ -484,7 +492,15 @@ def process_rt_systems_channels_csv(entries, name_max_length=8, modes_allowed=No
     default=1,
     help='Start index counter at specified value (default "1")',
 )
-def main(format, input_file, json_file, modes_allowed, name_max_length, start_index):
+def main(
+    bands_allowed,
+    format,
+    input_file,
+    json_file,
+    modes_allowed,
+    name_max_length,
+    start_index,
+):
     ''' '''
     # XXX FIXME TODO  Allow the use of STDIN as the input "file"!!!
     with open(input_file) as f:
