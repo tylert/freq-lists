@@ -48,7 +48,7 @@ Arch-based distros (Arch Linux, etc.), on x86 and ARM::
 
 macOS, on x86 and ARM::
 
-    brew install git libusb
+    brew install go git libusb
     git clone https://github.com/dalefarnsworth-dmr/dmrRadio && cd dmrRadio
     go build
 
