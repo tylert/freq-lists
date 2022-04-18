@@ -492,6 +492,7 @@ def process_rt_systems_channels_csv(entries, name_max_length=8, modes_allowed=No
     default=1,
     help='Start index counter at specified value (default "1")',
 )
+@click.help_option('--help', '-h')
 def main(
     bands_allowed,
     format,
