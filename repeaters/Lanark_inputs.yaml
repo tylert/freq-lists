@@ -102,7 +102,7 @@ Channels:
 # Rideau Lakes Amateur Radio Club
 #   https://www.ve3rlr.ca/p/about.html
 
-- Name: RLRE3V VHF FM
+- Name: RLR3EV VHF FM
   Notes: Input to VE3RLR VHF FM
   Mode: FM  # FM & YSF only (not MMDVM)
   RxFrequency: 147.81
