@@ -63,6 +63,7 @@ Channels:
   Mode: DMR  # FM & DMR only (MMDVM?)
   RxFrequency: 444.125
   TxFrequencyOffset: '+5.0'
+  ColorCode: 1
 
 # #############################################################################
 
