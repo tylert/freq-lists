@@ -1,0 +1,42 @@
+---
+Channels:
+
+#  _   _  ____ ____       __  ____   ____ _   _
+# | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
+# |  \| | |   | |_) |   / /  | |_) | |   |  \| |
+# | |\  | |___|  _ <   / /   |  _ <| |___| |\  |
+# |_| \_|\____|_| \_\ /_/    |_| \_\\____|_| \_|
+
+# National Capital Region / Région de la capitale nationale
+#   https://en.wikipedia.org/wiki/National_Capital_Region_(Canada)
+#   https://fr.wikipedia.org/wiki/R%C3%A9gion_de_la_capitale_nationale
+#   https://en.wikipedia.org/wiki/Ottawa
+#   https://fr.wikipedia.org/wiki/Ottawa
+#   https://en.wikipedia.org/wiki/Gatineau
+#   https://fr.wikipedia.org/wiki/Gatineau
+
+#                          _  __    _    ____   ____
+#                         | |/ /   / \  |  _ \ / ___|
+#                         | ' /   / _ \ | |_) | |  _
+#                         | . \  / ___ \|  _ <| |_| |
+#                         |_|\_\/_/   \_\_| \_\\____|
+
+# Kemptville Amateur Radio Group
+#   http://www.ve3ngr.ca/
+
+- Name: VE3NGR UHF FM  # Yaesu?
+  Notes: FN24DX Kemptville West
+  Mode: FM  # FM & YSF (not MMDVM)
+  RxFrequency: 444.225
+  TxFrequencyOffset: '+5.0'
+  CtcssEncode: 103.5
+  CtcssDecode: 103.5
+
+# #############################################################################
+
+- Name: VE3NGR UHF YSF  # Yaesu?
+  Notes: FN24DX Kemptville West
+  Mode: YSF  # FM & YSF (not MMDVM)
+  RxFrequency: 444.225
+  TxFrequencyOffset: '+5.0'
+...
