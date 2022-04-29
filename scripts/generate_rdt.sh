@@ -11,6 +11,7 @@ repeaters/Lanark_AARC.yaml
 repeaters/Lanark_LNL_ARES.yaml
 repeaters/Lanark_RLARC.yaml
 repeaters/Ottawa-Gatineau_EMRG.yaml
+repeaters/Ottawa-Gatineau_KARG.yaml
 repeaters/Ottawa-Gatineau_OARC.yaml
 repeaters/Ottawa-Gatineau_OARDG.yaml
 repeaters/Ottawa-Gatineau_OVMRC.yaml
