@@ -36,6 +36,7 @@ xlsx_output_file="tmp/HUMAN-$(date +%Y-%m-%d).xlsx"
 # | |___|  _  || ||  _ <|  __/
 #  \____|_| |_|___|_| \_\_|
 
+# Populate the CHIRP data file from the input data files
 index=1
 for input_file in ${input_files}; do
     if [[ 1 == ${index} ]]; then
@@ -65,6 +66,7 @@ done
 # |_| \_\|_|   |____/ \__, |___/\__\___|_| |_| |_|___/
 #                     |___/
 
+# Populate the RT Systems data file from the input data files
 index=1
 for input_file in ${input_files}; do
     if [[ 1 == ${index} ]]; then
@@ -91,6 +93,7 @@ done
 # |  _  | |_| | |  | |/ ___ \| |\  |
 # |_| |_|\___/|_|  |_/_/   \_\_| \_|
 
+# Populate the HUMAN data file from the input data files
 index=1
 for input_file in ${input_files}; do
     if [[ 1 == ${index} ]]; then
@@ -131,5 +134,6 @@ for input_file in ${input_files}; do
     index=$((${index} + 1))
 done
 
+# Produce pretty PDF handout sheets as a companion to the CHIRP and/or RT Systems output
 ./scripts/handouts.py --input_file ${human_output_file} --output_file ${xlsx_output_file}
 libreoffice --headless --convert-to pdf:writer_pdf_Export --outdir $(dirname ${xlsx_output_file}) ${xlsx_output_file}
