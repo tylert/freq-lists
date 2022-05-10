@@ -27,8 +27,26 @@ https://youtu.be/VExx628R0DM and https://youtu.be/Lw0Y-jQZMZ0 which are useful
 for learning about the digital side of things.
 
 
-Radio Programming Kiosk
------------------------
+Running Things
+--------------
+
+::
+
+    # Initial setup
+    make && source .venv/bin/activate
+
+    # Create new stock codeplugs and CSV files for mobile and handheld radios
+    ./scripts/generate_csv.sh
+    ./scripts/generate_rdt.sh
+    ./scripts/fetch_db.sh
+
+    # dmrRadio writeMD2017Users tmp/filtered.csv  # if radio is Retevis RT90
+    # dmrRadio writeUV380Users tmp/filtered.csv   # if radio is Retevis RT3S
+    # dmrRadio writeCodeplug tmp/foo.rdt
+
+
+Radio Programming Kiosks
+------------------------
 
 Debian-based distros (Debian, Ubuntu, Raspberry Pi OS, etc.), on x86 and ARM::
 
@@ -56,24 +74,6 @@ Windows users should probably just go fetch the pre-built (x86) binaries
 directly from
 https://www.farnsworth.org/dale/codeplug/dmrRadio/downloads/windows/ and
 https://www.farnsworth.org/dale/codeplug/editcp/downloads/windows/.
-
-
-Running Things
---------------
-
-::
-
-    # Initial setup
-    make && source .venv/bin/activate
-
-    # Create new stock codeplugs and CSV files for mobile and handheld radios
-    ./scripts/generate_csv.sh
-    ./scripts/generate_rdt.sh
-    ./scripts/fetch_db.sh
-
-    # dmrRadio writeMD2017Users tmp/filtered.csv  # if radio is Retevis RT90
-    # dmrRadio writeUV380Users tmp/filtered.csv   # if radio is Retevis RT3S
-    # dmrRadio writeCodeplug tmp/foo.rdt
 
 
 Converting Existing Codeplugs To Templates
