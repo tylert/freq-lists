@@ -5,6 +5,7 @@
 
 # set -x
 mkdir -p tmp
+date="$(date +%Y-%m-%d)"
 
 input_files='
 repeaters/Lanark_AARC.yaml
@@ -28,6 +29,11 @@ info/GMRS_FRS_FM_UHF.yaml
 info/WX_FM_VHF.yaml
 '
 
+mobile_rdt_file="tmp/Retevis_RT90-${date}.rdt"
+mobile_json_file="tmp/Retevis_RT90-${date}.json"
+handheld_rdt_file="tmp/Retevis_RT3S-${date}.rdt"
+handheld_json_file="tmp/Retevis_RT3S-${date}.json"
+
 #  ____ _____ ___   ___
 # |  _ \_   _/ _ \ / _ \
 # | |_) || || (_) | | | |
@@ -39,12 +45,12 @@ info/WX_FM_VHF.yaml
 
 # Generate a blank codeplug and convert it to JSON
 # XXX FIXME TODO  Remove this sed hack after fixing the UUID bug!!!
-dmrRadio newCodeplug -model 'MD-2017' -freq '400-480_136-174' tmp/Retevis_RT90.rdt
-dmrRadio codeplugToJSON tmp/Retevis_RT90.rdt tmp/Retevis_RT90.json
-sed -i 's/_.*"/"/' tmp/Retevis_RT90.json
+dmrRadio newCodeplug -model 'MD-2017' -freq '400-480_136-174' ${mobile_rdt_file}
+dmrRadio codeplugToJSON ${mobile_rdt_file} ${mobile_json_file}
+sed -i 's/_.*"/"/' ${mobile_json_file}
 
 # Fix the default settings and fill in contact stubs and zone stubs
-jq --from-file radios/Retevis_RT90.jq tmp/Retevis_RT90.json > tmp/0.json
+jq --from-file radios/Retevis_RT90.jq ${mobile_json_file} > tmp/0.json
 jq --slurp '.[0] * .[1]' tmp/0.json radios/stubs.json > tmp/1.json
 
 # Populate the codeplug channels from the input data files
@@ -67,7 +73,7 @@ for input_file in ${input_files}; do
 done
 
 # Convert it back to a binary codeplug
-dmrRadio jsonToCodeplug tmp/${index}.json tmp/Retevis_RT90.rdt
+dmrRadio jsonToCodeplug tmp/${index}.json ${mobile_rdt_file}
 
 # Clean up intermediate and generated files
 rm -f tmp/*.json
@@ -81,12 +87,12 @@ chmod 0644 tmp/*.rdt
 
 # Generate a blank codeplug and convert it to JSON
 # XXX FIXME TODO  Remove this sed hack after fixing the UUID bug!!!
-dmrRadio newCodeplug -model 'RT3S' -freq '400-480_136-174' tmp/Retevis_RT3S.rdt
-dmrRadio codeplugToJSON tmp/Retevis_RT3S.rdt tmp/Retevis_RT3S.json
-sed -i 's/_.*"/"/' tmp/Retevis_RT3S.json
+dmrRadio newCodeplug -model 'RT3S' -freq '400-480_136-174' ${handheld_rdt_file}
+dmrRadio codeplugToJSON ${handheld_rdt_file} ${handheld_json_file}
+sed -i 's/_.*"/"/' ${handheld_json_file}
 
 # Fix the default settings and fill in contact stubs and zone stubs
-jq --from-file radios/Retevis_RT3S.jq tmp/Retevis_RT3S.json > tmp/0.json
+jq --from-file radios/Retevis_RT3S.jq ${handheld_json_file} > tmp/0.json
 jq --slurp '.[0] * .[1]' tmp/0.json radios/stubs.json > tmp/1.json
 
 # Populate the codeplug channels from the input data files
@@ -109,7 +115,7 @@ for input_file in ${input_files}; do
 done
 
 # Convert it back to a binary codeplug
-dmrRadio jsonToCodeplug tmp/${index}.json tmp/Retevis_RT3S.rdt
+dmrRadio jsonToCodeplug tmp/${index}.json ${handheld_rdt_file}
 
 # Clean up intermediate and generated files
 rm -f tmp/*.json
