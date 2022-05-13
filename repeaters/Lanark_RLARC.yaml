@@ -19,6 +19,8 @@ Channels:
 # *** No FM nets, currently ***
 # *** No YSF nets, currently ***
 
+# VE3RLR VHF and VE3RLR UHF are not linked
+
 - Name: VE3RLR VHF FM  # Yaesu DR-2X
   Notes: FN14XV66OK Railway Museum
   Mode: FM  # FM & YSF only (not MMDVM)
