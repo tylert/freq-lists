@@ -18,9 +18,9 @@ Channels:
 #   http://www.rcarc.ca/RCARC/RCARC%20Repeaters.htm
 
 # VE3NRR VHF FM and VE3NRR UHF FM are linked
-# VE3ZRR VHF FM and VE3NRR VHF/UHF FM are linked
+# VE3ZRR VHF FM and VE3NRR VHF/UHF FM are "permanently" linked
 # VA3RBW VHF FM and VE3UCR VHF FM may be linked to VE3NRR VHF/UHF FM on-demand
-# VE3NRR VHF/UHF FM is the hub and linked repeaters connect to it on 443.025+
+# VE3NRR UHF FM is the hub and linked repeaters connect to it on 443.025+
 
 # IRLP 2520
 - Name: VE3NRR VHF FM  # MICOR
@@ -40,8 +40,8 @@ Channels:
   CtcssDecode: 100.0
 
 # XXX FIXME TODO  Find out actual location of this repeater VE3ZRR
-#                 Ask VE3ODJ???  "At the MyFM site"???  Waiting for access???
-- Name: VE3ZRR VHF FM  # Motorola MSR 2000
+#                 Ask VE3ODJ???  "At the MyFM site"???
+- Name: VE3ZRR VHF FM  # Motorola MSR 2000 @ 30 W
   Notes: FN15PM Pinnacle Hill
   Mode: FM  # FM only
   RxFrequency: 147.12
