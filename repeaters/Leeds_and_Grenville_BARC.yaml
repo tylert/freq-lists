@@ -22,7 +22,7 @@ Channels:
 #   http://barc-on.com/
 
 - Name: VA3LGA VHF FM  # TBD
-  Notes: Lansdowne  # Ivy Lea Tower
+  Notes: FN24AJ Lansdowne  # Ivy Lea Tower
   Mode: FM  # FM only?
   RxFrequency: 146.625
   TxFrequencyOffset: '-0.6'
