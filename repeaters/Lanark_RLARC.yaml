@@ -50,4 +50,5 @@ Channels:
   Mode: YSF  # FM & YSF only (not MMDVM)
   RxFrequency: 442.75
   TxFrequencyOffset: '+5.0'
+
 ...

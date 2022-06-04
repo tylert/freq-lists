@@ -42,4 +42,5 @@ Channels:
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
+
 ...
