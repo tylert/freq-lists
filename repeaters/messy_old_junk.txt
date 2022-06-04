@@ -24,7 +24,6 @@ VE2OCZ,444.95,+,5.000000,TSQL,107.2,107.2,023,NN,FM
 146.61- Bancroft (Hwy 62 South) ON VE3BNI  100.0
 146.76- Morrisburg ON   VE3SVR 110.9
 146.805- Ottawa (Barrhaven) ON  VE3DRE C4FM 100.0
-146.82- Brockville ON   VE3IWJ 100.0
 146.97- Winchester ON   VA3NDC 100.0
 147.015+ Frankford ON (N. Of Trenton) VE3TRR   91.5
 147.195+ Cantley QC   VE2MDC 110.9
@@ -32,7 +31,6 @@ VE2OCZ,444.95,+,5.000000,TSQL,107.2,107.2,023,NN,FM
 147.33+ Hammond ON   VE3PRV   2115
 
 443.3+ Kingston ON   VE3KTO
-444.0+ Brockville ON   VE3IWJ 100.0
 444.25+ Gatineau QC   VA2UHF 110.9
 444.35+ Ottawa (Cumberland) ON VA3RCB 100.0
 444.45+ Perth (Otty Lake) ON  VE3IEV     2053 100.0
