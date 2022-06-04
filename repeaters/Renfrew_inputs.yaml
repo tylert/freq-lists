@@ -90,4 +90,5 @@ Channels:
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 114.8
   CtcssDecode: None
+
 ...

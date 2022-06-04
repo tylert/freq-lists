@@ -92,4 +92,5 @@ Channels:
   Mode: YSF  # DMR & DSTAR & FM & YSF only (MMDVM)
   RxFrequency: 443.7
   TxFrequencyOffset: '+5.0'
+
 ...
