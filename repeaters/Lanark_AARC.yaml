@@ -111,6 +111,14 @@ Channels:
 
 # Tyler Tidman VA3DGN
 
+# - Name: V?3??? VHF FM  # Motorola GM 300 Rx & Tx, ???, Raspberry Pi 3B
+#   Notes: FN15WA Perth at VA3DGN
+#   Mode: FM  # FM only (Allstar)
+#   RxFrequency: 14?.?
+#   TxFrequencyOffset: '?0.6'
+#   CtcssEncode: 100.0
+#   CtcssDecode: 100.0
+
 # - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
 #   Notes: FN15WA Perth at VA3DGN
 #   Mode: DMR  # DMR only (MMDVM) / CCS7 ID 302???
