@@ -256,6 +256,7 @@ Firmware and CPS
 * https://github.com/OpenRTX  OpenRTX firmware, dmrconfig tool, etc.
 * https://github.com/open-ham/OpenGD77  clone of closed-source (ironic) OpenGD77 project
 * https://github.com/LibreDMR/OpenGD77_UserGuide/blob/master/OpenGD77_User_Guide.md  user guide for OpenGD77
+* https://twitter.com/m17_project/status/1535977213111242753  FM and M17 living together like cats and dogs
 * http://md380.org/  main page for MD-380 Tools
 * https://github.com/travisgoodspeed/md380tools  source code for MD-380 Tools
 * https://raw.githubusercontent.com/tylert/pocorgtfo/gh-pages/pocorgtfo10.pdf  reverse-engineering info
