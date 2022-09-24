@@ -250,7 +250,8 @@ Firmware and CPS
 * https://dm3mat.darc.de/qdmr/  main page for qdmr
 * https://github.com/hmatuschek/qdmr  source code for qdmr
 * https://opengd77.com/viewtopic.php?f=18&t=2002  replacement firmware for Retevis RT90 / TYT MD-9600
-* https://opengd77.com/viewtopic.php?f=12&t=1486
+* https://opengd77.com/viewtopic.php?f=19&t=2380  replacement firmware for the Retevis RT3S / TYT MD-UV380
+* https://opengd77.com/viewtopic.php?f=12&t=1486  new firmware can't use the same CPS
 * https://m17project.org/  main page for M17 Project
 * https://openrtx.org/#/  main page for OpenRTX
 * https://github.com/OpenRTX  OpenRTX firmware, dmrconfig tool, etc.
