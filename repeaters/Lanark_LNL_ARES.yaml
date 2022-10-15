@@ -14,6 +14,7 @@ Channels:
 #               |_____|_| \_|_____| /_/   \_\_| \_\_____|____/
 
 # Lanark / North Leeds Amateur Radio Emergency Service
+#   https://lnlares.com/  (redirected from http://lnlares.ca)
 #   https://www.ve3rlr.ca/2018/07/LNLARES.html
 #   https://www.qsl.net/ve3lca/
 #   https://cneo-nceo.ca/record/kgn1773/
@@ -29,7 +30,7 @@ Channels:
   RxFrequency: 146.64
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 100.0
-  CtcssDecode: None
+  CtcssDecode: 100.0
 
 - Name: VA3TEL VHF FM  # Yaesu DR-2X + Tait 9100 link radios
   Notes: FN14ST76TP Christie Lake
