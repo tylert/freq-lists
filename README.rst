@@ -160,6 +160,7 @@ Hotspots
 * https://www.ailunce.com/blog/How-to-set-Rx-Tx-Offset
 * https://github.com/VR2VYE/MMDVM_HS_firmware
 * https://github.com/g4klx/MMDVMHost/pull/90
+* https://amateurradionotes.com/pi-star.htm
 
 
 Admit Criteria determines when your radio is allowed to transmit.  The
