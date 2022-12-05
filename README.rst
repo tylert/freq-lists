@@ -271,14 +271,11 @@ Other Links
 * https://shapeshed.com/jq-json/
 * https://programminghistorian.org/en/lessons/json-and-jq
 * https://stackoverflow.com/questions/19529688/how-to-merge-2-json-objects-from-2-files-using-jq
-
-
-Events
-------
+* https://www.dmrfordummies.com/library/  what is DMR?
 
 
 Tall Pines Rally / Rally of the Tall Pines
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------
 
 Happens on the 3rd or 4th weekend in November.
 
