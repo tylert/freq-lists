@@ -139,6 +139,8 @@ Retevis RT3S DFU mode uses top side key + PTT + twist power knob.
 
 * http://miklor.com/COM/Review_MD9600.php
 * http://miklor.com/COM/Review_UV380.php
+* https://www.amateurradio.com/mobile-dc-power-one-fuse-or-two/
+* http://www.emrg.ca/EMRG-412_12VDC_for_the_Radio_Amateur.pdf
 
 
 Talkgroups
