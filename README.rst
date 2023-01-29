@@ -267,6 +267,24 @@ Firmware and CPS
 * https://www.pistar.uk/index.php  main page for Pi-Star
 
 
+DMR SMS
+-------
+
+::
+
+    Send a SMS message to the APRS destination (310999 in North America) with the following body...
+
+    SMSGTE @<phone number> <message content>
+
+    After a few moments you will receive an ACK message and the recipient will get a text message.
+
+    To have someone reply to you, send a text message to the number that sent you the text with the body...
+
+    @<callsign> <message content>
+
+    After a few moments you should receive a message on your radio!
+
+
 Other Links
 -----------
 
