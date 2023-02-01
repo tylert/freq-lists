@@ -151,8 +151,8 @@ Talkgroups
 * https://rfhackers.com
 
 
-Hotspots
---------
+Hotspots and Tuning
+-------------------
 
 ::
 
@@ -163,6 +163,8 @@ Hotspots
 * https://github.com/VR2VYE/MMDVM_HS_firmware
 * https://github.com/g4klx/MMDVMHost/pull/90
 * https://amateurradionotes.com/pi-star.htm
+* https://riku.titanix.net/wordpress/dmr/mmdvm-ber-error-rate-tuning/
+* https://www.f5uii.net/en/installation-calibration-adjustment-tunning-mmdvm-mmdvmhost-raspberry-motorola-gm360/5/
 
 
 Admit Criteria determines when your radio is allowed to transmit.  The
