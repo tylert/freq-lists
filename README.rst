@@ -299,10 +299,11 @@ Other Links
 Maps
 ----
 
-* https://www.kschaul.com/post/2023/02/16/how-the-post-is-replacing-mapbox-with-open-source-solutions/
+* https://plus.codes/map
 * https://en.wikipedia.org/wiki/Open_Location_Code
 * https://github.com/google/open-location-code
 * https://github.com/google/open-location-code/wiki/Evaluation-of-Location-Encoding-Systems
+* https://www.kschaul.com/post/2023/02/16/how-the-post-is-replacing-mapbox-with-open-source-solutions/
 
 
 Tall Pines Rally / Rally of the Tall Pines
