@@ -41,7 +41,7 @@ Channels:
 
 # IRLP node 2040
 - Name: VE2CRA VHF FM  # Motorola MSF 5000?
-  Notes: FN25BM80AQ Camp Fortune
+  Notes: 87Q6G532+42 Camp Fortune
   Mode: FM  # FM only
   RxFrequency: 146.94
   TxFrequencyOffset: '-0.6'
@@ -49,7 +49,7 @@ Channels:
   CtcssDecode: 100.0
 
 - Name: VE2CRA UHF FM  # Motorola MSR 2000?
-  Notes: FN25BM80AQ Camp Fortune
+  Notes: 87Q6G532+42 Camp Fortune
   Mode: FM  # FM only
   RxFrequency: 443.3
   TxFrequencyOffset: '+5.0'
@@ -60,7 +60,7 @@ Channels:
 
 # TS=2, TG=6 linked to XLX196 B module
 - Name: VE2CRA UHF DMR  # Motorola CDM 1550LS+ Rx & Tx, STM32-DVM Rev3 USB, Raspberry Pi 2B
-  Notes: FN25BM80AQ Camp Fortune
+  Notes: 87Q6G532+42 Camp Fortune
   Mode: DMR  # DMR only (MMDVM) / CCS7 ID 302093
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
