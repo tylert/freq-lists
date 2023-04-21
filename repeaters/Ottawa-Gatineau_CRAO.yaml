@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _   _  ____ ____       __  ____   ____ _   _
 # | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
 # |  \| | |   | |_) |   / /  | |_) | |   |  \| |
@@ -23,6 +21,8 @@ Channels:
 
 # Club de Radio Amateur Outaouais
 #   https://ve2cro.ca/
+
+Channels:
 
 # IRLP 2332
 - Name: VE2RAO VHF FM  # TBD
@@ -76,5 +76,4 @@ Channels:
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
   # use TS=2 for all TG except 3022
-
 ...

@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _   _  ____ ____       __  ____   ____ _   _
 # | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
 # |  \| | |   | |_) |   / /  | |_) | |   |  \| |
@@ -28,6 +26,8 @@ Channels:
 #   https://gitlab.com/oarc/
 #   https://bitbucket.org/oarc/
 #   https://cbctransmission.ca/map/on#289
+
+Channels:
 
 - Name: ARC2EV VHF FM
   Notes: Input to VE2CRA VHF FM
@@ -157,5 +157,4 @@ Channels:
   TxFrequencyOffset: '+0.0'
   CtcssEncode: 136.5
   CtcssDecode: None
-
 ...

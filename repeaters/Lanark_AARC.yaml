@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _                           _
 # | |    __ _ _ __   __ _ _ __| | __
 # | |   / _` | '_ \ / _` | '__| |/ /
@@ -21,6 +19,8 @@ Channels:
 # *** "??? Net" Wednesdays at 21:00 Eastern on VA3ARE VHF FM ***
 # *** "DSTAR Mini Net" Tuesdays at 20:38 Eastern on XLX196 ***
 # *** No YSF nets, currently ***
+
+Channels:
 
 - Name: VA3AAR UHF FM  # TBD
   Notes: 87Q56Q9V+Q6 Fire Hall
@@ -132,5 +132,4 @@ Channels:
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
 #   ColorCode: 1
-
 ...

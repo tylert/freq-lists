@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _   _  ____ ____       __  ____   ____ _   _
 # | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
 # |  \| | |   | |_) |   / /  | |_) | |   |  \| |
@@ -24,6 +22,8 @@ Channels:
 # Kemptville Amateur Radio Group
 #   http://www.ve3ngr.ca/
 
+Channels:
+
 - Name: VE3NGR UHF FM  # Yaesu?
   Notes: FN24DX Kemptville West
   Mode: FM  # FM & YSF (not MMDVM)
@@ -39,5 +39,4 @@ Channels:
   Mode: YSF  # FM & YSF (not MMDVM)
   RxFrequency: 444.225
   TxFrequencyOffset: '+5.0'
-
 ...

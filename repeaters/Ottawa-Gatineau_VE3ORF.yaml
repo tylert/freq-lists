@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _   _  ____ ____       __  ____   ____ _   _
 # | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
 # |  \| | |   | |_) |   / /  | |_) | |   |  \| |
@@ -23,6 +21,8 @@ Channels:
 
 # VE3ORF / 3730 Group
 #   http://ve3orf.com/
+
+Channels:
 
 - Name: VE3ORF VHF FM  # TBD
   Notes: Don't know where this is located
@@ -74,5 +74,4 @@ Channels:
   TxFrequencyOffset: '-0.6'
 
 # 444.975+?
-
 ...

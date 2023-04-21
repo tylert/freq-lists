@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  ____             __
 # |  _ \ ___ _ __  / _|_ __ _____      __
 # | |_) / _ \ '_ \| |_| '__/ _ \ \ /\ / /
@@ -24,6 +22,8 @@ Channels:
 
 # Site 1 at FN15NH13OV has a digipeter for 145.01 on solar power
 # Site 2 at FN15NH24WI is where everything else is located (mains + inet)
+
+Channels:
 
 - Name: VE3STP VHF FM  # Motorola CM 300 Rx, CDM 1250 Tx + 100 W amp
   Notes: FN15NH24WI Kennellys Mountain
@@ -75,5 +75,4 @@ Channels:
   RxFrequency: 145.39
   TxFrequencyOffset: '-0.6'
   ColorCode: 1
-
 ...

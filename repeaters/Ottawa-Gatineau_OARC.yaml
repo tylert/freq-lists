@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _   _  ____ ____       __  ____   ____ _   _
 # | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
 # |  \| | |   | |_) |   / /  | |_) | |   |  \| |
@@ -39,6 +37,8 @@ Channels:
 # VE2CRA UHF DMR and VE2CRA UHF FM are not linked
 # VE2CRA DMR audio isn't connected to either VE2CRA FM or IRLP
 
+Channels:
+
 # IRLP node 2040
 - Name: VE2CRA VHF FM  # Motorola MSF 5000?
   Notes: 87Q6G532+42 Camp Fortune
@@ -65,5 +65,4 @@ Channels:
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
-
 ...
