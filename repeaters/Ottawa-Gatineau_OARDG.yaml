@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _   _  ____ ____       __  ____   ____ _   _
 # | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
 # |  \| | |   | |_) |   / /  | |_) | |   |  \| |
@@ -27,6 +25,8 @@ Channels:
 #   http://va3odg.ddns.net:380/
 #   https://xrf196.spdns.org/
 
+Channels:
+
 - Name: VA3ODG VHF DSTAR  # Icom?
   Notes: FN25DJ78GT Ottawa YMCA-YWCA
   Mode: DSTAR  # DSTAR only (not MMDVM) / Module ?
@@ -42,5 +42,4 @@ Channels:
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
-
 ...

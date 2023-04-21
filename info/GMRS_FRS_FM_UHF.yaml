@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #   ____ __  __ ____  ____                    _   _____ ____  ____
 #  / ___|  \/  |  _ \/ ___|    __ _ _ __   __| | |  ___|  _ \/ ___|
 # | |  _| |\/| | |_) \___ \   / _` | '_ \ / _` | | |_  | |_) \___ \
@@ -18,6 +16,8 @@ Channels:
 # deviation while designated FRS-only frequencies use +/-2.5 ppm deviation.  A
 # 25 kHz channel width translates to a +/-5 ppm frequency deviation.  A 12.5
 # kHz channel width translates to a +/-2.5 ppm frequency deviation.
+
+Channels:
 
 #                       ____  _                        _
 #                      / ___|| |__   __ _ _ __ ___  __| |

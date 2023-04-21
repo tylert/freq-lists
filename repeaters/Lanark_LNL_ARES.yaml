@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _                           _
 # | |    __ _ _ __   __ _ _ __| | __
 # | |   / _` | '_ \ / _` | '__| |/ /
@@ -23,6 +21,8 @@ Channels:
 # *** No YSF nets, currently ***
 
 # There is currently no internet connectivity at any of these sites
+
+Channels:
 
 - Name: VE3KJG VHF FM  # Motorola MSF 5000
   Notes: 87Q528WJ+CH Lavant
@@ -87,5 +87,4 @@ Channels:
   Mode: YSF  # FM & YSF only (not MMDVM)
   RxFrequency: 442.2  # FM linked to VA3TEL VHF FM
   TxFrequencyOffset: '+5.0'
-
 ...

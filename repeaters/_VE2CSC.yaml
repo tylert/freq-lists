@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #                   __     _______ ____   ____ ____   ____
 #                   \ \   / / ____|___ \ / ___/ ___| / ___|
 #                    \ \ / /|  _|   __) | |   \___ \| |
@@ -12,4 +10,5 @@ Channels:
 #   http://www.ve2csc.com/nodes/carte.html
 #   http://www.ve2csc.com/nodes/Intercom.html
 
+Channels:
 ...

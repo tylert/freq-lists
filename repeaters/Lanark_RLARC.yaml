@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _                           _
 # | |    __ _ _ __   __ _ _ __| | __
 # | |   / _` | '_ \ / _` | '__| |/ /
@@ -20,6 +18,8 @@ Channels:
 # *** No YSF nets, currently ***
 
 # VE3RLR VHF and VE3RLR UHF are not linked
+
+Channels:
 
 - Name: VE3RLR VHF FM  # Yaesu DR-2X
   Notes: 87P5WX2C+MJ Railway Museum
@@ -50,5 +50,4 @@ Channels:
   Mode: YSF  # FM & YSF only (not MMDVM)
   RxFrequency: 442.75
   TxFrequencyOffset: '+5.0'
-
 ...

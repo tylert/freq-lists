@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _   _  ____ ____       __  ____   ____ _   _
 # | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
 # |  \| | |   | |_) |   / /  | |_) | |   |  \| |
@@ -36,6 +34,8 @@ Channels:
 # ======================================================================================
 # EMRG is in the process of shutting down... the following repeaters may be gone by 2026
 # ======================================================================================
+
+Channels:
 
 - Name: VE3OCE VHF FM  # Hytera?
   Notes: 87Q698MQ+CCC Alta Vista  # OFS Dispatch / OFS Station 35
@@ -92,5 +92,4 @@ Channels:
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 136.5
   CtcssDecode: 136.5
-
 ...

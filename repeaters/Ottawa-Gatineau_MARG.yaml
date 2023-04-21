@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _   _  ____ ____       __  ____   ____ _   _
 # | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
 # |  \| | |   | |_) |   / /  | |_) | |   |  \| |
@@ -23,6 +21,8 @@ Channels:
 
 # Manotick Amateur Radio Group
 #   https://ve3rix.com/
+
+Channels:
 
 # IRLP node 2596
 - Name: VE3RIX VHF FM  # Yaesu?
@@ -71,5 +71,4 @@ Channels:
 #   TxFrequencyOffset: '+5.0'
 #   CtcssEncode: 100.0
 #   CtcssDecode: 100.0
-
 ...
