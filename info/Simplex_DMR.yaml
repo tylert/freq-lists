@@ -1,5 +1,4 @@
 ---
-Zones:
 Channels:
 
 #  ____  _                 _            __     ___   _ _____
@@ -200,4 +199,6 @@ Channels:
   ColorCode: 1
   RepeaterSlot: 1
   TalkGroup: 99
+
+Zones:
 ...

@@ -1,5 +1,4 @@
 ---
-Zones:
 Channels:
 
 # __        __         _   _                 _        __
@@ -77,4 +76,6 @@ Channels:
   Mode: FM
   RxFrequency: 163.275
   RxOnly: On
+
+Zones:
 ...

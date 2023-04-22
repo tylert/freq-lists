@@ -1,5 +1,4 @@
 ---
-Zones:
 Channels:
 
 #  _   _  ____ ____       __  ____   ____ _   _
@@ -43,4 +42,6 @@ Channels:
   RxFrequency: 444.85
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
+
+Zones:
 ...

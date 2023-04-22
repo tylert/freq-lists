@@ -1,5 +1,4 @@
 ---
-Zones:
 Channels:
 
 #  _____ _
@@ -89,4 +88,6 @@ Channels:
   Mode: AM
   RxFrequency: 25.0
   RxOnly: On
+
+Zones:
 ...

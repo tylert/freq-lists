@@ -1,5 +1,4 @@
 ---
-Zones:
 Channels:
 
 #  __  __ _   _ ____  ____                    _
@@ -207,4 +206,6 @@ Channels:
   Mode: NFM
   RxFrequency: 469.55
   RxOnly: On
+
+Zones:
 ...

@@ -1,5 +1,4 @@
 ---
-Zones:
 Channels:
 
 #     _    ____  ____  ____
@@ -87,4 +86,6 @@ Channels:
   Notes: Packet via ISS
   Mode: FM  # FM only
   RxFrequency: 437.55
+
+Zones:
 ...

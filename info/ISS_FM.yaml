@@ -1,5 +1,4 @@
 ---
-Zones:
 Channels:
 
 - Name: ISSDOWN
@@ -11,4 +10,6 @@ Channels:
 - Name: ISSUP
   Mode: FM
   RxFrequency: 437.8
+
+Zones:
 ...

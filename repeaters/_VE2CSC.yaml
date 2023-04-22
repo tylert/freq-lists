@@ -1,5 +1,4 @@
 ---
-Zones:
 Channels:
 
 #                   __     _______ ____   ____ ____   ____
@@ -12,4 +11,6 @@ Channels:
 #   http://www.ve2csc.com/nodes/ve2csc.html
 #   http://www.ve2csc.com/nodes/carte.html
 #   http://www.ve2csc.com/nodes/Intercom.html
+
+Zones:
 ...
