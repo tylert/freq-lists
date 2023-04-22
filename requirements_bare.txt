@@ -1,3 +1,4 @@
 click
+openlocationcode
 openpyxl
 ruamel.yaml
