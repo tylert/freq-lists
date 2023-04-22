@@ -1,4 +1,7 @@
 ---
+Zones:
+Channels:
+
 #  _                           _
 # | |    __ _ _ __   __ _ _ __| | __
 # | |   / _` | '_ \ / _` | '__| |/ /
@@ -21,8 +24,6 @@
 # *** No YSF nets, currently ***
 
 # There is currently no internet connectivity at any of these sites
-
-Channels:
 
 - Name: VE3KJG VHF FM  # Motorola MSF 5000
   Notes: 87Q528WJ+CH Lavant

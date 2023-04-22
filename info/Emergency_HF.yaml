@@ -1,7 +1,8 @@
 ---
-#   https://www.rac.ca/national-hf-emergency-communications-frequencies/
-
+Zones:
 Channels:
+
+#   https://www.rac.ca/national-hf-emergency-communications-frequencies/
 
 - Name: ARES-A
   Notes: Alfa channel

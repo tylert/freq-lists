@@ -1,4 +1,7 @@
 ---
+Zones:
+Channels:
+
 #  ____  _     ____ _____
 # |  _ \| |   / ___|_   _|
 # | |_) | |  | |     | |
@@ -23,8 +26,6 @@
 # Frontenac Radio Group
 #   https://dxnews.com/forum/forum/special-event-stations/376-xm3carf-the-frontenac-amateur-radio-club
 #   http://www.geocities.ws/eocc_canada/  *** SPAM SITE !!! ***
-
-Channels:
 
 - Name: GRF3EV VHF FM
   Notes: Input to VE3FRG VHF FM

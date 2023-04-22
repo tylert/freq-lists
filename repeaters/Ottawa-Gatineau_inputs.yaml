@@ -1,4 +1,7 @@
 ---
+Zones:
+Channels:
+
 #  _   _  ____ ____       __  ____   ____ _   _
 # | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
 # |  \| | |   | |_) |   / /  | |_) | |   |  \| |
@@ -26,8 +29,6 @@
 #   https://gitlab.com/oarc/
 #   https://bitbucket.org/oarc/
 #   https://cbctransmission.ca/map/on#289
-
-Channels:
 
 - Name: ARC2EV VHF FM
   Notes: Input to VE2CRA VHF FM
