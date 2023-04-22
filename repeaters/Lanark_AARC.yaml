@@ -14,10 +14,10 @@
 # Almonte Amateur Radio Club
 #   https://almontearclub.ca/
 #   http://va3aar.dyndns.org:3026/
-#   https://xrf196.spdns.org/
+#   http://xlx197.dyndns.org/
 
 # *** "??? Net" Wednesdays at 21:00 Eastern on VA3ARE VHF FM ***
-# *** "DSTAR Mini Net" Tuesdays at 20:38 Eastern on XLX196 ***
+# *** "DSTAR Mini Net" Tuesdays at 20:38 Eastern on XLX197 ***
 # *** No YSF nets, currently ***
 
 Channels:
@@ -68,7 +68,7 @@ Channels:
 # #############################################################################
 
 # This mode is currently disabled!!!
-# TS=2, TG=6 linked to XLX196 B module
+# TS=2, TG=6 linked to XLX197 B module
 # - Name: VA3AAR VHF DMR  # TBD
 #   Notes: 87Q55P64+RR Union Hall
 #   Mode: DMR  # DMR & DSTAR only (MMDVM) / CCS7 ID 302070
@@ -93,9 +93,9 @@ Channels:
 # Phillip Rodney Lytle VE3HOA, VA3HOA
 #   http://ve3hoa.ddns.net:380/
 #   http://ve3hoa.ddns.net:8073/  (Kiwi SDR HF)
-#   https://xrf196.spdns.org/
+#   http://xlx197.dyndns.org/
 
-# TS=2, TG=6 linked to XLX196 B module
+# TS=2, TG=6 linked to XLX197 B module
 - Name: VE3HOZ UHF DMR  # Motorola CDM 1550LS+ Rx & Tx + 100 W amp, STM32-DVM Rev?, Raspberry Pi 4B
   Notes: 87Q57W5M+R5 Carp at VE3HOA
   Mode: DMR  # DMR only (MMDVM) / CCS7 ID 302108

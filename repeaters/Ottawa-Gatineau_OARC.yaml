@@ -27,7 +27,7 @@
 #   https://bitbucket.org/oarc/
 #   https://cbctransmission.ca/map/on#289
 #   (insert link to ve2cra Pi-Star dashboard here)
-#   https://xrf196.spdns.org/
+#   http://xlx197.dyndns.org/
 
 # *** "Capital City Net" non-holiday Mondays except July and August at 20:00 Eastern on VE2CRA VHF FM ***
 # *** "New Hams Ottawa Net" Tuesdays at 20:00 Eastern on VE2CRA VHF FM ***
@@ -58,7 +58,7 @@ Channels:
 
 # #############################################################################
 
-# TS=2, TG=6 linked to XLX196 B module
+# TS=2, TG=6 linked to XLX197 B module
 - Name: VE2CRA UHF DMR  # Motorola CDM 1550LS+ Rx & Tx, STM32-DVM Rev3 USB, Raspberry Pi 2B
   Notes: 87Q6G532+42 Camp Fortune
   Mode: DMR  # DMR only (MMDVM) / CCS7 ID 302093

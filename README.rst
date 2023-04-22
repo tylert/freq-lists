@@ -227,7 +227,7 @@ Linking and Transcoding
       DMR+ Network:  blank
       DMR+ Network ESSID:  None
       DMR+ Network Enable:  Off
-      XLX Master:  196
+      XLX Master:  197
       XLX Startup Module:  B
       XLX Master Enable:  On
       DMR Color Code:  1

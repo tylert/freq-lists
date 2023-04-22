@@ -23,7 +23,7 @@
 #   https://va3odg.webqth.com/
 #   https://dstarottawa.wordpress.com/
 #   http://va3odg.ddns.net:380/
-#   https://xrf196.spdns.org/
+#   http://xlx197.dyndns.org/
 
 Channels:
 
@@ -35,7 +35,7 @@ Channels:
 
 # #############################################################################
 
-# TS=2, TG=6 linked to XLX196 B module
+# TS=2, TG=6 linked to XLX197 B module
 - Name: VA3ODG UHF DMR  # Motorola M1225 Tx + CDM 750 Rx?
   Notes: FN25DJ78GT Ottawa YMCA-YWCA
   Mode: DMR  # DMR & DSTAR only (MMDVM) / CCS7 ID 302065
