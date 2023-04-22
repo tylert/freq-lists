@@ -22,8 +22,9 @@ Channels:
 # Brockville Amateur Radio Club
 #   http://barc-on.com/
 
+# VA3BRC?
 - Name: VA3LGA VHF FM  # TBD
-  Notes: FN24AJ Lansdowne  # Ivy Lea Tower
+  Notes: 87P692XG+WP6 Ivy Lea
   Mode: FM  # FM only?
   RxFrequency: 146.625
   TxFrequencyOffset: '-0.6'
