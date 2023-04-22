@@ -18,11 +18,7 @@ repeaters/Ottawa-Gatineau_OARDG.yaml
 repeaters/Ottawa-Gatineau_OVMRC.yaml
 repeaters/Renfrew_CRRA.yaml
 repeaters/Renfrew_RCARC.yaml
-repeaters/Lanark_inputs.yaml
-repeaters/Ottawa-Gatineau_inputs.yaml
-repeaters/Renfrew_inputs.yaml
 info/RLCT_FM.yaml
-info/RLCT_inputs.yaml
 info/Simplex_DMR.yaml
 info/Simplex_FM.yaml
 info/GMRS_FRS_FM_UHF.yaml

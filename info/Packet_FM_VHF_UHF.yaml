@@ -27,11 +27,11 @@ Channels:
 #   http://champlainrepeater.ca/
 #   http://ve3stp.org/  (DEPRECATED!!!)
 
-# Site 1 at FN15NH13OV has a digipeter for 145.01 on solar power
-# Site 2 at FN15NH24WI is the VE3STP APRS digipeter (mains + inet)
+# Site 1 at 87Q5835W+5J has a digipeter for 145.01 FM (packet) on solar power
+# Site 2 at 87Q58455+W5 is where everything else is located (mains + inet)
 
 - Name: VE3STP VHF PKT  # TBD
-  Notes: FN25EJ02OB Kennellys Mountain
+  Notes: 87Q5835W+5J Kennellys Mountain
   Mode: FM  # FM only
   RxFrequency: 145.01
 
@@ -51,8 +51,8 @@ Channels:
 # EMRG is in the process of shutting down... the following repeaters may be gone by 2026
 # ======================================================================================
 
-- Name: OCEPKT VHF PKT  # Motorola Radius/Spectra mobiles
-  Notes: FN25EJ02OB Alta Vista  # OFS Dispatch / OFS Station 35
+- Name: OCEPKT VHF PKT  # Motorola Radius/Spectra mobile(s)
+  Notes: 87Q698MQ+CCC Alta Vista  # OFS Dispatch / OFS Station 35
   Mode: FM  # FM only
   RxFrequency: 145.03
 
