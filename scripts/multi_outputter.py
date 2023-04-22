@@ -203,13 +203,13 @@ def process_human_channels_csv(
             channel += 1
 
 
-def sanitize_chirp_channel_name(name, length=8):
+def sanitize_chirp_channel_name(name: str = None, length: int = 8) -> str:
     ''' '''
     # XXX FIXME TODO  Round up when truncating numerical channel names!!!
 
     # Make sure nobody tries to ask for a negative number
     if length < 0:
-        raise ValueError('Invalid name length!')
+        raise ValueError('Invalid name length requested!')
 
     # Truncate name to the specified length and cull any trailing whitespace
     # Force names to not have strange, chopped-off stuff at the end

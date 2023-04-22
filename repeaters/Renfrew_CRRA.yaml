@@ -16,6 +16,7 @@ Channels:
 
 # Champlain Regional Repeater Association
 #   http://champlainrepeater.ca/
+#   http://ve3stp.org/  (DEPRECATED!!!)
 #   http://old.ve3stp.org/  (DEPRECATED!!!)
 #   http://ve3stp.ddns.net:44480/
 #   http://ve3stp.ddns.net:8073/  (Kiwi SDR HF)
@@ -23,11 +24,11 @@ Channels:
 
 # *** "Champlain Mini Net" Mondays to Fridays at 19:00 on VE3STP VHF FM ***
 
-# Site 1 at FN15NH13OV has a digipeter for 145.01 on solar power
-# Site 2 at FN15NH24WI is where everything else is located (mains + inet)
+# Site 1 at 87Q5835W+5J has a digipeter for 145.01 FM (packet) on solar power
+# Site 2 at 87Q58455+W5 is where everything else is located (mains + inet)
 
 - Name: VE3STP VHF FM  # Motorola CM 300 Rx, CDM 1250 Tx + 100 W amp
-  Notes: FN15NH24WI Kennellys Mountain
+  Notes: 87Q58455+W5 Kennellys Mountain
   Mode: FM  # FM only
   RxFrequency: 147.06
   TxFrequencyOffset: '-0.6'
@@ -35,7 +36,7 @@ Channels:
   CtcssDecode: 114.8
 
 - Name: VE3STP 2VHF FM  # Motorola XPR 8300 + 60 W amp
-  Notes: FN15NH24WI Kennellys Mountain
+  Notes: 87Q58455+W5 Kennellys Mountain
   Mode: FM  # FM & DMR only (not MMDVM)
   RxFrequency: 145.39
   TxFrequencyOffset: '-0.6'
@@ -54,7 +55,7 @@ Channels:
 # #############################################################################
 
 - Name: VE3STP UHF DSTAR  # Motorola CM 300 Rx & Tx
-  Notes: FN15NH24WI Kennellys Mountain
+  Notes: 87Q58455+W5 Kennellys Mountain
   Mode: DSTAR  # DMR & DSTAR only (MMDVM) / Module B?
   RxFrequency: 443.6
   TxFrequencyOffset: '+5.0'
@@ -63,7 +64,7 @@ Channels:
 
 # TS=2, TG=6 linked to XLX197 B module
 - Name: VE3STP UHF DMR  # Motorola CM 300 Rx & Tx
-  Notes: FN15NH24WI Kennellys Mountain
+  Notes: 87Q58455+W5 Kennellys Mountain
   Mode: DMR  # DMR & DSTAR only (MMDVM) / CCS7 ID 302064
   RxFrequency: 443.6
   TxFrequencyOffset: '+5.0'
@@ -71,7 +72,7 @@ Channels:
 
 # No RoIP features
 - Name: VE3STP VHF DMR  # Motorola XPR 8300 + 60 W amp
-  Notes: FN15NH24WI Kennellys Mountain
+  Notes: 87Q58455+W5 Kennellys Mountain
   Mode: DMR  # FM & DMR only (not MMDVM) / CCS7 ID 302096
   RxFrequency: 145.39
   TxFrequencyOffset: '-0.6'
