@@ -26,42 +26,42 @@ Channels:
 #   https://ve2cro.ca/
 
 # IRLP 2332
-- Name: VE2RAO VHF FM  # TBD
+- Name: VE2RAO VHF FM  # equipment TBD
   Notes: Hôpital de Hull
-  Mode: FM  # FM only?
+  Mode: FM
   RxFrequency: 146.745
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 118.8
   CtcssDecode: 118.8
 
-- Name: VE2RAO UHF FM  # TBD
+- Name: VE2RAO UHF FM  # equipment TBD
   Notes: Hôpital de Hull
-  Mode: FM  # FM only?
+  Mode: FM
   RxFrequency: 443.95
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 118.8
   CtcssDecode: 118.8
 
-- Name: VE2RBH VHF FM  # TBD
+- Name: VE2RBH VHF FM  # equipment TBD
   Notes: Ripon
-  Mode: FM  # FM only?
+  Mode: FM
   RxFrequency: 145.41
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 123.0
   CtcssDecode: 123.0
 
-- Name: VA2UHF UHF FM  # TBD
+- Name: VA2UHF UHF FM  # equipment TBD
   Notes: Sarsfield
-  Mode: FM  # FM only?
+  Mode: FM
   RxFrequency: 444.25
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 141.3
   CtcssDecode: 141.3
 
 # XXX FIXME TODO  Out of service?
-- Name: VE2SY VHF FM  # TBD
+- Name: VE2SY VHF FM  # equipment TBD
   Notes: ???
-  Mode: FM  # FM only?
+  Mode: FM
   RxFrequency: 147.195
   TxFrequencyOffset: '+0.6'
   CtcssEncode: 123.0
@@ -70,9 +70,9 @@ Channels:
 # #############################################################################
 
 # XXX FIXME TODO  Out of service?
-- Name: VE2RAO UHF DMR  # TBD
+- Name: VE2RAO UHF DMR  # equipment TBD
   Notes: Hôpital de Hull
-  Mode: DMR  # DMR only? (MMDVM?) / CCS7 ID 302???
+  Mode: DMR  # CCS7 ID 302???
   RxFrequency: 441.95
   TxFrequencyOffset: '+5.0'
   ColorCode: 1

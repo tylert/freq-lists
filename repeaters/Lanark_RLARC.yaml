@@ -27,18 +27,19 @@ Channels:
 # *** No YSF nets, currently ***
 
 # VE3RLR VHF and VE3RLR UHF are not linked
+# FM and YSF are not linked
 
 - Name: VE3RLR VHF FM  # Yaesu DR-2X
-  Notes: 87P5WX2C+MJ Railway Museum
-  Mode: FM  # FM & YSF only (not MMDVM)
+  Notes: Railway Museum 87P5WX2C+MJ
+  Mode: FM
   RxFrequency: 147.21
   TxFrequencyOffset: '+0.6'
   CtcssEncode: 151.4
   CtcssDecode: 151.4
 
-- Name: VE3RLR UHF FM  # Yaesu DR-2X
-  Notes: 87P5WX2C+MJ Railway Museum
-  Mode: FM  # FM & YSF only (not MMDVM)
+- Name: VE3RLR UHF FM  # Yaesu DR-1X
+  Notes: Railway Museum 87P5WX2C+MJ
+  Mode: FM
   RxFrequency: 442.75
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 151.4
@@ -47,14 +48,14 @@ Channels:
 # #############################################################################
 
 - Name: VE3RLR VHF YSF  # Yaesu DR-2X
-  Notes: 87P5WX2C+MJ Railway Museum
-  Mode: YSF  # FM & YSF only (not MMDVM)
+  Notes: Railway Museum 87P5WX2C+MJ
+  Mode: YSF
   RxFrequency: 147.21
   TxFrequencyOffset: '+0.6'
 
-- Name: VE3RLR UHF YSF  # Yaesu DR-2X
-  Notes: 87P5WX2C+MJ Railway Museum
-  Mode: YSF  # FM & YSF only (not MMDVM)
+- Name: VE3RLR UHF YSF  # Yaesu DR-1X
+  Notes: Railway Museum 87P5WX2C+MJ
+  Mode: YSF
   RxFrequency: 442.75
   TxFrequencyOffset: '+5.0'
 ...

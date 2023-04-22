@@ -28,9 +28,9 @@ Channels:
 #   http://va3odg.ddns.net:380/
 #   http://xlx197.dyndns.org/
 
-- Name: VA3ODG VHF DSTAR  # Icom?
+- Name: VA3ODG VHF DSTAR  # Icom maybe???
   Notes: FN25DJ78GT Ottawa YMCA-YWCA
-  Mode: DSTAR  # DSTAR only (not MMDVM) / Module ?
+  Mode: DSTAR  # Module ?
   RxFrequency: 145.53
   TxFrequencyOffset: '-0.6'
 
