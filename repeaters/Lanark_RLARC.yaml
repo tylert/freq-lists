@@ -1,5 +1,4 @@
 ---
-Zones:
 Channels:
 
 #  _                           _
@@ -58,4 +57,6 @@ Channels:
   Mode: YSF
   RxFrequency: 442.75
   TxFrequencyOffset: '+5.0'
+
+Zones:
 ...

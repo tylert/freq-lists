@@ -1,5 +1,4 @@
 ---
-Zones:
 Channels:
 
 #  _   _  ____ ____       __  ____   ____ _   _
@@ -75,4 +74,6 @@ Channels:
   TxFrequencyOffset: '-0.6'
 
 # 444.975+?
+
+Zones:
 ...

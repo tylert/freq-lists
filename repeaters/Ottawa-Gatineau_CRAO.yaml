@@ -1,5 +1,4 @@
 ---
-Zones:
 Channels:
 
 #  _   _  ____ ____       __  ____   ____ _   _
@@ -77,4 +76,6 @@ Channels:
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
   # use TS=2 for all TG except 3022
+
+Zones:
 ...

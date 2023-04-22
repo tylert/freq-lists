@@ -1,5 +1,4 @@
 ---
-Zones:
 Channels:
 
 #  _   _  ____ ____       __  ____   ____ _   _
@@ -93,4 +92,6 @@ Channels:
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 136.5
   CtcssDecode: 136.5
+
+Zones:
 ...

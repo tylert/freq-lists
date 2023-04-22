@@ -1,5 +1,4 @@
 ---
-Zones:
 Channels:
 
 #   https://www.rac.ca/national-hf-emergency-communications-frequencies/
@@ -93,4 +92,6 @@ Channels:
   Notes: Romeo channel
   Mode: USB
   RxFrequency: 28.096
+
+Zones:
 ...

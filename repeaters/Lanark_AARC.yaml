@@ -1,5 +1,4 @@
 ---
-Zones:
 Channels:
 
 #  _                           _
@@ -29,7 +28,7 @@ Channels:
 # *** "DSTAR Mini Net" Tuesdays at 20:38 Eastern on XLX197 ***
 # *** No YSF nets, currently ***
 
-# Some things might still be at Almonte at VE3CFZ 87Q55Q89+29
+# Some things might still be at Almonte VE3CFZ 87Q55Q89+29
 
 # FM up-linked to XLX197B
 # ASL #564013
@@ -90,7 +89,7 @@ Channels:
 #   http://xlx197.dyndns.org/
 
 - Name: VE3HOZ UHF DMR  # Motorola CDM 1550LS+ Rx & Tx + 100 W amp, STM32-DVM Rev?, Raspberry Pi 4B
-  Notes: Carp at VE3HOA 87Q57W5M+R5
+  Notes: Carp VE3HOA 87Q57W5M+R5
   Mode: DMR  # CCS7 ID 302108 / DMR up-Linked to XLX197B (TS=2, TG=6)
   RxFrequency: 442.3
   TxFrequencyOffset: '+5.0'
@@ -125,4 +124,6 @@ Channels:
 #   RxFrequency: 4??.?
 #   TxFrequencyOffset: '+5.0'
 #   ColorCode: 1
+
+Zones:
 ...

@@ -1,5 +1,4 @@
 ---
-Zones:
 Channels:
 
 #   ____ __  __ ____  ____                    _   _____ ____  ____
@@ -277,6 +276,8 @@ Channels:
   Bandwidth: 20
   Power: High
   RxOnly: On
+
+Zones:
 
 # (All trademarks and registred trademarks are the property of their respective
 # owners.)

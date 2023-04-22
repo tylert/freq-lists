@@ -23,47 +23,11 @@ Channels:
 # XXX FIXME TODO  This minor bug in the bandplan notes has been reported to RAC!!!
 # 146.40, 146.43 and 146.46 may be repeater inputs in some areas
 
-# - Name: 146.4 FM
-#   Mode: FM
-#   RxFrequency: 146.4
-
-# - Name: 146.415 FM
-#   Mode: FM
-#   RxFrequency: 146.415
-
-# - Name: 146.43 FM
-#   Mode: FM
-#   RxFrequency: 146.43
-
-# - Name: 146.445 FM
-#   Mode: FM
-#   RxFrequency: 146.445
-
-# - Name: 146.46 FM
-#   Mode: FM
-#   RxFrequency: 146.46
-
-# - Name: 146.475 FM
-#   Mode: FM
-#   RxFrequency: 146.475
-
-# - Name: 146.49 FM
-#   Mode: FM
-#   RxFrequency: 146.49
-
-# - Name: 146.505 FM
-#   Mode: FM
-#   RxFrequency: 146.505
-
 - Name: CALL2M
 # Name: 146.52 FM
   Mode: FM
   RxFrequency: 146.52
   Notes: FM simplex calling frequency
-
-# - Name: 146.535 FM
-#   Mode: FM
-#   RxFrequency: 146.535
 
 - Name: A-SIMPLX
 # Name: 146.55 FM
@@ -77,14 +41,6 @@ Channels:
   RxFrequency: 146.565
   Notes: Simplex channel C
 
-# - Name: 146.58 FM
-#   Mode: FM
-#   RxFrequency: 146.58
-
-# - Name: 146.595 FM
-#   Mode: FM
-#   RxFrequency: 146.595
-
 # FM simplex from 147.42 to 147.57 - 6 channels on a 30 kHz raster
 
 - Name: B-SIMPLX
@@ -92,26 +48,6 @@ Channels:
   Mode: FM
   RxFrequency: 147.42
   Notes: Simplex channel B
-
-# - Name: 147.45 FM
-#   Mode: FM
-#   RxFrequency: 147.45
-
-# - Name: 147.48 FM
-#   Mode: FM
-#   RxFrequency: 147.48
-
-# - Name: 147.51 FM
-#   Mode: FM
-#   RxFrequency: 147.51
-
-# - Name: 147.54 FM
-#   Mode: FM
-#   RxFrequency: 147.54
-
-# - Name: 147.57 FM
-#   Mode: FM
-#   RxFrequency: 147.57
 
 #  ____  _                 _             _   _ _   _ _____
 # / ___|(_)_ __ ___  _ __ | | _____  __ | | | | | | |  ___|
@@ -136,19 +72,11 @@ Channels:
   RxFrequency: 446.0
   Notes: FM simplex calling frequency
 
-# - Name: 446.0125 FM
-#   Mode: FM
-#   RxFrequency: 446.0125
-
 - Name: D-SIMPLX
 # Name: 446.025 FM
   Mode: FM
   RxFrequency: 446.025
   Notes: Simplex channel D
-
-# - Name: 446.0375 FM
-#   Mode: FM
-#   RxFrequency: 446.0375
 
 - Name: E-SIMPLX
 # Name: 446.05 FM
@@ -156,43 +84,5 @@ Channels:
   RxFrequency: 446.05
   Notes: Simplex channel E
 
-# - Name: 446.0625 FM
-#   Mode: FM
-#   RxFrequency: 446.0625
-
-# - Name: 446.075 FM
-#   Mode: FM
-#   RxFrequency: 446.075
-
-# - Name: 446.0875 FM
-#   Mode: FM
-#   RxFrequency: 446.0875
-
-# - Name: 446.1 FM
-#   Mode: FM
-#   RxFrequency: 446.1
-
-# - Name: 446.1125 FM
-#   Mode: FM
-#   RxFrequency: 446.1125
-
-# - Name: 446.125 FM
-#   Mode: FM
-#   RxFrequency: 446.125
-
-# - Name: 446.1375 FM
-#   Mode: FM
-#   RxFrequency: 446.1375
-
-# - Name: 446.15 FM
-#   Mode: FM
-#   RxFrequency: 446.15
-
-# - Name: 446.1625 FM
-#   Mode: FM
-#   RxFrequency: 446.1625
-
-# - Name: 446.175 FM
-#   Mode: FM
-#   RxFrequency: 446.175
+Zones:
 ...
