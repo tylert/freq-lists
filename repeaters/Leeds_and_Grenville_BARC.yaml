@@ -29,9 +29,9 @@ Channels:
 #   http://barc-on.com/
 
 # VA3BRC?
-- Name: VA3LGA VHF FM  # TBD
+- Name: VA3LGA VHF FM  # equipment TBD
   Notes: 87P692XG+WP6 Ivy Lea
-  Mode: FM  # FM only?
+  Mode: FM
   RxFrequency: 146.625
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 100.0

@@ -25,17 +25,17 @@ Channels:
 #                     \ V / | |___ ___) | |  \ V  V / |_| |
 #                      \_/  |_____|____/___|  \_/\_/ \___/
 
-- Name: VE3IWJ VHF FM  # TBD
+- Name: VE3IWJ VHF FM  # equipment TBD
   Notes: FN24DO22LH
-  Mode: FM  # FM only?
+  Mode: FM
   RxFrequency: 146.82
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VE3IWJ UHF FM  # TBD
+- Name: VE3IWJ UHF FM  # equipment TBD
   Notes: FN24DO22LH
-  Mode: FM  # FM only?
+  Mode: FM
   RxFrequency: 444.0
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 100.0

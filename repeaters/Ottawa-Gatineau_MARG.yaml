@@ -26,25 +26,25 @@ Channels:
 #   https://ve3rix.com/
 
 # IRLP node 2596
-- Name: VE3RIX VHF FM  # Yaesu?
+- Name: VE3RIX VHF FM  # Yaesu DR-?X maybe???
   Notes: Don't know where this is located
-  Mode: FM  # FM & YSF only? (not MMDVM?)
+  Mode: FM
   RxFrequency: 145.45
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 151.4
   CtcssDecode: 151.4
 
-- Name: VE3RIX UHF FM  # Yaesu?
+- Name: VE3RIX UHF FM  # Yaesu DR-?X maybe???
   Notes: Don't know where this is located
-  Mode: FM  # FM & YSF only? (not MMDVM?)
+  Mode: FM
   RxFrequency: 442.45
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 151.4
   CtcssDecode: 151.4
 
-- Name: VE3TEL VHF FM  # Yaesu?
+- Name: VE3TEL VHF FM  # Yaesu DR-?X maybe???
   Notes: Don't know where this is located
-  Mode: FM  # FM & YSF only? (not MMDVM?)
+  Mode: FM
   RxFrequency: 147.03
   TxFrequencyOffset: '+0.6'
   CtcssEncode: 100.0
@@ -52,22 +52,22 @@ Channels:
 
 # #############################################################################
 
-- Name: VE3RIX VHF YSF  # Yaesu?
+- Name: VE3RIX VHF YSF  # Yaesu DR-?X maybe???
   Notes: Don't know where this is located
-  Mode: YSF  # FM & YSF only? (not MMDVM?)
+  Mode: YSF
   RxFrequency: 145.45
   TxFrequencyOffset: '-0.6'
 
-- Name: VE3TEL VHF YSF  # Yaesu?
+- Name: VE3TEL VHF YSF  # Yaesu DR-?X maybe???
   Notes: Don't know where this is located
-  Mode: YSF  # FM & YSF only? (not MMDVM?)
+  Mode: YSF
   RxFrequency: 147.03
   TxFrequencyOffset: '+0.6'
 
 # IRLP Node 2210?
-# - Name: VE3TEL UHF FM  # Yaesu?
+# - Name: VE3TEL UHF FM  # Yaesu DR-?X maybe???
 #   Notes: Don't know where this is located
-#   Mode: FM  # FM & YSF only? (not MMDVM?)
+#   Mode: FM
 #   RxFrequency: 443.8
 #   TxFrequencyOffset: '+5.0'
 #   CtcssEncode: 100.0

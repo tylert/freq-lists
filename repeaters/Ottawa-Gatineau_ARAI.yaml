@@ -25,41 +25,41 @@ Channels:
 # Association des Radio Amateurs Indépendants
 #   https://ve2reh.com/
 
-- Name: VE2REH VHF FM  # TBD
+- Name: VE2REH VHF FM  # equipment TBD
   Notes: Pakenham
-  Mode: FM  # FM only?
+  Mode: FM
   RxFrequency: 145.33
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 110.9
   CtcssDecode: 110.9
 
-- Name: VE2REH 2VHF FM  # TBD
+- Name: VE2REH 2VHF FM  # equipment TBD
   Notes: Gatineau-Est  # Buckingham?
-  Mode: FM  # FM only?
+  Mode: FM
   RxFrequency: 145.49
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 110.9
   CtcssDecode: 110.9
 
-- Name: VE2REH 3VHF FM  # TBD
+- Name: VE2REH 3VHF FM  # equipment TBD
   Notes: Chelsea  # Camp Fortune?
-  Mode: FM  # FM only?
+  Mode: FM
   RxFrequency: 147.36
   TxFrequencyOffset: '+0.6'
   CtcssEncode: 123.0
   CtcssDecode: 123.0
 
-- Name: VE2REH 4VHF FM  # TBD
+- Name: VE2REH 4VHF FM  # equipment TBD
   Note: Cantley
-  Mode: FM  # FM only?
+  Mode: FM
   RxFrequency: 147.105
   TxFrequencyOffset: '+0.6'
   CtcssEncode: 110.9
   CtcssDecode: 110.9
 
-- Name: VE2REH UHF FM  # TBD
+- Name: VE2REH UHF FM  # equipment TBD
   Note: Cantley
-  Mode: FM  # FM only?
+  Mode: FM
   RxFrequency: 444.6
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 110.9
@@ -69,21 +69,21 @@ Channels:
 
 - Name: VE2REH UHF DMR  # Hytera RD982
   Notes: Gatineau
-  Mode: DMR  # DMR only? (MMDVM?) / CCS7 ID 302354
+  Mode: DMR  # CCS7 ID 302354
   RxFrequency: 442.65
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
 
-- Name: VE2REH UHF DMR  # TBD
+- Name: VE2REH UHF DMR  # equipment TBD
   Notes: Mont-Laurier
-  Mode: DMR  # DMR only? (MMDVM) / CCS7 ID 302043
+  Mode: DMR  # CCS7 ID 302043
   RxFrequency: 444.15
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
 
 - Name: VE2REH UHF DMR  # Motorola XPR 8300
   Notes: L'Ange-Guardien
-  Mode: DMR  # DMR only? (MMDVM?) / CCS7 ID 302356
+  Mode: DMR  # CCS7 ID 302356
   RxFrequency: 442.55
   TxFrequencyOffset: '+5.0'
   ColorCode: 1

@@ -18,7 +18,7 @@ from openpyxl.utils import get_column_letter
 from openpyxl.workbook import Workbook
 
 
-def drop_a_deuce(csv_filename=None, xlsx_filename=None):
+def drop_a_deuce(csv_filename: str = None, xlsx_filename: str = None):
     ''' '''
     # Create a new spreadsheet and set it all up
     workbook = Workbook()

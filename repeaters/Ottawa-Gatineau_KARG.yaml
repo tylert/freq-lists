@@ -25,9 +25,9 @@ Channels:
 # Kemptville Amateur Radio Group
 #   http://www.ve3ngr.ca/
 
-- Name: VE3NGR UHF FM  # Yaesu?
+- Name: VE3NGR UHF FM  # Yaesu DR-?X maybe???
   Notes: FN24DX Kemptville West
-  Mode: FM  # FM & YSF (not MMDVM)
+  Mode: FM
   RxFrequency: 444.225
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 103.5
@@ -35,9 +35,9 @@ Channels:
 
 # #############################################################################
 
-- Name: VE3NGR UHF YSF  # Yaesu?
+- Name: VE3NGR UHF YSF  # Yaesu DR-?X maybe???
   Notes: FN24DX Kemptville West
-  Mode: YSF  # FM & YSF (not MMDVM)
+  Mode: YSF
   RxFrequency: 444.225
   TxFrequencyOffset: '+5.0'
 ...

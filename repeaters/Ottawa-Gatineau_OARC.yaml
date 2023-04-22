@@ -36,22 +36,21 @@ Channels:
 # *** "New Hams Ottawa Net" Tuesdays at 20:00 Eastern on VE2CRA VHF FM ***
 
 # VE2CRA VHF FM and VE2CRA UHF FM are usually not linked
-# VE2CRA UHF DMR and VE2CRA VHF FM are not linked
-# VE2CRA UHF DMR and VE2CRA UHF FM are not linked
-# VE2CRA DMR audio isn't connected to either VE2CRA FM or IRLP
+# FM and DMR are not linked
+# DMR isn't currently linked to anything external
 
 # IRLP node 2040
-- Name: VE2CRA VHF FM  # Motorola MSF 5000?
-  Notes: 87Q6G532+42 Camp Fortune
-  Mode: FM  # FM only
+- Name: VE2CRA VHF FM  # Motorola MSF 5000 maybe???
+  Notes: Camp Fortune 87Q6G532+42
+  Mode: FM
   RxFrequency: 146.94
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VE2CRA UHF FM  # Motorola MSR 2000?
-  Notes: 87Q6G532+42 Camp Fortune
-  Mode: FM  # FM only
+- Name: VE2CRA UHF FM  # Motorola MSR 2000 maybe???
+  Notes: Camp Fortune 87Q6G532+42
+  Mode: FM
   RxFrequency: 443.3
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 100.0
@@ -59,10 +58,9 @@ Channels:
 
 # #############################################################################
 
-# TS=2, TG=6 linked to XLX197 B module
 - Name: VE2CRA UHF DMR  # Motorola CDM 1550LS+ Rx & Tx, STM32-DVM Rev3 USB, Raspberry Pi 2B
-  Notes: 87Q6G532+42 Camp Fortune
-  Mode: DMR  # DMR only (MMDVM) / CCS7 ID 302093
+  Notes: Camp Fortune 87Q6G532+42
+  Mode: DMR  # CCS7 ID 302093
   RxFrequency: 444.4
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
