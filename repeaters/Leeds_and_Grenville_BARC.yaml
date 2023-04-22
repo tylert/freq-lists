@@ -1,4 +1,7 @@
 ---
+Zones:
+Channels:
+
 #  _                  _                       _
 # | |    ___  ___  __| |___    __ _ _ __   __| |
 # | |   / _ \/ _ \/ _` / __|  / _` | '_ \ / _` |
@@ -18,8 +21,6 @@
 
 # Brockville Amateur Radio Club
 #   http://barc-on.com/
-
-Channels:
 
 - Name: VA3LGA VHF FM  # TBD
   Notes: FN24AJ Lansdowne  # Ivy Lea Tower

@@ -1,4 +1,7 @@
 ---
+Zones:
+Channels:
+
 #  _   _  ____ ____       __  ____   ____ _   _
 # | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
 # |  \| | |   | |_) |   / /  | |_) | |   |  \| |
@@ -21,8 +24,6 @@
 
 # Club de Radio Amateur Outaouais
 #   https://ve2cro.ca/
-
-Channels:
 
 # IRLP 2332
 - Name: VE2RAO VHF FM  # TBD

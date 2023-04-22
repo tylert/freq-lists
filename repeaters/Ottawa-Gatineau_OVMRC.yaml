@@ -1,4 +1,7 @@
 ---
+Zones:
+Channels:
+
 #  _   _  ____ ____       __  ____   ____ _   _
 # | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
 # |  \| | |   | |_) |   / /  | |_) | |   |  \| |
@@ -26,8 +29,6 @@
 
 # *** No FM nets, currently ***
 # *** No YSF nets, currently ***
-
-Channels:
 
 - Name: VE3TWO VHF FM  # Yaesu DR-1X
   Notes: FN25GG16CW Metcalfe at VE3BOE  # 60-foot fold-over tower (80-foot tower?)

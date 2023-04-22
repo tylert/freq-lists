@@ -1,4 +1,7 @@
 ---
+Zones:
+Channels:
+
 # __        __         _   _                 _        __
 # \ \      / /__  __ _| |_| |__   ___ _ __  (_)_ __  / _| ___
 #  \ \ /\ / / _ \/ _` | __| '_ \ / _ \ '__| | | '_ \| |_ / _ \
@@ -9,8 +12,6 @@
 # https://www.canada.ca/en/environment-climate-change/services/weatheradio.html
 # http://www.wiki.robotz.com/index.php/WX_Weather_Radio
 # https://github.com/jwhittaker/nwrsites
-
-Channels:
 
 - Name: WX8  # M21B
   Mode: FM

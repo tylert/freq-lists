@@ -1,4 +1,7 @@
 ---
+Zones:
+Channels:
+
 #  ____             __
 # |  _ \ ___ _ __  / _|_ __ _____      __
 # | |_) / _ \ '_ \| |_| '__/ _ \ \ /\ / /
@@ -19,8 +22,6 @@
 # VE3ZRR VHF FM and VE3NRR VHF/UHF FM are "permanently" linked
 # VA3RBW VHF FM and VE3UCR VHF FM may be linked to VE3NRR VHF/UHF FM on-demand
 # VE3NRR UHF FM is the hub and linked repeaters connect to it on 443.025+
-
-Channels:
 
 # IRLP 2520
 - Name: VE3NRR VHF FM  # MICOR

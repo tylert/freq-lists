@@ -1,4 +1,7 @@
 ---
+Zones:
+Channels:
+
 #  _   _  ____ ____       __  ____   ____ _   _
 # | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
 # |  \| | |   | |_) |   / /  | |_) | |   |  \| |
@@ -36,8 +39,6 @@
 # VE2CRA UHF DMR and VE2CRA VHF FM are not linked
 # VE2CRA UHF DMR and VE2CRA UHF FM are not linked
 # VE2CRA DMR audio isn't connected to either VE2CRA FM or IRLP
-
-Channels:
 
 # IRLP node 2040
 - Name: VE2CRA VHF FM  # Motorola MSF 5000?

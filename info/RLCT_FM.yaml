@@ -1,4 +1,7 @@
 ---
+Zones:
+Channels:
+
 #  ____  _     ____ _____
 # |  _ \| |   / ___|_   _|
 # | |_) | |  | |     | |
@@ -31,8 +34,6 @@
 
 # Kingston
 # 445.1375 is a simplex YSF-only command-and-control link for VE3FRG
-
-Channels:
 
 - Name: VE3FRG VHF FM  # Yaesu DR-2X
   Notes: 87P57FWC+Q4 South Frontenac  # 250-foot tower
