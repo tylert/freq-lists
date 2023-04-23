@@ -31,7 +31,7 @@ repeater = {
     'VA3RRD @ McVeety\'s Bay': '87P5RRP6+9VJ',
     'VE3FRG @ South Frontenac': '87P57FWC+Q4',
 }
-checkpoint = {
+checkpoint1 = {
     # 'Algonquin': '',
     # 'Knoxdale': '',
     # 'Stoney Swamp': '',
@@ -46,17 +46,24 @@ checkpoint = {
     'Concession 4D': '87P5XRJC+9F',
     'Ebert': '87P5WQMX+49P',
     'Last Duel': '87P5VQX6+CH',
-    # 'Christie Lake': '',
+    'Christie Lake': '87P5RJH5+36F',
     '6 & 36': '87P5PFQX+QR',
     # 'Westport Hill': '',
     'Shillington': '87P5MH6V+H8',
     'Pine Haven': '87P5HH77+5HH',
+    # 'Perth Road': '',
+    'Inverary': '87P59GMG+Q2',
+    'Glenburnie': '87P58F9W+XRF',
+    'MacAdoo\'s': '87P57FGX+FQQ',
+    'Queen\'s': '87P56GF2+C4R',
+}
+checkpoint2 = {
     'Conlon Farm': '87P5VPQW+VJV',
-    # 'Elmgrove': '',
-    # 'Narrows Lock': '',
-    # 'Crosby': '',
-    # 'Delta': '',
-    # 'Lyndhurst', '',
+    'Elmgrove': '87P5VR54+6QH',
+    'Narrows Lock': '87P5PP33+4PJ',
+    'Crosby': '87P5MP3V+M3C',
+    'Delta': '87P5JV4H+MVC',
+    'Lyndhurst': '87P5FRV6+MX6',
     # 'Perth Road': '',
     'Inverary': '87P59GMG+Q2',
     'Glenburnie': '87P58F9W+XRF',
@@ -123,16 +130,14 @@ def bearing(coord1: tuple[float, float], coord2: tuple[float, float]) -> float:
 @click.option(
     '--location',
     '-l',
-    default='87P5VQX6+CH',  # checkpoint['Last Duel']
+    default='87P5VQX6+CH',  # checkpoint1['Last Duel']
     help='OLC point (default "87P5VQX6+CH").',
 )
 def main(location):
     '''Calculate distance and bearing to repeaters and checkpoints.'''
 
-    print(f'From {decode(location)} {location}')
-    print('')
-
     # Show distance and bearing to all repeaters from your chosen location
+    print(f'Repeaters from {decode(location)} {location}')
     for name, plus_code in repeater.items():
         print(
             f'{decode(plus_code)} {name} is {haversine(decode(location), decode(plus_code)):.1f} km from your location at {bearing(decode(location), decode(plus_code)):.0f}°'
@@ -140,9 +145,20 @@ def main(location):
 
     # Show distance and bearing from each checkpoint to the next one
     print('')
+    print('Classic Route')
     # XXX FIXME TODO  Use 'Algonquin' as the startpoint!!!
-    next_one = ('Ashton', checkpoint['Ashton'])
-    for name, plus_code in checkpoint.items():
+    next_one = ('Ashton', checkpoint1['Ashton'])
+    for name, plus_code in checkpoint1.items():
+        print(
+            f'{decode(plus_code)} {name} is {haversine(decode(next_one[1]), decode(plus_code)):.1f} km from {next_one[0]} at {bearing(decode(next_one[1]), decode(plus_code)):.0f}°'
+        )
+        next_one = (name, plus_code)
+
+    # Show the same thing but on the alternate route
+    print('')
+    print('Century Route')
+    next_one = ('Conlon Farm', checkpoint2['Conlon Farm'])
+    for name, plus_code in checkpoint2.items():
         print(
             f'{decode(plus_code)} {name} is {haversine(decode(next_one[1]), decode(plus_code)):.1f} km from {next_one[0]} at {bearing(decode(next_one[1]), decode(plus_code)):.0f}°'
         )
