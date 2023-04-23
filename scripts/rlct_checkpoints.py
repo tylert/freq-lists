@@ -31,7 +31,7 @@ repeater = {
     'VA3RRD @ McVeety\'s Bay': '87P5RRP6+9VJ',
     'VE3FRG @ South Frontenac': '87P57FWC+Q4',
 }
-checkpoint1 = {
+checkpoint_classic = {
     # 'Algonquin': '',
     # 'Knoxdale': '',
     # 'Stoney Swamp': '',
@@ -57,7 +57,7 @@ checkpoint1 = {
     'MacAdoo\'s': '87P57FGX+FQQ',
     'Queen\'s': '87P56GF2+C4R',
 }
-checkpoint2 = {
+checkpoint_century = {
     'Conlon Farm': '87P5VPQW+VJV',
     'Elmgrove': '87P5VR54+6QH',
     'Narrows Lock': '87P5PP33+4PJ',
@@ -130,7 +130,7 @@ def bearing(coord1: tuple[float, float], coord2: tuple[float, float]) -> float:
 @click.option(
     '--location',
     '-l',
-    default='87P5VQX6+CH',  # checkpoint1['Last Duel']
+    default='87P5VQX6+CH',  # checkpoint_classic['Last Duel']
     help='OLC point (default "87P5VQX6+CH").',
 )
 def main(location):
@@ -147,8 +147,8 @@ def main(location):
     print('')
     print('Classic Route')
     # XXX FIXME TODO  Use 'Algonquin' as the startpoint!!!
-    next_one = ('Ashton', checkpoint1['Ashton'])
-    for name, plus_code in checkpoint1.items():
+    next_one = ('Ashton', checkpoint_classic['Ashton'])
+    for name, plus_code in checkpoint_classic.items():
         print(
             f'{decode(plus_code)} {name} is {haversine(decode(next_one[1]), decode(plus_code)):.1f} km from {next_one[0]} at {bearing(decode(next_one[1]), decode(plus_code)):.0f}°'
         )
@@ -157,8 +157,8 @@ def main(location):
     # Show the same thing but on the alternate route
     print('')
     print('Century Route')
-    next_one = ('Conlon Farm', checkpoint2['Conlon Farm'])
-    for name, plus_code in checkpoint2.items():
+    next_one = ('Conlon Farm', checkpoint_century['Conlon Farm'])
+    for name, plus_code in checkpoint_century.items():
         print(
             f'{decode(plus_code)} {name} is {haversine(decode(next_one[1]), decode(plus_code)):.1f} km from {next_one[0]} at {bearing(decode(next_one[1]), decode(plus_code)):.0f}°'
         )
