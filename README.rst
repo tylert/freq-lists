@@ -186,6 +186,8 @@ Linking and Transcoding
 * https://sin.groups.io/g/main/message/355
 * https://blog.rosenberg-watt.com/2018/08/14/towards-better-global-dmr-ham-radio-id-generation/
 * https://tgifnetwork.createaforum.com/hotspot-configurartion/adding-second-hotspot-do-i-need-a-second-dmr-id/
+* https://dxcanada.ca/dvstick33-by-dvmega-3-channel-transcoding-for-xlx-systems/
+* https://www.dvmega.nl/dvstick30/
 
 ::
 
