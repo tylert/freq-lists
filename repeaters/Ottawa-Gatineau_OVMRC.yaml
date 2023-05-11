@@ -58,7 +58,7 @@ Channels:
 
 - Name: VE3RAM UHF DSTAR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Notes: Orleans at VE3LC FN25FK69VT
-  Mode: DSTAR  # DSTAR up-linked to XLX197B
+  Mode: DSTAR  # DSTAR linked to XLX197B
   RxFrequency: 443.7
   TxFrequencyOffset: '+5.0'
 
@@ -66,7 +66,7 @@ Channels:
 
 - Name: VE3RAM UHF DMR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Notes: Orleans at VE3LC FN25FK69VT
-  Mode: DMR  # CCS7 ID 302117 / DMR up-linked to XLX197B (TS=2, TG=6)
+  Mode: DMR  # CCS7 ID 302117 / DMR linked to XLX197B (TS=2, TG=6)
   RxFrequency: 443.7
   TxFrequencyOffset: '+5.0'
   ColorCode: 1
