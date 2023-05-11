@@ -59,7 +59,7 @@ Channels:
 
 - Name: VE3STP UHF DSTAR  # Motorola CM 300 Rx & Tx
   Notes: Kennellys Mountain 87Q58455+W5
-  Mode: DSTAR  # Module B? / DSTAR up-linked to XLX197B
+  Mode: DSTAR  # Module B? / DSTAR linked to XLX197B
   RxFrequency: 443.6
   TxFrequencyOffset: '+5.0'
 
@@ -67,7 +67,7 @@ Channels:
 
 # - Name: VE3STP UHF DMR  # Motorola CM 300 Rx & Tx
 #   Notes: Kennellys Mountain 87Q58455+W5
-#   Mode: DMR  # CCS7 ID 302064 / DMR up-linked to XLX197B (TS=2, TG=6)
+#   Mode: DMR  # CCS7 ID 302064 / DMR linked to XLX197B (TS=2, TG=6)
 #   RxFrequency: 443.6
 #   TxFrequencyOffset: '+5.0'
 #   ColorCode: 1
@@ -84,7 +84,7 @@ Channels:
 
 - Name: VE3STP UHF YSF  # Motorola CM 300 Rx & Tx
   Notes: Kennellys Mountain 87Q58455+W5
-  Mode: YSF  # YSF up-linked to XLX197B???
+  Mode: YSF  # YSF linked to XLX197B???
   RxFrequency: 443.6
   TxFrequencyOffset: '+5.0'
 
