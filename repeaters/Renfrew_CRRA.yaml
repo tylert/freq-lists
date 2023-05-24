@@ -47,8 +47,8 @@ Channels:
 #   CtcssDecode: 114.8
 
 # XXX FIXME TODO  Find out what's happening with this repeater
-# - Name: VE3YYX UHF FM  # TBD
-#   Notes: Fergusons Lake 87Q575PC+FQ
+# - Name: VE3YYX UHF FM  # TBD @ 40 W
+#   Notes: Stones Lake -> Fergusons Lake 87Q575PC+FQ
 #   Mode: FM
 #   RxFrequency: 443.2
 #   TxFrequencyOffset: '+5.0'
