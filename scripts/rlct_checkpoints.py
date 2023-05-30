@@ -25,23 +25,23 @@ repeater = {
     'VE3REX @ Rideau Ferry': '87P5RVPV+54',
     'VE3WPO @ Westport': '87P5MJ93+FG',
     'VE3RLR @ Railway Museum': '87P5WX2C+MJ',
-    # 'VA3AAR': '',
-    # 'VA3ARE': '',
+    # 'VA3AAR @ ???': '87',
+    # 'VA3ARE @ ???': '87',
     'VE3HOZ @ Carp': '87Q57W5M+R5',
     'VA3RRD @ McVeety\'s Bay': '87P5RRP6+9VJ',
     'VE3FRG @ South Frontenac': '87P57FWC+Q4',
-    # 'VE3KBR @ ???': '',
+    # 'VE3KBR @ ???': '87P5',
 }
 checkpoint_classic = {
-    # 'Algonquin': '',
-    # 'Knoxdale': '',
-    # 'Stoney Swamp': '',
-    # 'Hope Side': '',
-    # 'Eagleson': '',
-    # 'Huntley': '',
-    # 'Dwyer Hill': '',
+    # 'Algonquin': '87',
+    # 'Knoxdale': '87',
+    # 'Stoney Swamp': '87',
+    # 'Hope Side': '87',
+    # 'Eagleson': '87',
+    # 'Huntley': '87',
+    # 'Dwyer Hill': '87',
     'Ashton': '87Q55X5C+86M',
-    # 'Cemetery': '',
+    # 'Cemetery': '87Q5',
     'Blacks Corners': '87Q54V5V+3X',
     'Loon Lane': '87Q52RVM+6G',
     'Concession 4D': '87P5XRJC+9F',
@@ -52,7 +52,7 @@ checkpoint_classic = {
     'Westport Hill': '87P5MHVJ+HP',
     'Shillington': '87P5MH6V+H8',
     'Pine Haven': '87P5HH77+5HH',
-    # 'Perth Road': '',
+    # 'Perth Road': '87P5',
     'Inverary': '87P59GMG+Q2',
     'Glenburnie': '87P58F9W+XRF',
     'MacAdoo\'s': '87P57FGX+FQQ',
@@ -65,7 +65,7 @@ checkpoint_century = {
     'Crosby': '87P5MP3V+M3C',
     'Delta': '87P5JV4H+MVC',
     'Lyndhurst': '87P5FRV6+MX6',
-    # 'Perth Road': '',
+    # 'Perth Road': '87P5',
     'Inverary': '87P59GMG+Q2',
     'Glenburnie': '87P58F9W+XRF',
     'MacAdoo\'s': '87P57FGX+FQQ',
@@ -86,7 +86,7 @@ def decode(plus_code: str = None) -> tuple[float, float]:
     #   https://duckduckgo.com/?ia=web&iaxm=maps&q=${LAT_LONG_URL_ENCODED}
     #   https://www.openstreetmap.org/search/?query=${LAT_LONG_URL_ENCODED}
     #   https://k7fry.com/grid/?qth=${MAIDENHEAD_GRID_SQUARE}
-    # Don't even bother with Bing, it doesn't work on Firefox!!!
+    #   Bing too???
     # urllib.parse.quote(whatever)
 
     # lat_long = f'{decode(plus_code)[0]}, {decode(plus_code)[1]}'
