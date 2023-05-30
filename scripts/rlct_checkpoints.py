@@ -48,7 +48,7 @@ checkpoint_classic = {
     'Last Duel': '87P5VQX6+CH',
     'Christie Lake': '87P5RJH5+36F',
     '6 & 36': '87P5PFQX+QR',
-    # 'Westport Hill': '',
+    'Westport Hill': '87P5MHVJ+HP',
     'Shillington': '87P5MH6V+H8',
     'Pine Haven': '87P5HH77+5HH',
     # 'Perth Road': '',
