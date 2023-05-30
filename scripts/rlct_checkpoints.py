@@ -30,6 +30,7 @@ repeater = {
     'VE3HOZ @ Carp': '87Q57W5M+R5',
     'VA3RRD @ McVeety\'s Bay': '87P5RRP6+9VJ',
     'VE3FRG @ South Frontenac': '87P57FWC+Q4',
+    # 'VE3KBR @ ???': '',
 }
 checkpoint_classic = {
     # 'Algonquin': '',
