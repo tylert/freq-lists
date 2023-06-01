@@ -33,15 +33,17 @@ repeater = {
     # 'VE3KBR @ ???': '87P5',
 }
 checkpoint_classic = {
-    # 'Algonquin': '87',
-    # 'Knoxdale': '87',
-    # 'Stoney Swamp': '87',
-    # 'Hope Side': '87',
-    # 'Eagleson': '87',
-    # 'Huntley': '87',
-    # 'Dwyer Hill': '87',
+    'Algonquin': '87Q686XW+Q3',
+    'Knoxdale': '87Q686FH+92',
+    'Stoney Swamp': '87Q6854M+P73',
+    'Hope Side': '87Q675G6+FP8',
+    'Eagleson': '87Q674CV+22',
+    'Huntley': '87Q663MV+X8',
+    'Conley': '87Q66329+J7W',
+    'Munster': '87Q652VG+9H',
+    'Dwyer Hill': '87Q55XFW+WGH',
     'Ashton': '87Q55X5C+86M',
-    # 'Cemetery': '87Q5',
+    'Cemetery': '87Q54WJJ+5X',
     'Blacks Corners': '87Q54V5V+3X',
     'Loon Lane': '87Q52RVM+6G',
     'Concession 4D': '87P5XRJC+9F',
@@ -147,8 +149,7 @@ def main(location):
     # Show distance and bearing from each checkpoint to the next one
     print('')
     print('Classic Route')
-    # XXX FIXME TODO  Use 'Algonquin' as the startpoint!!!
-    next_one = ('Ashton', checkpoint_classic['Ashton'])
+    next_one = ('Algonquin', checkpoint_classic['Algonquin'])
     for name, plus_code in checkpoint_classic.items():
         print(
             f'{decode(plus_code)} {name} is {haversine(decode(next_one[1]), decode(plus_code)):.1f} km from {next_one[0]} at {bearing(decode(next_one[1]), decode(plus_code)):.0f}°'
