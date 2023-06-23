@@ -21,24 +21,23 @@ Channels:
 
 # Almonte Amateur Radio Club
 #   https://almontearclub.ca/
+#   https://almontearclub.ca/xlx197b/
 #   http://va3aar.dyndns.org:3026/
 #   http://xlx197.dyndns.org/
 
-# *** "??? Net" Wednesdays at 21:00 Eastern on VA3ARE VHF FM ***
-# *** "DSTAR Mini Net" Tuesdays at 20:38 Eastern on XLX197 ***
+# *** "Weekly Analog Net" Wednesdays at 21:00 Eastern on VA3ARE VHF FM ***
+# *** "Weekly Digital Voice Net" Tuesdays at 20:40 Eastern on XLX197 ***
 # *** No YSF nets, currently ***
 
-# Some things might still be at Almonte VE3CFZ 87Q55Q89+29
-
 # FM linked to XLX197B
-# ASL #564013
+# ASL 564013
 - Name: VA3AAR VHF FM  # equipment TBD
   Notes: Union Hall 87Q55P64+RR
-  Mode: FM  # not sure what modes share this frequency / CCS7 ID 302070 ???
+  Mode: FM  # CCS7 ID 302070 ???
   RxFrequency: 145.55
   TxFrequencyOffset: '-0.6'
   CtcssEncode: 88.5
-  CtcssDecode: 88.5
+  CtcssDecode: None  # it's supposed to have a tone on output but this doesn't work for AllStar at the moment
 
 - Name: VA3AAR UHF FM  # equipment TBD
   Notes: Fire Hall 87Q56Q9V+Q6
@@ -49,9 +48,9 @@ Channels:
   CtcssDecode: 100.0
 
 # IRLP 2280
-- Name: VA3ARE VHF FM  # Yaesu DR-1X maybe???  AMS mode???
-  Notes: Don't know where this is located currently
-  Mode: FM
+- Name: VA3ARE VHF FM  # Yaesu DR-1X
+  Notes: Almonte VE3CFZ 87Q55Q89+29
+  Mode: FM  # AMS mode
   RxFrequency: 147.27
   TxFrequencyOffset: '+0.6'
   CtcssEncode: 100.0
@@ -60,8 +59,8 @@ Channels:
 # #############################################################################
 
 - Name: VA3AAR UHF DSTAR  # equipment TBD
-  Notes: Don't know where this is located currently
-  Mode: DSTAR  # Module B / DSTAR linked to XLX197B
+  Notes: Union Hall 87Q55P64+RR
+  Mode: DSTAR  # DSTAR linked to XLX197B
   RxFrequency: 444.1
   TxFrequencyOffset: '+5.0'
 
@@ -76,6 +75,14 @@ Channels:
   Mode: DSTAR  # Module B / DSTAR linked to XLX197B
   RxFrequency: 444.8
   TxFrequencyOffset: '+5.0'
+
+# #############################################################################
+
+- Name: VA3ARE VHF YSF  # Yaesu DR-1X
+  Notes: Almonte VE3CFZ 87Q55Q89+29
+  Mode: YSF  # AMS mode
+  RxFrequency: 147.27
+  TxFrequencyOffset: '+0.6'
 
 #                   __     _______ _____ _   _  ___    _
 #                   \ \   / / ____|___ /| | | |/ _ \  / \
