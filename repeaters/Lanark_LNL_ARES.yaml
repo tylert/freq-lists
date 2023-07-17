@@ -8,6 +8,7 @@ Channels:
 # |_____\__,_|_| |_|\__,_|_|  |_|\_\
 
 # Lanark County / Comté de Lanark
+#   https://en.wikipedia.org/wiki/Lanark_County#/media/File:Map_of_Ontario_LANARK.svg
 #   https://en.wikipedia.org/wiki/Lanark_County
 #   https://fr.wikipedia.org/wiki/Comt%C3%A9_de_Lanark
 #   https://www.lanarkcounty.ca/
@@ -19,7 +20,7 @@ Channels:
 #               | |___| |\  | |___   / ___ \|  _ <| |___ ___) |
 #               |_____|_| \_|_____| /_/   \_\_| \_\_____|____/
 
-# Lanark / North Leeds Amateur Radio Emergency Service
+# Lanark and North Leeds Amateur Radio Emergency Service (LNL ARES)
 #   https://lnlares.com/  (redirected from http://lnlares.ca)
 #   https://www.ve3rlr.ca/2018/07/LNLARES.html
 #   https://www.qsl.net/ve3lca/
@@ -29,7 +30,7 @@ Channels:
 # *** No YSF nets, currently ***
 
 # There is currently no internet connectivity at any of these sites
-# There is currently no backup power at Lavant
+# There is currently no backup power at Lavant or Christie Lake
 
 - Name: VE3KJG VHF FM  # Motorola MSF 5000
   Notes: Lavant 87Q528WJ+CH
@@ -41,7 +42,7 @@ Channels:
 
 - Name: VA3TEL VHF FM  # Yaesu DR-2X + Tait 9100 link radios + NHRC-4 repeater controller
   Notes: Christie Lake 87P5RH98+P3
-  Mode: NFM
+  Mode: NFM  # frequency shared with YSF
   Bandwidth: 12.5
   RxFrequency: 145.23  # FM linked to VE3KJG VHF FM
   TxFrequencyOffset: '-0.6'
@@ -50,36 +51,20 @@ Channels:
 
 - Name: VE3REX UHF FM  # Yaesu DR-2X + Tait 9100 link radio + NHRC-4 repeater controller
   Notes: Rideau Ferry 87P5RVPV+54
-  Mode: NFM
+  Mode: NFM  # frequency shared with YSF
   Bandwidth: 12.5
   RxFrequency: 442.2  # FM linked to VA3TEL VHF FM
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 100.0
   CtcssDecode: 100.0
 
-- Name: VE3WPO UHF FM  # Motorola MSR 2000 + Motorola GM 300 link radio + NHRC-5? repeater controller
+- Name: VE3WPO UHF FM  # Motorola MSR 2000 + Motorola GM 300 link radio + NHRC-4? repeater controller
   Notes: Westport 87P5MJ93+FG  # Legion
   Mode: FM
   RxFrequency: 442.4  # FM linked to VA3TEL VHF FM
   TxFrequencyOffset: '+5.0'
   CtcssEncode: 100.0
   CtcssDecode: None
-
-# #############################################################################
-
-- Name: VA3TEL VHF YSF  # Yaesu DR-2X + Tait 9100 link radios + NHRC-4 repeater controller
-  Notes: Christie Lake 87P5RH98+P3
-  Mode: YSF
-  RxFrequency: 145.23
-  TxFrequencyOffset: '-0.6'
-
-- Name: VE3REX UHF YSF  # Yaesu DR-2X + Tait 9100 link radio + NHRC-4 repeater controller
-  Notes: Rideau Ferry 87P5RVPV+54
-  Mode: YSF
-  RxFrequency: 442.2
-  TxFrequencyOffset: '+5.0'
-
-# #############################################################################
 
 # - Name: VE3HTN VHF FM  # TBD + Motorola GM 300 link radios
 #   Notes: Toledo Off-air
@@ -96,6 +81,20 @@ Channels:
 #   TxFrequencyOffset: '-0.6'
 #   CtcssEncode: 100.0
 #   CtcssDecode: None
+
+# #############################################################################
+
+- Name: VA3TEL VHF YSF  # Yaesu DR-2X + Tait 9100 link radios + NHRC-4 repeater controller
+  Notes: Christie Lake 87P5RH98+P3
+  Mode: YSF  # frequency shared with FM
+  RxFrequency: 145.23
+  TxFrequencyOffset: '-0.6'
+
+- Name: VE3REX UHF YSF  # Yaesu DR-2X + Tait 9100 link radio + NHRC-4 repeater controller
+  Notes: Rideau Ferry 87P5RVPV+54
+  Mode: YSF  # frequency shared with FM
+  RxFrequency: 442.2
+  TxFrequencyOffset: '+5.0'
 
 Zones:
 ...

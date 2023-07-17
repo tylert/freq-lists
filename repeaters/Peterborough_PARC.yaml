@@ -1,0 +1,92 @@
+---
+Channels:
+
+#  ____      _            _                                 _
+# |  _ \ ___| |_ ___ _ __| |__   ___  _ __ ___  _   _  __ _| |__
+# | |_) / _ \ __/ _ \ '__| '_ \ / _ \| '__/ _ \| | | |/ _` | '_ \
+# |  __/  __/ ||  __/ |  | |_) | (_) | | | (_) | |_| | (_| | | | |
+# |_|   \___|\__\___|_|  |_.__/ \___/|_|  \___/ \__,_|\__, |_| |_|
+#                                                     |___/
+
+# Peterborough County / Comté de Peterborough
+#   https://en.wikipedia.org/wiki/Peterborough_County#/media/File:Map_of_Ontario_PETERBOROUGH.svg
+#   https://en.wikipedia.org/wiki/Peterborough_County
+#   https://fr.wikipedia.org/wiki/Comt%C3%A9_de_Peterborough
+#   https://www.ptbocounty.ca/
+#   https://www.ptbocounty.ca/en/index.aspx
+
+#                           ____   _    ____   ____
+#                          |  _ \ / \  |  _ \ / ___|
+#                          | |_) / _ \ | |_) | |
+#                          |  __/ ___ \|  _ <| |___
+#                          |_| /_/   \_\_| \_\\____|
+
+# Peterborough Amateur Radio Club (PARC)
+#   https://www.ve3pbo.ca/repeater.htm
+
+# Allstar 28703
+- Name: VE3PBO VHF FM
+  Notes: # Sherbrooke Street Water Tank
+  Mode: FM
+  RxFrequency: 146.625  # somehow linked to VE3BUY (only during certain times???)
+  TxFrequencyOffset: '-0.6'
+  CtcssEncode: 162.2
+  CtcssDecode: None  # might send this on Tx but can't be sure
+
+# Allstar 28702
+- Name: VE3BUY VHF FM
+  Notes:  # Global tower near Baltimore, ON
+  Mode: FM
+  RxFrequency: 146.91  # somehow linked to VE3PBO (only during certain times???)
+  TxFrequencyOffset: '-0.6'
+  CtcssEncode: 162.2
+  CtcssDecode: None  # might send this on Tx but can't be sure
+
+- Name: VE3TJR VHF FM  # Yaesu DR-?X
+  Notes:  # on a Nexicom tower on the east shore of Deer Bay (44° 31' 15.6'' N /78° 12' 32.4'' W)
+  Mode: FM  # frequency shared with YSF (AMS in, analog out)
+  RxFrequency: 147.015
+  TxFrequencyOffset: '+0.6'
+  CtcssEncode: 162.2
+  CtcssDecode: 162.2
+
+# Allstar 28701
+- Name: VE3APL VHF FM  # Yaesu DR-?X
+  Notes:  # near Apsley
+  Mode: FM  # frequency shared with YSF (AMS in, analog out)
+  RxFrequency: 147.39
+  TxFrequencyOffset: '+0.6'
+  CtcssEncode: 162.2
+  CtcssDecode: 162.2
+
+# Allstar 28704
+# - Name: VA3PBO UHF FM  # Yaesu DR-?X
+#   Notes:  # not sure where this is located
+#   Mode: FM  # frequency shared with YSF (AMS in, AMS out)
+#   RxFrequency: 444.575
+#   TxFrequencyOffset: '+5.0'
+#   CtcssEncode: 162.2
+#   CtcssDecode: 162.2
+
+# #############################################################################
+
+- Name: VE3TJR VHF YSF
+  Notes:  # on a Nexicom tower on the east shore of Deer Bay (44° 31' 15.6'' N /78° 12' 32.4'' W)
+  Mode: YSF  # frequency shared with FM (AMS in, analog out)
+  RxFrequency: 147.015
+  TxFrequencyOffset: '+0.6'
+
+- Name: VE3APL VHF YSF  # Yaesu DR-?X
+  Notes:  # near Apsley
+  Mode: YSF  # frequency shared with FM (AMS in, analog out)
+  RxFrequency: 147.39
+  TxFrequencyOffset: '+0.6'
+
+# - Name: VA3PBO UHF YSF  # Yaesu DR-?X
+#   Notes:  # not sure where this is located
+#   Mode: YSF  # frequency shared with FM (AMS in, AMS out)
+#   RxFrequency: 444.575
+#   TxFrequencyOffset: '+5.0'
+
+Zones:
+...
