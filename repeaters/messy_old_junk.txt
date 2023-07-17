@@ -1,3 +1,19 @@
+As of July 15, 2023:
+- VE3BUY in Cobourg has changed its frequency to 146.910 (-) 162.2 tone.  This
+repeater is a very wide area one, with coverage from Trenton to Pickering along
+the 401.  (Part of the fleet owned by PARC)
+- VE3CKL, also in Cobourg, has also changed its frequency.  It's now on 146.895
+(-) 162.2 tone.  This is also a wide area repeater.  This is the frequency that
+VE3BUY was originally on.
+- VE3RTY is moving from Colborne to Napanee (no date as of yet).  Frequency is
+147.165 (+) 162.2 tone.  This will be the first ever 2m repeater in Napanee,
+and will certainly fill in a blank spot on the 401 corridor for us.
+(See https://hearham.com/repeaters/square/FN04PI for info about VE3CKL and VE3TJL)
+(See https://www.facebook.com/groups/302397715280367 for info about VE3CKL and VE3BUY)
+(VE3RTY seems to be part of a fleet of repeaters maintained by VA3HD)
+(VE3RTY may be currently located at https://plus.codes/87P424WJ+7M but no idea where it's moving to)
+
+
 VA3JWO,147.3,+,0.6,TSQL,118.8,118.8,23,NN,FM
 
 VA3DSP,444.825,+,5,Tone,136.5,136.5,23,NN,FM
