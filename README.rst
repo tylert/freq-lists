@@ -177,8 +177,8 @@ configured as Always for both Admit Criteria and Always or Follow TX for In
 Call Criteria.
 
 
-Linking and Transcoding
------------------------
+Linking and Transcoding and Repeater Building
+---------------------------------------------
 
 * https://n5amd.com/digital-radio-how-tos/build-digital-voice-transcoding-server/
 * https://g0wcz.nodestone.io/building-a-transcoder-for-dmr-d-star/
@@ -190,6 +190,17 @@ Linking and Transcoding
 * https://tgifnetwork.createaforum.com/hotspot-configurartion/adding-second-hotspot-do-i-need-a-second-dmr-id/
 * https://dxcanada.ca/dvstick33-by-dvmega-3-channel-transcoding-for-xlx-systems/
 * https://www.dvmega.nl/dvstick30/
+* https://github.com/formatc1702/WireViz
+* https://maxonamerica.com/download/tm-8000-spec-sheet
+* https://maxonamerica.com/product/tm-8000-series-mobile-radio
+* https://www.fleetwooddp.com
+* https://www.repeater-builder.com/products/stm32-dvm.html
+* http://www.masterscommunications.com/products/radio-adapter/ra-index.html
+* http://www.masterscommunications.com/products/radio-adapter/ra42.html
+* http://www.masterscommunications.com/products/radio-adapter/ra40.html
+* http://www.masterscommunications.com/products/radio-adapter/ra35.html
+* https://www.repeater-builder.com/products/usb-rim.html
+* https://www.repeater-builder.com/products/usb-rim-lite.html
 
 ::
 
@@ -272,6 +283,7 @@ Firmware and CPS
 * https://github.com/travisgoodspeed/md380tools  source code for MD-380 Tools
 * https://raw.githubusercontent.com/tylert/pocorgtfo/gh-pages/pocorgtfo10.pdf  reverse-engineering info
 * https://www.pistar.uk/index.php  main page for Pi-Star
+* https://github.com/M17-Project/Module_17  M17 smart mic
 
 
 DMR SMS
