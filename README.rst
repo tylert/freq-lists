@@ -137,6 +137,8 @@ Retevis RT90 DFU mode uses orange emergency button + P1 + plug-in "hard" power
 
 Retevis RT3S DFU mode uses top side key + PTT + twist power knob.
 
+* https://www.retevissolutions.com/rt90-dmr-radio
+* https://www.retevissolutions.com/rt3s-dmr-radio#A9110F
 * http://miklor.com/COM/Review_MD9600.php
 * http://miklor.com/COM/Review_UV380.php
 * https://www.amateurradio.com/mobile-dc-power-one-fuse-or-two/
@@ -259,6 +261,7 @@ Firmware and CPS
 * https://opengd77.com/viewtopic.php?f=18&t=2002  replacement firmware for Retevis RT90 / TYT MD-9600
 * https://opengd77.com/viewtopic.php?f=19&t=2380  replacement firmware for the Retevis RT3S / TYT MD-UV380
 * https://opengd77.com/viewtopic.php?f=12&t=1486  new firmware can't use the same CPS
+* https://opengd77.com/viewtopic.php?f=18&t=3040  RT90 remote head
 * https://m17project.org/  main page for M17 Project
 * https://openrtx.org/#/  main page for OpenRTX
 * https://github.com/OpenRTX  OpenRTX firmware, dmrconfig tool, etc.
