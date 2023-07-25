@@ -201,6 +201,9 @@ Linking and Transcoding and Repeater Building
 * http://www.masterscommunications.com/products/radio-adapter/ra35.html
 * https://www.repeater-builder.com/products/usb-rim.html
 * https://www.repeater-builder.com/products/usb-rim-lite.html
+* https://www.arkcorporation.us/blogs/news/48712645-cool-diy-battery-box-on-reddit
+* https://www.amazon.ca/Pyramid-PSV300-Heavy-duty-Switching-Supply/dp/B000NPT4TK
+* https://www.amazon.com/Universal-Regulated-Benchtop-Converter-Terminals/dp/B09Y1H6C25
 
 ::
 
