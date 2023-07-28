@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Fetch the latest DMR ID database and prepare it to be uploaded to the radios
-# Required tools:  bash, cut, dmrRadio, grep, mkdir, printf, sort, wget
+# Required tools:  bash, chmod, cut, dmrRadio, grep, mkdir, printf, sort, wget
 
 # set -x
 mkdir -p tmp

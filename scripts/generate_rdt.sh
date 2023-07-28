@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Output new binary codeplugs for each radio containing the desired channels
-# Required tools:  bash, chmod, dmrRadio, jq, mkdir, python (3.10.x+), rm, sed
+# Required tools:  bash, chmod, date, dmrRadio, jq, mkdir, python (3.10.x+), rm, sed
 
 # set -x
 mkdir -p tmp

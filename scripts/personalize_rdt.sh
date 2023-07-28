@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Stamp unique, assigned DMR ID entries and intro screens onto each radio
-# Required tools:  bash, chmod, dmrRadio, jq, printf, rm, sed
+# Required tools:  bash, chmod, date, dmrRadio, jq, printf, rm, sed
 
 # set -x
 date="$(date +%Y-%m-%d)"
