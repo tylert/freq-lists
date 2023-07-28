@@ -20,19 +20,19 @@ Channels:
 - Name: CHU 90M
   Notes: 3 kW
   Mode: AM
-  RxFrequency: 3.33
+  RxFrequency: '3.33'
   RxOnly: On
 
 - Name: CHU 38M
   Notes: 5 kW
   Mode: AM
-  RxFrequency: 7.85
+  RxFrequency: '7.85'
   RxOnly: On
 
 - Name: CHU 20M
   Notes: 3 kW
   Mode: AM
-  RxFrequency: 14.67
+  RxFrequency: '14.67'
   RxOnly: On
 
 #                      __        ____        ____     __
@@ -50,43 +50,43 @@ Channels:
 - Name: WWVB LF
   Notes: 70 kW
   Mode: AM
-  RxFrequency: 0.06
+  RxFrequency: '0.06'
   RxOnly: On
 
 - Name: WWV 120M
   Notes: 2.5 kW
   Mode: AM
-  RxFrequency: 2.5
+  RxFrequency: '2.5'
   RxOnly: On
 
 - Name: WWV 60M
   Notes: 10 kW
   Mode: AM
-  RxFrequency: 5.0
+  RxFrequency: '5.0'
   RxOnly: On
 
 - Name: WWV 30M
   Notes: 10 kW
   Mode: AM
-  RxFrequency: 10.0
+  RxFrequency: '10.0'
   RxOnly: On
 
 - Name: WWV 20M
   Notes: 10 kW
   Mode: AM
-  RxFrequency: 15.0
+  RxFrequency: '15.0'
   RxOnly: On
 
 - Name: WWV 15M
   Notes: 2.5 kW
   Mode: AM
-  RxFrequency: 20.0
+  RxFrequency: '20.0'
   RxOnly: On
 
 - Name: WWV 12M
   Notes: 2.5 kW
   Mode: AM
-  RxFrequency: 25.0
+  RxFrequency: '25.0'
   RxOnly: On
 
 Zones:

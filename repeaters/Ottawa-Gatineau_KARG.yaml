@@ -28,17 +28,17 @@ Channels:
 - Name: VE3NGR UHF FM  # Yaesu DR-?X maybe???
   Notes: FN24DX Kemptville West
   Mode: FM
-  RxFrequency: 444.225
+  RxFrequency: '444.225'
   TxFrequencyOffset: '+5.0'
-  CtcssEncode: 103.5
-  CtcssDecode: 103.5
+  CtcssEncode: '103.5'
+  CtcssDecode: '103.5'
 
 # #############################################################################
 
 - Name: VE3NGR UHF YSF  # Yaesu DR-?X maybe???
   Notes: FN24DX Kemptville West
   Mode: YSF
-  RxFrequency: 444.225
+  RxFrequency: '444.225'
   TxFrequencyOffset: '+5.0'
 
 Zones:

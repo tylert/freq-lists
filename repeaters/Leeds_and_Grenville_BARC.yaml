@@ -32,10 +32,10 @@ Channels:
 - Name: VA3LGA VHF FM  # equipment TBD
   Notes: 87P692XG+WP6 Ivy Lea
   Mode: FM
-  RxFrequency: 146.625
+  RxFrequency: '146.625'
   TxFrequencyOffset: '-0.6'
-  CtcssEncode: 100.0
-  CtcssDecode: 100.0
+  CtcssEncode: '100.0'
+  CtcssDecode: '100.0'
 
 Zones:
 ...

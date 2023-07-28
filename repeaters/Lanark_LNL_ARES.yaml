@@ -35,51 +35,51 @@ Channels:
 - Name: VE3KJG VHF FM  # Motorola MSF 5000
   Notes: Lavant 87Q528WJ+CH
   Mode: FM
-  RxFrequency: 146.64
+  RxFrequency: '146.64'
   TxFrequencyOffset: '-0.6'
-  CtcssEncode: 100.0
-  CtcssDecode: 100.0
+  CtcssEncode: '100.0'
+  CtcssDecode: '100.0'
 
 - Name: VA3TEL VHF FM  # Yaesu DR-2X + Tait 9100 link radios + NHRC-4 repeater controller
   Notes: Christie Lake 87P5RH98+P3
   Mode: NFM  # frequency shared with YSF
-  Bandwidth: 12.5
-  RxFrequency: 145.23  # FM linked to VE3KJG VHF FM
+  Bandwidth: '12.5'
+  RxFrequency: '145.23'  # FM linked to VE3KJG VHF FM
   TxFrequencyOffset: '-0.6'
-  CtcssEncode: 100.0
-  CtcssDecode: 100.0
+  CtcssEncode: '100.0'
+  CtcssDecode: '100.0'
 
 - Name: VE3REX UHF FM  # Yaesu DR-2X + Tait 9100 link radio + NHRC-4 repeater controller
   Notes: Rideau Ferry 87P5RVPV+54
   Mode: NFM  # frequency shared with YSF
-  Bandwidth: 12.5
-  RxFrequency: 442.2  # FM linked to VA3TEL VHF FM
+  Bandwidth: '12.5'
+  RxFrequency: '442.2'  # FM linked to VA3TEL VHF FM
   TxFrequencyOffset: '+5.0'
-  CtcssEncode: 100.0
-  CtcssDecode: 100.0
+  CtcssEncode: '100.0'
+  CtcssDecode: '100.0'
 
 - Name: VE3WPO UHF FM  # Motorola MSR 2000 + Motorola GM 300 link radio + NHRC-4? repeater controller
   Notes: Westport 87P5MJ93+FG  # Legion
   Mode: FM
-  RxFrequency: 442.4  # FM linked to VA3TEL VHF FM
+  RxFrequency: '442.4'  # FM linked to VA3TEL VHF FM
   TxFrequencyOffset: '+5.0'
-  CtcssEncode: 100.0
+  CtcssEncode: '100.0'
   CtcssDecode: None
 
 # - Name: VE3HTN VHF FM  # TBD + Motorola GM 300 link radios
 #   Notes: Toledo Off-air
 #   Mode: FM
-#   RxFrequency: 146.865
+#   RxFrequency: '146.865'
 #   TxFrequencyOffset: '-0.6'
-#   CtcssEncode: 100.0
+#   CtcssEncode: '100.0'
 #   CtcssDecode: None
 
 # - Name: VE3LCA VHF FM  # TBD
 #   Notes: Perth Off-air
 #   Mode: FM
-#   RxFrequency: 146.955
+#   RxFrequency: '146.955'
 #   TxFrequencyOffset: '-0.6'
-#   CtcssEncode: 100.0
+#   CtcssEncode: '100.0'
 #   CtcssDecode: None
 
 # #############################################################################
@@ -87,13 +87,13 @@ Channels:
 - Name: VA3TEL VHF YSF  # Yaesu DR-2X + Tait 9100 link radios + NHRC-4 repeater controller
   Notes: Christie Lake 87P5RH98+P3
   Mode: YSF  # frequency shared with FM
-  RxFrequency: 145.23
+  RxFrequency: '145.23'
   TxFrequencyOffset: '-0.6'
 
 - Name: VE3REX UHF YSF  # Yaesu DR-2X + Tait 9100 link radio + NHRC-4 repeater controller
   Notes: Rideau Ferry 87P5RVPV+54
   Mode: YSF  # frequency shared with FM
-  RxFrequency: 442.2
+  RxFrequency: '442.2'
   TxFrequencyOffset: '+5.0'
 
 Zones:

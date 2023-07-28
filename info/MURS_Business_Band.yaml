@@ -14,197 +14,197 @@ Channels:
 
 - Name: BBLOW1
   Mode: NFM
-  RxFrequency: 27.49
+  RxFrequency: '27.49'
   RxOnly: On
 
 - Name: BBLOW2
   Mode: NFM
-  RxFrequency: 27.51
+  RxFrequency: '27.51'
   RxOnly: On
 
 - Name: BBLOW3
   Mode: NFM
-  RxFrequency: 27.555
+  RxFrequency: '27.555'
   RxOnly: On
 
 - Name: BBLOW4
   Mode: NFM
-  RxFrequency: 30.84
+  RxFrequency: '30.84'
   RxOnly: On
 
 - Name: BBLOW5
   Mode: NFM
-  RxFrequency: 33.12
+  RxFrequency: '33.12'
   RxOnly: On
 
 - Name: BBLOW6
   Mode: NFM
-  RxFrequency: 33.14
+  RxFrequency: '33.14'
   RxOnly: On
 
 - Name: BBLOW7
   Mode: NFM
-  RxFrequency: 33.4
+  RxFrequency: '33.4'
   RxOnly: On
 
 - Name: BBLOW8
   Mode: NFM
-  RxFrequency: 35.02
+  RxFrequency: '35.02'
   RxOnly: On
 
 - Name: BBLOW9
   Mode: NFM
-  RxFrequency: 35.04
+  RxFrequency: '35.04'
   RxOnly: On
 
 - Name: BBLOWA
   Mode: NFM
-  RxFrequency: 42.98
+  RxFrequency: '42.98'
   RxOnly: On
 
 - Name: BBLOWB
   Mode: NFM
-  RxFrequency: 43.04
+  RxFrequency: '43.04'
   RxOnly: On
 
 - Name: BBITN1
   Mode: FM
-  RxFrequency: 151.505
+  RxFrequency: '151.505'
   RxOnly: On
 
 - Name: BBITN2
   Mode: NFM
-  RxFrequency: 151.5125
+  RxFrequency: '151.5125'
   RxOnly: On
 
 - Name: REDDOT
   Mode: FM
-  RxFrequency: 151.625
+  RxFrequency: '151.625'
   RxOnly: On
 
 - Name: BBITN4
   Mode: FM
-  RxFrequency: 151.7
+  RxFrequency: '151.7'
   RxOnly: On
 
 - Name: BBITN5
   Mode: FM
-  RxFrequency: 151.76
+  RxFrequency: '151.76'
   RxOnly: On
 
 - Name: MURS1
   Mode: NFM
-  RxFrequency: 151.82
+  RxFrequency: '151.82'
   RxOnly: On
 
 - Name: MURS2
   Mode: NFM
-  RxFrequency: 151.88
+  RxFrequency: '151.88'
   RxOnly: On
 
 - Name: MURS3
   Mode: NFM
-  RxFrequency: 151.94
+  RxFrequency: '151.94'
   RxOnly: On
 
 - Name: PPLDOT
   Mode: FM
-  RxFrequency: 151.955
+  RxFrequency: '151.955'
   RxOnly: On
 
 - Name: BB1
   Mode: FM
-  RxFrequency: 154.515
+  RxFrequency: '154.515'
   RxOnly: On
 
 - Name: BB2
   Mode: FM
-  RxFrequency: 154.54
+  RxFrequency: '154.54'
   RxOnly: On
 
 - Name: BLUDOT
   Mode: FM
-  RxFrequency: 154.57
+  RxFrequency: '154.57'
   RxOnly: On
 
 - Name: MURS4B
   Mode: FM
-  RxFrequency: 154.57
+  RxFrequency: '154.57'
   RxOnly: On
 
 - Name: GRNDOT
   Mode: FM
-  RxFrequency: 154.6
+  RxFrequency: '154.6'
   RxOnly: On
 
 - Name: MURS5G
   Mode: FM
-  RxFrequency: 154.6
+  RxFrequency: '154.6'
   RxOnly: On
 
 - Name: BBITN5
   Mode: FM
-  RxFrequency: 158.4
+  RxFrequency: '158.4'
   RxOnly: On
 
 - Name: BBITN6
   Mode: NFM
-  RxFrequency: 158.4075
+  RxFrequency: '158.4075'
   RxOnly: On
 
 - Name: WHTDOT
   Mode: NFM
-  RxFrequency: 462.575
+  RxFrequency: '462.575'
   RxOnly: On
 
 - Name: BLKDOT
   Mode: NFM
-  RxFrequency: 462.625
+  RxFrequency: '462.625'
   RxOnly: On
 
 - Name: ORGDOT
   Mode: NFM
-  RxFrequency: 462.675
+  RxFrequency: '462.675'
   RxOnly: On
 
 - Name: BRNDOT
   Mode: NFM
-  RxFrequency: 464.5
+  RxFrequency: '464.5'
   RxOnly: On
 
 - Name: YLWDOT
   Mode: NFM
-  RxFrequency: 464.55
+  RxFrequency: '464.55'
   RxOnly: On
 
 - Name: SILSTR
   Mode: NFM
-  RxFrequency: 467.85
+  RxFrequency: '467.85'
   RxOnly: On
 
 - Name: GOLSTR
   Mode: NFM
-  RxFrequency: 467.875
+  RxFrequency: '467.875'
   RxOnly: On
 
 - Name: REDSTR
   Mode: NFM
-  RxFrequency: 467.9
+  RxFrequency: '467.9'
   RxOnly: On
 
 - Name: BLUSTR
   Mode: NFM
-  RxFrequency: 467.925
+  RxFrequency: '467.925'
   RxOnly: On
 
 - Name: BRNDPX
   Mode: NFM
-  RxFrequency: 469.5
+  RxFrequency: '469.5'
   RxOnly: On
 
 - Name: YLWDPX
   Mode: NFM
-  RxFrequency: 469.55
+  RxFrequency: '469.55'
   RxOnly: On
 
 Zones:

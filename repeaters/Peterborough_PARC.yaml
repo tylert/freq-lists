@@ -28,64 +28,64 @@ Channels:
 - Name: VE3PBO VHF FM
   Notes: # Sherbrooke Street Water Tank
   Mode: FM
-  RxFrequency: 146.625  # somehow linked to VE3BUY (only during certain times???)
+  RxFrequency: '146.625'  # somehow linked to VE3BUY (only during certain times???)
   TxFrequencyOffset: '-0.6'
-  CtcssEncode: 162.2
+  CtcssEncode: '162.2'
   CtcssDecode: None  # might send this on Tx but can't be sure
 
 # Allstar 28702
 - Name: VE3BUY VHF FM
   Notes:  # Global tower near Baltimore, ON
   Mode: FM
-  RxFrequency: 146.91  # somehow linked to VE3PBO (only during certain times???)
+  RxFrequency: '146.91'  # somehow linked to VE3PBO (only during certain times???)
   TxFrequencyOffset: '-0.6'
-  CtcssEncode: 162.2
+  CtcssEncode: '162.2'
   CtcssDecode: None  # might send this on Tx but can't be sure
 
 - Name: VE3TJR VHF FM  # Yaesu DR-?X
   Notes:  # on a Nexicom tower on the east shore of Deer Bay (44° 31' 15.6'' N /78° 12' 32.4'' W)
   Mode: FM  # frequency shared with YSF (AMS in, analog out)
-  RxFrequency: 147.015
+  RxFrequency: '147.015'
   TxFrequencyOffset: '+0.6'
-  CtcssEncode: 162.2
-  CtcssDecode: 162.2
+  CtcssEncode: '162.2'
+  CtcssDecode: '162.2'
 
 # Allstar 28701
 - Name: VE3APL VHF FM  # Yaesu DR-?X
   Notes:  # near Apsley
   Mode: FM  # frequency shared with YSF (AMS in, analog out)
-  RxFrequency: 147.39
+  RxFrequency: '147.39'
   TxFrequencyOffset: '+0.6'
-  CtcssEncode: 162.2
-  CtcssDecode: 162.2
+  CtcssEncode: '162.2'
+  CtcssDecode: '162.2'
 
 # Allstar 28704
 # - Name: VA3PBO UHF FM  # Yaesu DR-?X
 #   Notes:  # not sure where this is located
 #   Mode: FM  # frequency shared with YSF (AMS in, AMS out)
-#   RxFrequency: 444.575
+#   RxFrequency: '444.575'
 #   TxFrequencyOffset: '+5.0'
-#   CtcssEncode: 162.2
-#   CtcssDecode: 162.2
+#   CtcssEncode: '162.2'
+#   CtcssDecode: '162.2'
 
 # #############################################################################
 
 - Name: VE3TJR VHF YSF
   Notes:  # on a Nexicom tower on the east shore of Deer Bay (44° 31' 15.6'' N /78° 12' 32.4'' W)
   Mode: YSF  # frequency shared with FM (AMS in, analog out)
-  RxFrequency: 147.015
+  RxFrequency: '147.015'
   TxFrequencyOffset: '+0.6'
 
 - Name: VE3APL VHF YSF  # Yaesu DR-?X
   Notes:  # near Apsley
   Mode: YSF  # frequency shared with FM (AMS in, analog out)
-  RxFrequency: 147.39
+  RxFrequency: '147.39'
   TxFrequencyOffset: '+0.6'
 
 # - Name: VA3PBO UHF YSF  # Yaesu DR-?X
 #   Notes:  # not sure where this is located
 #   Mode: YSF  # frequency shared with FM (AMS in, AMS out)
-#   RxFrequency: 444.575
+#   RxFrequency: '444.575'
 #   TxFrequencyOffset: '+5.0'
 
 Zones:

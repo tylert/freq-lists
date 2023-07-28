@@ -29,43 +29,43 @@ Channels:
 - Name: VE2RAO VHF FM  # equipment TBD
   Notes: Hôpital de Hull
   Mode: FM
-  RxFrequency: 146.745
+  RxFrequency: '146.745'
   TxFrequencyOffset: '-0.6'
-  CtcssEncode: 118.8
-  CtcssDecode: 118.8
+  CtcssEncode: '118.8'
+  CtcssDecode: '118.8'
 
 - Name: VE2RAO UHF FM  # equipment TBD
   Notes: Hôpital de Hull
   Mode: FM
-  RxFrequency: 443.95
+  RxFrequency: '443.95'
   TxFrequencyOffset: '+5.0'
-  CtcssEncode: 118.8
-  CtcssDecode: 118.8
+  CtcssEncode: '118.8'
+  CtcssDecode: '118.8'
 
 - Name: VE2RBH VHF FM  # equipment TBD
   Notes: Ripon
   Mode: FM
-  RxFrequency: 145.41
+  RxFrequency: '145.41'
   TxFrequencyOffset: '-0.6'
-  CtcssEncode: 123.0
-  CtcssDecode: 123.0
+  CtcssEncode: '123.0'
+  CtcssDecode: '123.0'
 
 - Name: VA2UHF UHF FM  # equipment TBD
   Notes: Sarsfield
   Mode: FM
-  RxFrequency: 444.25
+  RxFrequency: '444.25'
   TxFrequencyOffset: '+5.0'
-  CtcssEncode: 141.3
-  CtcssDecode: 141.3
+  CtcssEncode: '141.3'
+  CtcssDecode: '141.3'
 
 # XXX FIXME TODO  Out of service?
 - Name: VE2SY VHF FM  # equipment TBD
   Notes: ???
   Mode: FM
-  RxFrequency: 147.195
+  RxFrequency: '147.195'
   TxFrequencyOffset: '+0.6'
-  CtcssEncode: 123.0
-  CtcssDecode: 123.0
+  CtcssEncode: '123.0'
+  CtcssDecode: '123.0'
 
 # #############################################################################
 
@@ -73,9 +73,9 @@ Channels:
 - Name: VE2RAO UHF DMR  # equipment TBD
   Notes: Hôpital de Hull
   Mode: DMR  # CCS7 ID 302???
-  RxFrequency: 441.95
+  RxFrequency: '441.95'
   TxFrequencyOffset: '+5.0'
-  ColorCode: 1
+  ColorCode: '1'
   # use TS=2 for all TG except 3022
 
 Zones:

@@ -9,527 +9,527 @@ Channels:
 
 - Name: M00A
   Mode: FM
-  RxFrequency: 156.0
+  RxFrequency: '156.0'
   RxOnly: On
 
 - Name: M00B
   Mode: FM
-  RxFrequency: 160.6
+  RxFrequency: '160.6'
   RxOnly: On
 
 - Name: M01A
   Mode: FM
-  RxFrequency: 156.05
+  RxFrequency: '156.05'
   RxOnly: On
 
 - Name: M01B
   Mode: FM
-  RxFrequency: 160.65
+  RxFrequency: '160.65'
   RxOnly: On
 
 - Name: M02A
   Mode: FM
-  RxFrequency: 156.1
+  RxFrequency: '156.1'
   RxOnly: On
 
 - Name: M02B
   Mode: FM
-  RxFrequency: 160.7
+  RxFrequency: '160.7'
   RxOnly: On
 
 - Name: M03A
   Mode: FM
-  RxFrequency: 156.15
+  RxFrequency: '156.15'
   RxOnly: On
 
 - Name: M03B
   Mode: FM
-  RxFrequency: 160.75
+  RxFrequency: '160.75'
   RxOnly: On
 
 - Name: M04A
   Mode: FM
-  RxFrequency: 156.2
+  RxFrequency: '156.2'
   RxOnly: On
 
 - Name: M04B
   Mode: FM
-  RxFrequency: 160.8
+  RxFrequency: '160.8'
   RxOnly: On
 
 - Name: M05A
   Mode: FM
-  RxFrequency: 156.25
+  RxFrequency: '156.25'
   RxOnly: On
 
 - Name: M05B
   Mode: FM
-  RxFrequency: 160.85
+  RxFrequency: '160.85'
   RxOnly: On
 
 - Name: M06A
   Mode: FM
-  RxFrequency: 156.3
+  RxFrequency: '156.3'
   RxOnly: On
 
 - Name: M07A
   Mode: FM
-  RxFrequency: 156.35
+  RxFrequency: '156.35'
   RxOnly: On
 
 - Name: M07B
   Mode: FM
-  RxFrequency: 160.95
+  RxFrequency: '160.95'
   RxOnly: On
 
 - Name: M08A
   Mode: FM
-  RxFrequency: 156.4
+  RxFrequency: '156.4'
   RxOnly: On
 
 - Name: M09A
   Mode: FM
-  RxFrequency: 156.45
+  RxFrequency: '156.45'
   RxOnly: On
 
 - Name: M10A
   Mode: FM
-  RxFrequency: 156.5
+  RxFrequency: '156.5'
   RxOnly: On
 
 - Name: M11A
   Mode: FM
-  RxFrequency: 156.55
+  RxFrequency: '156.55'
   RxOnly: On
 
 - Name: M12A
   Mode: FM
-  RxFrequency: 156.6
+  RxFrequency: '156.6'
   RxOnly: On
 
 - Name: M13A
   Mode: FM
-  RxFrequency: 156.65
+  RxFrequency: '156.65'
   RxOnly: On
 
 - Name: M14A
   Mode: FM
-  RxFrequency: 156.7
+  RxFrequency: '156.7'
   RxOnly: On
 
 - Name: M15A
   Mode: FM
-  RxFrequency: 156.75
+  RxFrequency: '156.75'
   RxOnly: On
 
 - Name: M16A
   Mode: FM
-  RxFrequency: 156.8
+  RxFrequency: '156.8'
   RxOnly: On
 
 - Name: M17A
   Mode: FM
-  RxFrequency: 156.85
+  RxFrequency: '156.85'
   RxOnly: On
 
 - Name: M18A
   Mode: FM
-  RxFrequency: 156.9
+  RxFrequency: '156.9'
   RxOnly: On
 
 - Name: M18B
   Mode: FM
-  RxFrequency: 161.5
+  RxFrequency: '161.5'
   RxOnly: On
 
 - Name: M19A
   Mode: FM
-  RxFrequency: 156.95
+  RxFrequency: '156.95'
   RxOnly: On
 
 - Name: M19B
   Mode: FM
-  RxFrequency: 161.55
+  RxFrequency: '161.55'
   RxOnly: On
 
 - Name: M20A
   Mode: FM
-  RxFrequency: 157.0
+  RxFrequency: '157.0'
   RxOnly: On
 
 - Name: M20B
   Mode: FM
-  RxFrequency: 161.6
+  RxFrequency: '161.6'
   RxOnly: On
 
 - Name: M21A
   Mode: FM
-  RxFrequency: 157.05
+  RxFrequency: '157.05'
   RxOnly: On
 
 - Name: M21B  # WX8
   Mode: FM
-  RxFrequency: 161.65
+  RxFrequency: '161.65'
   RxOnly: On
 
 - Name: M22A
   Mode: FM
-  RxFrequency: 157.1
+  RxFrequency: '157.1'
   RxOnly: On
 
 - Name: M22B
   Mode: FM
-  RxFrequency: 161.7
+  RxFrequency: '161.7'
   RxOnly: On
 
 - Name: M23A
   Mode: FM
-  RxFrequency: 157.15
+  RxFrequency: '157.15'
   RxOnly: On
 
 - Name: M23B  # WXA
   Mode: FM
-  RxFrequency: 161.75
+  RxFrequency: '161.75'
   RxOnly: On
 
 - Name: M24A
   Mode: FM
-  RxFrequency: 157.2
+  RxFrequency: '157.2'
   RxOnly: On
 
 - Name: M24B
   Mode: FM
-  RxFrequency: 161.8
+  RxFrequency: '161.8'
   RxOnly: On
 
 - Name: M25A
   Mode: FM
-  RxFrequency: 157.25
+  RxFrequency: '157.25'
   RxOnly: On
 
 - Name: M25B
   Mode: FM
-  RxFrequency: 161.85
+  RxFrequency: '161.85'
   RxOnly: On
 
 - Name: M26A
   Mode: FM
-  RxFrequency: 157.3
+  RxFrequency: '157.3'
   RxOnly: On
 
 - Name: M26B
   Mode: FM
-  RxFrequency: 161.9
+  RxFrequency: '161.9'
   RxOnly: On
 
 - Name: M27A
   Mode: FM
-  RxFrequency: 157.35
+  RxFrequency: '157.35'
   RxOnly: On
 
 - Name: M27B  # ASM 1 / Channel 2027 / WXB
   Mode: FM
-  RxFrequency: 161.95
+  RxFrequency: '161.95'
   RxOnly: On
 
 - Name: M28A
   Mode: FM
-  RxFrequency: 157.4
+  RxFrequency: '157.4'
   RxOnly: On
 
 - Name: M28B  # ASM 2 / Channel 2028 / WXC
   Mode: FM
-  RxFrequency: 162.0
+  RxFrequency: '162.0'
   RxOnly: On
 
 - Name: M31A
   Mode: FM
-  RxFrequency: 157.55
+  RxFrequency: '157.55'
   RxOnly: On
 
 - Name: M31B
   Mode: FM
-  RxFrequency: 162.15
+  RxFrequency: '162.15'
   RxOnly: On
 
 - Name: M36A
   Mode: FM
-  RxFrequency: 162.4
+  RxFrequency: '162.4'
   RxOnly: On
 
 - Name: M37A
   Mode: FM
-  RxFrequency: 157.85
+  RxFrequency: '157.85'
   RxOnly: On
 
 - Name: M37B  # WX5/PA3
   Mode: FM
-  RxFrequency: 162.45
+  RxFrequency: '162.45'
   RxOnly: On
 
 - Name: M38B  # WX6/PA5
   Mode: FM
-  RxFrequency: 162.5
+  RxFrequency: '162.5'
   RxOnly: On
 
 - Name: M39B  # WX1/PA7
   Mode: FM
-  RxFrequency: 162.55
+  RxFrequency: '162.55'
   RxOnly: On
 
 - Name: M60A
   Mode: FM
-  RxFrequency: 156.025
+  RxFrequency: '156.025'
   RxOnly: On
 
 - Name: M60B
   Mode: FM
-  RxFrequency: 160.625
+  RxFrequency: '160.625'
   RxOnly: On
 
 - Name: M61A
   Mode: FM
-  RxFrequency: 156.075
+  RxFrequency: '156.075'
   RxOnly: On
 
 - Name: M61B
   Mode: FM
-  RxFrequency: 160.675
+  RxFrequency: '160.675'
   RxOnly: On
 
 - Name: M62A
   Mode: FM
-  RxFrequency: 156.125
+  RxFrequency: '156.125'
   RxOnly: On
 
 - Name: M62B
   Mode: FM
-  RxFrequency: 160.725
+  RxFrequency: '160.725'
   RxOnly: On
 
 - Name: M63A
   Mode: FM
-  RxFrequency: 156.175
+  RxFrequency: '156.175'
   RxOnly: On
 
 - Name: M63B
   Mode: FM
-  RxFrequency: 160.775
+  RxFrequency: '160.775'
   RxOnly: On
 
 - Name: M64A
   Mode: FM
-  RxFrequency: 156.225
+  RxFrequency: '156.225'
   RxOnly: On
 
 - Name: M64B
   Mode: FM
-  RxFrequency: 160.825
+  RxFrequency: '160.825'
   RxOnly: On
 
 - Name: M65A
   Mode: FM
-  RxFrequency: 156.275
+  RxFrequency: '156.275'
   RxOnly: On
 
 - Name: M65B
   Mode: FM
-  RxFrequency: 160.875
+  RxFrequency: '160.875'
   RxOnly: On
 
 - Name: M66A
   Mode: FM
-  RxFrequency: 156.325
+  RxFrequency: '156.325'
   RxOnly: On
 
 - Name: M66B
   Mode: FM
-  RxFrequency: 160.925
+  RxFrequency: '160.925'
   RxOnly: On
 
 - Name: M67A
   Mode: FM
-  RxFrequency: 156.375
+  RxFrequency: '156.375'
   RxOnly: On
 
 - Name: M68A
   Mode: FM
-  RxFrequency: 156.425
+  RxFrequency: '156.425'
   RxOnly: On
 
 - Name: M69A
   Mode: FM
-  RxFrequency: 156.475
+  RxFrequency: '156.475'
   RxOnly: On
 
 - Name: M70A
   Mode: FM
-  RxFrequency: 156.525
+  RxFrequency: '156.525'
   RxOnly: On
 
 - Name: M71A
   Mode: FM
-  RxFrequency: 156.575
+  RxFrequency: '156.575'
   RxOnly: On
 
 - Name: M72A
   Mode: FM
-  RxFrequency: 156.625
+  RxFrequency: '156.625'
   RxOnly: On
 
 - Name: M73A
   Mode: FM
-  RxFrequency: 156.675
+  RxFrequency: '156.675'
   RxOnly: On
 
 - Name: M74A
   Mode: FM
-  RxFrequency: 156.725
+  RxFrequency: '156.725'
   RxOnly: On
 
 - Name: M75A
   Mode: FM
-  RxFrequency: 156.775
+  RxFrequency: '156.775'
   RxOnly: On
 
 - Name: M76A
   Mode: FM
-  RxFrequency: 156.825
+  RxFrequency: '156.825'
   RxOnly: On
 
 - Name: M77A
   Mode: FM
-  RxFrequency: 156.875
+  RxFrequency: '156.875'
   RxOnly: On
 
 - Name: M78A
   Mode: FM
-  RxFrequency: 156.925
+  RxFrequency: '156.925'
   RxOnly: On
 
 - Name: M78B
   Mode: FM
-  RxFrequency: 161.525
+  RxFrequency: '161.525'
   RxOnly: On
 
 - Name: M79A
   Mode: FM
-  RxFrequency: 156.975
+  RxFrequency: '156.975'
   RxOnly: On
 
 - Name: M79B
   Mode: FM
-  RxFrequency: 161.575
+  RxFrequency: '161.575'
   RxOnly: On
 
 - Name: M80A
   Mode: FM
-  RxFrequency: 157.025
+  RxFrequency: '157.025'
   RxOnly: On
 
 - Name: M80B
   Mode: FM
-  RxFrequency: 161.625
+  RxFrequency: '161.625'
   RxOnly: On
 
 - Name: M81A
   Mode: FM
-  RxFrequency: 157.075
+  RxFrequency: '157.075'
   RxOnly: On
 
 - Name: M81B
   Mode: FM
-  RxFrequency: 161.675
+  RxFrequency: '161.675'
   RxOnly: On
 
 - Name: M82A
   Mode: FM
-  RxFrequency: 157.125
+  RxFrequency: '157.125'
   RxOnly: On
 
 - Name: M82B
   Mode: FM
-  RxFrequency: 161.725
+  RxFrequency: '161.725'
   RxOnly: On
 
 - Name: M83A
   Mode: FM
-  RxFrequency: 157.175
+  RxFrequency: '157.175'
   RxOnly: On
 
 - Name: M83B  # WX9
   Mode: FM
-  RxFrequency: 161.775
+  RxFrequency: '161.775'
   RxOnly: On
 
 - Name: M84A
   Mode: FM
-  RxFrequency: 157.225
+  RxFrequency: '157.225'
   RxOnly: On
 
 - Name: M84B
   Mode: FM
-  RxFrequency: 161.825
+  RxFrequency: '161.825'
   RxOnly: On
 
 - Name: M85A
   Mode: FM
-  RxFrequency: 157.275
+  RxFrequency: '157.275'
   RxOnly: On
 
 - Name: M85B
   Mode: FM
-  RxFrequency: 161.875
+  RxFrequency: '161.875'
   RxOnly: On
 
 - Name: M86A
   Mode: FM
-  RxFrequency: 157.325
+  RxFrequency: '157.325'
   RxOnly: On
 
 - Name: M86B
   Mode: FM
-  RxFrequency: 161.925
+  RxFrequency: '161.925'
   RxOnly: On
 
 - Name: M87A
   Mode: FM
-  RxFrequency: 157.375
+  RxFrequency: '157.375'
   RxOnly: On
 
 - Name: M87B
   Mode: FM
-  RxFrequency: 161.975
+  RxFrequency: '161.975'
   RxOnly: On
 
 - Name: M88A
   Mode: FM
-  RxFrequency: 157.425
+  RxFrequency: '157.425'
   RxOnly: On
 
 - Name: M88B
   Mode: FM
-  RxFrequency: 162.025
+  RxFrequency: '162.025'
   RxOnly: On
 
 - Name: M96B  # WX4/PA2
   Mode: FM
-  RxFrequency: 162.425
+  RxFrequency: '162.425'
   RxOnly: On
 
 - Name: M97B  # WX3/PA4
   Mode: FM
-  RxFrequency: 162.475
+  RxFrequency: '162.475'
   RxOnly: On
 
 - Name: M98B  # WX7/PA6
   Mode: FM
-  RxFrequency: 162.525
+  RxFrequency: '162.525'
   RxOnly: On
 
 - Name: M113B  # WX10
   Mode: FM
-  RxFrequency: 163.275
+  RxFrequency: '163.275'
   RxOnly: On
 
 Zones:
