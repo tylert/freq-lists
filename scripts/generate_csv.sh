@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Output CSV files suitable for CHIRP and RT Systems radio programming
-# Required tools:  bash, cut, mkdir, python (3.10.x+), tail, wc
+# Required tools:  bash, cut, date, mkdir, python (3.10.x+), tail, wc
 
 # set -x
 mkdir -p tmp
