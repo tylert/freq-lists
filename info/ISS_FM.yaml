@@ -3,13 +3,13 @@ Channels:
 
 - Name: ISSDOWN
   Mode: FM
-  RxFrequency: 145.99
-  CtcssEncode: 67.0
+  RxFrequency: '145.99'
+  CtcssEncode: '67.0'
   CtcssDecode: None
 
 - Name: ISSUP
   Mode: FM
-  RxFrequency: 437.8
+  RxFrequency: '437.8'
 
 Zones:
 ...

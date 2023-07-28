@@ -34,26 +34,26 @@ Channels:
 - Name: VE3STP VHF FM  # Motorola CM 200 Rx, CDM 1250 Tx + 100 W amp, Arcom RC210 controller
   Notes: Kennellys Mountain 87Q58455+W5
   Mode: FM
-  RxFrequency: 147.06
+  RxFrequency: '147.06'
   TxFrequencyOffset: '-0.6'
-  CtcssEncode: 114.8
-  CtcssDecode: 114.8
+  CtcssEncode: '114.8'
+  CtcssDecode: '114.8'
 
 # - Name: VE3STP 2VHF FM  # Motorola XPR 8300 + 60 W amp
 #   Notes: Kennellys Mountain 87Q58455+W5
 #   Mode: FM
-#   RxFrequency: 145.39
+#   RxFrequency: '145.39'
 #   TxFrequencyOffset: '-0.6'
-#   CtcssEncode: 114.8
-#   CtcssDecode: 114.8
+#   CtcssEncode: '114.8'
+#   CtcssDecode: '114.8'
 
 # XXX FIXME TODO  Find out what's happening with this repeater
 # - Name: VE3YYX UHF FM  # TBD @ 40 W
 #   Notes: Stones Lake -> Fergusons Lake 87Q575PC+FQ
 #   Mode: FM
-#   RxFrequency: 443.2
+#   RxFrequency: '443.2'
 #   TxFrequencyOffset: '+5.0'
-#   CtcssEncode: 114.8
+#   CtcssEncode: '114.8'
 #   CtcssDecode: None
 
 # #############################################################################
@@ -61,7 +61,7 @@ Channels:
 - Name: VE3STP UHF DSTAR  # Motorola CM 300 Rx & Tx
   Notes: Kennellys Mountain 87Q58455+W5
   Mode: DSTAR  # Module B? / DSTAR linked to XLX197B
-  RxFrequency: 443.6
+  RxFrequency: '443.6'
   TxFrequencyOffset: '+5.0'
 
 # #############################################################################
@@ -69,24 +69,24 @@ Channels:
 # - Name: VE3STP UHF DMR  # Motorola CM 300 Rx & Tx
 #   Notes: Kennellys Mountain 87Q58455+W5
 #   Mode: DMR  # CCS7 ID 302064 / DMR linked to XLX197B (TS=2, TG=6)
-#   RxFrequency: 443.6
+#   RxFrequency: '443.6'
 #   TxFrequencyOffset: '+5.0'
-#   ColorCode: 1
+#   ColorCode: '1'
 
 # No RoIP features
 # - Name: VE3STP VHF DMR  # Motorola XPR 8300 + 60 W amp
 #   Notes: Kennellys Mountain 87Q58455+W5
 #   Mode: DMR  # CCS7 ID 302096
-#   RxFrequency: 145.39
+#   RxFrequency: '145.39'
 #   TxFrequencyOffset: '-0.6'
-#   ColorCode: 1
+#   ColorCode: '1'
 
 # #############################################################################
 
 - Name: VE3STP UHF YSF  # Motorola CM 300 Rx & Tx
   Notes: Kennellys Mountain 87Q58455+W5
   Mode: YSF  # YSF linked to XLX197B???
-  RxFrequency: 443.6
+  RxFrequency: '443.6'
   TxFrequencyOffset: '+5.0'
 
 Zones:

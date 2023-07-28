@@ -31,7 +31,7 @@ Channels:
 - Name: VA3ODG VHF DSTAR  # Icom maybe???
   Notes: FN25DJ78GT Ottawa YMCA-YWCA
   Mode: DSTAR  # Module ?
-  RxFrequency: 145.53
+  RxFrequency: '145.53'
   TxFrequencyOffset: '-0.6'
 
 # #############################################################################
@@ -40,9 +40,9 @@ Channels:
 - Name: VA3ODG UHF DMR  # Motorola M1225 Tx + CDM 750 Rx?
   Notes: FN25DJ78GT Ottawa YMCA-YWCA
   Mode: DMR  # DMR & DSTAR only (MMDVM) / CCS7 ID 302065
-  RxFrequency: 444.85
+  RxFrequency: '444.85'
   TxFrequencyOffset: '+5.0'
-  ColorCode: 1
+  ColorCode: '1'
 
 Zones:
 ...

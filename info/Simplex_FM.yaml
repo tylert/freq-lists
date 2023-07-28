@@ -25,86 +25,86 @@ Channels:
 
 - Name: 146.4 FM
   Mode: FM
-  RxFrequency: 146.4
+  RxFrequency: '146.4'
 
 - Name: 146.415 FM
   Mode: FM
-  RxFrequency: 146.415
+  RxFrequency: '146.415'
 
 - Name: 146.43 FM
   Mode: FM
-  RxFrequency: 146.43
+  RxFrequency: '146.43'
 
 - Name: 146.445 FM
   Mode: FM
-  RxFrequency: 146.445
+  RxFrequency: '146.445'
 
 - Name: 146.46 FM
   Mode: FM
-  RxFrequency: 146.46
+  RxFrequency: '146.46'
 
 - Name: 146.475 FM
   Mode: FM
-  RxFrequency: 146.475
+  RxFrequency: '146.475'
 
 - Name: 146.49 FM
   Mode: FM
-  RxFrequency: 146.49
+  RxFrequency: '146.49'
 
 - Name: 146.505 FM
   Mode: FM
-  RxFrequency: 146.505
+  RxFrequency: '146.505'
 
 - Name: 146.52 FM
   Mode: FM
-  RxFrequency: 146.52
+  RxFrequency: '146.52'
   Notes: FM simplex calling frequency
 
 - Name: 146.535 FM
   Mode: FM
-  RxFrequency: 146.535
+  RxFrequency: '146.535'
 
 - Name: 146.55 FM
   Mode: FM
-  RxFrequency: 146.55
+  RxFrequency: '146.55'
 
 - Name: 146.565 FM
   Mode: FM
-  RxFrequency: 146.565
+  RxFrequency: '146.565'
 
 - Name: 146.58 FM
   Mode: FM
-  RxFrequency: 146.58
+  RxFrequency: '146.58'
 
 - Name: 146.595 FM
   Mode: FM
-  RxFrequency: 146.595
+  RxFrequency: '146.595'
 
 # FM simplex from 147.42 to 147.57 - 6 channels on a 30 kHz raster
 
 - Name: 147.42 FM
   Mode: FM
-  RxFrequency: 147.42
+  RxFrequency: '147.42'
 
 - Name: 147.45 FM
   Mode: FM
-  RxFrequency: 147.45
+  RxFrequency: '147.45'
 
 - Name: 147.48 FM
   Mode: FM
-  RxFrequency: 147.48
+  RxFrequency: '147.48'
 
 - Name: 147.51 FM
   Mode: FM
-  RxFrequency: 147.51
+  RxFrequency: '147.51'
 
 - Name: 147.54 FM
   Mode: FM
-  RxFrequency: 147.54
+  RxFrequency: '147.54'
 
 - Name: 147.57 FM
   Mode: FM
-  RxFrequency: 147.57
+  RxFrequency: '147.57'
 
 #  ____  _                 _             _   _ _   _ _____
 # / ___|(_)_ __ ___  _ __ | | _____  __ | | | | | | |  ___|
@@ -125,64 +125,64 @@ Channels:
 
 - Name: 446.0 FM
   Mode: FM
-  RxFrequency: 446.0
+  RxFrequency: '446.0'
   Notes: FM simplex calling frequency
 
 - Name: 446.0125 FM
   Mode: FM
-  RxFrequency: 446.0125
+  RxFrequency: '446.0125'
 
 - Name: 446.025 FM
   Mode: FM
-  RxFrequency: 446.025
+  RxFrequency: '446.025'
 
 - Name: 446.0375 FM
   Mode: FM
-  RxFrequency: 446.0375
+  RxFrequency: '446.0375'
 
 - Name: 446.05 FM
   Mode: FM
-  RxFrequency: 446.05
+  RxFrequency: '446.05'
 
 - Name: 446.0625 FM
   Mode: FM
-  RxFrequency: 446.0625
+  RxFrequency: '446.0625'
 
 - Name: 446.075 FM
   Mode: FM
-  RxFrequency: 446.075
+  RxFrequency: '446.075'
 
 - Name: 446.0875 FM
   Mode: FM
-  RxFrequency: 446.0875
+  RxFrequency: '446.0875'
 
 - Name: 446.1 FM
   Mode: FM
-  RxFrequency: 446.1
+  RxFrequency: '446.1'
 
 - Name: 446.1125 FM
   Mode: FM
-  RxFrequency: 446.1125
+  RxFrequency: '446.1125'
 
 - Name: 446.125 FM
   Mode: FM
-  RxFrequency: 446.125
+  RxFrequency: '446.125'
 
 - Name: 446.1375 FM
   Mode: FM
-  RxFrequency: 446.1375
+  RxFrequency: '446.1375'
 
 - Name: 446.15 FM
   Mode: FM
-  RxFrequency: 446.15
+  RxFrequency: '446.15'
 
 - Name: 446.1625 FM
   Mode: FM
-  RxFrequency: 446.1625
+  RxFrequency: '446.1625'
 
 - Name: 446.175 FM
   Mode: FM
-  RxFrequency: 446.175
+  RxFrequency: '446.175'
 
 Zones:
 ...

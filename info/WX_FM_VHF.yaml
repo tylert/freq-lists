@@ -14,67 +14,67 @@ Channels:
 
 - Name: WX8  # M21B
   Mode: FM
-  RxFrequency: 161.65
+  RxFrequency: '161.65'
   RxOnly: On
 
 - Name: WXA  # M23B
   Mode: FM
-  RxFrequency: 161.75
+  RxFrequency: '161.75'
   RxOnly: On
 
 - Name: WX9  # M83B
   Mode: FM
-  RxFrequency: 161.775
+  RxFrequency: '161.775'
   RxOnly: On
 
 - Name: WXB  # M27B / ASM 1 / Channel 2027
   Mode: FM
-  RxFrequency: 161.95
+  RxFrequency: '161.95'
   RxOnly: On
 
 - Name: WXC  # M28B / ASM 2 / Channel 2028
   Mode: FM
-  RxFrequency: 162.0
+  RxFrequency: '162.0'
   RxOnly: On
 
 - Name: WX2/PA1  # M36B / Public Alert 1
   Mode: FM
-  RxFrequency: 162.4
+  RxFrequency: '162.4'
   RxOnly: On
 
 - Name: WX4/PA2  # M96B / Public Alert 2
   Mode: FM
-  RxFrequency: 162.425
+  RxFrequency: '162.425'
   RxOnly: On
 
 - Name: WX5/PA3  # M37B / Public Alert 3
   Mode: FM
-  RxFrequency: 162.45
+  RxFrequency: '162.45'
   RxOnly: On
 
 - Name: WX3/PA4  # M97B / Public Alert 4
   Mode: FM
-  RxFrequency: 162.475
+  RxFrequency: '162.475'
   RxOnly: On
 
 - Name: WX6/PA5  # M38B / Public Alert 5
   Mode: FM
-  RxFrequency: 162.5
+  RxFrequency: '162.5'
   RxOnly: On
 
 - Name: WX7/PA6  # M98B / Public Alert 6
   Mode: FM
-  RxFrequency: 162.525
+  RxFrequency: '162.525'
   RxOnly: On
 
 - Name: WX1/PA7  # M39B / Public Alert 7
   Mode: FM
-  RxFrequency: 162.55
+  RxFrequency: '162.55'
   RxOnly: On
 
 - Name: WX10  # M113B
   Mode: FM
-  RxFrequency: 163.275
+  RxFrequency: '163.275'
   RxOnly: On
 
 Zones:

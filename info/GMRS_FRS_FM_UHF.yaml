@@ -30,50 +30,50 @@ Channels:
 
 - Name: GMRS01
   Mode: FM
-  RxFrequency: 462.5625
-  Bandwidth: 20
+  RxFrequency: '462.5625'
+  Bandwidth: '20'
   Power: Medium
   RxOnly: On
 
 - Name: GMRS02
   Mode: FM
-  RxFrequency: 462.5875
-  Bandwidth: 20
+  RxFrequency: '462.5875'
+  Bandwidth: '20'
   Power: Medium
   RxOnly: On
 
 - Name: GMRS03
   Mode: FM
-  RxFrequency: 462.6125
-  Bandwidth: 20
+  RxFrequency: '462.6125'
+  Bandwidth: '20'
   Power: Medium
   RxOnly: On
 
 - Name: GMRS04
   Mode: FM
-  RxFrequency: 462.6375
-  Bandwidth: 20
+  RxFrequency: '462.6375'
+  Bandwidth: '20'
   Power: Medium
   RxOnly: On
 
 - Name: GMRS05
   Mode: FM
-  RxFrequency: 462.6625
-  Bandwidth: 20
+  RxFrequency: '462.6625'
+  Bandwidth: '20'
   Power: Medium
   RxOnly: On
 
 - Name: GMRS06
   Mode: FM
-  RxFrequency: 462.6875
-  Bandwidth: 20
+  RxFrequency: '462.6875'
+  Bandwidth: '20'
   Power: Medium
   RxOnly: On
 
 - Name: GMRS07
   Mode: FM
-  RxFrequency: 462.7125
-  Bandwidth: 20
+  RxFrequency: '462.7125'
+  Bandwidth: '20'
   Power: Medium
   RxOnly: On
 
@@ -88,50 +88,50 @@ Channels:
 
 - Name: FRS08
   Mode: NFM
-  RxFrequency: 467.5625
-  Bandwidth: 12.5
+  RxFrequency: '467.5625'
+  Bandwidth: '12.5'
   Power: Low
   RxOnly: On
 
 - Name: FRS09
   Mode: NFM
-  RxFrequency: 467.5875
-  Bandwidth: 12.5
+  RxFrequency: '467.5875'
+  Bandwidth: '12.5'
   Power: Low
   RxOnly: On
 
 - Name: FRS10
   Mode: NFM
-  RxFrequency: 467.6125
-  Bandwidth: 12.5
+  RxFrequency: '467.6125'
+  Bandwidth: '12.5'
   Power: Low
   RxOnly: On
 
 - Name: FRS11
   Mode: NFM
-  RxFrequency: 467.6375
-  Bandwidth: 12.5
+  RxFrequency: '467.6375'
+  Bandwidth: '12.5'
   Power: Low
   RxOnly: On
 
 - Name: FRS12
   Mode: NFM
-  RxFrequency: 467.6625
-  Bandwidth: 12.5
+  RxFrequency: '467.6625'
+  Bandwidth: '12.5'
   Power: Low
   RxOnly: On
 
 - Name: FRS13
   Mode: NFM
-  RxFrequency: 467.6875
-  Bandwidth: 12.5
+  RxFrequency: '467.6875'
+  Bandwidth: '12.5'
   Power: Low
   RxOnly: On
 
 - Name: FRS14
   Mode: NFM
-  RxFrequency: 467.7125
-  Bandwidth: 12.5
+  RxFrequency: '467.7125'
+  Bandwidth: '12.5'
   Power: Low
   RxOnly: On
 
@@ -149,65 +149,65 @@ Channels:
 
 - Name: GMRS15
   Mode: FM
-  RxFrequency: 462.55
+  RxFrequency: '462.55'
 # TxFrequencyOffset: '+5.0'
-  Bandwidth: 20
+  Bandwidth: '20'
   Power: Medium
   RxOnly: On
 
 - Name: GMRS16
   Mode: FM
-  RxFrequency: 462.575
+  RxFrequency: '462.575'
 # TxFrequencyOffset: '+5.0'
-  Bandwidth: 20
+  Bandwidth: '20'
   Power: Medium
   RxOnly: On
 
 - Name: GMRS17
   Mode: FM
-  RxFrequency: 462.6
+  RxFrequency: '462.6'
 # TxFrequencyOffset: '+5.0'
-  Bandwidth: 20
+  Bandwidth: '20'
   Power: Medium
   RxOnly: On
 
 - Name: GMRS18
   Mode: FM
-  RxFrequency: 462.625
+  RxFrequency: '462.625'
 # TxFrequencyOffset: '+5.0'
-  Bandwidth: 20
+  Bandwidth: '20'
   Power: Medium
   RxOnly: On
 
 - Name: GMRS19
   Mode: FM
-  RxFrequency: 462.65
+  RxFrequency: '462.65'
 # TxFrequencyOffset: '+5.0'
-  Bandwidth: 20
+  Bandwidth: '20'
   Power: Medium
   RxOnly: On
 
 - Name: GMRS20
   Mode: FM
-  RxFrequency: 462.675
+  RxFrequency: '462.675'
 # TxFrequencyOffset: '+5.0'
-  Bandwidth: 20
+  Bandwidth: '20'
   Power: Medium
   RxOnly: On
 
 - Name: GMRS21
   Mode: FM
-  RxFrequency: 462.7
+  RxFrequency: '462.7'
 # TxFrequencyOffset: '+5.0'
-  Bandwidth: 20
+  Bandwidth: '20'
   Power: Medium
   RxOnly: On
 
 - Name: GMRS22
   Mode: FM
-  RxFrequency: 462.725
+  RxFrequency: '462.725'
 # TxFrequencyOffset: '+5.0'
-  Bandwidth: 20
+  Bandwidth: '20'
   Power: Medium
   RxOnly: On
 
@@ -223,57 +223,57 @@ Channels:
 
 - Name: GMRS15R
   Mode: FM
-  RxFrequency: 467.55
-  Bandwidth: 20
+  RxFrequency: '467.55'
+  Bandwidth: '20'
   Power: High
   RxOnly: On
 
 - Name: GMRS16R
   Mode: FM
-  RxFrequency: 467.575
-  Bandwidth: 20
+  RxFrequency: '467.575'
+  Bandwidth: '20'
   Power: High
   RxOnly: On
 
 - Name: GMRS17R
   Mode: FM
-  RxFrequency: 467.6
-  Bandwidth: 20
+  RxFrequency: '467.6'
+  Bandwidth: '20'
   Power: High
   RxOnly: On
 
 - Name: GMRS18R
   Mode: FM
-  RxFrequency: 467.625
-  Bandwidth: 20
+  RxFrequency: '467.625'
+  Bandwidth: '20'
   Power: High
   RxOnly: On
 
 - Name: GMRS19R
   Mode: FM
-  RxFrequency: 467.65
-  Bandwidth: 20
+  RxFrequency: '467.65'
+  Bandwidth: '20'
   Power: High
   RxOnly: On
 
 - Name: GMRS20R
   Mode: FM
-  RxFrequency: 467.675
-  Bandwidth: 20
+  RxFrequency: '467.675'
+  Bandwidth: '20'
   Power: High
   RxOnly: On
 
 - Name: GMRS21R
   Mode: FM
-  RxFrequency: 467.7
-  Bandwidth: 20
+  RxFrequency: '467.7'
+  Bandwidth: '20'
   Power: High
   RxOnly: On
 
 - Name: GMRS22R
   Mode: FM
-  RxFrequency: 467.725
-  Bandwidth: 20
+  RxFrequency: '467.725'
+  Bandwidth: '20'
   Power: High
   RxOnly: On
 

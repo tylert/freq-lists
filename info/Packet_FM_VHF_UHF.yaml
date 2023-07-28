@@ -14,7 +14,7 @@ Channels:
 - Name: APRS VHF PKT
   Notes: APRS North America
   Mode: FM  # FM only
-  RxFrequency: 144.39
+  RxFrequency: '144.39'
 
 #                           ____ ____  ____      _
 #                          / ___|  _ \|  _ \    / \
@@ -32,7 +32,7 @@ Channels:
 - Name: VE3STP VHF PKT  # TBD
   Notes: 87Q5835W+5J Kennellys Mountain
   Mode: FM  # FM only
-  RxFrequency: 145.01
+  RxFrequency: '145.01'
 
 #                           _____ __  __ ____   ____
 #                          | ____|  \/  |  _ \ / ___|
@@ -53,17 +53,17 @@ Channels:
 - Name: OCEPKT VHF PKT  # Motorola Radius/Spectra mobile(s)
   Notes: 87Q698MQ+CCC Alta Vista  # OFS Dispatch / OFS Station 35
   Mode: FM  # FM only
-  RxFrequency: 145.03
+  RxFrequency: '145.03'
 
 - Name: ALTPKT1 VHF PKT
   Notes: Alternate packet frequency 1
   Mode: FM  # FM only
-  RxFrequency: 145.07
+  RxFrequency: '145.07'
 
 - Name: ALTPKT2 VHF PKT
   Notes: Alternate packet frequency 2
   Mode: FM  # FM only
-  RxFrequency: 145.09
+  RxFrequency: '145.09'
 
 #  ___ ____ ____
 # |_ _/ ___/ ___|
@@ -80,12 +80,12 @@ Channels:
 - Name: ISSPKT1 VHF PKT
   Notes: Packet via ISS
   Mode: FM  # FM only
-  RxFrequency: 145.825
+  RxFrequency: '145.825'
 
 - Name: ISSPKT2 UHF PKT
   Notes: Packet via ISS
   Mode: FM  # FM only
-  RxFrequency: 437.55
+  RxFrequency: '437.55'
 
 Zones:
 ...
