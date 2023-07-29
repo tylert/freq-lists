@@ -1,35 +1,35 @@
 Channels: []
 Contacts:
-  - CallID: "2"
-    CallReceiveTone: "No"
+  - CallID: '2'
+    CallReceiveTone: No
     CallType: Group
     Name: 2 Local
-  - CallID: "6"
-    CallReceiveTone: "No"
+  - CallID: '6'
+    CallReceiveTone: No
     CallType: Group
     Name: 6 Cluster
-  - CallID: "9"
-    CallReceiveTone: "No"
+  - CallID: '9'
+    CallReceiveTone: No
     CallType: Group
     Name: 9 Local
-  - CallID: "99"
-    CallReceiveTone: "No"
+  - CallID: '99'
+    CallReceiveTone: No
     CallType: Group
     Name: 99 Simplex
-  - CallID: "302"
-    CallReceiveTone: "No"
+  - CallID: '302'
+    CallReceiveTone: No
     CallType: Group
     Name: 302 Canada
-  - CallID: "3023"
-    CallReceiveTone: "No"
+  - CallID: '3023'
+    CallReceiveTone: No
     CallType: Group
     Name: 3023 Ontario
-  - CallID: "9990"
-    CallReceiveTone: "No"
+  - CallID: '9990'
+    CallReceiveTone: No
     CallType: Private
     Name: 9990 Parrot
-  - CallID: "98638"
-    CallReceiveTone: "No"
+  - CallID: '98638'
+    CallReceiveTone: No
     CallType: Group
     Name: 98638 WVNET
 GroupLists:
