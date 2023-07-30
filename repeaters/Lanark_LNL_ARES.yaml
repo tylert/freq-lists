@@ -96,5 +96,5 @@ Channels:
   RxFrequency: '442.2'
   TxFrequencyOffset: '+5.0'
 
-Zones:
+Zones: []
 ...

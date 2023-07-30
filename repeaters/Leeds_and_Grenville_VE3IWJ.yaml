@@ -41,5 +41,5 @@ Channels:
   CtcssEncode: '100.0'
   CtcssDecode: '100.0'
 
-Zones:
+Zones: []
 ...

@@ -93,5 +93,5 @@ Channels:
   Mode: USB
   RxFrequency: '28.096'
 
-Zones:
+Zones: []
 ...

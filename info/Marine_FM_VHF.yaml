@@ -532,5 +532,5 @@ Channels:
   RxFrequency: '163.275'
   RxOnly: On
 
-Zones:
+Zones: []
 ...

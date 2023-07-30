@@ -12,12 +12,12 @@ Requirements
 You must have the following tools installed:
 
 * (REQUIRED) Python 3.10.x or newer;  for using the "multi_outputter.py" script for processing the input data files
-* (REQUIRED) jq_;  for working with JSON payloads
+* (REQUIRED) gojq_;  for working with JSON payloads
 * (REQUIRED) dmrRadio_ binary 1.0.23 or newer;  for exporting/importing codeplugs to/from JSON and generating blank codeplugs
 * (SUGGESTED) editcp_ 1.0.23 or newer;  for further editing codeplugs
 * (SUGGESTED) LibreOffice_;  for creating PDF handouts to accompany the programmed data
 
-.. _jq: https://stedolan.github.io/jq/
+.. _gojq: https://github.com/itchyny/gojq
 .. _dmrRadio: https://github.com/dalefarnsworth-dmr/dmrRadio
 .. _editcp: https://github.com/dalefarnsworth-dmr/editcp
 .. _LibreOffice: https://www.libreoffice.org/
@@ -83,7 +83,7 @@ Converting Existing Codeplugs To Templates
 
     # Export the binary codeplug as JSON and fix some values
     dmrRadio codeplugToJSON codeplug.rdt before.json
-    jq --from-file Retevis_RT3S.jq before.json > after.json
+    gojq --from-file Retevis_RT3S.jq before.json > after.json
 
 
 Generating Codeplugs From Templates
@@ -122,11 +122,11 @@ Starting a New Codeplug
     # Make it even emptier still
     dmrRadio codeplugToJSON new.rdt new.json
     cat new.json \
-        | jq 'del(.Contacts[])' \
-        | jq 'del(.Channels[])' \
-        | jq 'del(.GroupLists[])' \
-        | jq 'del(.ScanLists[])' \
-        | jq 'del(.Zones[])' > empty.json
+        | gojq 'del(.Contacts[])' \
+        | gojq 'del(.Channels[])' \
+        | gojq 'del(.GroupLists[])' \
+        | gojq 'del(.ScanLists[])' \
+        | gojq 'del(.Zones[])' > empty.json
 
 
 DFU Mode
@@ -310,9 +310,6 @@ DMR SMS
 Other Links
 -----------
 
-* https://shapeshed.com/jq-json/
-* https://programminghistorian.org/en/lessons/json-and-jq
-* https://stackoverflow.com/questions/19529688/how-to-merge-2-json-objects-from-2-files-using-jq
 * https://www.dmrfordummies.com/library/  what is DMR?
 
 

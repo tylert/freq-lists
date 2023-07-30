@@ -22,8 +22,5 @@ Notes
     cat foo.yaml | gojq --yaml-input '.' > foo.json   # convert YAML to JSON
     cat foo.json | gojq --yaml-output '.' > foo.yaml  # convert JSON to YAML
 
-    # =======================
-    # CLOSE, BUT NOT QUITE!!!
-    # =======================
-
-    cat repeaters/*.yaml | gojq --yaml-input -s 'map(to_entries)|flatten|group_by(.key)|map({(.[0].key):map(.value)})|add' | less
+    cat radios/empty.yaml 1.yaml 2.yaml 3.yaml | gojq --yaml-input -s -f radio/merge.jq
+    cat radios/stubs.yaml 1.yaml 2.yaml 3.yaml | gojq --yaml-input -s -f radio/merge.jq

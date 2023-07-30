@@ -1,4 +1,4 @@
-Channels: []
+---
 Contacts:
   - CallID: '2'
     CallReceiveTone: No
@@ -88,3 +88,4 @@ Zones:
   - ChannelA: []
     ChannelB: []
     Name: WX Info
+...

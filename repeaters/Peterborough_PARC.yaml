@@ -88,5 +88,5 @@ Channels:
 #   RxFrequency: '444.575'
 #   TxFrequencyOffset: '+5.0'
 
-Zones:
+Zones: []
 ...

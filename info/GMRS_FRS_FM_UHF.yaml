@@ -277,7 +277,7 @@ Channels:
   Power: High
   RxOnly: On
 
-Zones:
+Zones: []
 
 # (All trademarks and registred trademarks are the property of their respective
 # owners.)

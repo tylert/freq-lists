@@ -87,5 +87,5 @@ Channels:
   Mode: FM  # FM only
   RxFrequency: '437.55'
 
-Zones:
+Zones: []
 ...

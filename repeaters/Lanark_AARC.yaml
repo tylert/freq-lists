@@ -133,5 +133,5 @@ Channels:
 #   TxFrequencyOffset: '+5.0'
 #   ColorCode: '1'
 
-Zones:
+Zones: []
 ...

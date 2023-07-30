@@ -89,5 +89,5 @@ Channels:
   RxFrequency: '25.0'
   RxOnly: On
 
-Zones:
+Zones: []
 ...
