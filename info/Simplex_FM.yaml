@@ -184,5 +184,5 @@ Channels:
   Mode: FM
   RxFrequency: '446.175'
 
-Zones:
+Zones: []
 ...

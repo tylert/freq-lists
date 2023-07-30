@@ -200,5 +200,5 @@ Channels:
   RepeaterSlot: '1'
   TalkGroup: '99'
 
-Zones:
+Zones: []
 ...

@@ -78,5 +78,5 @@ Channels:
   ColorCode: '1'
   # use TS=2 for all TG except 3022
 
-Zones:
+Zones: []
 ...
