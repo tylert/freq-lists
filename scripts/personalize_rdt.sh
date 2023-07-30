@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Stamp unique, assigned DMR ID entries and intro screens onto each radio
-# Required tools:  bash, chmod, date, dmrRadio, jq, printf, rm, sed
+# Required tools:  bash, chmod, date, dmrRadio, gojq, printf, rm, sed
 
 # set -x
 date="$(date +%Y-%m-%d)"
@@ -27,10 +27,10 @@ sed -i 's/_.*"/"/' ${handheld_json_file}
 # Create unique configuration payloads for each odd/even radio
 printf '{"GeneralSettings":{"IntroScreenLine2":"30233396","RadioID":"3023396",
     "RadioID1":"3021794","RadioID2":"3023706","RadioID3":"3021795"}}' \
-    | jq . > tmp/VA3DGN-odd.json
+    | gojq . > tmp/VA3DGN-odd.json
 printf '{"GeneralSettings":{"IntroScreenLine2":"30231794","RadioID":"3021794",
     "RadioID1":"3023396","RadioID2":"3021795","RadioID3":"3023706"}}' \
-    | jq . > tmp/VA3DGN-even.json
+    | gojq . > tmp/VA3DGN-even.json
 
 # Personalize mobiles:  Primary, secondary (-9, -8)
 jq --slurp '.[0] * .[1]' ${mobile_json_file} tmp/VA3DGN-odd.json \
@@ -67,10 +67,10 @@ dmrRadio jsonToCodeplug tmp/VA3DGN-5.json tmp/VA3DGN-5-${date}.rdt
 # Create unique configuration payloads for each odd/even radio
 printf '{"GeneralSettings":{"IntroScreenLine2":"30233706","RadioID":"3023706",
     "RadioID1":"3021795","RadioID2":"3023396","RadioID3":"3021794"}}' \
-    | jq . > tmp/VA3VXN-odd.json
+    | gojq . > tmp/VA3VXN-odd.json
 printf '{"GeneralSettings":{"IntroScreenLine2":"30231795","RadioID":"3021795",
     "RadioID1":"3023706","RadioID2":"3021794","RadioID3":"3023396"}}' \
-    | jq . > tmp/VA3VXN-even.json
+    | gojq . > tmp/VA3VXN-even.json
 
 # Personalize mobiles:  Primary, secondary (-9, -8)
 jq --slurp '.[0] * .[1]' ${mobile_json_file} tmp/VA3VXN-odd.json \

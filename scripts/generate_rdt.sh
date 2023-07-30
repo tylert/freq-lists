@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Output new binary codeplugs for each radio containing the desired channels
-# Required tools:  bash, chmod, date, dmrRadio, jq, mkdir, python (3.10.x+), rm, sed
+# Required tools:  bash, chmod, date, dmrRadio, gojq, mkdir, python (3.10.x+), rm, sed
 
 # set -x
 mkdir -p tmp
@@ -46,7 +46,7 @@ dmrRadio codeplugToJSON ${mobile_rdt_file} ${mobile_json_file}
 sed -i 's/_.*"/"/' ${mobile_json_file}
 
 # Fix the default settings and fill in contact stubs and zone stubs
-jq --from-file radios/Retevis_RT90.jq ${mobile_json_file} > tmp/0.json
+gojq --from-file radios/Retevis_RT90.jq ${mobile_json_file} > tmp/0.json
 jq --slurp '.[0] * .[1]' tmp/0.json radios/stubs.json > tmp/1.json
 
 # Populate the codeplug channels from the input data files
@@ -88,7 +88,7 @@ dmrRadio codeplugToJSON ${handheld_rdt_file} ${handheld_json_file}
 sed -i 's/_.*"/"/' ${handheld_json_file}
 
 # Fix the default settings and fill in contact stubs and zone stubs
-jq --from-file radios/Retevis_RT3S.jq ${handheld_json_file} > tmp/0.json
+gojq --from-file radios/Retevis_RT3S.jq ${handheld_json_file} > tmp/0.json
 jq --slurp '.[0] * .[1]' tmp/0.json radios/stubs.json > tmp/1.json
 
 # Populate the codeplug channels from the input data files
