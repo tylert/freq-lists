@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #     _        _    ____
 #    / \      / \  |  _ \
 #   / _ \    / _ \ | |_) |
@@ -11,6 +9,8 @@ Channels:
 #   https://www.radioreference.com/apps/db/?aid=7747
 #   https://en.wikipedia.org/wiki/Association_of_American_Railroads
 #   https://www.aar.org/
+
+Channels:
 
 - Name: AAR001
   Mode: NFM

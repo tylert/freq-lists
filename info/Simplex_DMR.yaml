@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  ____  _                 _            __     ___   _ _____
 # / ___|(_)_ __ ___  _ __ | | _____  __ \ \   / / | | |  ___|
 # \___ \| | '_ ` _ \| '_ \| |/ _ \ \/ /  \ \ / /| |_| | |_
@@ -26,6 +24,8 @@ Channels:
 
 # Wide band digital from 145.59 to 145.79 - 11 channels on a 20 kHz raster
 # 145.51 used to be a recommended DMR simplex frequency in North America (145.79 too)
+
+Channels:
 
 - Name: 145.59 DMR
   Mode: DMR

@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _   _  ____ ____       __  ____   ____ _   _
 # | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
 # |  \| | |   | |_) |   / /  | |_) | |   |  \| |
@@ -27,6 +25,8 @@ Channels:
 #   https://dstarottawa.wordpress.com/
 #   http://va3odg.ddns.net:380/
 #   http://xlx197.dyndns.org/
+
+Channels:
 
 - Name: VA3ODG VHF DSTAR  # Icom maybe???
   Notes: FN25DJ78GT Ottawa YMCA-YWCA

@@ -75,5 +75,5 @@ Channels:
   RxFrequency: '118.8'
   RxOnly: On
 
-Zones:
+Zones: []
 ...

@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #   ____ __  __ ____  ____                    _   _____ ____  ____
 #  / ___|  \/  |  _ \/ ___|    __ _ _ __   __| | |  ___|  _ \/ ___|
 # | |  _| |\/| | |_) \___ \   / _` | '_ \ / _` | | |_  | |_) \___ \
@@ -27,6 +25,8 @@ Channels:
 
 # These simplex channels should be limited to 2 W in Canada and 5 W in the US
 # These are shared with FRS
+
+Channels:
 
 - Name: GMRS01
   Mode: FM

@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _                           _
 # | |    __ _ _ __   __ _ _ __| | __
 # | |   / _` | '_ \ / _` | '__| |/ /
@@ -31,6 +29,8 @@ Channels:
 
 # There is currently no internet connectivity at any of these sites
 # There is currently no backup power at Lavant or Christie Lake
+
+Channels:
 
 - Name: VE3KJG VHF FM  # Motorola MSF 5000
   Notes: Lavant 87Q528WJ+CH

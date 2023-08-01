@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _                           _
 # | |    __ _ _ __   __ _ _ __| | __
 # | |   / _` | '_ \ / _` | '__| |/ /
@@ -29,6 +27,8 @@ Channels:
 # *** "Weekly Analog Net" Wednesdays at 21:00 Eastern on VA3ARE VHF FM ***
 # *** "Weekly Digital Voice Net" Tuesdays at 20:40 Eastern on XLX197 ***
 # *** No YSF nets, currently ***
+
+Channels:
 
 # FM linked to XLX197B
 # ASL 564013

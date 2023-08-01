@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _                           _
 # | |    __ _ _ __   __ _ _ __| | __
 # | |   / _` | '_ \ / _` | '__| |/ /
@@ -28,6 +26,8 @@ Channels:
 
 # VE3RLR VHF and VE3RLR UHF are not linked
 # FM and YSF are not linked
+
+Channels:
 
 - Name: VE3RLR VHF FM  # Yaesu DR-2X
   Notes: Railway Museum 87P5WX2C+MJ
