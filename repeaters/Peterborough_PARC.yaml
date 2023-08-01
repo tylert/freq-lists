@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  ____      _            _                                 _
 # |  _ \ ___| |_ ___ _ __| |__   ___  _ __ ___  _   _  __ _| |__
 # | |_) / _ \ __/ _ \ '__| '_ \ / _ \| '__/ _ \| | | |/ _` | '_ \
@@ -23,6 +21,8 @@ Channels:
 
 # Peterborough Amateur Radio Club (PARC)
 #   https://www.ve3pbo.ca/repeater.htm
+
+Channels:
 
 # Allstar 28703
 - Name: VE3PBO VHF FM

@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _   _  ____ ____       __  ____   ____ _   _
 # | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
 # |  \| | |   | |_) |   / /  | |_) | |   |  \| |
@@ -24,6 +22,8 @@ Channels:
 
 # Association des Radio Amateurs Indépendants
 #   https://ve2reh.com/
+
+Channels:
 
 - Name: VE2REH VHF FM  # equipment TBD
   Notes: Pakenham

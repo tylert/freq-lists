@@ -14,6 +14,7 @@ Notes
 -----
 
 * figure out how to do the same "jq" thing with https://github.com/itchyny/gojq
+* check docs at https://github.com/jqlang/jq/releases/tag/jq-1.7rc1 too
 
 ::
 
@@ -22,5 +23,4 @@ Notes
     cat foo.yaml | gojq --yaml-input '.' > foo.json   # convert YAML to JSON
     cat foo.json | gojq --yaml-output '.' > foo.yaml  # convert JSON to YAML
 
-    cat radios/empty.yaml 1.yaml 2.yaml 3.yaml | gojq --yaml-input -s -f radio/merge.jq
-    cat radios/stubs.yaml 1.yaml 2.yaml 3.yaml | gojq --yaml-input -s -f radio/merge.jq
+    cat radios/stubs.yaml 1.yaml 2.yaml ... n.yaml | gojq --yaml-input -s -f radio/merge.jq

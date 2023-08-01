@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  ____  _     ____ _____
 # |  _ \| |   / ___|_   _|
 # | |_) | |  | |     | |
@@ -32,6 +30,8 @@ Channels:
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 # 445.1375 is a simplex YSF-only command-and-control link for VE3FRG
+
+Channels:
 
 - Name: VE3FRG VHF FM  # Yaesu DR-2X
   Notes: South Frontenac 87P57FWC+Q4  # 250-foot tower

@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  ____  _                 _            __     ___   _ _____
 # / ___|(_)_ __ ___  _ __ | | _____  __ \ \   / / | | |  ___|
 # \___ \| | '_ ` _ \| '_ \| |/ _ \ \/ /  \ \ / /| |_| | |_
@@ -22,6 +20,8 @@ Channels:
 # NOTE  The old plan had 13 channels, the new plan has 14 channels
 # XXX FIXME TODO  This minor bug in the bandplan notes has been reported to RAC!!!
 # 146.40, 146.43 and 146.46 may be repeater inputs in some areas
+
+Channels:
 
 - Name: 146.4 FM
   Mode: FM

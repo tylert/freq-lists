@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #     _    ____  ____  ____
 #    / \  |  _ \|  _ \/ ___|
 #   / _ \ | |_) | |_) \___ \
@@ -10,6 +8,8 @@ Channels:
 # Automatic Packet Reporting System
 #   https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System
 #   http://www.aprs.org/
+
+Channels:
 
 - Name: APRS VHF PKT
   Notes: APRS North America

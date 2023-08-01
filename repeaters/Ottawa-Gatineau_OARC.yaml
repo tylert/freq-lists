@@ -1,6 +1,4 @@
 ---
-Channels:
-
 #  _   _  ____ ____       __  ____   ____ _   _
 # | \ | |/ ___|  _ \     / / |  _ \ / ___| \ | |
 # |  \| | |   | |_) |   / /  | |_) | |   |  \| |
@@ -38,6 +36,8 @@ Channels:
 # VE2CRA VHF FM and VE2CRA UHF FM are usually not linked
 # FM and DMR are not linked
 # DMR isn't currently linked to anything external
+
+Channels:
 
 # IRLP node 2040
 - Name: VE2CRA VHF FM  # Motorola MSF 5000 maybe???
