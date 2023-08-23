@@ -285,66 +285,66 @@ Zones: []
 # The following is a list of possible channel values for interoperability with
 # other brands of radios (scheme A is the most common one):
 
-#     Channel Scheme      Freq      Pwr  Bw  Notes
-#     A    B    C    D    MHz       W    kHz
-#     01   01   09   01   462.5625   2   25  FRS/GMRS Calling Channel
-#     02   02   10   02   462.5875   2   25  FRS/GMRS Geocaching Channel
-#     03   03   11   03   462.6125   2   25  FRS/GMRS
-#     04   04   12   04   462.6375   2   25  FRS/GMRS
-#     05   05   13   05   462.6625   2   25  FRS/GMRS
-#     06   06   14   06   462.6875   2   25  FRS/GMRS
-#     07   07   15   07   462.7125   2   25  FRS/GMRS
-#     08   08   --   08   467.5625  0.5  12  FRS
-#     09   09   --   09   467.5875  0.5  12  FRS
-#     10   10   --   10   467.6125  0.5  12  FRS
-#     11   11   --   11   467.6375  0.5  12  FRS
-#     12   12   --   12   467.6625  0.5  12  FRS
-#     13   13   --   13   467.6875  0.5  12  FRS
-#     14   14   --   14   467.7125  0.5  12  FRS
-#     15   15   01   15   462.5500   2   25  GMRS
-#     16   16   02   16   462.5750   2   25  GMRS
-#     17   17   03   17   462.6000   2   25  GMRS
-#     18   18   04   18   462.6250   2   25  GMRS
-#     19   19   05   19   462.6500   2   25  GMRS Do not use near Canada/USA border
-#     20   20   06   20   462.6750   2   25  GMRS Distress Channel (141.3 Hz)
-#     21   21   07   21   462.7000   2   25  GMRS Do not use near Canada/USA border
-#     22   22   08   22   462.7250   2   25  GMRS
-#     --   15R  --   --   467.5500  5    25  US GMRS Ch 15 Repeater Input
-#     --   16R  --   --   467.5750  5    25  US GMRS Ch 16 Repeater Input
-#     --   17R  --   --   467.6000  5    25  US GMRS Ch 17 Repeater Input
-#     --   18R  --   --   467.6250  5    25  US GMRS Ch 18 Repeater Input
-#     --   19R  --   --   467.6500  5    25  US GMRS Ch 19 Repeater Input
-#     --   20R  --   --   467.6750  5    25  US GMRS Ch 20 Repeater Input Distress Channel
-#     --   21R  --   --   467.7000  5    25  US GMRS Ch 21 Repeater Input
-#     --   22R  --   --   467.7250  5    25  US GMRS Ch 22 Repeater Input
-#     --   --   --   23   462.5625  5    25  Proprietary pseudo-channel Ch 01 + Fixed CTCSS 250.3 Hz (038)
-#     --   --   --   24   462.6125  5    25  Proprietary pseudo-channel Ch 03 + Fixed CTCSS 225.7 Hz (035)
-#     --   --   --   25   462.6625  5    25  Proprietary pseudo-channel Ch 05 + Fixed CTCSS 203.5 Hz (032)
-#     --   --   --   26   462.7125  5    25  Proprietary pseudo-channel Ch 07 + Fixed CTCSS 179.9 Hz (029)
-#     --   --   --   27   462.5500  5    25  Proprietary pseudo-channel Ch 15 + Fixed CTCSS 162.2 Hz (026)
-#     --   --   --   28   462.6000  5    25  Proprietary pseudo-channel Ch 17 + Fixed CTCSS 146.2 Hz (023)
-#     --   --   --   29   462.6500  5    25  Proprietary pseudo-channel Ch 19 + Fixed CTCSS 131.8 Hz (020)
-#     --   --   --   30   462.7000  5    25  Proprietary pseudo-channel Ch 21 + Fixed CTCSS 118.9 Hz (017)
-#     --   --   --   31   462.5875  5    25  Proprietary pseudo-channel Ch 02 + Fixed DCS 023 (001)
-#     --   --   --   32   462.6375  5    25  Proprietary pseudo-channel Ch 04 + Fixed DCS 031 (004)
-#     --   --   --   33   462.6875  5    25  Proprietary pseudo-channel Ch 06 + Fixed DCS 047 (007)
-#     --   --   --   34   467.5625  0.5  12  Proprietary pseudo-channel Ch 08 + Fixed DCS 065 (010)
-#     --   --   --   35   467.6125  0.5  12  Proprietary pseudo-channel Ch 10 + Fixed DCS 073 (013)
-#     --   --   --   36   467.6625  0.5  12  Proprietary pseudo-channel Ch 12 + Fixed DCS 115 (016)
-#     --   --   --   37   467.7125  0.5  12  Proprietary pseudo-channel Ch 14 + Fixed DCS 131 (019)
-#     --   --   --   38   462.5750  5    25  Proprietary pseudo-channel Ch 16 + Fixed DCS 143 (022)
-#     --   --   --   39   462.6250  5    25  Proprietary pseudo-channel Ch 18 + Fixed DCS 156 (025)
-#     --   --   --   40   462.6750  5    25  Proprietary pseudo-channel Ch 20 + Fixed DCS 172 (028)
-#     --   --   --   41   462.7250  5    25  Proprietary pseudo-channel Ch 22 + Fixed DCS 223 (031)
-#     --   --   --   42   462.5625  5    25  Proprietary pseudo-channel Ch 01 + Fixed CTCSS 107.2 Hz (014)
-#     --   --   --   43   46?.????   ?   ??  Proprietary pseudo-channel Ch ?? + ??
-#     --   --   --   44   46?.????   ?   ??  Proprietary pseudo-channel Ch ?? + ??
-#     --   --   --   45   46?.????   ?   ??  Proprietary pseudo-channel Ch ?? + ??
-#     --   --   --   46   46?.????   ?   ??  Proprietary pseudo-channel Ch ?? + ??
-#     --   --   --   47   46?.????   ?   ??  Proprietary pseudo-channel Ch ?? + ??
-#     --   --   --   48   46?.????   ?   ??  Proprietary pseudo-channel Ch ?? + ??
-#     --   --   --   49   46?.????   ?   ??  Proprietary pseudo-channel Ch ?? + ??
-#     --   --   --   50   46?.????   ?   ??  Proprietary pseudo-channel Ch ?? + ??
+#     Channel Scheme           Freq      Pwr  Bw  Notes
+#     A    B    C    D    E    MHz       W    kHz
+#     01   01   09   01   01   462.5625   2   25  FRS/GMRS Calling Channel
+#     02   02   10   02   02   462.5875   2   25  FRS/GMRS Geocaching Channel
+#     03   03   11   03   03   462.6125   2   25  FRS/GMRS
+#     04   04   12   04   04   462.6375   2   25  FRS/GMRS
+#     05   05   13   05   05   462.6625   2   25  FRS/GMRS
+#     06   06   14   06   06   462.6875   2   25  FRS/GMRS
+#     07   07   15   07   07   462.7125   2   25  FRS/GMRS
+#     08   08   --   08   --   467.5625  0.5  12  FRS
+#     09   09   --   09   --   467.5875  0.5  12  FRS
+#     10   10   --   10   --   467.6125  0.5  12  FRS
+#     11   11   --   11   --   467.6375  0.5  12  FRS
+#     12   12   --   12   --   467.6625  0.5  12  FRS
+#     13   13   --   13   --   467.6875  0.5  12  FRS
+#     14   14   --   14   --   467.7125  0.5  12  FRS
+#     15   15   01   15   11   462.5500   2   25  GMRS
+#     16   16   02   16   08   462.5750   2   25  GMRS
+#     17   17   03   17   12   462.6000   2   25  GMRS
+#     18   18   04   18   09   462.6250   2   25  GMRS
+#     19   19   05   19   13   462.6500   2   25  GMRS Do not use near Canada/USA border
+#     20   20   06   20   10   462.6750   2   25  GMRS Distress Channel (141.3 Hz)
+#     21   21   07   21   14   462.7000   2   25  GMRS Do not use near Canada/USA border
+#     22   22   08   22   15   462.7250   2   25  GMRS
+#     --   15R  --   --   --   467.5500  5    25  US GMRS Ch 15 Repeater Input
+#     --   16R  --   --   --   467.5750  5    25  US GMRS Ch 16 Repeater Input
+#     --   17R  --   --   --   467.6000  5    25  US GMRS Ch 17 Repeater Input
+#     --   18R  --   --   --   467.6250  5    25  US GMRS Ch 18 Repeater Input
+#     --   19R  --   --   --   467.6500  5    25  US GMRS Ch 19 Repeater Input
+#     --   20R  --   --   --   467.6750  5    25  US GMRS Ch 20 Repeater Input Distress Channel
+#     --   21R  --   --   --   467.7000  5    25  US GMRS Ch 21 Repeater Input
+#     --   22R  --   --   --   467.7250  5    25  US GMRS Ch 22 Repeater Input
+#     --   --   --   23   --   462.5625   5   25  Proprietary pseudo-channel Ch 01 + Fixed CTCSS 250.3 Hz (038)
+#     --   --   --   24   --   462.6125   5   25  Proprietary pseudo-channel Ch 03 + Fixed CTCSS 225.7 Hz (035)
+#     --   --   --   25   --   462.6625   5   25  Proprietary pseudo-channel Ch 05 + Fixed CTCSS 203.5 Hz (032)
+#     --   --   --   26   --   462.7125   5   25  Proprietary pseudo-channel Ch 07 + Fixed CTCSS 179.9 Hz (029)
+#     --   --   --   27   --   462.5500   5   25  Proprietary pseudo-channel Ch 15 + Fixed CTCSS 162.2 Hz (026)
+#     --   --   --   28   --   462.6000   5   25  Proprietary pseudo-channel Ch 17 + Fixed CTCSS 146.2 Hz (023)
+#     --   --   --   29   --   462.6500   5   25  Proprietary pseudo-channel Ch 19 + Fixed CTCSS 131.8 Hz (020)
+#     --   --   --   30   --   462.7000   5   25  Proprietary pseudo-channel Ch 21 + Fixed CTCSS 118.9 Hz (017)
+#     --   --   --   31   --   462.5875   5   25  Proprietary pseudo-channel Ch 02 + Fixed DCS 023 (001)
+#     --   --   --   32   --   462.6375   5   25  Proprietary pseudo-channel Ch 04 + Fixed DCS 031 (004)
+#     --   --   --   33   --   462.6875   5   25  Proprietary pseudo-channel Ch 06 + Fixed DCS 047 (007)
+#     --   --   --   34   --   467.5625  0.5  12  Proprietary pseudo-channel Ch 08 + Fixed DCS 065 (010)
+#     --   --   --   35   --   467.6125  0.5  12  Proprietary pseudo-channel Ch 10 + Fixed DCS 073 (013)
+#     --   --   --   36   --   467.6625  0.5  12  Proprietary pseudo-channel Ch 12 + Fixed DCS 115 (016)
+#     --   --   --   37   --   467.7125  0.5  12  Proprietary pseudo-channel Ch 14 + Fixed DCS 131 (019)
+#     --   --   --   38   --   462.5750   5   25  Proprietary pseudo-channel Ch 16 + Fixed DCS 143 (022)
+#     --   --   --   39   --   462.6250   5   25  Proprietary pseudo-channel Ch 18 + Fixed DCS 156 (025)
+#     --   --   --   40   --   462.6750   5   25  Proprietary pseudo-channel Ch 20 + Fixed DCS 172 (028)
+#     --   --   --   41   --   462.7250   5   25  Proprietary pseudo-channel Ch 22 + Fixed DCS 223 (031)
+#     --   --   --   42   --   462.5625   5   25  Proprietary pseudo-channel Ch 01 + Fixed CTCSS 107.2 Hz (014)
+#     --   --   --   43   --   46?.????  ?    ??  Proprietary pseudo-channel Ch ?? + ??
+#     --   --   --   44   --   46?.????  ?    ??  Proprietary pseudo-channel Ch ?? + ??
+#     --   --   --   45   --   46?.????  ?    ??  Proprietary pseudo-channel Ch ?? + ??
+#     --   --   --   46   --   46?.????  ?    ??  Proprietary pseudo-channel Ch ?? + ??
+#     --   --   --   47   --   46?.????  ?    ??  Proprietary pseudo-channel Ch ?? + ??
+#     --   --   --   48   --   46?.????  ?    ??  Proprietary pseudo-channel Ch ?? + ??
+#     --   --   --   49   --   46?.????  ?    ??  Proprietary pseudo-channel Ch ?? + ??
+#     --   --   --   50   --   46?.????  ?    ??  Proprietary pseudo-channel Ch ?? + ??
 
 # GMRS/FRS radios sold in Canada do not have any channels above 22
 # GMRS radios sold in Canada are limted to 2 W EIRP
