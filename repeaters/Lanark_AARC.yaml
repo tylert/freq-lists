@@ -9,7 +9,7 @@
 #   https://en.wikipedia.org/wiki/Lanark_County#/media/File:Map_of_Ontario_LANARK.svg
 #   https://en.wikipedia.org/wiki/Lanark_County
 #   https://fr.wikipedia.org/wiki/Comt%C3%A9_de_Lanark
-#   https://www.lanarkcounty.ca/
+#   https://www.lanarkcounty.ca
 #   https://www.lanarkcounty.ca/en/index.aspx
 
 #                            _        _    ____   ____
@@ -19,10 +19,10 @@
 #                        /_/   \_\/_/   \_\_| \_\\____|
 
 # Almonte Amateur Radio Club
-#   https://almontearclub.ca/
-#   https://almontearclub.ca/xlx197b/
-#   http://va3aar.dyndns.org:3026/
-#   http://xlx197.dyndns.org/
+#   https://almontearclub.ca
+#   https://almontearclub.ca/xlx197b
+#   http://va3aar.dyndns.org:3026
+#   http://xlx197.dyndns.org
 
 # *** "Weekly Analog Net" Wednesdays at 21:00 Eastern on VA3ARE VHF FM ***
 # *** "Weekly Digital Voice Net" Tuesdays at 20:40 Eastern on XLX197 ***
@@ -92,9 +92,9 @@ Channels:
 #                      \_/  |_____|____/|_| |_|\___/_/   \_\
 
 # Phillip Rodney Lytle VE3HOA, VA3HOA
-#   http://ve3hoa.ddns.net:380/
-#   http://ve3hoa.ddns.net:8073/  (Kiwi SDR HF)
-#   http://xlx197.dyndns.org/
+#   http://ve3hoa.ddns.net:380
+#   http://ve3hoa.ddns.net:8073  (Kiwi SDR HF)
+#   http://xlx197.dyndns.org
 
 - Name: VE3HOZ UHF DMR  # Motorola CDM 1550LS+ Rx & Tx + 100 W amp, STM32-DVM Rev?, Raspberry Pi 4B
   Notes: Carp VE3HOA 87Q57W5M+R5

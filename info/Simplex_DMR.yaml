@@ -7,11 +7,11 @@
 #                   |_|
 
 # Common simplex channels for DMR on "high" VHF (IARU Region 2)
-# 144 to 148 MHz (primary allocation) - https://www.rac.ca/144-mhz-2m-page/
+# 144 to 148 MHz (primary allocation) - https://www.rac.ca/144-mhz-2m-page
 # Wide band digital modes = greater than 3 kHz and less than 30 kHz wide
 # Bandwidth is 12.5 kHz for DMR
 
-# Old DMR pseudo-standard - http://va3xpr.net/dmr-simplex-frequencies/
+# Old DMR pseudo-standard - http://va3xpr.net/dmr-simplex-frequencies
 # US-only DMR not-a-standard - http://trbo.org/simplex/simplex.html
 
 #                    ____                ____  __  __ ____
