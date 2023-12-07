@@ -31,7 +31,7 @@
 
 Channels:
 
-- Name: VE3STP VHF FM  # Motorola CM 200 Rx, CDM 1250 Tx + 100 W amp, Arcom RC210 controller
+- Name: VE3STP VHF FM  # Motorola XPR 8300 + 60 W amp
   Notes: Kennellys Mountain 87Q58455+W5
   Mode: FM
   RxFrequency: '147.06'
@@ -39,7 +39,7 @@ Channels:
   CtcssEncode: '114.8'
   CtcssDecode: '114.8'
 
-# - Name: VE3STP 2VHF FM  # Motorola XPR 8300 + 60 W amp
+# - Name: VE3STP 2VHF FM  # Motorola CM 200 Rx, CDM 1250 Tx + 100 W amp, Arcom RC210 controller
 #   Notes: Kennellys Mountain 87Q58455+W5
 #   Mode: FM
 #   RxFrequency: '145.39'
@@ -47,7 +47,6 @@ Channels:
 #   CtcssEncode: '114.8'
 #   CtcssDecode: '114.8'
 
-# XXX FIXME TODO  Find out what's happening with this repeater
 # - Name: VE3YYX UHF FM  # TBD @ 40 W
 #   Notes: Stones Lake -> Fergusons Lake 87Q575PC+FQ
 #   Mode: FM
