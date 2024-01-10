@@ -35,7 +35,7 @@ Channels:
   RxFrequency: '147.21'
   TxFrequencyOffset: '+0.6'
   CtcssEncode: '151.4'
-  CtcssDecode: '151.4'
+  CtcssDecode: None
 
 - Name: VE3RLR UHF FM  # Yaesu DR-1X
   Notes: Railway Museum 87P5WX2C+MJ
@@ -43,7 +43,7 @@ Channels:
   RxFrequency: '442.75'
   TxFrequencyOffset: '+5.0'
   CtcssEncode: '151.4'
-  CtcssDecode: '151.4'
+  CtcssDecode: None
 
 # #############################################################################
 
