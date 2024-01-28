@@ -35,7 +35,7 @@ Channels:
   Notes: Kennellys Mountain 87Q58455+W5
   Mode: FM
   RxFrequency: '147.06'
-  TxFrequencyOffset: '-0.6'
+  TxFrequencyOffset: '+0.6'
   CtcssEncode: '114.8'
   CtcssDecode: '114.8'
 
