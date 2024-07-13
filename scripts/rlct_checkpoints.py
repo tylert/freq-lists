@@ -9,6 +9,7 @@
 
 
 from math import asin, atan2, cos, degrees, radians, sin, sqrt
+
 # import urllib.parse
 
 import click
@@ -81,18 +82,18 @@ def decode(plus_code: str = None) -> tuple[float, float]:
 
 
 # def link(plus_code: str = None) -> str:
-    # ''' '''
-    # XXX FIXME TODO  Put in a match/case statement here and a selector!!!
-    #   https://plus.codes/${PLUS_CODE}
-    #   https://www.google.com/maps/place/${PLUS_CODE_URL_ENCODED}
-    #   https://duckduckgo.com/?ia=web&iaxm=maps&q=${LAT_LONG_URL_ENCODED}
-    #   https://www.openstreetmap.org/search/?query=${LAT_LONG_URL_ENCODED}
-    #   https://k7fry.com/grid/?qth=${MAIDENHEAD_GRID_SQUARE}
-    #   Bing too???
-    # urllib.parse.quote(whatever)
+# ''' '''
+# XXX FIXME TODO  Put in a match/case statement here and a selector!!!
+#   https://plus.codes/${PLUS_CODE}
+#   https://www.google.com/maps/place/${PLUS_CODE_URL_ENCODED}
+#   https://duckduckgo.com/?ia=web&iaxm=maps&q=${LAT_LONG_URL_ENCODED}
+#   https://www.openstreetmap.org/search/?query=${LAT_LONG_URL_ENCODED}
+#   https://k7fry.com/grid/?qth=${MAIDENHEAD_GRID_SQUARE}
+#   Bing too???
+# urllib.parse.quote(whatever)
 
-    # lat_long = f'{decode(plus_code)[0]}, {decode(plus_code)[1]}'
-    # return f'https://{lat_long}'
+# lat_long = f'{decode(plus_code)[0]}, {decode(plus_code)[1]}'
+# return f'https://{lat_long}'
 
 
 def haversine(coord1: tuple[float, float], coord2: tuple[float, float]) -> float:

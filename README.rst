@@ -36,17 +36,17 @@ Running Things
     make && source .venv/bin/activate
 
     # Create data in a format that might be useful to other folks
-    ./scripts/generate_csv.sh
+    ./scripts/generate_csv.sh  # create programming data for analog radios
 
     # Create new codeplugs for mobile and handheld radios
-    ./scripts/fetch_db.sh
-    ./scripts/generate_rdt.sh
-    ./scripts/personalize_rdt.sh
+    ./scripts/fetch_db.sh         # download a bunch of fresh contacts
+    ./scripts/generate_rdt.sh     # create generic codeplugs for anybody
+    ./scripts/personalize_rdt.sh  # create specific codeplugs for my radios
 
     # Write data to the radios
     # dmrRadio writeMD2017Users tmp/filtered.csv  # if radio is Retevis RT90
     # dmrRadio writeUV380Users tmp/filtered.csv   # if radio is Retevis RT3S
-    # dmrRadio writeCodeplug tmp/foo.rdt
+    # dmrRadio writeCodeplug tmp/foo.rdt          # upload a single codeplug
 
 
 Radio Programming Kiosks
