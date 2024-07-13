@@ -33,23 +33,23 @@ printf '{"GeneralSettings":{"IntroScreenLine2":"30231794","RadioID":"3021794",
     | gojq . > tmp/VA3DGN-even.json
 
 # Personalize mobiles:  Primary, secondary (-9, -8)
-jq --slurp '.[0] * .[1]' ${mobile_json_file} tmp/VA3DGN-odd.json \
-    | jq '.GeneralSettings.IntroScreenLine1 |= "VA3DGN-9"' \
-    | jq '.GeneralSettings.RadioName |= "VA3DGN-9"' > tmp/VA3DGN-9.json
-jq --slurp '.[0] * .[1]' ${mobile_json_file} tmp/VA3DGN-even.json \
-    | jq '.GeneralSettings.IntroScreenLine1 |= "VA3DGN-8"' \
-    | jq '.GeneralSettings.RadioName |= "VA3DGN-8"' > tmp/VA3DGN-8.json
+gojq --slurp '.[0] * .[1]' ${mobile_json_file} tmp/VA3DGN-odd.json \
+    | gojq '.GeneralSettings.IntroScreenLine1 |= "VA3DGN-9"' \
+    | gojq '.GeneralSettings.RadioName |= "VA3DGN-9"' > tmp/VA3DGN-9.json
+gojq --slurp '.[0] * .[1]' ${mobile_json_file} tmp/VA3DGN-even.json \
+    | gojq '.GeneralSettings.IntroScreenLine1 |= "VA3DGN-8"' \
+    | gojq '.GeneralSettings.RadioName |= "VA3DGN-8"' > tmp/VA3DGN-8.json
 
 # Personalize handhelds:  Primary, secondary, tertiary (-7, -6, -5)
-jq --slurp '.[0] * .[1]' ${handheld_json_file} tmp/VA3DGN-odd.json \
-    | jq '.GeneralSettings.IntroScreenLine1 |= "VA3DGN-7"' \
-    | jq '.GeneralSettings.RadioName |= "VA3DGN-7"' > tmp/VA3DGN-7.json
-jq --slurp '.[0] * .[1]' ${handheld_json_file} tmp/VA3DGN-even.json \
-    | jq '.GeneralSettings.IntroScreenLine1 |= "VA3DGN-6"' \
-    | jq '.GeneralSettings.RadioName |= "VA3DGN-6"' > tmp/VA3DGN-6.json
-jq --slurp '.[0] * .[1]' ${handheld_json_file} tmp/VA3DGN-odd.json \
-    | jq '.GeneralSettings.IntroScreenLine1 |= "VA3DGN-5"' \
-    | jq '.GeneralSettings.RadioName |= "VA3DGN-5"' > tmp/VA3DGN-5.json
+gojq --slurp '.[0] * .[1]' ${handheld_json_file} tmp/VA3DGN-odd.json \
+    | gojq '.GeneralSettings.IntroScreenLine1 |= "VA3DGN-7"' \
+    | gojq '.GeneralSettings.RadioName |= "VA3DGN-7"' > tmp/VA3DGN-7.json
+gojq --slurp '.[0] * .[1]' ${handheld_json_file} tmp/VA3DGN-even.json \
+    | gojq '.GeneralSettings.IntroScreenLine1 |= "VA3DGN-6"' \
+    | gojq '.GeneralSettings.RadioName |= "VA3DGN-6"' > tmp/VA3DGN-6.json
+gojq --slurp '.[0] * .[1]' ${handheld_json_file} tmp/VA3DGN-odd.json \
+    | gojq '.GeneralSettings.IntroScreenLine1 |= "VA3DGN-5"' \
+    | gojq '.GeneralSettings.RadioName |= "VA3DGN-5"' > tmp/VA3DGN-5.json
 
 # Generate a binary codeplug for each radio
 dmrRadio jsonToCodeplug tmp/VA3DGN-9.json tmp/VA3DGN-9-${date}.rdt
@@ -73,23 +73,23 @@ printf '{"GeneralSettings":{"IntroScreenLine2":"30231795","RadioID":"3021795",
     | gojq . > tmp/VA3VXN-even.json
 
 # Personalize mobiles:  Primary, secondary (-9, -8)
-jq --slurp '.[0] * .[1]' ${mobile_json_file} tmp/VA3VXN-odd.json \
-    | jq '.GeneralSettings.IntroScreenLine1 |= "VA3VXN-9"' \
-    | jq '.GeneralSettings.RadioName |= "VA3VXN-9"' > tmp/VA3VXN-9.json
-jq --slurp '.[0] * .[1]' ${mobile_json_file} tmp/VA3VXN-even.json \
-    | jq '.GeneralSettings.IntroScreenLine1 |= "VA3VXN-8"' \
-    | jq '.GeneralSettings.RadioName |= "VA3VXN-8"' > tmp/VA3VXN-8.json
+gojq --slurp '.[0] * .[1]' ${mobile_json_file} tmp/VA3VXN-odd.json \
+    | gojq '.GeneralSettings.IntroScreenLine1 |= "VA3VXN-9"' \
+    | gojq '.GeneralSettings.RadioName |= "VA3VXN-9"' > tmp/VA3VXN-9.json
+gojq --slurp '.[0] * .[1]' ${mobile_json_file} tmp/VA3VXN-even.json \
+    | gojq '.GeneralSettings.IntroScreenLine1 |= "VA3VXN-8"' \
+    | gojq '.GeneralSettings.RadioName |= "VA3VXN-8"' > tmp/VA3VXN-8.json
 
 # Personalize handhelds:  Primary, secondary, tertiary (-7, -6, -5)
-jq --slurp '.[0] * .[1]' ${handheld_json_file} tmp/VA3VXN-odd.json \
-    | jq '.GeneralSettings.IntroScreenLine1 |= "VA3VXN-7"' \
-    | jq '.GeneralSettings.RadioName |= "VA3VXN-7"' > tmp/VA3VXN-7.json
-jq --slurp '.[0] * .[1]' ${handheld_json_file} tmp/VA3VXN-even.json \
-    | jq '.GeneralSettings.IntroScreenLine1 |= "VA3VXN-6"' \
-    | jq '.GeneralSettings.RadioName |= "VA3VXN-6"' > tmp/VA3VXN-6.json
-jq --slurp '.[0] * .[1]' ${handheld_json_file} tmp/VA3VXN-odd.json \
-    | jq '.GeneralSettings.IntroScreenLine1 |= "VA3VXN-5"' \
-    | jq '.GeneralSettings.RadioName |= "VA3VXN-5"' > tmp/VA3VXN-5.json
+gojq --slurp '.[0] * .[1]' ${handheld_json_file} tmp/VA3VXN-odd.json \
+    | gojq '.GeneralSettings.IntroScreenLine1 |= "VA3VXN-7"' \
+    | gojq '.GeneralSettings.RadioName |= "VA3VXN-7"' > tmp/VA3VXN-7.json
+gojq --slurp '.[0] * .[1]' ${handheld_json_file} tmp/VA3VXN-even.json \
+    | gojq '.GeneralSettings.IntroScreenLine1 |= "VA3VXN-6"' \
+    | gojq '.GeneralSettings.RadioName |= "VA3VXN-6"' > tmp/VA3VXN-6.json
+gojq --slurp '.[0] * .[1]' ${handheld_json_file} tmp/VA3VXN-odd.json \
+    | gojq '.GeneralSettings.IntroScreenLine1 |= "VA3VXN-5"' \
+    | gojq '.GeneralSettings.RadioName |= "VA3VXN-5"' > tmp/VA3VXN-5.json
 
 # Generate a binary codeplug for each radio
 dmrRadio jsonToCodeplug tmp/VA3VXN-9.json tmp/VA3VXN-9-${date}.rdt

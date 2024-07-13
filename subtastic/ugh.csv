@@ -4,7 +4,7 @@ Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater 
 147.27,147.87,600 kHz,+DUP,,FM,VA3ARE,,T Sql,100.0 Hz,100.0 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,,,,FN15VD29FP Almonte at VE3CFZ
 146.64,146.04,600 kHz,-DUP,,FM,VE3KJG,,Tone,100.0 Hz,100.0 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,,,,FN15PB91SB Lavant
 145.23,144.63,600 kHz,-DUP,,NFM,VA3TEL,,T Sql,100.0 Hz,100.0 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,,,,FN14ST76TP Christie Lake
-146.955,146.355,600 kHz,-DUP,,NFM,VE3LCA,,T Sql,100.0 Hz,100.0 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,,,,FN14vvPerth-RideauFerry 
+146.955,146.355,600 kHz,-DUP,,NFM,VE3LCA,,T Sql,100.0 Hz,100.0 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,,,,FN14vvPerth-RideauFerry
 442.2,447.2,5.00 MHz,+DUP,,NFM,VE3REX,,T Sql,100.0 Hz,100.0 Hz,23,Both N,Off,10 kHz,Off,0,,,,,,,,,,FN14WU70DM Rideau Ferry
 442.4,447.4,5.00 MHz,+DUP,,FM,VE3WPO,,Tone,100.0 Hz,100.0 Hz,23,Both N,Off,10 kHz,Off,0,,,,,,,,,,FN14TQ20KL Westport
 147.21,147.81,600 kHz,+DUP,,FM,VE3RLR,,T Sql,151.4 Hz,151.4 Hz,23,Both N,Off,5 kHz,Off,0,,,,,,,,,,FN14XV66OK Railway Museum
