@@ -121,7 +121,7 @@ def process_dmr_channels(entries, channel_stub, modes_allowed=None):
                 del output['Notes']
 
             # Force things that might be integers/floats to be strings (for JSON)
-            output['RxFrequency'] = f"{entry['RxFrequency']:.5f}"
+            output['RxFrequency'] = f"{entry['RxFrequency']}"
             if 'Bandwidth' in entry.keys():
                 output['Bandwidth'] = f"{str(entry['Bandwidth'])}"
             if 'ColorCode' in entry.keys():
