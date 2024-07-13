@@ -3,12 +3,8 @@
 
 # Requires Python 3.10.x or newer (uses match-case)!!!  https://www.python.org/dev/peps/pep-0634/
 
-# XXX FIXME TODO  Use a YAML library that is pure Python??? (To zipapp the "app" maybe?)
-
 
 import json
-
-# from csv import DictReader
 
 import click
 from ruamel.yaml import YAML
@@ -68,7 +64,7 @@ retevis_channel_stub = {
 }
 
 
-def process_dmr_channels(entries, channel_stub, modes_allowed=None):
+def process_dmr_channels(entries, channel_stub, modes_allowed: str = None) -> None:
     ''' '''
     channels = []
     if entries is not None:
@@ -155,8 +151,8 @@ def process_dmr_channels(entries, channel_stub, modes_allowed=None):
 
 
 def process_human_channels_csv(
-    entries, name_max_length=8, modes_allowed=None, start_index=1
-):
+    entries, name_max_length: int = 8, modes_allowed: str = None, start_index: int = 1
+) -> None:
     ''' '''
     print('Channel,Name,Location,Mode,Frequency,Offset,Details')
 
@@ -222,8 +218,8 @@ def sanitize_chirp_channel_name(name: str = None, length: int = 8) -> str:
 
 
 def process_chirp_channels_csv(
-    entries, name_max_length=8, modes_allowed=None, start_index=1
-):
+    entries, name_max_length: int = 8, modes_allowed: str = None, start_index: int = 1
+) -> None:
     ''' '''
     # WARNING:  The CHIRP GUI has different column header names than its CSV files do
 
@@ -318,8 +314,8 @@ def process_chirp_channels_csv(
             dtcs_polarity = 'NN'
 
             # Tstep?
-            if frequency > 30:  # VHF and up
-                if frequency > 300:  # UHF and up
+            if float(frequency) > 30:  # VHF and up
+                if float(frequency) > 300:  # UHF and up
                     tstep = 6.25
                 else:
                     tstep = 5.00
@@ -327,12 +323,14 @@ def process_chirp_channels_csv(
                 tstep = 5.00
 
             print(
-                f'{location},{name},{frequency:.6f},{duplex},{offset:.6f},{tone},{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep:.2f},,{comment},,,,'
+                f'{location},{name},{frequency},{duplex},{offset},{tone},{r_tone_freq},{c_tone_freq},{dtcs_code},{dtcs_polarity},{mode},{tstep},,{comment},,,,'
             )
             location += 1
 
 
-def process_rt_systems_channels_csv(entries, name_max_length=8, modes_allowed=None):
+def process_rt_systems_channels_csv(
+    entries, name_max_length: int = 8, modes_allowed: str = None
+) -> None:
     ''' '''
     print(
         'Receive Frequency,Transmit Frequency,Offset Frequency,Offset Direction,Repeater Use,Operating Mode,Name,Sub Name,Tone Mode,CTCSS,Rx CTCSS,DCS,DCS Polarity,Skip,Step,Digital Squelch,Digital Code,Your Callsign,Rpt-1 CallSign,Rpt-2 CallSign,LatLng,Latitude,Longitude,UTC Offset,Bank,Bank Channel Number,Comment'
@@ -436,8 +434,8 @@ def process_rt_systems_channels_csv(entries, name_max_length=8, modes_allowed=No
             dtcs_polarity = 'Both N'
 
             # Tstep?
-            if rx_frequency > 30:  # VHF and up
-                if rx_frequency > 300:  # UHF and up
+            if float(rx_frequency) > 30:  # VHF and up
+                if float(rx_frequency) > 300:  # UHF and up
                     tstep = '10 kHz'
                 else:
                     tstep = '5 kHz'
@@ -494,14 +492,14 @@ def process_rt_systems_channels_csv(entries, name_max_length=8, modes_allowed=No
 )
 @click.help_option('--help', '-h')
 def main(
-    bands_allowed,
-    format,
-    input_file,
-    json_file,
-    modes_allowed,
-    name_max_length,
-    start_index,
-):
+    bands_allowed: str,
+    format: str,
+    input_file: str,
+    json_file: str,
+    modes_allowed: str,
+    name_max_length: int,
+    start_index: int,
+) -> None:
     ''' '''
     # XXX FIXME TODO  Allow the use of STDIN as the input "file"!!!
     with open(input_file) as f:
