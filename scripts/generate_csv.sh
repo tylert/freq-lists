@@ -14,7 +14,6 @@ repeaters/Lanark_RLARC.yaml
 repeaters/Leeds_and_Grenville_BARC.yaml
 repeaters/Ottawa-Gatineau_EMRG.yaml
 repeaters/Ottawa-Gatineau_KARG.yaml
-repeaters/Ottawa-Gatineau_MARG.yaml
 repeaters/Ottawa-Gatineau_OARC.yaml
 repeaters/Ottawa-Gatineau_OARDG.yaml
 repeaters/Ottawa-Gatineau_OVMRC.yaml
