@@ -24,4 +24,9 @@ Notes
     cat foo.yaml | gojq --yaml-input '.' > foo.json   # convert YAML to JSON
     cat foo.json | gojq --yaml-output '.' > foo.yaml  # convert JSON to YAML
 
+    cat foo.json | gojq -r tostring > minified.json   # minify JSON
+    cat minified.json | gojq > foo.json               # unminify JSON
+
+::
+
     cat radios/stubs.yaml 1.yaml 2.yaml ... n.yaml | gojq --yaml-input -s -f radios/merge.jq
