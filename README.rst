@@ -35,42 +35,43 @@ Running Things
     # Initial setup
     make && source .venv/bin/activate
 
-    # Create data in a format that might be useful to other folks
-    ./scripts/generate_csv.sh  # create programming data for analog radios
-
-    # Create new codeplugs for mobile and handheld radios
-    ./scripts/fetch_db.sh         # download a bunch of fresh contacts
+    # Create and upload new codeplugs
     ./scripts/generate_rdt.sh     # create generic codeplugs for anybody
     ./scripts/personalize_rdt.sh  # create specific codeplugs for my radios
+    dmrRadio writeCodeplug tmp/foo.rdt          # upload a single codeplug
 
-    # Write data to the radios
-    # dmrRadio writeMD2017Users tmp/filtered.csv  # if radio is Retevis RT90
-    # dmrRadio writeUV380Users tmp/filtered.csv   # if radio is Retevis RT3S
-    # dmrRadio writeCodeplug tmp/foo.rdt          # upload a single codeplug
+    # Fetch and upload new contacts
+    ./scripts/fetch_db.sh         # download a bunch of fresh contacts
+    dmrRadio writeMD2017Users tmp/filtered.csv  # if radio is Retevis RT90
+    dmrRadio writeUV380Users tmp/filtered.csv   # if radio is Retevis RT3S
+
+    # Produce data in a format useful for analog radios
+    ./scripts/generate_csv.sh  # create programming data for analog radios
 
 
 Radio Programming Kiosks
 ------------------------
 
+Arch-based distros (Arch Linux, EndeavourOS, etc.), on x86 and ARM::
+
+    sudo pacman --no-confirm --sync gcc git go libusb pkgconf
+    git clone https://github.com/dalefarnsworth-dmr/dmrRadio && cd dmrRadio
+    go build
+
 Debian-based distros (Debian, Ubuntu, Raspberry Pi OS, etc.), on x86 and ARM::
 
-    # Don't use the go provided by the OS as it is super old and crappy!!!
+    # Don't use the go provided by the OS as it is super old
     # Fetch an appropriate tarball from https://go.dev/dl/
+    # Install the contents of the tarball somewhere convenient
     sudo tar -C /usr/local -xvfz ${GO_TARBALL}
 
     sudo apt-get --yes install git libusb-1.0-0-dev
     git clone https://github.com/dalefarnsworth-dmr/dmrRadio && cd dmrRadio
     go build
 
-Arch-based distros (Arch Linux, etc.), on x86 and ARM::
-
-    sudo pacman --no-confirm --sync gcc git go libusb pkgconf
-    git clone https://github.com/dalefarnsworth-dmr/dmrRadio && cd dmrRadio
-    go build
-
 macOS, on x86 and ARM::
 
-    brew install go git libusb
+    brew install git go libusb
     git clone https://github.com/dalefarnsworth-dmr/dmrRadio && cd dmrRadio
     go build
 
