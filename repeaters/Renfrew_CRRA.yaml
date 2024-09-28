@@ -59,7 +59,7 @@ Channels:
 
 - Name: VE3STP UHF DSTAR  # Motorola CM 300 Rx & Tx
   Notes: Kennellys Mountain 87Q58455+W5
-  Mode: DSTAR  # Module B? / DSTAR linked to XLX197B
+  Mode: DSTAR  # Module B / DSTAR linked to XLX197B
   RxFrequency: '443.6'
   TxFrequencyOffset: '+5.0'
 
