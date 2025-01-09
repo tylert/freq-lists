@@ -9,7 +9,7 @@ date="$(date +%Y-%m-%d)"
 
 input_files='
 repeaters/Lanark_AARC.yaml
-repeaters/Lanark_LNL_ARES.yaml
+repeaters/Lanark_LNLARES.yaml
 repeaters/Lanark_RLARC.yaml
 repeaters/Ottawa-Gatineau_EMRG.yaml
 repeaters/Ottawa-Gatineau_KARG.yaml
