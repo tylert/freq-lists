@@ -12,19 +12,19 @@
 #   https://www.lanarkcounty.ca
 #   https://www.lanarkcounty.ca/en/index.aspx
 
-#                _     _   _ _          _    ____  _____ ____
-#               | |   | \ | | |        / \  |  _ \| ____/ ___|
-#               | |   |  \| | |       / _ \ | |_) |  _| \___ \
-#               | |___| |\  | |___   / ___ \|  _ <| |___ ___) |
-#               |_____|_| \_|_____| /_/   \_\_| \_\_____|____/
+#                   _     _   _ _        _    ____  _____ ____
+#                  | |   | \ | | |      / \  |  _ \| ____/ ___|
+#                  | |   |  \| | |     / _ \ | |_) |  _| \___ \
+#                  | |___| |\  | |___ / ___ \|  _ <| |___ ___) |
+#                  |_____|_| \_|_____/_/   \_\_| \_\_____|____/
 
-# Lanark and North Leeds Amateur Radio Emergency Service (LNL ARES)
+# Lanark and North Leeds Amateur Radio Emergency Service (LNLARES)
 #   https://lnlares.com  (redirected from http://lnlares.ca)
 #   https://www.ve3rlr.ca/2018/07/LNLARES.html
 #   https://www.qsl.net/ve3lca
 #   https://cneo-nceo.ca/record/kgn1773
 
-# *** "LNL ARES Net" Wednesdays at 20:00 Eastern on all RF-linked repeaters ***
+# *** "LNLARES Net" Wednesdays at 20:00 Eastern on all RF-linked repeaters ***
 # *** No YSF nets, currently ***
 
 # There is currently no internet connectivity at any of these sites
@@ -58,13 +58,13 @@ Channels:
   CtcssEncode: '100.0'
   CtcssDecode: '100.0'
 
-- Name: VE3WPO UHF FM  # Motorola MSR 2000 + Motorola GM 300 link radio + NHRC-4? repeater controller
-  Notes: Westport 87P5MJ93+FG  # Legion
-  Mode: FM
-  RxFrequency: '442.4'  # FM linked to VA3TEL VHF FM
-  TxFrequencyOffset: '+5.0'
-  CtcssEncode: '100.0'
-  CtcssDecode: None
+# - Name: VE3WPO UHF FM  # Motorola MSR 2000 + Motorola GM 300 link radio + NHRC-4? repeater controller
+#   Notes: Westport 87P5MJ93+FG  # Legion
+#   Mode: FM
+#   RxFrequency: '442.4'  # FM linked to VA3TEL VHF FM
+#   TxFrequencyOffset: '+5.0'
+#   CtcssEncode: '100.0'
+#   CtcssDecode: None
 
 # - Name: VE3HTN VHF FM  # TBD + Motorola GM 300 link radios
 #   Notes: Toledo Off-air
