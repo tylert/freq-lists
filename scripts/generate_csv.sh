@@ -16,7 +16,6 @@ repeaters/Ottawa-Gatineau_EMRG.yaml
 repeaters/Ottawa-Gatineau_KARG.yaml
 repeaters/Ottawa-Gatineau_OARC.yaml
 repeaters/Ottawa-Gatineau_OVMRC.yaml
-repeaters/Ottawa-Gatineau_VE3ORF.yaml
 repeaters/Renfrew_CRRA.yaml
 repeaters/Renfrew_RCARC.yaml
 info/RLCT_FM.yaml
