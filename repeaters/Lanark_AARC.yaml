@@ -122,16 +122,9 @@ Channels:
 # - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
 #   Notes: TBD
 #   Mode: DMR  # CCS7 ID 302??? / DMR linked to XLX197B (TS=2, TG=6)
-#   RxFrequency: '4??.?'
+#   RxFrequency: '444.4'
 #   TxFrequencyOffset: '+5.0'
-#   ColorCode: '1'
-
-# - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
-#   Notes: TBD
-#   Mode: DMR  # CCS7 ID 302??? / DMR linked to XLX197B (TS=2, TG=6)
-#   RxFrequency: '4??.?'
-#   TxFrequencyOffset: '+5.0'
-#   ColorCode: '1'
+#   ColorCode: '2'
 
 Zones: []
 ...
