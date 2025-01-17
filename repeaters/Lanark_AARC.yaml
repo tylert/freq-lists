@@ -31,14 +31,14 @@
 Channels:
 
 # FM linked to XLX197B
-# ASL 564013
-- Name: VA3AAR VHF FM  # equipment TBD
+# ASL 564013???
+- Name: VA3UHR VHF FM  # Yaesu DR-2X
   Notes: Union Hall 87Q55P64+RR
-  Mode: FM  # CCS7 ID 302070 ???
+  Mode: FM  # frequency shared with YSF
   RxFrequency: '145.55'
   TxFrequencyOffset: '-0.6'
   CtcssEncode: '88.5'
-  CtcssDecode: None  # it's supposed to have a tone on output but this doesn't work for AllStar at the moment
+  CtcssDecode: '88.5'
 
 - Name: VA3AAR UHF FM  # equipment TBD
   Notes: Fire Hall 87Q56Q9V+Q6
@@ -51,7 +51,7 @@ Channels:
 # IRLP 2280
 - Name: VA3ARE VHF FM  # Yaesu DR-1X
   Notes: Almonte VE3CFZ 87Q55Q89+29
-  Mode: FM  # AMS mode
+  Mode: FM  # frequency shared with YSF
   RxFrequency: '147.27'
   TxFrequencyOffset: '+0.6'
   CtcssEncode: '100.0'
@@ -79,9 +79,16 @@ Channels:
 
 # #############################################################################
 
+# YSF linked to XLX197B, FM too???
+- Name: VA3UHR VHF FM  # Yaesu DR-2X
+  Notes: Union Hall 87Q55P64+RR
+  Mode: YSF  # frequency shared with FM
+  RxFrequency: '145.55'
+  TxFrequencyOffset: '-0.6'
+
 - Name: VA3ARE VHF YSF  # Yaesu DR-1X
   Notes: Almonte VE3CFZ 87Q55Q89+29
-  Mode: YSF  # AMS mode
+  Mode: YSF  # frequency shared with FM
   RxFrequency: '147.27'
   TxFrequencyOffset: '+0.6'
 
