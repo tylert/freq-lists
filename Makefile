@@ -19,8 +19,8 @@ venv: $(ACTIVATE_SCRIPT)
 $(ACTIVATE_SCRIPT): requirements.txt
 	@test -d $(VENV) || $(PYTHON) -m venv $(VENV) && \
   source $(ACTIVATE_SCRIPT) && \
-  pip install --upgrade pip setuptools wheel && \
-  pip install --requirement $< && \
+  $(PYTHON) -m pip install --upgrade pip setuptools wheel && \
+  $(PYTHON) -m pip install --requirement $< && \
   touch $(ACTIVATE_SCRIPT)
 
 .PHONY: venv_upgrade
@@ -28,9 +28,9 @@ venv_upgrade:
 	@rm -rf $(VENV) && \
   $(PYTHON) -m venv $(VENV) && \
   source $(ACTIVATE_SCRIPT) && \
-  pip install --upgrade pip setuptools wheel && \
-  pip install --requirement requirements_bare.txt && \
-  pip freeze > requirements.txt && \
+  $(PYTHON) -m pip install --upgrade pip setuptools wheel && \
+  $(PYTHON) -m pip install --requirement requirements_bare.txt && \
+  $(PYTHON) -m pip freeze > requirements.txt && \
   touch $(ACTIVATE_SCRIPT)
 
 # moo: venv

@@ -26,7 +26,6 @@
 
 # *** "Weekly Analog Net" Wednesdays at 21:00 Eastern on VA3ARE VHF FM ***
 # *** "Weekly Digital Net" Tuesdays at 20:40 Eastern on XLX197 ***
-# *** No YSF nets, currently ***
 
 Channels:
 
@@ -79,7 +78,7 @@ Channels:
 
 # #############################################################################
 
-# YSF linked to XLX197B, FM too???
+# YSF linked to XLX197B
 - Name: VA3UHR VHF FM  # Yaesu DR-2X
   Notes: Union Hall 87Q55P64+RR
   Mode: YSF  # frequency shared with FM
@@ -117,14 +116,6 @@ Channels:
 #                       \_/_/   \_\____/|____/ \____|_| \_|
 
 # Tyler Tidman VA3DGN
-
-# - Name: V?3??? VHF FM  # Motorola GM 300 Rx & Tx, ???, Raspberry Pi 3B
-#   Notes: TBD
-#   Mode: FM
-#   RxFrequency: '14?.?'
-#   TxFrequencyOffset: '?0.6'
-#   CtcssEncode: '100.0'
-#   CtcssDecode: '100.0'
 
 # - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
 #   Notes: TBD
