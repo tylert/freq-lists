@@ -21,13 +21,13 @@ repeater = {
     'VE3OCE @ Alta Vista': '87Q698MQ+CCC',
     'VA3OFS @ Barrhaven': '87Q677G2+8HV',
     'VA3EMV/W @ Stittsville': '87Q6733M+RV2',
+    'VA3UHR @ Union Hall': '87Q55P64+RR',
+    'VA3AAR @ Fire Hall': '87Q56Q9V+Q6',
+    'VA3ARE @ Almonte': '87Q55Q89+29',
     'VE3KJG @ Lavant': '87Q528WJ+CH',
     'VA3TEL @ Christie Lake': '87P5RH98+P3',
     'VE3REX @ Rideau Ferry': '87P5RVPV+54',
-    'VE3WPO @ Westport': '87P5MJ93+FG',
     'VE3RLR @ Railway Museum': '87P5WX2C+MJ',
-    # 'VA3AAR @ ???': '87',
-    # 'VA3ARE @ ???': '87',
     'VE3HOZ @ Carp': '87Q57W5M+R5',
     'VA3RRD @ McVeety\'s Bay': '87P5RRP6+9VJ',
     'VE3FRG @ South Frontenac': '87P57FWC+Q4',
@@ -137,7 +137,7 @@ def bearing(coord1: tuple[float, float], coord2: tuple[float, float]) -> float:
     default='87P5VQX6+CH',  # checkpoint_classic['Last Duel']
     help='OLC point (default "87P5VQX6+CH").',
 )
-def main(location):
+def main(location) -> None:
     '''Calculate distance and bearing to repeaters and checkpoints.'''
 
     # Show distance and bearing to all repeaters from your chosen location
