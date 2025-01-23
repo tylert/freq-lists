@@ -29,8 +29,6 @@
 
 Channels:
 
-# FM linked to XLX197B
-# ASL 564013???
 - Name: VA3UHR VHF FM  # Yaesu DR-2X
   Notes: Union Hall 87Q55P64+RR
   Mode: FM  # frequency shared with YSF
@@ -42,10 +40,19 @@ Channels:
 - Name: VA3AAR UHF FM  # equipment TBD
   Notes: Fire Hall 87Q56Q9V+Q6
   Mode: FM
-  RxFrequency: '444.3'  # FM linked to VE3KJG VHF FM
+  RxFrequency: '444.3'  # linked to VE3KJG VHF FM
   TxFrequencyOffset: '+5.0'
   CtcssEncode: '100.0'
   CtcssDecode: '100.0'
+
+# ASL 564013???
+# - Name: VA3HSP UHF FM  # equipment TBD
+#   Notes: Hospital 87Q56RH6+H6
+#   Mode: FM
+#   RxFrequency: 444.225
+#   TxFrequencyOffset: '+5.0'
+#   CtcssEncode: None
+#   CtcssDecode: None
 
 # IRLP 2280
 - Name: VA3ARE VHF FM  # Yaesu DR-1X
