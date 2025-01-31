@@ -20,13 +20,13 @@
 #                         | . \  / ___ \|  _ <| |_| |
 #                         |_|\_\/_/   \_\_| \_\\____|
 
-# Kemptville Amateur Radio Group
-#   http://www.ve3ngr.ca
+# Kemptville Amateur Radio Group / North Grenville Amateur Radio Club
+#   https://ve3ngr.ca
 
 Channels:
 
 - Name: VE3NGR VHF FM  # Yaesu DR-?X
-  Notes: FN24DX Kemptville West
+  Notes: Kemptville  # FN24DX or FN25EA
   Mode: FM
   RxFrequency: '145.25'
   TxFrequencyOffset: '-0.6'
@@ -36,7 +36,7 @@ Channels:
 # #############################################################################
 
 - Name: VE3NGR VHF FM  # Yaesu DR-?X
-  Notes: FN24DX Kemptville West
+  Notes: Kemptville  # FN24DX or FN25EA
   Mode: YSF
   RxFrequency: '145.25'
   TxFrequencyOffset: '-0.6'

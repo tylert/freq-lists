@@ -64,13 +64,14 @@ Channels:
 
 # Champlain Regional Repeater Association
 #   https://champlainrepeater.ca
+#   https://champlainrepeater.ca/repeater-2
 #   http://ve3stp.org  (DEPRECATED!!!)
 
 # Site 1 at 87Q5835W+5J has a digipeter for 145.01 FM (packet) on solar power
 # Site 2 at 87Q58455+W5 is where everything else is located (mains + inet)
 
-- Name: VE3STP VHF PKT  # TBD
-  Notes: 87Q5835W+5J Kennellys Mountain
+- Name: VE3STP VHF PKT  # Kenwood TM-281
+  Notes: Kennellys Mountain 87Q5835W+5J
   Mode: FM  # FM only
   RxFrequency: '145.01'
 
@@ -91,7 +92,7 @@ Channels:
 # ======================================================================================
 
 - Name: OCEPKT VHF PKT  # Motorola Radius/Spectra mobile(s)
-  Notes: 87Q698MQ+CCC Alta Vista  # OFS Dispatch / OFS Station 35
+  Notes: Alta Vista 87Q698MQ+CCC  # OFS Dispatch / OFS Station 35
   Mode: FM  # FM only
   RxFrequency: '145.03'
 

@@ -1,14 +1,6 @@
 #!/usr/bin/env python
 
 
-#   https://openpyxl.readthedocs.io/en/stable/index.html
-#   https://www.blog.pythonlibrary.org/2021/08/11/styling-excel-cells-with-openpyxl-and-python/
-#   https://realpython.com/openpyxl-excel-spreadsheets-python/#writing-excel-spreadsheets-with-openpyxl
-#   https://stackoverflow.com/questions/13197574/openpyxl-adjust-column-width-size
-#   https://stackoverflow.com/questions/68550478/openpyxl-adding-page-number-to-footer-for-printing
-#   https://stackoverflow.com/questions/40349531/openpyxl-header-footer-cant-write-header-to-sheet
-
-
 from csv import reader
 from datetime import date
 
@@ -32,14 +24,20 @@ def drop_a_deuce(csv_filename: str = None, xlsx_filename: str = None) -> None:
     sheet.evenFooter.left.font = 'Quicksand'
     sheet.oddFooter.center.font = 'Quicksand'
     sheet.evenFooter.center.font = 'Quicksand'
+    sheet.oddFooter.right.font = 'Quicksand'
+    sheet.evenFooter.right.font = 'Quicksand'
     sheet.oddFooter.left.size = 8
     sheet.evenFooter.left.size = 8
     sheet.oddFooter.center.size = 8
     sheet.evenFooter.center.size = 8
+    sheet.oddFooter.right.size = 8
+    sheet.evenFooter.right.size = 8
     sheet.oddFooter.left.text = str(date.today())
     sheet.evenFooter.left.text = str(date.today())
     sheet.oddFooter.center.text = 'Page &P of &N'
     sheet.evenFooter.center.text = 'Page &P of &N'
+    sheet.oddFooter.right.text = ''
+    sheet.evenFooter.right.text = ''
 
     # Each row from the CSV file becomes a row in the spreadsheet
     with open(csv_filename, 'r') as csv_file:
@@ -93,10 +91,18 @@ def drop_a_deuce(csv_filename: str = None, xlsx_filename: str = None) -> None:
     default=None,
     help='Output file',
 )
-def main(input_file: str, output_file: str):
+def main(input_file: str, output_file: str) -> None:
     ''' '''
     drop_a_deuce(csv_filename=input_file, xlsx_filename=output_file)
 
 
 if __name__ == '__main__':
     main()
+
+
+#   https://openpyxl.readthedocs.io/en/stable/index.html
+#   https://www.blog.pythonlibrary.org/2021/08/11/styling-excel-cells-with-openpyxl-and-python/
+#   https://realpython.com/openpyxl-excel-spreadsheets-python/#writing-excel-spreadsheets-with-openpyxl
+#   https://stackoverflow.com/questions/13197574/openpyxl-adjust-column-width-size
+#   https://stackoverflow.com/questions/68550478/openpyxl-adding-page-number-to-footer-for-printing
+#   https://stackoverflow.com/questions/40349531/openpyxl-header-footer-cant-write-header-to-sheet
