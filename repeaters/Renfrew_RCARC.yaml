@@ -46,14 +46,6 @@ Channels:
   CtcssEncode: '100.0'
   CtcssDecode: '100.0'
 
-- Name: VE3ZRR VHF FM  # Motorola MSR 2000 @ 30 W
-  Notes: Pinnacle Hill 87Q5F7VW+3X
-  Mode: FM
-  RxFrequency: '147.12'
-  TxFrequencyOffset: '+0.6'
-  CtcssEncode: '114.8'
-  CtcssDecode: '114.8'
-
 - Name: VE3UCR VHF FM  # Motorola MSR 2000
   Notes: Foymount 87Q4CMHW+V6
   Mode: FM
@@ -67,6 +59,14 @@ Channels:
   Mode: FM
   RxFrequency: '146.79'
   TxFrequencyOffset: '-0.6'
+  CtcssEncode: '114.8'
+  CtcssDecode: '114.8'
+
+- Name: VE3ZRR VHF FM  # Motorola MSR 2000 @ 30 W
+  Notes: Renfrew 87Q5F7VW+3X  # Pinnacle Hill
+  Mode: FM
+  RxFrequency: '147.12'
+  TxFrequencyOffset: '+0.6'
   CtcssEncode: '114.8'
   CtcssDecode: '114.8'
 
