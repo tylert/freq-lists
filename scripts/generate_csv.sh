@@ -136,6 +136,7 @@ done
 
 # Produce pretty PDF handout sheets as a companion to the CSV output files
 ./scripts/handouts.py --input_file ${human_csv_file} \
-    --output_file ${human_xlsx_file}
+    --output_file ${human_xlsx_file} \
+    --tag='LNLARES/RLARC'
 libreoffice --headless --convert-to pdf:writer_pdf_Export \
     --outdir $(dirname ${human_xlsx_file}) ${human_xlsx_file}

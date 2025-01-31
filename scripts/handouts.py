@@ -10,7 +10,9 @@ from openpyxl.utils import get_column_letter
 from openpyxl.workbook import Workbook
 
 
-def drop_a_deuce(csv_filename: str = None, xlsx_filename: str = None) -> None:
+def drop_a_deuce(
+    csv_filename: str = None, xlsx_filename: str = None, note: str = None
+) -> None:
     ''' '''
     # Create a new spreadsheet and set it all up
     workbook = Workbook()
@@ -36,8 +38,8 @@ def drop_a_deuce(csv_filename: str = None, xlsx_filename: str = None) -> None:
     sheet.evenFooter.left.text = str(date.today())
     sheet.oddFooter.center.text = 'Page &P of &N'
     sheet.evenFooter.center.text = 'Page &P of &N'
-    sheet.oddFooter.right.text = ''
-    sheet.evenFooter.right.text = ''
+    sheet.oddFooter.right.text = note
+    sheet.evenFooter.right.text = note
 
     # Each row from the CSV file becomes a row in the spreadsheet
     with open(csv_filename, 'r') as csv_file:
@@ -91,9 +93,15 @@ def drop_a_deuce(csv_filename: str = None, xlsx_filename: str = None) -> None:
     default=None,
     help='Output file',
 )
-def main(input_file: str, output_file: str) -> None:
+@click.option(
+    '--tag',
+    '-t',
+    default=None,
+    help='Tag string',
+)
+def main(input_file: str, output_file: str, tag: str) -> None:
     ''' '''
-    drop_a_deuce(csv_filename=input_file, xlsx_filename=output_file)
+    drop_a_deuce(csv_filename=input_file, xlsx_filename=output_file, note=tag)
 
 
 if __name__ == '__main__':
