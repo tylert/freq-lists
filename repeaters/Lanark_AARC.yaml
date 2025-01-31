@@ -56,7 +56,7 @@ Channels:
 
 # IRLP 2280
 - Name: VA3ARE VHF FM  # Yaesu DR-1X
-  Notes: Almonte VE3CFZ 87Q55Q89+29
+  Notes: Almonte at VE3CFZ 87Q55Q89+29
   Mode: FM  # frequency shared with YSF
   RxFrequency: '147.27'
   TxFrequencyOffset: '+0.6'
