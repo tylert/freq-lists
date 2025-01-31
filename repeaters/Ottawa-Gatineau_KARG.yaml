@@ -35,7 +35,7 @@ Channels:
 
 # #############################################################################
 
-- Name: VE3NGR VHF FM  # Yaesu DR-?X
+- Name: VE3NGR VHF YSF  # Yaesu DR-?X
   Notes: Kemptville  # FN24DX or FN25EA
   Mode: YSF
   RxFrequency: '145.25'
