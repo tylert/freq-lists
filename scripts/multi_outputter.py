@@ -1,7 +1,13 @@
 #!/usr/bin/env python
 
 
-# Requires Python 3.10.x or newer (uses match-case)!!!  https://www.python.org/dev/peps/pep-0634/
+# /// script
+# requires-python = '>=3.10'
+# dependencies = [
+#   'click',
+#   'ruamel.yaml',
+# ]
+# ///
 
 
 import json

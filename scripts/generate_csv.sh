@@ -42,15 +42,12 @@ for input_file in ${input_files}; do
             --format CHIRP             \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
-            --name_max_length 8        \
-            --start_index 1            \
             > ${chirp_csv_file}
     else
         ./scripts/multi_outputter.py   \
             --format CHIRP             \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
-            --name_max_length 8        \
             --start_index $(wc -l ${chirp_csv_file} | cut -d' ' -f1) \
             | tail -n '+2' >> ${chirp_csv_file}
     fi
@@ -72,14 +69,12 @@ for input_file in ${input_files}; do
             --format RTSYS             \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
-            --name_max_length 8        \
             > ${rt_systems_csv_file}
     else
         ./scripts/multi_outputter.py   \
             --format RTSYS             \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
-            --name_max_length 8        \
             | tail -n '+2' >> ${rt_systems_csv_file}
     fi
     index=$((${index} + 1))
@@ -99,14 +94,12 @@ for input_file in ${input_files}; do
             --format HUMAN             \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
-            --name_max_length 8        \
-            --start_index 1 > ${human_csv_file}
+            > ${human_csv_file}
     else
         ./scripts/multi_outputter.py   \
             --format HUMAN             \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
-            --name_max_length 8        \
             --start_index $(wc -l ${human_csv_file} | cut -d' ' -f1) \
             | tail -n '+2' >> ${human_csv_file}
     fi
@@ -119,14 +112,12 @@ for input_file in ${input_files}; do
             --format HUMAN                \
             --input_file ${input_file}    \
             --modes_allowed DMR,DSTAR,YSF \
-            --name_max_length 8           \
-            --start_index 1 > ${human_csv_file}
+            > ${human_csv_file}
     else
         ./scripts/multi_outputter.py      \
             --format HUMAN                \
             --input_file ${input_file}    \
             --modes_allowed DMR,DSTAR,YSF \
-            --name_max_length 8           \
             --start_index $(wc -l ${human_csv_file} | cut -d' ' -f1) \
             | tail -n '+2' >> ${human_csv_file}
     fi
@@ -136,6 +127,6 @@ done
 # Produce pretty PDF handout sheets as a companion to the CSV output files
 ./scripts/handouts.py --input_file ${human_csv_file} \
     --output_file ${human_xlsx_file} \
-    --tag='LNLARES/RLARC'
+    --tag 'LNLARES/RLARC'
 libreoffice --headless --convert-to pdf:writer_pdf_Export \
     --outdir $(dirname ${human_xlsx_file}) ${human_xlsx_file}
