@@ -18,10 +18,9 @@ repeaters/Ottawa-Gatineau_OARC.yaml
 repeaters/Ottawa-Gatineau_OVMRC.yaml
 repeaters/Renfrew_CRRA.yaml
 repeaters/Renfrew_RCARC.yaml
-info/RLCT_FM.yaml
 info/Packet_FM_VHF_UHF.yaml
-subtastic/Simplex_FM.yaml
-subtastic/Lanark_County_VHF.yaml
+subtastic/Simplex_FM_VHF_UHF.yaml
+subtastic/Lanark_County_FM_AM_VHF.yaml
 '
 
 chirp_csv_file="tmp/CHIRP-${date}.csv"

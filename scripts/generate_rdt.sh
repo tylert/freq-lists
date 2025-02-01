@@ -18,8 +18,8 @@ repeaters/Ottawa-Gatineau_OVMRC.yaml
 repeaters/Renfrew_CRRA.yaml
 repeaters/Renfrew_RCARC.yaml
 info/RLCT_FM.yaml
-info/Simplex_DMR.yaml
-info/Simplex_FM.yaml
+info/Simplex_DMR_VHF_UHF.yaml
+info/Simplex_FM_VHF_UHF.yaml
 info/GMRS_FRS_FM_UHF.yaml
 info/WX_FM_VHF.yaml
 '

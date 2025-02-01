@@ -54,7 +54,7 @@ Channels:
 - Name: AMBULNCE
   Notes: County Ambulance
   Mode: FM
-  RxFrequency: '143.0'  # XXX FIXME TODO  Confirm???
+  RxFrequency: '143.0'
   RxOnly: On
 
 - Name: AIRAMBL
