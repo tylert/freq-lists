@@ -24,7 +24,7 @@ subtastic/Lanark_County_FM_AM_VHF.yaml
 '
 
 chirp_csv_file="tmp/CHIRP-${date}.csv"
-rt_systems_csv_file="tmp/RT-${date}.csv"
+rt_systems_csv_file="tmp/RTSYS-${date}.csv"
 human_csv_file="tmp/HUMAN-${date}.csv"
 human_xlsx_file="tmp/HUMAN-${date}.xlsx"
 
@@ -69,14 +69,14 @@ index=1
 for input_file in ${input_files}; do
     if [[ 1 == ${index} ]]; then
         ./scripts/multi_outputter.py   \
-            --format RT                \
+            --format RTSYS             \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
             --name_max_length 8        \
             > ${rt_systems_csv_file}
     else
         ./scripts/multi_outputter.py   \
-            --format RT                \
+            --format RTSYS             \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
             --name_max_length 8        \

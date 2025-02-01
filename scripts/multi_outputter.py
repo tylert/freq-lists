@@ -458,7 +458,7 @@ def process_rt_systems_channels_csv(
     '--format',
     '-f',
     default='CHIRP',
-    help='Desired output format for data ("CHIRP", "DMR", "HUMAN", "RT")',
+    help='Desired output format for data ("CHIRP", "DMR", "HUMAN", "RTSYS")',
 )
 @click.option(
     '--input_file',
@@ -543,7 +543,7 @@ def main(
                 modes_allowed=modes_allowed,
                 start_index=start_index,
             )
-        case 'RT':
+        case 'RTSYS':
             process_rt_systems_channels_csv(
                 entries=payload['Channels'],
                 name_max_length=name_max_length,
@@ -551,7 +551,7 @@ def main(
             )
         case _:
             print(
-                f'Format "{format_output}" is invalid.  Allowed values are:  "CHIRP", "DMR", "HUMAN", "RT"'
+                f'Format "{format_output}" is invalid.  Allowed values are:  "CHIRP", "DMR", "HUMAN", "RTSYS"'
             )
 
 
