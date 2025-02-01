@@ -46,7 +46,8 @@ sed -i 's/_.*"/"/' ${mobile_json_file}
 
 # Fix the default settings and fill in contact stubs and zone stubs
 gojq --from-file radios/Retevis_RT90.jq ${mobile_json_file} > tmp/0.json
-gojq --slurp '.[0] * .[1]' tmp/0.json radios/stubs.json > tmp/1.json
+gojq --yaml-input '.' < radios/stubs.yaml > tmp/stubs.json
+gojq --slurp '.[0] * .[1]' tmp/0.json tmp/stubs.json > tmp/1.json
 
 # Populate the codeplug channels from the input data files
 index=1
@@ -90,7 +91,8 @@ sed -i 's/_.*"/"/' ${handheld_json_file}
 
 # Fix the default settings and fill in contact stubs and zone stubs
 gojq --from-file radios/Retevis_RT3S.jq ${handheld_json_file} > tmp/0.json
-gojq --slurp '.[0] * .[1]' tmp/0.json radios/stubs.json > tmp/1.json
+gojq --yaml-input '.' < radios/stubs.yaml > tmp/stubs.json
+gojq --slurp '.[0] * .[1]' tmp/0.json tmp/stubs.json > tmp/1.json
 
 # Populate the codeplug channels from the input data files
 index=1
