@@ -32,3 +32,9 @@ Notes
     cat radios/stubs.yaml 1.yaml 2.yaml ... n.yaml | gojq --yaml-input -s -f radios/merge.jq
 
 * https://richrose.dev/posts/linux/jq/jq-json2csv  CSV output from gojq works too
+
+
+Piping
+------
+
+* https://stackoverflow.com/questions/49704456/how-to-read-from-device-when-stdin-is-pipe/49704981#49704981
