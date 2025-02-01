@@ -1,6 +1,15 @@
 #!/usr/bin/env python
 
 
+# /// script
+# requires-python = '>=3.10'
+# dependencies = [
+#   'click',
+#   'openpyxl',
+# ]
+# ///
+
+
 from csv import reader
 from datetime import date
 
