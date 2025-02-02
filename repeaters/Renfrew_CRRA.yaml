@@ -1,17 +1,4 @@
 ---
-#  ____             __
-# |  _ \ ___ _ __  / _|_ __ _____      __
-# | |_) / _ \ '_ \| |_| '__/ _ \ \ /\ / /
-# |  _ <  __/ | | |  _| | |  __/\ V  V /
-# |_| \_\___|_| |_|_| |_|  \___| \_/\_/
-
-# Renfrew County / Comté de Renfrew
-#   https://en.wikipedia.org/wiki/Renfrew_County#/media/File:Map_of_Ontario_RENFREW.svg
-#   https://en.wikipedia.org/wiki/Renfrew_County
-#   https://fr.wikipedia.org/wiki/Comt%C3%A9_de_Renfrew
-#   https://www.countyofrenfrew.on.ca
-#   https://www.countyofrenfrew.on.ca/en/index.aspx
-
 #                           ____ ____  ____      _
 #                          / ___|  _ \|  _ \    / \
 #                         | |   | |_) | |_) |  / _ \
@@ -40,14 +27,6 @@ Channels:
   CtcssEncode: '114.8'
   CtcssDecode: '114.8'
 
-# - Name: VE3STP 2VHF FM  # Motorola XPR 8300 + 60 W amp
-#   Notes: Kennellys Mountain 87Q58455+W5
-#   Mode: FM
-#   RxFrequency: '145.39'
-#   TxFrequencyOffset: '-0.6'
-#   CtcssEncode: '114.8'
-#   CtcssDecode: '114.8'
-
 # - Name: VE3YYX UHF FM  # TBD @ 40 W
 #   Notes: Stones Lake -> Fergusons Lake 87Q575PC+FQ
 #   Mode: FM
@@ -63,31 +42,6 @@ Channels:
   Mode: DSTAR  # Module B / DSTAR linked to XLX197B
   RxFrequency: '443.6'
   TxFrequencyOffset: '+5.0'
-
-# #############################################################################
-
-# - Name: VE3STP UHF DMR  # Motorola CM 300 Rx & Tx
-#   Notes: Kennellys Mountain 87Q58455+W5
-#   Mode: DMR  # CCS7 ID 302064 / DMR linked to XLX197B (TS=2, TG=6)
-#   RxFrequency: '443.6'
-#   TxFrequencyOffset: '+5.0'
-#   ColorCode: '1'
-
-# No RoIP features
-# - Name: VE3STP VHF DMR  # Motorola XPR 8300 + 60 W amp
-#   Notes: Kennellys Mountain 87Q58455+W5
-#   Mode: DMR  # CCS7 ID 302096
-#   RxFrequency: '145.39'
-#   TxFrequencyOffset: '-0.6'
-#   ColorCode: '1'
-
-# #############################################################################
-
-# - Name: VE3STP UHF YSF  # Motorola CM 300 Rx & Tx
-#   Notes: Kennellys Mountain 87Q58455+W5
-#   Mode: YSF  # YSF linked to XLX197B???
-#   RxFrequency: '443.6'
-#   TxFrequencyOffset: '+5.0'
 
 Zones: []
 ...
