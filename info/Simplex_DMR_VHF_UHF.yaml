@@ -6,8 +6,9 @@
 # |____/|_|_| |_| |_| .__/|_|\___/_/\_\    \_/  |_| |_|_|
 #                   |_|
 
-# Common simplex channels for DMR on "high" VHF (IARU Region 2)
-# 144 to 148 MHz (primary allocation) - https://www.rac.ca/144-mhz-2m-page
+# Common simplex frequencies for DMR on "high" VHF (IARU Region 2)
+# 144 to 148 MHz (primary allocation)
+# https://www.rac.ca/wp-content/uploads/2021/01/TwoMetre_Bandplan_ND2020TCA.pdf
 # Wide band digital modes = greater than 3 kHz and less than 30 kHz wide
 # Bandwidth is 12.5 kHz for DMR
 
@@ -21,8 +22,7 @@
 #                   |_____| |_| |_| |_| |____/|_|  |_|_| \_\
 
 # May also be used for DSTAR, M17, NXDN, P25, YSF, etc.
-
-# Wide band digital from 145.59 to 145.79 - 11 channels on a 20 kHz raster
+# Wide band digital from 145.59 to 145.79 - 11 frequencies on a 20 kHz raster
 # 145.51 used to be a recommended DMR simplex frequency in North America (145.79 too)
 
 Channels:
@@ -104,8 +104,8 @@ Channels:
   RepeaterSlot: '1'
   TalkGroup: '99'
 
-# Wide band digital from 147.435 to 147.585 - 6 channels on a 30 kHz raster
-# Interwoven between the FM simplex channels from 147.42 to 147.57
+# Wide band digital from 147.435 to 147.585 - 6 frequencies on a 30 kHz raster
+# Interwoven between the FM simplex frequencies from 147.42 to 147.57
 
 - Name: 147.435 DMR
   Mode: DMR
@@ -156,8 +156,9 @@ Channels:
 # |____/|_|_| |_| |_| .__/|_|\___/_/\_\  \___/|_| |_|_|
 #                   |_|
 
-# Common simplex channels for DMR on "low" UHF (IARU Region 2)
-# 430 to 450 MHz (secondary allocation) - https://www.rac.ca/432-mhz-70-cm-page/
+# Common simplex frequencies for DMR on "low" UHF (IARU Region 2)
+# 430 to 450 MHz (secondary allocation)
+# https://www.rac.ca/432-mhz-70-cm-page
 # Wide band digital modes = greater than 3 kHz and less than 30 kHz wide
 # Bandwidth is 12.5 kHz for DMR
 
