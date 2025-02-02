@@ -1,0 +1,15 @@
+---
+Channels:
+
+- Name: PKT501
+  Notes: Renfrew Packet
+  Mode: FM
+  RxFrequency: '145.01'
+
+- Name: PKT503
+  Notes: Ottawa Packet
+  Mode: FM
+  RxFrequency: '145.03'
+
+Zones: []
+...
