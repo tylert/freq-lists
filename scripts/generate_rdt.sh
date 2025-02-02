@@ -17,11 +17,11 @@ repeaters/Ottawa-Gatineau_OARC.yaml
 repeaters/Ottawa-Gatineau_OVMRC.yaml
 repeaters/Renfrew_CRRA.yaml
 repeaters/Renfrew_RCARC.yaml
-info/RLCT_FM.yaml
+info/RLCT_FM_VHF.yaml
 info/Simplex_DMR_VHF_UHF.yaml
 info/Simplex_FM_VHF_UHF.yaml
 info/GMRS_FRS_FM_UHF.yaml
-info/WX_FM_VHF.yaml
+info/Weather_FM_VHF.yaml
 '
 
 mobile_rdt_file="tmp/Retevis_RT90-${date}.rdt"
