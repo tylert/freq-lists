@@ -1,41 +1,40 @@
 ---
-
 Channels:
 
 - Name: A-SIMPLX
+  Notes: Simplex channel A
   Mode: FM
   RxFrequency: '146.55'
-  Notes: Simplex channel A
 
 - Name: B-SIMPLX
+  Notes: Simplex channel C
   Mode: FM
   RxFrequency: '146.565'
-  Notes: Simplex channel C
 
 - Name: C-SIMPLX
+  Notes: Simplex channel B
   Mode: FM
   RxFrequency: '147.42'
-  Notes: Simplex channel B
 
 - Name: D-SIMPLX
+  Notes: Simplex channel D
   Mode: FM
   RxFrequency: '446.025'
-  Notes: Simplex channel D
 
 - Name: E-SIMPLX
+  Notes: Simplex channel E
   Mode: FM
   RxFrequency: '446.05'
-  Notes: Simplex channel E
 
 - Name: CALL2M
+  Notes: 2m FM simplex calling frequency
   Mode: FM
   RxFrequency: '146.52'
-  Notes: 2m FM simplex calling frequency
 
 - Name: CALL70
+  Notes: 70cm FM simplex calling frequency
   Mode: FM
   RxFrequency: '446.0'
-  Notes: 70cm FM simplex calling frequency
 
 Zones: []
 ...
