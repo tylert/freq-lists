@@ -46,12 +46,12 @@ Channels:
 #   https://ariss.org/contact-the-iss.html
 #   https://amsat.org/amateur-radio-on-the-iss
 
-- Name: ISSPKT1 VHF PKT
+- Name: ISS VHF PKT
   Notes: Packet via ISS
   Mode: FM
   RxFrequency: '145.825'
 
-- Name: ISSPKT2 UHF PKT
+- Name: ISS UHF PKT
   Notes: Packet via ISS
   Mode: FM
   RxFrequency: '437.55'
@@ -91,7 +91,7 @@ Channels:
 # EMRG is in the process of shutting down... the following repeaters may be gone by 2026
 # ======================================================================================
 
-- Name: OCEPKT VHF PKT  # Motorola Radius/Spectra mobile(s)
+- Name: VE3OCE VHF PKT  # Motorola Radius/Spectra mobile(s)
   Notes: Alta Vista 87Q698MQ+CCC  # OFS Dispatch / OFS Station 35
   Mode: FM
   RxFrequency: '145.03'
@@ -105,111 +105,111 @@ Channels:
 # Wideband digital from 144.31 to 144.5 - 7 frequencies on a 20 kHz raster
 # 144.39 is the APRS calling frequency and 144.45 is the AM calling frequency
 
-- Name: 144.37 PKT
+- Name: PKT437
   Mode: FM
   RxFrequency: '144.37'
 
-- Name: 144.41 PKT
+- Name: PKT441
   Mode: FM
   RxFrequency: '144.41'
 
-- Name: 144.43 PKT
+- Name: PKT443
   Mode: FM
   RxFrequency: '144.43'
 
-- Name: 144.47 PKT
+- Name: PKT447
   Mode: FM
   RxFrequency: '144.47'
 
-- Name: 144.49 PKT
+- Name: PKT449
   Mode: FM
   RxFrequency: '144.49'
 
 # Wideband digital from 144.9 to 145.1 - 10 frequencies on a 20 kHz raster
 
-- Name: 144.91 PKT
+- Name: PKT491
   Mode: FM
   RxFrequency: '144.91'
 
-- Name: 144.93 PKT
+- Name: PKT493
   Mode: FM
   RxFrequency: '144.93'
 
-- Name: 144.95 PKT
+- Name: PKT495
   Mode: FM
   RxFrequency: '144.95'
 
-- Name: 144.97 PKT
+- Name: PKT497
   Mode: FM
   RxFrequency: '144.97'
 
-- Name: 144.99 PKT
+- Name: PKT499
   Mode: FM
   RxFrequency: '144.99'
 
-- Name: 145.01 PKT
+- Name: PKT501
   Mode: FM
   RxFrequency: '145.01'
 
-- Name: 145.03 PKT
+- Name: PKT503
   Mode: FM
   RxFrequency: '145.03'
 
-- Name: 145.05 PKT
+- Name: PKT505
   Mode: FM
   RxFrequency: '145.05'
 
-- Name: 145.07 PKT
+- Name: PKT507
   Mode: FM
   RxFrequency: '145.07'
 
-- Name: 145.09 PKT
+- Name: PKT509
   Mode: FM
   RxFrequency: '145.09'
 
 # Wideband digital from 145.59 to 145.79 - 11 frequencies on a 20 kHz raster
 
-- Name: 145.59 PKT
+- Name: PKT559
   Mode: FM
   RxFrequency: '145.59'
 
-- Name: 145.61 PKT
+- Name: PKT561
   Mode: FM
   RxFrequency: '145.61'
 
-- Name: 145.63 PKT
+- Name: PKT563
   Mode: FM
   RxFrequency: '145.63'
 
-- Name: 145.65 PKT
+- Name: PKT565
   Mode: FM
   RxFrequency: '145.65'
 
-- Name: 145.67 PKT
+- Name: PKT567
   Mode: FM
   RxFrequency: '145.67'
 
-- Name: 145.69 PKT
+- Name: PKT569
   Mode: FM
   RxFrequency: '145.69'
 
-- Name: 145.71 PKT
+- Name: PKT571
   Mode: FM
   RxFrequency: '145.71'
 
-- Name: 145.73 PKT
+- Name: PKT573
   Mode: FM
   RxFrequency: '145.73'
 
-- Name: 145.75 PKT
+- Name: PKT575
   Mode: FM
   RxFrequency: '145.75'
 
-- Name: 145.77 PKT
+- Name: PKT577
   Mode: FM
   RxFrequency: '145.77'
 
-- Name: 145.79 PKT
+- Name: PKT579
   Mode: FM
   RxFrequency: '145.79'
 
