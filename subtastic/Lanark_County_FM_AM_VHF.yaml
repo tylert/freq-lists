@@ -1,5 +1,4 @@
 ---
-# Lanark County EOC 87P5WP3J+5X
 Channels:
 
 - Name: CTYFIRE
@@ -73,6 +72,11 @@ Channels:
   Mode: AM
   RxFrequency: '118.8'
   RxOnly: On
+
+# Lanark County EOC 87P5WP3J+5X
+# Carleton Place and District Hospital 87Q54VR7+98
+# Perth and District Hospital 87P5WP4W+9Q
+# Smiths Falls and District Hospital 87P5WX4F+V6
 
 Zones: []
 ...
