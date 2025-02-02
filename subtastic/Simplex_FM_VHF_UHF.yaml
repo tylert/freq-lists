@@ -7,12 +7,12 @@ Channels:
   RxFrequency: '146.55'
 
 - Name: B-SIMPLX
-  Notes: Simplex channel C
+  Notes: Simplex channel B
   Mode: FM
   RxFrequency: '146.565'
 
 - Name: C-SIMPLX
-  Notes: Simplex channel B
+  Notes: Simplex channel C
   Mode: FM
   RxFrequency: '147.42'
 

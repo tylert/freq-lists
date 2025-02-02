@@ -105,24 +105,6 @@ for input_file in ${input_files}; do
     fi
     index=$((${index} + 1))
 done
-# Tack on all the digital mode channels at the end
-for input_file in ${input_files}; do
-    if [[ 1 == ${index} ]]; then
-        ./scripts/multi_outputter.py      \
-            --format HUMAN                \
-            --input_file ${input_file}    \
-            --modes_allowed DMR,DSTAR,YSF \
-            > ${human_csv_file}
-    else
-        ./scripts/multi_outputter.py      \
-            --format HUMAN                \
-            --input_file ${input_file}    \
-            --modes_allowed DMR,DSTAR,YSF \
-            --start_index $(wc -l ${human_csv_file} | cut -d' ' -f1) \
-            | tail -n '+2' >> ${human_csv_file}
-    fi
-    index=$((${index} + 1))
-done
 
 # Produce pretty PDF handout sheets as a companion to the CSV output files
 ./scripts/handouts.py --input_file ${human_csv_file} \
