@@ -1,13 +1,6 @@
 #!/usr/bin/env python
 
 
-#   https://stackoverflow.com/questions/4913349/haversine-formula-in-python-bearing-and-distance-between-two-gps-points
-#   https://plus.codes/map
-#   https://github.com/google/open-location-code
-#   https://en.wikipedia.org/wiki/Open_Location_Code
-#   https://en.wikipedia.org/wiki/Haversine_formula
-
-
 from math import asin, atan2, cos, degrees, radians, sin, sqrt
 
 # import urllib.parse
@@ -170,3 +163,10 @@ def main(location) -> None:
 
 if __name__ == '__main__':
     main()
+
+
+#   https://stackoverflow.com/questions/4913349/haversine-formula-in-python-bearing-and-distance-between-two-gps-points
+#   https://plus.codes/map
+#   https://github.com/google/open-location-code
+#   https://en.wikipedia.org/wiki/Open_Location_Code
+#   https://en.wikipedia.org/wiki/Haversine_formula

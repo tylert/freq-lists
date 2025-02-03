@@ -27,6 +27,7 @@ chirp_csv_file="tmp/CHIRP-${date}.csv"
 rt_systems_csv_file="tmp/RTSYS-${date}.csv"
 human_csv_file="tmp/HUMAN-${date}.csv"
 human_xlsx_file="tmp/HUMAN-${date}.xlsx"
+map_csv_file="tmp/MAP-${date}.csv"
 
 #   ____ _   _ ___ ____  ____
 #  / ___| | | |_ _|  _ \|  _ \
@@ -102,6 +103,26 @@ for input_file in ${input_files}; do
             --modes_allowed AM,FM,NFM  \
             --start_index $(wc -l ${human_csv_file} | cut -d' ' -f1) \
             | tail -n '+2' >> ${human_csv_file}
+    fi
+    index=$((${index} + 1))
+done
+
+# Spit out some map data
+index=1
+for input_file in ${input_files}; do
+    if [[ 1 == ${index} ]]; then
+        ./scripts/multi_outputter.py   \
+            --format MAP               \
+            --input_file ${input_file} \
+            --modes_allowed AM,FM,NFM  \
+            > ${map_csv_file}
+    else
+        ./scripts/multi_outputter.py   \
+            --format MAP               \
+            --input_file ${input_file} \
+            --modes_allowed AM,FM,NFM  \
+            --start_index $(wc -l ${map_csv_file} | cut -d' ' -f1) \
+            | tail -n '+2' >> ${map_csv_file}
     fi
     index=$((${index} + 1))
 done
