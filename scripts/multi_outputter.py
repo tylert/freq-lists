@@ -11,8 +11,10 @@
 
 
 import json
+import re
 
 import click
+from openlocationcode import openlocationcode as olc
 from ruamel.yaml import YAML
 
 
@@ -202,6 +204,43 @@ def process_human_channels_csv(
             print(
                 f'{channel},{name},{location},{mode},{frequency} MHz,{offset},{details}'
             )
+            channel += 1
+
+
+def decode_plus_code(plus_code: str = None) -> tuple[float, float]:
+    ''' '''
+    return tuple(olc.decode(plus_code).latlng())
+
+
+def process_map_channels_csv(
+    entries, modes_allowed: str = None, start_index: int = 1
+) -> None:
+
+    print('Channel,Name,Location,Latitude,Longitude')
+
+    channel = start_index
+    if entries is not None:
+        for entry in entries:
+            # Skip modes we have been told to filter out
+            if modes_allowed is not None and entry['Mode'] not in modes_allowed:
+                continue
+
+            name = entry['Name']
+            latitude = ''
+            longitude = ''
+
+            if 'Notes' in entry.keys():
+                location = entry['Notes']
+            else:
+                location = ''
+
+            if re.match(r'.*\+.*', location):
+                for foo in location.split():
+                    m = re.match(r'.*\+.*', foo)
+                latitude, longitude = decode_plus_code(m.group(0))
+
+            if latitude != '' and longitude != '':
+                print(f'{channel},{name},{location},{latitude},{longitude}')
             channel += 1
 
 
@@ -464,7 +503,7 @@ def process_rt_systems_channels_csv(
     '--format',
     '-f',
     default='CHIRP',
-    help='Desired output format for data ("CHIRP", "DMR", "HUMAN", "RTSYS")',
+    help='Desired output format for data ("CHIRP", "DMR", "HUMAN", "MAP", "RTSYS")',
 )
 @click.option(
     '--input_file',
@@ -519,6 +558,13 @@ def main(
     #         print(item)
 
     match format.upper():
+        case 'CHIRP':
+            process_chirp_channels_csv(
+                entries=payload['Channels'],
+                name_max_length=name_max_length,
+                modes_allowed=modes_allowed,
+                start_index=start_index,
+            )
         case 'DMR':
             channels = process_dmr_channels(
                 entries=payload['Channels'],
@@ -542,10 +588,9 @@ def main(
                 modes_allowed=modes_allowed,
                 start_index=start_index,
             )
-        case 'CHIRP':
-            process_chirp_channels_csv(
+        case 'MAP':
+            process_map_channels_csv(
                 entries=payload['Channels'],
-                name_max_length=name_max_length,
                 modes_allowed=modes_allowed,
                 start_index=start_index,
             )
@@ -557,7 +602,7 @@ def main(
             )
         case _:
             print(
-                f'Format "{format_output}" is invalid.  Allowed values are:  "CHIRP", "DMR", "HUMAN", "RTSYS"'
+                f'Format "{format_output}" is invalid.  Allowed values are:  "CHIRP", "DMR", "HUMAN", "MAP", "RTSYS"'
             )
 
 
