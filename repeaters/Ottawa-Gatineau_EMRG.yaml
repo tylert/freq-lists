@@ -72,7 +72,7 @@ Channels:
   CtcssDecode: '123.0'
 
 - Name: VA3EMV/P VHF FM  # Motorola Radius mobiles
-  Notes: Alta Vista 87Q698MQ+CCC  # OFS Dispatch / OFS Station 35
+  Notes: Portable
   Mode: FM
   RxFrequency: '145.11'
   TxFrequencyOffset: '-0.6'
