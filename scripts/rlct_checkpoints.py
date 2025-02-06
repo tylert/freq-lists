@@ -9,21 +9,75 @@ import click
 from openlocationcode import openlocationcode as olc
 
 
+def decode_olc(plus_code: str = None) -> tuple[float, float]:
+    ''' '''
+    return tuple(olc.decode(plus_code).latlng())
+
+
+# def link(plus_code: str = None) -> str:
+# ''' '''
+# XXX FIXME TODO  Put in a match/case statement here and a selector!!!
+#   https://plus.codes/${PLUS_CODE}
+#   https://www.google.com/maps/place/${PLUS_CODE_URL_ENCODED}
+#   https://duckduckgo.com/?ia=web&iaxm=maps&q=${LAT_LONG_URL_ENCODED}
+#   https://www.openstreetmap.org/search/?query=${LAT_LONG_URL_ENCODED}
+#   https://k7fry.com/grid/?qth=${MAIDENHEAD_GRID_SQUARE}
+#   Bing too???
+# urllib.parse.quote(whatever)
+
+# lat_long = f'{decode_olc(plus_code)[0]}, {decode_olc(plus_code)[1]}'
+# return f'https://{lat_long}'
+
+
+def haversine(coord1: tuple[float, float], coord2: tuple[float, float]) -> float:
+    '''Calculate the distance in kilometers between 2 LatLong values.'''
+    lat1, lon1 = coord1
+    lat2, lon2 = coord2
+
+    R = 6372.8  # Earth radius in kilometers
+    # R = 3959.87433  # Earth radius in miles
+
+    dLat = radians(lat2 - lat1)
+    dLon = radians(lon2 - lon1)
+    lat1 = radians(lat1)
+    lat2 = radians(lat2)
+
+    a = sin(dLat / 2) ** 2 + cos(lat1) * cos(lat2) * sin(dLon / 2) ** 2
+    c = 2 * asin(sqrt(a))
+
+    return R * c
+
+
+def bearing(coord1: tuple[float, float], coord2: tuple[float, float]) -> float:
+    '''Calculate the direction in degrees between 2 LatLong values.'''
+    lat1, lon1 = coord1
+    lat2, lon2 = coord2
+
+    bearing = degrees(
+        atan2(
+            sin(lon2 - lon1) * cos(lat2),
+            cos(lat1) * sin(lat2) - sin(lat1) * cos(lat2) * cos(lon2 - lon1),
+        )
+    )
+
+    return (bearing + 360) % 360
+
+
 repeater = {
-    'VE2CRA @ Camp Fortune': '87Q6G532+42',
-    'VE3OCE @ Alta Vista': '87Q698MQ+CCC',
-    'VA3OFS @ Barrhaven': '87Q677G2+8HV',
-    'VA3EMV/W @ Stittsville': '87Q6733M+RV2',
-    'VA3UHR @ Union Hall': '87Q55P64+RR',
-    'VA3AAR @ Fire Hall': '87Q56Q9V+Q6',
-    'VA3ARE @ Almonte': '87Q55Q89+29',
-    'VE3KJG @ Lavant': '87Q528WJ+CH',
-    'VA3TEL @ Christie Lake': '87P5RH98+P3',
-    'VE3REX @ Rideau Ferry': '87P5RVPV+54',
-    'VE3RLR @ Railway Museum': '87P5WX2C+MJ',
-    'VE3HOZ @ Carp': '87Q57W5M+R5',
-    'VA3RRD @ McVeety\'s Bay': '87P5RRP6+9VJ',
-    'VE3FRG @ South Frontenac': '87P57FWC+Q4',
+    'VE2CRA': '87Q6G532+42',
+    'VE3OCE': '87Q698MQ+CCC',
+    'VA3OFS': '87Q677G2+8HV',
+    'VA3EMV/W': '87Q6733M+RV2',
+    'VA3UHR': '87Q55P64+RR',
+    'VA3AAR': '87Q56Q9V+Q6',
+    'VA3ARE': '87Q55Q89+29',
+    'VE3KJG': '87Q528WJ+CH',
+    'VA3TEL': '87P5RH98+P3',
+    'VE3REX': '87P5RVPV+54',
+    'VE3RLR': '87P5WX2C+MJ',
+    'VE3HOZ': '87Q57W5M+R5',
+    'VA3RRD': '87P5RRP6+9VJ',
+    'VE3FRG': '87P57FWC+Q4',
     # 'VE3KBR @ ???': '87P5',
 }
 checkpoint_classic = {
@@ -69,75 +123,27 @@ checkpoint_century = {
 }
 
 
-def decode(plus_code: str = None) -> tuple[float, float]:
-    ''' '''
-    return tuple(olc.decode(plus_code).latlng())
-
-
-# def link(plus_code: str = None) -> str:
-# ''' '''
-# XXX FIXME TODO  Put in a match/case statement here and a selector!!!
-#   https://plus.codes/${PLUS_CODE}
-#   https://www.google.com/maps/place/${PLUS_CODE_URL_ENCODED}
-#   https://duckduckgo.com/?ia=web&iaxm=maps&q=${LAT_LONG_URL_ENCODED}
-#   https://www.openstreetmap.org/search/?query=${LAT_LONG_URL_ENCODED}
-#   https://k7fry.com/grid/?qth=${MAIDENHEAD_GRID_SQUARE}
-#   Bing too???
-# urllib.parse.quote(whatever)
-
-# lat_long = f'{decode(plus_code)[0]}, {decode(plus_code)[1]}'
-# return f'https://{lat_long}'
-
-
-def haversine(coord1: tuple[float, float], coord2: tuple[float, float]) -> float:
-    ''' '''
-    lat1, lon1 = coord1
-    lat2, lon2 = coord2
-
-    R = 6372.8  # Earth radius in kilometers
-    # R = 3959.87433  # Earth radius in miles
-
-    dLat = radians(lat2 - lat1)
-    dLon = radians(lon2 - lon1)
-    lat1 = radians(lat1)
-    lat2 = radians(lat2)
-
-    a = sin(dLat / 2) ** 2 + cos(lat1) * cos(lat2) * sin(dLon / 2) ** 2
-    c = 2 * asin(sqrt(a))
-
-    return R * c
-
-
-def bearing(coord1: tuple[float, float], coord2: tuple[float, float]) -> float:
-    ''' '''
-    lat1, lon1 = coord1
-    lat2, lon2 = coord2
-
-    bearing = degrees(
-        atan2(
-            sin(lon2 - lon1) * cos(lat2),
-            cos(lat1) * sin(lat2) - sin(lat1) * cos(lat2) * cos(lon2 - lon1),
-        )
-    )
-
-    return (bearing + 360) % 360
-
-
+# @click.option(
+#     '--name',
+#     '-n',
+#     default='Last Duel',  # checkpoint_classic['Last Duel']
+#     help='Name assigned to location (default "Last Duel").',
+# )
 @click.command()
 @click.option(
     '--location',
     '-l',
     default='87P5VQX6+CH',  # checkpoint_classic['Last Duel']
-    help='OLC point (default "87P5VQX6+CH").',
+    help='Coordinates of location in OLC format (default "87P5VQX6+CH").',
 )
-def main(location) -> None:
-    '''Calculate distance and bearing to repeaters and checkpoints.'''
+def main(location: str = None) -> None:
+    '''Calculate distance and direction to repeaters and checkpoints from a single location.'''
 
     # Show distance and bearing to all repeaters from your chosen location
-    print(f'Repeaters from {decode(location)} {location}')
+    print(f'From {decode_olc(location)} {location}')
     for name, plus_code in repeater.items():
         print(
-            f'{decode(plus_code)} {name} is {haversine(decode(location), decode(plus_code)):.1f} km from your location at {bearing(decode(location), decode(plus_code)):.0f}°'
+            f'{decode_olc(plus_code)} {name} is {haversine(decode_olc(location), decode_olc(plus_code)):.1f} km away at {bearing(decode_olc(location), decode_olc(plus_code)):.0f}°'
         )
 
     # Show distance and bearing from each checkpoint to the next one
@@ -146,7 +152,7 @@ def main(location) -> None:
     next_one = ('Algonquin', checkpoint_classic['Algonquin'])
     for name, plus_code in checkpoint_classic.items():
         print(
-            f'{decode(plus_code)} {name} is {haversine(decode(next_one[1]), decode(plus_code)):.1f} km from {next_one[0]} at {bearing(decode(next_one[1]), decode(plus_code)):.0f}°'
+            f'{decode_olc(plus_code)} {name} is {haversine(decode_olc(next_one[1]), decode_olc(plus_code)):.1f} km from {next_one[0]} at {bearing(decode_olc(next_one[1]), decode_olc(plus_code)):.0f}°'
         )
         next_one = (name, plus_code)
 
@@ -156,7 +162,7 @@ def main(location) -> None:
     next_one = ('Conlon Farm', checkpoint_century['Conlon Farm'])
     for name, plus_code in checkpoint_century.items():
         print(
-            f'{decode(plus_code)} {name} is {haversine(decode(next_one[1]), decode(plus_code)):.1f} km from {next_one[0]} at {bearing(decode(next_one[1]), decode(plus_code)):.0f}°'
+            f'{decode_olc(plus_code)} {name} is {haversine(decode_olc(next_one[1]), decode_olc(plus_code)):.1f} km from {next_one[0]} at {bearing(decode_olc(next_one[1]), decode_olc(plus_code)):.0f}°'
         )
         next_one = (name, plus_code)
 
