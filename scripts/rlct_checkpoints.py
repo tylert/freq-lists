@@ -1,6 +1,15 @@
 #!/usr/bin/env python
 
 
+# /// script
+# requires-python = '>=3.10'
+# dependencies = [
+#   'click',
+#   'openlocationcode',
+# ]
+# ///
+
+
 from math import asin, atan2, cos, degrees, radians, sin, sqrt
 
 # import urllib.parse
