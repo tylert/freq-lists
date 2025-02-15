@@ -14,24 +14,25 @@
 # CHU Canada - Coordinated Universal Time / Temps Universel Coordonné (UTC)
 #   https://nrc.canada.ca/en/certifications-evaluations-standards/canadas-official-time/nrc-shortwave-station-broadcasts-chu
 #   https://en.wikipedia.org/wiki/CHU_(radio_station)
+#   https://en.wikipedia.org/wiki/Shortwave_bands
 
 Channels:
 
-- Name: CHU 90M
-  Notes: 3 kW
-  Mode: AM
+- Name: CHU90M
+  Notes: 3 kW 87Q676VR+WW
+  Mode: AM  # AM with LSB suppressed; emission type H3E
   RxFrequency: '3.33'
   RxOnly: On
 
-- Name: CHU 38M
-  Notes: 5 kW
-  Mode: AM
+- Name: CHU38M
+  Notes: 5 kW 87Q676VR+WW
+  Mode: AM  # AM with LSB suppressed; emission type H3E
   RxFrequency: '7.85'
   RxOnly: On
 
-- Name: CHU 20M
-  Notes: 3 kW
-  Mode: AM
+- Name: CHU20M
+  Notes: 3 kW 87Q676VR+WW
+  Mode: AM  # AM with LSB suppressed; emission type H3E
   RxFrequency: '14.67'
   RxOnly: On
 
@@ -41,49 +42,50 @@ Channels:
 #                        \ V  V /    \ V  V /    \ V /
 #                         \_/\_/      \_/\_/      \_/
 
-# WWV and WWVB
+# WWV, WWVH and WWVB
 #   https://www.nist.gov/time-and-frequency-services/nist-radio-stations/wwv
 #   https://www.nist.gov/pml/div688/grp40/wwvb.cfm
 #   https://en.wikipedia.org/wiki/WWV_(radio_station)
 #   https://en.wikipedia.org/wiki/WWVB
+#   https://en.wikipedia.org/wiki/WWVH
 
-- Name: WWVB LF
+- Name: WWVBLF
   Notes: 70 kW
   Mode: AM
   RxFrequency: '0.06'
   RxOnly: On
 
-- Name: WWV 120M
+- Name: WWV120M
   Notes: 2.5 kW
   Mode: AM
   RxFrequency: '2.5'
   RxOnly: On
 
-- Name: WWV 60M
+- Name: WWV60M
   Notes: 10 kW
   Mode: AM
   RxFrequency: '5.0'
   RxOnly: On
 
-- Name: WWV 30M
+- Name: WWV30M
   Notes: 10 kW
   Mode: AM
   RxFrequency: '10.0'
   RxOnly: On
 
-- Name: WWV 20M
+- Name: WWV20M
   Notes: 10 kW
   Mode: AM
   RxFrequency: '15.0'
   RxOnly: On
 
-- Name: WWV 15M
+- Name: WWV14M
   Notes: 2.5 kW
   Mode: AM
   RxFrequency: '20.0'
   RxOnly: On
 
-- Name: WWV 12M
+- Name: WWV12M
   Notes: 2.5 kW
   Mode: AM
   RxFrequency: '25.0'
