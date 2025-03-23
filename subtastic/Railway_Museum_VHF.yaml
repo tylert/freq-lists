@@ -1,0 +1,17 @@
+---
+# Canadian Railroad Historical Association / Association Canadienne d'Histoire Ferroviaire (CRHA / ACHF)
+#   https://exporail.org/en/the-association/crha
+#   https://tafl.mckie.ca/?prov=QC&query=exporail
+
+Channels:
+
+- Name: CRHA MTL
+  Notes: Exporail Montreal
+  Mode: NFM
+  RxFrequency: '167.28'
+  Bandwidth: '16'
+  Power: High
+  RxOnly: On
+
+Zones: []
+...
