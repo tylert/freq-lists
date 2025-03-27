@@ -12,7 +12,7 @@ Channels:
 
 # IRLP 2332
 - Name: VE2RAO VHF FM  # equipment TBD
-  Notes: Hôpital de Hull
+  Note: Hôpital de Hull
   Mode: FM
   RxFrequency: '146.745'
   TxFrequencyOffset: '-0.6'
@@ -20,7 +20,7 @@ Channels:
   CtcssDecode: '118.8'
 
 - Name: VE2RAO UHF FM  # equipment TBD
-  Notes: Hôpital de Hull
+  Note: Hôpital de Hull
   Mode: FM
   RxFrequency: '443.95'
   TxFrequencyOffset: '+5.0'
@@ -28,7 +28,7 @@ Channels:
   CtcssDecode: '118.8'
 
 - Name: VE2RBH VHF FM  # equipment TBD
-  Notes: Ripon
+  Note: Ripon
   Mode: FM
   RxFrequency: '145.41'
   TxFrequencyOffset: '-0.6'
@@ -36,7 +36,7 @@ Channels:
   CtcssDecode: '123.0'
 
 - Name: VA2UHF UHF FM  # equipment TBD
-  Notes: Sarsfield
+  Note: Sarsfield
   Mode: FM
   RxFrequency: '444.25'
   TxFrequencyOffset: '+5.0'
@@ -45,7 +45,7 @@ Channels:
 
 # XXX FIXME TODO  Out of service?
 - Name: VE2SY VHF FM  # equipment TBD
-  Notes: ???
+  Note: ???
   Mode: FM
   RxFrequency: '147.195'
   TxFrequencyOffset: '+0.6'
@@ -56,7 +56,7 @@ Channels:
 
 # XXX FIXME TODO  Out of service?
 - Name: VE2RAO UHF DMR  # equipment TBD
-  Notes: Hôpital de Hull
+  Note: Hôpital de Hull
   Mode: DMR  # CCS7 ID 302???
   RxFrequency: '441.95'
   TxFrequencyOffset: '+5.0'

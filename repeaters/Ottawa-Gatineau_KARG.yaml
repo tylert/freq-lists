@@ -11,7 +11,7 @@
 Channels:
 
 - Name: VE3NGR VHF FM  # Yaesu DR-?X
-  Notes: Kemptville 87Q62992+87
+  Note: Kemptville 87Q62992+87
   Mode: FM
   RxFrequency: '145.25'
   TxFrequencyOffset: '-0.6'
@@ -21,7 +21,7 @@ Channels:
 # #############################################################################
 
 - Name: VE3NGR VHF YSF  # Yaesu DR-?X
-  Notes: Kemptville 87Q62992+87
+  Note: Kemptville 87Q62992+87
   Mode: YSF
   RxFrequency: '145.25'
   TxFrequencyOffset: '-0.6'

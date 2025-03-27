@@ -17,7 +17,7 @@
 Channels:
 
 - Name: VA3UHR VHF FM  # Yaesu DR-2X
-  Notes: Union Hall 87Q55P64+RR
+  Note: Union Hall 87Q55P64+RR
   Mode: FM  # frequency shared with YSF
   RxFrequency: '145.55'
   TxFrequencyOffset: '-0.6'
@@ -25,7 +25,7 @@ Channels:
   CtcssDecode: '88.5'
 
 - Name: VA3AAR UHF FM  # equipment TBD
-  Notes: Fire Hall 87Q56Q9V+Q6
+  Note: Fire Hall 87Q56Q9V+Q6
   Mode: FM
   RxFrequency: '444.3'  # linked to VE3KJG VHF FM
   TxFrequencyOffset: '+5.0'
@@ -34,7 +34,7 @@ Channels:
 
 # ASL 564013???
 # - Name: VA3HSP UHF FM  # equipment TBD
-#   Notes: Almonte Hospital 87Q56RH6+H6
+#   Note: Almonte Hospital 87Q56RH6+H6
 #   Mode: FM
 #   RxFrequency: '444.225'
 #   TxFrequencyOffset: '+5.0'
@@ -43,7 +43,7 @@ Channels:
 
 # IRLP 2280
 - Name: VA3ARE VHF FM  # Yaesu DR-1X
-  Notes: Almonte 87Q55Q89+29  # VE3CFZ
+  Note: Almonte 87Q55Q89+29  # VE3CFZ
   Mode: FM  # frequency shared with YSF
   RxFrequency: '147.27'
   TxFrequencyOffset: '+0.6'
@@ -53,19 +53,19 @@ Channels:
 # #############################################################################
 
 - Name: VA3AAR UHF DSTAR  # equipment TBD
-  Notes: Union Hall 87Q55P64+RR
+  Note: Union Hall 87Q55P64+RR
   Mode: DSTAR  # Module B / DSTAR linked to XLX197B
   RxFrequency: '444.1'
   TxFrequencyOffset: '+5.0'
 
 - Name: VA3RDD VHF DSTAR  # Icom ID-RP2000V maybe???
-  Notes: McVeety's Bay 87P5RRP6+9VJ
+  Note: McVeety's Bay 87P5RRP6+9VJ
   Mode: DSTAR  # Module C / DSTAR linked to XLX197B
   RxFrequency: '147.24'
   TxFrequencyOffset: '-0.6'
 
 - Name: VA3RDD UHF DSTAR  # Icom ID-RP4000V maybe???
-  Notes: McVeety's Bay 87P5RRP6+9VJ
+  Note: McVeety's Bay 87P5RRP6+9VJ
   Mode: DSTAR  # Module B / DSTAR linked to XLX197B
   RxFrequency: '444.8'
   TxFrequencyOffset: '+5.0'
@@ -74,13 +74,13 @@ Channels:
 
 # YSF linked to XLX197B
 - Name: VA3UHR VHF FM  # Yaesu DR-2X
-  Notes: Union Hall 87Q55P64+RR
+  Note: Union Hall 87Q55P64+RR
   Mode: YSF  # frequency shared with FM
   RxFrequency: '145.55'
   TxFrequencyOffset: '-0.6'
 
 - Name: VA3ARE VHF YSF  # Yaesu DR-1X
-  Notes: Almonte 87Q55Q89+29  # VE3CFZ
+  Note: Almonte 87Q55Q89+29  # VE3CFZ
   Mode: YSF  # frequency shared with FM
   RxFrequency: '147.27'
   TxFrequencyOffset: '+0.6'
@@ -97,7 +97,7 @@ Channels:
 #   http://xlx197.dyndns.org
 
 - Name: VE3HOZ UHF DMR  # Motorola CDM 1550LS+ Rx & Tx + 100 W amp, STM32-DVM Rev?, Raspberry Pi 4B
-  Notes: Carp 87Q57W5M+R5
+  Note: Carp 87Q57W5M+R5
   Mode: DMR  # CCS7 ID 302108 / DMR Linked to XLX197B (TS=2, TG=6)
   RxFrequency: '442.3'
   TxFrequencyOffset: '+5.0'
@@ -112,7 +112,7 @@ Channels:
 # Tyler Tidman VA3DGN
 
 # - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
-#   Notes: TBD
+#   Note: TBD
 #   Mode: DMR  # CCS7 ID 302??? / DMR linked to XLX197B (TS=2, TG=6)
 #   RxFrequency: '444.4'
 #   TxFrequencyOffset: '+5.0'

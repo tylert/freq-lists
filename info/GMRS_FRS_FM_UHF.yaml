@@ -282,7 +282,7 @@ Zones: []
 # The following is a list of possible channel values for interoperability with
 # other brands of radios (scheme A is the most common one):
 
-#     Channel Scheme           Freq      Pwr  Bw  Notes
+#     Channel Scheme           Freq      Pwr  Bw  Note
 #     A    B    C    D    E    MHz       W    kHz
 #     01   01   09   01   01   462.5625   2   25  FRS/GMRS Calling Channel
 #     02   02   10   02   02   462.5875   2   25  FRS/GMRS Geocaching Channel
@@ -374,7 +374,7 @@ Zones: []
 # - Quiet Channel or QC
 # - Quiet Tone
 
-#     Privacy Code             CTCSS  Notes
+#     Privacy Code             CTCSS  Note
 #     A    B    C    D    E    Hz
 #     000  ---  000  000  ---  OFF
 #     ---  ---  ---  ---  ---  033.0

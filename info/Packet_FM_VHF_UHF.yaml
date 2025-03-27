@@ -14,21 +14,21 @@
 Channels:
 
 - Name: APRS VHF FM
-  Notes: APRS Voice Alert North America
+  Note: APRS Voice Alert North America
   Mode: FM
   RxFrequency: '144.39'
   CtcssEncode: '100.0'
   CtcssDecode: '100.0'
 
 #- Name: APRS VHF FM
-#  Notes: APRS Voice Alert Europe
+#  Note: APRS Voice Alert Europe
 #  Mode: FM  # FM only
 #  RxFrequency: '144.8'
 #  CtcssEncode: '136.5'
 #  CtcssDecode: '136.5'
 
 - Name: APRS VHF PKT
-  Notes: APRS North America
+  Note: APRS North America
   Mode: FM
   RxFrequency: '144.39'
 
@@ -47,12 +47,12 @@ Channels:
 #   https://amsat.org/amateur-radio-on-the-iss
 
 - Name: ISS VHF PKT
-  Notes: Packet via ISS
+  Note: Packet via ISS
   Mode: FM
   RxFrequency: '145.825'
 
 - Name: ISS UHF PKT
-  Notes: Packet via ISS
+  Note: Packet via ISS
   Mode: FM
   RxFrequency: '437.55'
 

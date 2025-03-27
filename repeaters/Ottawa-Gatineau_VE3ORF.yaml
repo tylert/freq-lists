@@ -11,7 +11,7 @@
 Channels:
 
 - Name: VE3ORF VHF FM  # equipment TBD
-  Notes: Don't know where this is located
+  Note: Don't know where this is located
   Mode: FM
   RxFrequency: '146.85'
   TxFrequencyOffset: '-0.6'
@@ -19,7 +19,7 @@ Channels:
   CtcssDecode: '136.5'
 
 - Name: VE3ORF UHF FM  # equipment TBD
-  Notes: Don't know where this is located
+  Note: Don't know where this is located
   Mode: FM
   RxFrequency: '444.55'
   TxFrequencyOffset: '+5.0'
@@ -27,7 +27,7 @@ Channels:
   CtcssDecode: '151.4'
 
 - Name: VE3TST VHF FM  # equipment TBD
-  Notes: Don't know where this is located
+  Note: Don't know where this is located
   Mode: FM
   RxFrequency: '146.7'
   TxFrequencyOffset: '-0.6'
@@ -35,7 +35,7 @@ Channels:
   CtcssDecode: '136.5'
 
 - Name: VE3TST UHF FM  # equipment TBD
-  Notes: Don't know where this is located
+  Note: Don't know where this is located
   Mode: FM
   RxFrequency: '444.125'
   TxFrequencyOffset: '+5.0'
@@ -45,7 +45,7 @@ Channels:
 # #############################################################################
 
 - Name: VE3TST UHF DMR  # equipment TBD
-  Notes: Don't know where this is located
+  Note: Don't know where this is located
   Mode: DMR
   RxFrequency: '444.125'
   TxFrequencyOffset: '+5.0'
@@ -54,7 +54,7 @@ Channels:
 # #############################################################################
 
 - Name: VE3TST VHF YSF  # equipment TBD
-  Notes: Don't know where this is located
+  Note: Don't know where this is located
   Mode: YSF
   RxFrequency: '146.7'
   TxFrequencyOffset: '-0.6'

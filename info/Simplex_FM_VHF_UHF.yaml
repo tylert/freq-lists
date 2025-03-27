@@ -58,7 +58,7 @@ Channels:
 - Name: 146.52 FM
   Mode: FM
   RxFrequency: '146.52'
-  Notes: FM simplex calling frequency
+  Note: FM simplex calling frequency
 
 - Name: 146.535 FM
   Mode: FM
@@ -127,7 +127,7 @@ Channels:
 - Name: 446.0 FM
   Mode: FM
   RxFrequency: '446.0'
-  Notes: FM simplex calling frequency
+  Note: FM simplex calling frequency
 
 - Name: 446.0125 FM
   Mode: FM

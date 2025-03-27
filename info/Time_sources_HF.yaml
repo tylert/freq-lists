@@ -19,19 +19,19 @@
 Channels:
 
 - Name: CHU90M
-  Notes: 3 kW 87Q676VR+WW
+  Note: 3 kW 87Q676VR+WW
   Mode: AM  # AM with LSB suppressed; emission type H3E
   RxFrequency: '3.33'
   RxOnly: On
 
 - Name: CHU38M
-  Notes: 5 kW 87Q676VR+WW
+  Note: 5 kW 87Q676VR+WW
   Mode: AM  # AM with LSB suppressed; emission type H3E
   RxFrequency: '7.85'
   RxOnly: On
 
 - Name: CHU20M
-  Notes: 3 kW 87Q676VR+WW
+  Note: 3 kW 87Q676VR+WW
   Mode: AM  # AM with LSB suppressed; emission type H3E
   RxFrequency: '14.67'
   RxOnly: On
@@ -50,43 +50,43 @@ Channels:
 #   https://en.wikipedia.org/wiki/WWVH
 
 - Name: WWVBLF
-  Notes: 70 kW
+  Note: 70 kW
   Mode: AM
   RxFrequency: '0.06'
   RxOnly: On
 
 - Name: WWV120M
-  Notes: 2.5 kW
+  Note: 2.5 kW
   Mode: AM
   RxFrequency: '2.5'
   RxOnly: On
 
 - Name: WWV60M
-  Notes: 10 kW
+  Note: 10 kW
   Mode: AM
   RxFrequency: '5.0'
   RxOnly: On
 
 - Name: WWV30M
-  Notes: 10 kW
+  Note: 10 kW
   Mode: AM
   RxFrequency: '10.0'
   RxOnly: On
 
 - Name: WWV20M
-  Notes: 10 kW
+  Note: 10 kW
   Mode: AM
   RxFrequency: '15.0'
   RxOnly: On
 
 - Name: WWV14M
-  Notes: 2.5 kW
+  Note: 2.5 kW
   Mode: AM
   RxFrequency: '20.0'
   RxOnly: On
 
 - Name: WWV12M
-  Notes: 2.5 kW
+  Note: 2.5 kW
   Mode: AM
   RxFrequency: '25.0'
   RxOnly: On
