@@ -24,7 +24,7 @@
 Channels:
 
 - Name: VE3OCE VHF FM  # Hytera?
-  Notes: Alta Vista 87Q698MQ+CCC  # OFS Dispatch / OFS Station 35
+  Note: Alta Vista 87Q698MQ+CCC  # OFS Dispatch / OFS Station 35
   Mode: FM
   RxFrequency: '146.88'
   TxFrequencyOffset: '-0.6'
@@ -32,7 +32,7 @@ Channels:
   CtcssDecode: '136.5'
 
 - Name: VE3OCE UHF FM  # Kenwood TKR-850
-  Notes: Alta Vista 87Q698MQ+CCC  # OFS Dispatch / OFS Station 35
+  Note: Alta Vista 87Q698MQ+CCC  # OFS Dispatch / OFS Station 35
   Mode: FM
   RxFrequency: '443.8'
   TxFrequencyOffset: '+5.0'
@@ -40,7 +40,7 @@ Channels:
   CtcssDecode: '136.5'
 
 - Name: VA3OFS VHF FM  # Motorola MSR 2000
-  Notes: Barrhaven 87Q677G2+8HV  # OFS Station 44
+  Note: Barrhaven 87Q677G2+8HV  # OFS Station 44
   Mode: FM
   RxFrequency: '146.67'
   TxFrequencyOffset: '-0.6'
@@ -48,7 +48,7 @@ Channels:
   CtcssDecode: '136.5'
 
 - Name: VA3OFS UHF FM  # Kenwood TKR-850
-  Notes: Barrhaven 87Q677G2+8HV  # OFS Station 44
+  Note: Barrhaven 87Q677G2+8HV  # OFS Station 44
   Mode: FM
   RxFrequency: '444.95'
   TxFrequencyOffset: '+5.0'
@@ -56,7 +56,7 @@ Channels:
   CtcssDecode: '136.5'
 
 - Name: VA3EMV/E VHF FM  # Motorola MSR 2000
-  Notes: Orleans 87Q6FG97+52X  # OFS Station 53
+  Note: Orleans 87Q6FG97+52X  # OFS Station 53
   Mode: FM
   RxFrequency: '146.985'
   TxFrequencyOffset: '-0.6'
@@ -64,7 +64,7 @@ Channels:
   CtcssDecode: '100.0'
 
 - Name: VA3EMV/W VHF FM  # Motorola MTR 2000
-  Notes: Stittsville 87Q6733M+RV2  # OFS Station 81
+  Note: Stittsville 87Q6733M+RV2  # OFS Station 81
   Mode: FM
   RxFrequency: '145.21'
   TxFrequencyOffset: '-0.6'
@@ -72,7 +72,7 @@ Channels:
   CtcssDecode: '123.0'
 
 - Name: VA3EMV/P VHF FM  # Motorola Radius mobiles
-  Notes: Portable
+  Note: Portable
   Mode: FM
   RxFrequency: '145.11'
   TxFrequencyOffset: '-0.6'

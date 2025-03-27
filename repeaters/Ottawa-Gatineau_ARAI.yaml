@@ -11,7 +11,7 @@
 Channels:
 
 - Name: VE2REH VHF FM  # equipment TBD
-  Notes: Pakenham
+  Note: Pakenham
   Mode: FM
   RxFrequency: '145.33'
   TxFrequencyOffset: '-0.6'
@@ -19,7 +19,7 @@ Channels:
   CtcssDecode: '110.9'
 
 - Name: VE2REH 2VHF FM  # equipment TBD
-  Notes: Gatineau-Est  # Buckingham?
+  Note: Gatineau-Est  # Buckingham?
   Mode: FM
   RxFrequency: '145.49'
   TxFrequencyOffset: '-0.6'
@@ -27,7 +27,7 @@ Channels:
   CtcssDecode: '110.9'
 
 - Name: VE2REH 3VHF FM  # equipment TBD
-  Notes: Chelsea  # Camp Fortune?
+  Note: Chelsea  # Camp Fortune?
   Mode: FM
   RxFrequency: '147.36'
   TxFrequencyOffset: '+0.6'
@@ -53,21 +53,21 @@ Channels:
 # #############################################################################
 
 - Name: VE2REH UHF DMR  # Hytera RD982
-  Notes: Gatineau
+  Note: Gatineau
   Mode: DMR  # CCS7 ID 302354
   RxFrequency: '442.65'
   TxFrequencyOffset: '+5.0'
   ColorCode: '1'
 
 - Name: VE2REH UHF DMR  # equipment TBD
-  Notes: Mont-Laurier
+  Note: Mont-Laurier
   Mode: DMR  # CCS7 ID 302043
   RxFrequency: '444.15'
   TxFrequencyOffset: '+5.0'
   ColorCode: '1'
 
 - Name: VE2REH UHF DMR  # Motorola XPR 8300
-  Notes: L'Ange-Guardien
+  Note: L'Ange-Guardien
   Mode: DMR  # CCS7 ID 302356
   RxFrequency: '442.55'
   TxFrequencyOffset: '+5.0'

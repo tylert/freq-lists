@@ -1,0 +1,12 @@
+---
+# https://en.wikipedia.org/wiki/LPD433
+Channels:
+
+- Name:
+  Note:
+  Mode:
+  RxFrequency:
+  RxOnly: On
+
+Zones: []
+...

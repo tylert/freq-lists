@@ -6,7 +6,7 @@
 Channels:
 
 - Name: CRHA MTL
-  Notes: Exporail Montreal
+  Note: Exporail Montreal
   Mode: NFM
   RxFrequency: '167.28'
   Bandwidth: '16'

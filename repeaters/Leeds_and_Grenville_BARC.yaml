@@ -12,7 +12,7 @@ Channels:
 
 # VA3BRC?
 - Name: VA3LGA VHF FM  # equipment TBD
-  Notes: Ivy Lea 87P692XG+WP6
+  Note: Ivy Lea 87P692XG+WP6
   Mode: FM
   RxFrequency: '146.625'
   TxFrequencyOffset: '-0.6'

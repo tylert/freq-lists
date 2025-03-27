@@ -4,92 +4,92 @@
 Channels:
 
 - Name: ARES-A
-  Notes: Alfa channel
+  Note: Alfa channel
   Mode: LSB
   RxFrequency: '3.675'
 
 - Name: ARES-B
-  Notes: Bravo channel
+  Note: Bravo channel
   Mode: LSB
   RxFrequency: '7.135'
 
 - Name: ARES-C
-  Notes: Charlie channel
+  Note: Charlie channel
   Mode: USB
   RxFrequency: '14.135'
 
 - Name: ARES-D
-  Notes: Delta channel
+  Note: Delta channel
   Mode: USB
   RxFrequency: '18.135'
 
 - Name: ARES-E
-  Notes: Echo channel
+  Note: Echo channel
   Mode: USB
   RxFrequency: '21.135'
 
 - Name: ARES-F
-  Notes: Foxtrot channel
+  Note: Foxtrot channel
   Mode: USB
   RxFrequency: '28.235'
 
 - Name: ARES-G
-  Notes: Golf channel
+  Note: Golf channel
   Mode: CW
   RxFrequency: '3.535'
 
 - Name: ARES-H
-  Notes: Hotel channel
+  Note: Hotel channel
   Mode: CW
   RxFrequency: '7.035'
 
 - Name: ARES-I
-  Notes: India channel
+  Note: India channel
   Mode: CW
   RxFrequency: '14.035'
 
 - Name: ARES-J
-  Notes: Juliet channel
+  Note: Juliet channel
   Mode: CW
   RxFrequency: '18.075'
 
 - Name: ARES-K
-  Notes: Kilo channel
+  Note: Kilo channel
   Mode: CW
   RxFrequency: '21.035'
 
 - Name: ARES-L
-  Notes: Lima channel
+  Note: Lima channel
   Mode: CW
   RxFrequency: '28.035'
 
 - Name: ARES-M
-  Notes: Mike channel
+  Note: Mike channel
   Mode: LSB
   RxFrequency: '3.596'
 
 - Name: ARES-N
-  Notes: November channel
+  Note: November channel
   Mode: LSB
   RxFrequency: '7.096'
 
 - Name: ARES-O
-  Notes: Oscar channel
+  Note: Oscar channel
   Mode: USB
   RxFrequency: '14.096'
 
 - Name: ARES-P
-  Notes: Papa channel
+  Note: Papa channel
   Mode: USB
   RxFrequency: '18.096'
 
 - Name: ARES-Q
-  Notes: Quebec channel
+  Note: Quebec channel
   Mode: USB
   RxFrequency: '21.096'
 
 - Name: ARES-R
-  Notes: Romeo channel
+  Note: Romeo channel
   Mode: USB
   RxFrequency: '28.096'
 
