@@ -1,12 +1,421 @@
 ---
-# https://en.wikipedia.org/wiki/LPD433
+#   https://en.wikipedia.org/wiki/LPD433
+
 Channels:
 
-- Name:
-  Note:
-  Mode:
-  RxFrequency:
+- Name: LPD01
+  Mode: FM
+  RxFrequency: '433.075'
   RxOnly: On
+  Power: Low
+
+- Name: LPD02
+  Mode: FM
+  RxFrequency: '433.1'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD03
+  Mode: FM
+  RxFrequency: '433.125'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD04
+  Mode: FM
+  RxFrequency: '433.15'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD05
+  Mode: FM
+  RxFrequency: '433.175'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD06
+  Mode: FM
+  RxFrequency: '433.2'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD07
+  Mode: FM
+  RxFrequency: '433.225'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD08
+  Mode: FM
+  RxFrequency: '433.25'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD09
+  Mode: FM
+  RxFrequency: '433.275'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD10
+  Mode: FM
+  RxFrequency: '433.3'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD11
+  Mode: FM
+  RxFrequency: '433.325'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD12
+  Mode: FM
+  RxFrequency: '433.35'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD13
+  Mode: FM
+  RxFrequency: '433.375'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD14
+  Mode: FM
+  RxFrequency: '433.4'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD15
+  Mode: FM
+  RxFrequency: '433.425'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD16
+  Mode: FM
+  RxFrequency: '433.45'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD17
+  Mode: FM
+  RxFrequency: '433.475'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD18
+  Mode: FM
+  RxFrequency: '433.5'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD19
+  Mode: FM
+  RxFrequency: '433.525'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD20
+  Mode: FM
+  RxFrequency: '433.55'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD21
+  Mode: FM
+  RxFrequency: '433.575'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD22
+  Mode: FM
+  RxFrequency: '433.6'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD23
+  Mode: FM
+  RxFrequency: '433.625'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD24
+  Mode: FM
+  RxFrequency: '433.65'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD25
+  Mode: FM
+  RxFrequency: '433.675'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD26
+  Mode: FM
+  RxFrequency: '433.7'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD27
+  Mode: FM
+  RxFrequency: '433.725'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD28
+  Mode: FM
+  RxFrequency: '433.75'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD29
+  Mode: FM
+  RxFrequency: '433.775'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD30
+  Mode: FM
+  RxFrequency: '433.8'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD31
+  Mode: FM
+  RxFrequency: '433.825'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD32
+  Mode: FM
+  RxFrequency: '433.85'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD33
+  Mode: FM
+  RxFrequency: '433.875'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD34
+  Mode: FM
+  RxFrequency: '433.9'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD35
+  Mode: FM
+  RxFrequency: '433.925'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD36
+  Mode: FM
+  RxFrequency: '433.95'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD37
+  Mode: FM
+  RxFrequency: '433.975'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD38
+  Mode: FM
+  RxFrequency: '434.0'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD39
+  Mode: FM
+  RxFrequency: '434.025'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD40
+  Mode: FM
+  RxFrequency: '434.05'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD41
+  Mode: FM
+  RxFrequency: '434.075'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD42
+  Mode: FM
+  RxFrequency: '434.1'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD43
+  Mode: FM
+  RxFrequency: '434.125'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD44
+  Mode: FM
+  RxFrequency: '434.15'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD45
+  Mode: FM
+  RxFrequency: '434.175'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD46
+  Mode: FM
+  RxFrequency: '434.2'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD47
+  Mode: FM
+  RxFrequency: '434.225'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD48
+  Mode: FM
+  RxFrequency: '434.25'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD49
+  Mode: FM
+  RxFrequency: '434.275'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD50
+  Mode: FM
+  RxFrequency: '434.3'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD51
+  Mode: FM
+  RxFrequency: '434.325'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD52
+  Mode: FM
+  RxFrequency: '434.35'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD53
+  Mode: FM
+  RxFrequency: '434.375'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD54
+  Mode: FM
+  RxFrequency: '434.4'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD55
+  Mode: FM
+  RxFrequency: '434.425'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD56
+  Mode: FM
+  RxFrequency: '434.45'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD57
+  Mode: FM
+  RxFrequency: '434.475'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD58
+  Mode: FM
+  RxFrequency: '434.5'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD59
+  Mode: FM
+  RxFrequency: '434.525'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD60
+  Mode: FM
+  RxFrequency: '434.55'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD61
+  Mode: FM
+  RxFrequency: '434.575'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD62
+  Mode: FM
+  RxFrequency: '434.6'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD63
+  Mode: FM
+  RxFrequency: '434.625'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD64
+  Mode: FM
+  RxFrequency: '434.65'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD65
+  Mode: FM
+  RxFrequency: '434.675'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD66
+  Mode: FM
+  RxFrequency: '434.7'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD67
+  Mode: FM
+  RxFrequency: '434.725'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD68
+  Mode: FM
+  RxFrequency: '434.75'
+  RxOnly: On
+  Power: Low
+
+- Name: LPD69
+  Mode: FM
+  RxFrequency: '434.775'
+  RxOnly: On
+  Power: Low
 
 Zones: []
 ...
