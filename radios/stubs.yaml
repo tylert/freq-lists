@@ -1,92 +1,71 @@
 ---
 Channels: []
 Contacts:
-  - CallID: '2'
-    CallReceiveTone: No
-    CallType: Group
-    Name: 2 Local
-  - CallID: '6'
-    CallReceiveTone: No
-    CallType: Group
-    Name: 6 Cluster
-  - CallID: '9'
-    CallReceiveTone: No
-    CallType: Group
-    Name: 9 Local
-  - CallID: '99'
-    CallReceiveTone: No
-    CallType: Group
-    Name: 99 Simplex
-  - CallID: '302'
-    CallReceiveTone: No
-    CallType: Group
-    Name: 302 Canada
-  - CallID: '3023'
-    CallReceiveTone: No
-    CallType: Group
-    Name: 3023 Ontario
-  - CallID: '9990'
-    CallReceiveTone: No
-    CallType: Private
-    Name: 9990 Parrot
-  - CallID: '98638'
-    CallReceiveTone: No
-    CallType: Group
-    Name: 98638 WVNET
+- CallID: '2'
+  CallReceiveTone: No
+  CallType: Group
+  Name: 2 Local
+- CallID: '6'
+  CallReceiveTone: No
+  CallType: Group
+  Name: 6 Cluster
+- CallID: '9'
+  CallReceiveTone: No
+  CallType: Group
+  Name: 9 Local
+- CallID: '99'
+  CallReceiveTone: No
+  CallType: Group
+  Name: 99 Simplex
+- CallID: '302'
+  CallReceiveTone: No
+  CallType: Group
+  Name: 302 Canada
+- CallID: '3023'
+  CallReceiveTone: No
+  CallType: Group
+  Name: 3023 Ontario
+- CallID: '9990'
+  CallReceiveTone: No
+  CallType: Private
+  Name: 9990 Parrot
+- CallID: '98638'
+  CallReceiveTone: No
+  CallType: Group
+  Name: 98638 WVNET
 GroupLists:
-  - Contact:
-      - 2 Local
-    Name: 2 Local
-  - Contact:
-      - 6 Cluster
-    Name: 6 Cluster
-  - Contact:
-      - 9 Local
-    Name: 9 Local
-  - Contact:
-      - 99 Simplex
-    Name: 99 Simplex
-  - Contact:
-      - 302 Canada
-    Name: 302 Canada
-  - Contact:
-      - 3023 Ontario
-    Name: 3023 Ontario
-  - Contact:
-      - 9990 Parrot
-    Name: 9990 Parrot
-  - Contact:
-      - 98638 WVNET
-    Name: 98638 WVNET
+- Contact:
+  - 2 Local
+  Name: 2 Local
+- Contact:
+  - 6 Cluster
+  Name: 6 Cluster
+- Contact:
+  - 9 Local
+  Name: 9 Local
+- Contact:
+  - 99 Simplex
+  Name: 99 Simplex
+- Contact:
+  - 302 Canada
+  Name: 302 Canada
+- Contact:
+  - 3023 Ontario
+  Name: 3023 Ontario
+- Contact:
+  - 9990 Parrot
+  Name: 9990 Parrot
+- Contact:
+  - 98638 WVNET
+  Name: 98638 WVNET
 Zones:
-  - ChannelA: []
-    ChannelB: []
-    Name: 1st DMR
-  - ChannelA: []
-    ChannelB: []
-    Name: 2nd DMR
-  - ChannelA: []
-    ChannelB: []
-    Name: 3rd DMR
-  - ChannelA: []
-    ChannelB: []
-    Name: 4th DMR
-  - ChannelA: []
-    ChannelB: []
-    Name: 5th DMR
-  - ChannelA: []
-    ChannelB: []
-    Name: DMR Simplex
-  - ChannelA: []
-    ChannelB: []
-    Name: FM Repeaters
-  - ChannelA: []
-    ChannelB: []
-    Name: FM Simplex
-  - ChannelA: []
-    ChannelB: []
-    Name: GMRS/FRS
-  - ChannelA: []
-    ChannelB: []
-    Name: WX Info
+- ChannelA: []
+  ChannelB: []
+  Name: DMR Simplex
+- ChannelA: []
+  ChannelB: []
+  Name: FM Simplex
+- ChannelA: []
+  ChannelB: []
+  Name: WX Info
 ...

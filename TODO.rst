@@ -5,15 +5,21 @@ Libs
 * "encoding/json" stdlib stuff  to work with JSON files
 * https://github.com/goccy/go-yaml  to work with YAML files
 * https://github.com/go-yaml/yaml  to work with YAML files
-* https://github.com/qax-os/excelize  to work with XLSX files
-* https://github.com/unidoc/unioffice  to work with XLSX files
 * https://github.com/bitfield/script  to rule them all and in the darkness bind them
+
+
+Typst
+-----
+
+* https://typst.app/docs/reference/model/table
+* https://typst.app/docs/reference/data-loading/csv
+* https://forum.typst.app/t/displaying-specific-data-from-csv-file/1283/5
+* https://typst.app/universe/package/tabut
 
 
 Notes
 -----
 
-* Figure out how to do the same "jq" thing with https://github.com/itchyny/gojq instead
 * Ensure we aren't doing anything incompatible with https://github.com/itchyny/gojq#difference-to-jq
 * Check the docs at https://github.com/jqlang/jq/releases/tag/jq-1.7 too
 

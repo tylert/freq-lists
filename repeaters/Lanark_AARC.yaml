@@ -73,7 +73,7 @@ Channels:
 # #############################################################################
 
 # YSF linked to XLX197B
-- Name: VA3UHR VHF FM  # Yaesu DR-2X
+- Name: VA3UHR VHF YSF  # Yaesu DR-2X
   Note: Union Hall 87Q55P64+RR
   Mode: YSF  # frequency shared with FM
   RxFrequency: '145.55'
@@ -118,5 +118,11 @@ Channels:
 #   TxFrequencyOffset: '+5.0'
 #   ColorCode: '2'
 
-Zones: []
+Zones:
+- ChannelA:
+  - VA3UHR VHF FM
+  - VA3AAR UHF FM
+  - VA3ARE VHF FM
+  ChannelB: []
+  Name: FM Repeaters
 ...
