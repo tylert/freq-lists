@@ -5,112 +5,96 @@ Channels:
 
 - Name: PMR01
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.00625'
   RxOnly: On
   Power: Low
 
 - Name: PMR02
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.01875'
   RxOnly: On
   Power: Low
 
 - Name: PMR03
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.03125'
   RxOnly: On
   Power: Low
 
 - Name: PMR04
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.04375'
   RxOnly: On
   Power: Low
 
 - Name: PMR05
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.05625'
   RxOnly: On
   Power: Low
 
 - Name: PMR06
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.06875'
   RxOnly: On
   Power: Low
 
 - Name: PMR07
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.08125'
   RxOnly: On
   Power: Low
 
 - Name: PMR08
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.09375'
   RxOnly: On
   Power: Low
 
 - Name: PMR09
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.10625'
   RxOnly: On
   Power: Low
 
 - Name: PMR10
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.11875'
   RxOnly: On
   Power: Low
 
 - Name: PMR11
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.13125'
   RxOnly: On
   Power: Low
 
 - Name: PMR12
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.14375'
   RxOnly: On
   Power: Low
 
 - Name: PMR13
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.15625'
   RxOnly: On
   Power: Low
 
 - Name: PMR14
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.16875'
   RxOnly: On
   Power: Low
 
 - Name: PMR15
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.18125'
   RxOnly: On
   Power: Low
 
 - Name: PMR16
   Mode: NFM
-  Bandwitdh: '12.5'
   RxFrequency: '446.19375'
   RxOnly: On
   Power: Low
@@ -120,224 +104,192 @@ Channels:
 
 # - Name: dPMR01
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.003125'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR02
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.009375'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR03
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.015625'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR04
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.021875'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR05
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.028125'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR06
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.034375'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR07
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.040625'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR08
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.046875'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR09
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.053125'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR10
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.059375'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR11
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.065625'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR12
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.071875'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR13
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.078125'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR14
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.084375'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR15
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.090625'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR16
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.096875'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR17
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.103125'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR18
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.109375'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR19
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.115625'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR20
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.121875'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR21
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.128125'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR22
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.134375'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR23
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.140625'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR24
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.146875'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR25
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.153125'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR26
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.159375'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR27
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.165625'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR28
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.171875'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR29
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.178125'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR30
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.184375'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR31
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.190625'
 #   RxOnly: On
 #   Power: Low
 
 # - Name: dPMR32
 #   Mode: DMR
-#   Bandwidth: '12.5'
 #   RxFrequency: '446.196875'
 #   RxOnly: On
 #   Power: Low
