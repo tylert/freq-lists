@@ -61,7 +61,7 @@ Arch-based distros (Arch Linux, EndeavourOS, etc.), on x86 and ARM::
 Debian-based distros (Debian, Ubuntu, Raspberry Pi OS, etc.), on x86 and ARM::
 
     # Don't use the go provided by the OS as it is super old
-    # Fetch an appropriate tarball from https://go.dev/dl/
+    # Fetch an appropriate tarball from https://go.dev/dl
     # Install the contents of the tarball somewhere convenient
     sudo tar -C /usr/local -xvfz ${GO_TARBALL}
 
@@ -77,8 +77,8 @@ macOS, on x86 and ARM::
 
 Windows users should probably just go fetch the pre-built (x86) binaries
 directly from
-https://www.farnsworth.org/dale/codeplug/dmrRadio/downloads/windows and
-https://www.farnsworth.org/dale/codeplug/editcp/downloads/windows.
+https://farnsworth.org/dale/codeplug/dmrRadio/downloads/windows and
+https://farnsworth.org/dale/codeplug/editcp/downloads/windows.
 
 
 Converting Existing Codeplugs To Templates
@@ -101,7 +101,7 @@ Generating Codeplugs From Templates
     # ========
 
     # Create a data file containing your specific values
-    cat << EOF > VA3DGN.conf
+    cat << EOF > VA3DGN.json
     {
       "GeneralSettings": {
         "IntroScreenLine1": "VA3DGN",
@@ -122,7 +122,7 @@ Starting a New Codeplug
 ::
 
     # Create a brand new, empty codeplug
-    dmrRadio newCodeplug -model RT3S -freq "400-480_136-174" new.rdt
+    dmrRadio newCodeplug -model RT3S -freq '400-480_136-174' new.rdt
 
     # Make it even emptier still
     dmrRadio codeplugToJSON new.rdt new.json
@@ -144,10 +144,10 @@ Retevis RT3S DFU mode uses top side key + PTT + twist power knob.
 
 * https://www.retevissolutions.com/rt90-dmr-radio
 * https://www.retevissolutions.com/rt3s-dmr-radio#A9110F
-* http://miklor.com/COM/Review_MD9600.php
-* http://miklor.com/COM/Review_UV380.php
+* https://miklor.com/COM/Review_MD9600.php
+* https://miklor.com/COM/Review_UV380.php
 * https://www.amateurradio.com/mobile-dc-power-one-fuse-or-two
-* http://www.emrg.ca/EMRG-412_12VDC_for_the_Radio_Amateur.pdf
+* http://emrg.ca/EMRG-412_12VDC_for_the_Radio_Amateur.pdf
 
 
 Talkgroups
@@ -160,10 +160,6 @@ Talkgroups
 
 Hotspots and Tuning
 -------------------
-
-::
-
-    VE3YXY -> 445.225
 
 * https://www.ailunce.com/blog/Set-up-MMDVM-DMR-Hotspot-to-work-with-Ailunce-HD1
 * https://www.ailunce.com/blog/How-to-set-Rx-Tx-Offset
@@ -200,10 +196,10 @@ Linking and Transcoding and Repeater Building
 * https://maxonamerica.com/product/tm-8000-series-mobile-radio
 * https://www.fleetwooddp.com
 * https://www.repeater-builder.com/products/stm32-dvm.html
-* http://www.masterscommunications.com/products/radio-adapter/ra-index.html
-* http://www.masterscommunications.com/products/radio-adapter/ra42.html
-* http://www.masterscommunications.com/products/radio-adapter/ra40.html
-* http://www.masterscommunications.com/products/radio-adapter/ra35.html
+* https://www.masterscommunications.com/products/radio-adapter/ra-index.html
+* https://www.masterscommunications.com/products/radio-adapter/ra42.html
+* https://www.masterscommunications.com/products/radio-adapter/ra40.html
+* https://www.masterscommunications.com/products/radio-adapter/ra35.html
 * https://www.repeater-builder.com/products/usb-rim.html
 * https://www.repeater-builder.com/products/usb-rim-lite.html
 * https://www.arkcorporation.us/blogs/news/48712645-cool-diy-battery-box-on-reddit
@@ -273,7 +269,7 @@ Linking and Transcoding and Repeater Building
 Firmware and CPS
 ----------------
 
-* https://www.farnsworth.org/dale/codeplug/editcp  main page for Editcp
+* https://farnsworth.org/dale/codeplug/editcp  main page for Editcp
 * https://github.com/dalefarnsworth-dmr  source code for editcp, dmrRadio, libraries, etc.
 * https://dm3mat.darc.de/qdmr  main page for qdmr
 * https://github.com/hmatuschek/qdmr  source code for qdmr
