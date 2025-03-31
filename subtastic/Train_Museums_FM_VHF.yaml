@@ -9,7 +9,7 @@ Channels:
   Note: Exporail Montreal
   Mode: NFM
   RxFrequency: '167.28'
-  Bandwidth: '16'
+  Bandwidth: '20'
   Power: High
   RxOnly: On
 
