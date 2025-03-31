@@ -6,16 +6,8 @@
 # |____/|_|_| |_| |_| .__/|_|\___/_/\_\    \_/  |_| |_|_|
 #                   |_|
 
-# Common simplex frequencies for FM on "high" VHF (IARU Region 2)
-# 144 to 148 MHz (primary allocation)
-# https://www.rac.ca/wp-content/uploads/2021/01/TwoMetre_Bandplan_ND2020TCA.pdf
-# Bandwidth is 25 kHz for "normal" FM
-
-#                       ____                _____ __  __
-#                      |___ \   _ __ ___   |  ___|  \/  |
-#                        __) | | '_ ` _ \  | |_  | |\/| |
-#                       / __/  | | | | | | |  _| | |  | |
-#                      |_____| |_| |_| |_| |_|   |_|  |_|
+# Common frequencies for simplex FM
+#   https://www.rac.ca/wp-content/uploads/2021/01/TwoMetre_Bandplan_ND2020TCA.pdf
 
 # FM simplex from 146.4 to 146.595 - 14 frequencies on a 15 kHz raster
 # The plan mentions 13 frequencies but has room for 14 frequencies
@@ -58,7 +50,7 @@ Channels:
 - Name: 146.52 FM
   Mode: FM
   RxFrequency: '146.52'
-  Note: FM simplex calling frequency
+  Note: FM calling frequency
 
 - Name: 146.535 FM
   Mode: FM
@@ -113,21 +105,13 @@ Channels:
 # |____/|_|_| |_| |_| .__/|_|\___/_/\_\  \___/|_| |_|_|
 #                   |_|
 
-# Common simplex frequencies for FM on "low" UHF (IARU Region 2)
-# 430 to 450 MHz (secondary allocation)
-# https://www.rac.ca/432-mhz-70-cm-page
-# Bandwidth is 25 kHz for "normal" FM
-
-#                  _____ ___                     _____ __  __
-#                 |___  / _ \    ___ _ __ ___   |  ___|  \/  |
-#                    / / | | |  / __| '_ ` _ \  | |_  | |\/| |
-#                   / /| |_| | | (__| | | | | | |  _| | |  | |
-#                  /_/  \___/   \___|_| |_| |_| |_|   |_|  |_|
+# Common frequencies for simplex FM
+#   https://rac.ca/432-mhz-70-cm-page
 
 - Name: 446.0 FM
   Mode: FM
   RxFrequency: '446.0'
-  Note: FM simplex calling frequency
+  Note: FM calling frequency
 
 - Name: 446.0125 FM
   Mode: FM
@@ -185,5 +169,43 @@ Channels:
   Mode: FM
   RxFrequency: '446.175'
 
-Zones: []
+Zones:
+- ChannelA:
+  - 146.4 FM  # 20 channels on VHF
+  - 146.415 FM
+  - 146.43 FM
+  - 146.445 FM
+  - 146.46 FM
+  - 146.475 FM
+  - 146.49 FM
+  - 146.505 FM
+  - 146.52 FM
+  - 146.535 FM
+  - 146.55 FM
+  - 146.565 FM
+  - 146.58 FM
+  - 146.595 FM
+  - 147.42 FM
+  - 147.45 FM
+  - 147.48 FM
+  - 147.51 FM
+  - 147.54 FM
+  - 147.57 FM
+  - 446.0 FM  # 15 channels on UHF
+  - 446.0125 FM
+  - 446.025 FM
+  - 446.0375 FM
+  - 446.05 FM
+  - 446.0625 FM
+  - 446.075 FM
+  - 446.0875 FM
+  - 446.1 FM
+  - 446.1125 FM
+  - 446.125 FM
+  - 446.1375 FM
+  - 446.15 FM
+  - 446.1625 FM
+  - 446.175 FM
+  ChannelB: []
+  Name: A Simplex
 ...

@@ -58,14 +58,5 @@ GroupLists:
 - Contact:
   - 98638 WVNET
   Name: 98638 WVNET
-Zones:
-- ChannelA: []
-  ChannelB: []
-  Name: DMR Simplex
-- ChannelA: []
-  ChannelB: []
-  Name: FM Simplex
-- ChannelA: []
-  ChannelB: []
-  Name: WX Info
+Zones: []
 ...
