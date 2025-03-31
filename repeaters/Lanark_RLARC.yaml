@@ -48,9 +48,10 @@ Channels:
   TxFrequencyOffset: '+5.0'
 
 Zones:
-- ChannelA:
+
+- Name: LNLARES RLARC
+  ChannelA:
   - VE3RLR VHF FM
   - VE3RLR UHF FM
   ChannelB: []
-  Name: FM Repeaters
 ...

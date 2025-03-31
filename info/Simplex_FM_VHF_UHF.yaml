@@ -6,7 +6,7 @@
 # |____/|_|_| |_| |_| .__/|_|\___/_/\_\    \_/  |_| |_|_|
 #                   |_|
 
-# Common frequencies for simplex FM
+# Common frequencies for FM simplex
 #   https://www.rac.ca/wp-content/uploads/2021/01/TwoMetre_Bandplan_ND2020TCA.pdf
 
 # FM simplex from 146.4 to 146.595 - 14 frequencies on a 15 kHz raster
@@ -105,7 +105,7 @@ Channels:
 # |____/|_|_| |_| |_| .__/|_|\___/_/\_\  \___/|_| |_|_|
 #                   |_|
 
-# Common frequencies for simplex FM
+# Common frequencies for FM simplex
 #   https://rac.ca/432-mhz-70-cm-page
 
 - Name: 446.0 FM
@@ -170,7 +170,9 @@ Channels:
   RxFrequency: '446.175'
 
 Zones:
-- ChannelA:
+
+- Name: Simplex
+  ChannelA:
   - 146.4 FM  # 20 channels on VHF
   - 146.415 FM
   - 146.43 FM
@@ -207,5 +209,9 @@ Zones:
   - 446.1625 FM
   - 446.175 FM
   ChannelB: []
-  Name: A Simplex
+
+- Name: RCJ
+  ChannelA:
+  - 146.55 FM
+  ChannelB: []
 ...

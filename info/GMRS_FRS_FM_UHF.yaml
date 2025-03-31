@@ -277,41 +277,6 @@ Channels:
   RxOnly: On
   Power: High
 
-Zones:
-- ChannelA:
-  - GMRS01
-  - GMRS02
-  - GMRS03
-  - GMRS04
-  - GMRS05
-  - GMRS06
-  - GMRS07
-  - FRS08
-  - FRS09
-  - FRS10
-  - FRS11
-  - FRS12
-  - FRS13
-  - FRS14
-  - GMRS15
-  - GMRS16
-  - GMRS17
-  - GMRS18
-  - GMRS19
-  - GMRS20
-  - GMRS21
-  - GMRS22
-  - GMRS15R
-  - GMRS16R
-  - GMRS17R
-  - GMRS18R
-  - GMRS19R
-  - GMRS20R
-  - GMRS21R
-  - GMRS22R
-  ChannelB: []
-  Name: GMRS/FRS
-
 # The following is a list of possible channel values for interoperability with
 # other brands of radios (scheme A is the most common one):
 
@@ -615,4 +580,40 @@ Zones:
 #     119  119  081  734N
 #     120  120  082  743N
 #     121  121  083  754N
+
+Zones:
+
+- Name: GMRS/FRS
+  ChannelA:
+  - GMRS01
+  - GMRS02
+  - GMRS03
+  - GMRS04
+  - GMRS05
+  - GMRS06
+  - GMRS07
+  - FRS08
+  - FRS09
+  - FRS10
+  - FRS11
+  - FRS12
+  - FRS13
+  - FRS14
+  - GMRS15
+  - GMRS16
+  - GMRS17
+  - GMRS18
+  - GMRS19
+  - GMRS20
+  - GMRS21
+  - GMRS22
+  - GMRS15R
+  - GMRS16R
+  - GMRS17R
+  - GMRS18R
+  - GMRS19R
+  - GMRS20R
+  - GMRS21R
+  - GMRS22R
+  ChannelB: []
 ...

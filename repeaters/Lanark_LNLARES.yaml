@@ -60,10 +60,18 @@ Channels:
   TxFrequencyOffset: '+5.0'
 
 Zones:
-- ChannelA:
+
+- Name: LNLARES RLARC
+  ChannelA:
   - VE3KJG VHF FM
   - VA3TEL VHF FM
   - VE3REX UHF FM
   ChannelB: []
-  Name: FM Repeaters
+
+- Name: RLCT
+  ChannelA:
+  - VE3KJG VHF FM
+  - VA3TEL VHF FM
+  - VE3REX UHF FM
+  ChannelB: []
 ...

@@ -189,7 +189,9 @@ Channels:
   RxFrequency: '437.55'
 
 Zones:
-- ChannelA:
+
+- Name: Packet
+  ChannelA:
   - PKT437
   - PKT439
   - PKT441
@@ -220,5 +222,4 @@ Zones:
   - PKT579
   - APRS Voice CA/US
   ChannelB: []
-  Name: Packet
 ...
