@@ -309,37 +309,7 @@ Zones:
   - GMRS20R
   - GMRS21R
   - GMRS22R
-  ChannelB:
-  - GMRS01
-  - GMRS02
-  - GMRS03
-  - GMRS04
-  - GMRS05
-  - GMRS06
-  - GMRS07
-  - FRS08
-  - FRS09
-  - FRS10
-  - FRS11
-  - FRS12
-  - FRS13
-  - FRS14
-  - GMRS15
-  - GMRS16
-  - GMRS17
-  - GMRS18
-  - GMRS19
-  - GMRS20
-  - GMRS21
-  - GMRS22
-  - GMRS15R
-  - GMRS16R
-  - GMRS17R
-  - GMRS18R
-  - GMRS19R
-  - GMRS20R
-  - GMRS21R
-  - GMRS22R
+  ChannelB: []
   Name: GMRS/FRS
 
 # The following is a list of possible channel values for interoperability with

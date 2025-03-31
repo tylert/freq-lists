@@ -5,77 +5,131 @@
 #   \ V  V /  __/ (_| | |_| | | |  __/ |    | | | | |  _| (_) |
 #    \_/\_/ \___|\__,_|\__|_| |_|\___|_|    |_|_| |_|_|  \___/
 
-# https://en.wikipedia.org/wiki/Weather_radio
-# https://www.canada.ca/en/environment-climate-change/services/weatheradio.html
-# http://www.wiki.robotz.com/index.php/WX_Weather_Radio
-# https://github.com/jwhittaker/nwrsites
+# Common weather reporting frequencies
+#   https://en.wikipedia.org/wiki/Weather_radio
+#   https://en.wikipedia.org/wiki/Weatheradio_Canada
+#   https://en.wikipedia.org/wiki/Marine_VHF_radio
+#   https://canada.ca/en/environment-climate-change/services/weatheradio.html
+#   https://github.com/jwhittaker/nwrsites
+#   https://wiki.robotz.com/index.php/WX_Weather_Radio
+#   https://navcen.uscg.gov/international-vhf-marine-radio-channels-freq
+#   https://motorolasolutions.com/content/dam/msi/docs/products/two-way-radios/consumer/user-guides/sx-series/sx700_userguide.pdf
+
+# ASM = Application Specific Messages
+# M = Marine
+# PA = Public Alert
+# WX = Weather
+
+# 1050 Hz CTCSS?
 
 Channels:
 
-- Name: WX8  # M21B
+- Name: 161.65 FM  # WX8 M21B
   Mode: FM
+  Bandwidth: '20'
   RxFrequency: '161.65'
   RxOnly: On
+  Power: Low
 
-- Name: WXA  # M23B
+- Name: 161.75 FM  # WX? M23B
   Mode: FM
+  Bandwidth: '20'
   RxFrequency: '161.75'
   RxOnly: On
+  Power: Low
 
-- Name: WX9  # M83B
+- Name: 161.775 FM  # WX? M83B
   Mode: FM
+  Bandwidth: '20'
   RxFrequency: '161.775'
   RxOnly: On
+  Power: Low
 
-- Name: WXB  # M27B / ASM 1 / Channel 2027
+- Name: 161.95 FM  # WX? M27B ASM1 M2027
   Mode: FM
+  Bandwidth: '20'
   RxFrequency: '161.95'
   RxOnly: On
+  Power: Low
 
-- Name: WXC  # M28B / ASM 2 / Channel 2028
+- Name: 162.0 FM  # WX? M28B ASM2 M2028
   Mode: FM
+  Bandwidth: '20'
   RxFrequency: '162.0'
   RxOnly: On
+  Power: Low
 
-- Name: WX2/PA1  # M36B / Public Alert 1
+- Name: 162.4 FM  # WX2 M36B PA1
   Mode: FM
+  Bandwidth: '20'
   RxFrequency: '162.4'
   RxOnly: On
+  Power: Low
 
-- Name: WX4/PA2  # M96B / Public Alert 2
+- Name: 162.425 FM  # WX4 M96B PA2
   Mode: FM
+  Bandwidth: '20'
   RxFrequency: '162.425'
   RxOnly: On
+  Power: Low
 
-- Name: WX5/PA3  # M37B / Public Alert 3
+- Name: 162.45 FM  # WX5 M37B PA3
   Mode: FM
+  Bandwidth: '20'
   RxFrequency: '162.45'
   RxOnly: On
+  Power: Low
 
-- Name: WX3/PA4  # M97B / Public Alert 4
+- Name: 162.475 FM  # WX3 M97B PA4
   Mode: FM
+  Bandwidth: '20'
   RxFrequency: '162.475'
   RxOnly: On
+  Power: Low
 
-- Name: WX6/PA5  # M38B / Public Alert 5
+- Name: 162.5 FM  # WX6 M38B PA5
   Mode: FM
+  Bandwidth: '20'
   RxFrequency: '162.5'
   RxOnly: On
+  Power: Low
 
-- Name: WX7/PA6  # M98B / Public Alert 6
+- Name: 162.525 FM  # WX7 M98B PA6
   Mode: FM
+  Bandwidth: '20'
   RxFrequency: '162.525'
   RxOnly: On
+  Power: Low
 
-- Name: WX1/PA7  # M39B / Public Alert 7
+- Name: 162.55 FM  # WX1 M39B PA7
   Mode: FM
+  Bandwidth: '20'
   RxFrequency: '162.55'
   RxOnly: On
+  Power: Low
 
-- Name: WX10  # M113B
+- Name: 163.275 FM  # WX? M113B
   Mode: FM
+  Bandwidth: '20'
   RxFrequency: '163.275'
   RxOnly: On
+  Power: Low
 
-Zones: []
+Zones:
+- ChannelA:
+  - 161.65 FM
+  - 161.75 FM
+  - 161.775 FM
+  - 161.95 FM
+  - 162.0 FM
+  - 162.4 FM
+  - 162.425 FM
+  - 162.45 FM
+  - 162.475 FM
+  - 162.5 FM
+  - 162.525 FM
+  - 162.55 FM
+  - 163.275 FM
+  ChannelB: []
+  Name: Weather
 ...
