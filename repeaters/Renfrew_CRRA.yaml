@@ -44,5 +44,9 @@ Channels:
   RxFrequency: '443.6'
   TxFrequencyOffset: '+5.0'
 
-Zones: []
+Zones:
+- ChannelA:
+  - VE3STP VHF FM
+  ChannelB: []
+  Name: FM Repeaters
 ...

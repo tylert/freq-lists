@@ -57,5 +57,13 @@ Channels:
   CtcssEncode: '114.8'
   CtcssDecode: '114.8'
 
-Zones: []
+Zones:
+- ChannelA:
+  - VE3NRR VHF FM
+  - VE3NRR UHF FM
+  - VE3UCR VHF FM
+  - VA3RBW VHF FM
+  - VE3ZRR VHF FM
+  ChannelB: []
+  Name: FM Repeaters
 ...
