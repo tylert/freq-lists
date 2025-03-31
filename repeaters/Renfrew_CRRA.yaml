@@ -45,8 +45,9 @@ Channels:
   TxFrequencyOffset: '+5.0'
 
 Zones:
-- ChannelA:
+
+- Name: CRRA RCARC
+  ChannelA:
   - VE3STP VHF FM
   ChannelB: []
-  Name: FM Repeaters
 ...

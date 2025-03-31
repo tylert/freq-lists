@@ -79,5 +79,25 @@ Channels:
   CtcssEncode: '136.5'
   CtcssDecode: '136.5'
 
-Zones: []
+Zones:
+
+- Name: OARC EMRG
+  ChannelA:
+  - VE3OCE VHF FM
+  - VE3OCE UHF FM
+  - VA3OFS VHF FM
+  - VA3OFS UHF FM
+  - VA3EMV/E VHF FM
+  - VA3EMV/W VHF FM
+  - VA3EMV/P VHF FM
+  ChannelB: []
+
+- Name: RLCT
+  ChannelA:
+  - VE3OCE VHF FM
+  - VE3OCE UHF FM
+  - VA3OFS VHF FM
+  - VA3OFS UHF FM
+  - VA3EMV/W VHF FM
+  ChannelB: []
 ...

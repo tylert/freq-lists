@@ -116,7 +116,9 @@ Channels:
   Power: Low
 
 Zones:
-- ChannelA:
+
+- Name: Weather
+  ChannelA:
   - 161.65 FM
   - 161.75 FM
   - 161.775 FM
@@ -131,5 +133,4 @@ Zones:
   - 162.55 FM
   - 163.275 FM
   ChannelB: []
-  Name: Weather
 ...

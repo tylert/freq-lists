@@ -119,10 +119,11 @@ Channels:
 #   ColorCode: '2'
 
 Zones:
-- ChannelA:
+
+- Name: AARC
+  ChannelA:
   - VA3UHR VHF FM
   - VA3AAR UHF FM
   - VA3ARE VHF FM
   ChannelB: []
-  Name: FM Repeaters
 ...
