@@ -73,7 +73,7 @@ retevis_channel_stub = {
 }
 
 
-def process_dmr_channels(entries, channel_stub, modes_allowed: str = None) -> None:
+def process_dmr_channels(entries, channel_stub, modes_allowed: str = None) -> list:
     ''' '''
     channels = []
     if entries is not None:
@@ -82,20 +82,22 @@ def process_dmr_channels(entries, channel_stub, modes_allowed: str = None) -> No
 
             # Ensure there is always a 'Name', 'RxFrequency' and 'Mode' for each
             # channel.
+
             if 'Name' not in entry.keys() or entry['Name'] == '':
-                raise ValueError('Missing Name for entry!')
+                raise ValueError('Missing Name for channel!')
             if 'RxFrequency' not in entry.keys() or entry['RxFrequency'] == '':
-                raise ValueError('Missing RxFrequency for entry!')
+                raise ValueError('Missing RxFrequency for channel!')
             if 'Mode' not in entry.keys() or entry['Mode'] == '':
-                raise ValueError('Missing Mode for entry!')
+                raise ValueError('Missing Mode for channel!')
 
             # Skip modes we have been told to filter out
             if modes_allowed is not None and entry['Mode'] not in modes_allowed:
                 continue
 
             # Use 'Mode' to determine 'Bandwidth' and 'ChannelMode'.  Do this
-            # before merging the new channel entry into the expected output in case
-            # we are using a different bandwidth, say.
+            # before merging the new channel entry into the expected output in
+            # case we are using a different bandwidth, say.
+
             match entry['Mode']:
                 case 'DMR':
                     output['Bandwidth'] = '12.5'
@@ -159,8 +161,32 @@ def process_dmr_channels(entries, channel_stub, modes_allowed: str = None) -> No
     return channels
 
 
+def process_dmr_zones(entries) -> list:
+    ''' '''
+    zones = []
+    if entries is not None:
+        for entry in entries:
+            # Ensure there is always a 'Name' and either 'ChannelA' or
+            # 'ChannelB' for each zone.
+            if 'Name' not in entry.keys() or entry['Name'] == '':
+                raise ValueError('Missing Name for zone!')
+            if 'ChannelA' not in entry.keys() and 'ChannelB' not in entry.keys():
+                raise ValueError('Missing ChannelA/ChannelB for zone!')
+
+            for zone in zones:
+                if zone['Name'] == entry['Name']:
+                    zone['ChannelA'].extend(entry['ChannelA'])
+                    zone['ChannelB'].extend(entry['ChannelB'])
+                    break
+                zones.append(json.loads(json.dumps(entry)))
+    return zones
+
+
 def process_human_channels_csv(
-    entries, name_max_length: int = 8, modes_allowed: str = None, start_index: int = 1
+    entries,
+    name_max_length: int = 8,
+    modes_allowed: str = None,
+    start_index: int = 1,
 ) -> None:
     ''' '''
     print('Channel,Name,Location,Mode,Frequency,Offset,Details')
@@ -264,7 +290,10 @@ def sanitize_chirp_channel_name(name: str = None, length: int = 8) -> str:
 
 
 def process_chirp_channels_csv(
-    entries, name_max_length: int = 8, modes_allowed: str = None, start_index: int = 1
+    entries,
+    name_max_length: int = 8,
+    modes_allowed: str = None,
+    start_index: int = 1,
 ) -> None:
     ''' '''
     # WARNING:  The CHIRP GUI has different column header names than its CSV files do
@@ -574,12 +603,14 @@ def main(
             )
             # zones = process_dmr_zones(entries=payload['Zones'])
 
-            # Read in the existing codeplug JSON and append new channels to the end of
-            # the list.
+            # Read in the existing codeplug JSON and append new channels and
+            # zones to the end of the list.
+
             codeplug = {}
             with open(json_file, 'r') as f:
                 codeplug = json.load(f)
             codeplug['Channels'].extend(channels)
+            # codeplug['Zones'].extend(zones)
 
             print(json.dumps(codeplug, indent=2, sort_keys=True))
         case 'HUMAN':
