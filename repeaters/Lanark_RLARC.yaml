@@ -7,6 +7,7 @@
 
 # Rideau Lakes Amateur Radio Club
 #   https://ve3rlr.ca
+#   https://rmeo.org
 
 # *** No FM nets, currently ***
 # *** No YSF nets, currently ***
@@ -46,5 +47,10 @@ Channels:
   RxFrequency: '442.75'
   TxFrequencyOffset: '+5.0'
 
-Zones: []
+Zones:
+- ChannelA:
+  - VE3RLR VHF FM
+  - VE3RLR UHF FM
+  ChannelB: []
+  Name: FM Repeaters
 ...

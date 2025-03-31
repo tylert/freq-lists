@@ -48,5 +48,10 @@ Channels:
   TxFrequencyOffset: '+5.0'
   ColorCode: '1'
 
-Zones: []
+Zones:
+- ChannelA:
+  - VE2CRA VHF FM
+  - VE2CRA UHF FM
+  ChannelB: []
+  Name: FM Repeaters
 ...
