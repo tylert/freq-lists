@@ -178,8 +178,8 @@ def process_dmr_zones(entries) -> list:
                     zone['ChannelA'].extend(entry['ChannelA'])
                     zone['ChannelB'].extend(entry['ChannelB'])
                     break
-                zones.append(json.loads(json.dumps(entry)))
-    return zones
+                zones.append(entry)
+    return json.dumps(zones)
 
 
 def process_human_channels_csv(
