@@ -58,5 +58,8 @@ GroupLists:
 - Contact:
   - 98638 WVNET
   Name: 98638 WVNET
-Zones: []
+Zones:
+- Name: Foo
+  ChannelA: []
+  ChannelB: []
 ...
