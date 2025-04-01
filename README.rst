@@ -181,11 +181,10 @@ Call Criteria.
 Linking and Transcoding and Repeater Building
 ---------------------------------------------
 
+* https://w0chp.radio/wpsd
 * https://n5amd.com/digital-radio-how-tos/build-digital-voice-transcoding-server
 * https://g0wcz.nodestone.io/building-a-transcoder-for-dmr-d-star
 * https://ad6dm.net/log/wp-content/uploads/2019/05/How-to-Create-a-Multimode-Digital-Voice-Reflector.pdf
-* https://www.chrishoodblog.com/building-a-dmr-repeater-using-bridgecom-mobiles-pt1
-* https://www.chrishoodblog.com/make-your-own-dmr-server
 * https://sin.groups.io/g/main/message/355
 * https://blog.rosenberg-watt.com/2018/08/14/towards-better-global-dmr-ham-radio-id-generation
 * https://tgifnetwork.createaforum.com/hotspot-configurartion/adding-second-hotspot-do-i-need-a-second-dmr-id
@@ -194,7 +193,6 @@ Linking and Transcoding and Repeater Building
 * https://github.com/formatc1702/WireViz
 * https://maxonamerica.com/download/tm-8000-spec-sheet
 * https://maxonamerica.com/product/tm-8000-series-mobile-radio
-* https://www.fleetwooddp.com
 * https://www.repeater-builder.com/products/stm32-dvm.html
 * https://www.masterscommunications.com/products/radio-adapter/ra-index.html
 * https://www.masterscommunications.com/products/radio-adapter/ra42.html
@@ -312,6 +310,7 @@ Other Links
 -----------
 
 * https://www.dmrfordummies.com/library  what is DMR?
+* https://dmrtechnet.net/monday-night-march-31st-the-dmr-tech-net-team-will-go-over-and-discuss-codeplug-best-practices-for-organizing-your-channels-zones-talkgroups
 
 
 Maps
