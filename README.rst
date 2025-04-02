@@ -22,10 +22,6 @@ You must have the following tools installed:
 .. _editcp: https://github.com/dalefarnsworth-dmr/editcp
 .. _LibreOffice: https://www.libreoffice.org
 
-There are some really good programming tutorials at
-https://youtu.be/VExx628R0DM and https://youtu.be/Lw0Y-jQZMZ0 which are useful
-for learning about the digital side of things.
-
 
 Running Things
 --------------
@@ -311,6 +307,9 @@ Other Links
 
 * https://www.dmrfordummies.com/library  what is DMR?
 * https://dmrtechnet.net/monday-night-march-31st-the-dmr-tech-net-team-will-go-over-and-discuss-codeplug-best-practices-for-organizing-your-channels-zones-talkgroups
+* https://www.jeffreykopcak.com/2017/05/10/dmr-in-amateur-radio-terminology
+* https://youtu.be/VExx628R0DM
+* https://youtu.be/Lw0Y-jQZMZ0
 
 
 Maps
