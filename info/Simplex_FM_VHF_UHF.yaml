@@ -213,5 +213,6 @@ Zones:
 - Name: RCJ
   ChannelA:
   - 146.55 FM
+  - 147.57 FM
   ChannelB: []
 ...
