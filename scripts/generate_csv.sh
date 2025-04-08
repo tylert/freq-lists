@@ -20,7 +20,7 @@ repeaters/Renfrew_CRRA.yaml
 repeaters/Renfrew_RCARC.yaml
 subtastic/Simplex_FM_VHF_UHF.yaml
 subtastic/Packet_FM_VHF.yaml
-subtastic/Lanark_County_FM_AM_VHF.yaml
+subtastic/Lanark_County_FM_AM_VHF_UHF.yaml
 '
 
 chirp_csv_file="tmp/CHIRP-${date}.csv"
