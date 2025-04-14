@@ -143,7 +143,7 @@
 
 Channels:
 
-- Name: APRS Voice CA/US
+- Name: APRS Voice CA/MX
   Note: APRS Voice Alert North America
   Mode: FM
   RxFrequency: '144.39'
@@ -220,6 +220,6 @@ Zones:
   - PKT575
   - PKT577
   - PKT579
-  - APRS Voice CA/US
+  - APRS Voice CA/MX
   ChannelB: []
 ...
