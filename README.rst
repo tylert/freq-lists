@@ -425,15 +425,15 @@ Emission Designators
 * https://sigidwiki.com/wiki/APRS
 * https://sigidwiki.com/wiki/PACKET  AX.25/APRS
 * https://sigidwiki.com/wiki/POCSAG
-* https://sigidwiki.com/wiki/Amplitude_Modulation_(AM)
+* `https://sigidwiki.com/wiki/Amplitude_Modulation_(AM)`
 * https://sigidwiki.com/wiki/NFM_Voice
-* https://sigidwiki.com/wiki/Digital_Mobile_Radio_(DMR)
+* `https://sigidwiki.com/wiki/Digital_Mobile_Radio_(DMR)`
 * https://sigidwiki.com/wiki/D-STAR
 * https://sigidwiki.com/wiki/LoRa
 * https://sigidwiki.com/wiki/M17_RF_Protocol
-* https://sigidwiki.com/wiki/Next_Generation_Digital_Narrowband_(NXDN)
+* `https://sigidwiki.com/wiki/Next_Generation_Digital_Narrowband_(NXDN)`
 * https://sigidwiki.com/wiki/NXDN
-* https://sigidwiki.com/wiki/Project_25_(P25)
+* `https://sigidwiki.com/wiki/Project_25_(P25)`
 * https://sigidwiki.com/wiki/P25
 * https://sigidwiki.com/wiki/Yaesu_System_Fusion
 * https://en.wikipedia.org/wiki/Automatic_Packet_Reporting_System
@@ -441,10 +441,10 @@ Emission Designators
 * https://en.wikipedia.org/wiki/Digital_mobile_radio
 * https://en.wikipedia.org/wiki/D-STAR
 * https://en.wikipedia.org/wiki/LoRa
-* https://en.wikipedia.org/wiki/M17_(amateur_radio)
+* `https://en.wikipedia.org/wiki/M17_(amateur_radio)`
 * https://en.wikipedia.org/wiki/NXDN
 * https://en.wikipedia.org/wiki/Project_25
-* https://en.wikipedia.org/wiki/Yaesu_(brand)#Digimode_%22Fusion%22
+* `https://en.wikipedia.org/wiki/Yaesu_(brand)#Digimode_%22Fusion%22`
 
 
 Other Links
