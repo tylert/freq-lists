@@ -305,11 +305,6 @@ DMR SMS
 Emission Designators
 --------------------
 
-* https://en.wikipedia.org/wiki/Types_of_radio_emissions
-* https://wiki.radioreference.com/index.php/Emission_Designator
-* https://spec.m17project.org/files/M17_spec.pdf  figure out the M17 designator?
-* https://www.sigidwiki.com/wiki/M17_RF_Protocol
-
 ::
 
     General format
@@ -346,6 +341,7 @@ Emission Designators
     10K1.....  10.1 kHz bandwidth
     11K2.....  11.2 kHz bandwidth
     13K6.....  13.6 kHz bandwidth
+    14K0.....  14.0 kHz bandwidth
     16K0.....  16.0 kHz bandwidth
     20K0.....  20.0 kHz bandwidth
     22K0.....  22.0 kHz bandwidth
@@ -372,6 +368,16 @@ Emission Designators
     ---------------
 
     6K00A3E    AM voice
+    8K00F3E    FM voice           +-2.5 ppm stability;  fits in 12.5 kHz
+    10K1F3E    FM voice           +-2.5 kHz deviation;  fits in 12.5 kHz
+    11K2F3E    FM voice           +-2.5 kHz deviation;  fits in 12.5 kHz
+    13K6F3E    FM voice           +-3.8 kHz deviation;  fits in 20 kHz
+    16K0F3A    FM CW ID           +-4.0 kHz deviation;  fits in 20 kHz
+    16K0F3E    FM voice           +-4.0 kHz deviation;  fits in 20 kHz
+    20K0F3D    FM voice           +-5.0 kHz deviation;  fits in 25 kHz
+    ....G..    PM
+    11K3F1D    POCSAG
+    20K0F1D    POCSAG
     7K34FXDJN  DMR Tier2
     7K60FXD    DMR Tier2
     7K60FXDJN  DMR Tier2
@@ -379,12 +385,8 @@ Emission Designators
     7K60FXW    DMR Tier2
     7K60F7W    DMR Tier3
     7K60F7WDT  DMR Tier3
-    8K00F3E    FM voice           +-2.5 ppm stability;  fits in 12.5 kHz
-    10K1F3E    FM voice           +-2.5 kHz deviation;  fits in 12.5 kHz
-    11K2F3E    FM voice           +-2.5 kHz deviation;  fits in 12.5 kHz
-    13K6F3E    FM voice           +-3.8 kHz deviation;  fits in 20 kHz
-    16K0F3E    FM voice           +-4.0 kHz deviation;  fits in 20 kHz
-    20K0F3D    FM voice           +-5.0 kHz deviation;  fits in 25 kHz
+    6K00F7W    DSTAR
+    6K00F2A    DSTAR CW ID
     9K00F..    M17                4FSK;  9600 bps;  fits in 12.5 kHz
     4K00F1D    NXDN
     4K00F1E    NXDN
@@ -394,20 +396,41 @@ Emission Designators
     8K30F1D    NXDN
     8K30F1E    NXDN
     8K30F7W    NXDN
-    8K00F1D    P25 Phase1 (C4FM)
-    8K10F1D    P25 Phase1 (C4FM)
-    8K10F1E    P25 Phase1 (C4FM)
-    8K30F1W    P25 Phase1 (C4FM)
-    8K40F1D    P25 Phase1 (C4FM)
-    8K40F1E    P25 Phase1 (C4FM)
-    ....G..    PM
-    21K0D1W    TETRA
-    22K0D1D    TETRA DMO
-    22K0D1E    TETRA DMO
-    22K0D7D    TETRA TMO
-    22K0D7E    TETRA TMO
-    22K0D7W    TETRA TMO
-    9K36F7W    YSF (C4FM)
+    8K00F1D    P25 Phase1 C4FM
+    8K10F1D    P25 Phase1 C4FM
+    8K10F1E    P25 Phase1 C4FM
+    8K30F1W    P25 Phase1 C4FM
+    8K40F1D    P25 Phase1 C4FM
+    8K40F1E    P25 Phase1 C4FM
+    9K80F1D    P25 Phase2 TDMA
+    9K80F1E    P25 Phase2 TDMA
+    9K36F1E    YSF C4FM
+    9K36F7W    YSF C4FM
+    11K2F7W    YSF C4FM
+    12K5F7W    YSF C4FM
+    16K0F1D    YSF C4FM
+    16K0F2D    YSF C4FM
+    20K0F7W    YSF C4FM
+
+* https://en.wikipedia.org/wiki/Types_of_radio_emissions
+* https://wiki.radioreference.com/index.php/Emission_Designator
+* https://www.hfunderground.com/wiki/index.php/Emission_Designator
+* https://spec.m17project.org/files/M17_spec.pdf  figure out M17 designator
+* https://en.wikipedia.org/wiki/LoRa  figure out LoRa designator
+* https://sigidwiki.com/wiki/LoRa
+* https://sigidwiki.com/wiki/APRS
+* https://sigidwiki.com/wiki/PACKET  AX.25/APRS
+* https://sigidwiki.com/wiki/POCSAG
+* https://sigidwiki.com/wiki/Amplitude_Modulation_(AM)
+* https://sigidwiki.com/wiki/NFM_Voice
+* https://sigidwiki.com/wiki/Digital_Mobile_Radio_(DMR)
+* https://sigidwiki.com/wiki/D-STAR
+* https://sigidwiki.com/wiki/M17_RF_Protocol
+* https://sigidwiki.com/wiki/Next_Generation_Digital_Narrowband_(NXDN)
+* https://sigidwiki.com/wiki/NXDN
+* https://sigidwiki.com/wiki/Project_25_(P25)
+* https://sigidwiki.com/wiki/P25
+* https://sigidwiki.com/wiki/Yaesu_System_Fusion
 
 
 Other Links
