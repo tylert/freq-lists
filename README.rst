@@ -302,6 +302,114 @@ DMR SMS
     After a few moments you should receive a message on your radio!
 
 
+Emission Designators
+--------------------
+
+* https://en.wikipedia.org/wiki/Types_of_radio_emissions
+* https://wiki.radioreference.com/index.php/Emission_Designator
+* https://spec.m17project.org/files/M17_spec.pdf  figure out the M17 designator?
+* https://www.sigidwiki.com/wiki/M17_RF_Protocol
+
+::
+
+    General format
+    --------------
+
+    BBBB12345
+               BBBB = bandwidth
+               1 = type of modulation used for the main carrier, not including sub-carriers
+               2 = type of modulating signal of the main carrier
+               3 = type of information transmitted
+               4 = (OPTIONAL) practical details of the transmitted information
+               5 = (OPTIONAL) method of multiplexing
+
+    Decoded meanings
+    ----------------
+
+    ..H......  some number of Hz bandwidth
+    .H.......  some number of Hz bandwidth
+    ..K......  some number of kHz bandwidth
+    .K.......  some number of kHz bandwidth
+    ..M......  some number of MHz bandwidth
+    .M.......  some number of MHz bandwidth
+    ..G......  some number of GHz bandwidth
+    .G.......  some number of GHz bandwidth
+    4K00.....  4.0 kHz bandwidth
+    6K00.....  6.0 kHz bandwidth
+    7K34.....  7.34 kHz bandwidth
+    7K60.....  7.6 kHz bandwidth
+    8K00.....  8.0 kHz bandwidth
+    8K10.....  8.1 kHz bandwidth
+    8K30.....  8.3 kHz bandwidth
+    8K40.....  8.4 kHz bandwidth
+    9K36.....  9.36 kHz bandwidth
+    10K1.....  10.1 kHz bandwidth
+    11K2.....  11.2 kHz bandwidth
+    13K6.....  13.6 kHz bandwidth
+    16K0.....  16.0 kHz bandwidth
+    20K0.....  20.0 kHz bandwidth
+    22K0.....  22.0 kHz bandwidth
+    ....A....  Double-sideband amplitude modulation (e.g. AM broadcast radio)
+    ....D....  Combination of AM and FM or PM
+    ....F....  Frequency modulation (e.g. FM broadcast radio)
+    ....G....  Phase modulation
+    .....1...  One channel containing digital information, no subcarrier
+    .....2...  One channel containing digital information, using a subcarrier
+    .....3...  One channel containing analog information
+    .....7...  More than one channel containing digital information
+    .....X...  None of the above (for "Type of modulating signal")
+    ......D..  Data transmission, telemetry or telecommand (remote control)
+    ......E..  Telephony (voice or music intended to be listened to by a human)
+    ......W..  Combination of any of the above (for "Type of transmitted information")
+    ......X..  None of the above (for "Type of transmitted information")
+    .......D.  Four-condition code, one condition per signal element
+    .......J.  Commercial-quality sound (non-broadcast)
+    ........N  None used / Not multiplexed
+    ........T  Time-division
+    ........X  None of the above (for "Multiplexing")
+
+    Actual examples
+    ---------------
+
+    6K00A3E    AM voice
+    7K34FXDJN  DMR Tier2
+    7K60FXD    DMR Tier2
+    7K60FXDJN  DMR Tier2
+    7K60FXE    DMR Tier2
+    7K60FXW    DMR Tier2
+    7K60F7W    DMR Tier3
+    7K60F7WDT  DMR Tier3
+    8K00F3E    FM voice           +-2.5 ppm stability;  fits in 12.5 kHz
+    10K1F3E    FM voice           +-2.5 kHz deviation;  fits in 12.5 kHz
+    11K2F3E    FM voice           +-2.5 kHz deviation;  fits in 12.5 kHz
+    13K6F3E    FM voice           +-3.8 kHz deviation;  fits in 20 kHz
+    16K0F3E    FM voice           +-4.0 kHz deviation;  fits in 20 kHz
+    20K0F3D    FM voice           +-5.0 kHz deviation;  fits in 25 kHz
+    9K00F..    M17                4FSK;  9600 bps;  fits in 12.5 kHz
+    4K00F1D    NXDN
+    4K00F1E    NXDN
+    4K00F1W    NXDN
+    4K00F2D    NXDN
+    4K00F7W    NXDN
+    8K30F1D    NXDN
+    8K30F1E    NXDN
+    8K30F7W    NXDN
+    8K00F1D    P25 Phase1 (C4FM)
+    8K10F1D    P25 Phase1 (C4FM)
+    8K10F1E    P25 Phase1 (C4FM)
+    8K30F1W    P25 Phase1 (C4FM)
+    8K40F1D    P25 Phase1 (C4FM)
+    8K40F1E    P25 Phase1 (C4FM)
+    ....G..    PM
+    21K0D1W    TETRA
+    22K0D1D    TETRA DMO
+    22K0D1E    TETRA DMO
+    22K0D7D    TETRA TMO
+    22K0D7E    TETRA TMO
+    22K0D7W    TETRA TMO
+    9K36F7W    YSF (C4FM)
+
+
 Other Links
 -----------
 
