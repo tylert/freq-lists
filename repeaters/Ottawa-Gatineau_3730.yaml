@@ -1,0 +1,43 @@
+---
+#               __________ _____  ___     ____
+#              |___ /___  |___ / / _ \   / ___|_ __ ___  _   _ _ __
+#                |_ \  / /  |_ \| | | | | |  _| '__/ _ \| | | | '_ \
+#               ___) |/ /  ___) | |_| | | |_| | | | (_) | |_| | |_) |
+#              |____//_/  |____/ \___/   \____|_|  \___/ \__,_| .__/
+#                                                             |_|
+
+# 3730 Group / VE3ORF ("Cross Border Amateur Radio Group")
+#   https://3730group.ca
+#   http://ve3orf.com
+
+Channels:
+
+- Name: VE3TST UHF DMR  # equipment TBD
+  Note: Don't know where this is located  # FN25cg???; maybe in the Tomlinson Quarry off Moodie Drive???
+  Mode: DMR  # frequency shared with FM???
+  RxFrequency: '444.125'
+  TxFrequencyOffset: '+5.0'
+  ColorCode: '1'
+
+# #############################################################################
+
+- Name: VE3ORF VHF YSF  # equipment TBD
+  Note: Don't know where this is located  # somewhere near HWY 401 maybe???
+  Mode: YSF  # frequency shared with FM???
+  RxFrequency: '146.7'
+  TxFrequencyOffset: '-0.6'
+
+- Name: VE3ORF-N UHF YSF  # equipment TBD
+  Note: Don't know where this is located  # somewhere near Prince of Wales Drive maybe???
+  Mode: YSF  # frequency shared with FM???
+  RxFrequency: '444.55'
+  TxFrequencyOffset: '+5.0'
+
+- Name: VE3ORF-S UHF YSF  # equipment TBD
+  Note: Don't know where this is located  # Kemptville maybe???
+  Mode: YSF  # frequency shared with FM???
+  RxFrequency: '444.975'
+  TxFrequencyOffset: '+5.0'
+
+Zones: []
+...

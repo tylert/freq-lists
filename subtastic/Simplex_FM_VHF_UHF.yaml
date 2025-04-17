@@ -27,12 +27,12 @@ Channels:
   RxFrequency: '446.05'
 
 - Name: CALL2M
-  Note: 2m FM simplex calling frequency
+  Note: 2m FM calling frequency
   Mode: FM
   RxFrequency: '146.52'
 
 - Name: CALL70
-  Note: 70cm FM simplex calling frequency
+  Note: 70cm FM calling frequency
   Mode: FM
   RxFrequency: '446.0'
 

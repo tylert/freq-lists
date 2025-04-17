@@ -23,7 +23,7 @@
 Channels:
 
 # IRLP node 2040
-- Name: VE2CRA VHF FM  # Motorola MSF 5000 maybe???
+- Name: VE2CRA VHF FM  # Motorola MSR 2000 maybe???
   Note: Camp Fortune 87Q6G532+42
   Mode: FM
   RxFrequency: '146.94'
