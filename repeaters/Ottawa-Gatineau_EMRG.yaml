@@ -96,8 +96,6 @@ Zones:
   ChannelA:
   - VE3OCE VHF FM
   - VE3OCE UHF FM
-  - VA3OFS VHF FM
-  - VA3OFS UHF FM
   - VA3EMV/W VHF FM
   ChannelB: []
 ...

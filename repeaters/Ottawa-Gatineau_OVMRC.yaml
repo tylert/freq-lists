@@ -17,7 +17,7 @@ Channels:
 
 - Name: VE3TWO VHF FM  # Yaesu DR-1X
   Note: Metcalfe 87Q67GH5+GJ  # VE3BOE 60-foot or 80-foot fold-over tower
-  Mode: FM
+  Mode: FM  # frequency shared with YSF
   RxFrequency: '147.3'
   TxFrequencyOffset: '+0.6'
   CtcssEncode: '100.0'
@@ -26,7 +26,7 @@ Channels:
 # Currently off the air
 # - Name: VE3MPC VHF FM  # Yaesu DR-1X
 #   Note: Orleans 87Q6FF4F+XH  # VE3LC
-#   Mode: FM
+#   Mode: FM  # frequency shared with YSF
 #   RxFrequency: '147.15'
 #   TxFrequencyOffset: '+0.6'
 #   CtcssEncode: '100.0'
@@ -34,7 +34,7 @@ Channels:
 
 - Name: VE3RAM UHF FM  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Note: Orleans 87Q6FF4F+XH  # VE3LC
-  Mode: FM
+  Mode: FM  # frequency shared with a bunch of other modes
   RxFrequency: '443.7'
   TxFrequencyOffset: '+5.0'
   CtcssEncode: '100.0'
@@ -44,7 +44,7 @@ Channels:
 
 - Name: VE3RAM UHF DSTAR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Note: Orleans 87Q6FF4F+XH  # VE3LC
-  Mode: DSTAR  # DSTAR linked to XLX197B
+  Mode: DSTAR  # DSTAR linked to XLX197B;  frequency shared with a bunch of other modes
   RxFrequency: '443.7'
   TxFrequencyOffset: '+5.0'
 
@@ -52,7 +52,7 @@ Channels:
 
 - Name: VE3RAM UHF DMR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Note: Orleans 87Q6FF4F+XH  # VE3LC
-  Mode: DMR  # CCS7 ID 302117 / DMR linked to XLX197B (TS=2, TG=6)
+  Mode: DMR  # CCS7 ID 302117 / DMR linked to XLX197B (TS=2, TG=6);  frequency shared with a bunch of other modes
   RxFrequency: '443.7'
   TxFrequencyOffset: '+5.0'
   ColorCode: '1'
@@ -61,22 +61,28 @@ Channels:
 
 - Name: VE3TWO VHF YSF  # Yaesu DR-1X
   Note: Metcalfe 87Q67GH5+GJ  # VE3BOE 60-foot or 80-foot fold-over tower
-  Mode: YSF
+  Mode: YSF  # frequency shared with FM
   RxFrequency: '147.3'
   TxFrequencyOffset: '+0.6'
 
 # Currently off the air
 # - Name: VE3MPC VHF YSF  # Yaesu DR-1X
 #   Note: Orleans 87Q6FF4F+XH  # VE3LC
-#   Mode: YSF
+#   Mode: YSF  # frequency shared with FM
 #   RxFrequency: '147.15'
 #   TxFrequencyOffset: '+0.6'
 
 - Name: VE3RAM UHF YSF  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Note: Orleans 87Q6FF4F+XH  # VE3LC
-  Mode: YSF
+  Mode: YSF  # frequency shared with a bunch of other modes
   RxFrequency: '443.7'
   TxFrequencyOffset: '+5.0'
 
-Zones: []
+Zones:
+
+- Name: OVMRC
+  ChannelA:
+  - VE3TWO VHF FM
+  - VE3RAM UHF FM
+  ChannelB: []
 ...

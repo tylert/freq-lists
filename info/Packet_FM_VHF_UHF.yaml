@@ -193,7 +193,7 @@ Zones:
 - Name: Packet
   ChannelA:
   - PKT437
-  - PKT439
+  - PKT439  # APRS
   - PKT441
   - PKT443
   - PKT445
