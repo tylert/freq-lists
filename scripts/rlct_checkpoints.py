@@ -46,12 +46,12 @@ def haversine(coord1: tuple[float, float], coord2: tuple[float, float]) -> float
     R = 6372.8  # Earth radius in kilometers
     # R = 3959.87433  # Earth radius in miles
 
-    dLat = radians(lat2 - lat1)
-    dLon = radians(lon2 - lon1)
+    d_lat = radians(lat2 - lat1)
+    d_lon = radians(lon2 - lon1)
     lat1 = radians(lat1)
     lat2 = radians(lat2)
 
-    a = sin(dLat / 2) ** 2 + cos(lat1) * cos(lat2) * sin(dLon / 2) ** 2
+    a = sin(d_lat / 2) ** 2 + cos(lat1) * cos(lat2) * sin(d_lon / 2) ** 2
     c = 2 * asin(sqrt(a))
 
     return R * c
@@ -73,16 +73,16 @@ def bearing(coord1: tuple[float, float], coord2: tuple[float, float]) -> float:
 
 
 repeater = {
-    'VE2CRA': '87Q6G532+42',
+    'VE2CRA': '87Q6G532+239',
     'VE3OCE': '87Q698MQ+CCC',
     'VA3OFS': '87Q677G2+8HV',
     'VA3EMV/W': '87Q6733M+RV2',
     'VA3UHR': '87Q55P64+RR',
     'VA3AAR': '87Q56Q9V+Q6',
     'VA3ARE': '87Q55Q89+29',
-    'VE3KJG': '87Q528WJ+CH',
-    'VA3TEL': '87P5RH98+P3',
-    'VE3REX': '87P5RVPV+54',
+    'VE3KJG': '87Q528WJ+CHM',
+    'VA3TEL': '87P5RH98+P3W',
+    'VE3REX': '87P5RVPV+55V',
     'VE3RLR': '87P5WX2C+MJ',
     'VE3HOZ': '87Q57W5M+R5',
     'VA3RRD': '87P5RRP6+9VJ',
@@ -102,10 +102,10 @@ checkpoint_classic = {
     'Ashton': '87Q55X5C+86M',
     'Cemetery': '87Q54WJJ+5X',
     'Blacks Corners': '87Q54V5V+3X',
-    'Loon Lane': '87Q52RVM+6G',
-    'Concession 4D': '87P5XRJC+9F',
+    'Loon Lane': '87Q52RVM+6F9',
+    'Concession 4D': '87P5XRJC+8CX',
     'Ebert': '87P5WQMX+49P',
-    'Last Duel': '87P5VQX6+CH',
+    'Last Duel': '87P5VQX6+FCX',
     'Christie Lake': '87P5RJH5+36F',
     '6 & 36': '87P5PFQX+QR',
     'Westport Hill': '87P5MHVJ+HP',
@@ -118,7 +118,7 @@ checkpoint_classic = {
     'Queen\'s': '87P56GF2+C4R',
 }
 checkpoint_century = {
-    'Conlon Farm': '87P5VPQW+VJV',
+    'Conlon Farm': '87P5VPRW+8P5',
     'Elmgrove': '87P5VR54+6QH',
     'Narrows Lock': '87P5PP33+4PJ',
     'Crosby': '87P5MP3V+M3C',
@@ -135,15 +135,15 @@ checkpoint_century = {
 # @click.option(
 #     '--name',
 #     '-n',
-#     default='Last Duel',  # checkpoint_classic['Last Duel']
-#     help='Name assigned to location (default "Last Duel").',
+#     default='',
+#     help='Name assigned to location (default "").',
 # )
 @click.command()
 @click.option(
     '--location',
     '-l',
-    default='87P5VQX6+CH',  # checkpoint_classic['Last Duel']
-    help='Coordinates of location in OLC format (default "87P5VQX6+CH").',
+    default='',
+    help='Coordinates of location in OLC format (default "").',
 )
 def main(location: str = None) -> None:
     '''Calculate distance and direction to repeaters and checkpoints from a single location.'''
