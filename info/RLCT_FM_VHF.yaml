@@ -31,7 +31,7 @@
 Channels:
 
 - Name: VE3FRG VHF FM  # Yaesu DR-2X
-  Note: South Frontenac 87P57FWC+Q4  # 250-foot tower
+  Note: South Frontenac 87P57FWC+Q3X  # 250-foot tower
   Mode: FM  # frequency shared with YSF / normally configured as YSF-only
   RxFrequency: '146.805'
   TxFrequencyOffset: '-0.6'
