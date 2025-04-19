@@ -1,0 +1,32 @@
+---
+#                            _  __    _    ____   ____
+#                           | |/ /   / \  |  _ \ / ___|
+#                           | ' /   / _ \ | |_) | |
+#                           | . \  / ___ \|  _ <| |___
+#                           |_|\_\/_/   \_\_| \_\\____|
+
+# Kingston Amateur Radio Club
+#   https://ve3kbr.com
+
+Channels:
+
+- Name: VE3KBR VHF FM
+  Note: Kingston 87P57GPC+JC4
+  Mode: FM
+  RxFrequency: '146.94'
+  TxFrequencyOffset: '-0.6'
+  CtcssEncode: '151.4'
+  CtcssDecode: '151.4'
+
+Zones:
+
+- Name: Kingston
+  ChannelA:
+  - VE3KBR VHF FM
+  ChannelB: []
+
+- Name: RLCT
+  ChannelA:
+  - VE3KBR VHF FM
+  ChannelB: []
+...

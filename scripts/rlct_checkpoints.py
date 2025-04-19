@@ -86,8 +86,8 @@ repeater = {
     'VE3RLR': '87P5WX2C+MJ',
     'VE3HOZ': '87Q57W5M+R5',
     'VA3RRD': '87P5RRP6+9VJ',
-    'VE3FRG': '87P57FWC+Q4',
-    # 'VE3KBR @ ???': '87P5',
+    'VE3FRG': '87P57FWC+Q3X',
+    'VE3KBR': '87P57GPC+JC4',
 }
 checkpoint_classic = {
     'Algonquin': '87Q686XW+Q3',
