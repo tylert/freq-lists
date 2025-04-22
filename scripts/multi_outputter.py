@@ -242,7 +242,7 @@ def decode_plus_code(plus_code: str = None) -> tuple[float, float]:
 def process_map_channels_csv(
     entries, modes_allowed: str = None, start_index: int = 1
 ) -> None:
-
+    ''' '''
     print('Channel,Name,Location,Latitude,Longitude')
 
     channel = start_index

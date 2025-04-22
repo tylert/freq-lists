@@ -38,42 +38,47 @@ def decode_olc(plus_code: str = None) -> tuple[float, float]:
 # return f'https://{lat_long}'
 
 
-def haversine(coord1: tuple[float, float], coord2: tuple[float, float]) -> float:
+def haversine(latlong1: tuple[float, float], latlong2: tuple[float, float]) -> float:
     '''Calculate the distance in kilometers between 2 LatLong values.'''
-    lat1, lon1 = coord1
-    lat2, lon2 = coord2
+    lat1, long1 = latlong1
+    lat2, long2 = latlong2
 
-    R = 6372.8  # Earth radius in kilometers
-    # R = 3959.87433  # Earth radius in miles
+    φ1 = radians(lat1)
+    φ2 = radians(lat2)
+    λ1 = radians(long1)
+    λ2 = radians(long2)
 
-    d_lat = radians(lat2 - lat1)
-    d_lon = radians(lon2 - lon1)
-    lat1 = radians(lat1)
-    lat2 = radians(lat2)
+    Δφ = φ2 - φ1
+    Δλ = λ2 - λ1
 
-    a = sin(d_lat / 2) ** 2 + cos(lat1) * cos(lat2) * sin(d_lon / 2) ** 2
-    c = 2 * asin(sqrt(a))
+    havθ = sin(Δφ / 2) ** 2 + cos(φ1) * cos(φ2) * sin(Δλ / 2) ** 2
+    R = 6371  # radius of Earth in kilometers
+    distance = 2 * R * asin(sqrt(min(1, havθ)))
 
-    return R * c
+    return distance
 
 
-def bearing(coord1: tuple[float, float], coord2: tuple[float, float]) -> float:
+def bearing(latlong1: tuple[float, float], latlong2: tuple[float, float]) -> float:
     '''Calculate the direction in degrees between 2 LatLong values.'''
-    lat1, lon1 = coord1
-    lat2, lon2 = coord2
+    lat1, long1 = latlong1
+    lat2, long2 = latlong2
 
-    bearing = degrees(
-        atan2(
-            sin(lon2 - lon1) * cos(lat2),
-            cos(lat1) * sin(lat2) - sin(lat1) * cos(lat2) * cos(lon2 - lon1),
-        )
-    )
+    φ1 = radians(lat1)
+    φ2 = radians(lat2)
+    λ1 = radians(long1)
+    λ2 = radians(long2)
 
-    return (bearing + 360) % 360
+    Δφ = φ2 - φ1
+    Δλ = λ2 - λ1
+
+    θ = atan2(sin(Δλ) * cos(φ2), cos(φ1) * sin(φ2) - sin(φ1) * cos(φ2) * cos(Δλ))
+    bearing = (degrees(θ) + 360) % 360
+
+    return bearing
 
 
 repeater = {
-    'VE2CRA': '87Q6G532+239',
+    'VE2CRA': '87Q6G532+426',
     'VE3OCE': '87Q698MQ+CCC',
     'VA3OFS': '87Q677G2+8HV',
     'VA3EMV/W': '87Q6733M+RV2',
@@ -142,8 +147,8 @@ checkpoint_century = {
 @click.option(
     '--location',
     '-l',
-    default='',
-    help='Coordinates of location in OLC format (default "").',
+    default='87P5VPRW+8P5',
+    help='Coordinates of location in OLC format (default "87P5VPRW+8P5").',
 )
 def main(location: str = None) -> None:
     '''Calculate distance and direction to repeaters and checkpoints from a single location.'''
@@ -178,10 +183,3 @@ def main(location: str = None) -> None:
 
 if __name__ == '__main__':
     main()
-
-
-#   https://stackoverflow.com/questions/4913349/haversine-formula-in-python-bearing-and-distance-between-two-gps-points
-#   https://plus.codes/map
-#   https://github.com/google/open-location-code
-#   https://en.wikipedia.org/wiki/Open_Location_Code
-#   https://en.wikipedia.org/wiki/Haversine_formula
