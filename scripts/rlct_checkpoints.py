@@ -38,15 +38,15 @@ def decode_olc(plus_code: str = None) -> tuple[float, float]:
 # return f'https://{lat_long}'
 
 
-def haversine(latlong1: tuple[float, float], latlong2: tuple[float, float]) -> float:
+def haversine(latlong1: tuple[float, float], latlong2: tuple[float, float]) -> tuple[float, float]:
     '''Calculate the distance in kilometers between 2 LatLong values.'''
-    lat1, long1 = latlong1
-    lat2, long2 = latlong2
+    latitude1, longitude1 = latlong1
+    latitude2, longitude2 = latlong2
 
-    φ1 = radians(lat1)
-    φ2 = radians(lat2)
-    λ1 = radians(long1)
-    λ2 = radians(long2)
+    φ1 = radians(latitude1)
+    φ2 = radians(latitude2)
+    λ1 = radians(longitude1)
+    λ2 = radians(longitude2)
 
     Δφ = φ2 - φ1
     Δλ = λ2 - λ1
@@ -55,26 +55,10 @@ def haversine(latlong1: tuple[float, float], latlong2: tuple[float, float]) -> f
     R = 6371  # radius of Earth in kilometers
     distance = 2 * R * asin(sqrt(min(1, havθ)))
 
-    return distance
-
-
-def bearing(latlong1: tuple[float, float], latlong2: tuple[float, float]) -> float:
-    '''Calculate the direction in degrees between 2 LatLong values.'''
-    lat1, long1 = latlong1
-    lat2, long2 = latlong2
-
-    φ1 = radians(lat1)
-    φ2 = radians(lat2)
-    λ1 = radians(long1)
-    λ2 = radians(long2)
-
-    Δφ = φ2 - φ1
-    Δλ = λ2 - λ1
-
     θ = atan2(sin(Δλ) * cos(φ2), cos(φ1) * sin(φ2) - sin(φ1) * cos(φ2) * cos(Δλ))
     bearing = (degrees(θ) + 360) % 360
 
-    return bearing
+    return distance, bearing
 
 
 repeater = {
@@ -156,8 +140,9 @@ def main(location: str = None) -> None:
     # Show distance and bearing to all repeaters from your chosen location
     print(f'From {decode_olc(location)} {location}')
     for name, plus_code in repeater.items():
+        distance, bearing = haversine(decode_olc(location), decode_olc(plus_code))
         print(
-            f'{decode_olc(plus_code)} {name} is {haversine(decode_olc(location), decode_olc(plus_code)):.1f} km away at {bearing(decode_olc(location), decode_olc(plus_code)):.0f}°'
+            f'{decode_olc(plus_code)} {name} is {distance:.1f} km away at {bearing:.0f}°'
         )
 
     # Show distance and bearing from each checkpoint to the next one
@@ -165,8 +150,9 @@ def main(location: str = None) -> None:
     print('Classic Route')
     next_one = ('Algonquin', checkpoint_classic['Algonquin'])
     for name, plus_code in checkpoint_classic.items():
+        distance, bearing = haversine(decode_olc(next_one[1]), decode_olc(plus_code))
         print(
-            f'{decode_olc(plus_code)} {name} is {haversine(decode_olc(next_one[1]), decode_olc(plus_code)):.1f} km from {next_one[0]} at {bearing(decode_olc(next_one[1]), decode_olc(plus_code)):.0f}°'
+            f'{decode_olc(plus_code)} {name} is {distance:.1f} km from {next_one[0]} at {bearing:.0f}°'
         )
         next_one = (name, plus_code)
 
@@ -175,8 +161,9 @@ def main(location: str = None) -> None:
     print('Century Route')
     next_one = ('Conlon Farm', checkpoint_century['Conlon Farm'])
     for name, plus_code in checkpoint_century.items():
+        distance, bearing = haversine(decode_olc(next_one[1]), decode_olc(plus_code))
         print(
-            f'{decode_olc(plus_code)} {name} is {haversine(decode_olc(next_one[1]), decode_olc(plus_code)):.1f} km from {next_one[0]} at {bearing(decode_olc(next_one[1]), decode_olc(plus_code)):.0f}°'
+            f'{decode_olc(plus_code)} {name} is {distance:.1f} km from {next_one[0]} at {bearing:.0f}°'
         )
         next_one = (name, plus_code)
 

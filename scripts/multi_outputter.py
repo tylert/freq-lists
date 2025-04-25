@@ -505,7 +505,7 @@ def process_rt_systems_channels_csv(
 
             # XXX FIXME TODO  Get DCS/DTCS stuff working!!!
             # D023N, D023I, D754N, D754I, ...
-            dtcs_code = '23'
+            dtcs_code = '023'
             dtcs_polarity = 'Both N'
 
             # Tstep?
