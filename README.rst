@@ -367,6 +367,7 @@ Emission Designators
     ......X..  None of the above (for "Type of transmitted information")
     .......D.  Four-condition code, one condition per signal element
     .......J.  Commercial-quality sound (non-broadcast)
+    .......X.  None of the above (for "Details of information")
     ........N  None used / Not multiplexed
     ........T  Time-division
     ........X  None of the above (for "Multiplexing")
