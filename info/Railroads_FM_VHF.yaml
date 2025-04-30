@@ -10,942 +10,1137 @@
 #   https://en.wikipedia.org/wiki/Association_of_American_Railroads
 #   https://aar.org
 
+# AAR 001-006 might be used by railway trucking operations in CA/US.
+# AAR 007-097 were later reduced from 25 kHz to 12.5 kHz wide.
+
 Channels:
 
 - Name: AAR001
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '159.57'
   RxOnly: On
 
 - Name: AAR002
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '159.81'
   RxOnly: On
 
 - Name: AAR003
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '159.93'
   RxOnly: On
 
 - Name: AAR004
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.05'
   RxOnly: On
 
 - Name: AAR005
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.185'
   RxOnly: On
 
 - Name: AAR006
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.2'
   RxOnly: On
 
 - Name: AAR007
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.215'
   RxOnly: On
 
 - Name: AAR008
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.23'
   RxOnly: On
 
 - Name: AAR009
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.245'
   RxOnly: On
 
 - Name: AAR010
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.26'
   RxOnly: On
 
 - Name: AAR011
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.275'
   RxOnly: On
 
 - Name: AAR012
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.29'
   RxOnly: On
 
 - Name: AAR013
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.305'
   RxOnly: On
 
 - Name: AAR014
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.32'
   RxOnly: On
 
 - Name: AAR015
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.335'
   RxOnly: On
 
 - Name: AAR016
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.35'
   RxOnly: On
 
 - Name: AAR017
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.365'
   RxOnly: On
 
 - Name: AAR018
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.38'
   RxOnly: On
 
 - Name: AAR019
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.395'
   RxOnly: On
 
 - Name: AAR020
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.41'
   RxOnly: On
 
 - Name: AAR021
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.425'
   RxOnly: On
 
 - Name: AAR022
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.44'
   RxOnly: On
 
 - Name: AAR023
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.455'
   RxOnly: On
 
 - Name: AAR024
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.47'
   RxOnly: On
 
 - Name: AAR025
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.485'
   RxOnly: On
 
 - Name: AAR026
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.5'
   RxOnly: On
 
 - Name: AAR027
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.515'
   RxOnly: On
 
 - Name: AAR028
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.53'
   RxOnly: On
 
 - Name: AAR029
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.545'
   RxOnly: On
 
 - Name: AAR030
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.56'
   RxOnly: On
 
 - Name: AAR031
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.575'
   RxOnly: On
 
 - Name: AAR032
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.59'
   RxOnly: On
 
 - Name: AAR033
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.605'
   RxOnly: On
 
 - Name: AAR034
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.62'
   RxOnly: On
 
 - Name: AAR035
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.635'
   RxOnly: On
 
 - Name: AAR036
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.65'
   RxOnly: On
 
 - Name: AAR037
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.665'
   RxOnly: On
 
 - Name: AAR038
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.68'
   RxOnly: On
 
 - Name: AAR039
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.695'
   RxOnly: On
 
 - Name: AAR040
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.71'
   RxOnly: On
 
 - Name: AAR041
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.725'
   RxOnly: On
 
 - Name: AAR042
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.74'
   RxOnly: On
 
 - Name: AAR043
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.755'
   RxOnly: On
 
 - Name: AAR044
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.77'
   RxOnly: On
 
 - Name: AAR045
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.785'
   RxOnly: On
 
 - Name: AAR046
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.8'
   RxOnly: On
 
 - Name: AAR047
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.815'
   RxOnly: On
 
 - Name: AAR048
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.83'
   RxOnly: On
 
 - Name: AAR049
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.845'
   RxOnly: On
 
 - Name: AAR050
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.86'
   RxOnly: On
 
 - Name: AAR051
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.875'
   RxOnly: On
 
 - Name: AAR052
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.89'
   RxOnly: On
 
 - Name: AAR053
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.905'
   RxOnly: On
 
 - Name: AAR054
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.92'
   RxOnly: On
 
 - Name: AAR055
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.935'
   RxOnly: On
 
 - Name: AAR056
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.95'
   RxOnly: On
 
 - Name: AAR057
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.965'
   RxOnly: On
 
 - Name: AAR058
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.98'
   RxOnly: On
 
 - Name: AAR059
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.995'
   RxOnly: On
 
 - Name: AAR060
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.01'
   RxOnly: On
 
 - Name: AAR061
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.025'
   RxOnly: On
 
 - Name: AAR062
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.04'
   RxOnly: On
 
 - Name: AAR063
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.055'
   RxOnly: On
 
 - Name: AAR064
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.07'
   RxOnly: On
 
 - Name: AAR065
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.085'
   RxOnly: On
 
 - Name: AAR066
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.1'
   RxOnly: On
 
 - Name: AAR067
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.115'
   RxOnly: On
 
 - Name: AAR068
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.13'
   RxOnly: On
 
 - Name: AAR069
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.145'
   RxOnly: On
 
 - Name: AAR070
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.16'
   RxOnly: On
 
 - Name: AAR071
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.175'
   RxOnly: On
 
 - Name: AAR072
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.19'
   RxOnly: On
 
 - Name: AAR073
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.205'
   RxOnly: On
 
 - Name: AAR074
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.22'
   RxOnly: On
 
 - Name: AAR075
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.235'
   RxOnly: On
 
 - Name: AAR076
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.25'
   RxOnly: On
 
 - Name: AAR077
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.265'
   RxOnly: On
 
 - Name: AAR078
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.28'
   RxOnly: On
 
 - Name: AAR079
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.295'
   RxOnly: On
 
 - Name: AAR080
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.31'
   RxOnly: On
 
 - Name: AAR081
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.325'
   RxOnly: On
 
 - Name: AAR082
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.34'
   RxOnly: On
 
 - Name: AAR083
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.355'
   RxOnly: On
 
 - Name: AAR084
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.37'
   RxOnly: On
 
 - Name: AAR085
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.385'
   RxOnly: On
 
 - Name: AAR086
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.4'
   RxOnly: On
 
 - Name: AAR087
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.415'
   RxOnly: On
 
 - Name: AAR088
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.43'
   RxOnly: On
 
 - Name: AAR089
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.445'
   RxOnly: On
 
 - Name: AAR090
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.46'
   RxOnly: On
 
 - Name: AAR091
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.475'
   RxOnly: On
 
 - Name: AAR092
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.49'
   RxOnly: On
 
 - Name: AAR093
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.505'
   RxOnly: On
 
 - Name: AAR094
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.52'
   RxOnly: On
 
 - Name: AAR095
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.535'
   RxOnly: On
 
 - Name: AAR096
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.55'
   RxOnly: On
 
 - Name: AAR097
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.565'
   RxOnly: On
 
+# AAR 107-196 were added post-narrowbanding;  interstitial frequencies
+
 - Name: AAR107
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.2225'
   RxOnly: On
 
 - Name: AAR108
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.2375'
   RxOnly: On
 
 - Name: AAR109
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.2525'
   RxOnly: On
 
 - Name: AAR110
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.2675'
   RxOnly: On
 
 - Name: AAR111
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.2825'
   RxOnly: On
 
 - Name: AAR112
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.2975'
   RxOnly: On
 
 - Name: AAR113
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.3125'
   RxOnly: On
 
 - Name: AAR114
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.3275'
   RxOnly: On
 
 - Name: AAR115
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.3425'
   RxOnly: On
 
 - Name: AAR116
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.3575'
   RxOnly: On
 
 - Name: AAR117
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.3725'
   RxOnly: On
 
 - Name: AAR118
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.3875'
   RxOnly: On
 
 - Name: AAR119
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.4025'
   RxOnly: On
 
 - Name: AAR120
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.4175'
   RxOnly: On
 
 - Name: AAR121
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.4325'
   RxOnly: On
 
 - Name: AAR122
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.4475'
   RxOnly: On
 
 - Name: AAR123
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.4625'
   RxOnly: On
 
 - Name: AAR124
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.4775'
   RxOnly: On
 
 - Name: AAR125
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.4925'
   RxOnly: On
 
 - Name: AAR126
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.5075'
   RxOnly: On
 
 - Name: AAR127
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.5225'
   RxOnly: On
 
 - Name: AAR128
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.5375'
   RxOnly: On
 
 - Name: AAR129
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.5525'
   RxOnly: On
 
 - Name: AAR130
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.5675'
   RxOnly: On
 
 - Name: AAR131
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.5825'
   RxOnly: On
 
 - Name: AAR132
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.5975'
   RxOnly: On
 
 - Name: AAR133
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.6125'
   RxOnly: On
 
 - Name: AAR134
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.6275'
   RxOnly: On
 
 - Name: AAR135
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.6425'
   RxOnly: On
 
 - Name: AAR136
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.6575'
   RxOnly: On
 
 - Name: AAR137
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.6725'
   RxOnly: On
 
 - Name: AAR138
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.6875'
   RxOnly: On
 
 - Name: AAR139
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.7025'
   RxOnly: On
 
 - Name: AAR140
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.7175'
   RxOnly: On
 
 - Name: AAR141
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.7325'
   RxOnly: On
 
 - Name: AAR142
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.7475'
   RxOnly: On
 
 - Name: AAR143
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.7625'
   RxOnly: On
 
 - Name: AAR144
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.7775'
   RxOnly: On
 
 - Name: AAR145
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.7925'
   RxOnly: On
 
 - Name: AAR146
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.8075'
   RxOnly: On
 
 - Name: AAR147
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.8225'
   RxOnly: On
 
 - Name: AAR148
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.8375'
   RxOnly: On
 
 - Name: AAR149
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.8525'
   RxOnly: On
 
 - Name: AAR150
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.8675'
   RxOnly: On
 
 - Name: AAR151
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.8825'
   RxOnly: On
 
 - Name: AAR152
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.8975'
   RxOnly: On
 
 - Name: AAR153
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.9125'
   RxOnly: On
 
 - Name: AAR154
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.9275'
   RxOnly: On
 
 - Name: AAR155
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.9425'
   RxOnly: On
 
 - Name: AAR156
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.9575'
   RxOnly: On
 
 - Name: AAR157
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.9725'
   RxOnly: On
 
 - Name: AAR158
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '160.9875'
   RxOnly: On
 
 - Name: AAR159
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.0025'
   RxOnly: On
 
 - Name: AAR160
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.0175'
   RxOnly: On
 
 - Name: AAR161
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.0325'
   RxOnly: On
 
 - Name: AAR162
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.0475'
   RxOnly: On
 
 - Name: AAR163
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.0625'
   RxOnly: On
 
 - Name: AAR164
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.0775'
   RxOnly: On
 
 - Name: AAR165
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.0925'
   RxOnly: On
 
 - Name: AAR166
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.1075'
   RxOnly: On
 
 - Name: AAR167
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.1225'
   RxOnly: On
 
 - Name: AAR168
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.1375'
   RxOnly: On
 
 - Name: AAR169
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.1525'
   RxOnly: On
 
 - Name: AAR170
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.1675'
   RxOnly: On
 
 - Name: AAR171
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.1825'
   RxOnly: On
 
 - Name: AAR172
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.1975'
   RxOnly: On
 
 - Name: AAR173
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.2125'
   RxOnly: On
 
 - Name: AAR174
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.2275'
   RxOnly: On
 
 - Name: AAR175
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.2425'
   RxOnly: On
 
 - Name: AAR176
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.2575'
   RxOnly: On
 
 - Name: AAR177
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.2725'
   RxOnly: On
 
 - Name: AAR178
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.2875'
   RxOnly: On
 
 - Name: AAR179
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.3025'
   RxOnly: On
 
 - Name: AAR180
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.3175'
   RxOnly: On
 
 - Name: AAR181
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.3325'
   RxOnly: On
 
 - Name: AAR182
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.3475'
   RxOnly: On
 
 - Name: AAR183
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.3625'
   RxOnly: On
 
 - Name: AAR184
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.3775'
   RxOnly: On
 
 - Name: AAR185
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.3925'
   RxOnly: On
 
 - Name: AAR186
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.4075'
   RxOnly: On
 
 - Name: AAR187
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.4225'
   RxOnly: On
 
 - Name: AAR188
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.4375'
   RxOnly: On
 
 - Name: AAR189
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.4525'
   RxOnly: On
 
 - Name: AAR190
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.4675'
   RxOnly: On
 
 - Name: AAR191
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.4825'
   RxOnly: On
 
 - Name: AAR192
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.4975'
   RxOnly: On
 
 - Name: AAR193
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.5125'
   RxOnly: On
 
 - Name: AAR194
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.5275'
   RxOnly: On
 
 - Name: AAR195
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.5425'
   RxOnly: On
 
 - Name: AAR196
-  Mode: NFM
+  Mode: FM
+  Bandwidth: '12.5'
   RxFrequency: '161.5575'
   RxOnly: On
+
+# AAR 307-487 use 6.25 kHz wide NXDN and share frequencies with AAR 001-097 and
+# AAR 107-196 channels.
 
 Zones: []
 ...
