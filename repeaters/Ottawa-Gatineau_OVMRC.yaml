@@ -10,9 +10,6 @@
 #   http://ve3ram.ddns.net:380
 #   http://xlx197.dyndns.org
 
-# *** No FM nets, currently ***
-# *** No YSF nets, currently ***
-
 Channels:
 
 - Name: VE3TWO VHF FM  # Yaesu DR-1X
