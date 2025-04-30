@@ -73,10 +73,11 @@ Channels:
   RxFrequency: '118.8'
   RxOnly: On
 
-# Lanark County EOC 87P5WP3J+5XV
-# Carleton Place and District Hospital 87Q54VR7+96H
-# Perth and District Hospital 87P5WP4W+GRM
-# Smiths Falls and District Hospital 87P5WX4F+J9P
+# 87Q56RH6+HW9  Almonte General Hospital
+# 87Q54VR7+96H  Carleton Place and District Hospital
+# 87P5WP4W+GRM  Perth and District Hospital
+# 87P5WX4F+J9P  Smiths Falls and District Hospital
+# 87P5WP3J+5XV  Lanark County EOC
 
 Zones: []
 ...
