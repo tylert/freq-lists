@@ -10,6 +10,13 @@
 #   https://3730group.ca
 #   http://ve3orf.com
 
+# They don't list any FM repeaters on their web site.  It is possible some or
+# all of the repeaters they list are mixed-mode but more testing will be
+# required to check this.
+
+# Contact the folks who have been assigned the VE3TST and VE3ORF callsigns to
+# confirm.
+
 Channels:
 
 - Name: VE3TST UHF DMR  # equipment TBD
