@@ -355,11 +355,11 @@ Channels:
 # basically, a form of squelch.  Some other forms of squelch are not used on
 # this service.
 
-# http://www.repeater-builder.com/tech-info/ctcss/ctcss-overview.html
+# https://repeater-builder.com/tech-info/ctcss/ctcss-overview.html
 # https://en.wikipedia.org/wiki/Squelch
 # https://en.wikipedia.org/wiki/Continuous_Tone-Coded_Squelch_System
-# http://wiki.radioreference.com/index.php/DCS
-# http://mmi-comm.tripod.com/dcs.html
+# https://wiki.radioreference.com/index.php/DCS
+# https://mmi-comm.tripod.com/dcs.html
 
 # Some equivalent names for the analog "privacy codes":
 # - Call Guard

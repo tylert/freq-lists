@@ -6,7 +6,7 @@
 # |_|   \__,_|\___|_|\_\___|\__|
 
 # Common frequencies for packet
-#   https://www.rac.ca/wp-content/uploads/2021/01/TwoMetre_Bandplan_ND2020TCA.pdf
+#   https://rac.ca/wp-content/uploads/2021/01/TwoMetre_Bandplan_ND2020TCA.pdf
 
 # Wideband digital from 144.31 to 144.5 - 7 frequencies on a 20 kHz raster
 # 144.39 is the APRS working frequency and 144.45 is the AM calling frequency

@@ -7,7 +7,7 @@
 #                   |_|
 
 # Common frequencies for DMR simplex
-#   https://www.rac.ca/wp-content/uploads/2021/01/TwoMetre_Bandplan_ND2020TCA.pdf
+#   https://rac.ca/wp-content/uploads/2021/01/TwoMetre_Bandplan_ND2020TCA.pdf
 
 # Wide band digital modes = greater than 3 kHz and less than 30 kHz wide
 # Bandwidth is 12.5 kHz for DMR
