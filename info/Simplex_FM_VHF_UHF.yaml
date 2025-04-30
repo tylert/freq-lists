@@ -7,7 +7,7 @@
 #                   |_|
 
 # Common frequencies for FM simplex
-#   https://www.rac.ca/wp-content/uploads/2021/01/TwoMetre_Bandplan_ND2020TCA.pdf
+#   https://rac.ca/wp-content/uploads/2021/01/TwoMetre_Bandplan_ND2020TCA.pdf
 
 # FM simplex from 146.4 to 146.595 - 14 frequencies on a 15 kHz raster
 # The plan mentions 13 frequencies but has room for 14 frequencies
