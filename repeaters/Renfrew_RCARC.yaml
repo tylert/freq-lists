@@ -19,19 +19,17 @@
 # Apparently, all of these repeaters do not currently need CTCSS on their
 # inputs.  However, there is talk that this might eventually change so we will
 # continue to send them on the inputs to help ensure more folks have them
-# programmed into their radios.
+# programmed into their radios.  It should be "safe" to send the tone even
+# though no tone is required for access.
 
-# All these repeaters have CTCSS on output with a slight provision for VE3NRR
-# VHF FM (maybe VE3NRR UHF FM too???) which sends CTCSS "only when COS is
+# All these repeaters have CTCSS on output with a slight proviso for VE3NRR VHF
+# FM (maybe VE3NRR UHF FM too???)... CTCSS will be sent "only when COS is
 # present... for the operation of IRLP" (which means it will be present only if
 # the traffic originates on IRLP but not if the traffic originates from the
 # repeater input???).  But, that too is expected to change sometime as well.
-# When this happens, there might be a different tone for IRLP and for regular
-# use so there might need to be 2 channel configurations for VE3NRR VHF FM.
-
-# So, until somebody corrects me or, until I spend a day driving out there to
-# test it, I'll continue to send tones on the inputs and continue to expect
-# tones on the outputs.
+# When this happens, there might be 2 different tones:  one for IRLP and one
+# for regular use.  This might mean there will eventually be 2 channel configs
+# for VE3NRR VHF FM.
 
 Channels:
 
