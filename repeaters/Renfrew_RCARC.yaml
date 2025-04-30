@@ -40,7 +40,7 @@ Channels:
   RxFrequency: '146.76'
   TxFrequencyOffset: '-0.6'
   CtcssEncode: '100.0'
-  CtcssDecode: '100.0'
+  CtcssDecode: None
 
 - Name: VE3NRR UHF FM  # GE MASTR III
   Note: Pembroke 87Q4RRMM+WR
@@ -48,7 +48,7 @@ Channels:
   RxFrequency: '448.025'
   TxFrequencyOffset: '-5.0'
   CtcssEncode: '100.0'
-  CtcssDecode: '100.0'
+  CtcssDecode: None
 
 - Name: VE3UCR VHF FM  # Motorola MSR 2000
   Note: Foymount 87Q4CMHW+V6
