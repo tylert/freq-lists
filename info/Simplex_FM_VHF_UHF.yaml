@@ -181,7 +181,7 @@ Zones:
   - 146.475 FM
   - 146.49 FM
   - 146.505 FM
-  - 146.52 FM
+  - 146.52 FM  # FM calling
   - 146.535 FM
   - 146.55 FM
   - 146.565 FM
@@ -193,7 +193,7 @@ Zones:
   - 147.51 FM
   - 147.54 FM
   - 147.57 FM
-  - 446.0 FM  # 15 channels on UHF
+  - 446.0 FM  # 15 channels on UHF / FM calling
   - 446.0125 FM
   - 446.025 FM
   - 446.0375 FM
