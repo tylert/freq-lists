@@ -9,7 +9,20 @@
 #   https://rac.ca/wp-content/uploads/2021/01/TwoMetre_Bandplan_ND2020TCA.pdf
 
 # Wideband digital from 144.31 to 144.5 - 7 frequencies on a 20 kHz raster
+# XXX FIXME TODO  There's 10 frequencies here on a 20 kHz raster, not 7!!!
 # 144.39 is the APRS working frequency and 144.45 is the AM calling frequency
+
+- Name: PKT431
+  Mode: FM
+  RxFrequency: '144.31'
+
+- Name: PKT433
+  Mode: FM
+  RxFrequency: '144.33'
+
+- Name: PKT435
+  Mode: FM
+  RxFrequency: '144.35'
 
 - Name: PKT437
   Mode: FM
@@ -192,6 +205,9 @@ Zones:
 
 - Name: Packet
   ChannelA:
+  - PKT431  # 10 frequencies on a 20 kHz raster
+  - PKT433
+  - PKT435
   - PKT437
   - PKT439  # APRS
   - PKT441
@@ -199,7 +215,7 @@ Zones:
   - PKT445  # AM calling
   - PKT447
   - PKT449
-  - PKT491
+  - PKT491  # 10 frequencies on a 20 kHz raster
   - PKT493
   - PKT495
   - PKT497
@@ -209,7 +225,7 @@ Zones:
   - PKT505
   - PKT507
   - PKT509
-  - PKT559
+  - PKT559  # 11 frequencies on a 20 kHz raster
   - PKT561
   - PKT563
   - PKT565
