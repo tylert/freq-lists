@@ -41,7 +41,6 @@ VE2OCZ,444.95,+,5.000000,TSQL,107.2,107.2,023,NN,FM
 443.3+ Kingston ON   VE3KTO
 444.25+ Gatineau QC   VA2UHF 110.9
 444.35+ Ottawa (Cumberland) ON VA3RCB 100.0
-444.45+ Perth (Otty Lake) ON  VE3IEV     2053 100.0
 444.5+ Ottawa ON    (Optional - L1) VA3LGP 141.3      -  linked to VE3KJG at QTH of Luc VE3JGL
 444.5+ Chelsea QC   VE2GFV 146.2
 444.7+ Cantley QC   VA2CMB 123.0
