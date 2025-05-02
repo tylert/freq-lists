@@ -9,7 +9,7 @@
 #   https://almontearclub.ca
 #   https://almontearclub.ca/xlx197b
 #   http://va3aar.dyndns.org:3026
-#   http://xlx197.dyndns.org
+#   https://xlx197.dyndns.org
 
 # *** "The Analog Net" Wednesdays at 21:00 Eastern on VA3ARE VHF FM ***
 # *** "The Digital Net" Tuesdays at 20:40 Eastern on anything linked to XLX197 ***
@@ -95,7 +95,7 @@ Channels:
 # Phillip Rodney Lytle VE3HOA, VA3HOA
 #   http://ve3hoa.ddns.net:380
 #   http://ve3hoa.ddns.net:8073  (Kiwi SDR HF)
-#   http://xlx197.dyndns.org
+#   https://xlx197.dyndns.org
 
 - Name: VE3HOZ UHF DMR  # Motorola CDM 1550LS+ Rx & Tx + 100 W amp, STM32-DVM Rev?, Raspberry Pi 4B
   Note: Carp 87Q57W5M+R5
@@ -112,7 +112,7 @@ Channels:
 
 # Tyler Tidman VA3DGN
 
-# - Name: VE3IEV UHF FM  # Vertex Standard VXR-9000 @ 25 W, STM32-DVM Rev4 USB, Raspberry Pi 3B
+# - Name: VE3IEV UHF FM  # Vertex Standard VXR-9000 @ 10 W, STM32-DVM Rev4 USB, Raspberry Pi 3B
 #   Note: TBD
 #   Mode: FM
 #   RxFrequency: '444.45'

@@ -10,7 +10,7 @@
 #   https://champlainrepeater.ca/repeater-2
 #   http://ve3stp.ddns.net:44480
 #   http://ve3stp.ddns.net:8073  (Kiwi SDR HF)
-#   http://xlx197.dyndns.org
+#   https://xlx197.dyndns.org
 #   http://ve3stp.org  (DEPRECATED!!!)
 
 # *** "Champlain Mini Net" Mondays to Fridays at 19:00 Eastern on VE3STP VHF FM ***
@@ -28,13 +28,13 @@ Channels:
   CtcssEncode: '114.8'
   CtcssDecode: '114.8'
 
-# - Name: VE3YYX UHF FM  # TBD @ 40 W
-#   Note: Stones Lake -> Fergusons Lake 87Q575PC+FQ
-#   Mode: FM
-#   RxFrequency: '443.2'
-#   TxFrequencyOffset: '+5.0'
-#   CtcssEncode: '114.8'
-#   CtcssDecode: None
+- Name: VE3YYX UHF FM  # Yaesu DR-2X
+  Note: Site 1  # Stones Lake -> Fergusons Lake 87Q575PC+FQ
+  Mode: FM  # frequency shared with YSF
+  RxFrequency: '444.225'
+  TxFrequencyOffset: '+5.0'
+  CtcssEncode: '114.8'
+  CtcssDecode: '114.8'
 
 # #############################################################################
 
@@ -44,10 +44,19 @@ Channels:
   RxFrequency: '443.6'
   TxFrequencyOffset: '+5.0'
 
+# #############################################################################
+
+- Name: VE3YYX UHF YSF  # Yaesu DR-2X
+  Note: Site 1  # Stones Lake -> Fergusons Lake 87Q575PC+FQ
+  Mode: YSF  # frequency shared with FM / YSF linked to XLX197
+  RxFrequency: '444.225'
+  TxFrequencyOffset: '+5.0'
+
 Zones:
 
 - Name: CRRA RCARC
   ChannelA:
   - VE3STP VHF FM
+  - VE3YYX UHF FM
   ChannelB: []
 ...
