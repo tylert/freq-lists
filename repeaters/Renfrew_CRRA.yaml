@@ -28,7 +28,7 @@ Channels:
   CtcssEncode: '114.8'
   CtcssDecode: '114.8'
 
-- Name: VE3YYX UHF FM  # Yaesu DR-2X
+- Name: VE3YYX UHF FM  # Yaesu DR-2X @ 50 W
   Note: Site 1  # Stones Lake -> Fergusons Lake 87Q575PC+FQ
   Mode: FM  # frequency shared with YSF
   RxFrequency: '444.225'
@@ -46,7 +46,7 @@ Channels:
 
 # #############################################################################
 
-- Name: VE3YYX UHF YSF  # Yaesu DR-2X
+- Name: VE3YYX UHF YSF  # Yaesu DR-2X @ 50 W
   Note: Site 1  # Stones Lake -> Fergusons Lake 87Q575PC+FQ
   Mode: YSF  # frequency shared with FM / YSF linked to XLX197
   RxFrequency: '444.225'
