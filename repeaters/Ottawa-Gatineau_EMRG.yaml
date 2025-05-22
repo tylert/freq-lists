@@ -95,8 +95,6 @@ Zones:
 
 - Name: RLCT
   ChannelA:
-  - VE3OCE VHF FM
-  - VE3OCE UHF FM
-  - VA3EMV/W VHF FM
+  - VE3OCE VHF FM  # backup
   ChannelB: []
 ...

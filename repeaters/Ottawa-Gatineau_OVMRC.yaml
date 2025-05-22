@@ -31,7 +31,7 @@ Channels:
 
 - Name: VE3RAM UHF FM  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Note: Orleans 87Q6FF4F+XH  # VE3LC
-  Mode: FM  # frequency shared with a bunch of other modes
+  Mode: FM  # frequency shared with DMR and DSTAR (and YSF?)
   RxFrequency: '443.7'
   TxFrequencyOffset: '+5.0'
   CtcssEncode: '100.0'

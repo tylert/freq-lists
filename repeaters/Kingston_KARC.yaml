@@ -20,13 +20,13 @@ Channels:
 
 Zones:
 
-- Name: Kingston
+- Name: Frontenac/Kingston
   ChannelA:
   - VE3KBR VHF FM
   ChannelB: []
 
 - Name: RLCT
   ChannelA:
-  - VE3KBR VHF FM
+  - VE3KBR VHF FM  # backup
   ChannelB: []
 ...
