@@ -20,7 +20,7 @@
 
 # Frontenac Radio Group
 #   https://dxnews.com/forum/forum/special-event-stations/376-xm3carf-the-frontenac-amateur-radio-club
-#   http://geocities.ws/eocc_canada  *** SPAM SITE DO NOT VISIT !!! ***
+#   http://geocities.ws/eocc_canada  ~~~ SPAM SITE !!! DANGER !!! ~~~
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 # VE3FRG VHF FM is a temporary, special event repeater only for RLCT
@@ -32,7 +32,7 @@ Channels:
 
 - Name: VE3FRG VHF FM  # Yaesu DR-2X
   Note: South Frontenac 87P57FWC+Q3X  # 250-foot tower
-  Mode: FM  # frequency shared with YSF / normally configured as YSF-only
+  Mode: FM  # frequency shared with YSF / normally configured as YSF-only for 363 days out of the year
   RxFrequency: '146.805'
   TxFrequencyOffset: '-0.6'
   CtcssEncode: '203.5'
@@ -42,6 +42,6 @@ Zones:
 
 - Name: RLCT
   ChannelA:
-  - VE3FRG VHF FM
+  - VE3FRG VHF FM  # primary
   ChannelB: []
 ...

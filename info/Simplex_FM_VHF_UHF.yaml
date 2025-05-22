@@ -212,7 +212,15 @@ Zones:
 
 - Name: RCJ
   ChannelA:
-  - 146.55 FM
-  - 147.57 FM
+  - 146.55 FM  # primary
+  - 147.57 FM  # backup
+  ChannelB: []
+
+- Name: RLCT
+  ChannelA:
+  - 147.57 FM  # mobiles
+  - 146.58 FM  # backup
+  - 146.52 FM  # backup
+# - 146.55 FM  # we really should use 655 and 757 instead of 652 and 658
   ChannelB: []
 ...

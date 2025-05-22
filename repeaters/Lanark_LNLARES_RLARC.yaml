@@ -125,8 +125,8 @@ Zones:
 
 - Name: RLCT
   ChannelA:
-  - VE3KJG VHF FM
-  - VE3REX UHF FM
-  - VA3TEL VHF FM
+  - VE3KJG VHF FM  # primary
+  - VE3REX UHF FM  # linked to primary
+  - VA3TEL VHF FM  # backup
   ChannelB: []
 ...
