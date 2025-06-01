@@ -80,8 +80,6 @@ Channels:
 # VE3RLR VHF and VE3RLR UHF are not linked
 # FM and YSF are not linked
 
-Channels:
-
 - Name: VE3RLR VHF FM  # Yaesu DR-2X
   Note: Railway Museum 87P5WX2C+MJ
   Mode: FM  # frequency shared with YSF
