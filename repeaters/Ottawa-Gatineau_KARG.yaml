@@ -31,7 +31,12 @@ Channels:
 
 Zones:
 
-- Name: KARG
+- Name: Ottawa
+  ChannelA:
+  - VE3NGR VHF FM
+  ChannelB: []
+
+- Name: RCJ
   ChannelA:
   - VE3NGR VHF FM
   ChannelB: []
