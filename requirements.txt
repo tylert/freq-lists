@@ -1,7 +1,8 @@
-click==8.2.0
+click==8.2.1
 et_xmlfile==2.0.0
 openlocationcode==1.0.1
 openpyxl==3.1.5
-ruamel.yaml==0.18.10
-setuptools==80.8.0
+ruamel.yaml==0.18.12
+ruamel.yaml.clib==0.2.12
+setuptools==80.9.0
 wheel==0.45.1
