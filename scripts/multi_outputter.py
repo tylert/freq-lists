@@ -579,6 +579,7 @@ def main(
     # XXX FIXME TODO  Allow the use of STDIN as the input "file"!!!
     with open(input_file) as f:
         yaml = YAML(typ='safe')
+        yaml.allow_duplicate_keys = True
         payload = yaml.load(f)
 
     # XXX FIXME TODO  Option to use CSV CHIRP data files as input maybe???
