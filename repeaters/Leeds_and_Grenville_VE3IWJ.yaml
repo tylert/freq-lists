@@ -11,7 +11,7 @@
 Channels:
 
 - Name: VE3IWJ VHF FM  # equipment TBD
-  Note: Brockville 87P6H7VC+56
+  Note: Brockville 87P6H7VC+56J
   Mode: FM
   RxFrequency: '146.82'
   TxFrequencyOffset: '-0.6'
@@ -19,7 +19,7 @@ Channels:
   CtcssDecode: '100.0'
 
 - Name: VE3IWJ UHF FM  # equipment TBD
-  Note: Brockville 87P6H7VC+56
+  Note: Brockville 87P6H7VC+56J
   Mode: FM
   RxFrequency: '444.0'
   TxFrequencyOffset: '+5.0'
