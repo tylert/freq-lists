@@ -20,11 +20,6 @@ Channels:
 
 Zones:
 
-- Name: Kingston
-  ChannelA:
-  - VE3KBR VHF FM
-  ChannelB: []
-
 - Name: RLCT
   ChannelA:
   - VE3KBR VHF FM  # backup
