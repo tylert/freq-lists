@@ -20,7 +20,7 @@ You must have the following tools installed:
 .. _gojq: https://github.com/itchyny/gojq
 .. _dmrRadio: https://github.com/dalefarnsworth-dmr/dmrRadio
 .. _editcp: https://github.com/dalefarnsworth-dmr/editcp
-.. _LibreOffice: https://www.libreoffice.org
+.. _LibreOffice: https://libreoffice.org
 
 
 Running Things
@@ -138,11 +138,11 @@ Retevis RT90 DFU mode uses orange emergency button + P1 + plug-in "hard" power
 
 Retevis RT3S DFU mode uses top side key + PTT + twist power knob.
 
-* https://www.retevissolutions.com/rt90-dmr-radio
-* https://www.retevissolutions.com/rt3s-dmr-radio#A9110F
+* https://retevissolutions.com/rt90-dmr-radio
+* https://retevissolutions.com/rt3s-dmr-radio#A9110F
 * https://miklor.com/COM/Review_MD9600.php
 * https://miklor.com/COM/Review_UV380.php
-* https://www.amateurradio.com/mobile-dc-power-one-fuse-or-two
+* https://amateurradio.com/mobile-dc-power-one-fuse-or-two
 * http://emrg.ca/EMRG-412_12VDC_for_the_Radio_Amateur.pdf
 
 
@@ -157,13 +157,13 @@ Talkgroups
 Hotspots and Tuning
 -------------------
 
-* https://www.ailunce.com/blog/Set-up-MMDVM-DMR-Hotspot-to-work-with-Ailunce-HD1
-* https://www.ailunce.com/blog/How-to-set-Rx-Tx-Offset
+* https://ailunce.com/blog/Set-up-MMDVM-DMR-Hotspot-to-work-with-Ailunce-HD1
+* https://ailunce.com/blog/How-to-set-Rx-Tx-Offset
 * https://github.com/VR2VYE/MMDVM_HS_firmware
 * https://github.com/g4klx/MMDVMHost/pull/90
 * https://amateurradionotes.com/pi-star.htm
 * https://riku.titanix.net/wordpress/dmr/mmdvm-ber-error-rate-tuning
-* https://www.f5uii.net/en/installation-calibration-adjustment-tunning-mmdvm-mmdvmhost-raspberry-motorola-gm360/5
+* https://f5uii.net/en/installation-calibration-adjustment-tunning-mmdvm-mmdvmhost-raspberry-motorola-gm360/5
 
 
 Admit Criteria determines when your radio is allowed to transmit.  The
@@ -185,20 +185,22 @@ Linking and Transcoding and Repeater Building
 * https://blog.rosenberg-watt.com/2018/08/14/towards-better-global-dmr-ham-radio-id-generation
 * https://tgifnetwork.createaforum.com/hotspot-configurartion/adding-second-hotspot-do-i-need-a-second-dmr-id
 * https://dxcanada.ca/dvstick33-by-dvmega-3-channel-transcoding-for-xlx-systems
-* https://www.dvmega.nl/dvstick30
+* https://dvmega.nl/dvstick30
 * https://github.com/formatc1702/WireViz
 * https://maxonamerica.com/download/tm-8000-spec-sheet
 * https://maxonamerica.com/product/tm-8000-series-mobile-radio
-* https://www.repeater-builder.com/products/stm32-dvm.html
-* https://www.masterscommunications.com/products/radio-adapter/ra-index.html
-* https://www.masterscommunications.com/products/radio-adapter/ra42.html
-* https://www.masterscommunications.com/products/radio-adapter/ra40.html
-* https://www.masterscommunications.com/products/radio-adapter/ra35.html
-* https://www.repeater-builder.com/products/usb-rim.html
-* https://www.repeater-builder.com/products/usb-rim-lite.html
-* https://www.arkcorporation.us/blogs/news/48712645-cool-diy-battery-box-on-reddit
-* https://www.amazon.ca/Pyramid-PSV300-Heavy-duty-Switching-Supply/dp/B000NPT4TK
-* https://www.amazon.com/Universal-Regulated-Benchtop-Converter-Terminals/dp/B09Y1H6C25
+* https://repeater-builder.com/products/stm32-dvm.html
+* https://masterscommunications.com/products/radio-adapter/ra-index.html
+* https://masterscommunications.com/products/radio-adapter/ra42.html
+* https://masterscommunications.com/products/radio-adapter/ra40.html
+* https://masterscommunications.com/products/radio-adapter/ra35.html
+* https://repeater-builder.com/products/usb-rim.html
+* https://repeater-builder.com/products/usb-rim-lite.html
+* https://arkcorporation.us/blogs/news/48712645-cool-diy-battery-box-on-reddit
+* https://amazon.ca/Pyramid-PSV300-Heavy-duty-Switching-Supply/dp/B000NPT4TK
+* https://amazon.com/Universal-Regulated-Benchtop-Converter-Terminals/dp/B09Y1H6C25
+* https://themodernham.com/host-a-ysf-dmr-dstar-c4fm-multi-mode-reflector-on-ubuntu-22-04-or-debian-12-with-xlx
+* https://ad6dm.net/log/2019/02/how-to-create-a-multi-mode-xreflector
 
 ::
 
@@ -280,7 +282,7 @@ Firmware and CPS
 * http://md380.org  main page for MD-380 Tools
 * https://github.com/travisgoodspeed/md380tools  source code for MD-380 Tools
 * https://raw.githubusercontent.com/tylert/pocorgtfo/gh-pages/pocorgtfo10.pdf  reverse-engineering info
-* https://www.pistar.uk/index.php  main page for Pi-Star
+* https://pistar.uk/index.php  main page for Pi-Star
 * https://github.com/M17-Project/Module_17  M17 smart mic
 
 
@@ -421,7 +423,7 @@ Emission Designators
 
 * https://en.wikipedia.org/wiki/Types_of_radio_emissions
 * https://wiki.radioreference.com/index.php/Emission_Designator
-* https://www.hfunderground.com/wiki/index.php/Emission_Designator
+* https://hfunderground.com/wiki/index.php/Emission_Designator
 * https://spec.m17project.org/files/M17_spec.pdf
 * https://sigidwiki.com/wiki/APRS
 * https://sigidwiki.com/wiki/PACKET  AX.25/APRS
@@ -451,9 +453,9 @@ Emission Designators
 Other Links
 -----------
 
-* https://www.dmrfordummies.com/library  what is DMR?
+* https://dmrfordummies.com/library  what is DMR?
 * https://dmrtechnet.net/monday-night-march-31st-the-dmr-tech-net-team-will-go-over-and-discuss-codeplug-best-practices-for-organizing-your-channels-zones-talkgroups
-* https://www.jeffreykopcak.com/2017/05/10/dmr-in-amateur-radio-terminology
+* https://jeffreykopcak.com/2017/05/10/dmr-in-amateur-radio-terminology
 * https://youtu.be/VExx628R0DM
 * https://youtu.be/Lw0Y-jQZMZ0
 
@@ -465,4 +467,4 @@ Maps
 * https://en.wikipedia.org/wiki/Open_Location_Code
 * https://github.com/google/open-location-code
 * https://github.com/google/open-location-code/wiki/Evaluation-of-Location-Encoding-Systems
-* https://www.kschaul.com/post/2023/02/16/how-the-post-is-replacing-mapbox-with-open-source-solutions
+* https://kschaul.com/post/2023/02/16/how-the-post-is-replacing-mapbox-with-open-source-solutions
