@@ -12,12 +12,14 @@ Requirements
 You must have the following tools installed:
 
 * (REQUIRED) Python 3.10.x or newer;  for using the "multi_outputter.py" script for processing the input data files
-* (REQUIRED) gojq_;  for working with JSON payloads
+* (REQUIRED) gojq_;  for working with JSON and YAML payloads
+* (OPTIONAL) yq_;  for working with JSON and YAML payloads
 * (REQUIRED) dmrRadio_ binary 1.0.23 or newer;  for exporting/importing codeplugs to/from JSON and generating blank codeplugs
 * (SUGGESTED) editcp_ 1.0.23 or newer;  for further editing codeplugs
 * (SUGGESTED) LibreOffice_;  for creating PDF handouts to accompany the programmed data
 
 .. _gojq: https://github.com/itchyny/gojq
+.. _yq: https://mikefarah.gitbook.io/yq
 .. _dmrRadio: https://github.com/dalefarnsworth-dmr/dmrRadio
 .. _editcp: https://github.com/dalefarnsworth-dmr/editcp
 .. _LibreOffice: https://libreoffice.org

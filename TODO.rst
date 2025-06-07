@@ -1,13 +1,3 @@
-Libs
-----
-
-* "encoding/csv" stdlib stuff  to work with CSV files
-* "encoding/json" stdlib stuff  to work with JSON files
-* https://github.com/goccy/go-yaml  to work with YAML files
-* https://github.com/go-yaml/yaml  to work with YAML files
-* https://github.com/bitfield/script  to rule them all and in the darkness bind them
-
-
 Typst
 -----
 
@@ -17,11 +7,16 @@ Typst
 * https://typst.app/universe/package/tabut
 
 
-Notes
+JQ/YQ
 -----
 
-* Ensure we aren't doing anything incompatible with https://github.com/itchyny/gojq#difference-to-jq
-* Check the docs at https://github.com/jqlang/jq/releases/tag/jq-1.7 too
+* https://github.com/itchyny/gojq#difference-to-jq
+* https://github.com/jqlang/jq/releases/tag/jq-1.7
+* https://itchyny.medium.com/golang-implementation-of-jq-gojq-ad5bd46a4af2
+* https://stackoverflow.com/questions/72488570/merge-2-yaml-files-with-update-in-place-only#72495954  merge 2 YAML files using gojq
+* https://github.com/mikefarah/yq/issues/1967  merge 2 YAML files using yq
+* https://github.com/mikefarah/yq/discussions/1561  merge 2 YAML files using yq
+* https://richrose.dev/posts/linux/jq/jq-json2csv  CSV output from gojq works too
 
 ::
 
@@ -36,8 +31,6 @@ Notes
 ::
 
     cat radios/stubs.yaml 1.yaml 2.yaml ... n.yaml | gojq --yaml-input -s -f radios/merge.jq
-
-* https://richrose.dev/posts/linux/jq/jq-json2csv  CSV output from gojq works too
 
 
 Piping
