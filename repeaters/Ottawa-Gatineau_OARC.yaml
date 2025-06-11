@@ -59,5 +59,6 @@ Zones:
 - Name: RLCT
   ChannelA:
   - VE2CRA VHF FM  # primary
+  - VE2CRA UHF FM  # linked to primary
   ChannelB: []
 ...
