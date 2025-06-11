@@ -31,5 +31,6 @@ Zones:
 - Name: RLCT
   ChannelA:
   - VE3IWJ VHF FM  # backup backup backup
+  - VE3IWJ UHF FM  # backup backup backup backup
   ChannelB: []
 ...
