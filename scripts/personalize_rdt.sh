@@ -52,11 +52,11 @@ gojq --slurp '.[0] * .[1]' ${handheld_json_file} tmp/VA3DGN-odd.json \
     | gojq '.GeneralSettings.RadioName |= "VA3DGN-5"' > tmp/VA3DGN-5.json
 
 # Generate a binary codeplug for each radio
-dmrRadio jsonToCodeplug tmp/VA3DGN-9.json tmp/VA3DGN-9-${date}.rdt
-dmrRadio jsonToCodeplug tmp/VA3DGN-8.json tmp/VA3DGN-8-${date}.rdt
-dmrRadio jsonToCodeplug tmp/VA3DGN-7.json tmp/VA3DGN-7-${date}.rdt
-dmrRadio jsonToCodeplug tmp/VA3DGN-6.json tmp/VA3DGN-6-${date}.rdt
-dmrRadio jsonToCodeplug tmp/VA3DGN-5.json tmp/VA3DGN-5-${date}.rdt
+dmrRadio jsonToCodeplug "tmp/VA3DGN-9.json" "tmp/VA3DGN-9_${date}.rdt"
+dmrRadio jsonToCodeplug "tmp/VA3DGN-8.json" "tmp/VA3DGN-8_${date}.rdt"
+dmrRadio jsonToCodeplug "tmp/VA3DGN-7.json" "tmp/VA3DGN-7_${date}.rdt"
+dmrRadio jsonToCodeplug "tmp/VA3DGN-6.json" "tmp/VA3DGN-6_${date}.rdt"
+dmrRadio jsonToCodeplug "tmp/VA3DGN-5.json" "tmp/VA3DGN-5_${date}.rdt"
 
 # __     ___    _______     ____  ___   _
 # \ \   / / \  |___ /\ \   / /\ \/ / \ | |
@@ -92,11 +92,11 @@ gojq --slurp '.[0] * .[1]' ${handheld_json_file} tmp/VA3VXN-odd.json \
     | gojq '.GeneralSettings.RadioName |= "VA3VXN-5"' > tmp/VA3VXN-5.json
 
 # Generate a binary codeplug for each radio
-dmrRadio jsonToCodeplug tmp/VA3VXN-9.json tmp/VA3VXN-9-${date}.rdt
-dmrRadio jsonToCodeplug tmp/VA3VXN-8.json tmp/VA3VXN-8-${date}.rdt
-dmrRadio jsonToCodeplug tmp/VA3VXN-7.json tmp/VA3VXN-7-${date}.rdt
-dmrRadio jsonToCodeplug tmp/VA3VXN-6.json tmp/VA3VXN-6-${date}.rdt
-dmrRadio jsonToCodeplug tmp/VA3VXN-5.json tmp/VA3VXN-5-${date}.rdt
+dmrRadio jsonToCodeplug "tmp/VA3VXN-9.json" "tmp/VA3VXN-9_${date}.rdt"
+dmrRadio jsonToCodeplug "tmp/VA3VXN-8.json" "tmp/VA3VXN-8_${date}.rdt"
+dmrRadio jsonToCodeplug "tmp/VA3VXN-7.json" "tmp/VA3VXN-7_${date}.rdt"
+dmrRadio jsonToCodeplug "tmp/VA3VXN-6.json" "tmp/VA3VXN-6_${date}.rdt"
+dmrRadio jsonToCodeplug "tmp/VA3VXN-5.json" "tmp/VA3VXN-5_${date}.rdt"
 
 # Clean up intermediate and generated files
 rm -f tmp/*.json
