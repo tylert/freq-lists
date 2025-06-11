@@ -25,10 +25,10 @@ info/GMRS_FRS_FM_UHF.yaml
 info/Weather_FM_VHF.yaml
 '
 
-mobile_rdt_file="tmp/Retevis_RT90-${date}.rdt"
-mobile_json_file="tmp/Retevis_RT90-${date}.json"
-handheld_rdt_file="tmp/Retevis_RT3S-${date}.rdt"
-handheld_json_file="tmp/Retevis_RT3S-${date}.json"
+mobile_rdt_file="tmp/Retevis_RT90_${date}.rdt"
+mobile_json_file="tmp/Retevis_RT90_${date}.json"
+handheld_rdt_file="tmp/Retevis_RT3S_${date}.rdt"
+handheld_json_file="tmp/Retevis_RT3S_${date}.json"
 
 #  ____ _____ ___   ___
 # |  _ \_   _/ _ \ / _ \

@@ -6,10 +6,10 @@
 # set -x
 date="$(date +%Y-%m-%d)"
 
-mobile_rdt_file="tmp/Retevis_RT90-${date}.rdt"
-mobile_json_file="tmp/Retevis_RT90-${date}.json"
-handheld_rdt_file="tmp/Retevis_RT3S-${date}.rdt"
-handheld_json_file="tmp/Retevis_RT3S-${date}.json"
+mobile_rdt_file="tmp/Retevis_RT90_${date}.rdt"
+mobile_json_file="tmp/Retevis_RT90_${date}.json"
+handheld_rdt_file="tmp/Retevis_RT3S_${date}.rdt"
+handheld_json_file="tmp/Retevis_RT3S_${date}.json"
 
 # Convert generic binary codeplugs back into JSON for intermediate processing
 # XXX FIXME TODO  Remove these sed hacks after fixing the UUID bug!!!
