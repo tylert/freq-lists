@@ -131,9 +131,9 @@
 | .RadioButtons[5] |= {"Button": "Unassigned (default)"}   # Side Button 2 Long Press
 | .RadioButtons[6] |= {"Button": "Unassigned (default)"}   # Side Button 3 Short Press
 | .RadioButtons[7] |= {"Button": "Unassigned (default)"}   # Side Button 3 Long Press
-| .RadioButtons[8] |= {"Button": "Zone +"}                 # P1 Short Press
+| .RadioButtons[8] |= {"Button": "Battery Indicator"}      # P1 Short Press
 | .RadioButtons[9] |= {"Button": "High/Low Power"}         # P1 Long Press
-| .RadioButtons[10] |= {"Button": "Zone -"}                # P2 Short Press
-| .RadioButtons[11] |= {"Button": "Monitor"}               # P2 Long Press
+| .RadioButtons[10] |= {"Button": "Monitor"}               # P2 Short Press
+| .RadioButtons[11] |= {"Button": "Monitor"}               # P3 Long Press
 # =============================================================================
 # XXX FIXME TODO  Editcp/dmrRadio needs to be modified to add button definitions for P3, P4, RED buttons

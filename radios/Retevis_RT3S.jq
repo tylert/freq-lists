@@ -120,8 +120,8 @@
 # =============================================================================
 | .ButtonDefinitions.LongPressDuration |= "1000"    # in milliseconds
 # Radio Buttons
-| .RadioButtons[0] |= {"Button": "Zone +"}          # Side Button 1 Short Press
-| .RadioButtons[1] |= {"Button": "High/Low Power"}  # Side Button 1 Long Press
-| .RadioButtons[2] |= {"Button": "Zone -"}          # Side Button 2 Short Press
-| .RadioButtons[3] |= {"Button": "Monitor"}         # Side Button 2 Long Press
+| .RadioButtons[0] |= {"Button": "Battery Indicator"}  # Side Button 1 Short Press
+| .RadioButtons[1] |= {"Button": "High/Low Power"}     # Side Button 1 Long Press
+| .RadioButtons[2] |= {"Button": "Monitor"}            # Side Button 2 (M) Short Press
+| .RadioButtons[3] |= {"Button": "Monitor"}            # Side Button 2 (M) Long Press
 # =============================================================================
