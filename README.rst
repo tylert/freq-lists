@@ -203,6 +203,7 @@ Linking and Transcoding and Repeater Building
 * https://amazon.com/Universal-Regulated-Benchtop-Converter-Terminals/dp/B09Y1H6C25
 * https://themodernham.com/host-a-ysf-dmr-dstar-c4fm-multi-mode-reflector-on-ubuntu-22-04-or-debian-12-with-xlx
 * https://ad6dm.net/log/2019/02/how-to-create-a-multi-mode-xreflector
+* https://github.com/USA-RedDragon/DMRHub  self-hosted DMR master server?
 
 ::
 
