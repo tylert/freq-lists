@@ -207,6 +207,12 @@ Linking and Transcoding and Repeater Building
 
 ::
 
+    # CDM 750
+    TxInvert=1
+    RXInvert=0
+
+::
+
     Control Software
       Controller Software:  MMDVM Host
       Controller Mode:  Duplex Repeater
