@@ -14,7 +14,7 @@ Channels:
 
 - Name: VE3TWO VHF FM  # Yaesu DR-1X
   Note: Metcalfe 87Q67GH5+GJ  # VE3BOE 60-foot or 80-foot fold-over tower
-  Mode: FM  # frequency shared with YSF
+  Mode: FM  # frequency shared with YSF (AMS)
   RxFrequency: '147.3'
   TxFrequencyOffset: '+0.6'
   CtcssEncode: '100.0'
@@ -23,7 +23,7 @@ Channels:
 # Currently off the air
 # - Name: VE3MPC VHF FM  # Yaesu DR-1X
 #   Note: Orleans 87Q6FF4F+XH  # VE3LC
-#   Mode: FM  # frequency shared with YSF
+#   Mode: FM  # frequency shared with YSF (AMS)
 #   RxFrequency: '147.15'
 #   TxFrequencyOffset: '+0.6'
 #   CtcssEncode: '100.0'
@@ -58,14 +58,14 @@ Channels:
 
 - Name: VE3TWO VHF YSF  # Yaesu DR-1X
   Note: Metcalfe 87Q67GH5+GJ  # VE3BOE 60-foot or 80-foot fold-over tower
-  Mode: YSF  # frequency shared with FM
+  Mode: YSF  # frequency shared with FM (AMS)
   RxFrequency: '147.3'
   TxFrequencyOffset: '+0.6'
 
 # Currently off the air
 # - Name: VE3MPC VHF YSF  # Yaesu DR-1X
 #   Note: Orleans 87Q6FF4F+XH  # VE3LC
-#   Mode: YSF  # frequency shared with FM
+#   Mode: YSF  # frequency shared with FM (AMS)
 #   RxFrequency: '147.15'
 #   TxFrequencyOffset: '+0.6'
 

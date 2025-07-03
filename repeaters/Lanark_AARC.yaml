@@ -19,7 +19,7 @@ Channels:
 
 - Name: VA3UHR VHF FM  # Yaesu DR-2X
   Note: Union Hall 87Q55P64+RR
-  Mode: FM  # frequency shared with YSF
+  Mode: FM  # frequency shared with YSF (AMS)
   RxFrequency: '145.55'
   TxFrequencyOffset: '-0.6'
   CtcssEncode: '88.5'
@@ -45,7 +45,7 @@ Channels:
 # IRLP 2280
 - Name: VA3ARE VHF FM  # Yaesu DR-1X
   Note: Almonte 87Q55Q89+29  # VE3CFZ
-  Mode: FM  # frequency shared with YSF
+  Mode: FM  # frequency shared with YSF (AMS)
   RxFrequency: '147.27'
   TxFrequencyOffset: '+0.6'
   CtcssEncode: '100.0'
@@ -76,13 +76,13 @@ Channels:
 # YSF linked to XLX197B
 - Name: VA3UHR VHF YSF  # Yaesu DR-2X
   Note: Union Hall 87Q55P64+RR
-  Mode: YSF  # frequency shared with FM
+  Mode: YSF  # frequency shared with FM (AMS)
   RxFrequency: '145.55'
   TxFrequencyOffset: '-0.6'
 
 - Name: VA3ARE VHF YSF  # Yaesu DR-1X
   Note: Almonte 87Q55Q89+29  # VE3CFZ
-  Mode: YSF  # frequency shared with FM
+  Mode: YSF  # frequency shared with FM (AMS)
   RxFrequency: '147.27'
   TxFrequencyOffset: '+0.6'
 
@@ -120,13 +120,13 @@ Channels:
   CtcssEncode: '100.0'
   CtcssDecode: '100.0'
 
-# - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, STM32-DVM Rev4 USB, Raspberry Pi 3B
+# - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx @ 5 W, STM32-DVM Rev4 USB, Raspberry Pi 3B
 #   Note: TBD
 #   Mode: DMR  # CCS7 ID 302??? / DMR linked to XLX197B (TS=2, TG=6)
 #   RxFrequency: '?'
 #   TxFrequencyOffset: '+5.0'
 
-# - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx, ? USB, Raspberry Pi 3B
+# - Name: V?3??? UHF DMR  # Motorola CDM 750 Rx & Tx @ 5 W, STM32-DVM Rev4 USB, Raspberry Pi 3B
 #   Note: TBD
 #   Mode: DMR  # CCS7 ID 302??? / DMR linked to XLX197B (TS=2, TG=6)
 #   RxFrequency: '?'

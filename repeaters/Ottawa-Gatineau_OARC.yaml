@@ -41,7 +41,7 @@ Channels:
 
 # #############################################################################
 
-- Name: VE2CRA UHF DMR  # Motorola CDM 1550LS+ Rx & Tx, STM32-DVM Rev3 USB, Raspberry Pi 2B
+- Name: VE2CRA UHF DMR  # Motorola CDM 1550LS+ Rx & Tx @ 20 W, STM32-DVM Rev3 USB, Raspberry Pi 2B
   Note: Camp Fortune 87Q6G532+426
   Mode: DMR  # CCS7 ID 302093
   RxFrequency: '444.4'

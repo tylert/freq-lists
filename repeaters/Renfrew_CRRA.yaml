@@ -30,7 +30,7 @@ Channels:
 
 - Name: VE3YYX UHF FM  # Yaesu DR-2X @ 50 W
   Note: Kennellys Mountain 87Q58455+W5
-  Mode: FM  # frequency shared with YSF
+  Mode: FM  # frequency shared with YSF (AMS)
   RxFrequency: '444.225'
   TxFrequencyOffset: '+5.0'
   CtcssEncode: '114.8'
@@ -56,7 +56,7 @@ Channels:
 
 - Name: VE3YYX UHF YSF  # Yaesu DR-2X @ 50 W
   Note: Kennellys Mountain 87Q58455+W5
-  Mode: YSF  # frequency shared with FM / YSF linked to XLX197
+  Mode: YSF  # frequency shared with FM (AMS) / YSF linked to XLX197
   RxFrequency: '444.225'
   TxFrequencyOffset: '+5.0'
 
