@@ -132,8 +132,8 @@ Starting a New Codeplug
         | gojq 'del(.Zones[])' > empty.json
 
 
-DFU Mode
---------
+Radio Specific Info
+-------------------
 
 Retevis RT90 DFU mode uses orange emergency button + P1 + plug-in "hard" power
 (ignore "soft" power button).
@@ -146,6 +146,7 @@ Retevis RT3S DFU mode uses top side key + PTT + twist power knob.
 * https://miklor.com/COM/Review_UV380.php
 * https://amateurradio.com/mobile-dc-power-one-fuse-or-two
 * http://emrg.ca/EMRG-412_12VDC_for_the_Radio_Amateur.pdf
+* https://forum.digirig.net/t/tyt-md-380uv-cable-and-support/2708/7  cable info for RT90 and RT3S
 
 
 Talkgroups
