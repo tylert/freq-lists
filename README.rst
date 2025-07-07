@@ -151,9 +151,9 @@ Retevis RT3S DFU mode uses top side key + PTT + twist power knob.
 Talkgroups
 ----------
 
-* https://wiki.brandmeister.network/index.php/TalkGroup/98638  WVNET
-* https://wirelessvillage.ninja
-* https://rfhackers.com
+* https://wiki.brandmeister.network/index.php/TalkGroup/98638  WVNET = DMR 98638
+* https://rfhackers.com  WVNET = DMR 98638
+* http://farc.ysfreflector.ca  FRG = YSF 43567
 
 
 Hotspots and Tuning
