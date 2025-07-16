@@ -147,6 +147,8 @@ Retevis RT3S DFU mode uses top side key + PTT + twist power knob.
 * https://amateurradio.com/mobile-dc-power-one-fuse-or-two
 * http://emrg.ca/EMRG-412_12VDC_for_the_Radio_Amateur.pdf
 * https://forum.digirig.net/t/tyt-md-380uv-cable-and-support/2708/7  cable info for RT90 and RT3S
+* https://github.com/M17-Project/LinHT-hw  possible replacement mainboard for Retevis C62 handheld (dual-band, non-waterproof)
+* https://www.retevis.com/products/retevis-c62-5-w-long-range-uv-dual-band-ai-noise-reducation-business-radio-us
 
 
 Talkgroups
@@ -187,6 +189,8 @@ Dual Capacity Direct Mode / Single Frequency Repeater
 * https://www.zeroretries.org  loads of articles relating to "TDD SFR" (mandatory "www" in URL here)
 * https://cwh050.mywikis.wiki/wiki/Dual_Capacity_Direct_Mode
 * https://forum.pistar.uk/viewtopic.php?t=4718
+* https://opengd77.com/viewtopic.php?t=2378
+* https://k5rwk.org/2025/03/23/how-to-program-your-dmr-radio-for-the-balloon-single-frequency-repeater
 
 
 Linking and Transcoding and Repeater Building
@@ -203,12 +207,15 @@ Linking and Transcoding and Repeater Building
 * https://dvmega.nl/dvstick30
 * https://github.com/formatc1702/WireViz
 * https://maxonamerica.com/product-category/mobile-radios  MDM-4000 series, TM-8000 series, etc.
+* https://masterscommunications.com/products/radio-adapter/ra-features.html  differences between the boards
+* https://masterscommunications.com/products/radio-adapter/ra42.html  amplified Tx audio
+* https://masterscommunications.com/products/radio-adapter/ra33.html  not amplified Tx audio
+* https://masterscommunications.com/products/mux/mux25.html
 * https://repeater-builder.com/products/stm32-dvm.html
-* https://masterscommunications.com/products/radio-adapter/ra42.html
-* https://masterscommunications.com/products/radio-adapter/ra33.html
-* https://repeater-builder.com/voip/pdf/allstar-newbie-guide.pdf
 * https://repeater-builder.com/products/usb-rim.html
 * https://repeater-builder.com/products/usb-rim-lite.html
+* https://repeater-builder.com/voip/pdf/allstar-newbie-guide.pdf
+* https://repeater-builder.com/projects/fob/startech-syba-fob.html  WB2EDV pinouts (STM32-DVM, RA-33, RA-42, etc.)
 * https://arkcorporation.us/blogs/news/48712645-cool-diy-battery-box-on-reddit
 * https://amazon.ca/Pyramid-PSV300-Heavy-duty-Switching-Supply/dp/B000NPT4TK
 * https://amazon.com/Universal-Regulated-Benchtop-Converter-Terminals/dp/B09Y1H6C25
@@ -218,7 +225,6 @@ Linking and Transcoding and Repeater Building
 * https://n3emc.com/hblink-dmr-server-how-to-set-it-up-for-a-private-dmr-server
 * https://github.com/juribeparada/MMDVM_CM
 * https://qsl.net/w2ymm/cdm_rim_maxtrac_rm.html  programming notes for CDM, Maxtrac radios
-* https://repeater-builder.com/projects/fob/startech-syba-fob.html  AllStar magic fobs and "WB2EDV pinouts"
 
 ::
 
