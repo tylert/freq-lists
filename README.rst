@@ -167,6 +167,8 @@ Hotspots and Tuning
 * https://amateurradionotes.com/pi-star.htm
 * https://riku.titanix.net/wordpress/dmr/mmdvm-ber-error-rate-tuning
 * https://f5uii.net/en/installation-calibration-adjustment-tunning-mmdvm-mmdvmhost-raspberry-motorola-gm360/5
+* https://dl6fz.info/digital-modes-vhf-uhf/m17-analog-hotspot-gateway
+* https://lyonscomputer.com.au/Digital-Modes/M17/M17-Analog-Hotpot-Gateway/M17-Analog-Hotpot-Gateway.html
 
 
 Admit Criteria determines when your radio is allowed to transmit.  The
@@ -205,6 +207,9 @@ Linking and Transcoding and Repeater Building
 * https://themodernham.com/host-a-ysf-dmr-dstar-c4fm-multi-mode-reflector-on-ubuntu-22-04-or-debian-12-with-xlx
 * https://ad6dm.net/log/2019/02/how-to-create-a-multi-mode-xreflector
 * https://github.com/USA-RedDragon/DMRHub  self-hosted DMR master server?
+* https://n3emc.com/hblink-dmr-server-how-to-set-it-up-for-a-private-dmr-server
+* https://github.com/juribeparada/MMDVM_CM
+* https://www.randomwire.us/p/random-wire-review-issue-130?open=false#%C2%A7standing-up-a-new-m-reflector  (mandatory www here)
 
 ::
 
