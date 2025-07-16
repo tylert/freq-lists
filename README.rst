@@ -170,13 +170,23 @@ Hotspots and Tuning
 * https://dl6fz.info/digital-modes-vhf-uhf/m17-analog-hotspot-gateway
 * https://lyonscomputer.com.au/Digital-Modes/M17/M17-Analog-Hotpot-Gateway/M17-Analog-Hotpot-Gateway.html
 
+::
 
-Admit Criteria determines when your radio is allowed to transmit.  The
-recommended setting for repeater channels is Color Code Free; this configures
-your radio to be polite to your own digital system.  You should configure your
-In Call Criteria to Follow Admit Criteria.  Simplex channels should be
-configured as Always for both Admit Criteria and Always or Follow TX for In
-Call Criteria.
+    Admit Criteria determines when your radio is allowed to transmit.  The
+    recommended setting for repeater channels is Color Code Free; this configures
+    your radio to be polite to your own digital system.  You should configure your
+    In Call Criteria to Follow Admit Criteria.  Simplex channels should be
+    configured as Always for both Admit Criteria and Always or Follow TX for In
+    Call Criteria.
+
+
+Dual Capacity Direct Mode / Single Frequency Repeater
+-----------------------------------------------------
+
+* https://docdroid.com/hlxgIXh/hrivol30125-pdf#page=18  article explaining DMR DCDM and DMO SFR modes
+* https://www.zeroretries.org  loads of articles relating to "TDD SFR" (mandatory "www" in URL here)
+* https://cwh050.mywikis.wiki/wiki/Dual_Capacity_Direct_Mode
+* https://forum.pistar.uk/viewtopic.php?t=4718
 
 
 Linking and Transcoding and Repeater Building
@@ -192,13 +202,11 @@ Linking and Transcoding and Repeater Building
 * https://dxcanada.ca/dvstick33-by-dvmega-3-channel-transcoding-for-xlx-systems
 * https://dvmega.nl/dvstick30
 * https://github.com/formatc1702/WireViz
-* https://maxonamerica.com/download/tm-8000-spec-sheet
-* https://maxonamerica.com/product/tm-8000-series-mobile-radio
+* https://maxonamerica.com/product-category/mobile-radios  MDM-4000 series, TM-8000 series, etc.
 * https://repeater-builder.com/products/stm32-dvm.html
-* https://masterscommunications.com/products/radio-adapter/ra-index.html
 * https://masterscommunications.com/products/radio-adapter/ra42.html
-* https://masterscommunications.com/products/radio-adapter/ra40.html
-* https://masterscommunications.com/products/radio-adapter/ra35.html
+* https://masterscommunications.com/products/radio-adapter/ra33.html
+* https://repeater-builder.com/voip/pdf/allstar-newbie-guide.pdf
 * https://repeater-builder.com/products/usb-rim.html
 * https://repeater-builder.com/products/usb-rim-lite.html
 * https://arkcorporation.us/blogs/news/48712645-cool-diy-battery-box-on-reddit
@@ -209,7 +217,8 @@ Linking and Transcoding and Repeater Building
 * https://github.com/USA-RedDragon/DMRHub  self-hosted DMR master server?
 * https://n3emc.com/hblink-dmr-server-how-to-set-it-up-for-a-private-dmr-server
 * https://github.com/juribeparada/MMDVM_CM
-* https://www.randomwire.us/p/random-wire-review-issue-130?open=false#%C2%A7standing-up-a-new-m-reflector  (mandatory www here)
+* https://qsl.net/w2ymm/cdm_rim_maxtrac_rm.html  programming notes for CDM, Maxtrac radios
+* https://repeater-builder.com/projects/fob/startech-syba-fob.html  AllStar magic fobs and "WB2EDV pinouts"
 
 ::
 
@@ -299,6 +308,7 @@ Firmware and CPS
 * https://raw.githubusercontent.com/tylert/pocorgtfo/gh-pages/pocorgtfo10.pdf  reverse-engineering info
 * https://pistar.uk/index.php  main page for Pi-Star
 * https://github.com/M17-Project/Module_17  M17 smart mic
+* https://www.randomwire.us/p/random-wire-review-issue-130  lots of good M17 discussions (mandatory "www" in URL here)
 
 
 DMR SMS
