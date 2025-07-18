@@ -148,7 +148,8 @@ Retevis RT3S DFU mode uses top side key + PTT + twist power knob.
 * http://emrg.ca/EMRG-412_12VDC_for_the_Radio_Amateur.pdf
 * https://forum.digirig.net/t/tyt-md-380uv-cable-and-support/2708/7  cable info for RT90 and RT3S
 * https://github.com/M17-Project/LinHT-hw  possible replacement mainboard for Retevis C62 handheld (dual-band, non-waterproof)
-* https://www.retevis.com/products/retevis-c62-5-w-long-range-uv-dual-band-ai-noise-reducation-business-radio-us
+* https://retevis.com/products/retevis-c62-5-w-long-range-uv-dual-band-ai-noise-reducation-business-radio-us
+* https://trull.org/alex/pubmirror/robrobinette.com/Ham_VHF-UHF_Digital_Modes.htm
 
 
 Talkgroups
