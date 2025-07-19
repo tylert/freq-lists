@@ -226,6 +226,11 @@ Linking and Transcoding and Repeater Building
 * https://n3emc.com/hblink-dmr-server-how-to-set-it-up-for-a-private-dmr-server
 * https://github.com/juribeparada/MMDVM_CM
 * https://qsl.net/w2ymm/cdm_rim_maxtrac_rm.html  programming notes for CDM, Maxtrac radios
+* https://dvmproject.io
+* https://dvmproject.readthedocs.io
+* https://github.com/DVMProject
+* https://store.w3axl.com/products/dvm-v1-duplex-modem
+* https://store.w3axl.com/products/dvm-v24-v2-usb-converter-for-v-24-equipment
 
 ::
 
