@@ -231,6 +231,12 @@ Linking and Transcoding and Repeater Building
 * https://github.com/DVMProject
 * https://store.w3axl.com/products/dvm-v1-duplex-modem
 * https://store.w3axl.com/products/dvm-v24-v2-usb-converter-for-v-24-equipment
+* https://wp.hamoperator.com/fusion/yaesu-repeater-lockup  DR-2X fixes?
+* https://www.arcomcontrollers.com/index.php/adr-interface  DR-2X fixes?
+* https://arcomcontrollers.com/documents/rc210/dr2x_adr_interface.pdf  DR-2X fixes?
+* http://scomcontrollers.com/downloads/SCOM7330_Interface_DR2X.pdf  DR-2X fixes?  (mandatory "http" here)
+* https://github.com/phastmike/IDx_hardware  DR-2X fixes?
+* https://github.com/phastmike/IDx  DR-2X fixes?
 
 ::
 
