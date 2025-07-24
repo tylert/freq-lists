@@ -172,6 +172,7 @@ Hotspots and Tuning
 * https://f5uii.net/en/installation-calibration-adjustment-tunning-mmdvm-mmdvmhost-raspberry-motorola-gm360/5
 * https://dl6fz.info/digital-modes-vhf-uhf/m17-analog-hotspot-gateway
 * https://lyonscomputer.com.au/Digital-Modes/M17/M17-Analog-Hotpot-Gateway/M17-Analog-Hotpot-Gateway.html
+* https://github.com/n7tae/ham-dht-tools  make-m17-host-file CLI tool, among others
 
 ::
 
