@@ -148,6 +148,7 @@ Retevis RT3S DFU mode uses top side key + PTT + twist power knob.
 * http://emrg.ca/EMRG-412_12VDC_for_the_Radio_Amateur.pdf
 * https://forum.digirig.net/t/tyt-md-380uv-cable-and-support/2708/7  cable info for RT90 and RT3S
 * https://github.com/M17-Project/LinHT-hw  possible replacement mainboard for Retevis C62 handheld (dual-band, non-waterproof)
+* https://m17project.org/2025/07/26/an-update-on-linht-openht-v2-development-process
 * https://retevis.com/products/retevis-c62-5-w-long-range-uv-dual-band-ai-noise-reducation-business-radio-us
 * https://trull.org/alex/pubmirror/robrobinette.com/Ham_VHF-UHF_Digital_Modes.htm
 
@@ -173,6 +174,11 @@ Hotspots and Tuning
 * https://dl6fz.info/digital-modes-vhf-uhf/m17-analog-hotspot-gateway
 * https://lyonscomputer.com.au/Digital-Modes/M17/M17-Analog-Hotpot-Gateway/M17-Analog-Hotpot-Gateway.html
 * https://github.com/n7tae/ham-dht-tools  make-m17-host-file CLI tool, among others
+* https://m17project.org/2025/07/27/web-interface-for-the-cc1200-hotspot
+* https://github.com/jancona/m17  M17Gateway in Go
+* https://bradmc.com/articles/life-with-dmr-talker-alias
+* https://mrickey.com/2018/02/07/talker-alias-on-brandmeister
+* https://wiki.brandmeister.network/index.php/Talker_Alias
 
 ::
 
@@ -193,6 +199,8 @@ Dual Capacity Direct Mode / Single Frequency Repeater
 * https://forum.pistar.uk/viewtopic.php?t=4718
 * https://opengd77.com/viewtopic.php?t=2378
 * https://k5rwk.org/2025/03/23/how-to-program-your-dmr-radio-for-the-balloon-single-frequency-repeater
+* https://techwholesale.com/what-is-dual-capacity-direct-mode
+* https://mojaverepeater.com/blog/portable-dmr-single-frequency-repeater
 
 
 Linking and Transcoding and Repeater Building
@@ -208,7 +216,7 @@ Linking and Transcoding and Repeater Building
 * https://dxcanada.ca/dvstick33-by-dvmega-3-channel-transcoding-for-xlx-systems
 * https://dvmega.nl/dvstick30
 * https://github.com/formatc1702/WireViz
-* https://maxonamerica.com/product-category/mobile-radios  MDM-4000 series, TM-8000 series, etc.
+* https://maxonamerica.com/product-category/mobile-radios  MDM-4000 series (supports SFR too), TM-8000 series, etc.
 * https://masterscommunications.com/products/radio-adapter/ra-features.html  differences between the boards
 * https://masterscommunications.com/products/radio-adapter/ra42.html  amplified Tx audio
 * https://masterscommunications.com/products/radio-adapter/ra33.html  not amplified Tx audio
@@ -502,6 +510,7 @@ Other Links
 * https://jeffreykopcak.com/2017/05/10/dmr-in-amateur-radio-terminology
 * https://youtu.be/VExx628R0DM
 * https://youtu.be/Lw0Y-jQZMZ0
+* https://en.wikipedia.org/wiki/PACE_(communication_methodology)  "layered" communications strategy?
 
 
 Maps
