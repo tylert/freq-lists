@@ -197,7 +197,6 @@ Dual Capacity Direct Mode / Single Frequency Repeater
 * https://www.zeroretries.org  loads of articles relating to "TDD SFR" (mandatory "www" in URL here)
 * https://cwh050.mywikis.wiki/wiki/Dual_Capacity_Direct_Mode
 * https://forum.pistar.uk/viewtopic.php?t=4718
-* https://opengd77.com/viewtopic.php?t=2378
 * https://k5rwk.org/2025/03/23/how-to-program-your-dmr-radio-for-the-balloon-single-frequency-repeater
 * https://techwholesale.com/what-is-dual-capacity-direct-mode
 * https://mojaverepeater.com/blog/portable-dmr-single-frequency-repeater
@@ -320,10 +319,7 @@ Firmware and CPS
 * https://github.com/dalefarnsworth-dmr  source code for editcp, dmrRadio, libraries, etc.
 * https://dm3mat.darc.de/qdmr  main page for qdmr
 * https://github.com/hmatuschek/qdmr  source code for qdmr
-* https://opengd77.com/viewtopic.php?f=18&t=2002  replacement firmware for Retevis RT90 / TYT MD-9600
-* https://opengd77.com/viewtopic.php?f=19&t=2380  replacement firmware for the Retevis RT3S / TYT MD-UV380
-* https://opengd77.com/viewtopic.php?f=12&t=1486  new firmware can't use the same CPS
-* https://opengd77.com/viewtopic.php?f=18&t=3040  RT90 remote head
+* https://github.com/g4eml/OpenMD9600_Remote_Head
 * https://m17project.org  main page for M17 Project
 * https://openrtx.org/#  main page for OpenRTX
 * https://github.com/OpenRTX  OpenRTX firmware, dmrconfig tool, etc.
