@@ -186,6 +186,7 @@ Channels:
 # TxFrequencyOffset: '+5.0'
   RxOnly: On
   Power: Medium
+  Note: Do not use near the border
 
 - Name: GMRS20
   Mode: FM
@@ -202,6 +203,7 @@ Channels:
 # TxFrequencyOffset: '+5.0'
   RxOnly: On
   Power: Medium
+  Note: Do not use near the border
 
 - Name: GMRS22
   Mode: FM
@@ -227,6 +229,7 @@ Channels:
   RxFrequency: '467.55'
   RxOnly: On
   Power: High
+  Note: Repeater input
 
 - Name: GMRS16R
   Mode: FM
@@ -234,6 +237,7 @@ Channels:
   RxFrequency: '467.575'
   RxOnly: On
   Power: High
+  Note: Repeater input
 
 - Name: GMRS17R
   Mode: FM
@@ -241,6 +245,7 @@ Channels:
   RxFrequency: '467.6'
   RxOnly: On
   Power: High
+  Note: Repeater input
 
 - Name: GMRS18R
   Mode: FM
@@ -248,6 +253,7 @@ Channels:
   RxFrequency: '467.625'
   RxOnly: On
   Power: High
+  Note: Repeater input
 
 - Name: GMRS19R
   Mode: FM
@@ -255,6 +261,7 @@ Channels:
   RxFrequency: '467.65'
   RxOnly: On
   Power: High
+  Note: Repeater input
 
 - Name: GMRS20R
   Mode: FM
@@ -262,6 +269,7 @@ Channels:
   RxFrequency: '467.675'
   RxOnly: On
   Power: High
+  Note: Repeater input
 
 - Name: GMRS21R
   Mode: FM
@@ -269,6 +277,7 @@ Channels:
   RxFrequency: '467.7'
   RxOnly: On
   Power: High
+  Note: Repeater input
 
 - Name: GMRS22R
   Mode: FM
@@ -276,6 +285,7 @@ Channels:
   RxFrequency: '467.725'
   RxOnly: On
   Power: High
+  Note: Repeater input
 
 # The following is a list of possible channel values for interoperability with
 # other brands of radios (scheme A is the most common one):
