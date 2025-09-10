@@ -1,0 +1,261 @@
+---
+#   https://en.wikipedia.org/wiki/Citizens_band_radio
+
+Channels:
+
+# Users are allowed to transmit up to 4 W on these channels
+
+- Name: CB01
+  Mode: AM  # or FM
+  RxFrequency: '26.965'
+  RxOnly: On
+
+- Name: CB02
+  Mode: AM  # or FM
+  RxFrequency: '26.975'
+  RxOnly: On
+
+- Name: CB03
+  Mode: AM  # or FM
+  RxFrequency: '26.985'
+  RxOnly: On
+
+#- Name: RC03A
+#  Mode: AM
+#  RxFrequency: '26.995'
+#  RxOnly: On
+
+- Name: CB04
+  Mode: AM  # or FM
+  RxFrequency: '27.005'
+  RxOnly: On
+
+- Name: CB05
+  Mode: AM  # or FM
+  RxFrequency: '27.015'
+  RxOnly: On
+
+- Name: CB06
+  Mode: AM  # or FM
+  RxFrequency: '27.025'
+  RxOnly: On
+
+- Name: CB07
+  Mode: AM  # or FM
+  RxFrequency: '27.035'
+  RxOnly: On
+
+#- Name: RC07A
+#  Mode: AM
+#  RxFrequency: '27.045'
+#  RxOnly: On
+
+- Name: CB08
+  Mode: AM  # or FM
+  RxFrequency: '27.055'
+  RxOnly: On
+
+- Name: CB09
+  Mode: AM  # or FM
+  RxFrequency: '27.065'
+  RxOnly: On
+
+- Name: CB10
+  Mode: AM  # or FM
+  RxFrequency: '27.075'
+  RxOnly: On
+
+- Name: CB11
+  Mode: AM  # or FM
+  RxFrequency: '27.085'
+  RxOnly: On
+
+#- Name: RC11A
+#  Mode: AM
+#  RxFrequency: '27.095'
+#  RxOnly: On
+
+- Name: CB12
+  Mode: AM  # or FM
+  RxFrequency: '27.105'
+  RxOnly: On
+
+- Name: CB13
+  Mode: AM  # or FM
+  RxFrequency: '27.115'
+  RxOnly: On
+
+- Name: CB14
+  Mode: AM  # or FM
+  RxFrequency: '27.125'
+  RxOnly: On
+
+- Name: CB15
+  Mode: AM  # or FM
+  RxFrequency: '27.135'
+  RxOnly: On
+
+#- Name: RC15A
+#  Mode: AM
+#  RxFrequency: '27.145'
+#  RxOnly: On
+
+- Name: CB16
+  Mode: AM  # or FM
+  RxFrequency: '27.155'
+  RxOnly: On
+
+- Name: CB17
+  Mode: AM  # or FM
+  RxFrequency: '27.165'
+  RxOnly: On
+
+- Name: CB18
+  Mode: AM  # or FM
+  RxFrequency: '27.175'
+  RxOnly: On
+
+- Name: CB19
+  Mode: AM  # or FM
+  RxFrequency: '27.185'
+  RxOnly: On
+
+#- Name: RC19A
+#  Mode: AM
+#  RxFrequency: '27.195'
+#  RxOnly: On
+
+- Name: CB20
+  Mode: AM  # or FM
+  RxFrequency: '27.205'
+  RxOnly: On
+
+- Name: CB21
+  Mode: AM  # or FM
+  RxFrequency: '27.215'
+  RxOnly: On
+
+- Name: CB22
+  Mode: AM  # or FM
+  RxFrequency: '27.225'
+  RxOnly: On
+
+- Name: CB23
+  Mode: AM  # or FM
+  RxFrequency: '27.255'  # this one is slightly out of order
+  RxOnly: On
+
+- Name: CB24
+  Mode: AM  # or FM
+  RxFrequency: '27.235'
+  RxOnly: On
+
+- Name: CB25
+  Mode: AM  # or FM
+  RxFrequency: '27.245'
+  RxOnly: On
+
+- Name: CB26
+  Mode: AM  # or FM
+  RxFrequency: '27.265'
+  RxOnly: On
+
+- Name: CB27
+  Mode: AM  # or FM
+  RxFrequency: '27.275'
+  RxOnly: On
+
+- Name: CB28
+  Mode: AM  # or FM
+  RxFrequency: '27.285'
+  RxOnly: On
+
+- Name: CB29
+  Mode: AM  # or FM
+  RxFrequency: '27.295'
+  RxOnly: On
+
+- Name: CB30
+  Mode: AM  # or FM
+  RxFrequency: '27.305'
+  RxOnly: On
+
+- Name: CB31
+  Mode: AM  # or FM
+  RxFrequency: '27.315'
+  RxOnly: On
+
+- Name: CB32
+  Mode: AM  # or FM
+  RxFrequency: '27.325'
+  RxOnly: On
+
+- Name: CB33
+  Mode: AM  # or FM
+  RxFrequency: '27.335'
+  RxOnly: On
+
+- Name: CB34
+  Mode: AM  # or FM
+  RxFrequency: '27.345'
+  RxOnly: On
+
+- Name: CB35
+  Mode: AM  # or FM
+  RxFrequency: '27.355'
+  RxOnly: On
+
+# Users are allowed to transmit up to 12 W on these channels
+
+- Name: CB36L
+  Mode: LSB
+  RxFrequency: '27.365'
+  RxOnly: On
+
+- Name: CB37L
+  Mode: LSB
+  RxFrequency: '27.375'
+  RxOnly: On
+
+- Name: CB38L
+  Mode: LSB
+  RxFrequency: '27.385'
+  RxOnly: On
+
+- Name: CB39L
+  Mode: LSB
+  RxFrequency: '27.395'
+  RxOnly: On
+
+- Name: CB40L
+  Mode: LSB
+  RxFrequency: '27.405'
+  RxOnly: On
+
+- Name: CB36U
+  Mode: USB
+  RxFrequency: '27.365'
+  RxOnly: On
+
+- Name: CB37U
+  Mode: USB
+  RxFrequency: '27.375'
+  RxOnly: On
+
+- Name: CB38U
+  Mode: USB
+  RxFrequency: '27.385'
+  RxOnly: On
+
+- Name: CB39U
+  Mode: USB
+  RxFrequency: '27.395'
+  RxOnly: On
+
+- Name: CB40U
+  Mode: USB
+  RxFrequency: '27.405'
+  RxOnly: On
+
+Zones: []
+...
