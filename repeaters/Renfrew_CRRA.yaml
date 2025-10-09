@@ -15,13 +15,13 @@
 
 # *** "Champlain Mini Net" Mondays to Fridays at 19:00 Eastern on VE3STP VHF FM ***
 
-# Site 1 87Q5835W+5J has a digipeter for 145.01 FM (packet) on solar power
-# Site 2 87Q58455+W5 is where everything else is located (mains + inet)
+# Site 1 87Q5835W+5J5 has a digipeter for 145.01 FM (packet) on solar power
+# Site 2 87Q58455+W5G is where everything else is located (mains + inet)
 
 Channels:
 
 - Name: VE3STP VHF FM  # Motorola CM 200 Rx, CDM 1250 Tx + 100 W amp, Arcom RC210 controller
-  Note: Kennellys Mountain 87Q58455+W5
+  Note: Kennellys Mountain 87Q58455+W5G
   Mode: FM
   RxFrequency: '147.06'
   TxFrequencyOffset: '+0.6'
@@ -29,7 +29,7 @@ Channels:
   CtcssDecode: '114.8'
 
 - Name: VE3YYX UHF FM  # Yaesu DR-2X @ 50 W
-  Note: Kennellys Mountain 87Q58455+W5
+  Note: Kennellys Mountain 87Q58455+W5G
   Mode: FM  # frequency shared with YSF (AMS)
   RxFrequency: '444.225'
   TxFrequencyOffset: '+5.0'
@@ -37,7 +37,7 @@ Channels:
   CtcssDecode: '114.8'
 
 - Name: VE3YYX/2 UHF FM  # Yaesu DR-2X
-  Note: Site 1 87Q5835W+5J
+  Note: Site 1 87Q5835W+5J5
   Mode: FM  # frequency shared with YSF (AMS)
   RxFrequency: '443.2'
   TxFrequencyOffset: '+5.0'
@@ -47,7 +47,7 @@ Channels:
 # #############################################################################
 
 - Name: VE3STP UHF DSTAR  # Motorola CM 300 Rx & Tx
-  Note: Kennellys Mountain 87Q58455+W5
+  Note: Kennellys Mountain 87Q58455+W5G
   Mode: DSTAR  # Module B / DSTAR linked to XLX197B
   RxFrequency: '443.6'
   TxFrequencyOffset: '+5.0'
@@ -55,13 +55,13 @@ Channels:
 # #############################################################################
 
 - Name: VE3YYX UHF YSF  # Yaesu DR-2X @ 50 W
-  Note: Kennellys Mountain 87Q58455+W5
-  Mode: YSF  # frequency shared with FM (AMS) / YSF linked to XLX197
+  Note: Kennellys Mountain 87Q58455+W5G
+  Mode: YSF  # frequency shared with FM (AMS) / YSF linked to XLX197 / DG-11
   RxFrequency: '444.225'
   TxFrequencyOffset: '+5.0'
 
 - Name: VE3YYX/2 UHF YSF  # Yaesu DR-2X
-  Note: Site 1 87Q5835W+5J
+  Note: Site 1 87Q5835W+5J5
   Mode: YSF  # frequency shared with FM (AMS)
   RxFrequency: '443.2'
   TxFrequencyOffset: '+5.0'
