@@ -61,7 +61,8 @@ Debian-based distros (Debian, Ubuntu, Raspberry Pi OS, etc.), on x86 and ARM::
     # Don't use the go provided by the OS as it is super old
     # Fetch an appropriate tarball from https://go.dev/dl
     # Install the contents of the tarball somewhere convenient
-    sudo tar -C /usr/local -xvfz ${GO_TARBALL}
+    sudo tar -C /usr/local -xvfz "${GO_TARBALL}"
+    export "PATH=/usr/local/go/bin;${PATH}"
 
     sudo apt-get --yes install git libusb-1.0-0-dev
     git clone https://github.com/dalefarnsworth-dmr/dmrRadio && cd dmrRadio
@@ -240,7 +241,7 @@ Linking and Transcoding and Repeater Building
 * https://store.w3axl.com/products/dvm-v1-duplex-modem
 * https://store.w3axl.com/products/dvm-v24-v2-usb-converter-for-v-24-equipment
 * https://wp.hamoperator.com/fusion/yaesu-repeater-lockup  DR-2X fixes?
-* https://www.arcomcontrollers.com/index.php/adr-interface  DR-2X fixes?
+* https://arcomcontrollers.com/index.php/adr-interface  DR-2X fixes?
 * https://arcomcontrollers.com/documents/rc210/dr2x_adr_interface.pdf  DR-2X fixes?
 * http://scomcontrollers.com/downloads/SCOM7330_Interface_DR2X.pdf  DR-2X fixes?  (mandatory "http" here)
 * https://github.com/phastmike/IDx_hardware  DR-2X fixes?
