@@ -15,12 +15,7 @@
 # *** "Phoenix Net" Tuesdays at 19:30 Eastern on VE3OCE VHF FM ***
 
 # VE3OCE VHF FM and VE3OCE UHF FM are not linked
-# VA3OFS VHF FM VA3OFS and UHF FM are not linked
 # None of the repeater sites are linked
-
-# ======================================================================================
-# EMRG is in the process of shutting down... the following repeaters may be gone by 2026
-# ======================================================================================
 
 Channels:
 
@@ -40,21 +35,9 @@ Channels:
   CtcssEncode: '136.5'
   CtcssDecode: '136.5'
 
-- Name: VA3OFS VHF FM  # Motorola MSR 2000
-  Note: Barrhaven 87Q677G2+8HV  # OFS Station 44
-  Mode: FM
-  RxFrequency: '146.67'
-  TxFrequencyOffset: '-0.6'
-  CtcssEncode: '136.5'
-  CtcssDecode: '136.5'
-
-- Name: VA3OFS UHF FM  # Kenwood TKR-850
-  Note: Barrhaven 87Q677G2+8HV  # OFS Station 44
-  Mode: FM
-  RxFrequency: '444.95'
-  TxFrequencyOffset: '+5.0'
-  CtcssEncode: '136.5'
-  CtcssDecode: '136.5'
+# =======================================================================================
+# EMRG is in the process of shutting down... the following repeaters will be gone in 2026
+# =======================================================================================
 
 - Name: VA3EMV/E VHF FM  # Motorola MSR 2000
   Note: Orleans 87Q6FG97+52X  # OFS Station 53
@@ -72,25 +55,14 @@ Channels:
   CtcssEncode: '123.0'
   CtcssDecode: '123.0'
 
-- Name: VA3EMV/P VHF FM  # Motorola Radius mobiles
-  Note: Portable
-  Mode: FM
-  RxFrequency: '145.11'
-  TxFrequencyOffset: '-0.6'
-  CtcssEncode: '136.5'
-  CtcssDecode: '136.5'
-
 Zones:
 
 - Name: Ottawa
   ChannelA:
   - VE3OCE VHF FM
   - VE3OCE UHF FM
-  - VA3OFS VHF FM
-  - VA3OFS UHF FM
   - VA3EMV/E VHF FM
   - VA3EMV/W VHF FM
-  - VA3EMV/P VHF FM
   ChannelB: []
 
 - Name: RLCT
