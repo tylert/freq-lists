@@ -1,7 +1,7 @@
 SHELL := /usr/bin/env bash
 
 %.ps: %.yaml
-	@enscript -B -C1 -o $@ $^
+	@enscript --landscape --line-numbers=1 --no-header --output $@ $^
 
 %.pdf: %.ps
 	@ps2pdf $^ $@
