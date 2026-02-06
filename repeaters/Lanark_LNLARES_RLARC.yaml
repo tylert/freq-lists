@@ -17,7 +17,7 @@
 
 Channels:
 
-- Name: VE3KJG VHF FM  # Yaesu DR-2X
+- Name: VE3KJG VHF FM  # Yaesu DR-2X + 150 Ah battery + automatic backup generator
   Note: Lavant 87Q528WJ+CHM
   Mode: FM  # frequency shared with YSF (AMS)
   RxFrequency: '146.64'
@@ -80,14 +80,14 @@ Channels:
 # FM and YSF are not linked
 
 - Name: VE3RLR VHF FM  # Yaesu DR-2X
-  Note: Railway Museum 87P5WX2C+MJ
+  Note: Railway Museum 87P5WX2C+MJ  # 80-foot tower;  VHF at top, UHF 3 feet below VHF
   Mode: FM  # frequency shared with YSF (AMS)
   RxFrequency: '147.21'
   TxFrequencyOffset: '+0.6'
   CtcssEncode: '151.4'
   CtcssDecode: '151.4'
 
-- Name: VE3RLR UHF FM  # Yaesu DR-1X
+- Name: VE3RLR UHF FM  # Yaesu DR-2X
   Note: Railway Museum 87P5WX2C+MJ
   Mode: FM  # frequency shared with YSF (AMS)
   RxFrequency: '442.75'
