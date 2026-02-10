@@ -41,7 +41,7 @@ Channels:
   CtcssDecode: '114.8'
 
 - Name: VE3YYX/2 UHF FM  # Motorola CDM 1250 Rx & Tx, NHRC-4
-  Note: Site 1 87Q5835W+5J5  # tower is 50 feet tall, antenna is at the top, elevation of ground is about 1400 feet
+  Note: Kennellys Mountain 87Q5835W+5J5  # tower is 50 feet tall, antenna is at the top, elevation of ground is about 1400 feet
   Mode: FM
   RxFrequency: '443.2'
   TxFrequencyOffset: '+5.0'
