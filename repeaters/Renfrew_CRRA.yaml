@@ -8,24 +8,30 @@
 # Champlain Regional Repeater Association
 #   https://champlainrepeater.ca
 #   https://champlainrepeater.ca/repeater-2
-#   http://ve3stp.ddns.net:44480  (mandatory 'www' here)
-#   http://ve3stp.ddns.net:8073  (Kiwi SDR HF;  mandatory 'www' here)
+#   http://ve3stp.ddns.net:44480  (mandatory 'http' and 'www' here)
+#   http://ve3stp.ddns.net:8073  (Kiwi SDR HF;  mandatory 'http' and 'www' here)
 #   https://xlx197.dyndns.org
 #   http://ve3stp.org  (DEPRECATED!!!)
 
 # *** "Champlain Mini Net" Mondays to Fridays at 19:00 Eastern on VE3STP VHF FM ***
 
-# Site 1 87Q5835W+5J5 is entirely on solar power
-# Site 2 87Q58474+R3W is where most equipment is located (mains + inet)
+# Site 1 is at 87Q5835W+5J5
+# Site 2 is at 87Q58474+R3W
 
-# The digipeter on 145.01 was moved to Site 2
+# Site 1:  elevation 409 m, tower 60 ft, antenna height 50 ft
+# Site 2:  elevation 368 m, tower 150 ft, antenna height 100 ft
+
+# Site 1 is entirely on solar power
+# Site 2 has mains power and internet access
+
+# The digipeter on 145.01 is at Site 2
 # VE3STP VHF FM and VE3YYX UHF FM share the higher antenna
-# The digipeter and VE3STP UHF DSTAR share the lower antenna (3ish feet below the higher one)
+# The digipeter and VE3STP UHF DSTAR share the lower antenna
 
 Channels:
 
 - Name: VE3STP VHF FM  # Motorola XPR 8300 + 100 W amp
-  Note: Kennellys Mountain 87Q58474+R3W  # tower is 150 feet, antenna is half-way up tower, antenna is at 1450ish-feet, phased pair of 4-el folded dipoles
+  Note: Kennellys Mountain 87Q58474+R3W  # upper antenna;  phased pair of 4-el folded dipoles
   Mode: FM
   RxFrequency: '147.06'
   TxFrequencyOffset: '+0.6'
@@ -41,7 +47,7 @@ Channels:
   CtcssDecode: '114.8'
 
 - Name: VE3YYX/2 UHF FM  # Motorola CDM 1250 Rx & Tx, NHRC-4
-  Note: Kennellys Mountain 87Q5835W+5J5  # tower is 50 feet tall, antenna is at the top, elevation of ground is about 1400 feet
+  Note: Kennellys Mountain 87Q5835W+5J5
   Mode: FM
   RxFrequency: '443.2'
   TxFrequencyOffset: '+5.0'
@@ -50,8 +56,8 @@ Channels:
 
 # #############################################################################
 
-- Name: VE3STP UHF DSTAR  # Motorola CM 300 Rx & Tx, some kind of modem thing on a Raspberry Pi
-  Note: Kennellys Mountain 87Q58474+R3W  # antenna shared with the digipeter on the lower antenna
+- Name: VE3STP UHF DSTAR  # Motorola CM 300 Rx & Tx with some kind of modem thing on a Raspberry Pi
+  Note: Kennellys Mountain 87Q58474+R3W  # lower antenna;  shared with the digipeter
   Mode: DSTAR  # Module B / DSTAR linked to XLX197B
   RxFrequency: '443.6'
   TxFrequencyOffset: '+5.0'
@@ -59,7 +65,7 @@ Channels:
 # #############################################################################
 
 - Name: VE3YYX UHF YSF  # Yaesu DR-2X @ 50 W
-  Note: Kennellys Mountain 87Q58474+R3W  # sharing the antenna with the VHF machine (diplexer)
+  Note: Kennellys Mountain 87Q58474+R3W
   Mode: YSF  # frequency shared with FM (AMS) / YSF linked to XLX197B / DG-11
   RxFrequency: '444.225'
   TxFrequencyOffset: '+5.0'
