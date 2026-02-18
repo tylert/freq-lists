@@ -6,7 +6,7 @@
 #                          |_____|_|  |_|_| \_\\____|
 
 # Emergency Measures Radio Group (a.k.a. Ottawa ARES)
-#   http://emrg.ca
+#   http://emrg.ca  (mandatory 'http' here)
 #   https://github.com/emrg-ca
 #   https://gitlab.com/emrg-ca
 #   https://bitbucket.org/emrg-ca
@@ -15,11 +15,6 @@
 # *** "Phoenix Net" Tuesdays at 19:30 Eastern on VE3OCE VHF FM ***
 
 # VE3OCE VHF FM and VE3OCE UHF FM are not linked
-# None of the repeater sites are linked
-
-# =======================================================================================
-# EMRG is in the process of shutting down... the following repeaters will be gone in 2026
-# =======================================================================================
 
 Channels:
 
@@ -39,30 +34,12 @@ Channels:
   CtcssEncode: '136.5'
   CtcssDecode: '136.5'
 
-- Name: VA3EMV/E VHF FM  # Motorola MSR 2000
-  Note: Orleans 87Q6FG97+52X  # OFS Station 53
-  Mode: FM
-  RxFrequency: '146.985'
-  TxFrequencyOffset: '-0.6'
-  CtcssEncode: '100.0'
-  CtcssDecode: '100.0'
-
-- Name: VA3EMV/W VHF FM  # Motorola MTR 2000
-  Note: Stittsville 87Q6733M+RV2  # OFS Station 81
-  Mode: FM
-  RxFrequency: '145.21'
-  TxFrequencyOffset: '-0.6'
-  CtcssEncode: '123.0'
-  CtcssDecode: '123.0'
-
 Zones:
 
 - Name: Ottawa
   ChannelA:
   - VE3OCE VHF FM
   - VE3OCE UHF FM
-  - VA3EMV/E VHF FM
-  - VA3EMV/W VHF FM
   ChannelB: []
 
 - Name: RLCT
