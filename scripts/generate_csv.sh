@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # Output CSV files suitable for CHIRP and RT Systems radio programming
-# Required tools:  bash, cut, date, mkdir, python (3.10.x+), tail, wc
+
+# Tools required:  bash, coreutils (cut, date, dirname, mkdir, tail, wc), python 3.10+
 
 # set -x
 mkdir -p tmp
@@ -19,7 +20,6 @@ repeaters/Ottawa-Gatineau_OARC.yaml
 repeaters/Ottawa-Gatineau_OVMRC.yaml
 repeaters/Renfrew_CRRA.yaml
 repeaters/Renfrew_RCARC.yaml
-info/Simplex_DMR_VHF_UHF.yaml
 info/Simplex_FM_VHF_UHF.yaml
 info/GMRS_FRS_FM_UHF.yaml
 info/Weather_FM_VHF.yaml
@@ -132,6 +132,6 @@ done
 # Produce pretty PDF handout sheets as a companion to the CSV output files
 ./scripts/handouts.py --input_file ${human_csv_file} \
     --output_file ${human_xlsx_file} \
-    --tag 'BARF'
+    --tag 'Danger, Will Robinson, Danger!'
 libreoffice --headless --convert-to pdf:writer_pdf_Export \
     --outdir $(dirname ${human_xlsx_file}) ${human_xlsx_file}
