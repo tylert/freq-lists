@@ -18,7 +18,6 @@ import click
 from openlocationcode import openlocationcode as olc
 from ruamel.yaml import YAML
 
-
 retevis_channel_stub = {
     "AdmitCriteria": "Always",
     "AllowTalkaround": "Off",
@@ -214,11 +213,20 @@ def process_human_channels_csv(
 
             # If there's a tone, it's usually for a good reason (e.g. "AMS mode" on YSF).
             if (
+                'CtcssDecode' in entry.keys()
+                and 'CtcssEncode' in entry.keys()
+                and entry['CtcssDecode'] is not None
+                and entry['CtcssDecode'] != 'None'
+                and entry['CtcssEncode'] is not None
+                and entry['CtcssEncode'] != 'None'
+            ):
+                details = f"{entry['CtcssDecode']} Hz TSQL"
+            elif (
                 'CtcssEncode' in entry.keys()
                 and entry['CtcssEncode'] is not None
                 and entry['CtcssEncode'] != 'None'
             ):
-                details = f"{entry['CtcssEncode']} Hz"
+                details = f"{entry['CtcssEncode']} Hz TONE"
             elif (
                 'ColorCode' in entry.keys()
                 and entry['ColorCode'] is not None
