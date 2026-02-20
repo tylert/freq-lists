@@ -1,0 +1,44 @@
+---
+# Innisville Radio Consortium
+# Internet Resiliency Club :)
+
+#                    __     ___    _____ ____   ____ _   _
+#                    \ \   / / \  |___ /|  _ \ / ___| \ | |
+#                     \ \ / / _ \   |_ \| | | | |  _|  \| |
+#                      \ V / ___ \ ___) | |_| | |_| | |\  |
+#                       \_/_/   \_\____/|____/ \____|_| \_|
+
+# Tyler Tidman VA3DGN
+
+Channels:
+
+# add Motorola GM 300 link radio with RA-33 USB
+- Name: VE3IEV UHF FM  # Vertex Standard VXR-9000U @ 25 W, RA-42 USB, Raspberry Pi 3B
+  Note: TBD
+  Mode: FM
+  RxFrequency: '444.45'
+  TxFrequencyOffset: '+5.0'
+  CtcssEncode: '100.0'
+  CtcssDecode: None  # '100.0'
+
+# MUX-25 and RA-33 USB
+# - Name: VE3IEV/P UHF DMR  # Motorola CDM 750 Rx & Tx @ 5 W, STM32-DVM Rev4 USB, Raspberry Pi 3B
+#   Note: Portable Hotspot
+#   Mode: DMR  # CCS7 ID 302??? / DMR linked to XLX197B (TS=2, TG=6)
+#   RxFrequency: '?'
+#   TxFrequencyOffset: '+5.0'
+
+# MUX-25 and RA-33 USB
+# - Name: VE3IEV/P UHF DMR  # Motorola CDM 750 Rx & Tx @ 5 W, STM32-DVM Rev4 USB, Raspberry Pi 3B
+#   Note: Portable Hotspot
+#   Mode: DMR  # CCS7 ID 302??? / DMR linked to XLX197B (TS=2, TG=6)
+#   RxFrequency: '?'
+#   TxFrequencyOffset: '+5.0'
+
+Zones:
+
+- Name: Lanark
+  ChannelA:
+  - VE3IEV UHF FM
+  ChannelB: []
+...
