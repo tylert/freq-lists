@@ -18,10 +18,5 @@ Channels:
   CtcssEncode: '151.4'
   CtcssDecode: '151.4'
 
-Zones:
-
-- Name: RLCT
-  ChannelA:
-  - VE3KBR VHF FM  # backup
-  ChannelB: []
+Zones: []
 ...
