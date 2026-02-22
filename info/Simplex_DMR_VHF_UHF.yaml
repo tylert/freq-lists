@@ -21,77 +21,77 @@
 
 Channels:
 
-- Name: 145.59 DMR
+- Name: 145.59 VHF DMR
   Mode: DMR
   RxFrequency: '145.59'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 145.61 DMR
+- Name: 145.61 VHF DMR
   Mode: DMR
   RxFrequency: '145.61'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 145.63 DMR
+- Name: 145.63 VHF DMR
   Mode: DMR
   RxFrequency: '145.63'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 145.65 DMR
+- Name: 145.65 VHF DMR
   Mode: DMR
   RxFrequency: '145.65'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 145.67 DMR
+- Name: 145.67 VHF DMR
   Mode: DMR
   RxFrequency: '145.67'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 145.69 DMR
+- Name: 145.69 VHF DMR
   Mode: DMR
   RxFrequency: '145.69'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 145.71 DMR
+- Name: 145.71 VHF DMR
   Mode: DMR
   RxFrequency: '145.71'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 145.73 DMR
+- Name: 145.73 VHF DMR
   Mode: DMR
   RxFrequency: '145.73'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 145.75 DMR
+- Name: 145.75 VHF DMR
   Mode: DMR
   RxFrequency: '145.75'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 145.77 DMR
+- Name: 145.77 VHF DMR
   Mode: DMR
   RxFrequency: '145.77'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 145.79 DMR
+- Name: 145.79 VHF DMR
   Mode: DMR
   RxFrequency: '145.79'
   ColorCode: '1'
@@ -101,42 +101,42 @@ Channels:
 # Wide band digital from 147.435 to 147.585 - 6 frequencies on a 30 kHz raster
 # Interwoven between the FM simplex frequencies from 147.42 to 147.57
 
-- Name: 147.435 DMR
+- Name: 147.435 VHF DMR
   Mode: DMR
   RxFrequency: '147.435'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 147.465 DMR
+- Name: 147.465 VHF DMR
   Mode: DMR
   RxFrequency: '147.465'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 147.495 DMR
+- Name: 147.495 VHF DMR
   Mode: DMR
   RxFrequency: '147.495'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 147.525 DMR
+- Name: 147.525 VHF DMR
   Mode: DMR
   RxFrequency: '147.525'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 147.555 DMR
+- Name: 147.555 VHF DMR
   Mode: DMR
   RxFrequency: '147.555'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 147.585 DMR
+- Name: 147.585 VHF DMR
   Mode: DMR
   RxFrequency: '147.585'
   ColorCode: '1'
@@ -160,28 +160,28 @@ Channels:
 
 # May also be used for DSTAR, M17, NXDN, P25, YSF, etc.
 
-- Name: 433.45 DMR
+- Name: 433.45 UHF DMR
   Mode: DMR
   RxFrequency: '433.45'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 441.0 DMR
+- Name: 441.0 UHF DMR
   Mode: DMR
   RxFrequency: '441.0'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 446.075 DMR
+- Name: 446.075 UHF DMR
   Mode: DMR
   RxFrequency: '446.075'
   ColorCode: '1'
   RepeaterSlot: '1'
   ContactName: 99 Simplex
 
-- Name: 446.5 DMR
+- Name: 446.5 UHF DMR
   Mode: DMR
   RxFrequency: '446.5'
   ColorCode: '1'
@@ -192,26 +192,26 @@ Zones:
 
 - Name: Simplex Digital
   ChannelA:
-  - 145.59 DMR  # 17 channels on VHF
-  - 145.61 DMR
-  - 145.63 DMR
-  - 145.65 DMR
-  - 145.67 DMR
-  - 145.69 DMR
-  - 145.71 DMR
-  - 145.73 DMR
-  - 145.75 DMR
-  - 145.77 DMR
-  - 145.79 DMR
-  - 147.435 DMR
-  - 147.465 DMR
-  - 147.495 DMR
-  - 147.525 DMR
-  - 147.555 DMR
-  - 147.585 DMR
-  - 433.45 DMR  # ?? channels on UHF
-  - 441.0 DMR
-  - 446.075 DMR
-  - 446.5 DMR
+  - 145.59 VHF DMR  # 17 channels on VHF
+  - 145.61 VHF DMR
+  - 145.63 VHF DMR
+  - 145.65 VHF DMR
+  - 145.67 VHF DMR
+  - 145.69 VHF DMR
+  - 145.71 VHF DMR
+  - 145.73 VHF DMR
+  - 145.75 VHF DMR
+  - 145.77 VHF DMR
+  - 145.79 VHF DMR
+  - 147.435 VHF DMR
+  - 147.465 VHF DMR
+  - 147.495 VHF DMR
+  - 147.525 VHF DMR
+  - 147.555 VHF DMR
+  - 147.585 VHF DMR
+  - 433.45 UHF DMR  # ?? channels on UHF
+  - 441.0 UHF DMR
+  - 446.075 UHF DMR
+  - 446.5 UHF DMR
   ChannelB: []
 ...

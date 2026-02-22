@@ -15,6 +15,7 @@
 #   https://nrc.canada.ca/en/certifications-evaluations-standards/canadas-official-time/nrc-shortwave-station-broadcasts-chu
 #   https://en.wikipedia.org/wiki/CHU_(radio_station)
 #   https://en.wikipedia.org/wiki/Shortwave_bands
+#   https://fr.wikipedia.org/wiki/Haute_fr%C3%A9quence
 
 Channels:
 
@@ -46,8 +47,10 @@ Channels:
 #   https://nist.gov/time-and-frequency-services/nist-radio-stations/wwv
 #   https://nist.gov/pml/div688/grp40/wwvb.cfm
 #   https://en.wikipedia.org/wiki/WWV_(radio_station)
+#   https://fr.wikipedia.org/wiki/WWV_(station_de_radio)
 #   https://en.wikipedia.org/wiki/WWVB
 #   https://en.wikipedia.org/wiki/WWVH
+#   https://fr.wikipedia.org/wiki/WWVH
 
 - Name: WWVBLF
   Note: 70 kW
