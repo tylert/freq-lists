@@ -11,90 +11,90 @@
 
 # FM simplex from 146.4 to 146.595 - 14 frequencies on a 15 kHz raster
 # The plan mentions 13 frequencies but has room for 14 frequencies
-# 146.40, 146.43 and 146.46 may be repeater inputs in some areas
+# 146.4, 146.43 and 146.46 may be repeater inputs in some areas
 
 Channels:
 
-- Name: 146.4 FM
+- Name: 146.4 VHF FM
   Mode: FM
   RxFrequency: '146.4'
 
-- Name: 146.415 FM
+- Name: 146.415 VHF FM
   Mode: FM
   RxFrequency: '146.415'
 
-- Name: 146.43 FM
+- Name: 146.43 VHF FM
   Mode: FM
   RxFrequency: '146.43'
 
-- Name: 146.445 FM
+- Name: 146.445 VHF FM
   Mode: FM
   RxFrequency: '146.445'
 
-- Name: 146.46 FM
+- Name: 146.46 VHF FM
   Mode: FM
   RxFrequency: '146.46'
 
-- Name: 146.475 FM
+- Name: 146.475 VHF FM
   Mode: FM
   RxFrequency: '146.475'
 
-- Name: 146.49 FM
+- Name: 146.49 VHF FM
   Mode: FM
   RxFrequency: '146.49'
 
-- Name: 146.505 FM
+- Name: 146.505 VHF FM
   Mode: FM
   RxFrequency: '146.505'
 
-- Name: 146.52 FM
+- Name: 146.52 VHF FM
+  Note: FM calling frequency
   Mode: FM
   RxFrequency: '146.52'
-  Note: FM calling frequency
 
-- Name: 146.535 FM
+- Name: 146.535 VHF FM
   Mode: FM
   RxFrequency: '146.535'
 
-- Name: 146.55 FM
+- Name: 146.55 VHF FM
   Mode: FM
   RxFrequency: '146.55'
 
-- Name: 146.565 FM
+- Name: 146.565 VHF FM
   Mode: FM
   RxFrequency: '146.565'
 
-- Name: 146.58 FM
+- Name: 146.58 VHF FM
   Mode: FM
   RxFrequency: '146.58'
 
-- Name: 146.595 FM
+- Name: 146.595 VHF FM
   Mode: FM
   RxFrequency: '146.595'
 
 # FM simplex from 147.42 to 147.57 - 6 frequencies on a 30 kHz raster
 
-- Name: 147.42 FM
+- Name: 147.42 VHF FM
   Mode: FM
   RxFrequency: '147.42'
 
-- Name: 147.45 FM
+- Name: 147.45 VHF FM
   Mode: FM
   RxFrequency: '147.45'
 
-- Name: 147.48 FM
+- Name: 147.48 VHF FM
   Mode: FM
   RxFrequency: '147.48'
 
-- Name: 147.51 FM
+- Name: 147.51 VHF FM
   Mode: FM
   RxFrequency: '147.51'
 
-- Name: 147.54 FM
+- Name: 147.54 VHF FM
   Mode: FM
   RxFrequency: '147.54'
 
-- Name: 147.57 FM
+- Name: 147.57 VHF FM
   Mode: FM
   RxFrequency: '147.57'
 
@@ -108,64 +108,64 @@ Channels:
 # Common frequencies for FM simplex
 #   https://rac.ca/432-mhz-70-cm-page
 
-- Name: 446.0 FM
+- Name: 446.0 UHF FM
+  Note: FM calling frequency
   Mode: FM
   RxFrequency: '446.0'
-  Note: FM calling frequency
 
-- Name: 446.0125 FM
+- Name: 446.0125 UHF FM
   Mode: FM
   RxFrequency: '446.0125'
 
-- Name: 446.025 FM
+- Name: 446.025 UHF FM
   Mode: FM
   RxFrequency: '446.025'
 
-- Name: 446.0375 FM
+- Name: 446.0375 UHF FM
   Mode: FM
   RxFrequency: '446.0375'
 
-- Name: 446.05 FM
+- Name: 446.05 UHF FM
   Mode: FM
   RxFrequency: '446.05'
 
-- Name: 446.0625 FM
+- Name: 446.0625 UHF FM
   Mode: FM
   RxFrequency: '446.0625'
 
-- Name: 446.075 FM
+- Name: 446.075 UHF FM
   Mode: FM
   RxFrequency: '446.075'
 
-- Name: 446.0875 FM
+- Name: 446.0875 UHF FM
   Mode: FM
   RxFrequency: '446.0875'
 
-- Name: 446.1 FM
+- Name: 446.1 UHF FM
   Mode: FM
   RxFrequency: '446.1'
 
-- Name: 446.1125 FM
+- Name: 446.1125 UHF FM
   Mode: FM
   RxFrequency: '446.1125'
 
-- Name: 446.125 FM
+- Name: 446.125 UHF FM
   Mode: FM
   RxFrequency: '446.125'
 
-- Name: 446.1375 FM
+- Name: 446.1375 UHF FM
   Mode: FM
   RxFrequency: '446.1375'
 
-- Name: 446.15 FM
+- Name: 446.15 UHF FM
   Mode: FM
   RxFrequency: '446.15'
 
-- Name: 446.1625 FM
+- Name: 446.1625 UHF FM
   Mode: FM
   RxFrequency: '446.1625'
 
-- Name: 446.175 FM
+- Name: 446.175 UHF FM
   Mode: FM
   RxFrequency: '446.175'
 
@@ -173,53 +173,53 @@ Zones:
 
 - Name: Simplex Analog
   ChannelA:
-  - 146.4 FM  # 20 channels on VHF
-  - 146.415 FM
-  - 146.43 FM
-  - 146.445 FM
-  - 146.46 FM
-  - 146.475 FM
-  - 146.49 FM
-  - 146.505 FM
-  - 146.52 FM  # FM calling
-  - 146.535 FM
-  - 146.55 FM
-  - 146.565 FM
-  - 146.58 FM
-  - 146.595 FM
-  - 147.42 FM
-  - 147.45 FM
-  - 147.48 FM
-  - 147.51 FM
-  - 147.54 FM
-  - 147.57 FM
-  - 446.0 FM  # 15 channels on UHF / FM calling
-  - 446.0125 FM
-  - 446.025 FM
-  - 446.0375 FM
-  - 446.05 FM
-  - 446.0625 FM
-  - 446.075 FM
-  - 446.0875 FM
-  - 446.1 FM
-  - 446.1125 FM
-  - 446.125 FM
-  - 446.1375 FM
-  - 446.15 FM
-  - 446.1625 FM
-  - 446.175 FM
+  - 146.4 VHF FM  # 20 channels on VHF
+  - 146.415 VHF FM
+  - 146.43 VHF FM
+  - 146.445 VHF FM
+  - 146.46 VHF FM
+  - 146.475 VHF FM
+  - 146.49 VHF FM
+  - 146.505 VHF FM
+  - 146.52 VHF FM  # FM calling
+  - 146.535 VHF FM
+  - 146.55 VHF FM
+  - 146.565 VHF FM
+  - 146.58 VHF FM
+  - 146.595 VHF FM
+  - 147.42 VHF FM
+  - 147.45 VHF FM
+  - 147.48 VHF FM
+  - 147.51 VHF FM
+  - 147.54 VHF FM
+  - 147.57 VHF FM
+  - 446.0 UHF FM  # 15 channels on UHF / FM calling
+  - 446.0125 UHF FM
+  - 446.025 UHF FM
+  - 446.0375 UHF FM
+  - 446.05 UHF FM
+  - 446.0625 UHF FM
+  - 446.075 UHF FM
+  - 446.0875 UHF FM
+  - 446.1 UHF FM
+  - 446.1125 UHF FM
+  - 446.125 UHF FM
+  - 446.1375 UHF FM
+  - 446.15 UHF FM
+  - 446.1625 UHF FM
+  - 446.175 UHF FM
   ChannelB: []
 
 - Name: RCJ
   ChannelA:
-  - 146.55 FM  # primary
-  - 147.57 FM  # backup
+  - 146.55 VHF FM  # primary
+  - 147.57 VHF FM  # backup
   ChannelB: []
 
 - Name: RLCT
   ChannelA:
-  - 147.57 FM  # mobiles
-  - 146.58 FM  # backup
-  - 146.52 FM  # backup
+  - 147.57 VHF FM  # mobiles
+  - 146.58 VHF FM  # backup
+  - 146.52 VHF FM  # backup
   ChannelB: []
 ...

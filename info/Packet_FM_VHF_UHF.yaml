@@ -14,7 +14,12 @@
 
 Channels:
 
-- Name: APRS Voice CA/MX
+- Name: APRS NA
+  Note: APRS North America
+  Mode: FM
+  RxFrequency: '144.39'
+
+- Name: APRS Voice NA
   Note: APRS Voice Alert North America
   Mode: FM
   RxFrequency: '144.39'
@@ -46,137 +51,138 @@ Channels:
 
 # Wideband digital from 144.31 to 144.5 - 7 frequencies on a 20 kHz raster
 # XXX FIXME TODO  There's 10 frequencies here on a 20 kHz raster, not 7!!!
-# 144.39 is the APRS working frequency and 144.45 is the AM calling frequency
 
-- Name: PKT431
+- Name: 144.31 VHF PKT
   Mode: FM
   RxFrequency: '144.31'
 
-- Name: PKT433
+- Name: 144.33 VHF PKT
   Mode: FM
   RxFrequency: '144.33'
 
-- Name: PKT435
+- Name: 144.35 VHF PKT
   Mode: FM
   RxFrequency: '144.35'
 
-- Name: PKT437
+- Name: 144.37 VHF PKT
   Mode: FM
   RxFrequency: '144.37'
 
-- Name: PKT439
+- Name: 144.39 VHF PKT
+  Note: APRS working frequency
   Mode: FM
   RxFrequency: '144.39'
-  Note: APRS working frequency
 
-- Name: PKT441
+- Name: 144.41 VHF PKT
   Mode: FM
   RxFrequency: '144.41'
 
-- Name: PKT443
+- Name: 144.43 VHF PKT
   Mode: FM
   RxFrequency: '144.43'
 
-- Name: PKT445
+- Name: 144.45 VHF PKT
+  Note: AM calling frequency
   Mode: FM
   RxFrequency: '144.45'
-  Note: AM calling frequency
 
-- Name: PKT447
+- Name: 144.47 VHF PKT
   Mode: FM
   RxFrequency: '144.47'
 
-- Name: PKT449
+- Name: 144.49 VHF PKT
   Mode: FM
   RxFrequency: '144.49'
 
 # Wideband digital from 144.9 to 145.1 - 10 frequencies on a 20 kHz raster
 
-- Name: PKT491
+- Name: 144.91 VHF PKT
   Mode: FM
   RxFrequency: '144.91'
 
-- Name: PKT493
+- Name: 144.93 VHF PKT
   Mode: FM
   RxFrequency: '144.93'
 
-- Name: PKT495
+- Name: 144.95 VHF PKT
   Mode: FM
   RxFrequency: '144.95'
 
-- Name: PKT497
+- Name: 144.97 VHF PKT
   Mode: FM
   RxFrequency: '144.97'
 
-- Name: PKT499
+- Name: 144.99 VHF PKT
   Mode: FM
   RxFrequency: '144.99'
 
-- Name: PKT501
+- Name: 145.01 VHF PKT
   Mode: FM
   RxFrequency: '145.01'
 
-- Name: PKT503
+- Name: 145.03 VHF PKT
   Mode: FM
   RxFrequency: '145.03'
 
-- Name: PKT505
+- Name: 145.05 VHF PKT
   Mode: FM
   RxFrequency: '145.05'
 
-- Name: PKT507
+- Name: 145.07 VHF PKT
   Mode: FM
   RxFrequency: '145.07'
 
-- Name: PKT509
+- Name: 145.09 VHF PKT
   Mode: FM
   RxFrequency: '145.09'
 
 # Wideband digital from 145.59 to 145.79 - 11 frequencies on a 20 kHz raster
 
-- Name: PKT559
+- Name: 145.59 VHF PKT
   Mode: FM
   RxFrequency: '145.59'
 
-- Name: PKT561
+- Name: 145.61 VHF PKT
   Mode: FM
   RxFrequency: '145.61'
 
-- Name: PKT563
+- Name: 145.63 VHF PKT
   Mode: FM
   RxFrequency: '145.63'
 
-- Name: PKT565
+- Name: 145.65 VHF PKT
   Mode: FM
   RxFrequency: '145.65'
 
-- Name: PKT567
+- Name: 145.67 VHF PKT
   Mode: FM
   RxFrequency: '145.67'
 
-- Name: PKT569
+- Name: 145.69 VHF PKT
   Mode: FM
   RxFrequency: '145.69'
 
-- Name: PKT571
+- Name: 145.71 VHF PKT
   Mode: FM
   RxFrequency: '145.71'
 
-- Name: PKT573
+- Name: 145.73 VHF PKT
   Mode: FM
   RxFrequency: '145.73'
 
-- Name: PKT575
+- Name: 145.75 VHF PKT
   Mode: FM
   RxFrequency: '145.75'
 
-- Name: PKT577
+- Name: 145.77 VHF PKT
   Mode: FM
   RxFrequency: '145.77'
 
-- Name: PKT579
+- Name: 145.79 VHF PKT
   Mode: FM
   RxFrequency: '145.79'
+
+# XXX FIXME TODO  Find out what the band plan says for UHF packet
 
 #  ___ ____ ____
 # |_ _/ ___/ ___|
@@ -208,38 +214,39 @@ Zones:
 
 - Name: Packet
   ChannelA:
-  - APRS Voice CA/MX
-  - PKT431  # 10 frequencies on a 20 kHz raster
-  - PKT433
-  - PKT435
-  - PKT437
-  - PKT439  # APRS
-  - PKT441
-  - PKT443
-  - PKT445  # AM calling
-  - PKT447
-  - PKT449
-  - PKT491  # 10 frequencies on a 20 kHz raster
-  - PKT493
-  - PKT495
-  - PKT497
-  - PKT499
-  - PKT501
-  - PKT503
-  - PKT505
-  - PKT507
-  - PKT509
-  - PKT559  # 11 frequencies on a 20 kHz raster
-  - PKT561
-  - PKT563
-  - PKT565
-  - PKT567
-  - PKT569
-  - PKT571
-  - PKT573
-  - PKT575
-  - PKT577
-  - PKT579
+  - APRS NA
+  - APRS Voice NA
+  - 144.31 VHF PKT  # 10 frequencies on a 20 kHz raster
+  - 144.33 VHF PKT
+  - 144.35 VHF PKT
+  - 144.37 VHF PKT
+  - 144.39 VHF PKT  # APRS
+  - 144.41 VHF PKT
+  - 144.43 VHF PKT
+  - 144.45 VHF PKT  # AM calling
+  - 144.47 VHF PKT
+  - 144.49 VHF PKT
+  - 144.91 VHF PKT  # 10 frequencies on a 20 kHz raster
+  - 144.93 VHF PKT
+  - 144.95 VHF PKT
+  - 144.97 VHF PKT
+  - 144.99 VHF PKT
+  - 145.01 VHF PKT
+  - 145.03 VHF PKT
+  - 145.05 VHF PKT
+  - 145.07 VHF PKT
+  - 145.09 VHF PKT
+  - 145.59 VHF PKT  # 11 frequencies on a 20 kHz raster
+  - 145.61 VHF PKT
+  - 145.63 VHF PKT
+  - 145.65 VHF PKT
+  - 145.67 VHF PKT
+  - 145.69 VHF PKT
+  - 145.71 VHF PKT
+  - 145.73 VHF PKT
+  - 145.75 VHF PKT
+  - 145.77 VHF PKT
+  - 145.79 VHF PKT
   - ISS VHF PKT
   - ISS UHF PKT
   ChannelB: []
