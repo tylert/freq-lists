@@ -2,7 +2,7 @@
 
 # Output CSV files suitable for CHIRP and RT Systems radio programming
 
-# Tools required:  bash, coreutils (cut, date, dirname, mkdir, tail, wc), python 3.10+
+# Tools required:  bash, GNU coreutils (cut, date, dirname, mkdir, tail, wc), python 3.10+
 
 # set -x
 mkdir -p tmp
