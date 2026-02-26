@@ -20,28 +20,11 @@ Channels:
   CtcssEncode: '100.0'
   CtcssDecode: '100.0'
 
-# Currently off the air
-# - Name: VE3MPC VHF FM  # Yaesu DR-1X
-#   Note: Orleans 87Q6FF4F+XH  # VE3LC
-#   Mode: FM  # frequency shared with YSF (AMS)
-#   RxFrequency: '147.15'
-#   TxFrequencyOffset: '+0.6'
-#   CtcssEncode: '100.0'
-#   CtcssDecode: '100.0'
-
-- Name: VE3RAM UHF FM  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
-  Note: Orleans 87Q6FF4F+XH  # VE3LC
-  Mode: FM  # frequency shared with DMR and DSTAR (and YSF?)
-  RxFrequency: '443.7'
-  TxFrequencyOffset: '+5.0'
-  CtcssEncode: '100.0'
-  CtcssDecode: '100.0'
-
 # #############################################################################
 
 - Name: VE3RAM UHF DSTAR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Note: Orleans 87Q6FF4F+XH  # VE3LC
-  Mode: DSTAR  # DSTAR linked to XLX197B;  frequency shared with a bunch of other modes
+  Mode: DSTAR  # DSTAR linked to XLX197B;  frequency shared with DMR
   RxFrequency: '443.7'
   TxFrequencyOffset: '+5.0'
 
@@ -49,7 +32,7 @@ Channels:
 
 - Name: VE3RAM UHF DMR  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
   Note: Orleans 87Q6FF4F+XH  # VE3LC
-  Mode: DMR  # CCS7 ID 302117 / DMR linked to XLX197B (TS=2, TG=6);  frequency shared with a bunch of other modes
+  Mode: DMR  # CCS7 ID 302117 / DMR linked to XLX197B (TS=2, TG=6);  frequency shared with DSTAR
   RxFrequency: '443.7'
   TxFrequencyOffset: '+5.0'
   ColorCode: '1'
@@ -62,24 +45,10 @@ Channels:
   RxFrequency: '147.3'
   TxFrequencyOffset: '+0.6'
 
-# Currently off the air
-# - Name: VE3MPC VHF YSF  # Yaesu DR-1X
-#   Note: Orleans 87Q6FF4F+XH  # VE3LC
-#   Mode: YSF  # frequency shared with FM (AMS)
-#   RxFrequency: '147.15'
-#   TxFrequencyOffset: '+0.6'
-
-- Name: VE3RAM UHF YSF  # Yaesu DR-1X, STM32-DVM Rev?, Raspberry Pi 3B
-  Note: Orleans 87Q6FF4F+XH  # VE3LC
-  Mode: YSF  # frequency shared with a bunch of other modes
-  RxFrequency: '443.7'
-  TxFrequencyOffset: '+5.0'
-
 Zones:
 
 - Name: Ottawa
   ChannelA:
   - VE3TWO VHF FM
-  - VE3RAM UHF FM
   ChannelB: []
 ...
