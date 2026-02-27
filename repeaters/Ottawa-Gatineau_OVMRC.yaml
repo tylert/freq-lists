@@ -13,7 +13,7 @@
 Channels:
 
 - Name: VE3TWO VHF FM  # Yaesu DR-1X
-  Note: Metcalfe 87Q67GH5+GJ  # VE3BOE 60-foot or 80-foot fold-over tower
+  Note: Metcalfe 87Q67G00+  # VE3BOE 60-foot or 80-foot fold-over tower
   Mode: FM  # frequency shared with YSF (AMS)
   RxFrequency: '147.3'
   TxFrequencyOffset: '+0.6'
@@ -40,7 +40,7 @@ Channels:
 # #############################################################################
 
 - Name: VE3TWO VHF YSF  # Yaesu DR-1X
-  Note: Metcalfe 87Q67GH5+GJ  # VE3BOE 60-foot or 80-foot fold-over tower
+  Note: Metcalfe 87Q67G00+  # VE3BOE 60-foot or 80-foot fold-over tower
   Mode: YSF  # frequency shared with FM (AMS)
   RxFrequency: '147.3'
   TxFrequencyOffset: '+0.6'
