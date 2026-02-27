@@ -139,7 +139,7 @@ Retevis RT3S DFU mode uses top side key + PTT + twist power knob.
 - <https://miklor.com/COM/Review_MD9600.php>
 - <https://miklor.com/COM/Review_UV380.php>
 - <https://amateurradio.com/mobile-dc-power-one-fuse-or-two>
-- <http://emrg.ca/EMRG-412_12VDC_for_the_Radio_Amateur.pdf>
+- <http://emrg.ca/EMRG-412_12VDC_for_the_Radio_Amateur.pdf> (mandatory 'http' here)
 - <https://forum.digirig.net/t/tyt-md-380uv-cable-and-support/2708/7> cable info for RT90 and RT3S
 - <https://github.com/M17-Project/LinHT-hw> possible replacement mainboard for Retevis C62 handheld (dual-band, non-waterproof)
 - <https://m17project.org/2025/07/26/an-update-on-linht-openht-v2-development-process>
@@ -151,7 +151,7 @@ Retevis RT3S DFU mode uses top side key + PTT + twist power knob.
 
 - <https://wiki.brandmeister.network/index.php/TalkGroup/98638> WVNET = DMR 98638
 - <https://rfhackers.com> WVNET = DMR 98638
-- <http://farc.ysfreflector.ca> FRG = YSF 43567
+- <https://farc.ysfreflector.ca> FRG = YSF 43567
 
 
 ## Hotspots and Tuning
@@ -313,7 +313,7 @@ Retevis RT3S DFU mode uses top side key + PTT + twist power knob.
 - <https://github.com/open-ham/OpenGD77> clone of closed-source (ironic) OpenGD77 project
 - <https://github.com/LibreDMR/OpenGD77_UserGuide/blob/master/OpenGD77_User_Guide.md> user guide for OpenGD77
 - <https://twitter.com/m17_project/status/1535977213111242753> FM and M17 living together like cats and dogs
-- <http://md380.org> main page for MD-380 Tools
+- <https://md380.org> main page for MD-380 Tools
 - <https://github.com/travisgoodspeed/md380tools> source code for MD-380 Tools
 - <https://raw.githubusercontent.com/tylert/pocorgtfo/gh-pages/pocorgtfo10.pdf> reverse-engineering info
 - <https://pistar.uk/index.php> main page for Pi-Star
