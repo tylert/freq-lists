@@ -20,6 +20,10 @@
 # FM and DMR are not linked
 # DMR isn't currently linked to anything external
 
+# Site 1213 feet ASL
+# Tower 719 feet high
+# Antenna ??? feet high
+
 Channels:
 
 # IRLP node 2040
