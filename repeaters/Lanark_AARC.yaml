@@ -10,22 +10,27 @@
 #   https://almontearclub.ca/xlx197b
 #   http://va3aar.dyndns.org:3026  (mandatory 'www' here)
 #   https://xlx197.dyndns.org
+#   https://xlx196.dyndns.org
 
 # *** "The Analog Net" Wednesdays at 21:00H Eastern on VA3ARE VHF FM ***
 # *** "The Digital Net" Tuesdays at 20:40H Eastern on anything linked to XLX197 ***
 # *** "LNLARES Net" Wednesdays at 20:00H Eastern on VA3AAR UHF FM (linked to VE3KJG VHF FM) ***
 
+# VA3UHR VHF FM is not linked to VA3UHR VHF YSF
+
 Channels:
 
+# Wires-X here too
+# Majority of users are using this repeater as a YSF repeater
 - Name: VA3UHR VHF FM  # Yaesu DR-2X
   Note: Union Hall 87Q55P64+RR
-  Mode: FM  # frequency shared with YSF (AMS)
+  Mode: FM  # frequency shared with YSF (AMS) / YSF linked to XLX197
   RxFrequency: '145.55'
   TxFrequencyOffset: '-0.6'
   CtcssEncode: '88.5'
   CtcssDecode: '88.5'
 
-- Name: VA3AAR UHF FM  # equipment TBD
+- Name: VA3AAR UHF FM  # old repeater, might be GE something or other
   Note: Fire Hall 87Q56Q9V+Q6
   Mode: FM
   RxFrequency: '444.3'  # linked to VE3KJG VHF FM
@@ -33,19 +38,10 @@ Channels:
   CtcssEncode: '100.0'
   CtcssDecode: '100.0'
 
-# ASL 564013???
-# - Name: VA3HSP UHF FM  # equipment TBD
-#   Note: Almonte Hospital 87Q56RH6+H6
-#   Mode: FM
-#   RxFrequency: '444.225'
-#   TxFrequencyOffset: '+5.0'
-#   CtcssEncode: None
-#   CtcssDecode: None
-
 # IRLP 2280
-- Name: VA3ARE VHF FM  # Yaesu DR-1X
-  Note: Almonte 87Q55Q89+29  # VE3CFZ
-  Mode: FM  # frequency shared with YSF (AMS)
+- Name: VA3ARE VHF FM  # Yaesu DR-2X
+  Note: Almonte Hospital 87Q56RH6+H6
+  Mode: FM  # frequency locked-down and used only by FM!!!  Phil knows the magic!!!
   RxFrequency: '147.27'
   TxFrequencyOffset: '+0.6'
   CtcssEncode: '100.0'
@@ -53,38 +49,31 @@ Channels:
 
 # #############################################################################
 
-- Name: VA3AAR UHF DSTAR  # equipment TBD
+- Name: VA3AAR UHF DSTAR  # Icom ID-RP4000V???
   Note: Union Hall 87Q55P64+RR
-  Mode: DSTAR  # Module B / DSTAR linked to XLX197B
+  Mode: DSTAR  # Module B / DSTAR linked to XLX196
   RxFrequency: '444.1'
   TxFrequencyOffset: '+5.0'
 
-- Name: VA3RDD VHF DSTAR  # Icom ID-RP2000V maybe???
-  Note: McVeety's Bay 87P5RRP6+9VJ
-  Mode: DSTAR  # Module C / DSTAR linked to XLX197B
+- Name: VA3RDD VHF DSTAR  # Icom ID-RP2000V
+  Note: McVeety's Bay 87P5RRP6+9R9
+  Mode: DSTAR  # Module C / DSTAR linked to XLX196
   RxFrequency: '147.24'
   TxFrequencyOffset: '-0.6'
 
-- Name: VA3RDD UHF DSTAR  # Icom ID-RP4000V maybe???
-  Note: McVeety's Bay 87P5RRP6+9VJ
-  Mode: DSTAR  # Module B / DSTAR linked to XLX197B
+- Name: VA3RDD UHF DSTAR  # Icom ID-RP4000V
+  Note: McVeety's Bay 87P5RRP6+9R9
+  Mode: DSTAR  # Module B / DSTAR linked to XLX196
   RxFrequency: '444.8'
   TxFrequencyOffset: '+5.0'
 
 # #############################################################################
 
-# YSF linked to XLX197B
 - Name: VA3UHR VHF YSF  # Yaesu DR-2X
   Note: Union Hall 87Q55P64+RR
-  Mode: YSF  # frequency shared with FM (AMS)
+  Mode: YSF  # frequency shared with FM (AMS) / YSF linked to XLX196
   RxFrequency: '145.55'
   TxFrequencyOffset: '-0.6'
-
-- Name: VA3ARE VHF YSF  # Yaesu DR-1X
-  Note: Almonte 87Q55Q89+29  # VE3CFZ
-  Mode: YSF  # frequency shared with FM (AMS)
-  RxFrequency: '147.27'
-  TxFrequencyOffset: '+0.6'
 
 #                   __     _______ _____ _   _  ___    _
 #                   \ \   / / ____|___ /| | | |/ _ \  / \
@@ -96,10 +85,11 @@ Channels:
 #   http://ve3hoa.ddns.net:380  (mandatory 'www' here)
 #   http://ve3hoa.ddns.net:8073  (Kiwi SDR HF;  mandatory 'www' here)
 #   https://xlx197.dyndns.org
+#   https://xlx196.dyndns.org
 
 - Name: VE3HOZ UHF DMR  # Motorola CDM 1550LS+ Rx & Tx + 100 W amp, STM32-DVM Rev?, Raspberry Pi 4B
   Note: Carp 87Q57W5M+V79
-  Mode: DMR  # CCS7 ID 302108 / DMR Linked to XLX197B (TS=2, TG=6)
+  Mode: DMR  # CCS7 ID 302108 / DMR Linked to XLX196 (TS=2, TG=6)
   RxFrequency: '442.3'
   TxFrequencyOffset: '+5.0'
   ColorCode: '1'
