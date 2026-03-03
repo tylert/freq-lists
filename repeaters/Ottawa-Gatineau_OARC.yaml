@@ -20,9 +20,8 @@
 # FM and DMR are not linked
 # DMR isn't currently linked to anything external
 
-# Site 1213 feet ASL
-# Tower 719 feet high
-# Antenna ??? feet high
+# site is at 1213 feet ASL, tower is 100 feet high, antenna is 100 feet high
+# 4-element 310-C4 UHF above 4-element 210-C4 VHF
 
 Channels:
 
@@ -42,6 +41,16 @@ Channels:
   TxFrequencyOffset: '+5.0'
   CtcssEncode: '100.0'
   CtcssDecode: '100.0'
+
+# #############################################################################
+
+# XXX FIXME TODO  VE2CRA UHF DSTAR is due to go into service by May 2026.
+
+# - Name: VE2CRA UHF DSTAR  # equipment TBD
+#   Note: Camp Fortune 87Q6G532+426
+#   Mode: DSTAR
+#   RxFrequency: '444.4'
+#   TxFrequencyOffset: '+5.0'
 
 # #############################################################################
 
