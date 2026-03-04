@@ -2,7 +2,7 @@
 
 # Output CSV files suitable for CHIRP and RT Systems radio programming
 
-# Tools required:  bash, GNU coreutils (cut, date, dirname, mkdir, tail, wc), python 3.10+
+# Tools required:  bash, GNU coreutils (cut, date, dirname, mkdir, tail, wc), python 3.10+, zip
 
 # set -x
 mkdir -p tmp
@@ -30,6 +30,7 @@ rt_systems_csv_file="tmp/RTSYS-${date}.csv"
 human_csv_file="tmp/HUMAN-${date}.csv"
 human_xlsx_file="tmp/HUMAN-${date}.xlsx"
 map_csv_file="tmp/MAP-${date}.csv"
+archive_file="tmp/DATA-${date}.zip"
 
 #   ____ _   _ ___ ____  ____
 #  / ___| | | |_ _|  _ \|  _ \
@@ -45,14 +46,14 @@ for input_file in ${input_files}; do
             --format CHIRP             \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
-            > ${chirp_csv_file}
+            > "${chirp_csv_file}"
     else
         ./scripts/multi_outputter.py   \
             --format CHIRP             \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
-            --start_index $(wc -l ${chirp_csv_file} | cut -d' ' -f1) \
-            | tail -n '+2' >> ${chirp_csv_file}
+            --start_index $(wc -l "${chirp_csv_file}" | cut -d' ' -f1) \
+            | tail -n '+2' >> "${chirp_csv_file}"
     fi
     index=$((${index} + 1))
 done
@@ -72,13 +73,13 @@ for input_file in ${input_files}; do
             --format RTSYS             \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
-            > ${rt_systems_csv_file}
+            > "${rt_systems_csv_file}"
     else
         ./scripts/multi_outputter.py   \
             --format RTSYS             \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
-            | tail -n '+2' >> ${rt_systems_csv_file}
+            | tail -n '+2' >> "${rt_systems_csv_file}"
     fi
     index=$((${index} + 1))
 done
@@ -97,17 +98,23 @@ for input_file in ${input_files}; do
             --format HUMAN             \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
-            > ${human_csv_file}
+            > "${human_csv_file}"
     else
         ./scripts/multi_outputter.py   \
             --format HUMAN             \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
-            --start_index $(wc -l ${human_csv_file} | cut -d' ' -f1) \
-            | tail -n '+2' >> ${human_csv_file}
+            --start_index $(wc -l "${human_csv_file}" | cut -d' ' -f1) \
+            | tail -n '+2' >> "${human_csv_file}"
     fi
     index=$((${index} + 1))
 done
+
+#  __  __    _    ____
+# |  \/  |  / \  |  _ \
+# | |\/| | / _ \ | |_) |
+# | |  | |/ ___ \|  __/
+# |_|  |_/_/   \_\_|
 
 # Spit out some map data
 index=1
@@ -117,21 +124,30 @@ for input_file in ${input_files}; do
             --format MAP               \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
-            > ${map_csv_file}
+            > "${map_csv_file}"
     else
         ./scripts/multi_outputter.py   \
             --format MAP               \
             --input_file ${input_file} \
             --modes_allowed AM,FM,NFM  \
-            --start_index $(wc -l ${map_csv_file} | cut -d' ' -f1) \
-            | tail -n '+2' >> ${map_csv_file}
+            --start_index $(wc -l "${map_csv_file}" | cut -d' ' -f1) \
+            | tail -n '+2' >> "${map_csv_file}"
     fi
     index=$((${index} + 1))
 done
 
 # Produce pretty PDF handout sheets as a companion to the CSV output files
-./scripts/handouts.py --input_file ${human_csv_file} \
-    --output_file ${human_xlsx_file} \
-    --tag 'Danger, Will Robinson, Danger!'
+./scripts/handouts.py --input_file "${human_csv_file}" \
+    --output_file "${human_xlsx_file}" \
+    --tag "$(git describe --always --dirty --tags)"
 libreoffice --headless --convert-to pdf:writer_pdf_Export \
-    --outdir $(dirname ${human_xlsx_file}) ${human_xlsx_file}
+    --outdir $(dirname ${human_xlsx_file}) "${human_xlsx_file}"
+rm "${human_xlsx_file}"
+
+# Staple all the files together so they won't get misplaced
+zip --junk-paths "${archive_file}" \
+    "${chirp_csv_file}"            \
+    "${rt_systems_csv_file}"       \
+    "${human_csv_file}"            \
+    "${human_xlsx_file/xlsx/pdf}"  \
+    "${map_csv_file}"

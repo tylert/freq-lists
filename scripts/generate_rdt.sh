@@ -42,12 +42,12 @@ handheld_json_file="tmp/Retevis_RT3S_${date}.json"
 
 # Generate a blank codeplug and convert it to JSON
 # XXX FIXME TODO  Remove this sed hack after fixing the UUID bug!!!
-dmrRadio newCodeplug -model 'MD-2017' -freq '400-480_136-174' ${mobile_rdt_file}
-dmrRadio codeplugToJSON ${mobile_rdt_file} ${mobile_json_file}
-sed -i 's/_.*"/"/' ${mobile_json_file}
+dmrRadio newCodeplug -model 'MD-2017' -freq '400-480_136-174' "${mobile_rdt_file}"
+dmrRadio codeplugToJSON "${mobile_rdt_file}" "${mobile_json_file}"
+sed -i 's/_.*"/"/' "${mobile_json_file}"
 
 # Fix the default settings and fill in contact stubs and zone stubs
-gojq --from-file radios/Retevis_RT90.jq ${mobile_json_file} > tmp/0.json
+gojq --from-file radios/Retevis_RT90.jq "${mobile_json_file}" > tmp/0.json
 gojq --yaml-input '.' < radios/stubs.yaml > tmp/stubs.json
 gojq --slurp '.[0] * .[1]' tmp/0.json tmp/stubs.json > tmp/1.json
 
@@ -73,7 +73,7 @@ for input_file in ${input_files}; do
 done
 
 # Convert it back to a binary codeplug
-dmrRadio jsonToCodeplug tmp/${index}.json ${mobile_rdt_file}
+dmrRadio jsonToCodeplug tmp/${index}.json "${mobile_rdt_file}"
 
 # Clean up intermediate and generated files
 rm -f tmp/*.json
@@ -87,12 +87,12 @@ chmod 0644 tmp/*.rdt
 
 # Generate a blank codeplug and convert it to JSON
 # XXX FIXME TODO  Remove this sed hack after fixing the UUID bug!!!
-dmrRadio newCodeplug -model 'RT3S' -freq '400-480_136-174' ${handheld_rdt_file}
-dmrRadio codeplugToJSON ${handheld_rdt_file} ${handheld_json_file}
-sed -i 's/_.*"/"/' ${handheld_json_file}
+dmrRadio newCodeplug -model 'RT3S' -freq '400-480_136-174' "${handheld_rdt_file}"
+dmrRadio codeplugToJSON "${handheld_rdt_file}" "${handheld_json_file}"
+sed -i 's/_.*"/"/' "${handheld_json_file}"
 
 # Fix the default settings and fill in contact stubs and zone stubs
-gojq --from-file radios/Retevis_RT3S.jq ${handheld_json_file} > tmp/0.json
+gojq --from-file radios/Retevis_RT3S.jq "${handheld_json_file}" > tmp/0.json
 gojq --yaml-input '.' < radios/stubs.yaml > tmp/stubs.json
 gojq --slurp '.[0] * .[1]' tmp/0.json tmp/stubs.json > tmp/1.json
 
@@ -118,7 +118,7 @@ for input_file in ${input_files}; do
 done
 
 # Convert it back to a binary codeplug
-dmrRadio jsonToCodeplug tmp/${index}.json ${handheld_rdt_file}
+dmrRadio jsonToCodeplug tmp/${index}.json "${handheld_rdt_file}"
 
 # Clean up intermediate and generated files
 rm -f tmp/*.json
