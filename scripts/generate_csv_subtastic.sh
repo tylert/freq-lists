@@ -9,12 +9,8 @@ mkdir -p tmp
 date="$(date +%Y-%m-%d)"
 
 input_files='
-repeaters/Kingston_KARC.yaml
 repeaters/Lanark_AARC.yaml
 repeaters/Lanark_LNLARES_RLARC.yaml
-repeaters/Leeds_and_Grenville_BARC.yaml
-repeaters/Leeds_and_Grenville_VE3IWJ.yaml
-repeaters/Ottawa-Gatineau_KARG.yaml
 repeaters/Ottawa-Gatineau_OARC.yaml
 repeaters/Renfrew_CRRA.yaml
 repeaters/Renfrew_RCARC.yaml
