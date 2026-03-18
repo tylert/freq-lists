@@ -1,11 +1,3 @@
-# Typst
-
-- <https://typst.app/docs/reference/model/table>
-- <https://typst.app/docs/reference/data-loading/csv>
-- <https://forum.typst.app/t/displaying-specific-data-from-csv-file/1283/5>
-- <https://typst.app/universe/package/tabut>
-
-
 # JQ/YQ
 
 - <https://github.com/itchyny/gojq#difference-to-jq>

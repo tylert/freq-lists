@@ -2,7 +2,7 @@
 
 # Output CSV files suitable for CHIRP and RT Systems radio programming
 
-# Tools required:  bash, GNU coreutils (cut, date, dirname, mkdir, tail, wc), python 3.10+, zip
+# Tools required:  bash, GNU coreutils (cut, date, dirname, mkdir, tail, wc), python 3.10+, typst, zip
 
 # set -x
 mkdir -p tmp
@@ -22,7 +22,8 @@ subtastic/Lanark_County_FM_AM_VHF_UHF.yaml
 chirp_csv_file="tmp/CHIRP-${date}.csv"
 rt_systems_csv_file="tmp/RTSYS-${date}.csv"
 human_csv_file="tmp/HUMAN-${date}.csv"
-human_xlsx_file="tmp/HUMAN-${date}.xlsx"
+human_typ_file="tmp/HUMAN-${date}.typ"
+human_pdf_file="tmp/HUMAN-${date}.pdf"
 map_csv_file="tmp/MAP-${date}.csv"
 archive_file="tmp/DATA-${date}.zip"
 
@@ -131,17 +132,39 @@ for input_file in ${input_files}; do
 done
 
 # Produce pretty PDF handout sheets as a companion to the CSV output files
-./scripts/handouts.py --input_file "${human_csv_file}" \
-    --output_file "${human_xlsx_file}" \
-    --tag "$(git describe --always --dirty --tags)"
-libreoffice --headless --convert-to pdf:writer_pdf_Export \
-    --outdir $(dirname ${human_xlsx_file}) "${human_xlsx_file}"
-rm "${human_xlsx_file}"
+cat << EOF > "${human_typ_file}"
+#set page(
+  "us-letter",  // ca-letter
+  margin: (
+    top: 1.25cm,
+    bottom: 1.25cm,
+    left: 1.25cm,
+    right: 1.25cm,
+  ),
+)
+
+#show table.cell.where(y: 0): strong
+#set table(
+  fill: (_, y) => if calc.odd(y) { rgb("EAF2F5") },
+  stroke: (x, y) => if y == 0 {
+    (bottom: 0.7pt + black)
+  },
+)
+
+#set text(10pt)
+#let results = csv("${human_csv_file/tmp\//}")
+#table(
+  columns: 7,
+  ..results.flatten(),
+)
+EOF
+typst compile "${human_typ_file}" - > "${human_pdf_file}"
 
 # Staple all the files together so they won't get misplaced
 zip --junk-paths "${archive_file}" \
     "${chirp_csv_file}"            \
     "${rt_systems_csv_file}"       \
     "${human_csv_file}"            \
-    "${human_xlsx_file/xlsx/pdf}"  \
+    "${human_typ_file}"            \
+    "${human_pdf_file}"            \
     "${map_csv_file}"
