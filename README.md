@@ -11,10 +11,9 @@ You must have the following tools installed:
 
 - (REQUIRED) Python 3.10.x or newer; for using the `multi_outputter.py` script for processing the input data files
 - (REQUIRED) [gojq](https://github.com/itchyny/gojq); for working with JSON and YAML payloads
-- (OPTIONAL) [yq](https://mikefarah.gitbook.io/yq); for working with JSON and YAML payloads
 - (REQUIRED) [dmrRadio](https://github.com/dalefarnsworth-dmr/dmrRadio) binary 1.0.23 or newer; for exporting/importing codeplugs to/from JSON and generating blank codeplugs
-- (SUGGESTED) [editcp](https://github.com/dalefarnsworth-dmr/editcp) 1.0.23 or newer; for further editing codeplugs
-- (SUGGESTED) [LibreOffice](https://libreoffice.org); for creating PDF handouts to accompany the programmed data
+- (SUGGESTED) [editcp](https://github.com/dalefarnsworth-dmr/editcp) 1.0.23 or newer; for further editing codeplugs with the help of a GUI
+- (REQUIRED) [Typst](https://typst.app); for creating PDF handouts to accompany the programmed data
 
 
 ## Running Things
