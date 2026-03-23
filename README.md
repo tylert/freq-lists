@@ -1,5 +1,7 @@
 # freq-lists
 
+NOTE:  This repo has permanently moved to https://codeberg.org/tylert/freq-lists
+
 This information is intended purely for educational purposes. It is your
 responsibility to ensure that you and your equipment are behaving
 themselves properly.
